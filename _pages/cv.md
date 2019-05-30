@@ -11,9 +11,8 @@ redirect_from:
 
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* B.S. in Human Resource Management, Renmin University of China, 2017
+* Ph.D in Information Systems and Technology Management, Katz Graduate School of Business, University of Pittsburgh, 2022 (expected)
 
 Work experience
 ======
