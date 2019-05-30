@@ -10,6 +10,8 @@ author_profile: true
 Teaching Assistant 
 ------
 
-**Harvard Summer School** 
+**Harvard Summer School**
+
 [MGMT S-5010 Electronic Commerce Strategies](https://www.summer.harvard.edu/course-catalog/courses/electronic-commerce-strategies/34433?subjects=Management) 
+
 Instructor: Dennis F. Galletta, PhD
