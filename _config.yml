@@ -11,7 +11,7 @@ title                    : "Xinyu Fu"
 title_separator          : "-"
 name                     : &name "Xinyu Fu"
 description              : &description "Doctoral Candidate in Info Systems & Tech Management, University of Pittsburgh"
-url                      : https://academicpages.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : https://sherryfu0315.github.io/ # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "academicpages/academicpages.github.io"
 teaser                   :  # filename of teaser fallback teaser image placed in /images/, .e.g. "500x300.png"
@@ -84,10 +84,10 @@ author:
   avatar           : "profile.png"
   bio              : "Doctoral Candidate in Info Systems & Tech Management, University of Pittsburgh"
   location         : "Pittsburgh,USA"
-  employer         : "University of Pittsburgh"
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  googlescholar    : "http://yourfullgooglescholarurl.com"
-  email            :
+  employer         : "Katz Graduate School of Business, University of Pittsburgh"
+  pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  googlescholar    : "https://scholar.google.com/citations?hl=en&view_op=list_works&gmla=AJsN-F6BK2U7kuELQeaZeFsHs4wTo7mr_VaTu4kBZOE3qljRI_mKh64rH59lYXlwfU5xqAMBYDK0QhMal0I33A_1ATGrLMQ2gg&user=0OM4QfkAAAAJ"
+  email            : "xinyu.fu at pitt.edu"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
@@ -96,20 +96,20 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "academicpages"
+  github           : "SherryFu0315"
   google_plus      :
   keybase          :
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
   linkedin         :
-  orcid            : "http://orcid.org/yourorcidurl"
+  orcid            : # "http://orcid.org/yourorcidurl"
   pinterest        :
   soundcloud       :
   stackoverflow    : # http://stackoverflow.com/users/123456/username
   steam            :
   tumblr           :
-  twitter          : "replacethistwitterhandle"
+  twitter          : #"replacethistwitterhandle"
   vine             :
   weibo            :
   xing             :
