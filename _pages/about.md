@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Xinyu Fu - Doctoral Candidate in Information Systems and Technology Management"
+title: ""
 excerpt: "About me"
 author_profile: true
 redirect_from: 
@@ -14,28 +14,25 @@ My research is about human-bot collaboration. I study the impact of bot/robot in
 
 Methodology
 ======
-Lab and field experiments
-
-Data mining
-
-Econometrics
+  * Lab and field experiments
+  * Data mining
+  * Econometrics
 
 Education
 ======
-Doctoral candidate: Information Systems and Technology Management, Katz Graduate School of Business, University of Pittsburgh, 2017 - Present
-
-Bachelor of Management in Human Resource Management, School of Labor and Human Resource, Renmin University of China, 2013 - 2017
+* Doctoral candidate: Information Systems and Technology Management, Katz Graduate School of Business, University of Pittsburgh, 2017 - Present
+* Bachelor of Management in Human Resource Management, School of Labor and Human Resource, Renmin University of China, 2013 - 2017
 
 Community Services
 ------
-Reviewer: International Conference on Information Systems (ICIS) 2019
+* Reviewer: International Conference on Information Systems (ICIS) 2019
 
-Reviewer: Americas Conference On Information Systems (AMCIS) 2019 Social Computing Track- The Dark Side of Social Media
+* Reviewer: Americas Conference On Information Systems (AMCIS) 2019 Social Computing Track- The Dark Side of Social Media
 
-Reviewer: Americas Conference On Information Systems (AMCIS) 2019 Cognitive Research in IS - Human-Robot Interactions in Information Systems
+* Reviewer: Americas Conference On Information Systems (AMCIS) 2019 Cognitive Research in IS - Human-Robot Interactions in Information Systems
 
-Reviewer: International Conference on Information Systems (ICIS) 2018 Track Human Behavior and IS
+* Reviewer: International Conference on Information Systems (ICIS) 2018 Track Human Behavior and IS
 
-Reviewer: Pre-International Conference on Information Systems (ICIS) 2018 SIG-HCI Workshop
+* Reviewer: Pre-International Conference on Information Systems (ICIS) 2018 SIG-HCI Workshop
 
-Reviewer: Americas Conference On Information Systems (AMCIS) 2018 mini-track The Dark Side of Social Media
+* Reviewer: Americas Conference On Information Systems (AMCIS) 2018 mini-track The Dark Side of Social Media
