@@ -15,12 +15,15 @@ My research is about human-bot collaboration. I study the impact of bot/robot in
 Methodology
 ======
 Lab and field experiments
+
 Data mining
+
 Econometrics
 
 Education
 ======
 Doctoral candidate: Information Systems and Technology Management, Katz Graduate School of Business, University of Pittsburgh, 2017 - Present
+
 Bachelor of Management in Human Resource Management, School of Labor and Human Resource, Renmin University of China, 2013 - 2017
 
 Community Services
