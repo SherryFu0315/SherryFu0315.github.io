@@ -20,8 +20,8 @@ Methodology
 
 Education
 ------
-* Ph.D.: Information Systems and Technology Management, Katz Graduate School of Business, University of Pittsburgh, 2022 (expected)
-* Bachelor: Human Resource Management, Renmin University of China, 2017
+* Ph.D in Information Systems and Technology Management, Katz Graduate School of Business, University of Pittsburgh, 2022 (expected)
+* B.S. in Human Resource Management, Renmin University of China, 2017
 
 Community Services
 ------
