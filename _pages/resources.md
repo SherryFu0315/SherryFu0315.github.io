@@ -11,4 +11,4 @@ _to be updated_
 
 Human Computer Colloboration
 ------
-[Human-AI Hybrid in E-Commerce]()
+[Human-AI Hybrid in E-Commerce](https://sherryfu0315.github.io//files/HCC in e-commerce fu 2019.pdf)
