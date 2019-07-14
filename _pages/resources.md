@@ -11,4 +11,4 @@ _to be updated_
 
 Human Computer Colloboration
 ------
-_to be updated_
+[Human-AI Hybrid in E-Commerce]()
