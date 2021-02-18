@@ -27,14 +27,14 @@ _2019 Work in the Age of Intelligent Machines (WAIM) Convergence Conference_, Ne
 
 Organizational Studies
 ------
-* Luo, B. N., Xing, L., Zhang, R., **Fu, X.**, & Zhang, Y. (2020). Different forms of corporate philanthropy, different effects: A multilevel analysis. Business Ethics: A European Review, 29(4), 748-762.
+* Luo, B. N., Xing, L., Zhang, R., **Fu, X.**, & Zhang, Y. (2020). Different forms of corporate philanthropy, different effects: A multilevel analysis. _Business Ethics: A European Review_, 29(4), 748-762.
 
 * Pan, J., Guan, Y., Wu, J., Han, L., Zhu, F., **Fu, X.**, & Yu, J. (2018). The interplay of proactive personality and internship quality in Chinese university graduates' job search success: The role of career adaptability. _Journal of Vocational Behavior_, 109, 14-26.
 
-* Pan, J., Guan, Y., Wu, J., Han, L., & **Fu, X**. (2017). Internship quality, proactive personality and university graduates job search outcomes. In Academy of Management Proceedings (Vol. 2017, No. 1, p. 13200). Briarcliff Manor, NY 10510: Academy of Management.
+* Pan, J., Guan, Y., Wu, J., Han, L., & **Fu, X**. (2017). Internship quality, proactive personality and university graduates job search outcomes. In _Academy of Management Proceedings_ (Vol. 2017, No. 1, p. 13200). Briarcliff Manor, NY 10510: Academy of Management.
 
 * **Fu, X.**, Two Sides of Crowdsourcing: When Does it Accelerate SME's Innovation?, _Management and Organization Review Second Research Frontiers Conference 2016_
 
 * Zhang, R., Yang C., **Fu, X.**, ‘International Talent Training of Samsung’, _Journal of Human Resource Development of China_, 14(2015): 69-76
 
-* **Fu, X.**, 2015. An ethnographical account of life in Beijing - Interviews with two drifters, in Shi Zhou, Xiaorui Chen (Ed.) Immigrants in Beijing, Chinese Sociologic Studies Press. pg. 15-30. 
+* **Fu, X.**, 2015. An ethnographical account of life in Beijing - Interviews with two drifters, in Shi Zhou, Xiaorui Chen (Ed.) _Immigrants in Beijing_, Chinese Sociologic Studies Press. pg. 15-30. 
