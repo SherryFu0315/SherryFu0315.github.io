@@ -25,7 +25,9 @@ Education
 
 Community Services
 ------
-* Reviewer: International Conference on Information Systems (ICIS) 2019
+* Reviewer: International Conference on Information Systems (ICIS) 2020
+* Reviewer: Americas Conference On Information Systems (AMCIS) 2020 - MINI-TRACK: The Dark Side of Social Media
+* Reviewer: International Conference on Information Systems (ICIS) 2019 - General Topics
 * Reviewer: Americas Conference On Information Systems (AMCIS) 2019 Social Computing Track- The Dark Side of Social Media
 * Reviewer: Americas Conference On Information Systems (AMCIS) 2019 Cognitive Research in IS - Human-Robot Interactions in Information Systems
 * Reviewer: International Conference on Information Systems (ICIS) 2018 Track Human Behavior and IS
