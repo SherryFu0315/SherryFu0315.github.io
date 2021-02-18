@@ -8,16 +8,16 @@ author_profile: true
 Management of Information Systems
 ------
 * **Fu, X.**, Kolotylo-Kulkarni,M., Zeiss,R. (2019). Privacy & Accuracy Tradeoff in Diagnostic AI: Can Algorithm Transparency help?
-_2019 ICIS Paper-a-thon_, Munich, Germany
+_2019 ICIS Paper-a-thon_, Munich, Germany.
 
 * **Fu, X.**, Ramasubbu,N., Galletta.F. (2019). AI Nudge: Crowdsource Comment Moderation Tasks to Users,
-_2019 Work in the Age of Intelligent Machines (WAIM) Convergence Conference_, New York, NY (With NSF Student Travel Grant)
+_2019 Work in the Age of Intelligent Machines (WAIM) Convergence Conference_, New York, NY.
 
-* **Fu, X.** (2018). Human-Humanoid Interaction: A Literature Review on Social Bots, _2018 Pre-ICIS Workshop - AI and Cognitive Systems_
+* **Fu, X.** (2018). Human-Humanoid Interaction: A Literature Review on Social Bots, _2018 Pre-ICIS Workshop - AI and Cognitive Systems_, San Francisco, CA.
 
-* **Fu, X.** (2017). Will Cyber Crimes Decrease Intended Use of Internet? Identify an external factor exacerbating digital divide, _3rd Post-International Conference on Information Systems (ICIS) SIG-Social Inclusion Research Workshop 2017_
+* **Fu, X.** (2017). Will Cyber Crimes Decrease Intended Use of Internet? Identify an external factor exacerbating digital divide, _3rd Post-International Conference on Information Systems (ICIS) SIG-Social Inclusion Research Workshop 2017_, Seoul, South Korea.
 
-* **Fu, X.** (2017). Eliminate Misunderstandings: Measuring Virtual Team Members as Organizational Citizens, _20th ACM Conference on Computer-Supported Cooperative Work and Social Computing (CSCW’ 17 Companion)_
+* **Fu, X.** (2017). Eliminate Misunderstandings: Measuring Virtual Team Members as Organizational Citizens, _20th ACM Conference on Computer-Supported Cooperative Work and Social Computing (CSCW’ 17 Companion)_, Portland, OR.
 
 * **Fu, X.**, Social Facilitation: Social Bot Helps Improve Task Quality in Crowdsourcing Systems, working paper.
 
