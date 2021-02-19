@@ -10,7 +10,7 @@ Management of Information Systems
 * **Fu, X.**, Kolotylo-Kulkarni,M., Zeiss,R. (2019). Privacy & Accuracy Tradeoff in Diagnostic AI: Can Algorithm Transparency help?
 _**2019 ICIS Paper-a-thon**_, Munich, Germany.
 
-* **Fu, X.**, Ramasubbu,N., Galletta.F. (2019). AI Nudge: Crowdsource Comment Moderation Tasks to Users,
+* **Fu, X.**, Ramasubbu, N., Galletta, D. (2019). AI Nudge: Crowdsource Comment Moderation Tasks to Users,
 _**2019 Work in the Age of Intelligent Machines (WAIM) Convergence Conference**_, New York, NY.
 
 * **Fu, X.** (2018). Human-Humanoid Interaction: A Literature Review on Social Bots, _**2018 Pre-ICIS Workshop - AI and Cognitive Systems**_, San Francisco, CA.
