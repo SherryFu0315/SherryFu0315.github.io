@@ -23,7 +23,7 @@ Publications
 
 Conference Proceedings and Presentations
 ------
-* **Fu, X.** (2021). Performance of human-AI hybrid designs: Evidence from experiments from comment moderation, HR recruitment, and online presentation. _**2021 ICIS Doctoral Consortium_**.
+* **Fu, X.** (2021). Performance of human-AI hybrid designs: Evidence from experiments from comment moderation, HR recruitment, and online presentation. _**2021 ICIS Doctoral Consortium**_.
 
 * **Fu, X.**, Kolotylo-Kulkarni,M., Zeiss,R. (2019). Privacy & Accuracy Tradeoff in Diagnostic AI: Can Algorithm Transparency help?
 _**2019 ICIS Paper-a-thon**_, Munich, Germany.
