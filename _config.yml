@@ -9,7 +9,7 @@
 locale                   : "en-US"
 title                    : "Xinyu Fu | Human-AI Complementarity"
 title_separator          : "-"
-name                     : &name "Xinyu Fu"
+name                     : &name "Xinyu Fu | PhD Candidate at Pitt | Human-AI Complementarity"
 description              : &description "Doctoral Candidate in Info Systems & Tech Management, University of Pittsburgh"
 url                      : https://sherryfu0315.github.io/ # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -102,7 +102,7 @@ author:
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         : "https://www.linkedin.com/in/xinyu-fu-b93177b6/"
+  linkedin         : "https://www.linkedin.com/in/xinyu-fu-b93177b6"
   orcid            : # "http://orcid.org/yourorcidurl"
   pinterest        :
   soundcloud       :
