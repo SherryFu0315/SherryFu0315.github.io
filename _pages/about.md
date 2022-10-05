@@ -9,7 +9,10 @@ redirect_from:
 ---
 I am a doctoral student in the [Department of Information Systems & Technology Management](https://www.katz.business.pitt.edu/academics/phd/phd-istm), Katz Graduate School of Business, University of Pittsburgh. I am advised by [Professor. Narayan Ramasubbu](https://sites.google.com/site/narayanramasubbu/) and [Professor. Dennis Galletta](http://www.pitt.edu/~galletta/). 
 
-My research focuses on **human-artificial intelligence (AI) complementarity**. This involves collaboration between humans and AI systems, building on each other's strengths, and compensating for each other's potential weaknesses. I examine configurations of human-AI hybrid teams in two streams of research. In one stream of research, I investigate the conditions and processes through which humans can complement AI (e.g., by detecting AI’s errors and improving overall performance) and AI can empower humans (e.g., by eliminating laborious, ergonomically inconvenient, and monotonous work). In a second stream of research, I investigate organizational and environmental challenges in designing human-AI collaboration configurations (e.g., data control and behavioral tracking policies).
+My research focuses on **human-artificial intelligence (AI) complementarity**. This involves collaboration between humans and AI systems, building on each other's strengths, and compensating for each other's potential weaknesses. I examine configurations of human-AI hybrid teams in two streams of research. In one stream of research, I investigate the conditions and processes through which humans can complement AI (e.g., by detecting AI’s errors and improving overall performance) and AI can empower humans (e.g., by eliminating laborious, ergonomically inconvenient, and monotonous work). In a second stream of research, I investigate organizational and environmental challenges in designing human-AI collaboration configurations (e.g., data control and behavioral tracking policies). In recognition of my research endeavors, I received the prestigious **Fryrear Fellowship**, which is annually awarded to one student in the entire business school.
+
+I have independently taught two courses during my graduate training: (1) the undergraduate-level required core course Introduction to Information Systems (IS), and (2) the MBA/MS elective course Data Programming Essentials with Python. I received **the 2021 Doris & Douglas Bernstein Doctoral Student Teaching Award** — one of the most prestigious awards given to doctoral students teaching at Pitt Business.
+
 
 Methodology
 ------
@@ -22,6 +25,42 @@ Education
 ------
 * Ph.D in Information Systems and Technology Management, Katz Graduate School of Business, University of Pittsburgh, 2023 (expected)
 * B.S. in Human Resource Management, Renmin University of China, 2017
+
+Recent work
+------
+* Fu, X., Ramasubbu, N., & Galletta, D. Managing imperfect algorithms: Error detection in collaborative human-AI decision making processes. Target journal: OBHDP.
+  -	Improved error anticipation increases users’ perceived responsibility to monitor an imperfect algorithm, and enables users to improve their decision quality.
+  -	Presented at INFORMS 2022, ICIS 2021, WAIM 2019.
+* Fu, X., Ramasubbu, N., & Galletta, D. Empowering females in manufacturing: An investigation of collaborative robotics deployment and gender gap. Target journal: MIS Quarterly.
+  -	A theory development case study about how collaborative bots (cobots) improve female workers’ labor force participation and address wage-related inequality.
+* Fu, X., Janansefat, S., Ramasubbu, N., Kemerer, C., & Galletta, D. Misaligned signals and exploration behaviors in music streaming platforms: A field experiment. Target journal: ISR.
+  -	Content displayed with misaligned social signals is perceived with high uncertainty, which motivates users to conduct further exploration.
+  -	Combined field and lab experiments.
+
+
+Awards and Grants
+------
+* Ben L. Fryrear Doctoral Fellow, 2021-2022 (annually awarded to one PhD student)
+* Doris & Douglas Bernstein Doctoral Student Teaching Award, 2021 (one student per year)
+* International Conference on Information Systems (ICIS) Doctoral Consortium Fellow, 2021
+* ICIS Doctoral Consortium Most Valuable Player (MVP) in Breakout Group Charlie, 2021
+* Chinese Government Award for Outstanding Self-financed Students Abroad, 2021
+* Giant Eagle Fellowship, 2017-2022
+* Pitt-Renmin University of China Joint Research Seed Funding, $10,000, 2019
+* NSF Travel Grants for the Work in the Age of Intelligent Machines (WAIM) Conference, 2019
+* Dean Office Research Funding, $2,000, 2018-2019
+* Katz School Academia Conference Travel Grants, 2017, 2018, 2019, 2021, 2022
+* University of Pittsburgh GPSG Academic Travel Grants, 2018
+* Renmin University of China Scholarship for Research Excellence, 2017
+* Jingdong (JD) Scholarship for Academic Excellence, 2017
+
+Professional Experience
+------
+* [Midwest USA Chinese Chamber of Commerce](https://www.china-midwest.com/), Volunteer Staff, 2021-Present
+* [Pitt Research](https://www.research.pitt.edu/), Intern for the Prestigious Faculty Awards Program, Summer 2022; Supervised by [Dr. Michael Holland](https://www.research.pitt.edu/people/michael-holland), the vice Chancellor for Science Policy and Research Strategies
+* Amazon China, Asian Pacific (APAC) Benefits Programs Intern, 2015.12 – 2017.2
+* J.D. Power China, Consultant Intern, Summer 2015
+* Randstad China, Recruitment Consultant Intern, Spring 2015
 
 Community Services
 ------
