@@ -14,7 +14,7 @@ Instructor
 [BMIS 2542 - DATA PROGRAMMING ESSENTIALS WITH PYTHON](https://www.katz.business.pitt.edu/course/data-programming-python)  
 Katz Graduate School of Business, University of Pittsburgh  
 MBA and MS Elective, 2021 Spring
-<br><i>2021 Doris & Douglas Bernstein Doctoral Student Teaching Award</i></br>
+<br><i>2021 Doris & Douglas Bernstein Doctoral Student Teaching Award</i>
 
 <blockquote>
 “Professor Fu was fantastic. She was very patient with us, and she created an environment where everyone learned. 
@@ -25,7 +25,7 @@ She is very talented at teaching. I would love to take a more advanced class wit
 [BUSBIS 1060 - INTRODUCTION TO INFORMATION SYSTEMS](https://catalog.upp.pitt.edu/preview_course_nopop.php?catoid=72&coid=376733)  
 Katz Graduate School of Business, University of Pittsburgh  
 Undergraduate Core, 2021 Fall
-<br><i>2021 Doris & Douglas Bernstein Doctoral Student Teaching Award</i></br>
+<br><i>2021 Doris & Douglas Bernstein Doctoral Student Teaching Award</i>
 
 <blockquote>
 “Xinyu was very receptive to our mid–class feedback and made extremely beneficial changes to the course which I really enjoyed. 
