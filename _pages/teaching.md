@@ -15,7 +15,7 @@ Instructor
 Katz Graduate School of Business, University of Pittsburgh  
 MBA and MS Elective
 2021 Spring
-*the 2021 Doris & Douglas Bernstein Doctoral Student Teaching Award
+_**the 2021 Doris & Douglas Bernstein Doctoral Student Teaching Award**_
 
 <blockquote>
 “Professor Fu was fantastic. She was very patient with us, and she created an environment where everyone learned. 
@@ -27,7 +27,7 @@ She is very talented at teaching. I would love to take a more advanced class wit
 Katz Graduate School of Business, University of Pittsburgh  
 Undergraduate Core
 2021 Fall
-*the 2021 Doris & Douglas Bernstein Doctoral Student Teaching Award
+_**the 2021 Doris & Douglas Bernstein Doctoral Student Teaching Award**_
 
 <blockquote>
 “Xinyu was very receptive to our mid–class feedback and made extremely beneficial changes to the course which I really enjoyed. 
