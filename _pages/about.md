@@ -17,12 +17,12 @@ I have independently taught two courses during my graduate training: (1) the und
 
 Recent work
 ------
-* Fu, X., Ramasubbu, N., & Galletta, D. Managing imperfect algorithms: Error detection in collaborative human-AI decision making processes. Target journal: OBHDP.
+* Fu, X., Ramasubbu, N., & Galletta, D. Managing imperfect algorithms: Error detection in collaborative human-AI decision making processes.
   -	Improved error anticipation increases users’ perceived responsibility to monitor an imperfect algorithm, and enables users to improve their decision quality.
   -	Presented at [INFORMS 2022](https://meetings.informs.org/wordpress/indianapolis2022/), [ICIS 2021](https://icis2021.aisconferences.org/), [WAIM 2019](https://waim.network/).
-* Fu, X., Ramasubbu, N., & Galletta, D. Empowering females in manufacturing: An investigation of collaborative robotics deployment and gender gap. Target journal: MIS Quarterly.
+* Fu, X., Ramasubbu, N., & Galletta, D. Empowering females in manufacturing: An investigation of collaborative robotics deployment and gender gap.
   -	A theory development case study about how collaborative bots (cobots) improve female workers’ labor force participation and address wage-related inequality.
-* Fu, X., Janansefat, S., Ramasubbu, N., Kemerer, C., & Galletta, D. Misaligned signals and exploration behaviors in music streaming platforms: A field experiment. Target journal: ISR.
+* Fu, X., Janansefat, S., Ramasubbu, N., Kemerer, C., & Galletta, D. Misaligned signals and exploration behaviors in music streaming platforms: A field experiment.
   -	Content displayed with misaligned social signals is perceived with high uncertainty, which motivates users to conduct further exploration.
   -	Combined field and lab experiments.
 
