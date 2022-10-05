@@ -7,18 +7,21 @@ author_profile: true
 
 Publications
 ------
-* **Fu, X.** (2021). Introduction to structural causal model and do-calculus. _**Swarm Agents Club**_, 24 June. 
+* **Fu, X.** (2021). [Introduction to structural causal model and do-calculus.](https://mp.weixin.qq.com/s/6tNlD864RvVxyM4aVK-6_Q) _**Swarm Agents Club**_, 24 June. 
 
-* Luo, B. N., Xing, L., Zhang, R., **Fu, X.**, & Zhang, Y. (2020). Different forms of corporate philanthropy, different effects: A multilevel analysis. _**Business Ethics, the Environment and Responsibility**_, 29(4), 748-762.
+* Luo, B. N., Xing, L., Zhang, R., **Fu, X.**, & Zhang, Y. (2020). [Different forms of corporate philanthropy, different effects: A multilevel analysis.](https://onlinelibrary.wiley.com/doi/abs/10.1111/beer.12312) _**Business Ethics, the Environment and Responsibility**_, 29(4), 748-762.
 
-* Pan, J., Guan, Y., Wu, J., Han, L., Zhu, F., **Fu, X.**, & Yu, J. (2018). The interplay of proactive personality and internship quality in Chinese university graduates' job search success: The role of career adaptability. _**Journal of Vocational Behavior**_, 109, 14-26.
+* Pan, J., Guan, Y., Wu, J., Han, L., Zhu, F., **Fu, X.**, & Yu, J. (2018). [The interplay of proactive personality and internship quality in Chinese university graduates' job search success: The role of career adaptability.](https://www.sciencedirect.com/science/article/abs/pii/S0001879118301040) _**Journal of Vocational Behavior**_, 109, 14-26.
 
-* Zhang, R., Yang C., **Fu, X.**, International Talent Training of Samsung, _**Journal of Human Resource Development of China**_, 14(2015): 69-76
+* Zhang, R., Yang C., **Fu, X.**, [International Talent Training of Samsung](http://www.cqvip.com/qk/91123x/201514/665619181.html), _**Journal of Human Resource Development of China**_, 14(2015): 69-76
 
 * **Fu, X.**, 2015. An ethnographical account of life in Beijing - Interviews with two drifters, in Shi Zhou, Xiaorui Chen (Ed.) _**Immigrants in Beijing**_, Chinese Sociologic Studies Press. pg. 15-30. 
 
 Conference Proceedings and Presentations
 ------
+
+* **Fu, X.** (2022). [Bot as Study Peers: State of Flow, Balanced Task Difficulty, and Adaptive learning.](https://aisel.aisnet.org/treos_amcis2022/34/)_**2022 AMCIS TREO Talk**_.
+
 * **Fu, X.** (2021). Performance of human-AI hybrid designs: Evidence from experiments from comment moderation, HR recruitment, and online presentation. _**2021 ICIS Doctoral Consortium**_.
 
 * **Fu, X.**, Kolotylo-Kulkarni,M., Zeiss,R. (2019). Privacy & Accuracy Tradeoff in Diagnostic AI: Can Algorithm Transparency help?
