@@ -7,7 +7,7 @@ redirect_from:
   - /about/
   - /about.html
 ---
-I am a doctoral student in the [Department of Information Systems & Technology Management](https://www.katz.business.pitt.edu/academics/phd/phd-istm), Katz Graduate School of Business, University of Pittsburgh. I am advised by [Professor. Narayan Ramasubbu](https://sites.google.com/site/narayanramasubbu/) and [Professor. Dennis Galletta](http://www.pitt.edu/~galletta/). I am an ICIS Doctoral Consortium Fellow and Ben L. Fryrear Doctoral Fellow.
+I am a doctoral student in the [Department of Information Systems & Technology Management](https://business.pitt.edu/phd/phd-in-info-systems-and-tech-management/), Katz Graduate School of Business, University of Pittsburgh. I am advised by [Professor. Narayan Ramasubbu](https://sites.google.com/site/narayanramasubbu/) and [Professor. Dennis Galletta](http://www.pitt.edu/~galletta/). I am an ICIS Doctoral Consortium Fellow and Ben L. Fryrear Doctoral Fellow.
 
 <mark>I am on the job market this year and I am happy to talk about potential opportunities! I will present one recent work “Integrating imperfect machines and unmindful users: Assessing human-bot hybrid designs for managing discussions in online communities” during INFORMS 2022 (MB10. October 17, 2022, 11:00 AM - 12:15 PM; in CC - Room 110).</mark>
 
