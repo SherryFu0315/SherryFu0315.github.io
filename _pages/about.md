@@ -15,19 +15,6 @@ My research focuses on [human-artificial intelligence (AI) complementarity](http
 
 I have independently taught two courses during my graduate training: (1) the undergraduate-level required core course [Introduction to Information Systems](https://catalog.upp.pitt.edu/preview_course_nopop.php?catoid=72&coid=376733), and (2) the MBA/MS elective course [Data Programming Essentials with Python](https://www.katz.business.pitt.edu/course/data-programming-python). I received **the 2021 Doris & Douglas Bernstein Doctoral Student Teaching Award** — one of the most prestigious awards given to doctoral students teaching at Pitt Business.
 
-
-Methodology
-------
-  * Lab and field experiments
-  * Data mining
-  * Econometrics
-  * Qualitative studies
-
-Education
-------
-* Ph.D in Information Systems and Technology Management, Katz Graduate School of Business, University of Pittsburgh, 2023 (expected)
-* B.S. in Human Resource Management, Renmin University of China, 2017
-
 Recent work
 ------
 * Fu, X., Ramasubbu, N., & Galletta, D. Managing imperfect algorithms: Error detection in collaborative human-AI decision making processes. Target journal: OBHDP.
@@ -77,3 +64,7 @@ Community Services
 * Conference reviewer, Americas’ Conference on Information Systems (AMCIS), 2018 – 2022
 * Colloquium coordinator, Katz School of Business Doctoral Student Organization, 2017-2018
 
+Education
+------
+* Ph.D in Information Systems and Technology Management, Katz Graduate School of Business, University of Pittsburgh, 2023 (expected)
+* B.S. in Human Resource Management, Renmin University of China, 2017
