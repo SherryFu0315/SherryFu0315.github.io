@@ -9,15 +9,11 @@ Publications
 ------
 * **Fu, X.** (2021). Introduction to structural causal model and do-calculus. _**Swarm Agents Club**_, 24 June. 
 
-* Luo, B. N., Xing, L., Zhang, R., **Fu, X.**, & Zhang, Y. (2020). Different forms of corporate philanthropy, different effects: A multilevel analysis. _**Business Ethics: A European Review**_, 29(4), 748-762.
+* Luo, B. N., Xing, L., Zhang, R., **Fu, X.**, & Zhang, Y. (2020). Different forms of corporate philanthropy, different effects: A multilevel analysis. _**Business Ethics, the Environment and Responsibility**_, 29(4), 748-762.
 
 * Pan, J., Guan, Y., Wu, J., Han, L., Zhu, F., **Fu, X.**, & Yu, J. (2018). The interplay of proactive personality and internship quality in Chinese university graduates' job search success: The role of career adaptability. _**Journal of Vocational Behavior**_, 109, 14-26.
 
-* Pan, J., Guan, Y., Wu, J., Han, L., & **Fu, X**. (2017). Internship quality, proactive personality and university graduates job search outcomes. In _**Academy of Management Proceedings**_ (Vol. 2017, No. 1, p. 13200). Briarcliff Manor, NY 10510: Academy of Management.
-
-* **Fu, X.**, Two Sides of Crowdsourcing: When Does it Accelerate SME's Innovation?, _**Management and Organization Review Second Research Frontiers Conference 2016**_
-
-* Zhang, R., Yang C., **Fu, X.**, ‘International Talent Training of Samsung’, _**Journal of Human Resource Development of China**_, 14(2015): 69-76
+* Zhang, R., Yang C., **Fu, X.**, International Talent Training of Samsung, _**Journal of Human Resource Development of China**_, 14(2015): 69-76
 
 * **Fu, X.**, 2015. An ethnographical account of life in Beijing - Interviews with two drifters, in Shi Zhou, Xiaorui Chen (Ed.) _**Immigrants in Beijing**_, Chinese Sociologic Studies Press. pg. 15-30. 
 
@@ -56,6 +52,4 @@ Work in Progress
 * **Fu, X.**, Ramasubbu, N., & Galletta, D. Unpacking control: Employees’ responses to data tracking configurations in an AI communication training system.
 
 * **Fu, X.**, & Ramasubbu, N. Bots as study peers: Flow, balanced task difficulty, and adaptive learning.
-
-
 
