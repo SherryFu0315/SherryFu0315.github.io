@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Xinyu Fu"
+title                    : "Xinyu Fu | Human-AI Complementarity"
 title_separator          : "-"
 name                     : &name "Xinyu Fu"
 description              : &description "Doctoral Candidate in Info Systems & Tech Management, University of Pittsburgh"
@@ -82,11 +82,11 @@ analytics:
 author:
   name             : "Xinyu Fu"
   avatar           : "profile.png"
-  bio              : "Doctoral Candidate in Info Systems & Tech Management, University of Pittsburgh"
+  bio              : "Doctoral Candidate in Info Systems & Tech Management"
   location         : "229 Mervis Hall"
-  employer         : #"University of Pittsburgh"
+  employer         : "University of Pittsburgh"
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-  googlescholar    : # "https://scholar.google.com/citations?hl=en&view_op=list_works&gmla=AJsN-F6BK2U7kuELQeaZeFsHs4wTo7mr_VaTu4kBZOE3qljRI_mKh64rH59lYXlwfU5xqAMBYDK0QhMal0I33A_1ATGrLMQ2gg&user=0OM4QfkAAAAJ"
+  googlescholar    : "https://scholar.google.com/citations?hl=en&view_op=list_works&gmla=AJsN-F72idVwzJ3HSN3qecrkO807dDx0ClmEeScz2ppBwhVPm1BPDePLoaAaiRT1OH3we8QZUx-3l_32s9h1PsZs4CpFPFxdKg&user=0OM4QfkAAAAJ"
   email            : "xinyu.fu@pitt.edu"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
@@ -102,7 +102,7 @@ author:
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         :
+  linkedin         : "https://www.linkedin.com/in/xinyu-fu-b93177b6/"
   orcid            : # "http://orcid.org/yourorcidurl"
   pinterest        :
   soundcloud       :
