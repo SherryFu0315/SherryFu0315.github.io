@@ -11,8 +11,6 @@ I am a doctoral student in the [Department of Information Systems & Technology M
 
 My research focuses on [human-artificial intelligence (AI) complementarity](https://en.wikipedia.org/wiki/Human%E2%80%93artificial_intelligence_collaboration). This involves collaboration between humans and AI systems, building on each other's strengths, and compensating for each other's potential weaknesses. I investigate the conditions and processes through which humans can complement AI (e.g., by detecting AI’s errors and improving overall performance) and AI can empower humans (e.g., by eliminating laborious, ergonomically inconvenient, and monotonous work). Furthermore, I investigate organizational and environmental challenges in designing human-AI collaboration configurations (e.g., data control and behavioral tracking policies). In recognition of my research endeavors, I received the prestigious **Ben L. Fryrear Fellowship**, which is annually awarded to one student in the entire business school.
 
-I have independently taught two courses during my graduate training: (1) the undergraduate-level required core course [Introduction to Information Systems](https://catalog.upp.pitt.edu/preview_course_nopop.php?catoid=72&coid=376733), and (2) the MBA/MS elective course [Data Programming Essentials with Python](https://www.katz.business.pitt.edu/course/data-programming-python). I received **the 2021 Doris & Douglas Bernstein Doctoral Student Teaching Award** — one of the most prestigious awards given to doctoral students teaching at Pitt Business.
-
 Recent work
 ------
 * Fu, X., Ramasubbu, N., & Galletta, D. Managing imperfect algorithms: Error detection in collaborative human-AI decision making processes.
