@@ -51,18 +51,7 @@ Professional Experience
 * [J.D. Power China](https://www.jdpower.com/), Consultant Intern, Summer 2015
 * [Randstad China](https://www.randstadusa.com/), Recruitment Consultant Intern, Spring 2015
 
-Community Services
-------
-* Journal reviewer, [Information Technology and Management](https://www.springer.com/journal/10799)
-* Book chapter reviewer, Introduction to Python for Data & Analysis by Daniel H. Groner
-* Session Chair, Americas’ Conference on Information Systems (AMCIS), 2022
-* Conference reviewer, Conference on Information Systems and Technology (CIST), 2021
-* Volunteer, Americas’ Conference on Information Systems (AMCIS), 2022
-* Conference reviewer, International Conference on Information Systems (ICIS), 2018 – 2022
-* Conference reviewer, Americas’ Conference on Information Systems (AMCIS), 2018 – 2022
-* Colloquium coordinator, Katz School of Business Doctoral Student Organization, 2017-2018
-
 Education
 ------
-* Ph.D in Information Systems and Technology Management, Katz Graduate School of Business, University of Pittsburgh, 2023 (expected)
+* Ph.D in Information Systems and Technology Management, Katz Graduate School of Business, University of Pittsburgh, 2023
 * B.S. in Human Resource Management, Renmin University of China, 2017
