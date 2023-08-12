@@ -9,8 +9,8 @@
 locale                   : "en-US"
 title                    : "Xinyu Fu | Human-AI Complementarity"
 title_separator          : "-"
-name                     : &name "Xinyu Fu | PhD Candidate at Pitt | Human-AI Complementarity"
-description              : &description "Doctoral Candidate in Info Systems & Tech Management, University of Pittsburgh"
+name                     : &name "Xinyu Fu | Human-AI Complementarity"
+description              : &description "Assistant Professor at Robinson College of Business, Georgia State University"
 url                      : https://sherryfu0315.github.io/ # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "academicpages/academicpages.github.io"
@@ -82,12 +82,12 @@ analytics:
 author:
   name             : "Xinyu Fu"
   avatar           : "profile.png"
-  bio              : "Doctoral Candidate in Info Systems & Tech Management"
-  location         : "229 Mervis Hall"
-  employer         : "University of Pittsburgh"
+  bio              : "Assistant Professor at Robinson College of Business, Georgia State University"
+  location         : "55 Park Place, 1700"
+  employer         : "Georgia State University"
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : "https://scholar.google.com/citations?hl=en&view_op=list_works&gmla=AJsN-F72idVwzJ3HSN3qecrkO807dDx0ClmEeScz2ppBwhVPm1BPDePLoaAaiRT1OH3we8QZUx-3l_32s9h1PsZs4CpFPFxdKg&user=0OM4QfkAAAAJ"
-  email            : "xinyu.fu@pitt.edu"
+  email            : "xfu11@gsu.edu"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
