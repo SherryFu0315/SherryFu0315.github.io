@@ -135,8 +135,8 @@ button:focus-visible{ outline:3px solid var(--blue); outline-offset:2px }
 .rail{ padding:var(--pad); display:flex; flex-direction:column; gap:22px }
 .rail-top{ display:flex; align-items:flex-start; gap:18px; flex-wrap:wrap }
 .rail-photo{
-  width:96px; height:96px; flex:none;
-  border:var(--rule-w) solid var(--ink);
+  width:104px; height:104px; flex:none;
+  border-radius:50%;
   object-fit:cover;
 }
 .rail h1{
@@ -169,6 +169,7 @@ button:focus-visible{ outline:3px solid var(--blue); outline-offset:2px }
   text-transform:uppercase; color:var(--muted);
 }
 .rail-links a:hover{ color:var(--blue) }
+.mail{ white-space:nowrap }
 .rail-links a span{ color:var(--ink); text-transform:none; letter-spacing:0; font-size:14px }
 
 /* ---------- mosaic -------------------------------------------------------- */
@@ -313,6 +314,44 @@ button:focus-visible{ outline:3px solid var(--blue); outline-offset:2px }
 .band-art.is-lav{ background:var(--lav) }
 .band-art.is-lime{ background:var(--lime) }
 
+/* a drawn figure sits on paper, not on the ink ground photos use */
+.band-art.is-fig{ background:var(--paper); display:flex; align-items:center; justify-content:center }
+.band-art.is-fig svg{ position:static; width:100%; height:auto; max-height:100% }
+
+/* the duotone wash, when a band rather than a tile carries it */
+.band-art.is-duo img{ filter:grayscale(1) contrast(1.16) brightness(.95) }
+.band-art.is-duo .duo-wash{
+  position:absolute; inset:0; z-index:1;
+  background:var(--blue); mix-blend-mode:color; opacity:.85;
+}
+
+/* a typographic panel, for work that has no honest picture */
+.band-art.is-type{
+  display:flex; align-items:center; justify-content:center;
+  padding:clamp(24px,4vw,56px); background:var(--lime);
+}
+.band-art.is-type .type-in{
+  font-family:"Archivo",Arial,sans-serif;
+  font-variation-settings:"wdth" 80,"wght" 800;
+  text-transform:uppercase; line-height:.94; letter-spacing:-.02em;
+  font-size:clamp(24px,3.6vw,44px); color:var(--ink); text-align:center;
+}
+.band-art.is-type .type-in em{
+  display:block; font-style:normal; font-size:.52em;
+  font-variation-settings:"wdth" 92,"wght" 500;
+  letter-spacing:.02em; opacity:.7; margin-bottom:.35em;
+}
+
+/* preprint and coverage links under a project */
+.proj-links{ margin:0; display:flex; flex-wrap:wrap; gap:8px 18px }
+.proj-links a{
+  font-family:"IBM Plex Mono",monospace; font-size:11.5px;
+  letter-spacing:.06em; text-transform:uppercase;
+  border-bottom:2px solid var(--blue); color:var(--ink);
+  text-decoration:none; padding-bottom:2px;
+}
+.proj-links a:hover{ background:var(--lime); border-bottom-color:var(--ink) }
+
 .band-body{ padding:var(--pad); display:flex; flex-direction:column; gap:16px }
 
 .chip-row{ display:flex; flex-wrap:wrap; gap:7px }
@@ -437,6 +476,23 @@ button:focus-visible{ outline:3px solid var(--blue); outline-offset:2px }
   font-size:15px; line-height:1.55; color:var(--ink);
 }
 .quote cite{ display:block; margin-top:7px; font-size:12.5px; color:var(--muted); font-style:normal }
+
+/* ---------- people ------------------------------------------------------- */
+
+.people{ list-style:none; margin:0; padding:0; display:grid; grid-template-columns:1fr; gap:0 }
+@media(min-width:760px){ .people{ grid-template-columns:1fr 1fr; gap:0 40px } }
+.people li{ padding:16px 0; border-top:1px solid var(--faint); display:block }
+.people .p-name{
+  display:block; font-family:"Archivo",Arial,sans-serif;
+  font-variation-settings:"wdth" 92,"wght" 700; font-size:18px; margin-bottom:3px;
+}
+.people .p-name a{ text-decoration:none; border-bottom:2px solid var(--blue) }
+.people .p-name a:hover{ background:var(--lime); border-bottom-color:var(--ink) }
+.people .p-role{
+  display:block; font-family:"IBM Plex Mono",monospace; font-size:11px;
+  letter-spacing:.07em; text-transform:uppercase; color:var(--blue); margin-bottom:6px;
+}
+.people .p-note{ display:block; font-size:14.5px; line-height:1.5; color:var(--muted) }
 
 /* ---------- news strip ---------------------------------------------------- */
 

@@ -3,12 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Xinyu Fu — Human–AI Complementarity</title>
-<meta name="description" content="Xinyu Fu is an Assistant Professor of Computer Information Systems at Georgia State University. She studies human–AI complementarity: when people catch what algorithms miss, and when machines make work more meaningful.">
+<title>Xinyu Fu &mdash; Human&ndash;AI Complementarity</title>
+<meta name="description" content="Xinyu Fu is an Assistant Professor of Computer Information Systems at Georgia State University. She studies how AI makes people better at their work, what it sets off that nobody planned for, and how to govern it.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <link rel="stylesheet" href="/assets/site.css">
+<script src="/assets/site.js" defer></script>
 <link rel="icon" href="/profile.png">
 </head>
 <body>
@@ -28,7 +29,6 @@
     </div>
   </nav>
 
-  <!-- ============================ HERO ============================ -->
   <header class="hero">
     <div class="rail">
       <div class="rail-top">
@@ -40,329 +40,259 @@
         </div>
       </div>
 
-      <p class="thesis">People and algorithms are wrong in <b>different ways</b>. I study when that difference becomes an advantage — and what organisations get wrong when they design the hand-off.</p>
+      <p class="thesis"><b>AI can make people better at their work than they could be alone.</b> I study how that gets built, what it sets off that nobody planned for, and how to govern it.</p>
 
       <ul class="rail-links">
-        <li><a href="mailto:xinyufu@gsu.edu">Email <span>xinyufu@gsu.edu</span></a></li>
+        <li><a class="mail" data-u="xinyufu" data-d="gsu.edu" href="#">Email <span>xinyufu [at] gsu.edu</span></a></li>
         <li><a href="https://scholar.google.com/citations?user=0OM4QfkAAAAJ&amp;hl=en">Google Scholar <span>Publications &amp; citations</span></a></li>
         <li><a href="https://www.linkedin.com/in/xinyu-fu-pitt">LinkedIn <span>xinyu-fu-pitt</span></a></li>
-        <li><a href="/join/">Student RAs <span>Volunteers welcome →</span></a></li>
+        <li><a href="/join/">Students <span>RA volunteers welcome &rarr;</span></a></li>
       </ul>
     </div>
 
     <div class="mosaic">
       <a class="tile" href="/research/#manufacturing">
-        <img src="/assets/img/manufacturing.jpg" alt="A worker on an automotive assembly line guiding a powered lift arm into a vehicle door frame.">
-        <span class="tile-note">MIS Quarterly</span>
+        <img src="/assets/img/manufacturing.jpg" alt="A worker on an automotive assembly line guiding a powered lift arm carrying a glass panel into a vehicle door frame.">
+        <span class="tile-note">Embodied AI</span>
         <span class="tile-label"><span class="plus">AI+</span><span class="dom">Manufacturing</span></span>
+      </a>
+
+      <a class="tile" href="/research/#service">
+        <img src="/assets/img/hotelrobot.jpg" alt="A room-service delivery robot standing in a hotel corridor outside guest room doors, lit in magenta.">
+        <span class="tile-note">Embodied AI</span>
+        <span class="tile-label"><span class="plus">AI+</span><span class="dom">Service</span></span>
       </a>
 
       <a class="tile tile--duo" href="/research/#sales">
         <img src="/assets/img/sales.jpg" alt="A large open-plan call centre floor divided into a grid of identical cubicles.">
         <span class="duo-wash"></span>
-        <span class="tile-note">Management Science</span>
+        <span class="tile-note">Agentic AI</span>
         <span class="tile-label"><span class="plus">AI+</span><span class="dom">Sales</span></span>
       </a>
 
-      <a class="tile tile--drawn" href="/research/#service">
-        <svg viewBox="0 0 400 300" role="img" aria-label="A hinge with two door-swing arcs, the outer one wider, beside a full speech bubble and a much smaller faded one.">
-          <g fill="none" stroke="#1E102F" stroke-width="3">
-            <path d="M96 246 A 150 150 0 0 0 246 96" stroke-dasharray="7 9" opacity=".55"/>
-            <path d="M96 246 A 196 196 0 0 0 292 50"/>
-          </g>
-          <g stroke="#1E102F" stroke-width="3">
-            <line x1="96" y1="60" x2="96" y2="252" />
-            <circle cx="96" cy="246" r="7" fill="#1E102F"/>
-          </g>
-          <g fill="#FFFFFF" stroke="#1E102F" stroke-width="3">
-            <path d="M150 66 h84 a6 6 0 0 1 6 6 v40 a6 6 0 0 1-6 6 h-46 l-16 15 v-15 h-22 a6 6 0 0 1-6-6 V72 a6 6 0 0 1 6-6 z"/>
-          </g>
-          <g opacity=".34" fill="#FFFFFF" stroke="#1E102F" stroke-width="3">
-            <path d="M270 170 h44 a5 5 0 0 1 5 5 v20 a5 5 0 0 1-5 5 h-24 l-11 10 v-10 h-9 a5 5 0 0 1-5-5 v-20 a5 5 0 0 1 5-5 z"/>
-          </g>
-        </svg>
-        <span class="tile-note">Information Systems Research</span>
-        <span class="tile-label"><span class="plus">AI+</span><span class="dom">Service</span></span>
-      </a>
-
-      <a class="tile" href="/research/#knowledge">
-        <img src="/assets/img/genai.jpg" alt="Rows of servers inside a data centre carved into rock.">
-        <span class="tile-note">Working paper</span>
-        <span class="tile-label"><span class="plus">AI+</span><span class="dom">Knowledge</span></span>
+      <a class="tile" href="/research/#edubot">
+        <img src="/assets/img/nigeria.jpg" alt="A classroom of students seated at long benches in a school science laboratory in Nigeria.">
+        <span class="tile-note">Agentic AI</span>
+        <span class="tile-label"><span class="plus">AI+</span><span class="dom">Education</span></span>
       </a>
     </div>
   </header>
 
-  <!-- ============================ UNIVERSE ============================ -->
   <a class="skylink" href="/universe/">
     <canvas class="skylink-stars" id="skystars" aria-hidden="true"></canvas>
     <span class="skylink-in">
       <span class="eyebrow" style="color:#9A8CB4">Interactive</span>
       <span class="skylink-h">See where my research is</span>
-      <span class="skylink-p">Seventeen studies, five constellations. Work that shares a question sits close together. Fall into a region and read the stars.</span>
-      <span class="skylink-btn">Open the map →</span>
+      <span class="skylink-p">Every project placed on two axes: what kind of AI it is, and whether it asks how the benefit gets built, what it set off, or how to govern that. Fall into a region and read the stars.</span>
+      <span class="skylink-btn">Open the map &rarr;</span>
     </span>
   </a>
 
-  <!-- ============================ RESEARCH ============================ -->
   <div class="sec-head">
     <h2>Selected Research</h2>
-    <span class="count">Six of eleven active projects · <a href="/publications/">full list</a></span>
+    <span class="count">Six of thirteen &middot; <a href="/research/">all projects</a></span>
   </div>
 
-  <!-- 1 -->
-  <article class="band" id="manufacturing">
+  <article class="band" id="retrieval">
     <div class="band-body">
-      <div class="chip-row">
-        <span class="chip chip--venue">Under review · MIS Quarterly</span>
-        <span class="chip">Revelatory case study</span>
-      </div>
-      <h3>Reinventing Manufacturing: Stratified Workforce Empowerment with Embodied AI</h3>
-      <p class="authors"><b>Fu, X.</b>, Mathiassen, L., &amp; Ramasubbu, N.</p>
-      <p class="finding">A U.S. auto-glass plant put embodied AI on its shop floor. Workers came out of it describing their jobs as more meaningful — and the ones who grew the most, taking on more control <em>and</em> more responsibility at once, were the <b>least likely to advance</b>. The firm's advancement criteria had been built for a more divided shop floor, and had no category — and no role — for people whose work now crossed all of them.</p>
-    </div>
-    <div class="band-art">
-      <img src="/assets/img/manufacturing.jpg" alt="A worker on an automotive assembly line guiding a powered lift arm into a vehicle door frame.">
-    </div>
-  </article>
-
-  <!-- 2 -->
-  <article class="band band--flip" id="sales">
-    <div class="band-body">
-      <div class="chip-row">
-        <span class="chip chip--venue">Under review · Management Science</span>
-        <span class="chip">Field quasi-experiment</span>
-      </div>
-      <h3>When Better Opportunities Backfire</h3>
-      <p class="authors"><b>Fu, X.</b>, Luo, S., Ramasubbu, N., Shen, P., Wang, X., &amp; Wang, Y.</p>
-      <p class="finding">An insurer handed its cold calls to an AI voice agent, leaving human agents a better set of leads to work. Their conversion on the day's first calls <b>fell</b>. Expecting something better next makes the thing in your hand easier to drop: early in the shift agents spent measurably less time on each promising lead, and were readier to push it back to the shared queue. The behavioural response swamped the mechanical gain.</p>
-      <div class="metrics">
-        <div class="metric"><span class="metric-value">−4.5pp</span><span class="metric-label">fall in conversion on the first calls of the day</span></div>
-        <div class="metric"><span class="metric-value">−13%</span><span class="metric-label">less time spent on those early high-intent calls</span></div>
-        <div class="metric"><span class="metric-value">567k</span><span class="metric-label">outbound calls around a sharp AI routing expansion</span></div>
-      </div>
-    </div>
-    <div class="band-art">
-      <img src="/assets/img/sales.jpg" alt="A large open-plan call centre floor divided into a grid of identical cubicles.">
-    </div>
-  </article>
-
-  <!-- 3 -->
-  <article class="band" id="service">
-    <div class="band-body">
-      <div class="chip-row">
-        <span class="chip chip--venue">Under review · Information Systems Research</span>
-        <span class="chip">Field experiment</span>
-      </div>
-      <h3>The Privacy Asymmetry of Service Robots</h3>
-      <p class="authors">Zhang, A., <b>Fu, X.</b>, Maruping, L. M., &amp; Liu, S.</p>
-      <p class="finding">When a robot rather than a person brings something to a hotel-room door, guests protect two kinds of privacy in opposite directions at once: they <b>open the door wider and go quiet</b>. Physical guard drops, informational guard goes up. Any service design that treats "privacy" as one dial will get one of them wrong.</p>
-      <div class="metrics">
-        <div class="metric"><span class="metric-value">−0.79</span><span class="metric-label">spatial boundary protection — the door opens wider</span></div>
-        <div class="metric"><span class="metric-value">+1.03</span><span class="metric-label">data boundary protection — the guest says less</span></div>
-      </div>
-    </div>
-    <div class="band-art is-lav">
-      <svg viewBox="0 0 400 300" role="img" aria-label="A hinge with two door-swing arcs, the outer one wider, beside a full speech bubble and a much smaller faded one.">
-        <g fill="none" stroke="#1E102F" stroke-width="3">
-          <path d="M96 246 A 150 150 0 0 0 246 96" stroke-dasharray="7 9" opacity=".55"/>
-          <path d="M96 246 A 196 196 0 0 0 292 50"/>
-        </g>
-        <g stroke="#1E102F" stroke-width="3">
-          <line x1="96" y1="60" x2="96" y2="252"/>
-          <circle cx="96" cy="246" r="7" fill="#1E102F"/>
-        </g>
-        <g fill="#FFFFFF" stroke="#1E102F" stroke-width="3">
-          <path d="M150 66 h84 a6 6 0 0 1 6 6 v40 a6 6 0 0 1-6 6 h-46 l-16 15 v-15 h-22 a6 6 0 0 1-6-6 V72 a6 6 0 0 1 6-6 z"/>
-        </g>
-        <g opacity=".34" fill="#FFFFFF" stroke="#1E102F" stroke-width="3">
-          <path d="M270 170 h44 a5 5 0 0 1 5 5 v20 a5 5 0 0 1-5 5 h-24 l-11 10 v-10 h-9 a5 5 0 0 1-5-5 v-20 a5 5 0 0 1 5-5 z"/>
-        </g>
-      </svg>
-    </div>
-  </article>
-
-  <!-- 4 -->
-  <article class="band band--flip" id="oversight">
-    <div class="band-body">
-      <div class="chip-row">
-        <span class="chip chip--live">Forthcoming · JMIS</span>
-        <span class="chip">Two field experiments</span>
-      </div>
+      <div class="chip-row"><span class="chip chip--live">Forthcoming</span><span class="chip">Journal of Management Information Systems</span><span class="chip">Two field experiments</span></div>
       <h3>Knowing Is Not Enough: Information Retrievability as a Precondition to Effective LLM Oversight</h3>
       <p class="authors"><b>Fu, X.</b>, Ramasubbu, N., &amp; Galletta, D.</p>
-      <p class="finding">Reading the system's own account of why it errs is not enough. People made to <b>write that explanation themselves</b> caught meaningfully more errors than people handed the same information to read. And the habit wears off: over a run of daily use, detection slipped a little each day — unless something was there to put the knowledge back within reach. Oversight fails less because people don't know models err than because that knowledge isn't retrievable at the moment they're looking at the answer.</p>
-      <div class="metrics">
-        <div class="metric"><span class="metric-value">+10.6pp</span><span class="metric-label">more errors caught writing your own explanation than reading the system's (0.78 vs 0.68, N = 400)</span></div>
-        <div class="metric"><span class="metric-value">−2.5pp</span><span class="metric-label">detection lost per day of routine use — slowed to −1.7 when a retrieval cue was present</span></div>
-      </div>
+      <p class="finding">Reading the system's own account of why it errs is not enough. People made to <b>write that explanation themselves</b> caught meaningfully more errors than people handed the same information to read. And the habit wears off: over a run of daily use, detection slipped a little each day &mdash; unless something was there to put the knowledge back within reach.</p>
+      <p class="proj-links"><a href="https://arxiv.org/abs/2609.01976">Preprint on arXiv &rarr;</a> <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7392398">Preprint on SSRN &rarr;</a></p>
+      <div class="metrics"><div class="metric"><span class="metric-value">+10.6pp</span><span class="metric-label">more errors caught writing your own explanation than reading the system&rsquo;s (0.78 vs 0.68, N = 400)</span></div><div class="metric"><span class="metric-value">&minus;2.5pp</span><span class="metric-label">detection lost per day of routine use &mdash; slowed to &minus;1.7 when a retrieval cue was present</span></div></div>
     </div>
-    <div class="band-art">
-      <img src="/assets/img/errors.jpg" alt="Operators seated at a bank of monitors in a control room, facing a wall of screens.">
+    <div class="band-art is-fig">
+<svg viewBox="0 0 400 300" role="img" aria-label="Three gates in a row labelled engagement, capability and retrieval. The first two stand wide open and answers pass through; the retrieval gate is nearly shut and holds one back." preserveAspectRatio="xMidYMid meet">
+<rect x="0" y="0" width="400" height="300" fill="#F6F4F9"/>
+<line x1="6" y1="150" x2="394" y2="150" stroke="#1E102F" stroke-width="2" stroke-dasharray="5 7" opacity=".3"/>
+<rect x="86" y="44" width="12" height="69" fill="#DCFF96" stroke="#1E102F" stroke-width="2"/>
+<rect x="86" y="187" width="12" height="69" fill="#DCFF96" stroke="#1E102F" stroke-width="2"/>
+<text x="92" y="286" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="10.5" letter-spacing="1.6" fill="#1E102F" text-anchor="middle">ENGAGEMENT</text>
+<rect x="194" y="44" width="12" height="75" fill="#DCFF96" stroke="#1E102F" stroke-width="2"/>
+<rect x="194" y="181" width="12" height="75" fill="#DCFF96" stroke="#1E102F" stroke-width="2"/>
+<text x="200" y="286" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="10.5" letter-spacing="1.6" fill="#1E102F" text-anchor="middle">CAPABILITY</text>
+<rect x="302" y="44" width="12" height="98" fill="#FF7874" stroke="#1E102F" stroke-width="2"/>
+<rect x="302" y="158" width="12" height="98" fill="#FF7874" stroke="#1E102F" stroke-width="2"/>
+<text x="308" y="286" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="10.5" letter-spacing="1.6" fill="#1E102F" text-anchor="middle">RETRIEVAL</text>
+<circle cx="20" cy="150" r="6" fill="#1E102F" opacity=".9"/>
+<circle cx="44" cy="150" r="6" fill="#1E102F" opacity=".9"/>
+<circle cx="68" cy="150" r="6" fill="#1E102F" opacity=".9"/>
+<circle cx="130" cy="150" r="6" fill="#1E102F" opacity=".9"/>
+<circle cx="160" cy="150" r="6" fill="#1E102F" opacity=".9"/>
+<circle cx="240" cy="150" r="6" fill="#1E102F" opacity=".9"/>
+<circle cx="268" cy="150" r="6" fill="#1E102F" opacity=".9"/>
+<circle cx="292" cy="150" r="7.5" fill="#FF7874" stroke="#1E102F" stroke-width="2"/>
+<circle cx="292" cy="150" r="16" fill="none" stroke="#FF7874" stroke-width="2" opacity=".55"/>
+<circle cx="356" cy="150" r="6" fill="#1E102F" opacity=".9"/>
+<text x="200" y="26" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="10" letter-spacing="2.2" fill="#1E102F" text-anchor="middle" opacity=".62">KNOWING &#8594; USING</text>
+</svg>
     </div>
   </article>
 
-  <!-- 5 -->
-  <article class="band" id="knowledge">
+  <article class="band band--flip" id="hrm">
+    <div class="band-art is-type is-lime">
+      <span class="type-in"><em>Advances in</em><br>Human&ndash;AI Collaboration</span>
+    </div>
     <div class="band-body">
-      <div class="chip-row">
-        <span class="chip chip--venue">Working paper</span>
-        <span class="chip">Computational field study</span>
-      </div>
-      <h3>Calibrating Epistemic Convergence in Generative AI</h3>
-      <p class="authors">Rai, A., <b>Fu, X.</b>, &amp; Xia, Y.</p>
-      <p class="finding">Ask a room of people the same programming question and you get genuinely different answers. Ask a model the same question many times and the answers cluster — and <b>newer models cluster tighter, not looser</b>. Broadening the prompt, raising the temperature and keeping prior answers out of the context pull some of the variety back, but nowhere near all of it.</p>
-      <div class="metrics">
-        <div class="metric"><span class="metric-value">375</span><span class="metric-label">Stack Overflow questions, sampled after every model's training cutoff</span></div>
-        <div class="metric"><span class="metric-value">2.4–6.8%</span><span class="metric-label">of the narrowing those three levers recover — the answers stay far more alike than human ones</span></div>
-      </div>
-    </div>
-    <div class="band-art">
-      <img src="/assets/img/genai.jpg" alt="Rows of servers inside a data centre carved into rock.">
+      <div class="chip-row"><span class="chip chip--live">Published</span><span class="chip">Wiley ISE Book Series</span><span class="chip">Book chapter</span></div>
+      <h3>Human&ndash;AI Collaboration in HRM</h3>
+      <p class="authors"><b>Fu, X.</b> et al.</p>
+      <p class="finding">A chapter in <em>Advances in Human&ndash;AI Collaboration</em>, edited by V. G. Duffy, W. Karwowski and G. Salvendy, on what changes for the people doing the work when AI enters hiring, evaluation and development &mdash; and on which parts of the job stubbornly should not be handed over.</p>
     </div>
   </article>
 
-  <!-- 6 -->
-  <article class="band band--flip" id="creativity">
+  <article class="band" id="edubot">
     <div class="band-body">
-      <div class="chip-row">
-        <span class="chip chip--venue">Working paper · revision in progress</span>
-        <span class="chip">Natural experiment</span>
-      </div>
-      <h3>When Transparency Backfires</h3>
-      <p class="authors">Yang, J., <b>Fu, X.</b>, Ramasubbu, N., &amp; Fan, C.</p>
-      <p class="finding">Kickstarter made AI disclosure mandatory and funding fell across the platform. Projects that had built their pitch on human craft were <b>shielded from the general suspicion and punished hardest when they actually disclosed</b>. Authenticity works as armour right up until the moment it is contradicted.</p>
-      <div class="metrics">
-        <div class="metric"><span class="metric-value">12,521</span><span class="metric-label">Kickstarter projects around the disclosure mandate</span></div>
-        <div class="metric"><span class="metric-value">~1 in 10</span><span class="metric-label">of the projects that could disclose actually did</span></div>
-      </div>
+      <div class="chip-row"><span class="chip chip--live">In the world</span><span class="chip">Student&ndash;faculty project</span><span class="chip">Deployed system</span></div>
+      <h3>EduBot Naija</h3>
+      <p class="authors">A student&ndash;faculty collaboration supported by Georgia State University</p>
+      <p class="finding">An AI tutor that teaches the curriculum in local Nigerian languages, built by students for communities the English-only version of the internet was never going to reach. It is the clearest case I have of the thing I actually believe: <b>the point of the technology is the person on the other side of it</b>.</p>
+      <p class="proj-links"><a href="https://www.itedgenews.africa/edubot-naija-launches-ai-powered-multilingual-learning-platform-across-nigeria/">Coverage in ITEdgeNews &rarr;</a></p>
     </div>
     <div class="band-art">
-      <img src="/assets/img/authenticity.jpg" alt="A craftsman shaping a large figure by hand from woven straw in a workshop.">
+      <img src="/assets/img/nigeria.jpg" alt="A classroom of students seated at long benches in a school science laboratory in Nigeria, with their teacher standing at the front.">
     </div>
   </article>
 
-  <!-- ============================ JOIN ============================ -->
+  <article class="band band--flip" id="manufacturing">
+    <div class="band-art">
+      <img src="/assets/img/manufacturing.jpg" alt="A worker on an automotive assembly line guiding a powered lift arm carrying a glass panel into a vehicle door frame.">
+    </div>
+    <div class="band-body">
+      <div class="chip-row"><span class="chip chip--venue">Under review</span><span class="chip">Revelatory case study</span></div>
+      <h3>Reinventing Manufacturing: Stratified Workforce Empowerment with Embodied AI</h3>
+      <p class="authors"><b>Fu, X.</b>, Mathiassen, L., &amp; Ramasubbu, N.</p>
+      <p class="finding">A U.S. auto-glass plant put embodied AI on its shop floor. Workers came out of it describing their jobs as more meaningful &mdash; and the ones who grew the most, taking on more control <em>and</em> more responsibility at once, were the <b>least likely to advance</b>. The firm's advancement criteria had been built for a more divided shop floor, and had no category &mdash; and no role &mdash; for people whose work now crossed all of them.</p>
+    </div>
+  </article>
+
+  <article class="band" id="sales">
+    <div class="band-body">
+      <div class="chip-row"><span class="chip chip--venue">Under review</span><span class="chip">Field quasi-experiment</span></div>
+      <h3>When Better Opportunities Backfire</h3>
+      <p class="authors"><b>Fu, X.</b>, Luo, S., Ramasubbu, N., Shen, P., Wang, X., &amp; Wang, Y.</p>
+      <p class="finding">An insurer handed its cold calls to an AI voice agent, leaving human agents a better set of leads to work. Their conversion on the day's first calls <b>fell</b>. Expecting something better next makes the thing in your hand easier to drop: early in the shift agents spent measurably less time on each promising lead, and were readier to push it back to the shared queue.</p>
+      <div class="metrics"><div class="metric"><span class="metric-value">&minus;4.5pp</span><span class="metric-label">fall in conversion on the first calls of the day</span></div><div class="metric"><span class="metric-value">&minus;13%</span><span class="metric-label">less time spent on those early high-intent calls</span></div><div class="metric"><span class="metric-value">567k</span><span class="metric-label">outbound calls around a sharp AI routing expansion</span></div></div>
+    </div>
+    <div class="band-art is-duo">
+      <img src="/assets/img/sales.jpg" alt="A large open-plan call centre floor divided into a grid of identical cubicles.">
+      <span class="duo-wash"></span>
+    </div>
+  </article>
+
+  <article class="band band--flip" id="service">
+    <div class="band-art">
+      <img src="/assets/img/hotelrobot.jpg" alt="A room-service delivery robot standing in a hotel corridor outside guest room doors, lit in magenta.">
+    </div>
+    <div class="band-body">
+      <div class="chip-row"><span class="chip chip--venue">Under review</span><span class="chip">Field experiment</span></div>
+      <h3>The Privacy Asymmetry of Service Robots</h3>
+      <p class="authors">Zhang, A., <b>Fu, X.</b>, Maruping, L. M., &amp; Liu, S.</p>
+      <p class="finding">When a robot rather than a person brings something to a hotel-room door, guests protect two kinds of privacy in opposite directions at once: they <b>open the door wider and go quiet</b>. Physical guard drops, informational guard goes up. Any service design that treats &ldquo;privacy&rdquo; as one dial will get one of them wrong.</p>
+      <div class="metrics"><div class="metric"><span class="metric-value">&minus;0.79</span><span class="metric-label">spatial boundary protection &mdash; the door opens wider</span></div><div class="metric"><span class="metric-value">+1.03</span><span class="metric-label">data boundary protection &mdash; the guest says less</span></div></div>
+    </div>
+  </article>
+
   <section class="cta" id="join">
     <div>
       <p class="eyebrow eyebrow--boxed">Student research assistants</p>
       <h2>Come work on this with me.</h2>
       <p class="lede">I take on <b>student research assistant volunteers</b> year-round, undergraduate and graduate. You do not need research experience and you do not need to have taken my class. You need to be curious and to finish things.</p>
-      <p style="font-size:15.5px;color:var(--muted);max-width:52ch">Recent RAs have cleaned and coded field data, run literature searches, built the experiment platforms my studies actually run on, and sat in on analysis from the first regression to the last.</p>
+      <p style="font-size:15.5px;color:var(--muted);max-width:52ch">Recent students have cleaned and coded field data, run literature searches, built the experiment platforms my studies run on, and sat in on analysis from the first regression to the last.</p>
     </div>
     <div>
       <ol class="send-list">
-        <li><span class="n">01</span><span>A <b>CV or résumé</b>. One page is plenty.</span></li>
-        <li><span class="n">02</span><span>One <b>writing sample</b>. A course project report is perfectly fine — I care how you build an argument, not where it was published.</span></li>
+        <li><span class="n">01</span><span>A <b>CV or r&eacute;sum&eacute;</b>. One page is plenty.</span></li>
+        <li><span class="n">02</span><span>One <b>writing sample</b>. A course project report is perfectly fine &mdash; I care how you build an argument, not where it was published.</span></li>
         <li><span class="n">03</span><span>Two sentences on <b>which project caught your eye</b>, and why.</span></li>
       </ol>
-      <p style="margin:22px 0 0"><a class="btn" href="mailto:xinyufu@gsu.edu?subject=Research%20assistant%20volunteer">Email xinyufu@gsu.edu</a></p>
+      <p style="margin:22px 0 0"><a class="btn mail" data-u="xinyufu" data-d="gsu.edu" data-s="Research assistant volunteer" href="#">Email xinyufu [at] gsu.edu</a></p>
+      <p style="margin:14px 0 0;font-size:13.5px"><a href="/join/">Who I work with, and what the work is like &rarr;</a></p>
     </div>
   </section>
 
-  <!-- ============================ STRIP ============================ -->
   <div class="strip">
     <div class="strip-cell">
       <h3>Recent</h3>
       <ul>
-        <li><span class="yr">2025</span>Unforgettable Educator Award, Robinson College of Business — nominated by students</li>
-        <li><span class="yr">2025</span>Faculty coach, CoMIS student competition — 1st at group level, advanced to finals</li>
+        <li><span class="yr">2026</span><i>Knowing Is Not Enough</i> accepted at the Journal of Management Information Systems</li>
+        <li><span class="yr">2025</span>Unforgettable Educator Award, Robinson College of Business &mdash; nominated by students</li>
         <li><span class="yr">2024</span>National Social Science Fund of China, national-level funding</li>
       </ul>
     </div>
     <div class="strip-cell">
       <h3>In the press</h3>
       <ul>
-        <li><span class="yr">2025</span><a href="https://www.itedgenews.africa/edubot-naija-launches-ai-powered-multilingual-learning-platform-across-nigeria/">EduBot Naija launches AI-powered multilingual learning platform across Nigeria</a> — ITEdgeNews, on a student–faculty project building curriculum-aligned lessons in local Nigerian languages</li>
+        <li><span class="yr">2025</span><a href="https://www.itedgenews.africa/edubot-naija-launches-ai-powered-multilingual-learning-platform-across-nigeria/">EduBot Naija launches AI-powered multilingual learning platform across Nigeria</a> &mdash; ITEdgeNews, on a student&ndash;faculty project building curriculum-aligned lessons in local Nigerian languages</li>
       </ul>
     </div>
     <div class="strip-cell">
       <h3>Teaching now</h3>
       <ul>
-        <li><span class="yr">F26</span>Agentic AI for Business &amp; Society</li>
-        <li><span class="yr">F25</span>Data Programming</li>
-        <li><a href="/teaching/">All courses →</a></li>
+        <li><span class="yr">F26</span><a href="https://sherryfu0315.github.io/cis4394-agentic-ai/index.html">Agentic AI for Business &amp; Society</a> &mdash; a <a href="https://path.mit.edu/">PATH</a> course</li>
+        <li><span class="yr">S26</span>Agentic AI</li>
+        <li><a href="/teaching/">All courses &rarr;</a></li>
       </ul>
     </div>
   </div>
 
-  <!-- ============================ FOOT ============================ -->
   <footer class="foot">
     <div>
       <h3>Xinyu Fu</h3>
       <p>Department of Computer Information Systems<br>
       J. Mack Robinson College of Business, Georgia State University<br>
       55 Park Place NE, Suite 1727, Atlanta, GA 30303</p>
-      <p><a href="mailto:xinyufu@gsu.edu">xinyufu@gsu.edu</a></p>
+      <p><a class="mail" data-u="xinyufu" data-d="gsu.edu" href="#">xinyufu [at] gsu.edu</a></p>
     </div>
     <div>
       <h3>Elsewhere</h3>
       <ul>
         <li><a href="https://scholar.google.com/citations?user=0OM4QfkAAAAJ&amp;hl=en">Google Scholar</a></li>
         <li><a href="https://www.linkedin.com/in/xinyu-fu-pitt">LinkedIn</a></li>
-        <li><a href="https://www.instagram.com/witcampus_gsu">Women in Technology @ GSU</a></li>
       </ul>
     </div>
     <div>
-      <h3>Photography</h3>
-      <p class="credit">Tiles use openly licensed photographs from Wikimedia Commons. Full attribution and licences: <a href="/credits/">credits</a>.</p>
+      <h3>Credits</h3>
+      <p class="credit">Photographs are openly licensed, from Wikimedia Commons. Figures are drawn for this site. Full attribution: <a href="/credits/">credits</a>.</p>
     </div>
   </footer>
 
 </div>
 
 <script>
-/* A still starfield behind the map invitation — five coloured clouds echoing
-   the five constellations, painted once so the block is complete at rest. */
 (function(){
   var cv = document.getElementById('skystars');
   if (!cv) return;
-  var CLOUDS = [
-    [0.13,0.34,'#DCFF96'], [0.35,0.70,'#FF7874'], [0.58,0.26,'#8FA6FF'],
-    [0.78,0.62,'#ECB8FF'], [0.93,0.30,'#FFDD00']
-  ];
+  var CLOUDS = [[0.13,0.34,'#DCFF96'],[0.35,0.70,'#FF7874'],[0.58,0.26,'#8FA6FF'],
+                [0.78,0.62,'#ECB8FF'],[0.93,0.30,'#FFDD00']];
   function paint(){
     var r = cv.getBoundingClientRect();
     if (r.width < 2 || r.height < 2) return;
     var dpr = Math.min(window.devicePixelRatio || 1, 2);
-    cv.width = Math.round(r.width * dpr);
-    cv.height = Math.round(r.height * dpr);
-    var g = cv.getContext('2d');
-    g.setTransform(dpr, 0, 0, dpr, 0, 0);
-    g.clearRect(0, 0, r.width, r.height);
-
+    cv.width = Math.round(r.width*dpr); cv.height = Math.round(r.height*dpr);
+    var g = cv.getContext('2d'); g.setTransform(dpr,0,0,dpr,0,0);
+    g.clearRect(0,0,r.width,r.height);
     CLOUDS.forEach(function(c){
-      var x = c[0] * r.width, y = c[1] * r.height, rad = Math.max(r.width, r.height) * 0.22;
-      var n = parseInt(c[2].slice(1), 16);
-      var rgb = ((n >> 16) & 255) + ',' + ((n >> 8) & 255) + ',' + (n & 255);
-      var grd = g.createRadialGradient(x, y, 4, x, y, rad);
-      grd.addColorStop(0, 'rgba(' + rgb + ',.17)');
-      grd.addColorStop(1, 'rgba(' + rgb + ',0)');
-      g.fillStyle = grd;
-      g.beginPath(); g.arc(x, y, rad, 0, Math.PI * 2); g.fill();
+      var x=c[0]*r.width, y=c[1]*r.height, rad=Math.max(r.width,r.height)*0.22;
+      var n=parseInt(c[2].slice(1),16), rgb=((n>>16)&255)+','+((n>>8)&255)+','+(n&255);
+      var grd=g.createRadialGradient(x,y,4,x,y,rad);
+      grd.addColorStop(0,'rgba('+rgb+',.17)'); grd.addColorStop(1,'rgba('+rgb+',0)');
+      g.fillStyle=grd; g.beginPath(); g.arc(x,y,rad,0,Math.PI*2); g.fill();
     });
-
-    var seed = 4242;
-    function rnd(){ seed = (seed * 1103515245 + 12345) & 0x7fffffff; return seed / 0x7fffffff; }
-    for (var i = 0; i < 260; i++){
-      g.globalAlpha = 0.2 + rnd() * 0.55;
-      g.fillStyle = '#FFFFFF';
-      g.beginPath();
-      g.arc(rnd() * r.width, rnd() * r.height, rnd() * 1.0 + 0.3, 0, Math.PI * 2);
-      g.fill();
+    var seed=4242; function rnd(){ seed=(seed*1103515245+12345)&0x7fffffff; return seed/0x7fffffff; }
+    for (var i=0;i<260;i++){
+      g.globalAlpha=0.2+rnd()*0.55; g.fillStyle='#FFFFFF';
+      g.beginPath(); g.arc(rnd()*r.width, rnd()*r.height, rnd()*1.0+0.3, 0, Math.PI*2); g.fill();
     }
     CLOUDS.forEach(function(c){
-      g.globalAlpha = 0.95;
-      g.fillStyle = c[2];
-      g.beginPath();
-      g.arc(c[0] * r.width, c[1] * r.height, 2.6, 0, Math.PI * 2);
-      g.fill();
+      g.globalAlpha=0.95; g.fillStyle=c[2];
+      g.beginPath(); g.arc(c[0]*r.width, c[1]*r.height, 2.6, 0, Math.PI*2); g.fill();
     });
-    g.globalAlpha = 1;
+    g.globalAlpha=1;
   }
   paint();
-  var t;
-  window.addEventListener('resize', function(){ clearTimeout(t); t = setTimeout(paint, 160); });
+  var t; window.addEventListener('resize', function(){ clearTimeout(t); t=setTimeout(paint,160); });
 })();
 </script>
 </body>
