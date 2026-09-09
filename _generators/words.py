@@ -127,7 +127,7 @@ HOME_SELECTED_RESEARCH_COUNT = """Six of thirteen &middot; <a href="/research/">
 HOME_JOIN_EYEBROW = "Student research assistants"
 
 # Where it appears: headline of the "come work with me" block on the front page
-HOME_JOIN_HEADLINE = "Come work on this with me."
+HOME_JOIN_HEADLINE = "Interested in working with me?"
 
 # Where it appears: opening paragraph of the "come work with me" block on the front page
 HOME_JOIN_LEDE = "I take on <b>student research assistant volunteers</b> year-round, undergraduate and graduate. You do not need research experience and you do not need to have taken my class. You need to be curious and to finish things."
@@ -280,7 +280,7 @@ JOIN_PAGE_TITLE = "Work with me &mdash; Xinyu Fu"
 JOIN_EYEBROW = "Student research assistants &middot; volunteers"
 
 # Where it appears: main headline at the top of the "Work with me" page
-JOIN_CTA_HEADLINE = "Come work on this with me."
+JOIN_CTA_HEADLINE = "Interested in working with me?"
 
 # Where it appears: opening paragraph under the headline on the "Work with me" page
 JOIN_LEDE = "I take on <b>student research assistant volunteers</b> year-round, undergraduate and graduate. You do not need prior research experience, and you do not need to have taken my class. You need to be curious and to finish things."
