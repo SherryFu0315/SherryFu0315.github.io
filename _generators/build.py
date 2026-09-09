@@ -1,7 +1,14 @@
 # -*- coding: utf-8 -*-
-import io, os, sys
+import io, os, sys, json
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from projects import PROJECTS, COLS, ROWS
+
+# The map card quotes these. Read them from the same file the map is built from,
+# so the figure on the homepage cannot drift away from what the map shows.
+_works = json.load(io.open(os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                                        'works.json'), encoding='utf-8'))
+N_CITED = len(_works)
+N_STUDIES = len(set(c for w in _works for c in w['cited_by']))
 
 R = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))   # repo root
 
@@ -215,8 +222,8 @@ HOME = '''<!DOCTYPE html>
     <canvas class="skylink-stars" id="skystars" aria-hidden="true"></canvas>
     <span class="skylink-in">
       <span class="eyebrow" style="color:#9A8CB4">Interactive</span>
-      <span class="skylink-h">Citation Sky</span>
-      <span class="skylink-p">See whose shoulders the work stands on. Every faint star is a paper one of my studies cites &mdash; and nothing is placed by hand: two studies sit near each other only because they lean on the same literature.</span>
+      <span class="skylink-h">The shoulders we stand on</span>
+      <span class="skylink-p">__N_STUDIES__ of my studies, drawn among the __N_CITED__ papers they lean on. Nothing here is placed by hand &mdash; two studies sit near each other only because they draw on the same work. Mostly it shows what a small corner of a field any one person&rsquo;s research is.</span>
       <span class="skylink-btn">Open the map &rarr;</span>
     </span>
   </a>
@@ -312,5 +319,6 @@ HOME = '''<!DOCTYPE html>
 </body>
 </html>
 ''' % (FONTS, nav('/'), '\n\n'.join(tiles), home_entries, FOOT)
+HOME = HOME.replace('__N_CITED__', str(N_CITED)).replace('__N_STUDIES__', str(N_STUDIES))
 io.open(os.path.join(R, 'index.html'), 'w', encoding='utf-8').write(HOME)
 print('index.html', len(HOME), 'bytes,', len(featured), 'featured')

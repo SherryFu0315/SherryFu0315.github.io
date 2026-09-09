@@ -29,11 +29,15 @@ python3 -m http.server 8731 --directory ~/Documents/website
 # then http://localhost:8731/
 ```
 
-## The citation map
+## The literature map
 
 `universe/index.html` holds two arrangements of the same stars. The two-axis one
-comes from `projects.py` and `constellations.py`. The citation one comes from
+comes from `projects.py` and `constellations.py`. The literature one comes from
 `works.json`, laid out by `citelayout.py`.
+
+The public label is deliberately not "citation sky": read quickly, that names the
+wrong thing — the author's own citation count — when the map is about the
+opposite, how small a part of a field any one body of work is.
 
 `works.json` is the parsed reference lists of twelve manuscripts — 640 references,
 608 distinct works, 25 of them cited by more than one study. It was built by

@@ -5,8 +5,8 @@ The research map. One sky, two arrangements of the same stars:
   "Two axes"     — where I put each study: what kind of AI, and whether it
                    intervenes or observes. Hand-drawn constellations, grey slots
                    for the work still to come.
-  "Citation sky" — where the literature puts them: a force simulation over the
-                   real citation graph, surrounded by every work they cite.
+  "The literature" — where the literature puts them: a force simulation over the
+                   real citation graph, surrounded by every work they lean on.
 
 Switching between the two moves the same stars, so you can see a study travel
 from the box I filed it under to the company it actually keeps.
@@ -137,7 +137,7 @@ PAGE = u'''<!DOCTYPE html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Research Universe &mdash; Xinyu Fu</title>
-<meta name="description" content="Where Xinyu Fu's research comes from: every study drawn among the works it cites, positioned by the real citation graph rather than by hand. A second view arranges the same studies by what kind of AI they are about.">
+<meta name="description" content="Xinyu Fu's research drawn among the literature it rests on — every study placed by the real citation graph rather than by hand, to show how small a part of a field any one body of work is. A second view arranges the same studies by what kind of AI they are about.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=IBM+Plex+Mono:wght@400;500&display=swap">
@@ -315,11 +315,11 @@ PAGE = u'''<!DOCTYPE html>
 
   <div class="sky-head">
     <div><h1>How the work<br>connects</h1></div>
-    <p id="head-copy">Where the literature puts them. Across: nothing &mdash; there are no axes here. Two studies are close together <b>only because they cite the same work</b>, and every faint star is one of those works. Hover a faint star to see what it is; click a bright one to go to the study.</p>
+    <p id="head-copy">No axes here &mdash; this is where the literature puts them. Every faint star is a paper one of my studies leans on; the bright ones are the studies. Two sit close together <b>only because they draw on the same work</b>. __N_CSTUDIES__ studies against __N_CITED__ papers is about the right sense of scale.</p>
     <div class="hint" style="border:0;padding:0">
       <div class="viewtoggle" role="group" aria-label="Choose an arrangement">
         <button type="button" id="v-axis" aria-pressed="false">Two axes</button>
-        <button type="button" id="v-cite" aria-pressed="true">Citation sky</button>
+        <button type="button" id="v-cite" aria-pressed="true">The literature</button>
       </div>
     </div>
   </div>
@@ -344,7 +344,7 @@ PAGE = u'''<!DOCTYPE html>
   </div>
 
   <p class="blurb is-off" id="blurb-axis">Where I file each study. The constellations are real ones &mdash; Ursa Major, Cassiopeia, Orion, Lyra, Corvus, Crux &mdash; and the grey points are the places still open in each cell.</p>
-  <p class="blurb" id="blurb-cite">Where the literature files them. Every faint star is a work one of these studies cites; the bright ones are the studies. <b>No position here is chosen by hand</b> &mdash; a force simulation runs over the real citation graph, so two studies sit close together only when they draw on the same references, and a work several papers lean on is pulled into the space between them. <b>__N_CITED__</b> works cited, <b>__N_SHARED__</b> of them by two or more studies.</p>
+  <p class="blurb" id="blurb-cite">Every faint star is a work one of these studies leans on; the bright ones are the studies. <b>No position here is chosen by hand</b> &mdash; a force simulation runs over the real citation graph, so two studies sit close together only when they draw on the same references, and a work several papers lean on is pulled into the space between them. <b>__N_CITED__</b> works, <b>__N_SHARED__</b> of them reached by more than one study. The point of drawing it this way is the proportion: a working life of research is a small, well-lit patch of somebody else&rsquo;s field.</p>
 
   <section class="index-list">
     <h2>Everything on the map, in plain text</h2>
@@ -752,6 +752,7 @@ PAGE = (PAGE.replace('__COLS__',   json.dumps(js_cols,   ensure_ascii=False))
             .replace('__W__', str(W)).replace('__H__', str(H))
             .replace('__CW__', str(int(W * CANVAS))).replace('__CH__', str(int(H * CANVAS)))
             .replace('__DPR__', str(CANVAS))
+            .replace('__N_CSTUDIES__', str(N_CSTUDIES))
             .replace('__N_CITED__',  str(N_CITED))
             .replace('__N_SHARED__', str(N_SHARED)))
 
