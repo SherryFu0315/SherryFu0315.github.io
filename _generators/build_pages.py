@@ -202,7 +202,7 @@ NAV
 
   <div class="sec-head">
     <h2>__TEACHING_HEADING__</h2>
-    <span class="count">__TEACHING_AWARD_NOTE__</span>
+    <span class="count is-award">__TEACHING_AWARD_NOTE__</span>
   </div>
 
   <div class="prose">
@@ -233,7 +233,7 @@ NAV
     </div>
 
     <div class="course">
-      <div class="when">Fall 2025<br>Fall 2024 &middot; Fall 2023</div>
+      <div class="when">Fall 2025<br>Fall 2024<br>Fall 2023</div>
       <div>
         <h4>__TEACHING_DATA_PROGRAMMING_TITLE__</h4>
         <p>__TEACHING_DATA_PROGRAMMING_DESC__</p>

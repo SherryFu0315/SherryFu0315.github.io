@@ -435,7 +435,7 @@ TEACHING_AGENTIC_AI_SPRING_2026_DESC = "Undergraduate. The first run of the cour
 TEACHING_DATA_PROGRAMMING_TITLE = "Data Programming"
 
 # Where it appears: description of the Georgia State data programming course
-TEACHING_DATA_PROGRAMMING_DESC = "Undergraduate. Python for people who came to solve business problems rather than to write software &mdash; data wrangling, analysis, and the point at which a model earns the right to be believed."
+TEACHING_DATA_PROGRAMMING_DESC = "Undergraduate. Python and machine learning for people who came to solve business problems rather than to write software &mdash; wrangling the data, training a model, reading what it is actually telling you, and the point at which it earns the right to be believed."
 
 # Where it appears: course name of the Georgia State graduate database course
 TEACHING_DB_FUNDAMENTALS_TITLE = "Fundamentals of Database Management Systems"
