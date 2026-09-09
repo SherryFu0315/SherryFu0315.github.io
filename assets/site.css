@@ -344,6 +344,11 @@ a.btn:hover, .btn:hover{ background:var(--coral); color:var(--ink) }
   font-family:"IBM Plex Mono",monospace; font-size:11.5px;
   letter-spacing:.08em; text-transform:uppercase; color:var(--muted); padding-top:4px;
 }
+/* A drawn mark per subject, so a page of terms and titles has something to
+   scan by. Colours come from the same palette the research map uses, and the
+   agent courses carry the very star that stands for them there. */
+.course .ico{ display:block; width:26px; height:26px; margin:0 0 9px; color:var(--ic,var(--muted)) }
+.course .ico svg{ display:block; width:100%; height:100%; overflow:visible }
 .proj-links{
   display:flex; flex-wrap:wrap; gap:9px 20px; margin:0;
   font-family:"IBM Plex Mono",monospace; font-size:11.5px;

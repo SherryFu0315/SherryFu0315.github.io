@@ -213,7 +213,7 @@ NAV
     <h3>__TEACHING_GSU_HEADING__</h3>
 
     <div class="course">
-      <div class="when">Fall 2026</div>
+      <div class="when"><span class="ico" style="--ic:#FF7874" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor"><path d="M12 1.6c1 6.9 2.5 8.4 9.4 9.4-6.9 1-8.4 2.5-9.4 9.4-1-6.9-2.5-8.4-9.4-9.4 6.9-1 8.4-2.5 9.4-9.4Z"/></svg></span>Fall 2026</div>
       <div>
         <h4><a href="https://sherryfu0315.github.io/cis4394-agentic-ai/index.html">__TEACHING_AGENTIC_AI_TITLE__</a></h4>
         <p>__TEACHING_AGENTIC_AI_DESC__</p>
@@ -228,7 +228,7 @@ NAV
     </div>
 
     <div class="course">
-      <div class="when">Spring 2026</div>
+      <div class="when"><span class="ico" style="--ic:#FF7874" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor"><path d="M12 1.6c1 6.9 2.5 8.4 9.4 9.4-6.9 1-8.4 2.5-9.4 9.4-1-6.9-2.5-8.4-9.4-9.4 6.9-1 8.4-2.5 9.4-9.4Z"/></svg></span>Spring 2026</div>
       <div>
         <h4>__TEACHING_AGENTIC_AI_SPRING_2026_TITLE__</h4>
         <p>__TEACHING_AGENTIC_AI_SPRING_2026_DESC__</p>
@@ -236,7 +236,7 @@ NAV
     </div>
 
     <div class="course">
-      <div class="when">Fall 2025<br>Fall 2024<br>Fall 2023</div>
+      <div class="when"><span class="ico" style="--ic:#274CEC" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor"><circle cx="5" cy="17" r="1.5"/><circle cx="9.5" cy="13.5" r="1.5"/><circle cx="14" cy="12" r="1.5"/><circle cx="18.5" cy="7" r="1.5"/><path d="M3.5 19.5 20.5 5" fill="none" stroke-width="1.4"/></svg></span>Fall 2025<br>Fall 2024<br>Fall 2023</div>
       <div>
         <h4>__TEACHING_DATA_PROGRAMMING_TITLE__</h4>
         <p>__TEACHING_DATA_PROGRAMMING_DESC__</p>
@@ -244,7 +244,7 @@ NAV
     </div>
 
     <div class="course">
-      <div class="when">Spring 2025<br>Spring 2024</div>
+      <div class="when"><span class="ico" style="--ic:#8E5FC0" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor"><ellipse cx="12" cy="6" rx="7" ry="2.6" fill="none" stroke-width="1.4"/><path d="M5 6v6c0 1.4 3.1 2.6 7 2.6s7-1.2 7-2.6V6" fill="none" stroke-width="1.4"/><path d="M5 12v6c0 1.4 3.1 2.6 7 2.6s7-1.2 7-2.6v-6" fill="none" stroke-width="1.4"/></svg></span>Spring 2025<br>Spring 2024</div>
       <div>
         <h4>__TEACHING_DB_FUNDAMENTALS_TITLE__</h4>
         <p>__TEACHING_DB_FUNDAMENTALS_DESC__</p>
@@ -252,7 +252,7 @@ NAV
     </div>
 
     <div class="course">
-      <div class="when">Fall 2024<br>Fall 2023</div>
+      <div class="when"><span class="ico" style="--ic:#8E5FC0" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor"><ellipse cx="12" cy="6" rx="7" ry="2.6" fill="none" stroke-width="1.4"/><path d="M5 6v6c0 1.4 3.1 2.6 7 2.6s7-1.2 7-2.6V6" fill="none" stroke-width="1.4"/><path d="M5 12v6c0 1.4 3.1 2.6 7 2.6s7-1.2 7-2.6v-6" fill="none" stroke-width="1.4"/></svg></span>Fall 2024<br>Fall 2023</div>
       <div>
         <h4>__TEACHING_DBMS_TITLE__</h4>
         <p>__TEACHING_DBMS_DESC__</p>
@@ -262,7 +262,7 @@ NAV
     <h3>__TEACHING_PITT_HEADING__</h3>
 
     <div class="course">
-      <div class="when">Fall 2021</div>
+      <div class="when"><span class="ico" style="--ic:#6B5F7D" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor"><rect x="3" y="5" width="18" height="13" rx="1.6" fill="none" stroke-width="1.4"/><path d="M3 9h18" fill="none" stroke-width="1.4"/><circle cx="5.6" cy="7" r=".8"/></svg></span>Fall 2021</div>
       <div>
         <h4>__TEACHING_INTRO_IS_TITLE__</h4>
         <p>__TEACHING_INTRO_IS_DESC__</p>
@@ -270,7 +270,7 @@ NAV
     </div>
 
     <div class="course">
-      <div class="when">Spring 2021</div>
+      <div class="when"><span class="ico" style="--ic:#274CEC" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor"><circle cx="5" cy="17" r="1.5"/><circle cx="9.5" cy="13.5" r="1.5"/><circle cx="14" cy="12" r="1.5"/><circle cx="18.5" cy="7" r="1.5"/><path d="M3.5 19.5 20.5 5" fill="none" stroke-width="1.4"/></svg></span>Spring 2021</div>
       <div>
         <h4>__TEACHING_DATA_PROGRAMMING_ESSENTIALS_TITLE__</h4>
         <p>__TEACHING_DATA_PROGRAMMING_ESSENTIALS_DESC__</p>
@@ -278,7 +278,7 @@ NAV
     </div>
 
     <div class="course">
-      <div class="when">Spring 2019</div>
+      <div class="when"><span class="ico" style="--ic:#274CEC" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor"><circle cx="5" cy="17" r="1.5"/><circle cx="9.5" cy="13.5" r="1.5"/><circle cx="14" cy="12" r="1.5"/><circle cx="18.5" cy="7" r="1.5"/><path d="M3.5 19.5 20.5 5" fill="none" stroke-width="1.4"/></svg></span>Spring 2019</div>
       <div>
         <h4>__TEACHING_ADVANCED_R_TITLE__</h4>
         <p>__TEACHING_ADVANCED_R_DESC__</p>
@@ -288,7 +288,7 @@ NAV
     <h3>__TEACHING_ELSEWHERE_HEADING__</h3>
 
     <div class="course">
-      <div class="when">Summer 2019</div>
+      <div class="when"><span class="ico" style="--ic:#6B5F7D" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor"><path d="M3.5 4h2.2l2.3 10.4h9.2l2-7.2H7.2" fill="none" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="9.5" cy="19" r="1.5"/><circle cx="16.5" cy="19" r="1.5"/></svg></span>Summer 2019</div>
       <div>
         <h4>__TEACHING_ECOMMERCE_TITLE__</h4>
         <p>__TEACHING_ECOMMERCE_DESC__</p>
@@ -296,7 +296,7 @@ NAV
     </div>
 
     <div class="course">
-      <div class="when">2014&ndash;2017</div>
+      <div class="when"><span class="ico" style="--ic:#6B5F7D" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor"><circle cx="12" cy="12" r="8.4" fill="none" stroke-width="1.4"/><path d="m15 9-4.2 1.6L9 15l4.2-1.6L15 9Z"/></svg></span>2014&ndash;2017</div>
       <div>
         <h4>__TEACHING_CAREER_CENTER_TITLE__</h4>
         <p>__TEACHING_CAREER_CENTER_DESC__</p>
