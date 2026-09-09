@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 import io, os, sys, json
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import words as T
 from projects import PROJECTS, COLS, ROWS
 
 # The map card quotes these. Read them from the same file the map is built from,
@@ -20,34 +21,39 @@ FONTS = ('<link rel="preconnect" href="https://fonts.googleapis.com">\n'
  '<link rel="icon" href="/profile.png">')
 
 def nav(cur):
-    items=[('/research/','Research'),('/universe/','Universe'),('/publications/','Publications'),('/teaching/','Teaching')]
-    out=['  <nav class="nav">','    <a class="brand" href="/">Home</a>','    <div class="navlinks">']
+    items=[('/research/',T.HOME_NAV_RESEARCH),('/universe/',T.HOME_NAV_UNIVERSE),
+           ('/publications/',T.HOME_NAV_PUBLICATIONS),('/teaching/',T.HOME_NAV_TEACHING)]
+    out=['  <nav class="nav">','    <a class="brand" href="/">%s</a>' % T.HOME_NAV_HOME,'    <div class="navlinks">']
     for href,label in items:
         out.append('      <a href="%s"%s>%s</a>' % (href, ' aria-current="page"' if href==cur else '', label))
-    out.append('      <a href="/join/" class="is-cta"%s>Work with me</a>' % (' aria-current="page"' if cur=='/join/' else ''))
+    out.append('      <a href="/join/" class="is-cta"%s>%s</a>'
+               % (' aria-current="page"' if cur=='/join/' else '', T.HOME_NAV_WORK_WITH_ME))
     out+=['    </div>','  </nav>']
     return '\n'.join(out)
 
 FOOT = '''  <footer class="foot">
     <div>
       <h3>Xinyu Fu</h3>
-      <p>Department of Computer Information Systems<br>
-      J. Mack Robinson College of Business, Georgia State University<br>
-      55 Park Place NE, Suite 1727, Atlanta, GA 30303</p>
+      <p>%s</p>
       <p><a class="mail" data-u="xinyufu" data-d="gsu.edu" href="#">xinyufu [at] gsu.edu</a></p>
     </div>
     <div>
-      <h3>Elsewhere</h3>
+      <h3>%s</h3>
       <ul>
-        <li><a href="https://scholar.google.com/citations?user=0OM4QfkAAAAJ&amp;hl=en">Google Scholar</a></li>
-        <li><a href="https://www.linkedin.com/in/xinyu-fu-pitt">LinkedIn</a></li>
+        <li><a href="https://scholar.google.com/citations?user=0OM4QfkAAAAJ&amp;hl=en">%s</a></li>
+        <li><a href="https://www.linkedin.com/in/xinyu-fu-pitt">%s</a></li>
       </ul>
     </div>
     <div>
-      <h3>Credits</h3>
-      <p class="credit">Photography and figure credits: <a href="/credits/">credits</a>.</p>
+      <h3>%s</h3>
+      <p class="credit">%s</p>
     </div>
-  </footer>'''
+  </footer>''' % (T.HOME_FOOT_ADDRESS,
+                  T.HOME_FOOT_ELSEWHERE_TITLE,
+                  T.HOME_FOOT_GOOGLE_SCHOLAR,
+                  T.HOME_FOOT_LINKEDIN,
+                  T.HOME_FOOT_CREDITS_TITLE,
+                  T.HOME_FOOT_CREDIT_LINE)
 
 colById = {c['id']: c for c in COLS}
 NEUTRAL = {'c': '#6B5F7D', 'name': 'Adjacent work'}
@@ -59,7 +65,7 @@ for p in PROJECTS:
 # ------------------------------------------------------------------ matrix --
 def matrix_html():
     out = ['  <div class="matrix">']
-    out.append('    <div class="mx-corner"><span>Research&nbsp;/ AI</span></div>')
+    out.append('    <div class="mx-corner"><span>%s</span></div>' % T.RESEARCH_MATRIX_CORNER)
     for c in COLS:
         out.append('    <div class="mx-col" style="--c:%s"><b>%s</b><i>%s</i></div>' % (c['c'], c['name'], c['sub']))
     for r in ROWS:
@@ -101,7 +107,7 @@ def entry(p, i=0):
     elif p.get('emoji'):
         ph = ('\n    <div class="entry-art is-emoji" aria-hidden="true"><span>%s</span></div>' % p['emoji'])
     find = ('\n      <p class="finding">%s</p>' % p['finding']) if p['finding'] else (
-        '\n      <p class="finding is-tbc">A short description of this project is coming.</p>')
+        '\n      <p class="finding is-tbc">%s</p>' % T.RESEARCH_FINDING_COMING_SOON)
     cls = ''
     if p.get('photo') or p.get('emoji'):
         cls = ' has-art' + (' art-left' if i % 2 else '')
@@ -120,7 +126,7 @@ RESEARCH = '''<!DOCTYPE html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Research &mdash; Xinyu Fu</title>
+<title>%s</title>
 <meta name="description" content="Xinyu Fu's research on the design of human-AI collaboration, arranged on two axes: the kind of AI, and whether the study intervenes or observes.">
 %s
 </head>
@@ -132,17 +138,15 @@ RESEARCH = '''<!DOCTYPE html>
 %s
 
   <div class="sec-head">
-    <h2>Research</h2>
-    <span class="count">Fifteen projects, most settled first &middot; <a href="/universe/">see the map</a></span>
+    <h2>%s</h2>
+    <span class="count">%s</span>
   </div>
 
 %s
 
   <div class="prose" style="border-top:2px solid var(--rule)">
-    <p style="font-size:15px;color:var(--muted);max-width:70ch">Work under review is listed without a journal
-    name until a decision is final. Conference papers and service are on the
-    <a href="/publications/">publications page</a>.</p>
-    <p style="margin-top:22px"><a class="btn" href="/join/">Want to work on one of these? &rarr;</a></p>
+    <p style="font-size:15px;color:var(--muted);max-width:70ch">%s</p>
+    <p style="margin-top:22px"><a class="btn" href="/join/">%s</a></p>
   </div>
 
 %s
@@ -150,7 +154,15 @@ RESEARCH = '''<!DOCTYPE html>
 </div>
 </body>
 </html>
-''' % (FONTS, nav('/research/'), research_page(), FOOT)
+''' % (T.RESEARCH_PAGE_TITLE,
+       FONTS,
+       nav('/research/'),
+       T.RESEARCH_HEADING,
+       T.RESEARCH_COUNT,
+       research_page(),
+       T.RESEARCH_UNDER_REVIEW_NOTE,
+       T.RESEARCH_JOIN_BUTTON,
+       FOOT)
 io.open(os.path.join(R, 'research/index.html'), 'w', encoding='utf-8').write(RESEARCH)
 print('research/index.html', len(RESEARCH), 'bytes')
 
@@ -180,7 +192,7 @@ HOME = '''<!DOCTYPE html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Xinyu Fu &mdash; Human&ndash;AI Complementarity</title>
+<title>%s</title>
 <meta name="description" content="Xinyu Fu is an Assistant Professor of Computer Information Systems at Georgia State University. Her research explores the design of human-AI collaboration and its behavioral and organizational implications.">
 %s
 </head>
@@ -198,18 +210,17 @@ HOME = '''<!DOCTYPE html>
         <img class="rail-photo" src="/profile.png" alt="Xinyu Fu">
         <div>
           <h1>Xinyu<br>Fu</h1>
-          <p class="role"><b>Assistant Professor of Computer Information Systems</b><br>
-          J. Mack Robinson College of Business<br>Georgia State University</p>
+          <p class="role">%s</p>
         </div>
       </div>
 
-      <p class="thesis"><b>I am fascinated by how people can achieve more with less through better ways of working with AI.</b> My research explores the design of human&ndash;AI collaboration and its behavioral and organizational implications.</p>
+      <p class="thesis">%s</p>
 
       <ul class="rail-links">
-        <li><a class="mail" data-u="xinyufu" data-d="gsu.edu" href="#">Email <span>xinyufu [at] gsu.edu</span></a></li>
-        <li><a href="https://scholar.google.com/citations?user=0OM4QfkAAAAJ&amp;hl=en">Google Scholar <span>Publications &amp; citations</span></a></li>
-        <li><a href="https://www.linkedin.com/in/xinyu-fu-pitt">LinkedIn <span>xinyu-fu-pitt</span></a></li>
-        <li><a href="/join/">Students <span>RA volunteers welcome &rarr;</span></a></li>
+        <li><a class="mail" data-u="xinyufu" data-d="gsu.edu" href="#">%s <span>xinyufu [at] gsu.edu</span></a></li>
+        <li><a href="https://scholar.google.com/citations?user=0OM4QfkAAAAJ&amp;hl=en">%s <span>%s</span></a></li>
+        <li><a href="https://www.linkedin.com/in/xinyu-fu-pitt">%s <span>xinyu-fu-pitt</span></a></li>
+        <li><a href="/join/">%s <span>%s</span></a></li>
       </ul>
     </div>
 
@@ -221,59 +232,59 @@ HOME = '''<!DOCTYPE html>
   <a class="skylink" href="/universe/">
     <canvas class="skylink-stars" id="skystars" aria-hidden="true"></canvas>
     <span class="skylink-in">
-      <span class="eyebrow" style="color:#9A8CB4">Interactive</span>
-      <span class="skylink-h">The shoulders we stand on</span>
-      <span class="skylink-p">__N_STUDIES__ of my studies, drawn among the __N_CITED__ papers they lean on. Nothing here is placed by hand &mdash; two studies sit near each other only because they draw on the same work. Mostly it shows what a small corner of a field any one person&rsquo;s research is.</span>
-      <span class="skylink-btn">Open the map &rarr;</span>
+      <span class="eyebrow" style="color:#9A8CB4">%s</span>
+      <span class="skylink-h">%s</span>
+      <span class="skylink-p">%s</span>
+      <span class="skylink-btn">%s</span>
     </span>
   </a>
 
   <div class="sec-head">
-    <h2>Selected Research</h2>
-    <span class="count">Six of thirteen &middot; <a href="/research/">all projects</a></span>
+    <h2>%s</h2>
+    <span class="count">%s</span>
   </div>
 
 %s
 
   <section class="cta" id="join">
     <div>
-      <p class="eyebrow eyebrow--boxed">Student research assistants</p>
-      <h2>Come work on this with me.</h2>
-      <p class="lede">I take on <b>student research assistant volunteers</b> year-round, undergraduate and graduate. You do not need research experience and you do not need to have taken my class. You need to be curious and to finish things.</p>
-      <p style="font-size:15.5px;color:var(--muted);max-width:52ch">Recent students have cleaned and coded field data, run literature searches, built the experiment platforms my studies run on, and sat in on analysis from the first regression to the last.</p>
+      <p class="eyebrow eyebrow--boxed">%s</p>
+      <h2>%s</h2>
+      <p class="lede">%s</p>
+      <p style="font-size:15.5px;color:var(--muted);max-width:52ch">%s</p>
     </div>
     <div>
       <ol class="send-list">
-        <li><span class="n">01</span><span>A <b>CV or r&eacute;sum&eacute;</b>. One page is plenty.</span></li>
-        <li><span class="n">02</span><span>One <b>writing sample</b>. A course project report is perfectly fine &mdash; I care how you build an argument, not where it was published.</span></li>
-        <li><span class="n">03</span><span>Two sentences on <b>which project caught your eye</b>, and why.</span></li>
+        <li><span class="n">01</span><span>%s</span></li>
+        <li><span class="n">02</span><span>%s</span></li>
+        <li><span class="n">03</span><span>%s</span></li>
       </ol>
-      <p style="margin:22px 0 0"><a class="btn mail" data-u="xinyufu" data-d="gsu.edu" data-s="Research assistant volunteer" href="#">Email xinyufu [at] gsu.edu</a></p>
-      <p style="margin:14px 0 0;font-size:13.5px"><a href="/join/">Who I work with, and what the work is like &rarr;</a></p>
+      <p style="margin:22px 0 0"><a class="btn mail" data-u="xinyufu" data-d="gsu.edu" data-s="Research assistant volunteer" href="#">%s</a></p>
+      <p style="margin:14px 0 0;font-size:13.5px"><a href="/join/">%s</a></p>
     </div>
   </section>
 
   <div class="strip">
     <div class="strip-cell">
-      <h3>Recent</h3>
+      <h3>%s</h3>
       <ul>
-        <li><span class="yr">2026</span><i>Knowing Is Not Enough</i> accepted at the Journal of Management Information Systems</li>
-        <li><span class="yr">2025</span>Unforgettable Educator Award, Robinson College of Business &mdash; nominated by students</li>
-        <li><span class="yr">2024</span>National Social Science Fund of China, national-level funding</li>
+        <li><span class="yr">2026</span>%s</li>
+        <li><span class="yr">2025</span>%s</li>
+        <li><span class="yr">2024</span>%s</li>
       </ul>
     </div>
     <div class="strip-cell">
-      <h3>In the press</h3>
+      <h3>%s</h3>
       <ul>
-        <li><span class="yr">2025</span><a href="https://www.itedgenews.africa/edubot-naija-launches-ai-powered-multilingual-learning-platform-across-nigeria/">EduBot Naija launches AI-powered multilingual learning platform across Nigeria</a> &mdash; ITEdgeNews, on a student&ndash;faculty project building curriculum-aligned lessons in local Nigerian languages</li>
+        <li><span class="yr">2025</span>%s</li>
       </ul>
     </div>
     <div class="strip-cell">
-      <h3>Teaching now</h3>
+      <h3>%s</h3>
       <ul>
-        <li><span class="yr">F26</span><a href="https://sherryfu0315.github.io/cis4394-agentic-ai/index.html">Agentic AI</a> &mdash; a <a href="https://path.mit.edu/">PATH</a> course</li>
-        <li><span class="yr">S26</span>Agentic AI</li>
-        <li><a href="/teaching/">All courses &rarr;</a></li>
+        <li><span class="yr">F26</span>%s</li>
+        <li><span class="yr">S26</span>%s</li>
+        <li><a href="/teaching/">%s</a></li>
       </ul>
     </div>
   </div>
@@ -318,7 +329,43 @@ HOME = '''<!DOCTYPE html>
 </script>
 </body>
 </html>
-''' % (FONTS, nav('/'), '\n\n'.join(tiles), home_entries, FOOT)
+''' % (T.HOME_PAGE_TITLE,
+       FONTS,
+       nav('/'),
+       T.HOME_ROLE,
+       T.HOME_THESIS,
+       T.HOME_RAIL_EMAIL,
+       T.HOME_RAIL_GOOGLE_SCHOLAR, T.HOME_RAIL_GOOGLE_SCHOLAR_NOTE,
+       T.HOME_RAIL_LINKEDIN,
+       T.HOME_RAIL_STUDENTS, T.HOME_RAIL_STUDENTS_NOTE,
+       '\n\n'.join(tiles),
+       T.HOME_MAP_EYEBROW,
+       T.HOME_MAP_HEADLINE,
+       T.HOME_MAP_BLURB,
+       T.HOME_MAP_BUTTON,
+       T.HOME_SELECTED_RESEARCH_TITLE,
+       T.HOME_SELECTED_RESEARCH_COUNT,
+       home_entries,
+       T.HOME_JOIN_EYEBROW,
+       T.HOME_JOIN_HEADLINE,
+       T.HOME_JOIN_LEDE,
+       T.HOME_JOIN_RECENT_STUDENTS,
+       T.HOME_JOIN_SEND_CV,
+       T.HOME_JOIN_SEND_WRITING_SAMPLE,
+       T.HOME_JOIN_SEND_WHICH_PROJECT,
+       T.HOME_JOIN_EMAIL_BUTTON,
+       T.HOME_JOIN_MORE_LINK,
+       T.HOME_RECENT_TITLE,
+       T.HOME_RECENT_JMIS,
+       T.HOME_RECENT_TEACHING_AWARD,
+       T.HOME_RECENT_NSSFC,
+       T.HOME_PRESS_TITLE,
+       T.HOME_PRESS_EDUBOT,
+       T.HOME_TEACHING_TITLE,
+       T.HOME_TEACHING_F26,
+       T.HOME_TEACHING_S26,
+       T.HOME_TEACHING_ALL_COURSES,
+       FOOT)
 HOME = HOME.replace('__N_CITED__', str(N_CITED)).replace('__N_STUDIES__', str(N_STUDIES))
 io.open(os.path.join(R, 'index.html'), 'w', encoding='utf-8').write(HOME)
 print('index.html', len(HOME), 'bytes,', len(featured), 'featured')

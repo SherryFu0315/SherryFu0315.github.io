@@ -19,6 +19,26 @@ builds, commit the regenerated HTML.
 Requires system Python 3 (`/usr/bin/python3`) — the Homebrew 3.14 on this machine
 has a broken `pyexpat` and cannot parse XML.
 
+## Changing the words
+
+The `.html` files are generated. Editing them directly works until the next
+build, which overwrites the lot. Edit the source instead:
+
+| To change | Edit |
+|---|---|
+| Any sentence on a page — headlines, paragraphs, buttons, questions | `_generators/words.py` |
+| A study's title, authors, status, description, image | `_generators/projects.py` |
+| The publications list, the credits page | `publications/index.html`, `credits/index.html` — these two are hand-written and safe to edit directly |
+
+Then double-click **Preview site.command** in the main folder. It rebuilds and
+opens the site in a browser, and if something is wrong it says which file and
+which line.
+
+`words.py` holds 147 sentences, grouped by page, each with a comment saying
+where it appears. It was extracted from the templates in one pass that was
+verified to leave every generated page byte-identical, so it is a pure
+relocation of the text — no wording was changed in the move.
+
 ## Previewing locally
 
 Absolute paths (`/assets/...`) need a server, so opening the files directly will

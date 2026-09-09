@@ -13,6 +13,7 @@ from the box I filed it under to the company it actually keeps.
 """
 import io, os, sys, json
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import words as T
 from projects import PROJECTS, COLS, ROWS
 from constellations import CONSTELLATIONS, CELLBOX
 import citelayout as CL
@@ -55,7 +56,7 @@ def star(p, col_c, **kw):
              col=p['col'], row=p['row'],
              t=p['short'], lab=LABEL.get(p['id'], p['short']),
              a=[p['authors']] if p['authors'] else [], v=venue,
-             f=p['finding'] or 'A short description of this project is coming.',
+             f=p['finding'] or T.MAP_FINDING_COMING_SOON,
              n=p['metrics'], href='/research/#' + p['id'])
     d.update(kw)
     return d
@@ -136,7 +137,7 @@ PAGE = u'''<!DOCTYPE html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Research Universe &mdash; Xinyu Fu</title>
+<title>__MAP_PAGE_TITLE__</title>
 <meta name="description" content="Xinyu Fu's research drawn among the literature it rests on — every study placed by the real citation graph rather than by hand, to show how small a part of a field any one body of work is. A second view arranges the same studies by what kind of AI they are about.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -303,23 +304,23 @@ PAGE = u'''<!DOCTYPE html>
 <div class="shell">
 
   <nav class="nav">
-    <a class="brand" href="/">Home</a>
+    <a class="brand" href="/">__MAP_NAV_HOME__</a>
     <div class="navlinks">
-      <a href="/research/">Research</a>
-      <a href="/universe/" aria-current="page">Universe</a>
-      <a href="/publications/">Publications</a>
-      <a href="/teaching/">Teaching</a>
-      <a href="/join/" class="is-cta">Work with me</a>
+      <a href="/research/">__MAP_NAV_RESEARCH__</a>
+      <a href="/universe/" aria-current="page">__MAP_NAV_UNIVERSE__</a>
+      <a href="/publications/">__MAP_NAV_PUBLICATIONS__</a>
+      <a href="/teaching/">__MAP_NAV_TEACHING__</a>
+      <a href="/join/" class="is-cta">__MAP_NAV_WORK_WITH_ME__</a>
     </div>
   </nav>
 
   <div class="sky-head">
-    <div><h1>How the work<br>connects</h1></div>
-    <p id="head-copy">No axes here &mdash; this is where the literature puts them. Every faint star is a paper one of my studies leans on; the bright ones are the studies. Two sit close together <b>only because they draw on the same work</b>. __N_CSTUDIES__ studies against __N_CITED__ papers is about the right sense of scale.</p>
+    <div><h1>__MAP_H1__</h1></div>
+    <p id="head-copy">__MAP_HEAD_COPY_CITE__</p>
     <div class="hint" style="border:0;padding:0">
       <div class="viewtoggle" role="group" aria-label="Choose an arrangement">
-        <button type="button" id="v-axis" aria-pressed="false">Two axes</button>
-        <button type="button" id="v-cite" aria-pressed="true">The literature</button>
+        <button type="button" id="v-axis" aria-pressed="false">__MAP_VIEW_TOGGLE_AXES__</button>
+        <button type="button" id="v-cite" aria-pressed="true">__MAP_VIEW_TOGGLE_LITERATURE__</button>
       </div>
     </div>
   </div>
@@ -338,17 +339,17 @@ PAGE = u'''<!DOCTYPE html>
     <div class="tip" id="tip" role="status" aria-live="polite"></div>
     <div class="legend" id="legend"></div>
     <div class="sky-ctrl">
-      <button type="button" id="btn-out">Zoom out</button>
-      <button type="button" id="btn-reset">Whole sky</button>
+      <button type="button" id="btn-out">__MAP_BTN_ZOOM_OUT__</button>
+      <button type="button" id="btn-reset">__MAP_BTN_WHOLE_SKY__</button>
     </div>
   </div>
 
-  <p class="blurb is-off" id="blurb-axis">Where I file each study. The constellations are real ones &mdash; Ursa Major, Cassiopeia, Orion, Lyra, Corvus, Crux &mdash; and the grey points are the places still open in each cell.</p>
-  <p class="blurb" id="blurb-cite">Every faint star is a work one of these studies leans on; the bright ones are the studies. <b>No position here is chosen by hand</b> &mdash; a force simulation runs over the real citation graph, so two studies sit close together only when they draw on the same references, and a work several papers lean on is pulled into the space between them. <b>__N_CITED__</b> works, <b>__N_SHARED__</b> of them reached by more than one study. The point of drawing it this way is the proportion: a working life of research is a small, well-lit patch of somebody else&rsquo;s field.</p>
+  <p class="blurb is-off" id="blurb-axis">__MAP_BLURB_AXIS__</p>
+  <p class="blurb" id="blurb-cite">__MAP_BLURB_CITE__</p>
 
   <section class="index-list">
-    <h2>Everything on the map, in plain text</h2>
-    <p>Grouped by what kind of AI each study is about. Works without JavaScript, and reads correctly to a screen reader.</p>
+    <h2>__MAP_INDEX_TITLE__</h2>
+    <p>__MAP_INDEX_INTRO__</p>
     <div class="index-cols" id="fallback"></div>
   </section>
 
@@ -752,6 +753,25 @@ PAGE = (PAGE.replace('__COLS__',   json.dumps(js_cols,   ensure_ascii=False))
             .replace('__W__', str(W)).replace('__H__', str(H))
             .replace('__CW__', str(int(W * CANVAS))).replace('__CH__', str(int(H * CANVAS)))
             .replace('__DPR__', str(CANVAS))
+            # the wording, from words.py. These go in before the counts below,
+            # so a count sitting inside a sentence is still filled in.
+            .replace('__MAP_PAGE_TITLE__', T.MAP_PAGE_TITLE)
+            .replace('__MAP_NAV_HOME__', T.MAP_NAV_HOME)
+            .replace('__MAP_NAV_RESEARCH__', T.MAP_NAV_RESEARCH)
+            .replace('__MAP_NAV_UNIVERSE__', T.MAP_NAV_UNIVERSE)
+            .replace('__MAP_NAV_PUBLICATIONS__', T.MAP_NAV_PUBLICATIONS)
+            .replace('__MAP_NAV_TEACHING__', T.MAP_NAV_TEACHING)
+            .replace('__MAP_NAV_WORK_WITH_ME__', T.MAP_NAV_WORK_WITH_ME)
+            .replace('__MAP_H1__', T.MAP_H1)
+            .replace('__MAP_HEAD_COPY_CITE__', T.MAP_HEAD_COPY_CITE)
+            .replace('__MAP_VIEW_TOGGLE_AXES__', T.MAP_VIEW_TOGGLE_AXES)
+            .replace('__MAP_VIEW_TOGGLE_LITERATURE__', T.MAP_VIEW_TOGGLE_LITERATURE)
+            .replace('__MAP_BTN_ZOOM_OUT__', T.MAP_BTN_ZOOM_OUT)
+            .replace('__MAP_BTN_WHOLE_SKY__', T.MAP_BTN_WHOLE_SKY)
+            .replace('__MAP_BLURB_AXIS__', T.MAP_BLURB_AXIS)
+            .replace('__MAP_BLURB_CITE__', T.MAP_BLURB_CITE)
+            .replace('__MAP_INDEX_TITLE__', T.MAP_INDEX_TITLE)
+            .replace('__MAP_INDEX_INTRO__', T.MAP_INDEX_INTRO)
             .replace('__N_CSTUDIES__', str(N_CSTUDIES))
             .replace('__N_CITED__',  str(N_CITED))
             .replace('__N_SHARED__', str(N_SHARED)))

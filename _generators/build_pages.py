@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 import io, os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import words as T   # all reader-facing wording lives in words.py
 import build as B   # reuse FONTS, nav(), FOOT so every page stays identical
 
 R = B.R
@@ -39,7 +40,7 @@ JOIN = '''<!DOCTYPE html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Work with me &mdash; Xinyu Fu</title>
+<title>__JOIN_PAGE_TITLE__</title>
 <meta name="description" content="Xinyu Fu welcomes student research assistant volunteers at Georgia State University. Send a CV and one writing sample &mdash; a course project report is perfectly fine.">
 FONTS
 </head>
@@ -52,27 +53,27 @@ NAV
 
   <section class="cta">
     <div>
-      <p class="eyebrow eyebrow--boxed">Student research assistants &middot; volunteers</p>
-      <h2>Come work on this with me.</h2>
-      <p class="lede">I take on <b>student research assistant volunteers</b> year-round, undergraduate and graduate. You do not need prior research experience, and you do not need to have taken my class. You need to be curious and to finish things.</p>
-      <p style="font-size:16px;max-width:52ch">These are unpaid volunteer positions. What they are worth is the part you cannot get from coursework: seeing how a study is actually built, how data actually behaves, and how an argument survives &mdash; or does not survive &mdash; three rounds of review.</p>
+      <p class="eyebrow eyebrow--boxed">__JOIN_EYEBROW__</p>
+      <h2>__JOIN_CTA_HEADLINE__</h2>
+      <p class="lede">__JOIN_LEDE__</p>
+      <p style="font-size:16px;max-width:52ch">__JOIN_UNPAID_NOTE__</p>
     </div>
     <div>
       <ol class="send-list">
-        <li><span class="n">01</span><span>A <b>CV or r&eacute;sum&eacute;</b>. One page is plenty.</span></li>
-        <li><span class="n">02</span><span>One <b>writing sample</b>. A course project report is perfectly fine &mdash; I care how you build an argument, not where it was published.</span></li>
-        <li><span class="n">03</span><span>Two sentences on <b>which project caught your eye</b>, and why.</span></li>
+        <li><span class="n">01</span><span>__JOIN_SEND_CV__</span></li>
+        <li><span class="n">02</span><span>__JOIN_SEND_WRITING_SAMPLE__</span></li>
+        <li><span class="n">03</span><span>__JOIN_SEND_WHICH_PROJECT__</span></li>
       </ol>
       <p style="margin:22px 0 0">
-        <a class="btn mail" data-u="xinyufu" data-d="gsu.edu" data-s="Research assistant volunteer" data-b="Hi Dr. Fu,&#10;&#10;I would like to volunteer as a research assistant.&#10;&#10;Attached: my CV and a writing sample.&#10;&#10;The project that caught my eye: " href="#">Email xinyufu [at] gsu.edu</a>
+        <a class="btn mail" data-u="xinyufu" data-d="gsu.edu" data-s="Research assistant volunteer" data-b="Hi Dr. Fu,&#10;&#10;I would like to volunteer as a research assistant.&#10;&#10;Attached: my CV and a writing sample.&#10;&#10;The project that caught my eye: " href="#">__JOIN_EMAIL_BUTTON__</a>
       </p>
-      <p style="margin:14px 0 0;font-size:13px;color:var(--muted)">That link opens a message with the three items already listed, so nothing gets forgotten.</p>
+      <p style="margin:14px 0 0;font-size:13px;color:var(--muted)">__JOIN_EMAIL_NOTE__</p>
     </div>
   </section>
 
   <div class="sec-head" id="students">
-    <h2>Students I work with</h2>
-    <span class="count">Doctoral committees and advising</span>
+    <h2>__JOIN_STUDENTS_TITLE__</h2>
+    <span class="count">__JOIN_STUDENTS_SUBTITLE__</span>
   </div>
 
   <div class="prose">
@@ -83,55 +84,55 @@ PEOPLE
 
   <div class="strip">
     <div class="strip-cell">
-      <h3>What you would actually do</h3>
+      <h3>__JOIN_WHAT_YOU_WOULD_DO_TITLE__</h3>
       <ul>
-        <li>Clean, code and merge field data &mdash; call records, interview transcripts, platform scrapes</li>
-        <li>Run structured literature searches and keep a real annotated bibliography</li>
-        <li>Build the experiment platforms studies run on (React, Python, Qualtrics, Prolific)</li>
-        <li>Sit in on analysis, from the first regression to the last robustness check</li>
-        <li>Read drafts and say what does not make sense &mdash; this one is not decoration</li>
+        <li>__JOIN_WHAT_YOU_WOULD_DO_DATA__</li>
+        <li>__JOIN_WHAT_YOU_WOULD_DO_LITERATURE__</li>
+        <li>__JOIN_WHAT_YOU_WOULD_DO_PLATFORMS__</li>
+        <li>__JOIN_WHAT_YOU_WOULD_DO_ANALYSIS__</li>
+        <li>__JOIN_WHAT_YOU_WOULD_DO_DRAFTS__</li>
       </ul>
     </div>
     <div class="strip-cell">
-      <h3>What I ask for</h3>
+      <h3>__JOIN_WHAT_I_ASK_FOR_TITLE__</h3>
       <ul>
-        <li>Roughly 5&ndash;8 hours a week during term, agreed in advance</li>
-        <li>One semester minimum. Research is slow; a month teaches you nothing</li>
-        <li>Tell me early when something is not working. That is not failure, that is the job</li>
-        <li>Any coding background helps &mdash; Python, R, SQL, JavaScript &mdash; but none is required for every project</li>
+        <li>__JOIN_WHAT_I_ASK_FOR_HOURS__</li>
+        <li>__JOIN_WHAT_I_ASK_FOR_SEMESTER__</li>
+        <li>__JOIN_WHAT_I_ASK_FOR_SPEAK_UP__</li>
+        <li>__JOIN_WHAT_I_ASK_FOR_CODING__</li>
       </ul>
     </div>
     <div class="strip-cell">
-      <h3>What you get back</h3>
+      <h3>__JOIN_WHAT_YOU_GET_BACK_TITLE__</h3>
       <ul>
-        <li>A reference that says something specific, because I will know your work</li>
-        <li>Co-authorship on conference submissions where the contribution earns it</li>
-        <li>An honest read on whether a PhD is right for you, from someone with no stake in the answer</li>
-        <li>Skills that transfer: cleaning messy data, defending a claim, writing to be understood</li>
+        <li>__JOIN_WHAT_YOU_GET_BACK_REFERENCE__</li>
+        <li>__JOIN_WHAT_YOU_GET_BACK_COAUTHORSHIP__</li>
+        <li>__JOIN_WHAT_YOU_GET_BACK_PHD_ADVICE__</li>
+        <li>__JOIN_WHAT_YOU_GET_BACK_SKILLS__</li>
       </ul>
     </div>
   </div>
 
   <div class="prose">
-    <h3>Common questions</h3>
+    <h3>__JOIN_FAQ_TITLE__</h3>
 
-    <p><b>I am not a CIS major. Should I still write?</b><br>
-    Yes. My studies run on sales calls, factory floors, hotel corridors, crowdfunding pages and online communities. Psychology, economics, management, statistics, communication, computer science &mdash; all of it is useful. Say in your email what you bring.</p>
+    <p><b>__JOIN_FAQ_NOT_CIS_Q__</b><br>
+    __JOIN_FAQ_NOT_CIS_A__</p>
 
-    <p><b>I have never written anything academic. What do I send?</b><br>
-    A course project report. A term paper. A technical write-up from an internship. A well-argued blog post. I am reading for whether you can hold a claim and support it, not for a literature review.</p>
+    <p><b>__JOIN_FAQ_NO_ACADEMIC_WRITING_Q__</b><br>
+    __JOIN_FAQ_NO_ACADEMIC_WRITING_A__</p>
 
-    <p><b>I am not at Georgia State.</b><br>
-    Still write. Some projects work remotely. Say where you are and what your term dates look like.</p>
+    <p><b>__JOIN_FAQ_NOT_AT_GSU_Q__</b><br>
+    __JOIN_FAQ_NOT_AT_GSU_A__</p>
 
-    <p><b>Can this turn into a paid position or a thesis?</b><br>
-    Sometimes. Funded slots come and go with grants, and undergraduate projects have grown out of RA work before. Start with the volunteer route and we will see what it becomes.</p>
+    <p><b>__JOIN_FAQ_PAID_OR_THESIS_Q__</b><br>
+    __JOIN_FAQ_PAID_OR_THESIS_A__</p>
 
-    <p><b>I emailed and did not hear back.</b><br>
-    Send it again after two weeks. That is not rudeness, that is my inbox.</p>
+    <p><b>__JOIN_FAQ_NO_REPLY_Q__</b><br>
+    __JOIN_FAQ_NO_REPLY_A__</p>
 
-    <h3>Competition coaching</h3>
-    <p>I coached the Georgia State team at <a href="https://carlsonschool.umn.edu/conferences/comis"><b>CoMIS 2025</b></a>, the international undergraduate MIS case competition hosted by the Carlson School at the University of Minnesota. The team took first place at the group level and advanced to the final round. If your team wants a faculty coach, write to me early &mdash; these things are won in the preparation, not the room.</p>
+    <h3>__JOIN_COACHING_TITLE__</h3>
+    <p>__JOIN_COACHING_TEXT__</p>
   </div>
 
 FOOT
@@ -141,7 +142,48 @@ FOOT
 </html>
 '''
 JOIN = (JOIN.replace('FONTS', B.FONTS).replace('NAV', B.nav('/join/'))
-            .replace('PEOPLE', people_html).replace('FOOT', B.FOOT))
+            .replace('PEOPLE', people_html).replace('FOOT', B.FOOT)
+            .replace('__JOIN_PAGE_TITLE__', T.JOIN_PAGE_TITLE)
+            .replace('__JOIN_EYEBROW__', T.JOIN_EYEBROW)
+            .replace('__JOIN_CTA_HEADLINE__', T.JOIN_CTA_HEADLINE)
+            .replace('__JOIN_LEDE__', T.JOIN_LEDE)
+            .replace('__JOIN_UNPAID_NOTE__', T.JOIN_UNPAID_NOTE)
+            .replace('__JOIN_SEND_CV__', T.JOIN_SEND_CV)
+            .replace('__JOIN_SEND_WRITING_SAMPLE__', T.JOIN_SEND_WRITING_SAMPLE)
+            .replace('__JOIN_SEND_WHICH_PROJECT__', T.JOIN_SEND_WHICH_PROJECT)
+            .replace('__JOIN_EMAIL_BUTTON__', T.JOIN_EMAIL_BUTTON)
+            .replace('__JOIN_EMAIL_NOTE__', T.JOIN_EMAIL_NOTE)
+            .replace('__JOIN_STUDENTS_TITLE__', T.JOIN_STUDENTS_TITLE)
+            .replace('__JOIN_STUDENTS_SUBTITLE__', T.JOIN_STUDENTS_SUBTITLE)
+            .replace('__JOIN_WHAT_YOU_WOULD_DO_TITLE__', T.JOIN_WHAT_YOU_WOULD_DO_TITLE)
+            .replace('__JOIN_WHAT_YOU_WOULD_DO_DATA__', T.JOIN_WHAT_YOU_WOULD_DO_DATA)
+            .replace('__JOIN_WHAT_YOU_WOULD_DO_LITERATURE__', T.JOIN_WHAT_YOU_WOULD_DO_LITERATURE)
+            .replace('__JOIN_WHAT_YOU_WOULD_DO_PLATFORMS__', T.JOIN_WHAT_YOU_WOULD_DO_PLATFORMS)
+            .replace('__JOIN_WHAT_YOU_WOULD_DO_ANALYSIS__', T.JOIN_WHAT_YOU_WOULD_DO_ANALYSIS)
+            .replace('__JOIN_WHAT_YOU_WOULD_DO_DRAFTS__', T.JOIN_WHAT_YOU_WOULD_DO_DRAFTS)
+            .replace('__JOIN_WHAT_I_ASK_FOR_TITLE__', T.JOIN_WHAT_I_ASK_FOR_TITLE)
+            .replace('__JOIN_WHAT_I_ASK_FOR_HOURS__', T.JOIN_WHAT_I_ASK_FOR_HOURS)
+            .replace('__JOIN_WHAT_I_ASK_FOR_SEMESTER__', T.JOIN_WHAT_I_ASK_FOR_SEMESTER)
+            .replace('__JOIN_WHAT_I_ASK_FOR_SPEAK_UP__', T.JOIN_WHAT_I_ASK_FOR_SPEAK_UP)
+            .replace('__JOIN_WHAT_I_ASK_FOR_CODING__', T.JOIN_WHAT_I_ASK_FOR_CODING)
+            .replace('__JOIN_WHAT_YOU_GET_BACK_TITLE__', T.JOIN_WHAT_YOU_GET_BACK_TITLE)
+            .replace('__JOIN_WHAT_YOU_GET_BACK_REFERENCE__', T.JOIN_WHAT_YOU_GET_BACK_REFERENCE)
+            .replace('__JOIN_WHAT_YOU_GET_BACK_COAUTHORSHIP__', T.JOIN_WHAT_YOU_GET_BACK_COAUTHORSHIP)
+            .replace('__JOIN_WHAT_YOU_GET_BACK_PHD_ADVICE__', T.JOIN_WHAT_YOU_GET_BACK_PHD_ADVICE)
+            .replace('__JOIN_WHAT_YOU_GET_BACK_SKILLS__', T.JOIN_WHAT_YOU_GET_BACK_SKILLS)
+            .replace('__JOIN_FAQ_TITLE__', T.JOIN_FAQ_TITLE)
+            .replace('__JOIN_FAQ_NOT_CIS_Q__', T.JOIN_FAQ_NOT_CIS_Q)
+            .replace('__JOIN_FAQ_NOT_CIS_A__', T.JOIN_FAQ_NOT_CIS_A)
+            .replace('__JOIN_FAQ_NO_ACADEMIC_WRITING_Q__', T.JOIN_FAQ_NO_ACADEMIC_WRITING_Q)
+            .replace('__JOIN_FAQ_NO_ACADEMIC_WRITING_A__', T.JOIN_FAQ_NO_ACADEMIC_WRITING_A)
+            .replace('__JOIN_FAQ_NOT_AT_GSU_Q__', T.JOIN_FAQ_NOT_AT_GSU_Q)
+            .replace('__JOIN_FAQ_NOT_AT_GSU_A__', T.JOIN_FAQ_NOT_AT_GSU_A)
+            .replace('__JOIN_FAQ_PAID_OR_THESIS_Q__', T.JOIN_FAQ_PAID_OR_THESIS_Q)
+            .replace('__JOIN_FAQ_PAID_OR_THESIS_A__', T.JOIN_FAQ_PAID_OR_THESIS_A)
+            .replace('__JOIN_FAQ_NO_REPLY_Q__', T.JOIN_FAQ_NO_REPLY_Q)
+            .replace('__JOIN_FAQ_NO_REPLY_A__', T.JOIN_FAQ_NO_REPLY_A)
+            .replace('__JOIN_COACHING_TITLE__', T.JOIN_COACHING_TITLE)
+            .replace('__JOIN_COACHING_TEXT__', T.JOIN_COACHING_TEXT))
 io.open(os.path.join(R, 'join/index.html'), 'w', encoding='utf-8').write(JOIN)
 print('join/index.html', len(JOIN), 'bytes,', len(PEOPLE), 'people')
 
@@ -151,7 +193,7 @@ TEACH = '''<!DOCTYPE html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Teaching &mdash; Xinyu Fu</title>
+<title>__TEACHING_PAGE_TITLE__</title>
 <meta name="description" content="Courses taught by Xinyu Fu at Georgia State University and the University of Pittsburgh: Agentic AI for Business &amp; Society, Data Programming, and Database Management Systems.">
 FONTS
 </head>
@@ -163,25 +205,25 @@ FONTS
 NAV
 
   <div class="sec-head">
-    <h2>Teaching</h2>
-    <span class="count">2025 Unforgettable Educator Award &middot; nominated by students</span>
+    <h2>__TEACHING_HEADING__</h2>
+    <span class="count">__TEACHING_AWARD_NOTE__</span>
   </div>
 
   <div class="prose">
 
-    <h3>Georgia State University</h3>
+    <h3>__TEACHING_GSU_HEADING__</h3>
 
     <div class="course">
       <div class="when">Fall 2026</div>
       <div>
-        <h4><a href="https://sherryfu0315.github.io/cis4394-agentic-ai/index.html">Agentic AI</a></h4>
-        <p>Build. Break. Iterate. The full agent lifecycle practiced from day one &mdash; the brain, the tools, the orchestration, the self-evaluation &mdash; ending in a capstone where teams take a real problem from idea to working prototype and pitch it.</p>
-        <p style="margin-top:10px">Taught as part of <a href="https://path.mit.edu/"><b>PATH</b></a> &mdash; Pathways for AI Training and Hiring, a multi-year MIT RAISE and Georgia State initiative building industry-aligned AI training, with the Robinson College of Business anchoring the Georgia hub.</p>
+        <h4><a href="https://sherryfu0315.github.io/cis4394-agentic-ai/index.html">__TEACHING_AGENTIC_AI_TITLE__</a></h4>
+        <p>__TEACHING_AGENTIC_AI_DESC__</p>
+        <p style="margin-top:10px">__TEACHING_AGENTIC_AI_PATH_NOTE__</p>
         <p class="proj-links" style="margin-top:12px">
-          <a href="https://sherryfu0315.github.io/cis4394-agentic-ai/index.html">Course site</a>
-          <a href="https://path.mit.edu/">PATH</a>
-          <a href="https://news.gsu.edu/2026/04/03/mit-raise-and-georgia-state-university-announce-path">The announcement</a>
-          <a href="https://www.youtube.com/watch?v=LnyWCPhFzzA&amp;list=PL8lQ0qMEI-E8-64gGMvrHBSqbGQkAsXCD&amp;index=1">Talks</a>
+          <a href="https://sherryfu0315.github.io/cis4394-agentic-ai/index.html">__TEACHING_AGENTIC_AI_LINK_COURSE_SITE__</a>
+          <a href="https://path.mit.edu/">__TEACHING_AGENTIC_AI_LINK_PATH__</a>
+          <a href="https://news.gsu.edu/2026/04/03/mit-raise-and-georgia-state-university-announce-path">__TEACHING_AGENTIC_AI_LINK_ANNOUNCEMENT__</a>
+          <a href="https://www.youtube.com/watch?v=LnyWCPhFzzA&amp;list=PL8lQ0qMEI-E8-64gGMvrHBSqbGQkAsXCD&amp;index=1">__TEACHING_AGENTIC_AI_LINK_TALKS__</a>
         </p>
       </div>
     </div>
@@ -189,83 +231,83 @@ NAV
     <div class="course">
       <div class="when">Spring 2026</div>
       <div>
-        <h4>Agentic AI</h4>
-        <p>Undergraduate. The first run of the course, co-taught with Dr. Amrita George.</p>
+        <h4>__TEACHING_AGENTIC_AI_SPRING_2026_TITLE__</h4>
+        <p>__TEACHING_AGENTIC_AI_SPRING_2026_DESC__</p>
       </div>
     </div>
 
     <div class="course">
       <div class="when">Fall 2025<br>Fall 2024 &middot; Fall 2023</div>
       <div>
-        <h4>Data Programming</h4>
-        <p>Undergraduate. Python for people who came to solve business problems rather than to write software &mdash; data wrangling, analysis, and the point at which a model earns the right to be believed.</p>
+        <h4>__TEACHING_DATA_PROGRAMMING_TITLE__</h4>
+        <p>__TEACHING_DATA_PROGRAMMING_DESC__</p>
       </div>
     </div>
 
     <div class="course">
       <div class="when">Spring 2025<br>Spring 2024</div>
       <div>
-        <h4>Fundamentals of Database Management Systems</h4>
-        <p>Graduate core.</p>
+        <h4>__TEACHING_DB_FUNDAMENTALS_TITLE__</h4>
+        <p>__TEACHING_DB_FUNDAMENTALS_DESC__</p>
       </div>
     </div>
 
     <div class="course">
       <div class="when">Fall 2024<br>Fall 2023</div>
       <div>
-        <h4>Database Management Systems</h4>
-        <p>Undergraduate core.</p>
+        <h4>__TEACHING_DBMS_TITLE__</h4>
+        <p>__TEACHING_DBMS_DESC__</p>
       </div>
     </div>
 
-    <h3>University of Pittsburgh</h3>
+    <h3>__TEACHING_PITT_HEADING__</h3>
 
     <div class="course">
       <div class="when">Fall 2021</div>
       <div>
-        <h4>Introduction to Information Systems</h4>
-        <p>Undergraduate core. Instructor.</p>
-        <blockquote class="quote">&ldquo;Professor Fu was fantastic. She created an environment where everyone learned, and worked her hardest to let students of every coding level keep up. I am grateful for how easily she broke down machine learning.&rdquo;
-        <cite>Student evaluation, 2021</cite></blockquote>
+        <h4>__TEACHING_INTRO_IS_TITLE__</h4>
+        <p>__TEACHING_INTRO_IS_DESC__</p>
+        <blockquote class="quote">__TEACHING_INTRO_IS_STUDENT_QUOTE__
+        <cite>__TEACHING_INTRO_IS_QUOTE_CITE__</cite></blockquote>
       </div>
     </div>
 
     <div class="course">
       <div class="when">Spring 2021</div>
       <div>
-        <h4>Data Programming Essentials with Python</h4>
-        <p>MBA and MS elective. Instructor; also teaching assistant for this course in Spring and Fall 2019.</p>
-        <p style="margin-top:8px"><em>2021 Doris &amp; Douglas Bernstein Doctoral Student Teaching Award &mdash; one student per year.</em></p>
+        <h4>__TEACHING_DATA_PROGRAMMING_ESSENTIALS_TITLE__</h4>
+        <p>__TEACHING_DATA_PROGRAMMING_ESSENTIALS_DESC__</p>
+        <p style="margin-top:8px"><em>__TEACHING_BERNSTEIN_AWARD_NOTE__</em></p>
       </div>
     </div>
 
     <div class="course">
       <div class="when">Spring 2019</div>
       <div>
-        <h4>Advanced Data Programming with R</h4>
-        <p>MBA and MS elective. Teaching assistant.</p>
+        <h4>__TEACHING_ADVANCED_R_TITLE__</h4>
+        <p>__TEACHING_ADVANCED_R_DESC__</p>
       </div>
     </div>
 
-    <h3>Elsewhere</h3>
+    <h3>__TEACHING_ELSEWHERE_HEADING__</h3>
 
     <div class="course">
       <div class="when">Summer 2019</div>
       <div>
-        <h4>E-Commerce</h4>
-        <p>MBA. Teaching assistant, Harvard University.</p>
+        <h4>__TEACHING_ECOMMERCE_TITLE__</h4>
+        <p>__TEACHING_ECOMMERCE_DESC__</p>
       </div>
     </div>
 
     <div class="course">
       <div class="when">2014&ndash;2017</div>
       <div>
-        <h4>Career Center instructor and student mentor</h4>
-        <p>Tsinghua University.</p>
+        <h4>__TEACHING_CAREER_CENTER_TITLE__</h4>
+        <p>__TEACHING_CAREER_CENTER_DESC__</p>
       </div>
     </div>
 
-    <p style="margin-top:34px"><a class="btn" href="/join/">Students I work with, and how to join &rarr;</a></p>
+    <p style="margin-top:34px"><a class="btn" href="/join/">__TEACHING_JOIN_BUTTON__</a></p>
   </div>
 
 FOOT
@@ -274,6 +316,41 @@ FOOT
 </body>
 </html>
 '''
-TEACH = TEACH.replace('FONTS', B.FONTS).replace('NAV', B.nav('/teaching/')).replace('FOOT', B.FOOT)
+TEACH = (TEACH.replace('FONTS', B.FONTS).replace('NAV', B.nav('/teaching/')).replace('FOOT', B.FOOT)
+              .replace('__TEACHING_PAGE_TITLE__', T.TEACHING_PAGE_TITLE)
+              .replace('__TEACHING_HEADING__', T.TEACHING_HEADING)
+              .replace('__TEACHING_AWARD_NOTE__', T.TEACHING_AWARD_NOTE)
+              .replace('__TEACHING_GSU_HEADING__', T.TEACHING_GSU_HEADING)
+              .replace('__TEACHING_AGENTIC_AI_TITLE__', T.TEACHING_AGENTIC_AI_TITLE)
+              .replace('__TEACHING_AGENTIC_AI_DESC__', T.TEACHING_AGENTIC_AI_DESC)
+              .replace('__TEACHING_AGENTIC_AI_PATH_NOTE__', T.TEACHING_AGENTIC_AI_PATH_NOTE)
+              .replace('__TEACHING_AGENTIC_AI_LINK_COURSE_SITE__', T.TEACHING_AGENTIC_AI_LINK_COURSE_SITE)
+              .replace('__TEACHING_AGENTIC_AI_LINK_PATH__', T.TEACHING_AGENTIC_AI_LINK_PATH)
+              .replace('__TEACHING_AGENTIC_AI_LINK_ANNOUNCEMENT__', T.TEACHING_AGENTIC_AI_LINK_ANNOUNCEMENT)
+              .replace('__TEACHING_AGENTIC_AI_LINK_TALKS__', T.TEACHING_AGENTIC_AI_LINK_TALKS)
+              .replace('__TEACHING_AGENTIC_AI_SPRING_2026_TITLE__', T.TEACHING_AGENTIC_AI_SPRING_2026_TITLE)
+              .replace('__TEACHING_AGENTIC_AI_SPRING_2026_DESC__', T.TEACHING_AGENTIC_AI_SPRING_2026_DESC)
+              .replace('__TEACHING_DATA_PROGRAMMING_TITLE__', T.TEACHING_DATA_PROGRAMMING_TITLE)
+              .replace('__TEACHING_DATA_PROGRAMMING_DESC__', T.TEACHING_DATA_PROGRAMMING_DESC)
+              .replace('__TEACHING_DB_FUNDAMENTALS_TITLE__', T.TEACHING_DB_FUNDAMENTALS_TITLE)
+              .replace('__TEACHING_DB_FUNDAMENTALS_DESC__', T.TEACHING_DB_FUNDAMENTALS_DESC)
+              .replace('__TEACHING_DBMS_TITLE__', T.TEACHING_DBMS_TITLE)
+              .replace('__TEACHING_DBMS_DESC__', T.TEACHING_DBMS_DESC)
+              .replace('__TEACHING_PITT_HEADING__', T.TEACHING_PITT_HEADING)
+              .replace('__TEACHING_INTRO_IS_TITLE__', T.TEACHING_INTRO_IS_TITLE)
+              .replace('__TEACHING_INTRO_IS_DESC__', T.TEACHING_INTRO_IS_DESC)
+              .replace('__TEACHING_INTRO_IS_STUDENT_QUOTE__', T.TEACHING_INTRO_IS_STUDENT_QUOTE)
+              .replace('__TEACHING_INTRO_IS_QUOTE_CITE__', T.TEACHING_INTRO_IS_QUOTE_CITE)
+              .replace('__TEACHING_DATA_PROGRAMMING_ESSENTIALS_TITLE__', T.TEACHING_DATA_PROGRAMMING_ESSENTIALS_TITLE)
+              .replace('__TEACHING_DATA_PROGRAMMING_ESSENTIALS_DESC__', T.TEACHING_DATA_PROGRAMMING_ESSENTIALS_DESC)
+              .replace('__TEACHING_BERNSTEIN_AWARD_NOTE__', T.TEACHING_BERNSTEIN_AWARD_NOTE)
+              .replace('__TEACHING_ADVANCED_R_TITLE__', T.TEACHING_ADVANCED_R_TITLE)
+              .replace('__TEACHING_ADVANCED_R_DESC__', T.TEACHING_ADVANCED_R_DESC)
+              .replace('__TEACHING_ELSEWHERE_HEADING__', T.TEACHING_ELSEWHERE_HEADING)
+              .replace('__TEACHING_ECOMMERCE_TITLE__', T.TEACHING_ECOMMERCE_TITLE)
+              .replace('__TEACHING_ECOMMERCE_DESC__', T.TEACHING_ECOMMERCE_DESC)
+              .replace('__TEACHING_CAREER_CENTER_TITLE__', T.TEACHING_CAREER_CENTER_TITLE)
+              .replace('__TEACHING_CAREER_CENTER_DESC__', T.TEACHING_CAREER_CENTER_DESC)
+              .replace('__TEACHING_JOIN_BUTTON__', T.TEACHING_JOIN_BUTTON))
 io.open(os.path.join(R, 'teaching/index.html'), 'w', encoding='utf-8').write(TEACH)
 print('teaching/index.html', len(TEACH), 'bytes')
