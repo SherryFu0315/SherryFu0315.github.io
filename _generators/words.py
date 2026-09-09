@@ -261,10 +261,10 @@ JOIN_PAGE_TITLE = "Contact &mdash; Xinyu Fu"
 JOIN_EYEBROW = "Contact"
 
 # Where it appears: main headline at the top of the contact page
-JOIN_CTA_HEADLINE = "Interested in working with me?"
+JOIN_CTA_HEADLINE = "What are you working on?"
 
 # Where it appears: opening paragraph under the headline on the contact page
-JOIN_LEDE = "I am glad to hear from anyone working on the same questions &mdash; <b>research collaborations</b> with faculty and doctoral students, <b>organizations</b> curious about what AI is doing to work inside their own walls, and <b>students</b> looking for a way into research."
+JOIN_LEDE = "I am glad to hear from anyone asking the same questions &mdash; <b>research collaborations</b> with faculty and doctoral students, <b>organizations</b> curious about what AI is doing to work inside their own walls, and <b>students</b> looking for a way into research."
 
 # Where it appears: second paragraph in the green block at the top of the contact page
 JOIN_CONTACT_NOTE = "Much of my work runs inside real organizations &mdash; sales floors, factory floors, clinics, hotel corridors. If you run one and have wondered what a study there would look like, that is a conversation worth having."
