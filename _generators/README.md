@@ -39,11 +39,16 @@ The public label is deliberately not "citation sky": read quickly, that names th
 wrong thing — the author's own citation count — when the map is about the
 opposite, how small a part of a field any one body of work is.
 
-`works.json` is the parsed reference lists of twelve manuscripts — 640 references,
-608 distinct works, 25 of them cited by more than one study. It was built by
-`extract_refs.py` (pulls the reference block out of each `.docx`) followed by a
-pass that parsed the five different citation styles into structured records. It is
-committed, so the map rebuilds without needing the manuscripts.
+`works.json` is the parsed reference lists of 13 pieces of work — 752 distinct
+works, 29 of them reached by more than one study. `extract_refs.py` pulls the
+reference block out of each `.docx`; the published book chapter came from its
+PDF instead, where indentation varies per page, so entries are split on the
+"Surname, A." citation pattern rather than on indent. A parsing pass then turned
+five different citation styles into structured records with a shared matching
+key. It is committed, so the map rebuilds without needing the manuscripts.
+
+Two studies are deliberately absent: EduBot and the robotic-surgery work have no
+manuscript to read a reference list from.
 
 ### Unfinished: the second hop
 
