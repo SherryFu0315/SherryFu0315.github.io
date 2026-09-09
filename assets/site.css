@@ -310,7 +310,9 @@ a.btn:hover, .btn:hover{ background:var(--coral); color:var(--ink) }
   font-size:clamp(19px,2.1vw,25px);
   margin:38px 0 14px; padding-bottom:9px;
   border-bottom:var(--rule-w) solid var(--ink);
-  max-width:none;
+  /* The rule under a section heading ends where the text under it ends. Run to
+     the full width and on a wide screen it points at half a page of nothing. */
+  max-width:80ch;
 }
 .prose h3:first-child{ margin-top:0 }
 
