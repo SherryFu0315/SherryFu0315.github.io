@@ -558,3 +558,6 @@ button:focus-visible{ outline:3px solid var(--blue); outline-offset:2px }
 .foot li{ padding:4px 0 }
 .foot a{ color:var(--ink) }
 .foot .credit{ font-size:12px; line-height:1.5 }
+
+.cr-h{ font-family:"IBM Plex Mono",monospace; font-size:11px; letter-spacing:.14em;
+  text-transform:uppercase; color:var(--muted); margin:28px 0 10px; font-weight:500 }
