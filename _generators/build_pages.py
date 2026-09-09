@@ -41,7 +41,7 @@ JOIN = '''<!DOCTYPE html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>__JOIN_PAGE_TITLE__</title>
-<meta name="description" content="Xinyu Fu welcomes student research assistant volunteers at Georgia State University. Send a CV and one writing sample &mdash; a course project report is perfectly fine.">
+<meta name="description" content="How to reach Xinyu Fu at Georgia State University — research collaborations, work with organizations, and student research assistant volunteer positions, open year-round.">
 FONTS
 </head>
 <body>
@@ -56,29 +56,29 @@ NAV
       <p class="eyebrow eyebrow--boxed">__JOIN_EYEBROW__</p>
       <h2>__JOIN_CTA_HEADLINE__</h2>
       <p class="lede">__JOIN_LEDE__</p>
-      <p style="font-size:16px;max-width:52ch">__JOIN_UNPAID_NOTE__</p>
+      <p style="font-size:16px;max-width:52ch">__JOIN_CONTACT_NOTE__</p>
     </div>
     <div>
-      <ol class="send-list">
-        <li><span class="n">01</span><span>__JOIN_SEND_CV__</span></li>
-        <li><span class="n">02</span><span>__JOIN_SEND_WRITING_SAMPLE__</span></li>
-        <li><span class="n">03</span><span>__JOIN_SEND_WHICH_PROJECT__</span></li>
-      </ol>
+      <ul class="send-list">
+        <li><span class="n">__JOIN_CONTACT_EMAIL_LABEL__</span><span><a class="mail" data-u="xinyufu" data-d="gsu.edu" href="#">xinyufu [at] gsu.edu</a></span></li>
+        <li><span class="n">__JOIN_CONTACT_OFFICE_LABEL__</span><span>__JOIN_CONTACT_OFFICE__</span></li>
+        <li><span class="n">__JOIN_CONTACT_DEPT_LABEL__</span><span>__JOIN_CONTACT_DEPT__</span></li>
+        <li><span class="n">__JOIN_CONTACT_ELSEWHERE_LABEL__</span><span><a href="https://scholar.google.com/citations?user=0OM4QfkAAAAJ&amp;hl=en">__SCHOLAR_LABEL__</a></span></li>
+      </ul>
       <p style="margin:22px 0 0">
-        <a class="btn mail" data-u="xinyufu" data-d="gsu.edu" data-s="Research assistant volunteer" data-b="Hi Dr. Fu,&#10;&#10;I would like to volunteer as a research assistant.&#10;&#10;Attached: my CV and a writing sample.&#10;&#10;The project that caught my eye: " href="#">__JOIN_EMAIL_BUTTON__</a>
+        <a class="btn mail" data-u="xinyufu" data-d="gsu.edu" data-s="Hello from your website" href="#">__JOIN_CONTACT_BUTTON__</a>
       </p>
     </div>
   </section>
 
   <div class="sec-head" id="students">
-    <h2>__JOIN_STUDENTS_TITLE__</h2>
-    <span class="count">__JOIN_STUDENTS_SUBTITLE__</span>
+    <h2>__JOIN_RA_TITLE__</h2>
+    <span class="count">__JOIN_RA_SUBTITLE__</span>
   </div>
 
   <div class="prose">
-    <ul class="people">
-PEOPLE
-    </ul>
+    <p class="lede">__JOIN_RA_LEDE__</p>
+    <p>__JOIN_UNPAID_NOTE__</p>
   </div>
 
   <div class="strip">
@@ -112,6 +112,16 @@ PEOPLE
   </div>
 
   <div class="prose">
+    <h3>__JOIN_SEND_TITLE__</h3>
+    <ol class="send-list" style="max-width:60ch">
+      <li><span class="n">01</span><span>__JOIN_SEND_CV__</span></li>
+      <li><span class="n">02</span><span>__JOIN_SEND_WRITING_SAMPLE__</span></li>
+      <li><span class="n">03</span><span>__JOIN_SEND_WHICH_PROJECT__</span></li>
+    </ol>
+    <p style="margin:24px 0 0">
+      <a class="btn mail" data-u="xinyufu" data-d="gsu.edu" data-s="Research assistant volunteer" data-b="Hi Dr. Fu,&#10;&#10;I would like to volunteer as a research assistant.&#10;&#10;Attached: my CV and a writing sample.&#10;&#10;The project that caught my eye: " href="#">__JOIN_EMAIL_BUTTON__</a>
+    </p>
+
     <h3>__JOIN_FAQ_TITLE__</h3>
 
     <p><b>__JOIN_FAQ_NOT_CIS_Q__</b><br>
@@ -129,6 +139,18 @@ PEOPLE
     <p><b>__JOIN_FAQ_NO_REPLY_Q__</b><br>
     __JOIN_FAQ_NO_REPLY_A__</p>
 
+  </div>
+
+  <div class="sec-head" id="advising">
+    <h2>__JOIN_STUDENTS_TITLE__</h2>
+    <span class="count">__JOIN_STUDENTS_SUBTITLE__</span>
+  </div>
+
+  <div class="prose">
+    <ul class="people">
+PEOPLE
+    </ul>
+
     <h3>__JOIN_COACHING_TITLE__</h3>
     <p>__JOIN_COACHING_TEXT__</p>
   </div>
@@ -143,6 +165,19 @@ JOIN = (JOIN.replace('FONTS', B.FONTS).replace('NAV', B.nav('/join/'))
             .replace('PEOPLE', people_html).replace('FOOT', B.FOOT)
             .replace('__JOIN_PAGE_TITLE__', T.JOIN_PAGE_TITLE)
             .replace('__JOIN_EYEBROW__', T.JOIN_EYEBROW)
+            .replace('__JOIN_CONTACT_NOTE__', T.JOIN_CONTACT_NOTE)
+            .replace('__JOIN_CONTACT_EMAIL_LABEL__', T.JOIN_CONTACT_EMAIL_LABEL)
+            .replace('__JOIN_CONTACT_OFFICE_LABEL__', T.JOIN_CONTACT_OFFICE_LABEL)
+            .replace('__JOIN_CONTACT_OFFICE__', T.JOIN_CONTACT_OFFICE)
+            .replace('__JOIN_CONTACT_DEPT_LABEL__', T.JOIN_CONTACT_DEPT_LABEL)
+            .replace('__JOIN_CONTACT_DEPT__', T.JOIN_CONTACT_DEPT)
+            .replace('__JOIN_CONTACT_ELSEWHERE_LABEL__', T.JOIN_CONTACT_ELSEWHERE_LABEL)
+            .replace('__SCHOLAR_LABEL__', T.HOME_FOOT_GOOGLE_SCHOLAR)
+            .replace('__JOIN_CONTACT_BUTTON__', T.JOIN_CONTACT_BUTTON)
+            .replace('__JOIN_RA_TITLE__', T.JOIN_RA_TITLE)
+            .replace('__JOIN_RA_SUBTITLE__', T.JOIN_RA_SUBTITLE)
+            .replace('__JOIN_RA_LEDE__', T.JOIN_RA_LEDE)
+            .replace('__JOIN_SEND_TITLE__', T.JOIN_SEND_TITLE)
             .replace('__JOIN_CTA_HEADLINE__', T.JOIN_CTA_HEADLINE)
             .replace('__JOIN_LEDE__', T.JOIN_LEDE)
             .replace('__JOIN_UNPAID_NOTE__', T.JOIN_UNPAID_NOTE)

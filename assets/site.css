@@ -61,7 +61,7 @@ a{ color:inherit }
 .foot a,
 .credit a,
 .sec-head .count a,
-.cta p a:not(.btn){
+.cta a:not(.btn){
   color:var(--blue);
   text-decoration:none;
   border-bottom:1.5px solid rgba(39,76,236,.28);
@@ -78,7 +78,7 @@ a{ color:inherit }
 .foot a:hover,
 .credit a:hover,
 .sec-head .count a:hover,
-.cta p a:not(.btn):hover{ border-bottom-color:var(--blue) }
+.cta a:not(.btn):hover{ border-bottom-color:var(--blue) }
 
 /* ---------- type roles ---------------------------------------------------- */
 
@@ -149,8 +149,11 @@ p:last-child{ margin-bottom:0 }
 }
 .navlinks a:hover{ color:var(--ink); border-color:var(--ink) }
 .navlinks a[aria-current="page"]{ background:var(--ink); color:var(--paper) }
-.navlinks a.is-cta{ background:var(--coral); color:var(--ink); border-color:var(--ink) }
-.navlinks a.is-cta:hover{ background:var(--yellow) }
+.navlinks a.is-cta{ color:var(--ink); border-color:var(--ink) }
+.navlinks a.is-cta:hover{ background:var(--ink); color:var(--paper) }
+/* on its own page it is the current item, which is filled: keep the label
+   readable rather than letting the outline rule paint ink on ink */
+.navlinks a.is-cta[aria-current="page"]{ color:var(--paper) }
 
 a:focus-visible,
 button:focus-visible{ outline:3px solid var(--blue); outline-offset:2px }
@@ -177,7 +180,7 @@ button:focus-visible{ outline:3px solid var(--blue); outline-offset:2px }
   object-fit:cover;
 }
 .rail h1{
-  font-size:clamp(44px,7.4vw,92px);
+  font-size:clamp(34px,5.4vw,66px);
   font-variation-settings:"wdth" 74,"wght" 850;
   line-height:.86; letter-spacing:-.022em;
   margin:0 0 14px;
@@ -202,7 +205,7 @@ button:focus-visible{ outline:3px solid var(--blue); outline-offset:2px }
      family, deliberately the opposite end of both axes, so the two read as two
      voices rather than one repeated. Caps get their tracking opened up. */
   font-variation-settings:"wdth" 104,"wght" 560;
-  font-size:clamp(19px,1.95vw,26px); line-height:1.18;
+  font-size:clamp(25px,2.7vw,37px); line-height:1.13;
   letter-spacing:.012em; text-transform:uppercase; color:var(--ink);
   max-width:22ch; margin:0 0 20px; text-wrap:balance;
 }
@@ -210,8 +213,8 @@ button:focus-visible{ outline:3px solid var(--blue); outline-offset:2px }
 .nb{ white-space:nowrap }
 
 .thesis > span{
-  display:block; font-size:15.5px; line-height:1.62;
-  color:var(--muted); max-width:40ch;
+  display:block; font-size:17.5px; line-height:1.6;
+  color:var(--muted); max-width:38ch;
 }
 
 .rail-links{ display:flex; flex-direction:column; gap:0; margin:0; padding:0; list-style:none }
@@ -235,15 +238,42 @@ button:focus-visible{ outline:3px solid var(--blue); outline-offset:2px }
   text-decoration:none; color:#fff;
   padding:clamp(38px,6vw,74px) var(--pad);
 }
-.skylink-stars{ position:absolute; inset:0; width:100%; height:100%; opacity:.9 }
+.skylink-stars{
+  position:absolute; inset:0; width:100%; height:100%;
+  /* a slow drift in on hover, anchored on the cluster rather than the middle
+     of the card, so the constellation is what appears to come closer */
+  transform-origin:66% 50%;
+  transition:transform 1.1s cubic-bezier(.22,.61,.24,1);
+}
+.skylink:hover .skylink-stars,
+.skylink:focus-visible .skylink-stars{ transform:scale(1.055) }
+@media (prefers-reduced-motion: reduce){
+  .skylink-stars{ transition:none }
+  .skylink:hover .skylink-stars{ transform:none }
+}
+/* The map runs the full width of the card and the words sit on top of it,
+   so the side the words are on is dimmed and the other side is left clear. */
+.skylink-scrim{
+  position:absolute; inset:0; pointer-events:none;
+  background:linear-gradient(178deg,#120A1F 0 10%,rgba(18,10,31,.93) 48%,
+                             rgba(18,10,31,.4) 76%,rgba(18,10,31,.05) 100%);
+}
+/* 860 is also where the painter switches how it frames the map, so the
+   dimmed side and the empty side stay the same side. */
+@media(min-width:860px){
+  .skylink-scrim{
+    background:linear-gradient(90deg,#120A1F 0 18%,rgba(18,10,31,.88) 38%,
+                               rgba(18,10,31,.28) 60%,rgba(18,10,31,0) 76%);
+  }
+}
 .skylink-in{ position:relative; display:block; max-width:56ch }
 .skylink-h{
   display:block;
   font-family:"Archivo",Arial,sans-serif;
   font-variation-settings:"wdth" 78,"wght" 800;
   text-transform:uppercase; letter-spacing:-.018em; line-height:.93;
-  font-size:clamp(32px,6vw,72px);
-  margin-bottom:16px; text-wrap:balance;
+  font-size:clamp(27px,3.3vw,44px);
+  margin-bottom:14px; text-wrap:balance;
 }
 .skylink-p{
   display:block; color:#B6A9CE; font-size:16.5px; line-height:1.55;

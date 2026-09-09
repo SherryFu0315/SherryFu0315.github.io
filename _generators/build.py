@@ -2,7 +2,7 @@
 import io, os, sys, json
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import words as T
-from projects import PROJECTS, COLS, ROWS
+from projects import PROJECTS, COLS, ROWS, LABEL, STAR_SIZE
 
 # The map card quotes these, and draws a miniature of the real map. Both come
 # from the same file and the same layout the map itself uses, so neither the
@@ -18,18 +18,41 @@ _ids = set(c for w in _works for c in w['cited_by'])
 _studies = [p for p in PROJECTS if p['id'] in _ids]
 _byid = {p['id']: p for p in _studies}
 _CBY = {c['id']: c['c'] for c in COLS}
+_NEUTRAL = '#8E7FA8'
 _MW, _MH = 1600, 1024
 _sxy, _wxy, _kept, _ = _CL.layout(_studies, _works, box=(_MW, _MH))
 _pairs = _CL.coupling(_studies, _kept)
 
-def _n(p):
-    return [round(p[0] / _MW, 4), round(p[1] / _MH, 4)]
+
+def _wcol(w):
+    """The same colouring the map itself uses: cream if more than one study
+    reaches this work, otherwise the colour of the one study that does."""
+    cs = [c for c in w['cited_by'] if c in _byid]
+    return '#FFF4D6' if len(cs) > 1 else (_CBY.get(_byid[cs[0]]['col']) or _NEUTRAL)
+
+
+def _p(xy):
+    return [round(xy[0], 1), round(xy[1], 1)]
+
+
+_sx = sorted(v[0] for v in _sxy.values())
+_sy = sorted(v[1] for v in _sxy.values())
 
 MINI = {
-    'w': [_n(_wxy[w['key']]) + [len([c for c in w['cited_by'] if c in _byid])]
+    # every cited work: position, colour, and how many studies reach it
+    'w': [_p(_wxy[w['key']]) + [_wcol(w), len([c for c in w['cited_by'] if c in _byid])]
           for w in _kept],
-    's': [_n(_sxy[p['id']]) + [_CBY.get(p['col']) or '#8E7FA8'] for p in _studies],
-    'l': [_n(_sxy[a]) + _n(_sxy[b]) + [n] for (a, b), n in _pairs.items()],
+    # every study: position, colour, label, size
+    's': [_p(_sxy[p['id']]) + [_CBY.get(p['col']) or _NEUTRAL,
+                              LABEL.get(p['id'], p['short']),
+                              STAR_SIZE.get(p['chip'], 1)] for p in _studies],
+    # the coupling lines, with the number of references the pair shares
+    'l': [_p(_sxy[a]) + _p(_sxy[b]) + [n] for (a, b), n in _pairs.items()],
+    # where the studies are, so the card can frame them: bounds and the median
+    # row to centre on. The studies span a narrow band; the outliers above and
+    # below it fall off the edge of the card, which is the point.
+    'b': [round(_sx[0], 1), round(_sy[0], 1), round(_sx[-1], 1), round(_sy[-1], 1),
+          round(_sy[len(_sy) // 2], 1)],
 }
 
 R = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))   # repo root
@@ -48,7 +71,7 @@ def nav(cur):
     for href,label in items:
         out.append('      <a href="%s"%s>%s</a>' % (href, ' aria-current="page"' if href==cur else '', label))
     out.append('      <a href="/join/" class="is-cta"%s>%s</a>'
-               % (' aria-current="page"' if cur=='/join/' else '', T.HOME_NAV_WORK_WITH_ME))
+               % (' aria-current="page"' if cur=='/join/' else '', T.HOME_NAV_CONTACT))
     out+=['    </div>','  </nav>']
     return '\n'.join(out)
 
@@ -247,6 +270,7 @@ HOME = '''<!DOCTYPE html>
 
   <a class="skylink" href="/universe/">
     <canvas class="skylink-stars" id="skystars" aria-hidden="true"></canvas>
+    <span class="skylink-scrim" aria-hidden="true"></span>
     <span class="skylink-in">
       <span class="eyebrow" style="color:#9A8CB4">%s</span>
       <span class="skylink-h">%s</span>
@@ -315,11 +339,15 @@ HOME = '''<!DOCTYPE html>
 (function(){
   var cv = document.getElementById('skystars');
   if (!cv) return;
-  /* A miniature of the real map, not a decorative starfield: the same 13
-     studies at the same positions the citation layout puts them, the works
-     they cite, and the lines where two studies share a reference. It sits to
-     the right so the text keeps the left. */
+  /* Not a decorative starfield: this is the real map, zoomed to its core. The
+     same studies at the positions the citation layout gives them, the works
+     they cite in the same colours, and the lines where two studies share a
+     reference. It is deliberately cropped &mdash; what runs off the edge is the
+     rest of the map, which is the thing the card is inviting you into. */
   var MINI = __MINI__;
+  var SPARK = new Path2D('M50 2 C54 31 69 46 98 50 C69 54 54 69 50 98 '
+                       + 'C46 69 31 54 2 50 C31 46 46 31 50 2 Z');
+
   function paint(){
     var r = cv.getBoundingClientRect();
     if (r.width < 2 || r.height < 2) return;
@@ -328,50 +356,83 @@ HOME = '''<!DOCTYPE html>
     var g = cv.getContext('2d'); g.setTransform(dpr,0,0,dpr,0,0);
     g.clearRect(0,0,r.width,r.height);
 
-    /* faint dust everywhere, so the card is not empty on the left */
+    /* faint dust, so the frame does not go empty where the literature thins */
     var seed=4242; function rnd(){ seed=(seed*1103515245+12345)&0x7fffffff; return seed/0x7fffffff; }
-    for (var i=0;i<180;i++){
-      g.globalAlpha=0.10+rnd()*0.28; g.fillStyle='#CFC2E8';
+    for (var i=0;i<190;i++){
+      g.globalAlpha=0.07+rnd()*0.22; g.fillStyle='#CFC2E8';
       g.beginPath(); g.arc(rnd()*r.width, rnd()*r.height, rnd()*0.9+0.3, 0, Math.PI*2); g.fill();
     }
 
-    /* Drawn larger than the card and allowed to crop. Fitted whole it read as
-       a stamp in the corner; running off the edge it reads as a window onto
-       something bigger, which is what it is. The text column runs to 56ch, so
-       side by side only works on a wide card; below that it sits underneath. */
-    var narrow = r.width < 1080;
-    var mh = narrow ? r.height*1.15 : r.height*1.55;
-    var mw = mh*1.5625;                            // the map is 1600x1024
-    if (narrow){ mw = r.width*1.5; mh = mw/1.5625; }
-    var ox = narrow ? (r.width-mw)/2 : r.width*0.42;
-    var oy = narrow ? r.height - mh*0.62 : (r.height-mh)/2;
-    function X(v){ return ox + v*mw; }
-    function Y(v){ return oy + v*mh; }
+    /* Zoom to the studies rather than fitting the whole map in. Fitted whole it
+       read as a stamp in the corner; at roughly the scale the map itself opens
+       at, the constellation is legible and the labels can be read. On a wide
+       card the text keeps the left, so the core is pushed right of centre. */
+    var b = MINI.b, pad = 78;
+    var narrow = r.width < 860;   // must match the scrim's breakpoint in site.css
+    var s = (narrow ? r.width*1.75 : r.width*0.78) / ((b[2]-b[0]) + pad*2);
+    var ox = (narrow ? r.width*0.72 : r.width*0.66) - (b[0]+b[2])/2 * s;
+    var oy = (narrow ? r.height*0.74 : r.height*0.50) - b[4] * s;
+    function X(u){ return ox + u*s; }
+    function Y(v){ return oy + v*s; }
 
     MINI.l.forEach(function(l){
       g.strokeStyle='#C9B6FF';
-      g.globalAlpha=Math.min(0.08+l[4]*0.05, 0.34);
-      g.lineWidth=Math.min(0.4+l[4]*0.22, 1.4);
+      g.globalAlpha=Math.min(0.10+l[4]*0.05, 0.38);
+      g.lineWidth=Math.min(0.5+l[4]*0.28, 1.9);
       g.beginPath(); g.moveTo(X(l[0]),Y(l[1])); g.lineTo(X(l[2]),Y(l[3])); g.stroke();
     });
     MINI.w.forEach(function(w){
-      var shared = w[2] > 1;
-      g.globalAlpha = shared ? 0.9 : 0.34;
-      g.fillStyle = shared ? '#FFF4D6' : '#B9A9DA';
-      g.beginPath(); g.arc(X(w[0]), Y(w[1]), shared ? 1.9 : 1.05, 0, Math.PI*2); g.fill();
+      var shared = w[3] > 1;
+      g.globalAlpha = shared ? 0.92 : 0.44;
+      g.fillStyle = w[2];
+      g.beginPath(); g.arc(X(w[0]), Y(w[1]), shared ? 2.1 : 1.2, 0, Math.PI*2); g.fill();
     });
     MINI.s.forEach(function(st){
       var x=X(st[0]), y=Y(st[1]);
-      var grd=g.createRadialGradient(x,y,0,x,y,10);
+      if (x < -60 || x > r.width+60 || y < -60 || y > r.height+60) return;
+      var R = 8 + st[4]*3.2;
+      var grd=g.createRadialGradient(x,y,0,x,y,R*2.6);
       grd.addColorStop(0,st[2]); grd.addColorStop(1,'rgba(0,0,0,0)');
-      g.globalAlpha=0.55; g.fillStyle=grd;
-      g.beginPath(); g.arc(x,y,10,0,Math.PI*2); g.fill();
+      g.globalAlpha=0.4; g.fillStyle=grd;
+      g.beginPath(); g.arc(x,y,R*2.6,0,Math.PI*2); g.fill();
       g.globalAlpha=1; g.fillStyle=st[2];
-      g.beginPath(); g.arc(x,y,2.8,0,Math.PI*2); g.fill();
+      g.save(); g.translate(x-R, y-R); g.scale(R/50, R/50); g.fill(SPARK); g.restore();
+    });
+
+    /* Labels, kept off the words and off each other. The text column is
+       measured rather than guessed at, so this holds at every width. A label
+       that cannot be placed is dropped rather than nudged: the star still
+       shows, and the whole map is one click away. */
+    var txt = cv.parentNode.querySelector('.skylink-in');
+    var tr = txt && txt.getBoundingClientRect();
+    var ex = tr && {l:tr.left-r.left-14, t:tr.top-r.top-12,
+                    rt:tr.right-r.left+14, b:tr.bottom-r.top+12};
+    g.font='500 12px "IBM Plex Mono", ui-monospace, monospace';
+    g.textBaseline='top';
+    var taken=[];
+    MINI.s.forEach(function(st){
+      var x=X(st[0]), y=Y(st[1]);
+      if (x < 8 || x > r.width-14) return;
+      var R = 8 + st[4]*3.2;
+      var bw = g.measureText(st[3]).width + 14, bh = 20;
+      var bx = Math.min(Math.max(x-bw/2, 8), r.width-bw-8), by = y + R + 7;
+      if (by < 8 || by+bh > r.height-8) return;
+      if (ex && bx < ex.rt && bx+bw > ex.l && by < ex.b && by+bh > ex.t) return;
+      for (var k=0;k<taken.length;k++){
+        var t=taken[k];
+        if (bx < t[0]+t[2]+7 && bx+bw+7 > t[0] && by < t[1]+t[3]+5 && by+bh+5 > t[1]) return;
+      }
+      taken.push([bx,by,bw,bh]);
+      g.globalAlpha=0.76; g.fillStyle='#120A1F';
+      g.fillRect(bx, by, bw, bh);
+      g.globalAlpha=1; g.fillStyle='#E9E1F6';
+      g.fillText(st[3], bx+7, by+4);
     });
     g.globalAlpha=1;
   }
   paint();
+  // the labels are set in a web font; measured before it lands they come out wrong
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(paint);
   var t; window.addEventListener('resize', function(){ clearTimeout(t); t=setTimeout(paint,160); });
 })();
 </script>

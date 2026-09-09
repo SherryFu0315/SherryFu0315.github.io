@@ -239,3 +239,21 @@ PROJECTS = [
             ('+1.03','informational guard &mdash; the guest says less')],
    links=[]),
 ]
+
+
+# Short enough to sit under a star, on the map and on the front page's
+# miniature of it. The full title stays in the tooltip. It lives here rather
+# than in either builder so the two cannot drift apart.
+LABEL = {
+    'retrieval': 'LLM oversight',           'errors': 'Detecting AI errors',
+    'secd': 'Epistemic calibration',        'creativity': 'AI authenticity',
+    'investment': 'Investment expectations','stimulus': 'Stimulus sampling',
+    'sales': 'Parallel AI in sales',        'triage': 'AI triage',
+    'manufacturing': 'Shop-floor embodied AI', 'service': 'Service robots',
+    'misaligned': 'Cost of conformity',     'remote': 'Remote work',
+    'hrm': 'AI in HR',                      'edubot': 'EduBot Naija',
+    'surgery': 'Robotic surgery',
+}
+
+# How large a star is drawn, by how far along the work is.
+STAR_SIZE = {'Forthcoming': 3, 'Published': 3, 'Deployed': 3, 'Under review': 2}

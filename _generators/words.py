@@ -43,7 +43,7 @@ HOME_NAV_HOME = "Home"
 HOME_NAV_RESEARCH = "Research"
 
 # Where it appears: top navigation bar, link to the research map page
-HOME_NAV_UNIVERSE = "Universe"
+HOME_NAV_UNIVERSE = "Research universe"
 
 # Where it appears: top navigation bar, link to the publications page
 HOME_NAV_PUBLICATIONS = "Publications"
@@ -52,7 +52,7 @@ HOME_NAV_PUBLICATIONS = "Publications"
 HOME_NAV_TEACHING = "Teaching"
 
 # Where it appears: top navigation bar, the highlighted button at the right
-HOME_NAV_WORK_WITH_ME = "Work with me"
+HOME_NAV_CONTACT = "Contact"
 
 # Where it appears: footer, the postal address in the first column
 HOME_FOOT_ADDRESS = """Department of Computer Information Systems<br>
@@ -94,7 +94,7 @@ HOME_THESIS = """<b>What makes <span class="nb">human&ndash;AI</span> collaborat
 
 
 # Where it appears: small label at the top of the starry card linking to the research map
-HOME_MAP_EYEBROW = "Interactive"
+HOME_MAP_EYEBROW = "Interactive &middot; the citation map"
 
 # Where it appears: headline on the starry card linking to the research map
 HOME_MAP_HEADLINE = "The shoulders we stand on"
@@ -136,7 +136,7 @@ HOME_JOIN_SEND_WHICH_PROJECT = "Two sentences on <b>which project caught your ey
 # Where it appears: label on the email button under the "what to send" list
 HOME_JOIN_EMAIL_BUTTON = "Email xinyufu [at] gsu.edu"
 
-# Where it appears: small link under the email button, to the "Work with me" page
+# Where it appears: small link under the email button, to the contact page
 HOME_JOIN_MORE_LINK = "Who I work with, and what the work is like &rarr;"
 
 # Where it appears: heading of the first of the three columns near the bottom of the front page
@@ -181,7 +181,7 @@ RESEARCH_UNDER_REVIEW_NOTE = """Work under review is listed without a journal
     name until a decision is final. Conference papers and service are on the
     <a href="/publications/">publications page</a>."""
 
-# Where it appears: button at the bottom of the research page, linking to the "Work with me" page
+# Where it appears: button at the bottom of the research page, linking to the contact page
 RESEARCH_JOIN_BUTTON = "Want to work on one of these? &rarr;"
 
 # Where it appears: stand-in shown for a project that has no one-line finding written yet
@@ -207,7 +207,7 @@ MAP_NAV_HOME = "Home"
 MAP_NAV_RESEARCH = "Research"
 
 # Where it appears: top navigation bar, link to this map page
-MAP_NAV_UNIVERSE = "Universe"
+MAP_NAV_UNIVERSE = "Research universe"
 
 # Where it appears: top navigation bar, link to the publications page
 MAP_NAV_PUBLICATIONS = "Publications"
@@ -216,7 +216,7 @@ MAP_NAV_PUBLICATIONS = "Publications"
 MAP_NAV_TEACHING = "Teaching"
 
 # Where it appears: top navigation bar, the highlighted button at the right
-MAP_NAV_WORK_WITH_ME = "Work with me"
+MAP_NAV_CONTACT = "Contact"
 
 # Where it appears: the big headline at the top of the map page
 MAP_H1 = "How the work<br>connects"
@@ -251,44 +251,81 @@ MAP_FINDING_COMING_SOON = "A short description of this project is coming."
 
 
 # ==========================================================================
-#  THE "WORK WITH ME" PAGE AND THE TEACHING PAGE
+#  THE CONTACT PAGE AND THE TEACHING PAGE
 # ==========================================================================
 
-# Where it appears: browser tab and search results title for the "Work with me" page
-JOIN_PAGE_TITLE = "Work with me &mdash; Xinyu Fu"
+# Where it appears: browser tab and search results title for the contact page
+JOIN_PAGE_TITLE = "Contact &mdash; Xinyu Fu"
 
-# Where it appears: small boxed label above the headline at the top of the "Work with me" page
-JOIN_EYEBROW = "Student research assistants &middot; volunteers"
+# Where it appears: small boxed label above the headline at the top of the contact page
+JOIN_EYEBROW = "Contact"
 
-# Where it appears: main headline at the top of the "Work with me" page
+# Where it appears: main headline at the top of the contact page
 JOIN_CTA_HEADLINE = "Interested in working with me?"
 
-# Where it appears: opening paragraph under the headline on the "Work with me" page
-JOIN_LEDE = "I take on <b>student research assistant volunteers</b> year-round, undergraduate and graduate. You do not need prior research experience, and you do not need to have taken my class. You need to be curious and to finish things."
+# Where it appears: opening paragraph under the headline on the contact page
+JOIN_LEDE = "I am glad to hear from anyone working on the same questions &mdash; <b>research collaborations</b> with faculty and doctoral students, <b>organizations</b> curious about what AI is doing to work inside their own walls, and <b>students</b> looking for a way into research."
 
-# Where it appears: second paragraph under the headline, about the positions being unpaid
+# Where it appears: second paragraph in the green block at the top of the contact page
+JOIN_CONTACT_NOTE = "Much of my work runs inside real organizations &mdash; sales floors, factory floors, clinics, hotel corridors. If you run one and have wondered what a study there would look like, that is a conversation worth having."
+
+# Where it appears: label beside the email address in the contact details
+JOIN_CONTACT_EMAIL_LABEL = "Email"
+
+# Where it appears: label beside the office address in the contact details
+JOIN_CONTACT_OFFICE_LABEL = "Office"
+
+# Where it appears: the office address in the contact details
+JOIN_CONTACT_OFFICE = "55 Park Place NE<br>Atlanta, GA 30303"
+
+# Where it appears: label beside the department in the contact details
+JOIN_CONTACT_DEPT_LABEL = "Department"
+
+# Where it appears: the department and university in the contact details
+JOIN_CONTACT_DEPT = "Computer Information Systems<br>J. Mack Robinson College of Business<br>Georgia State University"
+
+# Where it appears: label beside the Google Scholar link in the contact details
+JOIN_CONTACT_ELSEWHERE_LABEL = "Elsewhere"
+
+# Where it appears: label on the email button in the green block at the top of the contact page
+JOIN_CONTACT_BUTTON = "Email xinyufu [at] gsu.edu"
+
+
+# Where it appears: heading of the student research assistant section on the contact page
+JOIN_RA_TITLE = "Student research assistants"
+
+# Where it appears: small caption beside the "Student research assistants" heading
+JOIN_RA_SUBTITLE = "Volunteer positions, open year-round"
+
+# Where it appears: opening paragraph of the student research assistant section
+JOIN_RA_LEDE = "I take on <b>student research assistant volunteers</b> year-round, undergraduate and graduate. You do not need prior research experience, and you do not need to have taken my class. You need to be curious and to finish things."
+
+# Where it appears: second paragraph of the student research assistant section, about the positions being unpaid
 JOIN_UNPAID_NOTE = "These are unpaid volunteer positions. What they are worth is the part you cannot get from coursework: seeing how a study is actually built, and how data actually behaves."
 
-# Where it appears: item 01 of the numbered "what to send" list on the "Work with me" page
+# Where it appears: heading above the numbered "what to send" list
+JOIN_SEND_TITLE = "What to send"
+
+# Where it appears: item 01 of the numbered "what to send" list on the contact page
 JOIN_SEND_CV = "A <b>CV or r&eacute;sum&eacute;</b>. One page is plenty."
 
-# Where it appears: item 02 of the numbered "what to send" list on the "Work with me" page
+# Where it appears: item 02 of the numbered "what to send" list on the contact page
 JOIN_SEND_WRITING_SAMPLE = "One <b>writing sample</b>. A course project report is perfectly fine &mdash; I care how you build an argument, not where it was published."
 
-# Where it appears: item 03 of the numbered "what to send" list on the "Work with me" page
+# Where it appears: item 03 of the numbered "what to send" list on the contact page
 JOIN_SEND_WHICH_PROJECT = "Two sentences on <b>which project caught your eye</b>, and why."
 
 # Where it appears: label on the email button under the "what to send" list
 JOIN_EMAIL_BUTTON = "Email xinyufu [at] gsu.edu"
 
 
-# Where it appears: section heading above the list of students, on the "Work with me" page
+# Where it appears: section heading above the list of students, on the contact page
 JOIN_STUDENTS_TITLE = "Students I work with"
 
 # Where it appears: small caption beside the "Students I work with" heading
 JOIN_STUDENTS_SUBTITLE = "Doctoral committees and advising"
 
-# Where it appears: heading of the first of the three columns on the "Work with me" page
+# Where it appears: heading of the first of the three columns on the contact page
 JOIN_WHAT_YOU_WOULD_DO_TITLE = "What you would actually do"
 
 # Where it appears: "What you would actually do" column, data item
@@ -304,7 +341,7 @@ JOIN_WHAT_YOU_WOULD_DO_PLATFORMS = "Build the experiment platforms studies run o
 JOIN_WHAT_YOU_WOULD_DO_ANALYSIS = "Sit in on analysis, from the first regression to the last robustness check"
 
 
-# Where it appears: heading of the second of the three columns on the "Work with me" page
+# Where it appears: heading of the second of the three columns on the contact page
 JOIN_WHAT_I_ASK_FOR_TITLE = "What I ask for"
 
 # Where it appears: "What I ask for" column, hours item
@@ -319,7 +356,7 @@ JOIN_WHAT_I_ASK_FOR_SPEAK_UP = "Tell me early when something is not working. Tha
 # Where it appears: "What I ask for" column, coding background item
 JOIN_WHAT_I_ASK_FOR_CODING = "Any coding background helps &mdash; Python, R, SQL, JavaScript &mdash; but none is required for every project"
 
-# Where it appears: heading of the third of the three columns on the "Work with me" page
+# Where it appears: heading of the third of the three columns on the contact page
 JOIN_WHAT_YOU_GET_BACK_TITLE = "What you get back"
 
 # Where it appears: "What you get back" column, reference letter item
@@ -334,7 +371,7 @@ JOIN_WHAT_YOU_GET_BACK_PHD_ADVICE = "An honest read on whether a PhD is right fo
 # Where it appears: "What you get back" column, transferable skills item
 JOIN_WHAT_YOU_GET_BACK_SKILLS = "Skills that transfer: cleaning messy data, defending a claim, writing to be understood"
 
-# Where it appears: heading above the questions and answers on the "Work with me" page
+# Where it appears: heading above the questions and answers on the contact page
 JOIN_FAQ_TITLE = "Common questions"
 
 # Where it appears: common questions, first question
@@ -367,7 +404,7 @@ JOIN_FAQ_NO_REPLY_Q = "I emailed and did not hear back."
 # Where it appears: common questions, answer to the fifth question
 JOIN_FAQ_NO_REPLY_A = "Please do follow up once more &mdash; a second message is always welcome."
 
-# Where it appears: heading of the last section on the "Work with me" page
+# Where it appears: heading of the last section on the contact page
 JOIN_COACHING_TITLE = "Competition coaching"
 
 # Where it appears: paragraph under the "Competition coaching" heading

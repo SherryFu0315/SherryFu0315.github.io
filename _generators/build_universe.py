@@ -14,7 +14,7 @@ from the box I filed it under to the company it actually keeps.
 import io, os, sys, json
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import words as T
-from projects import PROJECTS, COLS, ROWS
+from projects import PROJECTS, COLS, ROWS, LABEL, STAR_SIZE
 from constellations import CONSTELLATIONS, CELLBOX
 import citelayout as CL
 
@@ -31,28 +31,15 @@ CANVAS = 1.5                                                       # canvas over
 COLX = {k: v * K for k, v in {'llm': 342, 'agentic': 578, 'embodied': 814}.items()}
 ROWY = {k: v * K for k, v in {'intervention': 196, 'observational': 452}.items()}
 CELLBOX = {k: tuple(v * K for v in box) for k, box in CELLBOX.items()}
-SIZE = {'Forthcoming': 3, 'Published': 3, 'Deployed': 3, 'Under review': 2}
 NEUTRAL = '#8E7FA8'
 CBY = {c['id']: c['c'] for c in COLS}
-
-# Short enough to sit under a star. The full title stays in the tooltip.
-LABEL = {
-    'retrieval': 'LLM oversight',           'errors': 'Detecting AI errors',
-    'secd': 'Epistemic calibration',        'creativity': 'AI authenticity',
-    'investment': 'Investment expectations','stimulus': 'Stimulus sampling',
-    'sales': 'Parallel AI in sales',        'triage': 'AI triage',
-    'manufacturing': 'Shop-floor embodied AI', 'service': 'Service robots',
-    'misaligned': 'Cost of conformity',     'remote': 'Remote work',
-    'hrm': 'AI in HR',                      'edubot': 'EduBot Naija',
-    'surgery': 'Robotic surgery',
-}
 
 js_cols = [dict(id=c['id'], name=c['name'], sub=c['sub'], c=c['c'], x=COLX[c['id']]) for c in COLS]
 js_rows = [dict(id=r['id'], name=r['name'], sub=r['sub'], y=ROWY[r['id']]) for r in ROWS]
 
 def star(p, col_c, **kw):
     venue = p['chip'] + ((' &middot; ' + p['venue']) if p['venue'] else '')
-    d = dict(id=p['id'], s=SIZE.get(p['chip'], 1), c=col_c,
+    d = dict(id=p['id'], s=STAR_SIZE.get(p['chip'], 1), c=col_c,
              col=p['col'], row=p['row'],
              t=p['short'], lab=LABEL.get(p['id'], p['short']),
              a=[p['authors']] if p['authors'] else [], v=venue,
@@ -326,7 +313,7 @@ PAGE = u'''<!DOCTYPE html>
       <a href="/universe/" aria-current="page">__MAP_NAV_UNIVERSE__</a>
       <a href="/publications/">__MAP_NAV_PUBLICATIONS__</a>
       <a href="/teaching/">__MAP_NAV_TEACHING__</a>
-      <a href="/join/" class="is-cta">__MAP_NAV_WORK_WITH_ME__</a>
+      <a href="/join/" class="is-cta">__MAP_NAV_CONTACT__</a>
     </div>
   </nav>
 
@@ -842,7 +829,7 @@ PAGE = (PAGE.replace('__COLS__',   json.dumps(js_cols,   ensure_ascii=False))
             .replace('__MAP_NAV_UNIVERSE__', T.MAP_NAV_UNIVERSE)
             .replace('__MAP_NAV_PUBLICATIONS__', T.MAP_NAV_PUBLICATIONS)
             .replace('__MAP_NAV_TEACHING__', T.MAP_NAV_TEACHING)
-            .replace('__MAP_NAV_WORK_WITH_ME__', T.MAP_NAV_WORK_WITH_ME)
+            .replace('__MAP_NAV_CONTACT__', T.MAP_NAV_CONTACT)
             .replace('__MAP_H1__', T.MAP_H1)
             .replace('__MAP_HEAD_COPY_CITE__', T.MAP_HEAD_COPY_CITE)
             .replace('__MAP_VIEW_TOGGLE_AXES__', T.MAP_VIEW_TOGGLE_AXES)
