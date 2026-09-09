@@ -84,25 +84,13 @@ HOME_ROLE = """<b>Assistant Professor of Computer Information Systems</b><br>
           J. Mack Robinson College of Business<br>Georgia State University"""
 
 # Where it appears: the statement paragraph under the name at the top of the front page
-HOME_THESIS = "<b>I am fascinated by how people can achieve more with less through better ways of working with AI.</b> My research explores the design of human&ndash;AI collaboration and its behavioral and organizational implications."
+HOME_THESIS = """<b>I am fascinated by how people can achieve more with less through better ways of working with AI.</b><span>My research explores the design of human&ndash;AI collaboration and its behavioral and organizational implications.</span>"""
 
-# Where it appears: list of links at the top of the front page, the email row
-HOME_RAIL_EMAIL = "Email"
 
-# Where it appears: list of links at the top of the front page, the Google Scholar row
-HOME_RAIL_GOOGLE_SCHOLAR = "Google Scholar"
 
-# Where it appears: small note beside "Google Scholar" in that list of links
-HOME_RAIL_GOOGLE_SCHOLAR_NOTE = "Publications &amp; citations"
 
-# Where it appears: list of links at the top of the front page, the LinkedIn row
-HOME_RAIL_LINKEDIN = "LinkedIn"
 
-# Where it appears: list of links at the top of the front page, the students row
-HOME_RAIL_STUDENTS = "Students"
 
-# Where it appears: small note beside "Students" in that list of links
-HOME_RAIL_STUDENTS_NOTE = "RA volunteers welcome &rarr;"
 
 # Where it appears: small label at the top of the starry card linking to the research map
 HOME_MAP_EYEBROW = "Interactive"

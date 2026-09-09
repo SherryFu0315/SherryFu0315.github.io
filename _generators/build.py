@@ -216,12 +216,6 @@ HOME = '''<!DOCTYPE html>
 
       <p class="thesis">%s</p>
 
-      <ul class="rail-links">
-        <li><a class="mail" data-u="xinyufu" data-d="gsu.edu" href="#">%s <span>xinyufu [at] gsu.edu</span></a></li>
-        <li><a href="https://scholar.google.com/citations?user=0OM4QfkAAAAJ&amp;hl=en">%s <span>%s</span></a></li>
-        <li><a href="https://www.linkedin.com/in/xinyu-fu-pitt">%s <span>xinyu-fu-pitt</span></a></li>
-        <li><a href="/join/">%s <span>%s</span></a></li>
-      </ul>
     </div>
 
     <div class="mosaic">
@@ -336,10 +330,7 @@ HOME = '''<!DOCTYPE html>
        nav('/'),
        T.HOME_ROLE,
        T.HOME_THESIS,
-       T.HOME_RAIL_EMAIL,
-       T.HOME_RAIL_GOOGLE_SCHOLAR, T.HOME_RAIL_GOOGLE_SCHOLAR_NOTE,
-       T.HOME_RAIL_LINKEDIN,
-       T.HOME_RAIL_STUDENTS, T.HOME_RAIL_STUDENTS_NOTE,
+
        '\n\n'.join(tiles),
        T.HOME_MAP_EYEBROW,
        T.HOME_MAP_HEADLINE,

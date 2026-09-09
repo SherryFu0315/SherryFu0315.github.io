@@ -186,16 +186,26 @@ button:focus-visible{ outline:3px solid var(--blue); outline-offset:2px }
 }
 .rail .role b{ color:var(--ink); font-weight:600 }
 
-.thesis{
-  font-size:clamp(17px,1.5vw,19.5px);
-  line-height:1.5;
-  border-top:var(--rule-w) solid var(--ink);
-  border-bottom:var(--rule-w) solid var(--ink);
-  padding:18px 0;
-  margin:0;
-  max-width:40ch;
+/* The opening statement is the most important sentence on the site, so it is
+   set as a statement: display face, tight, at size, with the elaboration
+   stepped down beneath it. The highlighter it used to wear made it look
+   annotated rather than said. */
+.thesis{ margin:0; padding:0; border:0 }
+.thesis::before{
+  content:""; display:block; width:46px; height:5px;
+  background:var(--lime); margin:0 0 22px;
 }
-.thesis b{ font-weight:700; background:var(--lime); box-shadow:4px 0 0 var(--lime),-4px 0 0 var(--lime) }
+.thesis b{
+  display:block; font-family:"Archivo",Arial,sans-serif;
+  font-variation-settings:"wdth" 94,"wght" 620;
+  font-size:clamp(23px,2.35vw,31px); line-height:1.08;
+  letter-spacing:-.018em; color:var(--ink);
+  max-width:18ch; margin:0 0 18px; text-wrap:balance;
+}
+.thesis span{
+  display:block; font-size:15.5px; line-height:1.62;
+  color:var(--muted); max-width:40ch;
+}
 
 .rail-links{ display:flex; flex-direction:column; gap:0; margin:0; padding:0; list-style:none }
 .rail-links li{ border-top:1px solid var(--faint) }
@@ -319,6 +329,13 @@ a.btn:hover, .btn:hover{ background:var(--coral); color:var(--ink) }
   max-width:80ch;
 }
 .prose h3:first-child{ margin-top:0 }
+/* the same drawn-mark idea as the teaching page, at section level: five long
+   lists of citations need something to tell them apart at a glance */
+.prose h3 .hico{
+  display:inline-block; vertical-align:-3px; width:22px; height:22px;
+  margin-right:11px; color:var(--ic,var(--muted));
+}
+.prose h3 .hico svg{ display:block; width:100%; height:100% }
 
 .pubs{ list-style:none; margin:0; padding:0 }
 .pubs li{
