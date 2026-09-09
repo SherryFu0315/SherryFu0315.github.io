@@ -41,7 +41,7 @@ LABEL = {
     'investment': 'Investment expectations','stimulus': 'Stimulus sampling',
     'sales': 'Parallel AI in sales',        'triage': 'AI triage',
     'manufacturing': 'Shop-floor embodied AI', 'service': 'Service robots',
-    'misaligned': 'Social signals',         'remote': 'Remote work',
+    'misaligned': 'Cost of conformity',     'remote': 'Remote work',
     'hrm': 'AI in HR',                      'edubot': 'EduBot Naija',
     'surgery': 'Robotic surgery',
 }

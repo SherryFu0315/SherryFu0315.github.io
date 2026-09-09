@@ -47,12 +47,17 @@ PROJECTS = [
 
  dict(id='misaligned', col=None, row=None, order=13,
    chip='In progress', venue='',
-   title='Misaligned Social Signals and Creative Engagement on Digital Platforms',
-   short='Misaligned Social Signals',
+   title='The Cost of Conformity: How Social Signal Alignment Backfires on Identity-Expressive Creative Platforms',
+   short='The Cost of Conformity',
    authors='<b>Fu, X.</b>, Ramasubbu, N., Maruping, L. M., &amp; Janansefat, S.',
-   method='Field experiment',
-   finding=("A field experiment on a music platform, on what listeners do when the signal coming from other "
-            "people and the signal coming from the platform disagree about the same track."),
+   method='Switchback field experiment, with a pre-registered lab replication',
+   finding=("A switchback field experiment on a rap-creation platform, where anything you post carries "
+            "your name. The design intuition is that showing people more of what is popular encourages "
+            "them to make something. It does the reverse: when the signal from a user&rsquo;s friends and "
+            "the signal from the platform <b>agree</b>, recording falls off. Signals that disagree send "
+            "browsing and preparation sharply up &mdash; and almost none of it turns into a finished "
+            "track. The drop lands hardest on the platform&rsquo;s most active creators, the ones it can "
+            "least afford to lose."),
    photo=('misaligned.jpg','A tiled pattern of music-making app icons.'),
    metrics=[], links=[]),
 
@@ -205,7 +210,7 @@ PROJECTS = [
    chip='In progress', venue='',
    title='Robotic Surgery',
    short='Robotic Surgery',
-   authors='',
+   authors='Jing, X., <b>Fu, X.</b>, &amp; Liu, S.',
    method='Clinical team study',
    finding=("A surgeon drives the console, but an operating theatre is a team. When a robot joins the "
             "table, the scrub nurse, the anaesthetist and the assistants all have to learn a new set of "
