@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Research &mdash; Xinyu Fu</title>
-<meta name="description" content="Xinyu Fu's research on how AI makes people better at their work: embodied AI on factory floors, AI in sales and service, oversight of imperfect models, and what generative AI does to shared knowledge.">
+<meta name="description" content="Xinyu Fu's research on how AI makes people better at their work, arranged on two axes: the kind of AI, and whether the study intervenes or observes.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=IBM+Plex+Mono:wght@400;500&display=swap">
@@ -30,11 +30,15 @@
 
   <div class="sec-head">
     <h2>Research</h2>
-    <span class="count">Thirteen projects &middot; <a href="/universe/">see the whole map</a></span>
+    <span class="count">Thirteen projects &middot; <a href="/universe/">see the map</a></span>
   </div>
 
-  <article class="band" id="retrieval">
-    <div class="band-body">
+  <div class="sec-head"><h2>Intervention</h2><span class="count">Augmenting human capability</span></div>
+
+  <p class="grp-label" style="--c:#8FA6FF">LLM / MLLM</p>
+
+  <article class="entry" id="retrieval" style="--c:#8FA6FF">
+    <div class="entry-body">
       <div class="chip-row"><span class="chip chip--live">Forthcoming</span><span class="chip">Journal of Management Information Systems</span><span class="chip">Two field experiments</span></div>
       <h3>Knowing Is Not Enough: Information Retrievability as a Precondition to Effective LLM Oversight</h3>
       <p class="authors"><b>Fu, X.</b>, Ramasubbu, N., &amp; Galletta, D.</p>
@@ -42,430 +46,10 @@
       <p class="proj-links"><a href="https://arxiv.org/abs/2609.01976">Preprint on arXiv &rarr;</a> <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7392398">Preprint on SSRN &rarr;</a></p>
       <div class="metrics"><div class="metric"><span class="metric-value">+10.6pp</span><span class="metric-label">more errors caught writing your own explanation than reading the system&rsquo;s (0.78 vs 0.68, N = 400)</span></div><div class="metric"><span class="metric-value">&minus;2.5pp</span><span class="metric-label">detection lost per day of routine use &mdash; slowed to &minus;1.7 when a retrieval cue was present</span></div></div>
     </div>
-    <div class="band-art is-fig">
-<svg viewBox="0 0 400 300" role="img" aria-label="A bar chart: reading the system explanation catches 0.68 of errors, writing your own catches 0.78. Below, two falling lines show detection decaying over two weeks, the decline shallower when a retrieval cue is present." preserveAspectRatio="xMidYMid meet">
-<rect x="0" y="0" width="400" height="300" fill="#F6F4F9"/>
-<text x="26" y="24" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="9.5" letter-spacing="1.3" fill="#1E102F">SHARE OF ERRORS CAUGHT IN AN AI ANSWER</text>
-<rect x="58" y="99" width="72" height="95" fill="#1E102F" stroke="#1E102F" stroke-width="2.5"/>
-<text x="94" y="87" font-family="Archivo, Arial Black, Arial, sans-serif" font-size="27" font-weight="800" fill="#1E102F" text-anchor="middle">0.68</text>
-<text x="94" y="212" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="8.5" letter-spacing=".6" fill="#1E102F" text-anchor="middle">READ THE SYSTEM&#8217;S</text>
-<text x="94" y="223" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="8.5" letter-spacing=".6" fill="#1E102F" text-anchor="middle">EXPLANATION</text>
-<rect x="168" y="85" width="72" height="109" fill="#DCFF96" stroke="#1E102F" stroke-width="2.5"/>
-<text x="204" y="73" font-family="Archivo, Arial Black, Arial, sans-serif" font-size="27" font-weight="800" fill="#1E102F" text-anchor="middle">0.78</text>
-<text x="204" y="212" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="8.5" letter-spacing=".6" fill="#1E102F" text-anchor="middle">WRITE YOUR OWN</text>
-<text x="204" y="223" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="8.5" letter-spacing=".6" fill="#1E102F" text-anchor="middle">EXPLANATION</text>
-<line x1="44" y1="194" x2="256" y2="194" stroke="#1E102F" stroke-width="2.5"/>
-<text x="26" y="256" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="9.5" letter-spacing="1.3" fill="#1E102F">&#8230; AND IT WEARS OFF OVER TWO WEEKS</text>
-<line x1="28" y1="292" x2="286" y2="292" stroke="#1E102F" stroke-width="2" opacity=".35"/>
-<path d="M30 266 L 286 290" fill="none" stroke="#FF7874" stroke-width="3.5" stroke-linecap="round"/>
-<path d="M30 266 L 286 278" fill="none" stroke="#274CEC" stroke-width="3.5" stroke-linecap="round" stroke-dasharray="7 6"/>
-<text x="294" y="281" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="8.5" fill="#274CEC">WITH A CUE</text>
-<text x="294" y="295" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="8.5" fill="#FF7874">WITHOUT</text>
-</svg>
-    </div>
   </article>
 
-  <article class="band band--flip" id="hrm">
-    <div class="band-art is-fig">
-<svg viewBox="0 0 400 300" role="img" aria-label="A stack of job applications feeds a box marked AI screen, which outputs a ranked shortlist with match scores; a dashed line runs from the top-ranked candidate down to a person who makes the final call." preserveAspectRatio="xMidYMid meet">
-<rect x="0" y="0" width="400" height="300" fill="#F6F4F9"/>
-<text class="fig-cap" x="22" y="26" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="9.5" letter-spacing="1.3" fill="#1E102F">THE MODEL RANKS. SOMEONE STILL DECIDES.</text>
-<rect x="22" y="86" width="62" height="80" rx="4" fill="#F6F4F9" stroke="#1E102F" stroke-width="2.5"/>
-<rect x="31" y="102" width="44" height="5" rx="2.5" fill="#1E102F" opacity=".45"/>
-<rect x="31" y="116" width="32" height="5" rx="2.5" fill="#1E102F" opacity=".45"/>
-<rect x="31" y="130" width="44" height="5" rx="2.5" fill="#1E102F" opacity=".45"/>
-<rect x="31" y="144" width="32" height="5" rx="2.5" fill="#1E102F" opacity=".45"/>
-<circle cx="40" cy="95" r="7" fill="#1E102F" opacity=".7"/>
-<rect x="34" y="110" width="62" height="80" rx="4" fill="#F6F4F9" stroke="#1E102F" stroke-width="2.5"/>
-<rect x="43" y="126" width="44" height="5" rx="2.5" fill="#1E102F" opacity=".45"/>
-<rect x="43" y="140" width="32" height="5" rx="2.5" fill="#1E102F" opacity=".45"/>
-<rect x="43" y="154" width="44" height="5" rx="2.5" fill="#1E102F" opacity=".45"/>
-<rect x="43" y="168" width="32" height="5" rx="2.5" fill="#1E102F" opacity=".45"/>
-<circle cx="52" cy="119" r="7" fill="#1E102F" opacity=".7"/>
-<rect x="46" y="134" width="62" height="80" rx="4" fill="#F6F4F9" stroke="#1E102F" stroke-width="2.5"/>
-<rect x="55" y="150" width="44" height="5" rx="2.5" fill="#1E102F" opacity=".45"/>
-<rect x="55" y="164" width="32" height="5" rx="2.5" fill="#1E102F" opacity=".45"/>
-<rect x="55" y="178" width="44" height="5" rx="2.5" fill="#1E102F" opacity=".45"/>
-<rect x="55" y="192" width="32" height="5" rx="2.5" fill="#1E102F" opacity=".45"/>
-<circle cx="64" cy="143" r="7" fill="#1E102F" opacity=".7"/>
-<path d="M116 176 L 146 176" fill="none" stroke="#1E102F" stroke-width="3" stroke-linecap="round"/>
-<path d="M138 170 L 148 176 L 138 182" fill="none" stroke="#1E102F" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-<rect x="150" y="140" width="72" height="72" rx="10" fill="#ECB8FF" stroke="#1E102F" stroke-width="2.5"/>
-<text x="186" y="176" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="13" letter-spacing="2" fill="#1E102F" text-anchor="middle">AI</text>
-<text x="186" y="194" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="8" letter-spacing="1.2" fill="#1E102F" text-anchor="middle" opacity=".72">SCREEN</text>
-<rect x="248" y="76" width="112" height="28" rx="4" fill="#DCFF96" stroke="#1E102F" stroke-width="2.5"/>
-<circle cx="266" cy="90" r="8" fill="#1E102F" opacity=".75"/>
-<rect x="280" y="87" width="40" height="5" rx="2.5" fill="#1E102F" opacity=".5"/>
-<text x="348" y="94" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="11" fill="#1E102F" text-anchor="end">94</text>
-<rect x="248" y="114" width="112" height="28" rx="4" fill="#DCFF96" stroke="#1E102F" stroke-width="2.5"/>
-<circle cx="266" cy="128" r="8" fill="#1E102F" opacity=".75"/>
-<rect x="280" y="125" width="40" height="5" rx="2.5" fill="#1E102F" opacity=".5"/>
-<text x="348" y="132" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="11" fill="#1E102F" text-anchor="end">88</text>
-<rect x="248" y="152" width="112" height="28" rx="4" fill="#F6F4F9" stroke="#1E102F" stroke-width="2.5"/>
-<circle cx="266" cy="166" r="8" fill="#1E102F" opacity=".75"/>
-<rect x="280" y="163" width="40" height="5" rx="2.5" fill="#1E102F" opacity=".5"/>
-<text x="348" y="170" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="11" fill="#1E102F" text-anchor="end">61</text>
-<rect x="248" y="190" width="112" height="28" rx="4" fill="#F6F4F9" stroke="#1E102F" stroke-width="2.5"/>
-<circle cx="266" cy="204" r="8" fill="#1E102F" opacity=".75"/>
-<rect x="280" y="201" width="40" height="5" rx="2.5" fill="#1E102F" opacity=".5"/>
-<text x="348" y="208" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="11" fill="#1E102F" text-anchor="end">47</text>
-<path d="M226 176 L 244 176" fill="none" stroke="#1E102F" stroke-width="3" stroke-linecap="round"/>
-<circle cx="304" cy="238" r="15" fill="#FF7874" stroke="#1E102F" stroke-width="2.5"/>
-<path d="M280 286 C 280 258, 328 258, 328 286" fill="none" stroke="#1E102F" stroke-width="2.5"/>
-<path d="M248 104 C 224 104, 224 238, 282 244" fill="none" stroke="#FF7874" stroke-width="2.5" stroke-dasharray="6 6" opacity=".75"/>
-</svg>
-    </div>
-    <div class="band-body">
-      <div class="chip-row"><span class="chip chip--live">Published</span><span class="chip">Wiley ISE Book Series</span><span class="chip">Book chapter</span></div>
-      <h3>Human&ndash;AI Collaboration in HRM</h3>
-      <p class="authors"><b>Fu, X.</b> et al.</p>
-      <p class="finding">A chapter in <em>Advances in Human&ndash;AI Collaboration</em>, edited by V. G. Duffy, W. Karwowski and G. Salvendy, on what changes for the people doing the work when AI enters hiring, evaluation and development &mdash; and on which parts of the job stubbornly should not be handed over.</p>
-    </div>
-  </article>
-
-  <article class="band" id="edubot">
-    <div class="band-body">
-      <div class="chip-row"><span class="chip chip--live">In the world</span><span class="chip">Student&ndash;faculty project</span><span class="chip">Deployed system</span></div>
-      <h3>EduBot Naija</h3>
-      <p class="authors">A student&ndash;faculty collaboration supported by Georgia State University</p>
-      <p class="finding">An AI tutor that teaches the curriculum in local Nigerian languages, built by students for communities the English-only version of the internet was never going to reach. It is the clearest case I have of the thing I actually believe: <b>the point of the technology is the person on the other side of it</b>.</p>
-      <p class="proj-links"><a href="https://www.itedgenews.africa/edubot-naija-launches-ai-powered-multilingual-learning-platform-across-nigeria/">Coverage in ITEdgeNews &rarr;</a></p>
-    </div>
-    <div class="band-art is-fig">
-<svg viewBox="0 0 400 300" role="img" aria-label="A phone showing a tutoring conversation: an AI avatar asks a question, the learner replies, the tutor answers again, with language chips for Hausa, Yoruba and Igbo underneath. A blackboard and a student stand behind it." preserveAspectRatio="xMidYMid meet">
-<rect x="0" y="0" width="400" height="300" fill="#F6F4F9"/>
-<text class="fig-cap" x="22" y="26" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="9.5" letter-spacing="1.3" fill="#1E102F">THE LESSON, IN THE LANGUAGE AT HOME</text>
-<rect x="216" y="52" width="164" height="112" rx="4" fill="#1E102F" stroke="#1E102F" stroke-width="2.5"/>
-<rect x="234" y="72" width="104" height="6" rx="3" fill="#F6F4F9" opacity=".5"/>
-<rect x="234" y="94" width="76" height="6" rx="3" fill="#F6F4F9" opacity=".5"/>
-<rect x="234" y="116" width="118" height="6" rx="3" fill="#F6F4F9" opacity=".5"/>
-<rect x="234" y="138" width="60" height="6" rx="3" fill="#F6F4F9" opacity=".5"/>
-<rect x="48" y="44" width="148" height="238" rx="18" fill="#1E102F" stroke="#1E102F" stroke-width="2.5"/>
-<rect x="58" y="66" width="128" height="192" rx="6" fill="#F6F4F9"/>
-<rect x="98" y="52" width="48" height="7" rx="3.5" fill="#F6F4F9" opacity=".55"/>
-<circle cx="76" cy="88" r="11" fill="#ECB8FF" stroke="#1E102F" stroke-width="2"/>
-<text x="76" y="92" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="8" fill="#1E102F" text-anchor="middle">AI</text>
-<path d="M92 78 h84 a5 5 0 0 1 5 5 v30 a5 5 0 0 1-5 5 h-84 a5 5 0 0 1-5-5 V83 a5 5 0 0 1 5-5 z" fill="#DCFF96" stroke="#1E102F" stroke-width="2"/>
-<rect x="96" y="88" width="66" height="5" rx="2.5" fill="#1E102F" opacity=".62"/>
-<rect x="96" y="101" width="52" height="5" rx="2.5" fill="#1E102F" opacity=".62"/>
-<path d="M84 136 h84 a5 5 0 0 1 5 5 v24 a5 5 0 0 1-5 5 h-84 a5 5 0 0 1-5-5 v-24 a5 5 0 0 1 5-5 z" fill="#274CEC" fill-opacity=".45" stroke="#1E102F" stroke-width="2"/>
-<rect x="92" y="146" width="56" height="5" rx="2.5" fill="#1E102F" opacity=".62"/>
-<rect x="92" y="157" width="38" height="5" rx="2.5" fill="#1E102F" opacity=".62"/>
-<path d="M92 182 h84 a5 5 0 0 1 5 5 v22 a5 5 0 0 1-5 5 h-84 a5 5 0 0 1-5-5 v-22 a5 5 0 0 1 5-5 z" fill="#DCFF96" stroke="#1E102F" stroke-width="2"/>
-<rect x="100" y="192" width="64" height="5" rx="2.5" fill="#1E102F" opacity=".62"/>
-<rect x="62" y="226" width="40" height="18" rx="9" fill="#FF7874" stroke="#1E102F" stroke-width="2"/>
-<text x="82" y="239" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="6.5" letter-spacing=".5" fill="#1E102F" text-anchor="middle">HAUSA</text>
-<rect x="106" y="226" width="40" height="18" rx="9" fill="#F6F4F9" stroke="#1E102F" stroke-width="2"/>
-<text x="126" y="239" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="6.5" letter-spacing=".5" fill="#1E102F" text-anchor="middle">YOR&#217;B&#193;</text>
-<rect x="150" y="226" width="40" height="18" rx="9" fill="#F6F4F9" stroke="#1E102F" stroke-width="2"/>
-<text x="170" y="239" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="6.5" letter-spacing=".5" fill="#1E102F" text-anchor="middle">IGBO</text>
-<circle cx="286" cy="204" r="20" fill="#FF7874" stroke="#1E102F" stroke-width="2.5"/>
-<path d="M250 286 C 250 240, 322 240, 322 286" fill="none" stroke="#1E102F" stroke-width="2.5"/>
-<path d="M232 202 C 244 196, 250 198, 262 202" fill="none" stroke="#1E102F" stroke-width="2.5" stroke-linecap="round"/>
-</svg>
-    </div>
-  </article>
-
-  <article class="band band--flip" id="manufacturing">
-    <div class="band-art is-fig">
-<svg viewBox="0 0 400 300" role="img" aria-label="A curved windscreen pane held on three suction cups hanging from a manipulator arm, descending into the trapezoid aperture of a vehicle body, with a gloved hand steadying its lower edge." preserveAspectRatio="xMidYMid meet">
-<rect x="0" y="0" width="400" height="300" fill="#F6F4F9"/>
-<text class="fig-cap" x="24" y="28" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="9.5" letter-spacing="1.3" fill="#1E102F">SET BY HAND AND MACHINE TOGETHER</text>
-<path d="M74 288 L 108 214 L 292 214 L 326 288 Z" fill="#1E102F" fill-opacity=".10" stroke="#1E102F" stroke-width="2.5"/>
-<path d="M94 280 L 122 224 L 278 224 L 306 280 Z" fill="none" stroke="#1E102F" stroke-width="2" stroke-dasharray="6 6" opacity=".55"/>
-<g transform="rotate(-6 200 126)">
-<path d="M112 168 L 140 76 L 262 76 L 290 168 Z" fill="#DCFF96" fill-opacity=".55" stroke="#1E102F" stroke-width="2.5"/>
-<path d="M134 160 L 154 92 L 214 92 L 214 160 Z" fill="#F6F4F9" fill-opacity=".30"/>
-<line x1="152" y1="97" x2="152" y2="72" stroke="#1E102F" stroke-width="3"/>
-<circle cx="152" cy="110" r="13" fill="#F6F4F9" stroke="#1E102F" stroke-width="2.5"/>
-<circle cx="152" cy="110" r="5" fill="#1E102F"/>
-<line x1="250" y1="97" x2="250" y2="72" stroke="#1E102F" stroke-width="3"/>
-<circle cx="250" cy="110" r="13" fill="#F6F4F9" stroke="#1E102F" stroke-width="2.5"/>
-<circle cx="250" cy="110" r="5" fill="#1E102F"/>
-<line x1="200" y1="135" x2="200" y2="72" stroke="#1E102F" stroke-width="3"/>
-<circle cx="200" cy="148" r="13" fill="#F6F4F9" stroke="#1E102F" stroke-width="2.5"/>
-<circle cx="200" cy="148" r="5" fill="#1E102F"/>
-<rect x="140" y="56" width="122" height="16" rx="5" fill="#ECB8FF" stroke="#1E102F" stroke-width="2.5"/>
-</g>
-<path d="M388 22 L 330 40 L 268 58" fill="none" stroke="#1E102F" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
-<circle cx="330" cy="40" r="8" fill="#ECB8FF" stroke="#1E102F" stroke-width="2.5"/>
-<path d="M140 184 L 140 208" fill="none" stroke="#274CEC" stroke-width="2.5" stroke-linecap="round" opacity=".85"/>
-<path d="M134 199 L 140 209 L 146 199" fill="none" stroke="#274CEC" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity=".85"/>
-<path d="M200 184 L 200 208" fill="none" stroke="#274CEC" stroke-width="2.5" stroke-linecap="round" opacity=".85"/>
-<path d="M194 199 L 200 209 L 206 199" fill="none" stroke="#274CEC" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity=".85"/>
-<path d="M262 184 L 262 208" fill="none" stroke="#274CEC" stroke-width="2.5" stroke-linecap="round" opacity=".85"/>
-<path d="M256 199 L 262 209 L 268 199" fill="none" stroke="#274CEC" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" opacity=".85"/>
-<path d="M62 200 C 44 194, 36 174, 50 168 C 42 156, 56 146, 68 154 L 98 172 L 88 204 Z" fill="#FF7874" stroke="#1E102F" stroke-width="2.5" stroke-linejoin="round"/>
-</svg>
-    </div>
-    <div class="band-body">
-      <div class="chip-row"><span class="chip chip--venue">Under review</span><span class="chip">Revelatory case study</span></div>
-      <h3>Reinventing Manufacturing: Stratified Workforce Empowerment with Embodied AI</h3>
-      <p class="authors"><b>Fu, X.</b>, Mathiassen, L., &amp; Ramasubbu, N.</p>
-      <p class="finding">A U.S. auto-glass plant put embodied AI on its shop floor. Workers came out of it describing their jobs as more meaningful &mdash; and the ones who grew the most, taking on more control <em>and</em> more responsibility at once, were the <b>least likely to advance</b>. The firm's advancement criteria had been built for a more divided shop floor, and had no category &mdash; and no role &mdash; for people whose work now crossed all of them.</p>
-    </div>
-  </article>
-
-  <article class="band" id="sales">
-    <div class="band-body">
-      <div class="chip-row"><span class="chip chip--venue">Under review</span><span class="chip">Field quasi-experiment</span></div>
-      <h3>When Better Opportunities Backfire</h3>
-      <p class="authors"><b>Fu, X.</b>, Luo, S., Ramasubbu, N., Shen, P., Wang, X., &amp; Wang, Y.</p>
-      <p class="finding">An insurer handed its cold calls to an AI voice agent, leaving human agents a better set of leads to work. Their conversion on the day's first calls <b>fell</b>. Expecting something better next makes the thing in your hand easier to drop: early in the shift agents spent measurably less time on each promising lead, and were readier to push it back to the shared queue.</p>
-      <div class="metrics"><div class="metric"><span class="metric-value">&minus;4.5pp</span><span class="metric-label">fall in conversion on the first calls of the day</span></div><div class="metric"><span class="metric-value">&minus;13%</span><span class="metric-label">less time spent on those early high-intent calls</span></div><div class="metric"><span class="metric-value">567k</span><span class="metric-label">outbound calls around a sharp AI routing expansion</span></div></div>
-    </div>
-    <div class="band-art is-duo">
-      <img src="/assets/img/sales.jpg" alt="A large open-plan call centre floor divided into a grid of identical cubicles.">
-      <span class="duo-wash"></span>
-    </div>
-  </article>
-
-  <article class="band band--flip" id="service">
-    <div class="band-art is-fig">
-<svg viewBox="0 0 400 300" role="img" aria-label="A person in a belted robe stands at their open hotel-room door, one arm reaching out to take a parcel from the open hatch of a delivery robot in the corridor. A speech bubble above is faded and struck through." preserveAspectRatio="xMidYMid meet">
-<rect x="0" y="0" width="400" height="300" fill="#F6F4F9"/>
-<text class="fig-cap" x="24" y="30" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="9.5" letter-spacing="1.3" fill="#1E102F">THE DOOR OPENS WIDER. THE GUEST SAYS LESS.</text>
-<rect x="30" y="52" width="150" height="228" fill="none" stroke="#1E102F" stroke-width="2.5"/>
-<path d="M180 52 L 246 78 L 246 254 L 180 280 Z" fill="#ECB8FF" fill-opacity=".55" stroke="#1E102F" stroke-width="2.5"/>
-<circle cx="192" cy="170" r="5" fill="#1E102F"/>
-<path d="M62 280 L 68 176 C 68 156, 124 156, 124 176 L 130 280 Z" fill="#F6F4F9" stroke="#1E102F" stroke-width="2.5" stroke-linejoin="round"/>
-<circle cx="96" cy="118" r="21" fill="#FF7874" stroke="#1E102F" stroke-width="2.5"/>
-<path d="M84 160 L 96 202 L 108 160" fill="none" stroke="#1E102F" stroke-width="2.5" stroke-linejoin="round"/>
-<rect x="70" y="210" width="52" height="10" rx="4" fill="#DCFF96" stroke="#1E102F" stroke-width="2.5"/>
-<path d="M120 182 C 148 182, 162 190, 178 198" fill="none" stroke="#1E102F" stroke-width="9" stroke-linecap="round"/>
-<path d="M120 182 C 148 182, 162 190, 178 198" fill="none" stroke="#F6F4F9" stroke-width="4" stroke-linecap="round"/>
-<path d="M296 274 L 296 152 C 296 130, 372 130, 372 152 L 372 274 Z" fill="#274CEC" stroke="#1E102F" stroke-width="2.5"/>
-<rect x="312" y="152" width="44" height="26" rx="5" fill="#F6F4F9" stroke="#1E102F" stroke-width="2"/>
-<circle cx="325" cy="165" r="3.5" fill="#1E102F"/><circle cx="343" cy="165" r="3.5" fill="#1E102F"/>
-<path d="M296 208 L 272 196 L 272 228 L 296 238 Z" fill="#DCFF96" stroke="#1E102F" stroke-width="2.5"/>
-<rect x="186" y="186" width="36" height="28" rx="3" fill="#DCFF96" stroke="#1E102F" stroke-width="2.5"/>
-<line x1="204" y1="186" x2="204" y2="214" stroke="#1E102F" stroke-width="2"/>
-<g opacity=".4"><path d="M196 74 h60 a6 6 0 0 1 6 6 v26 a6 6 0 0 1-6 6 h-32 l-12 12 v-12 h-16 a6 6 0 0 1-6-6 V80 a6 6 0 0 1 6-6 z" fill="#F6F4F9" stroke="#1E102F" stroke-width="2.5"/></g>
-<line x1="198" y1="118" x2="262" y2="70" stroke="#FF7874" stroke-width="3.5" stroke-linecap="round"/>
-</svg>
-    </div>
-    <div class="band-body">
-      <div class="chip-row"><span class="chip chip--venue">Under review</span><span class="chip">Field experiment</span></div>
-      <h3>The Privacy Asymmetry of Service Robots</h3>
-      <p class="authors">Zhang, A., <b>Fu, X.</b>, Maruping, L. M., &amp; Liu, S.</p>
-      <p class="finding">When a robot rather than a person brings something to a hotel-room door, guests protect two kinds of privacy in opposite directions at once: they <b>open the door wider and go quiet</b>. Physical guard drops, informational guard goes up. Any service design that treats &ldquo;privacy&rdquo; as one dial will get one of them wrong.</p>
-      <div class="metrics"><div class="metric"><span class="metric-value">&minus;0.79</span><span class="metric-label">spatial boundary protection &mdash; the door opens wider</span></div><div class="metric"><span class="metric-value">+1.03</span><span class="metric-label">data boundary protection &mdash; the guest says less</span></div></div>
-    </div>
-  </article>
-
-  <article class="band" id="knowledge">
-    <div class="band-body">
-      <div class="chip-row"><span class="chip chip--venue">Working paper</span><span class="chip">Computational field study</span></div>
-      <h3>Calibrating Epistemic Convergence in Generative AI</h3>
-      <p class="authors">Rai, A., <b>Fu, X.</b>, &amp; Xia, Y.</p>
-      <p class="finding">Ask a room of people the same programming question and you get genuinely different answers. Ask a model the same question many times and the answers cluster &mdash; and <b>newer models cluster tighter, not looser</b>. Broadening the prompt, raising the temperature and keeping prior answers out of the context pull some of the variety back, but nowhere near all of it.</p>
-      <div class="metrics"><div class="metric"><span class="metric-value">375</span><span class="metric-label">Stack Overflow questions, sampled after every model&rsquo;s training cutoff</span></div><div class="metric"><span class="metric-value">2.4&ndash;6.8%</span><span class="metric-label">of the narrowing those three levers recover &mdash; the answers stay far more alike than human ones</span></div></div>
-    </div>
-    <div class="band-art is-fig">
-<svg viewBox="0 0 400 300" role="img" aria-label="Two framed panels. On the left, answers given by people scatter across the whole frame. On the right, answers given by a model cluster near the centre inside rings marking each generation drawing tighter." preserveAspectRatio="xMidYMid meet">
-<rect x="0" y="0" width="400" height="300" fill="#F6F4F9"/>
-<rect x="22" y="52" width="168" height="196" fill="none" stroke="#1E102F" stroke-width="2"/>
-<text x="106" y="40" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="10.5" letter-spacing="1.6" fill="#1E102F" text-anchor="middle">ANSWERED BY PEOPLE</text>
-<circle cx="48" cy="88" r="5" fill="#1E102F"/>
-<circle cx="82" cy="72" r="5" fill="#1E102F"/>
-<circle cx="122" cy="84" r="5" fill="#1E102F"/>
-<circle cx="158" cy="106" r="5" fill="#1E102F"/>
-<circle cx="170" cy="144" r="5" fill="#1E102F"/>
-<circle cx="154" cy="190" r="5" fill="#1E102F"/>
-<circle cx="120" cy="216" r="5" fill="#1E102F"/>
-<circle cx="80" cy="224" r="5" fill="#1E102F"/>
-<circle cx="48" cy="194" r="5" fill="#1E102F"/>
-<circle cx="38" cy="154" r="5" fill="#1E102F"/>
-<circle cx="98" cy="128" r="5" fill="#1E102F"/>
-<circle cx="134" cy="162" r="5" fill="#1E102F"/>
-<circle cx="70" cy="172" r="5" fill="#1E102F"/>
-<circle cx="108" cy="190" r="5" fill="#1E102F"/>
-<circle cx="92" cy="104" r="5" fill="#1E102F"/>
-<circle cx="144" cy="128" r="5" fill="#1E102F"/>
-<rect x="210" y="52" width="168" height="196" fill="none" stroke="#1E102F" stroke-width="2"/>
-<text x="294" y="40" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="10.5" letter-spacing="1.6" fill="#1E102F" text-anchor="middle">ANSWERED BY A MODEL</text>
-<circle cx="294" cy="150" r="66" fill="none" stroke="#274CEC" stroke-width="1.5" stroke-dasharray="4 6" opacity=".45"/>
-<circle cx="294" cy="150" r="44" fill="none" stroke="#274CEC" stroke-width="1.5" stroke-dasharray="4 6" opacity=".45"/>
-<circle cx="294" cy="150" r="26" fill="none" stroke="#274CEC" stroke-width="1.5" stroke-dasharray="4 6" opacity=".45"/>
-<circle cx="281" cy="136" r="5" fill="#274CEC"/>
-<circle cx="290" cy="131" r="5" fill="#274CEC"/>
-<circle cx="302" cy="138" r="5" fill="#274CEC"/>
-<circle cx="308" cy="152" r="5" fill="#274CEC"/>
-<circle cx="303" cy="163" r="5" fill="#274CEC"/>
-<circle cx="292" cy="167" r="5" fill="#274CEC"/>
-<circle cx="282" cy="161" r="5" fill="#274CEC"/>
-<circle cx="277" cy="149" r="5" fill="#274CEC"/>
-<circle cx="294" cy="150" r="5" fill="#274CEC"/>
-<circle cx="299" cy="144" r="5" fill="#274CEC"/>
-<circle cx="287" cy="154" r="5" fill="#274CEC"/>
-<circle cx="306" cy="146" r="5" fill="#274CEC"/>
-<circle cx="291" cy="159" r="5" fill="#274CEC"/>
-<circle cx="311" cy="159" r="5" fill="#274CEC"/>
-<circle cx="276" cy="140" r="5" fill="#274CEC"/>
-<circle cx="297" cy="141" r="5" fill="#274CEC"/>
-<text x="294" y="274" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="9" letter-spacing="1.2" fill="#1E102F" text-anchor="middle" opacity=".72">EACH GENERATION, TIGHTER</text>
-</svg>
-    </div>
-  </article>
-
-  <article class="band band--flip" id="stimulus">
-    <div class="band-art is-fig">
-<svg viewBox="0 0 400 300" role="img" aria-label="Two columns of bars. On the left the same bar repeats six times and fades down the column, with a large question mark over it. On the right six different bars each keep their strength." preserveAspectRatio="xMidYMid meet">
-<rect x="0" y="0" width="400" height="300" fill="#F6F4F9"/>
-<text x="98" y="34" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="9.5" letter-spacing="1.2" fill="#1E102F" text-anchor="middle">ONE WORDING, SIX TIMES</text>
-<text x="302" y="34" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="9.5" letter-spacing="1.2" fill="#1E102F" text-anchor="middle">SAMPLED WORDINGS</text>
-<rect x="22" y="58" width="152" height="22" fill="#ECB8FF" stroke="#1E102F" stroke-width="2" opacity="1.00"/>
-<rect x="32" y="66" width="18" height="6" fill="#1E102F" opacity="0.70"/>
-<rect x="59" y="66" width="18" height="6" fill="#1E102F" opacity="0.70"/>
-<rect x="86" y="66" width="18" height="6" fill="#1E102F" opacity="0.70"/>
-<rect x="113" y="66" width="18" height="6" fill="#1E102F" opacity="0.70"/>
-<rect x="140" y="66" width="18" height="6" fill="#1E102F" opacity="0.70"/>
-<rect x="22" y="94" width="152" height="22" fill="#ECB8FF" stroke="#1E102F" stroke-width="2" opacity="0.85"/>
-<rect x="32" y="102" width="18" height="6" fill="#1E102F" opacity="0.59"/>
-<rect x="59" y="102" width="18" height="6" fill="#1E102F" opacity="0.59"/>
-<rect x="86" y="102" width="18" height="6" fill="#1E102F" opacity="0.59"/>
-<rect x="113" y="102" width="18" height="6" fill="#1E102F" opacity="0.59"/>
-<rect x="140" y="102" width="18" height="6" fill="#1E102F" opacity="0.59"/>
-<rect x="22" y="130" width="152" height="22" fill="#ECB8FF" stroke="#1E102F" stroke-width="2" opacity="0.70"/>
-<rect x="32" y="138" width="18" height="6" fill="#1E102F" opacity="0.49"/>
-<rect x="59" y="138" width="18" height="6" fill="#1E102F" opacity="0.49"/>
-<rect x="86" y="138" width="18" height="6" fill="#1E102F" opacity="0.49"/>
-<rect x="113" y="138" width="18" height="6" fill="#1E102F" opacity="0.49"/>
-<rect x="140" y="138" width="18" height="6" fill="#1E102F" opacity="0.49"/>
-<rect x="22" y="166" width="152" height="22" fill="#ECB8FF" stroke="#1E102F" stroke-width="2" opacity="0.55"/>
-<rect x="32" y="174" width="18" height="6" fill="#1E102F" opacity="0.39"/>
-<rect x="59" y="174" width="18" height="6" fill="#1E102F" opacity="0.39"/>
-<rect x="86" y="174" width="18" height="6" fill="#1E102F" opacity="0.39"/>
-<rect x="113" y="174" width="18" height="6" fill="#1E102F" opacity="0.39"/>
-<rect x="140" y="174" width="18" height="6" fill="#1E102F" opacity="0.39"/>
-<rect x="22" y="202" width="152" height="22" fill="#ECB8FF" stroke="#1E102F" stroke-width="2" opacity="0.40"/>
-<rect x="32" y="210" width="18" height="6" fill="#1E102F" opacity="0.28"/>
-<rect x="59" y="210" width="18" height="6" fill="#1E102F" opacity="0.28"/>
-<rect x="86" y="210" width="18" height="6" fill="#1E102F" opacity="0.28"/>
-<rect x="113" y="210" width="18" height="6" fill="#1E102F" opacity="0.28"/>
-<rect x="140" y="210" width="18" height="6" fill="#1E102F" opacity="0.28"/>
-<rect x="22" y="238" width="152" height="22" fill="#ECB8FF" stroke="#1E102F" stroke-width="2" opacity="0.25"/>
-<rect x="32" y="246" width="18" height="6" fill="#1E102F" opacity="0.17"/>
-<rect x="59" y="246" width="18" height="6" fill="#1E102F" opacity="0.17"/>
-<rect x="86" y="246" width="18" height="6" fill="#1E102F" opacity="0.17"/>
-<rect x="113" y="246" width="18" height="6" fill="#1E102F" opacity="0.17"/>
-<rect x="140" y="246" width="18" height="6" fill="#1E102F" opacity="0.17"/>
-<rect x="226" y="58" width="152" height="22" fill="#DCFF96" stroke="#1E102F" stroke-width="2"/>
-<rect x="236" y="66" width="33" height="6" fill="#1E102F" opacity=".7"/>
-<rect x="278" y="66" width="33" height="6" fill="#1E102F" opacity=".7"/>
-<rect x="320" y="66" width="33" height="6" fill="#1E102F" opacity=".7"/>
-<rect x="226" y="94" width="128" height="22" fill="#DCFF96" stroke="#1E102F" stroke-width="2"/>
-<rect x="236" y="102" width="17" height="6" fill="#1E102F" opacity=".7"/>
-<rect x="262" y="102" width="17" height="6" fill="#1E102F" opacity=".7"/>
-<rect x="288" y="102" width="17" height="6" fill="#1E102F" opacity=".7"/>
-<rect x="314" y="102" width="17" height="6" fill="#1E102F" opacity=".7"/>
-<rect x="226" y="130" width="146" height="22" fill="#DCFF96" stroke="#1E102F" stroke-width="2"/>
-<rect x="236" y="138" width="15" height="6" fill="#1E102F" opacity=".7"/>
-<rect x="260" y="138" width="15" height="6" fill="#1E102F" opacity=".7"/>
-<rect x="284" y="138" width="15" height="6" fill="#1E102F" opacity=".7"/>
-<rect x="308" y="138" width="15" height="6" fill="#1E102F" opacity=".7"/>
-<rect x="332" y="138" width="15" height="6" fill="#1E102F" opacity=".7"/>
-<rect x="226" y="166" width="112" height="22" fill="#DCFF96" stroke="#1E102F" stroke-width="2"/>
-<rect x="236" y="174" width="20" height="6" fill="#1E102F" opacity=".7"/>
-<rect x="265" y="174" width="20" height="6" fill="#1E102F" opacity=".7"/>
-<rect x="294" y="174" width="20" height="6" fill="#1E102F" opacity=".7"/>
-<rect x="226" y="202" width="138" height="22" fill="#DCFF96" stroke="#1E102F" stroke-width="2"/>
-<rect x="236" y="210" width="19" height="6" fill="#1E102F" opacity=".7"/>
-<rect x="264" y="210" width="19" height="6" fill="#1E102F" opacity=".7"/>
-<rect x="292" y="210" width="19" height="6" fill="#1E102F" opacity=".7"/>
-<rect x="320" y="210" width="19" height="6" fill="#1E102F" opacity=".7"/>
-<rect x="226" y="238" width="120" height="22" fill="#DCFF96" stroke="#1E102F" stroke-width="2"/>
-<rect x="236" y="246" width="10" height="6" fill="#1E102F" opacity=".7"/>
-<rect x="255" y="246" width="10" height="6" fill="#1E102F" opacity=".7"/>
-<rect x="274" y="246" width="10" height="6" fill="#1E102F" opacity=".7"/>
-<rect x="293" y="246" width="10" height="6" fill="#1E102F" opacity=".7"/>
-<rect x="312" y="246" width="10" height="6" fill="#1E102F" opacity=".7"/>
-<text x="98" y="214" font-family="Archivo, Arial Black, Arial, sans-serif" font-size="150" font-weight="800" fill="#FF7874" fill-opacity=".8" stroke="#1E102F" stroke-width="3" text-anchor="middle">?</text>
-</svg>
-    </div>
-    <div class="band-body">
-      <div class="chip-row"><span class="chip chip--venue">Under review</span><span class="chip">Full-text census and experiments</span></div>
-      <h3>Generative Stimulus Sampling: Relational Randomization for Repeated-Exposure Digital Interventions</h3>
-      <p class="authors"><b>Fu, X.</b>, Ramasubbu, N., Maruping, L. M., Wang, G., Xie, J., &amp; Wang, K.</p>
-      <p class="finding">Across every randomized experiment published in <em>MIS Quarterly</em> and <em>Information Systems Research</em>, most studies that show a participant the same treatment more than once <b>never change its wording</b>. So when an effect fades on repetition, the published record cannot say whether the intervention wore off or the sentence did. Sampling the wording, rather than fixing it, separates the two.</p>
-      <div class="metrics"><div class="metric"><span class="metric-value">425</span><span class="metric-label">randomized experiments in the full-text census</span></div><div class="metric"><span class="metric-value">53%</span><span class="metric-label">re-expose the same participant to the same stimulus</span></div></div>
-    </div>
-  </article>
-
-  <article class="band" id="remote">
-    <div class="band-body">
-      <div class="chip-row"><span class="chip chip--venue">Under review</span><span class="chip">Multi-country firm panel</span></div>
-      <h3>Adaptive Work Configurations: Leveraging Workforce Agility for Enhancing Firm Performance</h3>
-      <p class="authors">Fan, C., <b>Fu, X.</b>, &amp; Ramasubbu, N.</p>
-      <p class="finding">Firms that went remote early and <b>kept it</b> grew sales faster by the third survey round, about a year on. Going remote late, or going and then retreating, bought nothing. And more remote was not better &mdash; performance rose with the remote share up to a point, then fell.</p>
-      <div class="metrics"><div class="metric"><span class="metric-value">+7.8pp</span><span class="metric-label">faster sales growth for early, persistent adopters</span></div><div class="metric"><span class="metric-value">3,199</span><span class="metric-label">firms across 19 countries</span></div></div>
-    </div>
-    <div class="band-art is-fig">
-<svg viewBox="0 0 400 300" role="img" aria-label="An open laptop on a table showing a four-person video call grid, beside a window, a houseplant and a mug." preserveAspectRatio="xMidYMid meet">
-<rect x="0" y="0" width="400" height="300" fill="#F6F4F9"/>
-<text x="24" y="32" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="9.5" letter-spacing="1.3" fill="#1E102F">THE WHOLE TEAM, ON ONE TABLE</text>
-<rect x="272" y="54" width="104" height="96" fill="#274CEC" fill-opacity=".35" stroke="#1E102F" stroke-width="2.5"/>
-<line x1="324" y1="54" x2="324" y2="150" stroke="#1E102F" stroke-width="2"/>
-<line x1="272" y1="102" x2="376" y2="102" stroke="#1E102F" stroke-width="2"/>
-<path d="M300 214 C 292 190, 306 176, 300 160 M300 190 C 286 184, 282 172, 284 166 M300 182 C 314 176, 318 166, 316 160" fill="none" stroke="#1E102F" stroke-width="2.5" stroke-linecap="round"/>
-<path d="M288 214 L 312 214 L 308 240 L 292 240 Z" fill="#FF7874" stroke="#1E102F" stroke-width="2.5"/>
-<path d="M62 224 L 84 118 L 232 118 L 254 224 Z" fill="#1E102F" stroke="#1E102F" stroke-width="2.5"/>
-<rect x="92" y="126" width="132" height="86" fill="#F6F4F9"/>
-<rect x="98" y="132" width="56" height="34" rx="3" fill="#DCFF96" fill-opacity=".8" stroke="#1E102F" stroke-width="1.5"/>
-<circle cx="126" cy="145" r="7" fill="#1E102F" opacity=".8"/>
-<path d="M116 161 a10 10 0 0 1 20 0 z" fill="#1E102F" opacity=".8"/>
-<rect x="162" y="132" width="56" height="34" rx="3" fill="#ECB8FF" fill-opacity=".8" stroke="#1E102F" stroke-width="1.5"/>
-<circle cx="190" cy="145" r="7" fill="#1E102F" opacity=".8"/>
-<path d="M180 161 a10 10 0 0 1 20 0 z" fill="#1E102F" opacity=".8"/>
-<rect x="98" y="174" width="56" height="34" rx="3" fill="#274CEC" fill-opacity=".8" stroke="#1E102F" stroke-width="1.5"/>
-<circle cx="126" cy="187" r="7" fill="#1E102F" opacity=".8"/>
-<path d="M116 203 a10 10 0 0 1 20 0 z" fill="#1E102F" opacity=".8"/>
-<rect x="162" y="174" width="56" height="34" rx="3" fill="#FF7874" fill-opacity=".8" stroke="#1E102F" stroke-width="1.5"/>
-<circle cx="190" cy="187" r="7" fill="#1E102F" opacity=".8"/>
-<path d="M180 203 a10 10 0 0 1 20 0 z" fill="#1E102F" opacity=".8"/>
-<rect x="46" y="224" width="224" height="12" rx="5" fill="#1E102F"/>
-<path d="M300 262 h34 v20 a10 10 0 0 1 -10 10 h-14 a10 10 0 0 1 -10 -10 z" fill="#DCFF96" stroke="#1E102F" stroke-width="2.5"/>
-<path d="M334 268 a9 9 0 0 1 0 14" fill="none" stroke="#1E102F" stroke-width="2.5"/>
-</svg>
-    </div>
-  </article>
-
-  <article class="band band--flip" id="errors">
-    <div class="band-art is-fig">
-<svg viewBox="0 0 400 300" role="img" aria-label="A dark code editor window with numbered lines of code, one line highlighted in coral and circled by a magnifying glass." preserveAspectRatio="xMidYMid meet">
-<rect x="0" y="0" width="400" height="300" fill="#F6F4F9"/>
-<rect x="30" y="42" width="340" height="216" rx="6" fill="#1E102F" stroke="#1E102F" stroke-width="2.5"/>
-<rect x="30" y="42" width="340" height="24" rx="6" fill="#1E102F"/>
-<circle cx="48" cy="54" r="4.5" fill="#FF7874"/>
-<circle cx="64" cy="54" r="4.5" fill="#DCFF96"/>
-<circle cx="80" cy="54" r="4.5" fill="#ECB8FF"/>
-<text x="200" y="58" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="9" letter-spacing="1.2" fill="#F6F4F9" text-anchor="middle" opacity=".65">SUGGESTED BY THE MODEL</text>
-<text x="56" y="96" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="9" fill="#F6F4F9" opacity=".5">01</text>
-<rect x="78" y="90" width="150" height="7" rx="3.5" fill="#274CEC" opacity=".85"/>
-<text x="56" y="114" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="9" fill="#F6F4F9" opacity=".5">02</text>
-<rect x="78" y="108" width="210" height="7" rx="3.5" fill="#F6F4F9" opacity=".34"/>
-<text x="56" y="132" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="9" fill="#F6F4F9" opacity=".5">03</text>
-<rect x="78" y="126" width="178" height="7" rx="3.5" fill="#F6F4F9" opacity=".34"/>
-<text x="56" y="150" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="9" fill="#F6F4F9" opacity=".5">04</text>
-<rect x="78" y="144" width="246" height="7" rx="3.5" fill="#F6F4F9" opacity=".34"/>
-<rect x="44" y="156" width="316" height="18" rx="3" fill="#FF7874" fill-opacity=".22"/>
-<rect x="44" y="156" width="4" height="18" fill="#FF7874"/>
-<text x="56" y="168" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="9" fill="#F6F4F9" opacity=".5">05</text>
-<rect x="78" y="162" width="196" height="7" rx="3.5" fill="#FF7874" opacity="1"/>
-<text x="56" y="186" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="9" fill="#F6F4F9" opacity=".5">06</text>
-<rect x="78" y="180" width="164" height="7" rx="3.5" fill="#F6F4F9" opacity=".34"/>
-<text x="56" y="204" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="9" fill="#F6F4F9" opacity=".5">07</text>
-<rect x="78" y="198" width="222" height="7" rx="3.5" fill="#F6F4F9" opacity=".34"/>
-<text x="56" y="222" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="9" fill="#F6F4F9" opacity=".5">08</text>
-<rect x="78" y="216" width="140" height="7" rx="3.5" fill="#DCFF96" opacity=".85"/>
-<text x="56" y="240" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="9" fill="#F6F4F9" opacity=".5">09</text>
-<rect x="78" y="234" width="188" height="7" rx="3.5" fill="#F6F4F9" opacity=".34"/>
-<circle cx="352" cy="164" r="20" fill="none" stroke="#FF7874" stroke-width="3.5"/>
-<line x1="366" y1="178" x2="382" y2="196" stroke="#FF7874" stroke-width="3.5" stroke-linecap="round"/>
-<text x="30" y="286" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="9.5" letter-spacing="1.3" fill="#1E102F">ONE LINE IS WRONG. WHO NOTICES, AND WHEN?</text>
-</svg>
-    </div>
-    <div class="band-body">
+  <article class="entry" id="errors" style="--c:#8FA6FF">
+    <div class="entry-body">
       <div class="chip-row"><span class="chip chip--venue">Under review</span><span class="chip">Two randomized experiments</span></div>
       <h3>Detecting AI Errors: Transfer of Training and Reflective Practice</h3>
       <p class="authors"><b>Fu, X.</b>, Ramasubbu, N., &amp; Galletta, D.</p>
@@ -474,123 +58,125 @@
     </div>
   </article>
 
-  <article class="band" id="creativity">
-    <div class="band-body">
+  <article class="entry" id="secd" style="--c:#8FA6FF">
+    <div class="entry-body">
+      <div class="chip-row"><span class="chip chip--venue">Working paper</span><span class="chip">Computational field study</span></div>
+      <h3>Structured Epistemic Component Distance</h3>
+      <p class="authors">Rai, A., <b>Fu, X.</b>, &amp; Xia, Y.</p>
+      <p class="finding">Ask a room of people the same programming question and you get genuinely different answers. Ask a model the same question many times and the answers cluster &mdash; and <b>newer models cluster tighter, not looser</b>. Broadening the prompt, raising the temperature and keeping prior answers out of the context pull some of the variety back, but nowhere near all of it.</p>
+      <div class="metrics"><div class="metric"><span class="metric-value">375</span><span class="metric-label">Stack Overflow questions, sampled after every model&rsquo;s training cutoff</span></div><div class="metric"><span class="metric-value">2.4&ndash;6.8%</span><span class="metric-label">of the narrowing those three levers recover &mdash; the answers stay far more alike than human ones</span></div></div>
+    </div>
+  </article>
+
+  <p class="grp-label" style="--c:#FF7874">Agentic AI</p>
+
+  <article class="entry" id="stimulus" style="--c:#FF7874">
+    <div class="entry-body">
+      <div class="chip-row"><span class="chip chip--venue">Under review</span><span class="chip">Full-text census and experiments</span></div>
+      <h3>Generative Stimulus Sampling: Relational Randomization for Repeated-Exposure Digital Interventions</h3>
+      <p class="authors"><b>Fu, X.</b>, Ramasubbu, N., Maruping, L. M., Wang, G., Xie, J., &amp; Wang, K.</p>
+      <p class="finding">Across every randomized experiment published in <em>MIS Quarterly</em> and <em>Information Systems Research</em>, most studies that show a participant the same treatment more than once <b>never change its wording</b>. So when an effect fades on repetition, the published record cannot say whether the intervention wore off or the sentence did. Sampling the wording, rather than fixing it, separates the two.</p>
+      <div class="metrics"><div class="metric"><span class="metric-value">425</span><span class="metric-label">randomized experiments in the full-text census</span></div><div class="metric"><span class="metric-value">53%</span><span class="metric-label">re-expose the same participant to the same stimulus</span></div></div>
+    </div>
+  </article>
+
+  <article class="entry" id="edubot" style="--c:#FF7874">
+    <div class="entry-body">
+      <div class="chip-row"><span class="chip chip--live">Deployed</span><span class="chip">Student&ndash;faculty project</span><span class="chip">Deployed system</span></div>
+      <h3>EduBot Naija</h3>
+      <p class="authors">A student&ndash;faculty collaboration supported by Georgia State University</p>
+      <p class="finding">An AI tutor that teaches the curriculum in local Nigerian languages, built by students for communities the English-only version of the internet was never going to reach. It is the clearest case I have of the thing I actually believe: <b>the point of the technology is the person on the other side of it</b>.</p>
+      <p class="proj-links"><a href="https://www.itedgenews.africa/edubot-naija-launches-ai-powered-multilingual-learning-platform-across-nigeria/">Coverage in ITEdgeNews &rarr;</a></p>
+    </div>
+  </article>
+
+  <p class="grp-label" style="--c:#ECB8FF">Embodied AI</p>
+
+  <article class="entry" id="manufacturing" style="--c:#ECB8FF">
+    <div class="entry-body">
+      <div class="chip-row"><span class="chip chip--venue">Under review</span><span class="chip">Revelatory case study</span></div>
+      <h3>Embodied AI and Shop-Floor Workers</h3>
+      <p class="authors"><b>Fu, X.</b>, Mathiassen, L., &amp; Ramasubbu, N.</p>
+      <p class="finding">A U.S. auto-glass plant put embodied AI on its shop floor. Workers came out of it describing their jobs as more meaningful &mdash; and the ones who grew the most, taking on more control <em>and</em> more responsibility at once, were the <b>least likely to advance</b>. The firm's advancement criteria had been built for a more divided shop floor, and had no category &mdash; and no role &mdash; for people whose work now crossed all of them.</p>
+    </div>
+  </article>
+
+  <article class="entry" id="surgery" style="--c:#ECB8FF">
+    <div class="entry-body">
+      <div class="chip-row"><span class="chip chip--venue">In progress</span></div>
+      <h3>Robotic Surgery</h3>
+      <p class="finding is-tbc">A short description of this project is coming.</p>
+    </div>
+  </article>
+
+  <div class="sec-head"><h2>Observational</h2><span class="count">Consequences of AI at work</span></div>
+
+  <p class="grp-label" style="--c:#8FA6FF">LLM / MLLM</p>
+
+  <article class="entry" id="creativity" style="--c:#8FA6FF">
+    <div class="entry-body">
       <div class="chip-row"><span class="chip chip--venue">Working paper &middot; revision in progress</span><span class="chip">Natural experiment</span></div>
-      <h3>When Transparency Backfires: How AI Disclosure and Authenticity Signals Shape Crowdfunding Valuation</h3>
+      <h3>AI Authenticity: How AI Disclosure and Authenticity Signals Shape Crowdfunding Valuation</h3>
       <p class="authors">Yang, J., <b>Fu, X.</b>, Ramasubbu, N., &amp; Fan, C.</p>
       <p class="finding">A platform made AI disclosure mandatory and funding fell across it. Projects that had built their pitch on human craft were <b>shielded from the general suspicion and punished hardest when they actually disclosed</b>. Authenticity works as armour right up until the moment it is contradicted.</p>
       <div class="metrics"><div class="metric"><span class="metric-value">12,521</span><span class="metric-label">crowdfunding projects around the disclosure mandate</span></div><div class="metric"><span class="metric-value">~1 in 10</span><span class="metric-label">of the projects that could disclose actually did</span></div></div>
     </div>
-    <div class="band-art is-fig">
-<svg viewBox="0 0 400 300" role="img" aria-label="Two crowdfunding progress bars. The first, an unlabelled handmade campaign, is nearly full. The second, the same campaign carrying an AI-disclosed label, stops far short." preserveAspectRatio="xMidYMid meet">
-<rect x="0" y="0" width="400" height="300" fill="#F6F4F9"/>
-<text x="24" y="32" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="9.5" letter-spacing="1.3" fill="#1E102F">TWO CAMPAIGNS, ONE LABEL APART</text>
-<text x="24" y="54" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="9" letter-spacing="1" fill="#1E102F">HANDMADE, NO LABEL</text>
-<rect x="24" y="66" width="270" height="26" rx="13" fill="#1E102F" opacity=".22"/>
-<rect x="24" y="66" width="232" height="26" rx="13" fill="#DCFF96" stroke="#1E102F" stroke-width="2.5"/>
-<text x="306" y="87" font-family="Archivo, Arial Black, Arial, sans-serif" font-size="21" font-weight="800" fill="#1E102F">86%</text>
-<text x="24" y="148" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="9" letter-spacing="1" fill="#1E102F">HANDMADE, AND DISCLOSED</text>
-<rect x="24" y="160" width="270" height="26" rx="13" fill="#1E102F" opacity=".22"/>
-<rect x="24" y="160" width="83" height="26" rx="13" fill="#FF7874" stroke="#1E102F" stroke-width="2.5"/>
-<text x="306" y="181" font-family="Archivo, Arial Black, Arial, sans-serif" font-size="21" font-weight="800" fill="#1E102F">31%</text>
-<rect x="24" y="194" width="128" height="20" rx="4" fill="#FF7874" stroke="#1E102F" stroke-width="2"/>
-<text x="88" y="208" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="8.5" letter-spacing="1" fill="#1E102F" text-anchor="middle">AI DISCLOSED</text>
-<path d="M186 108 C 196 128, 196 136, 186 152" fill="none" stroke="#1E102F" stroke-width="2.5" stroke-dasharray="5 5"/>
-<path d="M180 144 L 186 154 L 193 144" fill="none" stroke="#1E102F" stroke-width="2.5" stroke-linecap="round"/>
-<text x="24" y="272" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="9" letter-spacing="1" fill="#1E102F" opacity=".72">THE MORE HANDMADE THE PITCH, THE HARDER THE FALL</text>
-</svg>
+  </article>
+
+  <article class="entry" id="investment" style="--c:#8FA6FF">
+    <div class="entry-body">
+      <div class="chip-row"><span class="chip chip--venue">Under review</span><span class="chip">Archival panel</span></div>
+      <h3>Managerial Investment Expectations and Real Estate Investment</h3>
+      <p class="authors">Bond, S., Devine, A., <b>Fu, X.</b>, &amp; Zheng, S.</p>
+      <p class="finding">What managers say they expect about the future, read out of what they tell analysts on earnings calls, and what their firms actually go on to spend.</p>
     </div>
   </article>
 
-  <article class="band band--flip" id="triage">
-    <div class="band-art is-fig">
-<svg viewBox="0 0 400 300" role="img" aria-label="A queue of identical arrivals feeds a hexagonal node marked AI triage, which splits into three outgoing lanes of very different thickness labelled routine, specialist and urgent." preserveAspectRatio="xMidYMid meet">
-<rect x="0" y="0" width="400" height="300" fill="#F6F4F9"/>
-<text x="200" y="26" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="9.5" letter-spacing="1.8" fill="#1E102F" text-anchor="middle" opacity=".7">ARRIVING &#8594; SORTED &#8594; SERVED</text>
-<circle cx="26" cy="70" r="7.5" fill="#1E102F" opacity=".75"/>
-<line x1="37" y1="70" x2="112" y2="154" stroke="#1E102F" stroke-width="1.4" opacity=".24"/>
-<circle cx="40" cy="98" r="7.5" fill="#1E102F" opacity=".75"/>
-<line x1="51" y1="98" x2="112" y2="154" stroke="#1E102F" stroke-width="1.4" opacity=".24"/>
-<circle cx="26" cy="126" r="7.5" fill="#1E102F" opacity=".75"/>
-<line x1="37" y1="126" x2="112" y2="154" stroke="#1E102F" stroke-width="1.4" opacity=".24"/>
-<circle cx="40" cy="154" r="7.5" fill="#1E102F" opacity=".75"/>
-<line x1="51" y1="154" x2="112" y2="154" stroke="#1E102F" stroke-width="1.4" opacity=".24"/>
-<circle cx="26" cy="182" r="7.5" fill="#1E102F" opacity=".75"/>
-<line x1="37" y1="182" x2="112" y2="154" stroke="#1E102F" stroke-width="1.4" opacity=".24"/>
-<circle cx="40" cy="210" r="7.5" fill="#1E102F" opacity=".75"/>
-<line x1="51" y1="210" x2="112" y2="154" stroke="#1E102F" stroke-width="1.4" opacity=".24"/>
-<circle cx="26" cy="238" r="7.5" fill="#1E102F" opacity=".75"/>
-<line x1="37" y1="238" x2="112" y2="154" stroke="#1E102F" stroke-width="1.4" opacity=".24"/>
-<path d="M112 154 L 146 112 L 214 112 L 248 154 L 214 196 L 146 196 Z" fill="#ECB8FF" stroke="#1E102F" stroke-width="2.5"/>
-<text x="180" y="150" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="13" letter-spacing="2.5" fill="#1E102F" text-anchor="middle">AI</text>
-<text x="180" y="170" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="8.5" letter-spacing="1.3" fill="#1E102F" text-anchor="middle" opacity=".72">TRIAGE</text>
-<path d="M248 154 C 282 154, 282 74, 316 74" fill="none" stroke="#DCFF96" stroke-width="24" stroke-linecap="round" opacity=".92"/>
-<circle cx="316" cy="74" r="13.5" fill="#DCFF96" stroke="#1E102F" stroke-width="2"/>
-<text x="392" y="77" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="9" letter-spacing="1.1" fill="#1E102F" text-anchor="end">ROUTINE</text>
-<path d="M248 154 C 282 154, 282 154, 316 154" fill="none" stroke="#274CEC" stroke-width="11" stroke-linecap="round" opacity=".92"/>
-<circle cx="316" cy="154" r="7.0" fill="#274CEC" stroke="#1E102F" stroke-width="2"/>
-<text x="392" y="157" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="9" letter-spacing="1.1" fill="#1E102F" text-anchor="end">SPECIALIST</text>
-<path d="M248 154 C 282 154, 282 234, 316 234" fill="none" stroke="#FF7874" stroke-width="5" stroke-linecap="round" opacity=".92"/>
-<circle cx="316" cy="234" r="4.0" fill="#FF7874" stroke="#1E102F" stroke-width="2"/>
-<text x="392" y="237" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="9" letter-spacing="1.1" fill="#1E102F" text-anchor="end">URGENT</text>
-</svg>
+  <p class="grp-label" style="--c:#FF7874">Agentic AI</p>
+
+  <article class="entry" id="sales" style="--c:#FF7874">
+    <div class="entry-body">
+      <div class="chip-row"><span class="chip chip--venue">Under review</span><span class="chip">Field quasi-experiment</span></div>
+      <h3>When Better Opportunities Backfire: Worker Responses to Parallel AI Deployment</h3>
+      <p class="authors"><b>Fu, X.</b>, Luo, S., Ramasubbu, N., Shen, P., Wang, X., &amp; Wang, Y.</p>
+      <p class="finding">An insurer handed its cold calls to an AI voice agent, leaving human agents a better set of leads to work. Their conversion on the day's first calls <b>fell</b>. Expecting something better next makes the thing in your hand easier to drop: early in the shift agents spent measurably less time on each promising lead, and were readier to push it back to the shared queue.</p>
+      <div class="metrics"><div class="metric"><span class="metric-value">&minus;4.5pp</span><span class="metric-label">fall in conversion on the first calls of the day</span></div><div class="metric"><span class="metric-value">&minus;13%</span><span class="metric-label">less time spent on those early high-intent calls</span></div><div class="metric"><span class="metric-value">567k</span><span class="metric-label">outbound calls around a sharp AI routing expansion</span></div></div>
     </div>
-    <div class="band-body">
+  </article>
+
+  <article class="entry" id="triage" style="--c:#FF7874">
+    <div class="entry-body">
       <div class="chip-row"><span class="chip chip--venue">In progress</span><span class="chip">In progress</span></div>
-      <h3>Need Assessment in Online Credence Services: How AI Triage Reshapes Demand Allocation and Service Delivery</h3>
+      <h3>Need Assessment in Online Credence Services: How AI Triage Reshapes Demand Allocation</h3>
       <p class="authors"><b>Fu, X.</b>, Chen, L., Geng, S., Hsieh, J. P. A., Xie, H., Xie, J., &amp; Zhang, W.</p>
       <p class="finding">When customers cannot judge the service they are buying &mdash; a diagnosis, a legal opinion, a repair &mdash; putting a model at the front door decides who reaches which expert. That routing is an allocation decision wearing the costume of a convenience feature.</p>
     </div>
   </article>
 
-  <article class="band" id="investment">
-    <div class="band-body">
-      <div class="chip-row"><span class="chip chip--venue">Under review</span><span class="chip">Archival panel</span></div>
-      <h3>Managerial Investment Expectations and Corporate Investment</h3>
-      <p class="authors">Bond, S., Devine, A., <b>Fu, X.</b>, &amp; Zheng, S.</p>
-      <p class="finding">What managers say they expect about the future, drawn from what they tell analysts on earnings calls, and what their firms actually go on to spend.</p>
+  <article class="entry" id="hrm" style="--c:#FF7874">
+    <div class="entry-body">
+      <div class="chip-row"><span class="chip chip--live">Published</span><span class="chip">Wiley ISE Book Series</span><span class="chip">Book chapter</span></div>
+      <h3>Human&ndash;AI Collaboration in HRM</h3>
+      <p class="authors"><b>Fu, X.</b> et al.</p>
+      <p class="finding">A chapter in <em>Advances in Human&ndash;AI Collaboration</em>, edited by V. G. Duffy, W. Karwowski and G. Salvendy, on what changes for the people doing the work when AI enters hiring, evaluation and development &mdash; and on which parts of the job stubbornly should not be handed over.</p>
     </div>
-    <div class="band-art is-fig">
-<svg viewBox="0 0 400 300" role="img" aria-label="An audio waveform of an earnings call with three bars highlighted and boxed, and beneath it a spending line that turns upward at the moment those words were spoken." preserveAspectRatio="xMidYMid meet">
-<rect x="0" y="0" width="400" height="300" fill="#F6F4F9"/>
-<text x="22" y="32" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="9.5" letter-spacing="1.4" fill="#1E102F">WHAT MANAGEMENT SAYS</text>
-<rect x="24" y="103" width="8" height="18" rx="3" fill="#1E102F" opacity=".5"/>
-<rect x="39" y="95" width="8" height="34" rx="3" fill="#1E102F" opacity=".5"/>
-<rect x="54" y="99" width="8" height="26" rx="3" fill="#1E102F" opacity=".5"/>
-<rect x="69" y="89" width="8" height="46" rx="3" fill="#1E102F" opacity=".5"/>
-<rect x="84" y="97" width="8" height="30" rx="3" fill="#1E102F" opacity=".5"/>
-<rect x="99" y="83" width="8" height="58" rx="3" fill="#1E102F" opacity=".5"/>
-<rect x="114" y="92" width="8" height="40" rx="3" fill="#1E102F" opacity=".5"/>
-<rect x="129" y="79" width="8" height="66" rx="3" fill="#1E102F" opacity=".5"/>
-<rect x="144" y="97" width="8" height="30" rx="3" fill="#1E102F" opacity=".5"/>
-<rect x="159" y="101" width="8" height="22" rx="3" fill="#1E102F" opacity=".5"/>
-<rect x="174" y="90" width="8" height="44" rx="3" fill="#1E102F" opacity=".5"/>
-<rect x="189" y="81" width="8" height="62" rx="3" fill="#FF7874" opacity="1"/>
-<rect x="204" y="75" width="8" height="74" rx="3" fill="#FF7874" opacity="1"/>
-<rect x="219" y="86" width="8" height="52" rx="3" fill="#FF7874" opacity="1"/>
-<rect x="234" y="94" width="8" height="36" rx="3" fill="#1E102F" opacity=".5"/>
-<rect x="249" y="99" width="8" height="26" rx="3" fill="#1E102F" opacity=".5"/>
-<rect x="264" y="91" width="8" height="42" rx="3" fill="#1E102F" opacity=".5"/>
-<rect x="279" y="97" width="8" height="30" rx="3" fill="#1E102F" opacity=".5"/>
-<rect x="294" y="102" width="8" height="20" rx="3" fill="#1E102F" opacity=".5"/>
-<rect x="309" y="95" width="8" height="34" rx="3" fill="#1E102F" opacity=".5"/>
-<rect x="324" y="98" width="8" height="28" rx="3" fill="#1E102F" opacity=".5"/>
-<rect x="339" y="89" width="8" height="46" rx="3" fill="#1E102F" opacity=".5"/>
-<rect x="354" y="100" width="8" height="24" rx="3" fill="#1E102F" opacity=".5"/>
-<rect x="369" y="103" width="8" height="18" rx="3" fill="#1E102F" opacity=".5"/>
-<rect x="183" y="34" width="49" height="156" fill="none" stroke="#FF7874" stroke-width="2" stroke-dasharray="5 5" opacity=".85"/>
-<text x="22" y="216" font-family="IBM Plex Mono, ui-monospace, monospace" font-size="9.5" letter-spacing="1.4" fill="#1E102F">WHAT THE FIRM THEN SPENDS</text>
-<path d="M24 268 L 140 268 L 198 264 L 206 242 L 268 234 L 330 228 L 376 222" fill="none" stroke="#274CEC" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round"/>
-<line x1="202" y1="200" x2="202" y2="278" stroke="#FF7874" stroke-width="2" stroke-dasharray="4 4"/>
-<circle cx="202" cy="253" r="6" fill="#FF7874" stroke="#1E102F" stroke-width="2"/>
-</svg>
+  </article>
+
+  <p class="grp-label" style="--c:#ECB8FF">Embodied AI</p>
+
+  <article class="entry" id="service" style="--c:#ECB8FF">
+    <div class="entry-body">
+      <div class="chip-row"><span class="chip chip--venue">Under review</span><span class="chip">Field experiment</span></div>
+      <h3>Service Robots in Hospitality: Spatial and Data Privacy in Boundary-Spanning Encounters</h3>
+      <p class="authors">Zhang, A., <b>Fu, X.</b>, Maruping, L. M., &amp; Liu, S.</p>
+      <p class="finding">When a robot rather than a person brings something to a hotel-room door, guests protect two kinds of privacy in opposite directions at once: they <b>open the door wider and go quiet</b>. Physical guard drops, informational guard goes up. Any service design that treats &ldquo;privacy&rdquo; as one dial will get one of them wrong.</p>
+      <div class="metrics"><div class="metric"><span class="metric-value">&minus;0.79</span><span class="metric-label">spatial boundary protection &mdash; the door opens wider</span></div><div class="metric"><span class="metric-value">+1.03</span><span class="metric-label">data boundary protection &mdash; the guest says less</span></div></div>
     </div>
   </article>
 
   <div class="prose" style="border-top:2px solid var(--rule)">
-    <p style="font-size:15px;color:var(--muted);max-width:70ch">Papers under review are listed without a journal
-    name until a decision is final. Full citations, conference papers and service are on the
+    <p style="font-size:15px;color:var(--muted);max-width:70ch">Work under review is listed without a journal
+    name until a decision is final. Conference papers and service are on the
     <a href="/publications/">publications page</a>.</p>
     <p style="margin-top:22px"><a class="btn" href="/join/">Want to work on one of these? &rarr;</a></p>
   </div>
@@ -612,7 +198,7 @@
     </div>
     <div>
       <h3>Credits</h3>
-      <p class="credit">Photographs are openly licensed, from Wikimedia Commons. Figures are drawn for this site. Full attribution: <a href="/credits/">credits</a>.</p>
+      <p class="credit">Photography and figure credits: <a href="/credits/">credits</a>.</p>
     </div>
   </footer>
 
