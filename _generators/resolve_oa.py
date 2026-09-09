@@ -10,7 +10,7 @@ coupling cannot see.
 No API key is needed. Nothing personal is sent — only the bibliographic strings that
 already appear in the manuscripts' reference lists.
 """
-import json, os, re, sys, time, unicodedata, urllib.parse, urllib.request
+import json, os, re, sys, threading, time, unicodedata, urllib.error, urllib.parse, urllib.request
 from concurrent.futures import ThreadPoolExecutor
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -43,18 +43,36 @@ def sim(a, b):
     return len(ta & tb) / len(ta | tb)
 
 
-def get(url, tries=4):
+_throttle = threading.Semaphore(1)   # OpenAlex's anonymous pool is strict
+_last = [0.0]
+MIN_GAP = 0.9                        # seconds between requests
+
+
+def get(url, tries=6):
+    """Returns the decoded body, or {'_error': ...}. A 429 is a transient failure,
+    never an answer — the caller must not cache it as 'no such work'."""
     for i in range(tries):
+        with _throttle:
+            wait = MIN_GAP - (time.time() - _last[0])
+            if wait > 0:
+                time.sleep(wait)
+            _last[0] = time.time()
         try:
             req = urllib.request.Request(url, headers={'User-Agent': UA,
                                                        'Accept': 'application/json'})
-            with urllib.request.urlopen(req, timeout=30) as r:
+            with urllib.request.urlopen(req, timeout=40) as r:
                 return json.loads(r.read().decode('utf8'))
+        except urllib.error.HTTPError as e:
+            if e.code in (429, 503):
+                back = float(e.headers.get('Retry-After') or 0) or min(60, 4 * (i + 1) ** 2)
+                time.sleep(back)
+                continue
+            return {'_error': 'http %d' % e.code}
         except Exception as e:
             if i == tries - 1:
                 return {'_error': str(e)}
-            time.sleep(1.2 * (i + 1))
-    return {'_error': 'unreachable'}
+            time.sleep(2.0 * (i + 1))
+    return {'_error': 'rate-limited'}
 
 
 def cache_path(key):
@@ -80,9 +98,13 @@ def resolve(w):
 
     q = urllib.parse.quote(norm_title(title)[:220])
     data = get('%s?filter=title.search:%s&per-page=5&select=%s' % (API, q, SELECT))
+    if data.get('_error'):
+        return {'key': w['key'], 'matched': False, 'error': data['_error']}  # NOT cached
     results = data.get('results') or []
-    if not results and not data.get('_error'):
+    if not results:
         data = get('%s?search=%s&per-page=5&select=%s' % (API, q, SELECT))
+        if data.get('_error'):
+            return {'key': w['key'], 'matched': False, 'error': data['_error']}
         results = data.get('results') or []
 
     want_year = w.get('year') or 0
@@ -118,7 +140,7 @@ if __name__ == '__main__':
     works = json.load(open(os.path.join(HERE, 'works.json'), encoding='utf8'))
     print('resolving %d cited works against OpenAlex...' % len(works))
     done = []
-    with ThreadPoolExecutor(max_workers=6) as ex:
+    with ThreadPoolExecutor(max_workers=3) as ex:
         for i, r in enumerate(ex.map(resolve, works), 1):
             done.append(r)
             if i % 50 == 0:
@@ -127,6 +149,9 @@ if __name__ == '__main__':
                 sys.stdout.flush()
 
     json.dump(done, open(os.path.join(HERE, 'oa_level1.json'), 'w'), indent=1)
+    err = [x for x in done if x.get('error')]
+    if err:
+        print('%d lookups failed transiently (not cached) — re-run to finish them' % len(err))
     m = [x for x in done if x.get('matched')]
     nrefs = sum(len(x['refs']) for x in m)
     print()

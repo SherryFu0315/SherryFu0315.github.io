@@ -1,156 +1,179 @@
 # -*- coding: utf-8 -*-
 """
-Force-directed layout for the citation sky.
+Layout for the citation sky.
 
 The graph is bipartite: Xinyu Fu's own studies on one side, the works they cite on
 the other, with an edge wherever a study cites a work. Nothing here is hand-placed.
-Two studies end up near each other because they actually draw on the same literature
-(bibliographic coupling); a cited work sits between the studies that cite it, or in
-the halo of the single study that does.
 
-Deterministic: seeded RNG, fixed iteration count. Same input, same sky.
+Two stages, because they answer different questions:
+
+  1. The studies are laid out by force simulation over the coupling graph — two
+     studies pull together in proportion to how many references they share. This
+     is the part where distance carries meaning.
+
+  2. Each cited work is then placed in the halo of the study (or between the
+     studies) that cite it, at a hash-seeded angle and radius.
+
+Stage 2 used to be a force simulation too, and it was wrong: uniform pairwise
+repulsion run to equilibrium settles into a hexagonal lattice, which reads as
+graph paper rather than as a sky. It was also a worse claim — it implied every
+reference repels every other, when the only real relation a reference has is to
+the paper that cites it.
+
+Deterministic: every offset comes from a hash of the work's key, so the same
+input always produces the same sky.
 """
-import json, math, os, hashlib
+import hashlib
+import math
+
 import numpy as np
 
-W, H = 2000.0, 1280.0          # world box the page pans over
+W, H = 1600.0, 1024.0
 SEED = 20260909
 
-# ---- force constants (tuned against the real graph, see build_citesky.py) ----
-ITERS       = 600
-K_SPRING    = 0.0075   # study -> cited work
-L_REST      = 105.0    # preferred edge length
-K_REPEL     = 2600.0   # generic node-node repulsion
-K_REPEL_PP  = 90000.0  # study-study repulsion: keep the constellations apart
-GRAVITY     = 0.00055
-DAMPING     = 0.90
-MAX_STEP    = 26.0
-CELL        = 150.0    # spatial hash cell for the repulsion neighbourhood
+# ---- stage 1: the studies -------------------------------------------------
+S_ITERS   = 900
+S_SPRING  = 0.010      # coupled studies pull together
+S_REST    = 210.0      # ... to about this far apart when they share one work
+S_REPEL   = 330000.0   # every study pushes every other away
+S_GRAVITY = 0.0016
+S_DAMP    = 0.86
+
+# ---- stage 2: the halo of literature around each study --------------------
+HALO      = 150.0      # radius a study's own references spread over
+HALO_MIN  = 0.20       # nothing sits right on top of its study
+SHARED_J  = 0.20       # jitter for a work pulled between several studies
+DECLUMP   = 40         # relaxation passes to separate coincident points
+MIN_GAP   = 5.0        # ... only enough that no two dots sit on top of
+                       # each other; push harder and the field turns into a lattice
 
 
-def _rng():
-    return np.random.default_rng(SEED)
+def _h(key, salt):
+    d = hashlib.sha256((salt + '|' + key).encode('utf8')).digest()
+    return int.from_bytes(d[:6], 'big') / float(1 << 48)
 
 
-def _hash_angle(key):
-    h = hashlib.sha256(key.encode('utf8')).digest()
-    return (int.from_bytes(h[:4], 'big') / 0xFFFFFFFF) * 2 * math.pi
-
-
-def layout(studies, works):
-    """
-    studies: [{'id':..., ...}]                     — her own papers, in order
-    works:   [{'key':..., 'cited_by':[study ids]}] — the literature
-
-    Returns (study_xy, work_xy) as dicts id/key -> (x, y), plus the coupling edges.
-    """
-    sid = [s['id'] for s in studies]
-    sidx = {s: i for i, s in enumerate(sid)}
-    ns = len(sid)
-
-    # only keep works that cite at least one study we know about
-    works = [w for w in works if any(c in sidx for c in w['cited_by'])]
-    nw = len(works)
-    n = ns + nw
-
-    rng = _rng()
-
-    # ---- initial placement -------------------------------------------------
+def _study_positions(sid, pairs):
+    n = len(sid)
+    idx = {s: i for i, s in enumerate(sid)}
     pos = np.zeros((n, 2))
-    for i in range(ns):                       # studies on a ring
-        a = 2 * math.pi * i / max(1, ns)
-        pos[i] = [W / 2 + 380 * math.cos(a), H / 2 + 250 * math.sin(a)]
-    for j, w in enumerate(works):              # works near their citers
-        cs = [sidx[c] for c in w['cited_by'] if c in sidx]
-        c = pos[cs].mean(axis=0)
-        a = _hash_angle(w['key'])
-        r = 70 + 110 * rng.random()
-        pos[ns + j] = c + [r * math.cos(a), r * math.sin(a)]
+    for i in range(n):                              # start on a ring
+        a = 2 * math.pi * i / max(1, n)
+        pos[i] = [W / 2 + 460 * math.cos(a), H / 2 + 310 * math.sin(a)]
 
-    # ---- edges -------------------------------------------------------------
-    ea, eb = [], []
-    for j, w in enumerate(works):
-        for c in w['cited_by']:
-            if c in sidx:
-                ea.append(sidx[c]); eb.append(ns + j)
-    ea = np.array(ea, dtype=np.int32)
-    eb = np.array(eb, dtype=np.int32)
-
-    mass = np.ones(n)
-    mass[:ns] = 9.0                            # studies are heavy, works orbit them
+    ea, eb, ew = [], [], []
+    for (a, b), k in pairs.items():
+        if a in idx and b in idx:
+            ea.append(idx[a]); eb.append(idx[b]); ew.append(k)
+    ea = np.array(ea, dtype=np.int32); eb = np.array(eb, dtype=np.int32)
+    ew = np.array(ew, dtype=float) if len(ew) else np.zeros(0)
 
     vel = np.zeros((n, 2))
     centre = np.array([W / 2, H / 2])
+    for _ in range(S_ITERS):
+        f = np.zeros((n, 2))
+        if len(ea):
+            d = pos[eb] - pos[ea]
+            dist = np.maximum(np.linalg.norm(d, axis=1), 1e-6)
+            # more shared references -> shorter rest length -> closer together
+            rest = S_REST / np.sqrt(ew)
+            mag = (S_SPRING * ew * (dist - rest) / dist)[:, None] * d
+            np.add.at(f, ea, mag)
+            np.add.at(f, eb, -mag)
+        dp = pos[:, None, :] - pos[None, :, :]
+        r2 = np.maximum((dp ** 2).sum(axis=2), 900.0)
+        np.fill_diagonal(r2, np.inf)
+        f += ((S_REPEL / r2)[:, :, None] * dp / np.sqrt(r2)[:, :, None]).sum(axis=1)
+        f -= S_GRAVITY * (pos - centre)
+        vel = (vel + f) * S_DAMP
+        step = np.linalg.norm(vel, axis=1)
+        over = step > 22.0
+        if over.any():
+            vel[over] *= (22.0 / step[over])[:, None]
+        pos += vel
+    return pos
 
-    for it in range(ITERS):
-        force = np.zeros((n, 2))
 
-        # springs: study -> cited work
-        d = pos[eb] - pos[ea]
-        dist = np.maximum(np.linalg.norm(d, axis=1), 1e-6)
-        f = (K_SPRING * (dist - L_REST) / dist)[:, None] * d
-        np.add.at(force, ea, f)
-        np.add.at(force, eb, -f)
+def layout(studies, works, box=None):
+    """
+    studies: [{'id':..., ...}]
+    works:   [{'key':..., 'cited_by':[study ids]}]
+    box:     (w, h) to normalise into.
 
-        # repulsion, restricted to a spatial neighbourhood so it stays near-linear
-        keys = np.floor(pos / CELL).astype(np.int64)
+    Returns (study_xy, work_xy, kept_works, (box_w, box_h)).
+    """
+    BW, BH = box if box else (W, H)
+    sid = [s['id'] for s in studies]
+    idx = {s: i for i, s in enumerate(sid)}
+    works = [w for w in works if any(c in idx for c in w['cited_by'])]
+
+    pairs = coupling(studies, works)
+    spos = _study_positions(sid, pairs)
+
+    # ---- stage 2: hang each work off the study or studies that cite it ----
+    wpos = np.zeros((len(works), 2))
+    for j, w in enumerate(works):
+        cs = [idx[c] for c in w['cited_by'] if c in idx]
+        base = spos[cs].mean(axis=0)
+        ang = _h(w['key'], 'a') * 2 * math.pi
+        if len(cs) == 1:
+            # sqrt keeps the disc evenly filled; the exponent pulls it inward so
+            # the halo has a dense core and a thin edge, the way a cluster looks
+            u = HALO_MIN + (1 - HALO_MIN) * _h(w['key'], 'r')
+            rad = HALO * (u ** 0.62)
+        else:
+            # a shared work belongs to the space between its citers, not to a halo
+            rad = HALO * 0.30 * _h(w['key'], 'r')
+        wpos[j] = base + [rad * math.cos(ang), rad * math.sin(ang) * 0.88]
+
+    # ---- fit into the frame, one uniform scale so distance keeps meaning ----
+    allp = np.vstack([spos, wpos])
+    lo, hi = allp.min(axis=0), allp.max(axis=0)
+    span = np.maximum(hi - lo, 1.0)
+    m = 0.05 * min(BW, BH) + 20.0
+    scale = min((BW - 2 * m) / span[0], (BH - 2 * m) / span[1])
+    allp = (allp - lo) * scale
+    allp[:, 0] += (BW - span[0] * scale) / 2.0
+    allp[:, 1] += (BH - span[1] * scale) / 2.0
+
+    # ---- separate coincident points, in final units --------------------
+    # This has to come after the fit: MIN_GAP is a distance on the finished
+    # map, and declumping before scaling just shrinks the gap away again.
+    ns = len(sid)
+    wp = allp[ns:]
+    for _ in range(DECLUMP):
+        moved = False
+        cell = MIN_GAP * 2.0
         buckets = {}
-        for i in range(n):
-            buckets.setdefault((keys[i, 0], keys[i, 1]), []).append(i)
-        for (cx, cy), idxs in buckets.items():
+        for j in range(len(wp)):
+            buckets.setdefault((int(wp[j, 0] // cell), int(wp[j, 1] // cell)), []).append(j)
+        for (cx, cy), ids in buckets.items():
             near = []
             for dx in (-1, 0, 1):
                 for dy in (-1, 0, 1):
                     near.extend(buckets.get((cx + dx, cy + dy), ()))
             if len(near) < 2:
                 continue
-            a_ = np.asarray(idxs)
-            b_ = np.asarray(near)
-            dd = pos[a_][:, None, :] - pos[b_][None, :, :]        # (A, B, 2)
-            r2 = np.maximum((dd ** 2).sum(axis=2), 36.0)          # (A, B)
-            mag = K_REPEL / r2
-            mag[a_[:, None] == b_[None, :]] = 0.0                 # skip self-pairs
-            contrib = (mag[:, :, None] * dd / np.sqrt(r2)[:, :, None]).sum(axis=1)
-            np.add.at(force, a_, contrib)
+            a_ = np.asarray(ids); b_ = np.asarray(near)
+            dd = wp[a_][:, None, :] - wp[b_][None, :, :]
+            r = np.sqrt(np.maximum((dd ** 2).sum(axis=2), 1e-9))
+            close = (r < MIN_GAP) & (a_[:, None] != b_[None, :])
+            if not close.any():
+                continue
+            moved = True
+            push = np.where(close[:, :, None],
+                            dd / r[:, :, None] * (MIN_GAP - r)[:, :, None] * 0.5, 0.0)
+            np.add.at(wp, a_, push.sum(axis=1))
+        if not moved:
+            break
+    allp[ns:] = wp
 
-        # studies push each other apart hard, at any distance
-        dp = pos[:ns][:, None, :] - pos[:ns][None, :, :]          # (ns, ns, 2)
-        r2p = np.maximum((dp ** 2).sum(axis=2), 400.0)
-        np.fill_diagonal(r2p, np.inf)
-        force[:ns] += ((K_REPEL_PP / r2p)[:, :, None] * dp / np.sqrt(r2p)[:, :, None]).sum(axis=1)
-
-        # gentle pull to centre so the sky does not drift apart
-        force -= GRAVITY * (pos - centre) * mass[:, None]
-
-        vel = (vel + force / mass[:, None]) * DAMPING
-        step = np.linalg.norm(vel, axis=1)
-        over = step > MAX_STEP
-        vel[over] *= (MAX_STEP / step[over])[:, None]
-        pos += vel
-
-    # ---- fit the world box to the cloud, uniform scale in both axes --------
-    # Scaling x and y independently would make on-screen distance stop meaning
-    # "shares references with", which is the whole point. So: one scale factor,
-    # and the box takes whatever aspect the cloud actually has (widened to a
-    # minimum so a landscape viewport is not mostly empty).
-    lo, hi = pos.min(axis=0), pos.max(axis=0)
-    span = np.maximum(hi - lo, 1.0)
-    m = 80.0
-    scale = min((W - 2 * m) / span[0], (H - 2 * m) / span[1])
-    pos = (pos - lo) * scale + m
-
-    ext = span * scale
-    box_w, box_h = float(ext[0]) + 2 * m, float(ext[1]) + 2 * m
-    if box_w / box_h < 1.5:                     # pad sideways, don't stretch
-        box_w = box_h * 1.5
-        pos[:, 0] += (box_w - (ext[0] + 2 * m)) / 2.0
-
-    study_xy = {sid[i]: (round(float(pos[i, 0]), 1), round(float(pos[i, 1]), 1))
+    study_xy = {sid[i]: (round(float(allp[i, 0]), 1), round(float(allp[i, 1]), 1))
                 for i in range(ns)}
-    work_xy = {works[j]['key']: (round(float(pos[ns + j, 0]), 1),
-                                 round(float(pos[ns + j, 1]), 1))
-               for j in range(nw)}
-    return study_xy, work_xy, works, (round(box_w), round(box_h))
+    work_xy = {works[j]['key']: (round(float(allp[ns + j, 0]), 1),
+                                 round(float(allp[ns + j, 1]), 1))
+               for j in range(len(works))}
+    return study_xy, work_xy, works, (BW, BH)
 
 
 def coupling(studies, works):
