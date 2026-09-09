@@ -83,7 +83,7 @@
   opacity:0; pointer-events:none; transition:opacity .18s ease }
 .star-name.on{ opacity:1 }
 .star-name.measuring{ opacity:0; left:0; top:0 }
-.star:hover .star-dot{ transform:scale(calc(var(--inv,1) * 1.4)) rotate(12deg) }
+.star:hover .star-dot{ transform:scale(calc(var(--inv,1) * 1.8)) rotate(12deg) }
 .star.is-open .star-dot{
   transform:scale(calc(var(--inv,1) * 1.55));
   filter:drop-shadow(0 0 3px #fff) drop-shadow(0 0 10px var(--c,#fff)) drop-shadow(0 0 26px var(--c,#fff));
@@ -132,7 +132,8 @@
 
 /* Clicking a star opens this rather than jumping straight to the research page.
    Zoomed in, a name alone does not say what a study is; this does. */
-.starcard{ position:absolute; z-index:9; width:min(360px,calc(100% - 32px));
+.starcard{ position:absolute; z-index:9; right:16px; top:16px;
+  width:min(340px,calc(100% - 32px));
   padding:18px 20px 16px; background:rgba(22,13,38,.985);
   border:1px solid #57427D; border-radius:3px;
   box-shadow:0 22px 60px rgba(0,0,0,.66); opacity:0; visibility:hidden;
@@ -197,7 +198,7 @@
 
   <div class="sky-head">
     <div><h1>How the work<br>connects</h1></div>
-    <p id="head-copy">Each bright star is one of my studies. Each faint one is a paper that a study cites. Studies that cite the same papers get pulled together, so the clumps you see are the ones that really do share a literature. <b>Click a star</b> to see what that study is about.</p>
+    <p id="head-copy">Each bright star is one of my studies. Each faint one is a paper that a study cites. Studies that cite the same papers get pulled together, so the clumps you see are the ones that really do share a literature. <b>Hover a star</b> to see what that study is about; click it for the full entry.</p>
     <div class="hint" style="border:0;padding:0">
       <div class="viewtoggle" role="group" aria-label="Choose an arrangement">
         <button type="button" id="v-axis" aria-pressed="false">Two axes</button>
@@ -553,24 +554,30 @@
     document.querySelectorAll('.star.is-open').forEach(function(e){ e.classList.remove('is-open'); });
     el.classList.add('is-open');
 
-    // sit beside the star, and stay inside the sky
-    var r = sky.getBoundingClientRect(), sr = el.getBoundingClientRect();
-    var cr = card.getBoundingClientRect();
-    var x = sr.left - r.left + sr.width / 2 + 24;
-    var y = sr.top - r.top + sr.height / 2 - cr.height / 2;
-    if (x + cr.width > r.width - 12) x = sr.left - r.left + sr.width / 2 - cr.width - 24;
-    card.style.left = Math.max(12, Math.min(x, r.width - cr.width - 12)) + 'px';
-    card.style.top  = Math.max(12, Math.min(y, r.height - cr.height - 12)) + 'px';
     card.querySelector('.sc-close').addEventListener('click', closeCard);
   }
-  sky.addEventListener('click', function(e){
-    var el = e.target.closest ? e.target.closest('.star') : null;
-    if (!el){ if (!e.target.closest('.starcard')) closeCard(); return; }
-    e.preventDefault();                          // never follow the link; the card is the point
-    if (lastWasDrag) return;                     // a drag that happened to end on a star
+  /* Hovering opens the panel. Clicking a 34px star is a poor target, and the
+     pan gesture takes pointer capture, which retargets the click away from the
+     star anyway — hover has neither problem. A click still follows the link. */
+  var closeTimer=null;
+  function wantClose(){
+    clearTimeout(closeTimer);
+    closeTimer=setTimeout(closeCard, 160);      // room to travel from star to panel
+  }
+  function keepOpen(){ clearTimeout(closeTimer); }
+
+  sky.addEventListener('mouseover', function(e){
+    if (!e.target.closest) return;
+    if (e.target.closest('.starcard')){ keepOpen(); return; }
+    var el = e.target.closest('.star');
+    if (!el){ wantClose(); return; }
     var st = STARS.filter(function(x){ return x.el === el; })[0];
-    if (st) openCard(st, el);
+    if (!st) return;
+    keepOpen();
+    openCard(st, el);
   });
+  sky.addEventListener('mouseleave', wantClose);
+
   document.addEventListener('keydown', function(e){ if (e.key === 'Escape') closeCard(); });
 
   document.getElementById('legend').innerHTML = COLS.map(function(c){
@@ -631,9 +638,11 @@
     tgt=clampCam({x:cam.x+(px-cam.x)*k, y:cam.y+(py-cam.y)*k, s:ns}); go();
   }, {passive:false});
 
-  var drag=null, lastWasDrag=false;
+  var drag=null, lastWasDrag=false, downStar=null;
   sky.addEventListener('pointerdown', function(e){
-    if (e.target.closest('.sky-ctrl')) return;
+    // the card is a panel, not part of the sky: let its own links and button work
+    if (e.target.closest('.sky-ctrl') || e.target.closest('.starcard')) return;
+    downStar = e.target.closest ? e.target.closest('.star') : null;
     drag={x:e.clientX,y:e.clientY,cx:cam.x,cy:cam.y,moved:false};
     sky.setPointerCapture(e.pointerId); sky.classList.add('is-drag');
   });

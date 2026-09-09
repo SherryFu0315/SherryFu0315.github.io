@@ -238,7 +238,7 @@ MAP_H1 = "How the work<br>connects"
 
 # Where it appears: paragraph beside the headline, shown while the map is in
 # the "The literature" arrangement (the study and paper counts fill themselves in)
-MAP_HEAD_COPY_CITE = "Each bright star is one of my studies. Each faint one is a paper that a study cites. Studies that cite the same papers get pulled together, so the clumps you see are the ones that really do share a literature. <b>Click a star</b> to see what that study is about."
+MAP_HEAD_COPY_CITE = "Each bright star is one of my studies. Each faint one is a paper that a study cites. Studies that cite the same papers get pulled together, so the clumps you see are the ones that really do share a literature. <b>Hover a star</b> to see what that study is about; click it for the full entry."
 
 # Where it appears: the left button of the view switcher, top right of the page
 MAP_VIEW_TOGGLE_AXES = "Two axes"

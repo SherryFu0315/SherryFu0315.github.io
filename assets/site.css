@@ -169,8 +169,10 @@ button:focus-visible{ outline:3px solid var(--blue); outline-offset:2px }
 
 .rail{ padding:var(--pad); display:flex; flex-direction:column; gap:22px }
 .rail-top{ display:flex; align-items:flex-start; gap:18px; flex-wrap:wrap }
+/* let the name column narrow instead of dropping below the portrait */
+.rail-top > div{ min-width:0; flex:1 1 200px }
 .rail-photo{
-  width:clamp(108px,9.4vw,136px); aspect-ratio:1; height:auto; flex:none;
+  width:clamp(116px,12vw,168px); aspect-ratio:1; height:auto; flex:none;
   border-radius:50%;
   object-fit:cover;
 }
