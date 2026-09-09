@@ -179,10 +179,13 @@ MOSAIC = [
 TILE_TPL = (
   '      <a class="tile" href="/research/#%s">\n'
   '        <img src="/assets/img/%s" alt="%s">\n'
+  '        <span class="crop" style="--crop:%s" aria-hidden="true"></span>\n'
   '        <span class="tile-note">%s</span>\n'
   '        <span class="tile-label"><span class="plus">AI+</span><span class="dom">%s</span></span>\n'
   '      </a>')
-tiles = [TILE_TPL % (pid, img, alt, note, label) for pid, label, img, note, alt in MOSAIC]
+CROP_C = {c['name']: c['c'] for c in COLS}
+tiles = [TILE_TPL % (pid, img, alt, CROP_C.get(note, '#FF7874'), note, label)
+         for pid, label, img, note, alt in MOSAIC]
 
 featured = [x for x in sorted(PROJECTS, key=lambda y: y['order']) if x.get('photo') and x['finding']][:6]
 home_entries = '\n\n'.join(entry(x, i) for i, x in enumerate(featured))
