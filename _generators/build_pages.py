@@ -303,7 +303,6 @@ NAV
       </div>
     </div>
 
-    <p style="margin-top:34px"><a class="btn" href="/join/">__TEACHING_JOIN_BUTTON__</a></p>
   </div>
 
 FOOT
@@ -344,7 +343,7 @@ TEACH = (TEACH.replace('FONTS', B.FONTS).replace('NAV', B.nav('/teaching/')).rep
               .replace('__TEACHING_ECOMMERCE_TITLE__', T.TEACHING_ECOMMERCE_TITLE)
               .replace('__TEACHING_ECOMMERCE_DESC__', T.TEACHING_ECOMMERCE_DESC)
               .replace('__TEACHING_CAREER_CENTER_TITLE__', T.TEACHING_CAREER_CENTER_TITLE)
-              .replace('__TEACHING_CAREER_CENTER_DESC__', T.TEACHING_CAREER_CENTER_DESC)
-              .replace('__TEACHING_JOIN_BUTTON__', T.TEACHING_JOIN_BUTTON))
+              .replace('__TEACHING_CAREER_CENTER_DESC__', T.TEACHING_CAREER_CENTER_DESC))
+
 io.open(os.path.join(R, 'teaching/index.html'), 'w', encoding='utf-8').write(TEACH)
 print('teaching/index.html', len(TEACH), 'bytes')

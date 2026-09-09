@@ -265,6 +265,29 @@ PAGE = u'''<!DOCTYPE html>
 .sky.mode-cite .star-name.no-room{ opacity:0 }
 .sky.mode-cite .star:hover .star-name{ opacity:1; z-index:4 }
 
+/* Clicking a star opens this rather than jumping straight to the research page.
+   Zoomed in, a name alone does not say what a study is; this does. */
+.starcard{ position:absolute; z-index:9; width:min(360px,calc(100% - 32px));
+  padding:18px 20px 16px; background:rgba(22,13,38,.985);
+  border:1px solid #57427D; border-radius:3px;
+  box-shadow:0 22px 60px rgba(0,0,0,.66); opacity:0; visibility:hidden;
+  transition:opacity .14s ease }
+.starcard.on{ opacity:1; visibility:visible }
+.starcard .sc-eyebrow{ font-family:"IBM Plex Mono",monospace; font-size:10px;
+  letter-spacing:.13em; text-transform:uppercase; margin:0 0 7px }
+.starcard h3{ font-family:"Archivo",Arial,sans-serif; font-variation-settings:"wdth" 90,"wght" 700;
+  font-size:19px; line-height:1.14; margin:0 0 8px; color:#fff }
+.starcard .sc-auth{ font-size:12.5px; color:#A697C0; margin:0 0 10px; line-height:1.4 }
+.starcard .sc-find{ font-size:13.5px; line-height:1.5; color:#D6CCE8; margin:0 0 14px }
+.starcard .sc-find b{ color:#fff; font-weight:500 }
+.starcard .sc-go{ font-family:"IBM Plex Mono",monospace; font-size:11px;
+  letter-spacing:.1em; text-transform:uppercase; color:#DCFF96;
+  text-decoration:none; border-bottom:1px solid rgba(220,255,150,.4); padding-bottom:2px }
+.starcard .sc-go:hover{ border-bottom-color:#DCFF96 }
+.starcard .sc-close{ position:absolute; top:9px; right:10px; width:26px; height:26px;
+  background:none; border:0; color:#8E7FA8; font-size:19px; line-height:1; cursor:pointer }
+.starcard .sc-close:hover{ color:#fff }
+
 .tip{ position:absolute; z-index:7; max-width:330px; padding:11px 13px;
   background:rgba(24,15,40,.97); border:1px solid #4A3968; border-radius:3px;
   box-shadow:0 14px 40px rgba(0,0,0,.6); pointer-events:none; opacity:0;
@@ -277,24 +300,17 @@ PAGE = u'''<!DOCTYPE html>
   font-family:"IBM Plex Mono",monospace; font-size:10px; letter-spacing:.08em;
   text-transform:uppercase; color:#DCFF96 }
 
-.blurb{ padding:0 var(--pad); margin:14px 0 0; color:var(--dim); font-size:14px;
-  line-height:1.6; max-width:78ch }
+.blurb{ padding:0 var(--pad); margin:18px 0 34px; color:var(--dim); font-size:14px;
+  line-height:1.65; max-width:78ch }
+.blurb p{ margin:0 0 11px }
+.blurb p:last-child{ margin-bottom:0 }
 .blurb b{ color:#EFEAF6; font-weight:500 }
+.blurb a{ color:#DCFF96 }
+.blurb h2{ font-family:"Archivo",Arial,sans-serif; font-variation-settings:"wdth" 84,"wght" 800;
+  text-transform:uppercase; font-size:14px; letter-spacing:.04em; color:#EFEAF6; margin:0 0 10px }
 .blurb.is-off{ display:none }
 
 
-.index-list{ padding:var(--pad); border-top:1px solid #3A2B52 }
-.index-list h2{ font-family:"Archivo",Arial,sans-serif; font-variation-settings:"wdth" 84,"wght" 800;
-  text-transform:uppercase; font-size:19px; margin:0 0 6px; color:#fff }
-.index-list > p{ color:var(--dim); font-size:14px; margin:0 0 20px; max-width:62ch }
-.index-cols{ display:grid; grid-template-columns:1fr; gap:0 30px }
-@media(min-width:760px){ .index-cols{ grid-template-columns:repeat(3,1fr) } }
-.index-list .grp{ margin-bottom:22px }
-.index-list h3{ font-family:"IBM Plex Mono",monospace; font-size:10.5px; letter-spacing:.14em;
-  text-transform:uppercase; margin:0 0 8px; font-weight:500 }
-.index-list ul{ margin:0; padding:0; list-style:none }
-.index-list li{ font-size:14px; line-height:1.45; padding:6px 0; border-top:1px solid #2A1C40; color:#CFC4E2 }
-.index-list li em{ font-style:normal; color:var(--dim); font-size:12px; display:block }
 @media (prefers-reduced-motion: reduce){ .star-name{ transition:none } }
 </style>
 </head>
@@ -337,6 +353,7 @@ PAGE = u'''<!DOCTYPE html>
       </div>
     </div>
     <div class="tip" id="tip" role="status" aria-live="polite"></div>
+    <div class="starcard" id="starcard" role="dialog" aria-label="About this study"></div>
     <div class="legend" id="legend"></div>
     <div class="sky-ctrl">
       <button type="button" id="btn-out">__MAP_BTN_ZOOM_OUT__</button>
@@ -345,13 +362,12 @@ PAGE = u'''<!DOCTYPE html>
   </div>
 
   <p class="blurb is-off" id="blurb-axis">__MAP_BLURB_AXIS__</p>
-  <p class="blurb" id="blurb-cite">__MAP_BLURB_CITE__</p>
-
-  <section class="index-list">
-    <h2>__MAP_INDEX_TITLE__</h2>
-    <p>__MAP_INDEX_INTRO__</p>
-    <div class="index-cols" id="fallback"></div>
-  </section>
+  <div class="blurb" id="blurb-cite">
+    <h2>__MAP_METHOD_HEADING__</h2>
+    <p>__MAP_BLURB_CITE__</p>
+    <p>__MAP_BLURB_CITE_2__</p>
+    <p>__MAP_BLURB_CITE_3__</p>
+  </div>
 
 </div>
 
@@ -620,26 +636,52 @@ PAGE = u'''<!DOCTYPE html>
   });
   sky.addEventListener('mouseleave', hideTip);
 
+  /* ---- clicking one of my own stars opens a card about the study ---- */
+  var card = document.getElementById('starcard');
+  var cardOpen = false;
+  function closeCard(){
+    if (!cardOpen) return;
+    card.classList.remove('on'); cardOpen = false;
+    document.querySelectorAll('.star.is-open').forEach(function(e){ e.classList.remove('is-open'); });
+  }
+  function openCard(st, el){
+    var authors = (st.a && st.a.length) ? st.a.join(', ') : '';
+    card.innerHTML =
+      '<button type="button" class="sc-close" aria-label="Close">&times;</button>'
+      + '<p class="sc-eyebrow" style="color:' + st.c + '">' + st.v + '</p>'   // already entity-encoded
+      + '<h3>' + st.t + '</h3>'
+      + (authors ? '<p class="sc-auth">' + authors + '</p>' : '')
+      + '<p class="sc-find">' + st.f + '</p>'
+      + '<a class="sc-go" href="' + st.href + '">Read the full entry &rarr;</a>';
+    card.classList.add('on'); cardOpen = true;
+    document.querySelectorAll('.star.is-open').forEach(function(e){ e.classList.remove('is-open'); });
+    el.classList.add('is-open');
+
+    // sit beside the star, and stay inside the sky
+    var r = sky.getBoundingClientRect(), sr = el.getBoundingClientRect();
+    var cr = card.getBoundingClientRect();
+    var x = sr.left - r.left + sr.width / 2 + 24;
+    var y = sr.top - r.top + sr.height / 2 - cr.height / 2;
+    if (x + cr.width > r.width - 12) x = sr.left - r.left + sr.width / 2 - cr.width - 24;
+    card.style.left = Math.max(12, Math.min(x, r.width - cr.width - 12)) + 'px';
+    card.style.top  = Math.max(12, Math.min(y, r.height - cr.height - 12)) + 'px';
+    card.querySelector('.sc-close').addEventListener('click', closeCard);
+  }
+  sky.addEventListener('click', function(e){
+    var el = e.target.closest ? e.target.closest('.star') : null;
+    if (!el){ if (!e.target.closest('.starcard')) closeCard(); return; }
+    if (lastWasDrag) return;                     // a drag that ended on a star
+    var st = STARS.filter(function(x){ return x.el === el; })[0];
+    if (!st) return;
+    e.preventDefault();
+    openCard(st, el);
+  });
+  document.addEventListener('keydown', function(e){ if (e.key === 'Escape') closeCard(); });
+
   document.getElementById('legend').innerHTML = COLS.map(function(c){
     return '<span><b style="background:'+c.c+'"></b>'+c.name+'</span>';
   }).join('');
 
-  /* ---- plain-text index ---- */
-  (function(){
-    var html='';
-    COLS.forEach(function(c){
-      var mine=STARS.filter(function(s){ return s.col===c.id; });
-      if(!mine.length) return;
-      html+='<div class="grp"><h3>'+c.name+'</h3><ul>';
-      ROWS.forEach(function(r){
-        mine.filter(function(s){ return s.row===r.id; }).forEach(function(s){
-          html+='<li>'+s.t+'<em>'+r.name+' &middot; '+s.v+'</em></li>';
-        });
-      });
-      html+='</ul></div>';
-    });
-    document.getElementById('fallback').innerHTML=html;
-  })();
 
   /* ---- camera ---- */
   var cam={x:W/2,y:H/2,s:1}, tgt={x:W/2,y:H/2,s:1}, raf=null, atFit=true;
@@ -694,7 +736,7 @@ PAGE = u'''<!DOCTYPE html>
     tgt=clampCam({x:cam.x+(px-cam.x)*k, y:cam.y+(py-cam.y)*k, s:ns}); go();
   }, {passive:false});
 
-  var drag=null;
+  var drag=null, lastWasDrag=false;
   sky.addEventListener('pointerdown', function(e){
     if (e.target.closest('.sky-ctrl')) return;
     drag={x:e.clientX,y:e.clientY,cx:cam.x,cy:cam.y,moved:false};
@@ -709,7 +751,8 @@ PAGE = u'''<!DOCTYPE html>
   });
   sky.addEventListener('pointerup', function(e){
     // a drag that happens to end over a star must not follow its link
-    if (drag && drag.moved && e.target.closest('.star')) e.preventDefault();
+    lastWasDrag = !!(drag && drag.moved);
+    if (lastWasDrag && e.target.closest('.star')) e.preventDefault();
     drag=null; sky.classList.remove('is-drag');
   });
   sky.addEventListener('pointercancel', function(){ drag=null; sky.classList.remove('is-drag'); });
@@ -769,9 +812,10 @@ PAGE = (PAGE.replace('__COLS__',   json.dumps(js_cols,   ensure_ascii=False))
             .replace('__MAP_BTN_ZOOM_OUT__', T.MAP_BTN_ZOOM_OUT)
             .replace('__MAP_BTN_WHOLE_SKY__', T.MAP_BTN_WHOLE_SKY)
             .replace('__MAP_BLURB_AXIS__', T.MAP_BLURB_AXIS)
+            .replace('__MAP_METHOD_HEADING__', T.MAP_METHOD_HEADING)
+            .replace('__MAP_BLURB_CITE_2__', T.MAP_BLURB_CITE_2)
+            .replace('__MAP_BLURB_CITE_3__', T.MAP_BLURB_CITE_3)
             .replace('__MAP_BLURB_CITE__', T.MAP_BLURB_CITE)
-            .replace('__MAP_INDEX_TITLE__', T.MAP_INDEX_TITLE)
-            .replace('__MAP_INDEX_INTRO__', T.MAP_INDEX_INTRO)
             .replace('__N_CSTUDIES__', str(N_CSTUDIES))
             .replace('__N_CITED__',  str(N_CITED))
             .replace('__N_SHARED__', str(N_SHARED)))

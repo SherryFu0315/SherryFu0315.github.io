@@ -238,7 +238,7 @@ MAP_H1 = "How the work<br>connects"
 
 # Where it appears: paragraph beside the headline, shown while the map is in
 # the "The literature" arrangement (the study and paper counts fill themselves in)
-MAP_HEAD_COPY_CITE = "No axes here &mdash; this is where the literature puts them. Every faint star is a paper one of my studies leans on; the bright ones are the studies. Two sit close together <b>only because they draw on the same work</b>. __N_CSTUDIES__ studies against __N_CITED__ papers is about the right sense of scale."
+MAP_HEAD_COPY_CITE = "Each bright star is one of my studies. Each faint one is a paper that a study cites. Studies that cite the same papers get pulled together, so the clumps you see are the ones that really do share a literature. <b>Click a star</b> to see what that study is about."
 
 # Where it appears: the left button of the view switcher, top right of the page
 MAP_VIEW_TOGGLE_AXES = "Two axes"
@@ -257,13 +257,9 @@ MAP_BLURB_AXIS = "Where I file each study. The constellations are real ones &mda
 
 # Where it appears: caption under the map while the "The literature" arrangement is
 # showing (the two counts fill themselves in)
-MAP_BLURB_CITE = "Every faint star is a work one of these studies leans on; the bright ones are the studies. <b>No position here is chosen by hand</b> &mdash; a force simulation runs over the real citation graph, so two studies sit close together only when they draw on the same references, and a work several papers lean on is pulled into the space between them. <b>__N_CITED__</b> works, <b>__N_SHARED__</b> of them reached by more than one study. The point of drawing it this way is the proportion: a working life of research is a small, well-lit patch of somebody else&rsquo;s field."
+MAP_BLURB_CITE = """I took the reference list of every piece of work I have finished &mdash; __N_CSTUDIES__ of them, citing __N_CITED__ different papers between them &mdash; and matched the lists against each other, so a paper cited by two studies becomes one star rather than two. Then a physics simulation runs on it: every study pulls on the papers it cites, and every star pushes its neighbours away. Left to settle, studies that share references drift together and studies that share none drift apart. <b>Nothing is positioned by hand.</b>"""
 
-# Where it appears: heading of the plain-text list of studies below the map
-MAP_INDEX_TITLE = "Everything on the map, in plain text"
 
-# Where it appears: sentence under that heading, above the plain-text list
-MAP_INDEX_INTRO = "Grouped by what kind of AI each study is about. Works without JavaScript, and reads correctly to a screen reader."
 
 # Where it appears: stand-in shown for a study that has no one-line finding written yet
 MAP_FINDING_COMING_SOON = "A short description of this project is coming."
@@ -399,7 +395,7 @@ TEACHING_PAGE_TITLE = "Teaching &mdash; Xinyu Fu"
 TEACHING_HEADING = "Teaching"
 
 # Where it appears: small caption beside the "Teaching" heading
-TEACHING_AWARD_NOTE = "2025 Unforgettable Educator Award &middot; nominated by students"
+TEACHING_AWARD_NOTE = "2025 Unforgettable Educator Award &middot; Robinson College of Business, Georgia State University"
 
 # Where it appears: first institution heading on the teaching page
 TEACHING_GSU_HEADING = "Georgia State University"
@@ -467,7 +463,7 @@ TEACHING_DATA_PROGRAMMING_ESSENTIALS_TITLE = "Data Programming Essentials with P
 TEACHING_DATA_PROGRAMMING_ESSENTIALS_DESC = "MBA and MS elective. Instructor; also teaching assistant for this course in Spring and Fall 2019."
 
 # Where it appears: second award badge beside the "Teaching" heading
-TEACHING_AWARD_NOTE_2021 = "2021 Doris &amp; Douglas Bernstein Doctoral Student Teaching Award"
+TEACHING_AWARD_NOTE_2021 = "2021 Doris &amp; Douglas Bernstein Doctoral Student Teaching Award, University of Pittsburgh"
 
 # Where it appears: course name of the Pittsburgh R elective
 TEACHING_ADVANCED_R_TITLE = "Advanced Data Programming with R"
@@ -490,6 +486,12 @@ TEACHING_CAREER_CENTER_TITLE = "Career Center instructor and student mentor"
 # Where it appears: description of the Tsinghua entry at the bottom of the teaching page
 TEACHING_CAREER_CENTER_DESC = "Tsinghua University."
 
-# Where it appears: button at the bottom of the teaching page, linking to the "Work with me" page
-TEACHING_JOIN_BUTTON = "Students I work with, and how to join &rarr;"
 
+# Where it appears: second paragraph of the note under the map, in the literature view
+MAP_BLURB_CITE_2 = """Only __N_SHARED__ of those __N_CITED__ papers are cited by more than one study, which is why most stars sit in a single halo. Those __N_SHARED__ are the pale gold ones, and a line is drawn between two studies wherever they share a reference &mdash; the more they share, the heavier the line."""
+
+# Where it appears: last paragraph of the note under the map, in the literature view
+MAP_BLURB_CITE_3 = """The proportion is the part worth standing back for. A working life of research is a small, well-lit patch of somebody else&rsquo;s field. Every study is also listed in plain words on the <a href="/research/">research page</a>."""
+
+# Where it appears: heading above the note under the map, in the literature view
+MAP_METHOD_HEADING = "How this is drawn"
