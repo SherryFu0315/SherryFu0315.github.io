@@ -11,8 +11,8 @@ PEOPLE = [
       role='Doctoral candidate, Computer Information Systems',
       note='Committee co-chair, with Prof. Likoebe M. Maruping. Service automation, privacy and human&ndash;robot interaction.'),
  dict(name='Xinyuan Wei', url='https://xinyuan-wei-xw.github.io/',
-      role='Doctoral student, Digital Innovation',
-      note='Committee member. Center for Digital Innovation, Robinson College of Business.'),
+      role='Doctoral student, Center for Digital Innovation (CDIN)',
+      note='Committee member. Robinson College of Business.'),
  dict(name='Shaohui Wang', url='https://drusagi.github.io/',
       role='Doctoral candidate, Computer Information Systems',
       note='Committee member.'),
@@ -20,7 +20,7 @@ PEOPLE = [
       role='Assistant Professor of Business Information Systems, University of Arkansas at Little Rock',
       note='Committee member. Graduated from Georgia State.'),
  dict(name='Kartikeya Negi', url='https://www.linkedin.com/in/kartik-negi/',
-      role='Texas State University',
+      role='Assistant Professor, Texas State University',
       note='Committee member. Graduated from Georgia State.'),
  dict(name='Theresa Le', url='https://aisel.aisnet.org/treos_amcis2025/194/',
       role='Master&rsquo;s student, Georgia State University',
@@ -67,7 +67,6 @@ NAV
       <p style="margin:22px 0 0">
         <a class="btn mail" data-u="xinyufu" data-d="gsu.edu" data-s="Research assistant volunteer" data-b="Hi Dr. Fu,&#10;&#10;I would like to volunteer as a research assistant.&#10;&#10;Attached: my CV and a writing sample.&#10;&#10;The project that caught my eye: " href="#">__JOIN_EMAIL_BUTTON__</a>
       </p>
-      <p style="margin:14px 0 0;font-size:13px;color:var(--muted)">__JOIN_EMAIL_NOTE__</p>
     </div>
   </section>
 
@@ -90,7 +89,6 @@ PEOPLE
         <li>__JOIN_WHAT_YOU_WOULD_DO_LITERATURE__</li>
         <li>__JOIN_WHAT_YOU_WOULD_DO_PLATFORMS__</li>
         <li>__JOIN_WHAT_YOU_WOULD_DO_ANALYSIS__</li>
-        <li>__JOIN_WHAT_YOU_WOULD_DO_DRAFTS__</li>
       </ul>
     </div>
     <div class="strip-cell">
@@ -152,7 +150,6 @@ JOIN = (JOIN.replace('FONTS', B.FONTS).replace('NAV', B.nav('/join/'))
             .replace('__JOIN_SEND_WRITING_SAMPLE__', T.JOIN_SEND_WRITING_SAMPLE)
             .replace('__JOIN_SEND_WHICH_PROJECT__', T.JOIN_SEND_WHICH_PROJECT)
             .replace('__JOIN_EMAIL_BUTTON__', T.JOIN_EMAIL_BUTTON)
-            .replace('__JOIN_EMAIL_NOTE__', T.JOIN_EMAIL_NOTE)
             .replace('__JOIN_STUDENTS_TITLE__', T.JOIN_STUDENTS_TITLE)
             .replace('__JOIN_STUDENTS_SUBTITLE__', T.JOIN_STUDENTS_SUBTITLE)
             .replace('__JOIN_WHAT_YOU_WOULD_DO_TITLE__', T.JOIN_WHAT_YOU_WOULD_DO_TITLE)
@@ -160,7 +157,6 @@ JOIN = (JOIN.replace('FONTS', B.FONTS).replace('NAV', B.nav('/join/'))
             .replace('__JOIN_WHAT_YOU_WOULD_DO_LITERATURE__', T.JOIN_WHAT_YOU_WOULD_DO_LITERATURE)
             .replace('__JOIN_WHAT_YOU_WOULD_DO_PLATFORMS__', T.JOIN_WHAT_YOU_WOULD_DO_PLATFORMS)
             .replace('__JOIN_WHAT_YOU_WOULD_DO_ANALYSIS__', T.JOIN_WHAT_YOU_WOULD_DO_ANALYSIS)
-            .replace('__JOIN_WHAT_YOU_WOULD_DO_DRAFTS__', T.JOIN_WHAT_YOU_WOULD_DO_DRAFTS)
             .replace('__JOIN_WHAT_I_ASK_FOR_TITLE__', T.JOIN_WHAT_I_ASK_FOR_TITLE)
             .replace('__JOIN_WHAT_I_ASK_FOR_HOURS__', T.JOIN_WHAT_I_ASK_FOR_HOURS)
             .replace('__JOIN_WHAT_I_ASK_FOR_SEMESTER__', T.JOIN_WHAT_I_ASK_FOR_SEMESTER)

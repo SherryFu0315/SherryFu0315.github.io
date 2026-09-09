@@ -286,7 +286,7 @@ JOIN_CTA_HEADLINE = "Come work on this with me."
 JOIN_LEDE = "I take on <b>student research assistant volunteers</b> year-round, undergraduate and graduate. You do not need prior research experience, and you do not need to have taken my class. You need to be curious and to finish things."
 
 # Where it appears: second paragraph under the headline, about the positions being unpaid
-JOIN_UNPAID_NOTE = "These are unpaid volunteer positions. What they are worth is the part you cannot get from coursework: seeing how a study is actually built, how data actually behaves, and how an argument survives &mdash; or does not survive &mdash; three rounds of review."
+JOIN_UNPAID_NOTE = "These are unpaid volunteer positions. What they are worth is the part you cannot get from coursework: seeing how a study is actually built, and how data actually behaves."
 
 # Where it appears: item 01 of the numbered "what to send" list on the "Work with me" page
 JOIN_SEND_CV = "A <b>CV or r&eacute;sum&eacute;</b>. One page is plenty."
@@ -300,8 +300,6 @@ JOIN_SEND_WHICH_PROJECT = "Two sentences on <b>which project caught your eye</b>
 # Where it appears: label on the email button under the "what to send" list
 JOIN_EMAIL_BUTTON = "Email xinyufu [at] gsu.edu"
 
-# Where it appears: small note under the email button on the "Work with me" page
-JOIN_EMAIL_NOTE = "That link opens a message with the three items already listed, so nothing gets forgotten."
 
 # Where it appears: section heading above the list of students, on the "Work with me" page
 JOIN_STUDENTS_TITLE = "Students I work with"
@@ -324,8 +322,6 @@ JOIN_WHAT_YOU_WOULD_DO_PLATFORMS = "Build the experiment platforms studies run o
 # Where it appears: "What you would actually do" column, analysis item
 JOIN_WHAT_YOU_WOULD_DO_ANALYSIS = "Sit in on analysis, from the first regression to the last robustness check"
 
-# Where it appears: "What you would actually do" column, reading drafts item
-JOIN_WHAT_YOU_WOULD_DO_DRAFTS = "Read drafts and say what does not make sense &mdash; this one is not decoration"
 
 # Where it appears: heading of the second of the three columns on the "Work with me" page
 JOIN_WHAT_I_ASK_FOR_TITLE = "What I ask for"
@@ -388,13 +384,13 @@ JOIN_FAQ_PAID_OR_THESIS_A = "Sometimes. Funded slots come and go with grants, an
 JOIN_FAQ_NO_REPLY_Q = "I emailed and did not hear back."
 
 # Where it appears: common questions, answer to the fifth question
-JOIN_FAQ_NO_REPLY_A = "Send it again after two weeks. That is not rudeness, that is my inbox."
+JOIN_FAQ_NO_REPLY_A = "Please do follow up once more &mdash; a second message is always welcome."
 
 # Where it appears: heading of the last section on the "Work with me" page
 JOIN_COACHING_TITLE = "Competition coaching"
 
 # Where it appears: paragraph under the "Competition coaching" heading
-JOIN_COACHING_TEXT = """I coached the Georgia State team at <a href="https://carlsonschool.umn.edu/conferences/comis"><b>CoMIS 2025</b></a>, the international undergraduate MIS case competition hosted by the Carlson School at the University of Minnesota. The team took first place at the group level and advanced to the final round. If your team wants a faculty coach, write to me early &mdash; these things are won in the preparation, not the room."""
+JOIN_COACHING_TEXT = """I coached the Georgia State team at <a href="https://carlsonschool.umn.edu/conferences/comis"><b>CoMIS 2025</b></a>, the international undergraduate MIS case competition hosted by the Carlson School at the University of Minnesota. The team took first place at the group level and advanced to the final round."""
 
 # Where it appears: browser tab and search results title for the teaching page
 TEACHING_PAGE_TITLE = "Teaching &mdash; Xinyu Fu"
