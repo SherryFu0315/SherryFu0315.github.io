@@ -166,7 +166,7 @@ HOME_RECENT_NSSFC = "National Social Science Fund of China, national-level fundi
 HOME_PRESS_TITLE = "In the press"
 
 # Where it appears: "In the press" column, the 2025 item
-HOME_PRESS_EDUBOT = """<a href="https://www.itedgenews.africa/edubot-naija-launches-ai-powered-multilingual-learning-platform-across-nigeria/">EduBot Naija launches AI-powered multilingual learning platform across Nigeria</a> &mdash; ITEdgeNews, on a student&ndash;faculty project building curriculum-aligned lessons in local Nigerian languages"""
+HOME_PRESS_EDUBOT = """<a href="https://www.itedgenews.africa/edubot-naija-launches-ai-powered-multilingual-learning-platform-across-nigeria/">EduBot Naija launches AI-powered multilingual learning platform across Nigeria</a> &mdash; ITEdgeNews, on a student&ndash;faculty project building curriculum-aligned lessons in local Nigerian languages &middot; also in <a href="https://techafricanews.com/2025/08/14/a-computer-training-launches-edubot-nigeria-to-deliver-ai-powered-education-in-indigenous-languages/">TechAfrica News</a> &middot; <a href="https://www.youtube.com/watch?v=3TnI3x-V_eQ">the launch on video</a>"""
 
 # Where it appears: heading of the third of the three columns near the bottom of the front page
 HOME_TEACHING_TITLE = "Teaching now"
@@ -495,3 +495,15 @@ MAP_BLURB_CITE_3 = """The proportion is the part worth standing back for. A work
 
 # Where it appears: heading above the note under the map, in the literature view
 MAP_METHOD_HEADING = "How this is drawn"
+
+# Where it appears: "Recent" column, the CIST acceptance
+HOME_RECENT_CIST = """<i>The Privacy Asymmetry of Service Robots</i> accepted at CIST, with doctoral candidate <a href="/join/#students">Anqi Zhang</a>"""
+
+# Where it appears: "Recent" column, the ICIS acceptance
+HOME_RECENT_ICIS = """<i>Pathways to AI-Ready Entry-Level Talent</i> accepted at ICIS &mdash; the curriculum paper from <a href="https://path.mit.edu/">PATH</a>"""
+
+# Where it appears: "Recent" column, the book chapter
+HOME_RECENT_CHAPTER = """<a href="https://onlinelibrary.wiley.com/doi/10.1002/9781394266401.ch14">AI in Human Resource Management</a> published in <i>Advances in Human&ndash;AI Collaboration</i> (Wiley)"""
+
+# Where it appears: "In the press" column, the PATH announcement
+HOME_PRESS_PATH = """<a href="https://news.gsu.edu/2026/04/03/mit-raise-and-georgia-state-university-announce-path">MIT RAISE and Georgia State announce PATH</a> &mdash; GSU News, on the initiative the Agentic AI course is taught under &middot; <a href="https://path.mit.edu/">the programme</a> &middot; <a href="https://www.youtube.com/watch?v=LnyWCPhFzzA&amp;list=PL8lQ0qMEI-E8-64gGMvrHBSqbGQkAsXCD&amp;index=1">talks</a>"""

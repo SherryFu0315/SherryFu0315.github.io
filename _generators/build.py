@@ -269,6 +269,9 @@ HOME = '''<!DOCTYPE html>
       <h3>%s</h3>
       <ul>
         <li><span class="yr">2026</span>%s</li>
+        <li><span class="yr">2026</span>%s</li>
+        <li><span class="yr">2026</span>%s</li>
+        <li><span class="yr">2026</span>%s</li>
         <li><span class="yr">2025</span>%s</li>
         <li><span class="yr">2024</span>%s</li>
       </ul>
@@ -276,6 +279,7 @@ HOME = '''<!DOCTYPE html>
     <div class="strip-cell">
       <h3>%s</h3>
       <ul>
+        <li><span class="yr">2026</span>%s</li>
         <li><span class="yr">2025</span>%s</li>
       </ul>
     </div>
@@ -357,9 +361,13 @@ HOME = '''<!DOCTYPE html>
        T.HOME_JOIN_MORE_LINK,
        T.HOME_RECENT_TITLE,
        T.HOME_RECENT_JMIS,
+       T.HOME_RECENT_CIST,
+       T.HOME_RECENT_ICIS,
+       T.HOME_RECENT_CHAPTER,
        T.HOME_RECENT_TEACHING_AWARD,
        T.HOME_RECENT_NSSFC,
        T.HOME_PRESS_TITLE,
+       T.HOME_PRESS_PATH,
        T.HOME_PRESS_EDUBOT,
        T.HOME_TEACHING_TITLE,
        T.HOME_TEACHING_F26,
