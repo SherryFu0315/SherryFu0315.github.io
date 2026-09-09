@@ -84,7 +84,7 @@ HOME_ROLE = """<b>Assistant Professor of Computer Information Systems</b><br>
           J. Mack Robinson College of Business<br>Georgia State University"""
 
 # Where it appears: the statement paragraph under the name at the top of the front page
-HOME_THESIS = """<b>How little does it take to make people better at working with AI?</b><span>My research explores the design of human&ndash;AI collaboration and its behavioral and organizational implications.</span>"""
+HOME_THESIS = """<b>Why does so little make so much difference to how people work with AI?</b><span>My research explores the design of human&ndash;AI collaboration and its behavioral and organizational implications.</span>"""
 
 
 
