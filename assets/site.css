@@ -287,15 +287,18 @@ button:focus-visible{ outline:3px solid var(--blue); outline-offset:2px }
 }
 .send-list b{ font-weight:700 }
 
-.btn{
+/* `a.btn` rather than `.btn`, and placed after the content-link rule, so a
+   button inside .prose keeps its own colours instead of turning link-blue —
+   which on the button's dark ground was near-unreadable. */
+a.btn, .btn{
   display:inline-block;
   background:var(--ink); color:var(--paper);
-  padding:16px 26px; text-decoration:none;
+  padding:16px 26px; text-decoration:none; border-bottom:0;
   font-family:"IBM Plex Mono",monospace;
   font-size:13px; letter-spacing:.09em; text-transform:uppercase;
   border:var(--rule-w) solid var(--ink);
 }
-.btn:hover{ background:var(--coral); color:var(--ink) }
+a.btn:hover, .btn:hover{ background:var(--coral); color:var(--ink) }
 .btn--light{ background:var(--white); color:var(--ink) }
 .btn--light:hover{ background:var(--coral) }
 
@@ -598,11 +601,13 @@ button:focus-visible{ outline:3px solid var(--blue); outline-offset:2px }
   .strip-cell{ border-right:0; border-bottom:var(--rule-w) solid var(--rule) }
   .strip-cell:last-child{ border-bottom:0 }
 }
-.strip-cell h3{ font-size:16px; margin-bottom:14px; font-variation-settings:"wdth" 88,"wght" 800 }
-.strip-cell ul{ margin:0; padding:0; list-style:none; font-size:14.5px; line-height:1.5 }
-.strip-cell li{ padding:7px 0; border-top:1px solid var(--faint) }
+/* This strip carries the good news — an acceptance, an award, a course
+   running now. It was set at caption size and read like a sidebar. */
+.strip-cell h3{ font-size:17px; margin-bottom:16px; font-variation-settings:"wdth" 88,"wght" 800 }
+.strip-cell ul{ margin:0; padding:0; list-style:none; font-size:16.5px; line-height:1.5 }
+.strip-cell li{ padding:11px 0; border-top:1px solid var(--faint) }
 .strip-cell li:first-child{ border-top:0 }
-.strip-cell .yr{ font-family:"IBM Plex Mono",monospace; font-size:11px; color:var(--muted); margin-right:8px }
+.strip-cell .yr{ font-family:"IBM Plex Mono",monospace; font-size:12px; color:var(--muted); margin-right:9px }
 
 /* ---------- footer -------------------------------------------------------- */
 

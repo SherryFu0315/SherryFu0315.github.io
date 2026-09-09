@@ -207,13 +207,16 @@ PAGE = u'''<!DOCTYPE html>
 /* a point in the constellation with no project on it yet */
 .slot{ position:absolute; transform:translate(-50%,-50%); pointer-events:none; display:block }
 .slot .star-dot{ width:12px; height:12px; fill:#7E6CA0; opacity:.55; filter:none }
-.star-name{ position:absolute; left:50%; top:50%;
-  transform:translate(-50%,0) scale(var(--inv,1)) translate(0,15px); transform-origin:50% 0;
-  font-family:"IBM Plex Mono",monospace; font-size:10px; letter-spacing:.04em; line-height:1.3;
-  color:#E6DEF4; white-space:nowrap; background:rgba(18,10,31,.86); padding:3px 7px;
-  opacity:0; pointer-events:none; transition:opacity .2s ease }
-.sky.zoomed .star-name{ opacity:1 }
-.star:hover .star-name, .star:focus-visible .star-name{ opacity:1 }
+/* Star names live in an overlay that is never scaled. Inside the world they
+   were counter-scaled by 1/s, and text drawn through a fractional transform
+   renders soft — which is what made them blurry the moment you zoomed. */
+.labels{ position:absolute; inset:0; pointer-events:none; z-index:4; overflow:hidden }
+.star-name{ position:absolute; left:0; top:0;
+  font-family:"IBM Plex Mono",monospace; font-size:12px; letter-spacing:.04em; line-height:1.3;
+  color:#EFEAF6; white-space:nowrap; background:rgba(18,10,31,.9); padding:4px 8px;
+  opacity:0; pointer-events:none; transition:opacity .18s ease }
+.star-name.on{ opacity:1 }
+.star-name.measuring{ opacity:0; left:0; top:0 }
 .star:hover .star-dot{ transform:scale(calc(var(--inv,1) * 1.4)) rotate(12deg) }
 .star.is-open .star-dot{
   transform:scale(calc(var(--inv,1) * 1.55));
@@ -259,11 +262,7 @@ PAGE = u'''<!DOCTYPE html>
    translate is read in screen pixels: scale(1/s) then s cancel, and the offset
    the solver computed is the offset that renders. A percentage translate here
    would be resolved before the counter-scale and land short by a factor of s. */
-.sky.mode-cite .star-name{ opacity:1; background:none; left:50%; top:50%;
-  transform-origin:0 0; transform:scale(var(--inv,1));
-  text-shadow:0 1px 10px #120A1F,0 0 20px #120A1F,0 0 30px #120A1F }
-.sky.mode-cite .star-name.no-room{ opacity:0 }
-.sky.mode-cite .star:hover .star-name{ opacity:1; z-index:4 }
+.sky.mode-cite .star-name{ background:rgba(18,10,31,.72) }
 
 /* Clicking a star opens this rather than jumping straight to the research page.
    Zoomed in, a name alone does not say what a study is; this does. */
@@ -352,6 +351,7 @@ PAGE = u'''<!DOCTYPE html>
         <svg class="links cite-links" viewBox="0 0 __W__ __H__" id="clinks" aria-hidden="true"></svg>
       </div>
     </div>
+    <div class="labels" id="labels"></div>
     <div class="tip" id="tip" role="status" aria-live="polite"></div>
     <div class="starcard" id="starcard" role="dialog" aria-label="About this study"></div>
     <div class="legend" id="legend"></div>
@@ -512,10 +512,13 @@ PAGE = u'''<!DOCTYPE html>
     a.className='star'; a.href=st.href;
     a.style.setProperty('--c', st.c); a.style.setProperty('--sz', size+'px');
     a.setAttribute('aria-label', st.t.replace(/&[a-z]+;/g,' ') + ' \u2014 ' + st.v.replace(/&[a-z]+;/g,' '));
-    a.innerHTML = STAR_PATH + '<span class="star-name">'+st.t+'</span>';
+    a.innerHTML = STAR_PATH;
     a.dataset.star='1';
     world.appendChild(a);
-    st.el=a; st.lbl=a.querySelector('.star-name');
+    var lb=document.createElement('span');
+    lb.className='star-name'; lb.innerHTML=st.t;
+    document.getElementById('labels').appendChild(lb);
+    st.el=a; st.lbl=lb;
   });
 
   // the room the sky still has
@@ -571,12 +574,12 @@ PAGE = u'''<!DOCTYPE html>
      so where a name fits depends on the zoom. Solve it each frame instead of
      baking positions in. STARS is ordered by how much literature a study
      carries, so the big ones keep their names when the sky is tight.      */
-  var PAD=4, HALF=13, GAP=20;
+  var PAD=4, HALF=13, GAP=20, hoverId=null;
   function measureLabels(){
     STARS.forEach(function(st){
-      st.lbl.style.transform='';                  // measure the natural box
-      st.lbl.className='star-name';
+      st.lbl.classList.add('measuring');
       var r=st.lbl.getBoundingClientRect();
+      st.lbl.classList.remove('measuring');
       if (r.width){ st.lw=r.width; st.lh=r.height; }
     });
   }
@@ -584,15 +587,25 @@ PAGE = u'''<!DOCTYPE html>
     return !(a.x+a.w+PAD<b.x || b.x+b.w+PAD<a.x || a.y+a.h+PAD<b.y || b.y+b.h+PAD<a.y);
   }
   function placeLabels(){
-    if (mode!=='cite') return;
     var r=sky.getBoundingClientRect();
     var ox=r.width/2-cam.x*cam.s, oy=r.height/2-cam.y*cam.s;
-    var live=STARS.filter(function(st){ return st.cx!=null && st.lw; });
-    var taken=live.map(function(st){
-      return { x:ox+st.cx*cam.s-HALF, y:oy+st.cy*cam.s-HALF, w:HALF*2, h:HALF*2, own:st.id };
+    var cite=(mode==='cite');
+    // In the literature view the names are the point, so they stay up. On the
+    // two axes they would bury the constellations, so they wait for a zoom or
+    // for the pointer, as they always have.
+    var showAll = cite || sky.classList.contains('zoomed');
+    var live=STARS.filter(function(st){
+      var x = cite ? st.cx : st.ax;
+      return x!=null && st.lw;
     });
+    var taken=live.map(function(st){
+      var x = cite ? st.cx : st.ax, y = cite ? st.cy : st.ay;
+      return { x:ox+x*cam.s-HALF, y:oy+y*cam.s-HALF, w:HALF*2, h:HALF*2, own:st.id };
+    });
+    STARS.forEach(function(st){ st.lbl.classList.remove('on'); });
     live.forEach(function(st){
-      var sx=ox+st.cx*cam.s, sy=oy+st.cy*cam.s, w=st.lw, h=st.lh;
+      var wx = cite ? st.cx : st.ax, wy = cite ? st.cy : st.ay;
+      var sx=ox+wx*cam.s, sy=oy+wy*cam.s, w=st.lw, h=st.lh;
       var D=GAP*0.72;
       var cands=[[sx-w/2,sy+GAP],[sx-w/2,sy-GAP-h],[sx+GAP,sy-h/2],[sx-GAP-w,sy-h/2],
                  [sx+D,sy+D],[sx-D-w,sy+D],[sx+D,sy-D-h],[sx-D-w,sy-D-h]];
@@ -603,15 +616,32 @@ PAGE = u'''<!DOCTYPE html>
           if (overlap(box,taken[j])){ ok=false; break; }
         }
         if (ok){
-          st.lbl.className='star-name';
-          st.lbl.style.transform='scale(var(--inv,1)) translate('+(box.x-sx).toFixed(1)+'px,'
-                                +(box.y-sy).toFixed(1)+'px)';
+          // whole pixels: a label on a half pixel is a soft label
+          st.lbl.style.left=Math.round(box.x)+'px';
+          st.lbl.style.top =Math.round(box.y)+'px';
+          if (showAll || st.id===hoverId) st.lbl.classList.add('on');
           taken.push(box); return;
         }
       }
-      st.lbl.className='star-name no-room';
+      // nowhere to put it — but if the pointer is on that star, show it anyway
+      if (st.id===hoverId){
+        st.lbl.style.left=Math.round(sx-w/2)+'px';
+        st.lbl.style.top =Math.round(sy+GAP)+'px';
+        st.lbl.classList.add('on');
+      }
     });
   }
+
+  // the label is no longer inside the star, so :hover cannot reach it
+  sky.addEventListener('mouseover', function(e){
+    var el=e.target.closest ? e.target.closest('.star') : null;
+    var st=el && STARS.filter(function(x){ return x.el===el; })[0];
+    var id=st?st.id:null;
+    if (id!==hoverId){ hoverId=id; placeLabels(); }
+  });
+  sky.addEventListener('mouseleave', function(){
+    if (hoverId){ hoverId=null; placeLabels(); }
+  });
 
   /* ---- tooltip for the works cited ---- */
   function esc(s){ return String(s==null?'':s).replace(/[&<>]/g,function(m){
@@ -670,11 +700,10 @@ PAGE = u'''<!DOCTYPE html>
   sky.addEventListener('click', function(e){
     var el = e.target.closest ? e.target.closest('.star') : null;
     if (!el){ if (!e.target.closest('.starcard')) closeCard(); return; }
-    if (lastWasDrag) return;                     // a drag that ended on a star
+    e.preventDefault();                          // never follow the link; the card is the point
+    if (lastWasDrag) return;                     // a drag that happened to end on a star
     var st = STARS.filter(function(x){ return x.el === el; })[0];
-    if (!st) return;
-    e.preventDefault();
-    openCard(st, el);
+    if (st) openCard(st, el);
   });
   document.addEventListener('keydown', function(e){ if (e.key === 'Escape') closeCard(); });
 
@@ -745,7 +774,7 @@ PAGE = u'''<!DOCTYPE html>
   sky.addEventListener('pointermove', function(e){
     if(!drag) return;
     var dx=e.clientX-drag.x, dy=e.clientY-drag.y;
-    if (Math.abs(dx)+Math.abs(dy)>4) drag.moved=true;
+    if (Math.abs(dx)+Math.abs(dy)>8) drag.moved=true;   // a click wobbles; a drag does not
     var c=clampCam({x:drag.cx-dx/cam.s, y:drag.cy-dy/cam.s, s:cam.s});
     cam={x:c.x,y:c.y,s:c.s}; tgt={x:c.x,y:c.y,s:c.s}; apply();
   });
