@@ -154,7 +154,7 @@ HOME_JOIN_MORE_LINK = "Who I work with, and what the work is like &rarr;"
 HOME_RECENT_TITLE = "Recent"
 
 # Where it appears: "Recent" column, the 2026 item
-HOME_RECENT_JMIS = "<i>Knowing Is Not Enough</i> accepted at the Journal of Management Information Systems"
+HOME_RECENT_JMIS = """<a href="https://arxiv.org/abs/2609.01976"><i>Knowing Is Not Enough</i></a> accepted at the Journal of Management Information Systems"""
 
 
 
