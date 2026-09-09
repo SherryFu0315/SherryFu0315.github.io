@@ -57,7 +57,7 @@ HOME_NAV_WORK_WITH_ME = "Work with me"
 # Where it appears: footer, the postal address in the first column
 HOME_FOOT_ADDRESS = """Department of Computer Information Systems<br>
       J. Mack Robinson College of Business, Georgia State University<br>
-      55 Park Place NE, Suite 1727, Atlanta, GA 30303"""
+      55 Park Place NE, Atlanta, GA 30303"""
 
 # Where it appears: footer, heading of the middle column
 HOME_FOOT_ELSEWHERE_TITLE = "Elsewhere"
