@@ -342,7 +342,7 @@ button:focus-visible{ outline:3px solid var(--blue); outline-offset:2px }
   border-top:var(--rule-w) solid var(--ink); border-left:var(--rule-w) solid var(--ink);
 }
 .metric{
-  flex:1 1 170px; padding:12px 14px;
+  flex:1 1 150px; padding:11px 13px;
   border-right:var(--rule-w) solid var(--ink); border-bottom:var(--rule-w) solid var(--ink);
 }
 .metric-value{
@@ -353,7 +353,7 @@ button:focus-visible{ outline:3px solid var(--blue); outline-offset:2px }
 }
 .metric-label{
   font-family:"IBM Plex Mono",monospace;
-  font-size:10px; letter-spacing:.1em; text-transform:uppercase;
+  font-size:9.5px; letter-spacing:.1em; text-transform:uppercase;
   color:var(--muted); display:block; line-height:1.35;
 }
 
@@ -500,14 +500,17 @@ button:focus-visible{ outline:3px solid var(--blue); outline-offset:2px }
   padding:20px var(--pad) 28px; display:flex; flex-direction:column; gap:14px;
   border-left:8px solid var(--c); max-width:none;
 }
-.entry-body h3{ font-size:clamp(21px,2.4vw,30px); max-width:30ch }
+.entry-body h3{ font-size:clamp(20px,2.2vw,27px); max-width:36ch; line-height:.98 }
+.entry-body .proj-links{ font-size:11px }
 .entry-body .finding{ max-width:74ch }
 .entry-body .finding.is-tbc{ color:var(--muted); font-style:italic }
 .entry-body .metrics{ margin-top:4px; max-width:900px }
 
 /* an entry that has a photograph puts it alongside the text */
 @media(min-width:900px){
-  .entry.has-art{ display:grid; grid-template-columns:1fr 1fr; align-items:stretch }
+  /* one height for every entry, so the column of them reads as a column */
+  .entry.has-art{ display:grid; grid-template-columns:1fr 1fr; align-items:stretch; min-height:452px }
+  .entry.has-art .entry-body{ justify-content:center }
   .entry.has-art .entry-art{ border-left:var(--rule-w) solid var(--rule) }
   /* every other entry puts its picture on the left */
   .entry.art-left .entry-art{ order:-1; border-left:0; border-right:var(--rule-w) solid var(--rule) }
