@@ -458,11 +458,7 @@ TEACHING_INTRO_IS_TITLE = "Introduction to Information Systems"
 # Where it appears: description of the Pittsburgh introductory course
 TEACHING_INTRO_IS_DESC = "Undergraduate core. Instructor."
 
-# Where it appears: student evaluation quote under the Pittsburgh introductory course
-TEACHING_INTRO_IS_STUDENT_QUOTE = "&ldquo;Professor Fu was fantastic. She created an environment where everyone learned, and worked her hardest to let students of every coding level keep up. I am grateful for how easily she broke down machine learning.&rdquo;"
 
-# Where it appears: attribution line under the student evaluation quote
-TEACHING_INTRO_IS_QUOTE_CITE = "Student evaluation, 2021"
 
 # Where it appears: course name of the Pittsburgh Python elective
 TEACHING_DATA_PROGRAMMING_ESSENTIALS_TITLE = "Data Programming Essentials with Python"
@@ -470,8 +466,8 @@ TEACHING_DATA_PROGRAMMING_ESSENTIALS_TITLE = "Data Programming Essentials with P
 # Where it appears: description of the Pittsburgh Python elective
 TEACHING_DATA_PROGRAMMING_ESSENTIALS_DESC = "MBA and MS elective. Instructor; also teaching assistant for this course in Spring and Fall 2019."
 
-# Where it appears: teaching award note under the Pittsburgh Python elective
-TEACHING_BERNSTEIN_AWARD_NOTE = "2021 Doris &amp; Douglas Bernstein Doctoral Student Teaching Award &mdash; one student per year."
+# Where it appears: second award badge beside the "Teaching" heading
+TEACHING_AWARD_NOTE_2021 = "2021 Doris &amp; Douglas Bernstein Doctoral Student Teaching Award"
 
 # Where it appears: course name of the Pittsburgh R elective
 TEACHING_ADVANCED_R_TITLE = "Advanced Data Programming with R"

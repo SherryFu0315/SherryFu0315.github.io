@@ -219,10 +219,13 @@ button:focus-visible{ outline:3px solid var(--blue); outline-offset:2px }
 }
 
 /* an award is not a caption — give it the weight of the thing it is */
+.sec-head .awards{
+  margin-left:auto; display:flex; flex-direction:column;
+  gap:6px; align-items:flex-end;
+}
 .sec-head .count.is-award{
-  color:var(--ink); background:var(--lime);
+  margin-left:0; color:var(--ink); background:var(--lime);
   padding:8px 13px; letter-spacing:.07em; font-weight:500;
-  align-self:center;
 }
 
 /* ---------- the recruiting block ----------------------------------------- */

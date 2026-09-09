@@ -202,7 +202,10 @@ NAV
 
   <div class="sec-head">
     <h2>__TEACHING_HEADING__</h2>
-    <span class="count is-award">__TEACHING_AWARD_NOTE__</span>
+    <div class="awards">
+      <span class="count is-award">__TEACHING_AWARD_NOTE__</span>
+      <span class="count is-award">__TEACHING_AWARD_NOTE_2021__</span>
+    </div>
   </div>
 
   <div class="prose">
@@ -263,8 +266,6 @@ NAV
       <div>
         <h4>__TEACHING_INTRO_IS_TITLE__</h4>
         <p>__TEACHING_INTRO_IS_DESC__</p>
-        <blockquote class="quote">__TEACHING_INTRO_IS_STUDENT_QUOTE__
-        <cite>__TEACHING_INTRO_IS_QUOTE_CITE__</cite></blockquote>
       </div>
     </div>
 
@@ -273,7 +274,6 @@ NAV
       <div>
         <h4>__TEACHING_DATA_PROGRAMMING_ESSENTIALS_TITLE__</h4>
         <p>__TEACHING_DATA_PROGRAMMING_ESSENTIALS_DESC__</p>
-        <p style="margin-top:8px"><em>__TEACHING_BERNSTEIN_AWARD_NOTE__</em></p>
       </div>
     </div>
 
@@ -335,11 +335,9 @@ TEACH = (TEACH.replace('FONTS', B.FONTS).replace('NAV', B.nav('/teaching/')).rep
               .replace('__TEACHING_PITT_HEADING__', T.TEACHING_PITT_HEADING)
               .replace('__TEACHING_INTRO_IS_TITLE__', T.TEACHING_INTRO_IS_TITLE)
               .replace('__TEACHING_INTRO_IS_DESC__', T.TEACHING_INTRO_IS_DESC)
-              .replace('__TEACHING_INTRO_IS_STUDENT_QUOTE__', T.TEACHING_INTRO_IS_STUDENT_QUOTE)
-              .replace('__TEACHING_INTRO_IS_QUOTE_CITE__', T.TEACHING_INTRO_IS_QUOTE_CITE)
               .replace('__TEACHING_DATA_PROGRAMMING_ESSENTIALS_TITLE__', T.TEACHING_DATA_PROGRAMMING_ESSENTIALS_TITLE)
               .replace('__TEACHING_DATA_PROGRAMMING_ESSENTIALS_DESC__', T.TEACHING_DATA_PROGRAMMING_ESSENTIALS_DESC)
-              .replace('__TEACHING_BERNSTEIN_AWARD_NOTE__', T.TEACHING_BERNSTEIN_AWARD_NOTE)
+              .replace('__TEACHING_AWARD_NOTE_2021__', T.TEACHING_AWARD_NOTE_2021)
               .replace('__TEACHING_ADVANCED_R_TITLE__', T.TEACHING_ADVANCED_R_TITLE)
               .replace('__TEACHING_ADVANCED_R_DESC__', T.TEACHING_ADVANCED_R_DESC)
               .replace('__TEACHING_ELSEWHERE_HEADING__', T.TEACHING_ELSEWHERE_HEADING)
