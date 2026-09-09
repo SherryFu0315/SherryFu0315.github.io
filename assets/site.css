@@ -45,6 +45,39 @@ body{
 img{ max-width:100%; display:block }
 a{ color:inherit }
 
+/* One treatment for every link inside running content: brand blue with a quiet
+   underline that firms up on hover. Chrome — the nav, the buttons, the brand,
+   the stars on the map — keeps its own styling and is deliberately excluded.
+   The map page carries no content links, so none of this reaches a dark
+   background, where this blue would be unreadable. */
+.prose a,
+.pubs a,
+.proj-links a,
+.metrics a,
+.venue a,
+.people .p-note a,
+.strip a,
+.foot a,
+.credit a,
+.sec-head .count a,
+.cta p a:not(.btn){
+  color:var(--blue);
+  text-decoration:none;
+  border-bottom:1.5px solid rgba(39,76,236,.28);
+  padding-bottom:1px;
+}
+.prose a:hover,
+.pubs a:hover,
+.proj-links a:hover,
+.metrics a:hover,
+.venue a:hover,
+.people .p-note a:hover,
+.strip a:hover,
+.foot a:hover,
+.credit a:hover,
+.sec-head .count a:hover,
+.cta p a:not(.btn):hover{ border-bottom-color:var(--blue) }
+
 /* ---------- type roles ---------------------------------------------------- */
 
 .display,
@@ -302,16 +335,11 @@ button:focus-visible{ outline:3px solid var(--blue); outline-offset:2px }
   font-family:"IBM Plex Mono",monospace; font-size:11.5px;
   letter-spacing:.08em; text-transform:uppercase; color:var(--muted); padding-top:4px;
 }
-.course .proj-links{
+.proj-links{
   display:flex; flex-wrap:wrap; gap:9px 20px; margin:0;
   font-family:"IBM Plex Mono",monospace; font-size:11.5px;
   letter-spacing:.09em; text-transform:uppercase;
 }
-.course .proj-links a{
-  color:var(--blue); text-decoration:none;
-  border-bottom:1.5px solid rgba(39,76,236,.28); padding-bottom:2px;
-}
-.course .proj-links a:hover{ border-bottom-color:var(--blue) }
 
 .course h4{
   margin:0 0 5px; font-size:18px; font-weight:700;
@@ -523,7 +551,7 @@ button:focus-visible{ outline:3px solid var(--blue); outline-offset:2px }
   border-left:8px solid var(--c); max-width:none;
 }
 .entry-body h3{ font-size:clamp(20px,2.2vw,27px); max-width:36ch; line-height:.98 }
-.entry-body .proj-links{ font-size:11px }
+.entry-body .proj-links{ font-size:11px; gap:8px 18px }
 .entry-body .finding{ max-width:74ch }
 .entry-body .finding.is-tbc{ color:var(--muted); font-style:italic }
 .entry-body .metrics{ margin-top:4px; max-width:900px }
@@ -584,7 +612,7 @@ button:focus-visible{ outline:3px solid var(--blue); outline-offset:2px }
 .foot p, .foot li{ font-size:13.5px; color:var(--muted); line-height:1.55 }
 .foot ul{ list-style:none; margin:0; padding:0 }
 .foot li{ padding:4px 0 }
-.foot a{ color:var(--ink) }
+
 .foot .credit{ font-size:12px; line-height:1.5 }
 
 .cr-h{ font-family:"IBM Plex Mono",monospace; font-size:11px; letter-spacing:.14em;
