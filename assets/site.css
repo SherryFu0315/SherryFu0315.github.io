@@ -464,6 +464,14 @@ button:focus-visible{ outline:3px solid var(--blue); outline-offset:2px }
 .entry-body .finding.is-tbc{ color:var(--muted); font-style:italic }
 .entry-body .metrics{ margin-top:4px; max-width:900px }
 
+/* an entry that has a photograph puts it alongside the text */
+@media(min-width:900px){
+  .entry.has-art{ display:grid; grid-template-columns:1fr 1fr }
+  .entry.has-art .entry-art{ border-left:var(--rule-w) solid var(--rule) }
+}
+.entry-art{ position:relative; overflow:hidden; min-height:240px; background:var(--ink) }
+.entry-art img{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover }
+
 /* ---------- news strip ---------------------------------------------------- */
 
 .strip{ display:grid; grid-template-columns:1fr; border-bottom:var(--rule-w) solid var(--rule) }
