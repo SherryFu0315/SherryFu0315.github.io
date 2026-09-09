@@ -357,6 +357,47 @@ button:focus-visible{ outline:3px solid var(--blue); outline-offset:2px }
   color:var(--muted); display:block; line-height:1.35;
 }
 
+/* ---------- mosaic ------------------------------------------------------- */
+
+.mosaic{ display:grid; grid-template-columns:repeat(2,1fr); gap:0 }
+@media(max-width:560px){ .mosaic{ grid-template-columns:1fr } }
+
+.tile{
+  position:relative; aspect-ratio:4/3; overflow:hidden; display:block;
+  border-bottom:var(--rule-w) solid var(--rule);
+  border-right:var(--rule-w) solid var(--rule);
+  text-decoration:none; background:var(--ink);
+}
+.tile:nth-child(2n){ border-right:0 }
+@media(max-width:560px){ .tile{ border-right:0 } }
+.tile img{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover }
+.tile::after{
+  content:""; position:absolute; inset:0;
+  background:linear-gradient(180deg,rgba(30,16,47,.10) 0%,rgba(30,16,47,.16) 42%,rgba(30,16,47,.74) 100%);
+}
+.tile-label{
+  position:absolute; left:0; bottom:0; z-index:2; padding:0 20px 18px;
+  color:var(--white); font-family:"Archivo",Arial,sans-serif;
+  font-variation-settings:"wdth" 76,"wght" 800;
+  text-transform:uppercase; line-height:.9; letter-spacing:-.01em;
+}
+.tile-label .plus{ display:block; font-size:clamp(19px,2.4vw,30px) }
+.tile-label .dom{ display:block; font-size:clamp(25px,3.5vw,46px) }
+.tile-note{
+  position:absolute; top:0; left:0; z-index:2; margin:14px 0 0 20px;
+  font-family:"IBM Plex Mono",monospace; font-size:10px;
+  letter-spacing:.14em; text-transform:uppercase;
+  color:var(--white); background:var(--ink); padding:4px 8px;
+}
+.tile--duo .duo-wash{
+  position:absolute; inset:0; z-index:1;
+  background:var(--blue); mix-blend-mode:color; opacity:.7;
+}
+@media (prefers-reduced-motion: no-preference){
+  .tile-label{ transition:transform .22s ease }
+  .tile:hover .tile-label{ transform:translateY(-3px) }
+}
+
 /* ---------- hero without artwork ----------------------------------------- */
 
 .hero--plain{ grid-template-columns:1fr }
