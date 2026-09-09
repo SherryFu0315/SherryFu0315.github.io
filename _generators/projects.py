@@ -124,9 +124,11 @@ PROJECTS = [
    short='Generative Stimulus Sampling',
    authors='<b>Fu, X.</b>, Ramasubbu, N., Maruping, L. M., Wang, G., Xie, J., &amp; Wang, K.',
    method='Full-text census and experiments',
-   finding=("Across every randomized experiment in <em>MIS Quarterly</em> and <em>Information Systems "
-            "Research</em>, most studies that repeat a treatment <b>never change its wording</b>. So when an "
-            "effect fades, the record cannot say whether the intervention wore off or the sentence did."),
+   finding=("Repeat a message and the effect fades &mdash; but is that the intervention wearing off, or "
+            "just that one wording? <b>Generative stimulus sampling</b> builds an audited pool of differently "
+            "worded versions that all carry the same intervention, then randomises not only which one a person "
+            "sees but <b>how far it moves from the one they saw last</b>. The distance between one message and "
+            "the next becomes a variable you set, rather than an accident of the materials."),
    photo=('stimulus.jpg','The GSS Research Studio public preview, asking what repeated-message experiment to build.'),
    metrics=[('425','randomized experiments in the census'),
             ('53%','re-expose the same participant to the same stimulus')],
@@ -139,9 +141,9 @@ PROJECTS = [
    authors='A student&ndash;faculty collaboration supported by Georgia State University',
    method='Deployed system',
    finding=("An AI tutor that teaches the curriculum in local Nigerian languages, built by students for "
-            "communities the English-only version of the internet was never going to reach. It is the clearest "
-            "case I have of the thing I actually believe: <b>the point of the technology is the person on the "
-            "other side of it</b>."),
+            "communities the English-only version of the internet was never going to reach. A collaboration "
+            "with <a href=\"https://www.apluscomputertrainingtech.com.ng/\">A+ Computer Training "
+            "Technology</a>, who build and run it in Nigeria."),
    photo=('edubot.jpg','Secondary-school students in uniform seated together at the EduBot Naija launch.'),
    metrics=[],
    links=[('ITEdgeNews','https://www.itedgenews.africa/edubot-naija-launches-ai-powered-multilingual-learning-platform-across-nigeria/'),
