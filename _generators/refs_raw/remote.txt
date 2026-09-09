@@ -1,0 +1,30 @@
+Aksoy CG, Barrero JM, Bloom N, Davis S, Dolls M, Zarate P (2023) Time savings when working from home (National Bureau of Economic Research, Cambridge, MA).
+Athey S, Imbens G (2016) Recursive partitioning for heterogeneous causal effects. Proc. Natl. Acad. Sci. U. S. A. 113(27):7353–7360.
+Barrero JM, Bloom N, Davis SJ (2023) The evolution of work from home. J. Econ. Perspect. 37(4):23–49.
+Bloom N, Bunn P, Mizen P, Smietanka P, Thwaites G (2020) The impact of covid-19 on productivity (National Bureau of Economic Research, Cambridge, MA).
+Bloom N, Davis SJ, Zhestkova Y (2020) COVID-19 shifted patent applications toward technologies that support working from home. SSRN Electron. J.
+Bloom N, Han R, Liang J (2024) Hybrid working from home improves retention without damaging performance. Nature 630(8018):920–925.
+Bloom N, Liang J, Roberts J, Ying ZJ (2015) Does working from home work? Evidence from a Chinese experiment. Q. J. Econ. 130(1):165–218.
+Brian Rongqing Han, Tianshu Sun, Leon Yang Chu, Lixia Wu (2022) COVID-19 and E-Commerce Operations: Evidence from Alibaba. Manufacturing & Service Operations Management 24(3):1388-1405.
+Brynjolfsson E, Horton J, Ozimek A, Rock D, Sharma G, TuYe HY (2020) COVID-19 and remote work: An early look at US data (National Bureau of Economic Research, Cambridge, MA).
+Choudhury P (raj), Foroughi C, Larson B (2021) Work‐from‐anywhere: The productivity effects of geographic flexibility. Strategic Manage. J. 42(4):655–683.
+Cui R, Ding H, Zhu F (2022) Gender inequality in research productivity during the COVID-19 pandemic. Manuf. Serv. Oper. Manag. 24(2):707–726.
+Friebel G, Yilmaz L (2016) Flexibility, specialization and individual productivity: Evidence from call center data. SSRN Electron. J.
+Gans N, Koole G, Mandelbaum A (2003) Telephone call centers: Tutorial, review, and research prospects. Manuf. Serv. Oper. Manag. 5(2):79–141.
+Ge C, Huang H, Wang Z, Jiang J, Liu C (2022) Working from home and firm resilience to the COVID‐19 pandemic. J. Oper. Manage. 69(3):450–476.
+Gibbs M, Mengel F, Siemroth C (2023) Work from home and productivity: Evidence from personnel and analytics data on information technology professionals. Journal of Political Economy Microeconomics:000–000.
+Görlich Y (2023) Creativity and productivity during the COVID-19 pandemic. Sci. Rep. 13(1):14615.
+Hansen S, Lambert PJ, Bloom N, Davis S, Sadun R, Taska B (2023) Remote work across jobs, companies, and space (National Bureau of Economic Research, Cambridge, MA).
+Hirano K, Imbens GW (2005) The propensity score with continuous treatments. Applied Bayesian Modeling and Causal Inference from Incomplete-Data Perspectives. (John Wiley & Sons, Ltd, Chichester, UK), 73–84.
+Hopp WJ, Tekin E, Van Oyen MP (2004) Benefits of skill chaining in serial production lines with cross-trained workers. Manage. Sci. 50(1):83–98.
+Imbens G (2000) The role of the propensity score in estimating dose-response functions. Biometrika 87(3):706–710.
+Iravani SMR, Krishnamurthy V (2007) Workforce agility in repair and maintenance environments. Manuf. Serv. Oper. Manag. 9(2):168–184.
+Iravani SM, Van Oyen MP, Sims KT (2005) Structural flexibility: A new perspective on the design of manufacturing and service operations. Manage. Sci. 51(2):151–166.
+Jones MD, Hutcheson S, Camba JD (2021) Past, present, and future barriers to digital transformation in manufacturing: A review. J. Manuf. Syst. 60:936–948.
+Manyika J, Ramaswamy S, Khanna S, Sarrazin H, Pinkus G, Sethupathy G, Yaffe A (2015) Digital america: A tale of the haves and have-mores
+Mas A, Pallais A (2020) Alternative work arrangements. Annu. Rev. Econom. 12(1):631–658.
+Morikawa M (2022) Work-from-home productivity during the COVID-19 pandemic: Evidence from Japan. Econ. Inq. 60(2):508–527.
+Pinker EJ, Shumsky RA (2000) The efficiency-quality trade-off of cross-trained workers. Manuf. Serv. Oper. Manag. 2(1):32–48.
+Qin R, Nembhard DA (2015) Workforce agility in operations management. Surv. Oper. Res. Manag. Sci. 20(2):55–69.
+Ramdas, K., Ahmed, F., & Darzi, A. (2020). Remote shared care delivery: a virtual response to COVID-19. Lancet Digital Health, 2(6), e288-e289.
+Zarate P, Dolls M, Davis S, Bloom N, Barrero JM, Aksoy CG (2024) Why does working from home vary across countries and people? (National Bureau of Economic Research, Cambridge, MA).

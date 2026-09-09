@@ -1,0 +1,37 @@
+Arrow, K. J. 1963. “Uncertainty and the Welfare Economics of Medical Care,” American Economic Review (53:5), pp. 941–973.
+Bardhan, I., Chen, H., and Karahanna, E. 2020. “Connecting Systems, Data, and People: A Multidisciplinary Research Roadmap for Chronic Disease Management,” MIS Quarterly (44:1), pp. 185–200.
+Berente, N., Gu, B., Recker, J., and Santhanam, R. 2021. “Managing Artificial Intelligence,” MIS Quarterly (45:3), pp. 1433–1450.
+Callaway, B., and Sant’Anna, P. H. C. 2021. “Difference-in-Differences with Multiple Time Periods,” Journal of Econometrics (225:2), pp. 200–230.
+Chen, Y., and Xie, J. 2008. “Online Consumer Review: Word-of-Mouth as a New Element of Marketing Communication Mix,” Management Science (54:3), pp. 477–491.
+Chernozhukov, V., Chetverikov, D., Demirer, M., Duflo, E., Hansen, C., Newey, W., and Robins, J. 2018. “Double/Debiased Machine Learning for Treatment and Structural Parameters,” The Econometrics Journal (21:1), pp. C1–C68.
+Constantinides, P., Henfridsson, O., and Parker, G. G. 2018. “Introduction—Platforms and Infrastructures in the Digital Age,” Information Systems Research (29:2), pp. 381–400.
+Darby, M. R., and Karni, E. 1973. “Free Competition and the Optimal Amount of Fraud,” Journal of Law and Economics (16:1), pp. 67–88.
+de Véricourt, F., and Gürkan, H. 2026. “Is Your Machine Better Than You? You May Never Know,” Management Science (72:1), pp. 558–574.
+Dulleck, U., and Kerschbamer, R. 2006. “On Doctors, Mechanics, and Computer Specialists: The Economics of Credence Goods,” Journal of Economic Literature (44:1), pp. 5–42.
+Dulleck, U., Kerschbamer, R., and Sutter, M. 2011. “The Economics of Credence Goods: An Experiment on the Role of Liability, Verifiability, Reputation, and Competition,” American Economic Review (101:2), pp. 526–555.
+Esteva, A., Kuprel, B., Novoa, R. A., Ko, J., Swetter, S. M., Blau, H. M., and Thrun, S. 2017. “Dermatologist-Level Classification of Skin Cancer with Deep Neural Networks,” Nature (542), pp. 115–118.
+Farbmacher, H., Huber, M., Lafférs, L., Langen, H., and Spindler, M. 2022. “Causal Mediation Analysis with Double Machine Learning,” The Econometrics Journal (25:2), pp. 277–300.
+Geng, S., Zhang, W., Xie, J., Liang, G., Niu, B., and Ram, S. 2025. “Predicting Consultation Success in Online Health Platforms Using Dynamic Knowledge Networks and Multimodal Data Fusion,” MIS Quarterly (forthcoming).
+Ghose, A., and Ipeirotis, P. G. 2011. “Estimating the Helpfulness and Economic Impact of Product Reviews: Mining Text and Reviewer Characteristics,” Management Science (57:10), pp. 1498–1512.
+Hong, W., Chan, F. K. Y., Thong, J. Y. L., Chasalow, L. C., and Dhillon, G. 2014. “A Framework and Guidelines for Context-Specific Theorizing in Information Systems Research,” Information Systems Research (25:1), pp. 111–136.
+Huang, M.-H., and Rust, R. T. 2018. “Artificial Intelligence in Service,” Journal of Service Research (21:2), pp. 155–172.
+Huck, S., Lünser, G. K., Spitzer, F., and Tyran, J.-R. 2016. “Medical Insurance and Free Choice of Physician Shape Patient Overtreatment: A Laboratory Experiment,” Journal of Economic Behavior & Organization (131), pp. 78–105.
+Jussupow, E., Benbasat, I., and Heinzl, A. 2024. “An Integrative Perspective on Algorithm Aversion and Appreciation in Decision-Making,” MIS Quarterly (48:4), pp. 1575–1590.
+Kurtz, S. M., and Silverman, J. D. 1996. “The Calgary–Cambridge Referenced Observation Guides: An Aid to Defining the Curriculum and Organizing the Teaching in Communication Training Programmes,” Medical Education (30:2), pp. 83–89.
+Lebovitz, S., Levina, N., and Lifshitz-Assaf, H. 2022. “Is AI Ground Truth Really ‘True’? The Dangers of Training and Evaluating AI Tools Based on Expert Consensus Data,” Organization Science (33:1), pp. 148–167.
+Liu, Y., Xin, X., Jin, Y., and Deng, H. 2023. “Understanding the Digital Resilience of Physicians during the COVID-19 Pandemic: An Empirical Study,” MIS Quarterly (47:1), pp. 391–422.
+Lu, Y., and Rui, H. 2018. “Can We Trust Online Physician Ratings? Evidence from a Natural Experiment,” Information Systems Research (29:4), pp. 833–852.
+Luca, M. 2016. “Reviews, Reputation, and Revenue: The Case of Yelp.com,” Harvard Business School Working Paper No. 12-016.
+Mayzlin, D., Dover, Y., and Chevalier, J. 2014. “Promotional Reviews: An Empirical Investigation of Online Review Manipulation,” American Economic Review (104:8), pp. 2421–2455.
+Rai, A., Constantinides, P., and Sarker, S. 2019. “Next-Generation Digital Platforms: Toward Human–AI Hybrids,” MIS Quarterly (43:1), pp. iii–ix.
+Raisch, S., and Krakowski, S. 2021. “Artificial Intelligence and Management: The Automation–Augmentation Paradox,” Organization Science (32:1), pp. 192–210.
+Roter, D. L., and Larson, S. 2002. “The Roter Interaction Analysis System (RIAS): Utility and Flexibility for Analysis of Medical Interactions,” Patient Education and Counseling (46:4), pp. 243–251.
+Saifee, M., Bardhan, I., and Lahiri, A. 2020. “Are Online Reviews of Physicians Reliable Indicators of Clinical Quality? Evidence from a Natural Experiment,” Information Systems Research (31:4), pp. 1038–1058.
+Schneider, H. S. 2012. “Agency Problems and Reputation in Expert Services: Evidence from Auto Repair,” Journal of Industrial Economics (60:3), pp. 406–433.
+Semigran, H. L., Linder, J. A., Gidengil, C., and Mehrotra, A. 2015. “Evaluation of Symptom Checkers for Self Diagnosis and Triage: Audit Study,” BMJ (351), h3480.
+Shi, L., and Viswanathan, S. 2023. “Optional Verification and Signaling in Online Matching Markets: Evidence from a Randomized Field Experiment,” Information Systems Research (34:4), pp. 1603–1621.
+Shipp, A. J., and Jansen, K. J. 2021. “The ‘Other’ Time: A Review of the Subjective Experience of Time in Organizations,” Academy of Management Annals (15:1), pp. 299–334.
+Sun, L., and Abraham, S. 2021. “Estimating Dynamic Treatment Effects in Event Studies with Heterogeneous Treatment Effects,” Journal of Econometrics (225:2), pp. 175–199.
+Topol, E. 2019. Deep Medicine: How Artificial Intelligence Can Make Healthcare Human Again, New York: Basic Books.
+Yang, L., Bauer, K., Li, X., and Hinz, O. 2026. “My Advisor, Her AI, and Me: Evidence from a Field Experiment on Human–AI Collaboration and Investment Decisions,” Management Science (72:1), pp. 242–264.
+Zhang, M. M., Gao, Y., Li, J., and Johnson, S. L. 2026. “When Influencers Delegate Replies: How Social AI Agents Shape User Engagement,” Information Systems Research (forthcoming).

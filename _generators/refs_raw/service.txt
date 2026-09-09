@@ -1,0 +1,80 @@
+Adjerid I, Peer E, Acquisti A (2018) Beyond the privacy paradox: Objective versus relative risk in privacy decision making. MIS Quart. 42(2):465–488.
+Al-Natour S, Cavusoglu H, Benbasat I, Aleem U (2020) An empirical investigation of the antecedents and consequences of privacy uncertainty in the context of mobile apps. Inform. Systems Res. 31(4):1037–1063.
+Altman I (1975) The environment and social behavior: Privacy, personal space, territory, crowding. Monterey, Calif. : Brooks/Cole Pub. Co.
+Amo LC, Grijalva E, Herath T, Lemoine GJ, Rao HR (2022) Technological entitlement: It’s my technology and I’ll (Ab)Use it how I want to. MIS Quart. 46(3):1395–1420.
+Angst CM, Agarwal R (2009) Adoption of electronic health records in the presence of privacy concerns: The elaboration likelihood model and individual persuasion. MIS Quart. 33(2):339–370.
+Barrett M, Oborn E, Orlikowski WJ, Yates J (2012) Reconfiguring boundary relations: Robotic innovations in pharmacy work. Organ. Sci. 23(5):1448–1466.
+Bélanger F, Crossler R (2011) Privacy in the digital age: A review of information privacy research in information systems. MIS Quart. 35(4):1017–1042.
+Bélanger F, James T (2020) A theory of multilevel information privacy management for the digital era. Inform. Systems Res. 31(2):510–536.
+Brady MK, Cronin JJ (2001) Some new thoughts on conceptualizing perceived service quality: A hierarchical approach. J. Marketing 65(3):34–49.
+Brennan N, Price M (2025) Hundreds of Chicago residents sign petition to pause robot delivery pilot program over safety concerns. CBS News. https://www.cbsnews.com/chicago/news/north-side-residents-petition-pause-to-delivery-robots/
+Calleja DL, Schepers J, Nijssen EJ (2023) Some agents are more similar than others: Customer orientation of frontline robots and employees. J. Service Management 34(6):27–49.
+Calo MR (2017) Robots and privacy. In Machine Ethics and Robot Ethics (1st ed.). Routledge.
+Cichy P, Salge TO, Kohli R (2021) Privacy concerns and data sharing in the Internet of Things: Mixed methods evidence from connected cars. MIS Quart. 45(4):1863–1892.
+D’Acunto D, Volo S, Filieri R (2021) “Most Americans like their privacy.” Exploring privacy concerns through US guests’ reviews. International Journal of Contemporary Hospitality Management 33(8):2773–2798.
+Dinev T, Hart P (2006) An extended privacy calculus model for e-commerce transactions. Inform. Systems Res. 17(1):61–80.
+Dinev T, McConnell AR, Smith HJ (2015) Research commentary—Informing privacy research through information systems, psychology, and behavioral economics: Thinking outside the “APCO” box. Inform. Systems Res. 26(4):639–655.
+Feine J, Gnewuch U, Morana S, Maedche A (2019) A taxonomy of social cues for conversational agents. International Journal of Human-Computer Studies 132:138–161. https://doi.org/10.1016/j.ijhcs.2019.07.009
+Gale A, Mochizuki T (2019) Robot hotel loses love for robots. Dow Jones Institutional News. https://www.proquest.com/abidateline/docview/2166904938/citation/531E2DD1C1E247ACPQ/1
+Goffman E (1959) The presentation of self in everyday life. In Social Theory Re-Wired (3rd ed.). Routledge.
+Goffman E (1963) Behavior in public places. Notes on The Social Organization of Gatherings. The Free Press.
+Gong K, Gao Y, Liang X, Shen X, Wang M, Lin L (2019) Graphonomy: Universal human parsing via graph transfer learning. Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition, 7442–7451.
+Goodwin C, Frame CD (1989) Social distance within the service encounter: Does the consumer want to be your friend? Advances in Consumer Research 16(1):64–71.
+Gretry A, Horváth C, Belei N, Van Riel ACR (2017) “Don’t pretend to be my friend!” When an informal brand communication style backfires on social media. J. Bus. Res. 74:77–89.
+Gupta A, Kannan K, Sanyal P (2018) Economic experiments in information systems. MIS Quart. 42(2):595–606.
+Hair JF (2019) Multivariate data analysis (Eighth edition). Cengage.
+Hall ET (1990) The hidden dimension. Knopf Doubleday Publishing Group.
+Heirati N, Pitardi V, Wirtz J, Jayawardhena C, Kunz W, Paluch S (2025) Unintended consequences of service robots-recent progress and future research directions. J. Bus. Res. 194:115366.
+Holthöwer J, van Doorn J (2023) Robots do not judge: Service robots can alleviate embarrassment in service encounters. J. Acad. Marketing Sci. 51:767–784.
+Holthöwer J, Van Doorn J, Noble SM (2025) Increasing accountability and compliance with robot advice. J. Marketing, 1–22.
+Hong W, Thong JYL (2013) Internet privacy concerns: An integrated conceptualization and four empirical studies. MIS Quart. 37(1):275–298.
+Hu Y, Min HK (2025) Information transparency, privacy concerns, and customers’ behavioral intentions regarding AI-powered hospitality robots: A situational awareness perspective. Journal of Hospitality and Tourism Management 63:177–184.
+Hu Y, Min H (2023) The dark side of artificial intelligence in service: The “Watching-eye” effect and privacy concerns. International Journal of Hospitality Management 110:103437.
+Intel Market Research (2026) Autonomous delivery robots market 2026 to 2034 (Report IMR-43292; p. 119). Intel Market Research.
+Jayaraman S, Phillips EK, Church D, Riek LD (2024) Privacy and utility perceptions of social robots in healthcare. Computers in Human Behavior: Artificial Humans 2(1):100039.
+Jia S, Chi OH, Lu L (2024) Social robot privacy concern (SRPC): Rethinking privacy concerns within the hospitality domain. International Journal of Hospitality Management 122:103853.
+Kantharak K, Somboonchai C, Nguyen Trong Tuan, Nguyen Truong Thinh (2017) Design and development of service robot based human-robot interaction (HRI). 2017 International Conference on System Science and Engineering (ICSSE), 293–296.
+Li H, Luo XR, Sarathy R, Xu H (2024) Contextual integrity and personal health information sharing in online social networks. J. Assoc. Inform. Systems 25(6):1500–1532.
+Li P, Xu Y, Wei Y, Yang Y (2022) Self-Correction for human parsing. IEEE Transactions on Pattern Analysis and Machine Intelligence 44(6):3260–3271.
+Lin J, Carter L, Liu D (2021) Privacy concerns and digital government: Exploring citizen willingness to adopt the cOVIDSafe app. Eur. J. Inform. Systems 30(4):389–402.
+Lin S, Armstrong DJ (2019) Beyond information: The role of territory in privacy management behavior on social networking sites. J. Assoc. Inform. Systems 20(4):434–475.
+Lu VN, Wirtz J, Kunz WH, Paluch S, Gruber T, Martins A, Patterson PG (2020) Service robots, customers and service employees: What can we learn from the academic literature and where are the gaps? Journal of Service Theory and Practice 30(3):361–391.
+Lutz C, Tamò-Larrieux A (2020) The robot privacy paradox: Understanding how privacy concerns shape intentions to use social robots. Human-Machine Communication 1:87–111.
+Luu T (J), Harrison A (2026) Understanding information privacy concerns: A meta-analytic of three decades of research. Inform. Systems Res. Published online May 20, 2026, https://doi.org/10.1287/isre.2023.0797.
+Ma S, Ge L, Jia H (Michael), Wang Y (2025) Understanding and mitigating the robot disadvantage in luxury services: The role of desire for superiority. Inform. Systems Res. 36(4):2134–2150.
+MacKenzie SB, Podsakoff PM, Podsakoff NP (2011) Construct measurement and validation procedures in MIS and behavioral research: Integrating new and existing techniques. MIS Quart. 35(2):293–334.
+Malhotra NK, Kim SS, Agarwal J (2004) Internet users’ information privacy concerns (IUIPC): The construct, the scale, and a causal model. Inform. Systems Res. 15(4):336–355.
+Martín H (2016) Cutting edge: Robots deliver fun with hotel room service orders, and they don’t expect a tip. Los Angeles Times. https://www.latimes.com/business/la-fi-hotel-robots-20160207-story.html
+McCarron M (2024) Do robots love their customers? Automated Restaurants Face Human Issues. New York Times. https://www.proquest.com/nytimes/docview/3092177789/citation/F894600811AC4E29PQ/1
+Mettler T, Sprenger M, Winter R (2017) Service robots in hospitals: New perspectives on niche evolution and technology affordances. Eur. J. Inform. Systems 26(5):451–468.
+National Financial Regulatory Administration (2024) Risk alert on preventing new types of telecommunications network fraud. National Financial Regulatory Administration. https://www.nfra.gov.cn/cn/view/pages/ItemDetail.html?docId=1172651&generaltype=0&itemId=4100
+Nissenbaum H (2010) Privacy in context: Technology, policy, and the integrity of social life. Stanford Law Books.
+Orlikowski WJ, Scott SV (2021) Liminal innovation in practice: Understanding the reconfiguration of digital work in crisis. Information and Organization 31(1):100336.
+Otterbring T, Wu F, Kristensson P (2021) Too close for comfort? The impact of salesperson‐customer proximity on consumers’ purchase behavior. Psychology & Marketing 38(9):1576–1590.
+Palen L, Dourish P (2003) Unpacking “Privacy” for a networked world. New Horizons, 129–136.
+Peng J (2023) Identification of causal mechanisms from randomized experiments: A framework for endogenous mediation analysis. Inform. Systems Res. 34(1):67–84.
+Popovič A, Smith HJ, Thong JYL, Wattal S (2019) MIS quarterly research curation on information privacy. MIS Quart.
+Research and Markets (2026) Service robotics market report 2026—Research and markets. https://www.researchandmarkets.com/reports/5782893/service-robotics-market-report
+Sarker S, Bala H, Hong Y, Kankanhalli A, Rossi M, Gu B, Oestreicher-Singer G (2025) Advancing next-generation multimethod research in information systems: A framework and some recommendations for authors and evaluators. Inform. Systems Res. 36(2):647–668.
+Schwabe J, Altenmüller MS, Gollwitzer M (2025) The double-edged sword of informality: How informal communication shapes closeness and trustworthiness in personal and professional relationships. Journal of Social and Personal Relationships 42(5):1149–1177.
+Sergeeva AV, Faraj S, Huysman M (2020) Losing touch: An embodiment perspective on coordination in robotic surgery. Organ. Sci. 31(5):1248–1271.
+Seymour M, Yuan LI, Riemer K, Dennis AR (2025) Less artificial, more intelligent: Understanding affinity, trustworthiness, and preference for digital humans. Inform. Systems Res. 36(2):1096–1128.
+Sia CL, Tan BCY, Wei KK (2002) Group polarization and computer-mediated communication: Effects of communication cues, social presence, and anonymity. Inform. Systems Res. 13(1):70–90.
+Smith HJ, Dinev T, Xu H (2011) Information privacy research: An interdisciplinary review. MIS Quart. 35(4):989–1016.
+Smith HJ, Milberg SJ, Burke SJ (1996) Information privacy: Measuring individuals’ concerns about organizational practices. MIS Quart. 20(2):167–196.
+Song B, Xu H, Hu W, Li Y, Guo Y (2024) How to calculate privacy: Privacy concerns and service robots’ use intention in hospitality. Current Issues in Tourism 27(21):3401–3417.
+Tan R, Li Y, Huang Q, Liu H (2025) Enhancing customer service chatbot effectiveness: The effect of dyadic communication traits on customer purchase intention. J. Assoc. Inform. Systems 26(3):799–831.
+Tene O (2024) Navigating privacy and data security challenges in the hospitality industry: Key considerations for hotel management agreements. Goodwin Law. https://www.goodwinlaw.com/en/insights/publications/2024/09/insights-realestate-navigating-privacy-and-data-security-challenges
+Turner VW (1964) Betwixt and between: The liminal period in rites of passage. In Sacred Realms: Readings in the Anthropology of Religion (pp. 167–174). Oxford University Press.
+Turner VW (1977) The ritual process: Structure and anti-structure. Cornell University Press.
+van Doorn J, Mende M, Noble SM, Hulland J, Ostrom AL, Grewal D, Petersen JA (2017) Domo Arigato Mr. Roboto: Emergence of automated social presence in organizational frontlines and customers’ service experiences. J. Service Res. 20(1):43–58.
+Venkatesh V, Windeler JB, Bartol KM, Williamson IO (2017) Person–Organization and person–Job fit perceptions of new IT employees: Work outcomes and gender differences. MIS Quart. 41(2):525–558.
+Wang C, Chen S, Wu Y, Zhang Z, Zhou L, Liu S, Chen Z, Liu Y, Wang H, Li J, He L, Zhao S, Wei F (2023) Neural codec language models are zero-shot text to speech synthesizers (arXiv:2301.02111). arXiv. https://doi.org/10.48550/arXiv.2301.02111
+Weijters B, Baumgartner H (2012) Misresponse to reversed and negated items in surveys: A review. J. Marketing Res. 49(5):737–747.
+White-Crummey A, Côté-Sroka E (2024) Public servants uneasy as government spy robot prowls federal offices. CBC News. https://www.cbc.ca/news/canada/ottawa/public-servants-uneasy-as-government-spy-robot-prowls-federal-offices-1.7239711
+Wirtz J, Patterson P, Kunz W, Gruber T, Lu V, Paluch S, Martins A (2018) Brave new world: Service robots in the frontline. J. Service Management 29(5):907.
+Xie E, Wang W, Yu Z, Anandkumar A, Alvarez JM, Luo P (2021) SegFormer: Simple and efﬁcient design for semantic segmentation with transformers. Advances in Neural Information Processing Systems 34. 35th Conference on Neural Information Processing Systems.
+Xu H, Zhang N (2022) From contextualizing to context theorizing: Assessing context effects in privacy research. Management Sci. 68(10):7383–7401.
+Yao Q, Hu C, Zhou W (2024) The impact of customer privacy concerns on service robot adoption intentions: A credence/experience service typology perspective. Technological Forecasting and Social Change 198:122948.
+Yoganathan V, Osburg V-S, Kunz WH, Toporowski W (2021) Check-in at the Robo-desk: Effects of automated social presence on social cognition and service implications. Tourism Management 85:104309.
+Zhang N, Wang C, Karahanna E, Xu Y (2022) Peer privacy concern: Conceptualization and measurement. MIS Quart. 46(1):491–530.

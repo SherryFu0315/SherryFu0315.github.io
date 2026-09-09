@@ -1,0 +1,43 @@
+1.	Abdel-Karim, B.; Pfeuffer, N.; Carl, K.V.; and Hinz, O. How AI-based systems can induce reflections: The case of AI-augmented diagnostic work. MIS Quarterly, 47, 4 (2023), 1395–1424.
+2.	Allen, R. and Choudhury, P. (Raj). Algorithm-augmented work and domain experience: The countervailing forces of ability and aversion. Organization Science, 33, 1 (2022), 149–169.
+3.	Bauer, K.; von Zahn, M.; and Hinz, O. Expl(AI)ned: The impact of explainable artificial intelligence on users’ information processing. Information Systems Research, 34, 4 (2023), 1582–1602.
+4.	Bisra, K.; Liu, Q.; Nesbit, J.C.; Salimi, F.; and Winne, P.H. Inducing self-explanation: A meta-analysis. Educational Psychology Review, 30, 3 (2018), 703–725.
+5.	Brynjolfsson, E.; Li, D.; and Raymond, L. Generative AI at work. The Quarterly Journal of Economics, 140, 2 (2025), 889–942.
+6.	Buçinca, Z.; Malaya, M.B.; and Gajos, K.Z. To trust or to think: Cognitive forcing functions can reduce overreliance on AI in AI-assisted decision-making. Proceedings of the ACM on Human-Computer Interaction, 5, CSCW1 (2021), Article 188, 1–21.
+7.	Bussewitz, C. Mistake-filled legal briefs show the limits of relying on AI tools at work. AP News, October 30, 2025. https://apnews.com/article/artificial-intelligence-tools-work-errors-skills-fddcd0a5c86c20a4748dc65ba38f77fa.
+8.	Cantor, A.D. and Marsh, E.J. Expertise effects in the Moses illusion: detecting contradictions with stored knowledge. Memory, 25, 2 (2017), 220–230.
+9.	Chi, M.T.H.; Bassok, M.; Lewis, M.W.; Reimann, P.; and Glaser, R. Self-explanations: How students study and use examples in learning to solve problems. Cognitive Science, 13, 2 (1989), 145–182.
+10.	Chi, M.T.H.; de Leeuw, N.; Chiu, M.-H.; and LaVancher, C. Eliciting self-explanations improves understanding. Cognitive Science, 18, 3 (1994), 439–477.
+11.	Craik, F.I.M. and Lockhart, R.S. Levels of processing: A framework for memory research. Journal of Verbal Learning and Verbal Behavior, 11, 6 (1972), 671–684.
+12.	Feldman, J.M. and Lynch, J.G. Self-generated validity and other effects of measurement on belief, attitude, intention, and behavior. Journal of Applied Psychology, 73, 3 (1988), 421–435.
+13.	Fernández-Loría, C.; Provost, F.; and Han, X. Explaining data-driven decisions made by AI systems: The counterfactual approach. MIS Quarterly, 46, 3 (2022), 1635–1660.
+14.	Frederick, D.M. Auditors’ representation and retrieval of internal control knowledge. The Accounting Review, 66, 2 (1991), 240–258.
+15.	Fügener, A.; Grahl, J.; Gupta, A.; and Ketter, W. Cognitive challenges in human–artificial intelligence collaboration: Investigating the path toward productive delegation. Information Systems Research, 33, 2 (2022), 678–696.
+16.	Gregor, S. and Benbasat, I. Explanations from intelligent systems: Theoretical foundations and implications for practice. MIS Quarterly, 23, 4 (1999), 497–530.
+17.	Jussupow, E.; Benbasat, I.; and Heinzl, A. An integrative perspective on algorithm aversion and appreciation in decision-making. MIS Quarterly, 48, 4 (2024), 1575–1590.
+18.	Jussupow, E.; Spohrer, K.; Heinzl, A.; and Gawlitza, J. Augmenting medical diagnosis decisions? An investigation into physicians’ decision-making process with artificial intelligence. Information Systems Research, 32, 3 (2021), 713–735.
+19.	Lebovitz, S.; Levina, N.; and Lifshitz-Assaf, H. Is AI ground truth really true? The dangers of training and evaluating AI tools based on experts’ know-what. MIS Quarterly, 45, 3 (2021), 1501–1526.
+20.	Lebovitz, S.; Lifshitz-Assaf, H.; and Levina, N. To engage or not to engage with AI for critical judgments: How professionals deal with opacity when using AI for medical diagnosis. Organization Science, 33, 1 (2022), 126–148.
+21.	Lee, J.D. and See, K.A. Trust in automation: designing for appropriate reliance. Human Factors, 46, 1 (2004), 50–80.
+22.	Liel, Y. and Zalmanson, L. Turning off your better judgment: Algorithmic conformity in artificial intelligence-human collaboration. Journal of Management Information Systems, 42, 4 (2025), 1087–1117.
+23.	Limayem, M.; Hirt, S.G.; and Cheung, C.M.K. How habit limits the predictive power of intention: The case of information systems continuance. MIS Quarterly, 31, 4 (2007), 705–737.
+24.	Lin, X.; Wang, X.; Shao, B.; and Taylor, J. How chatbots augment human intelligence in customer services: A mixed-methods study. Journal of Management Information Systems, 41, 4 (2024), 1016–1041.
+25.	Ma, H.; Dennis, A.S.; Dennis, A.R.; and Huang, W. Artificial intelligence recommendations amplify the sharing of true and fake news on social media by appealing to fast cognition. Journal of Management Information Systems, 42, 4 (2025), 987–1016.
+26.	McDermott, K.B. Practicing retrieval facilitates learning. Annual Review of Psychology, 72, 1 (2021), 609–633.
+27.	Morris, C.D.; Bransford, J.D.; and Franks, J.J. Levels of processing versus transfer appropriate processing. Journal of Verbal Learning and Verbal Behavior, 16, 5 (1977), 519–533.
+28.	Parasuraman, R. and Manzey, D.H. Complacency and bias in human use of automation: an attentional integration. Human Factors, 52, 3 (2010), 381–410.
+29.	Peng, J. Identification of causal mechanisms from randomized experiments: A framework for endogenous mediation analysis. Information Systems Research, 34, 1 (2023), 67–84.
+30.	Revilla, E.; Saenz, M.J.; Seifert, M.; and Ma, Y. Human–artificial intelligence collaboration in prediction: A field experiment in the retail industry. Journal of Management Information Systems, 40, 4 (2023), 1071–1098.
+31.	Rogers, T. and Milkman, K.L. Reminders through association. Psychological Science, 27, 7 (2016), 973–986.
+32.	Skitka, L.J.; Mosier, K.L.; and Burdick, M. Does automation bias decision-making? International Journal of Human-Computer Studies, 51, 5 (1999), 991–1006.
+33.	Spencer, S.J.; Zanna, M.P.; and Fong, G.T. Establishing a causal chain: why experiments are often more effective than mediational analyses in examining psychological processes. Journal of Personality and Social Psychology, 89, 6 (2005), 845–851.
+34.	Tsai, M.-H. and Bendersky, C. The pursuit of information sharing: Expressing task conflicts as debates vs. disagreements increases perceived receptivity to dissenting opinions in groups. Organization Science, 27, 1 (2016), 141–156.
+35.	Tulving, E. and Pearlstone, Z. Availability versus accessibility of information in memory for words. Journal of Verbal Learning and Verbal Behavior, 5, 4 (1966), 381–391.
+36.	Tulving, E. and Thomson, D.M. Encoding specificity and retrieval processes in episodic memory. Psychological Review, 80, 5 (1973), 352–373.
+37.	Vance, A.; Jenkins, J.L.; Anderson, B.B.; Bjornn, D.K.; and Kirwan, C.B. Tuning out security warnings: A longitudinal examination of habituation through fMRI, eye tracking, and field experiments. MIS Quarterly, 42, 2 (2018), 355–380.
+38.	Wang, B.; Rau, P.-L.P.; and Yuan, T. Measuring user competence in using artificial intelligence: validity and reliability of artificial intelligence literacy scale. Behaviour & Information Technology, 42, 9 (2023), 1324–1337.
+39.	Wang, W.; Gao, G. (Gordon); and Agarwal, R. Friend or foe? Teaming between artificial intelligence and workers with variation in experience. Management Science, 70, 9 (2024), 5753–5775.
+40.	Wixted, J.T. The psychology and neuroscience of forgetting. Annual Review of Psychology, 55, 1 (2004), 235–269.
+41.	Yin, D.; Bond, S.D.; and Zhang, H. The illusion of authenticity in online reviews: Truth bias and the role of valence. Information Systems Research, 37, 1 (2026), 103–116.
+42.	You, S.; Yang, C.L.; and Li, X. Algorithmic versus human advice: Does presenting prediction performance matter for algorithm appreciation? Journal of Management Information Systems, 39, 2 (2022), 336–365.
+43.	von Zahn, M.; Liebich, L.; Jussupow, E.; Hinz, O.; and Bauer, K. Knowing (not) to know: Explainable artificial intelligence and human metacognition. Information Systems Research, isre.2024.1431 (2025).

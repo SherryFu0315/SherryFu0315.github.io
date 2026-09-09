@@ -1,0 +1,35 @@
+Baker, M., Stein, J. C., & Wurgler, J. (2003). When does the market matter? Stock prices and the investment of equity-dependent firms. The Quarterly Journal of Economics, 118(3), 969–1005.
+Bernanke, B. S. (1983). Irreversibility, uncertainty, and cyclical investment. The Quarterly Journal of Economics, 98(1), 85–106.
+Bolton, P., Scheinkman, J. A., & Xiong, W. (2006). Executive compensation and short-termist behaviour in speculative markets. Review of Economic Studies, 73(3), 577–610.
+Bushee, B. J., Matsumoto, D. A., & Miller, G. S. (2004). Managerial and investor responses to disclosure regulation: The case of Regulation Fair Disclosure and conference calls. The Accounting Review, 79(3), 617–643.
+Dixit, A. K., & Pindyck, R. S. (1994). Investment under uncertainty. Princeton University Press.
+Fazzari, S. M., Hubbard, R. G., & Petersen, B. C. (1988). Financing constraints and corporate investment. Brookings Papers on Economic Activity, 1988(1), 141–206.
+Frankel, R., Johnson, M., & Skinner, D. J. (1999). An empirical examination of conference calls as a voluntary disclosure medium. Journal of Accounting Research, 37(1), 133–150.
+Froot, K. A., Scharfstein, D. S., & Stein, J. C. (1993). Risk management: Coordinating corporate investment and financing policies. The Journal of Finance, 48(5), 1629–1658.
+Grossman, S. J. (1981). The informational role of warranties and private disclosure about product quality. Journal of Law and Economics, 24(3), 461–483.
+Gulen, H., & Ion, M. (2016). Policy uncertainty and corporate investment. Review of Financial Studies, 29(3), 523–564.
+Hayashi, F. (1982). Tobin's marginal q and average q: A neoclassical interpretation. Econometrica, 50(1), 213–224.
+Hennessy, C. A. (2004). Tobin's q, debt overhang, and investment. The Journal of Finance, 59(4), 1717–1742.
+Hollander, S., Pronk, M., & Roelofsen, E. (2010). Does silence speak? An empirical analysis of disclosure choices during conference calls. Journal of Accounting Research, 48(3), 531–563.
+Holmström, B. (1979). Moral hazard and observability. The Bell Journal of Economics, 10(1), 74–91.
+Holmström, B. (1999). Managerial incentive problems: A dynamic perspective. Review of Economic Studies, 66(1), 169–182.
+Holmström, B., & Tirole, J. (1997). Financial intermediation, loanable funds, and the real sector. The Quarterly Journal of Economics, 112(3), 663–691.
+Hubbard, R. G. (1998). Capital-market imperfections and investment. Journal of Economic Literature, 36(1), 193–225.
+Jensen, M. C. (1986). Agency costs of free cash flow, corporate finance, and takeovers. American Economic Review, 76(2), 323–329.
+Jensen, M. C., & Meckling, W. H. (1976). Theory of the firm: Managerial behavior, agency costs, and capital structure. Journal of Financial Economics, 3(4), 305–360.
+Julio, B., & Yook, Y. (2012). Political uncertainty and corporate investment cycles. The Journal of Finance, 67(1), 45–83.
+Lamont, O. (2000). Investment plans and stock returns. The Journal of Finance, 55(6), 2719–2745.
+Leahy, J. V., & Whited, T. M. (1996). The effect of uncertainty on investment: Some stylized facts. Journal of Money, Credit and Banking, 28(1), 64–83.
+Leland, H. E., & Pyle, D. H. (1977). Informational asymmetries, financial structure, and financial intermediation. The Journal of Finance, 32(2), 371–387.
+Loughran, T., & McDonald, B. (2016). Textual analysis in accounting and finance: A survey. Journal of Accounting Research, 54(4), 1187–1230.
+Milgrom, P. R. (1981). Good news and bad news: Representation theorems and applications. The Bell Journal of Economics, 12(2), 380–391.
+Miller, M. H., & Rock, K. (1985). Dividend policy under asymmetric information. The Journal of Finance, 40(4), 1031–1051.
+Modigliani, F., & Miller, M. H. (1958). The cost of capital, corporation finance and the theory of investment. American Economic Review, 48(3), 261–297.
+Myers, S. C., & Majluf, N. S. (1984). Corporate financing and investment decisions when firms have information that investors do not have. Journal of Financial Economics, 13(2), 187–221.
+Narayanan, M. P. (1985). Managerial incentives for short-term results. The Journal of Finance, 40(5), 1469–1484.
+Ott, S. H., Riddiough, T. J., & Yi, H.-C. (2005). Finance, investment and investment performance: Evidence from the REIT sector. Real Estate Economics, 33(2), 203–235.
+Stein, J. C. (1989). Efficient capital markets, inefficient firms: A model of myopic corporate behavior. The Quarterly Journal of Economics, 104(4), 655–669.
+Stein, J. C. (2003). Agency, information and corporate investment. In G. M. Constantinides, M. Harris, & R. M. Stulz (Eds.), Handbook of the Economics of Finance (Vol. 1A, pp. 111–165). Elsevier.
+Stulz, R. M. (1990). Managerial discretion and optimal financing policies. Journal of Financial Economics, 26(1), 3–27.
+Tobin, J. (1969). A general equilibrium approach to monetary theory. Journal of Money, Credit and Banking, 1(1), 15–29.
+Zwiebel, J. (1996). Dynamic capital structure under managerial entrenchment. American Economic Review, 86(5), 1197–1215.

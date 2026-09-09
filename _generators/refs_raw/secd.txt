@@ -1,0 +1,50 @@
+ADDIN paperpile_bibliography <pp-bibliography><first-reference-indices><formatting>1</formatting><space-after>1</space-after></first-reference-indices></pp-bibliography> \* MERGEFORMATAcar, O. A., Tuncdogan, A., van Knippenberg, D., & Lakhani, K. R. (2024). Collective creativity and innovation: An interdisciplinary review, integration, and research agenda. Journal of Management, 50(6), 2119–2151.
+Aral, S., & Van Alstyne, M. (2011). The diversity-bandwidth trade-off. American Journal of Sociology, 117(1), 90–171.
+Bateman, P. J., Gray, P. H., & Butler, B. S. (2011). Research note—the impact of community commitment on participation in online communities. Information Systems Research, 22(4), 841–854.
+Baumann, O., Schmidt, J., & Stieglitz, N. (2019). Effective search in rugged performance landscapes: A review and outlook. Journal of Management, 45(1), 285–318.
+Boussioux, L., Lane, J. N., Zhang, M., Jacimovic, V., & Lakhani, K. R. (2024). The crowdless future? Generative AI and creative problem-solving. Organization Science. https://doi.org/10.1287/orsc.2023.18430
+Burtch, G., He, Q., Hong, Y., & Lee, D. (2022). How do peer awards motivate creative content? Experimental evidence from Reddit. Management Science, 68(5), 3488–3506.
+Burtch, G., Lee, D., & Chen, Z. (2024). The consequences of generative AI for online knowledge communities. Scientific Reports, 14(1), 10413.
+Butler, B. S., Bateman, P. J., Gray, P. H., & Diamant, E. I. (2014). An attraction–selection–attrition theory of online community size and resilience. MIS Quarterly, 38(3), 699–729.
+Cao, J., Li, X., & Zhang, L. (2025). Is relevancy everything? A deep-learning approach to understand the effect of image-text congruence. Management Science, 71(12), 10579–10602.
+Cecez-Kecmanovic, D., Galliers, R. D., Henfridsson, O., Newell, S., & Vidgen, R. (2014). The sociomateriality of information systems: Current status, future directions. MIS Quarterly, 38(3), 809–830.
+Chen, L., Hsieh, J. J. P.-A., & Rai, A. (2022). How does intelligent system knowledge empowerment yield payoffs? Uncovering the adaptation mechanisms and contingency role of work experience. Information Systems Research, 33(3), 1042–1071.
+Constantinides, P., & Rai, A. (2023). Augmenting human-machine learning. Academy of Management Proceedings, 2023(1). https://doi.org/10.5465/amproc.2023.11627abstract
+Del Rio-Chanona, R. M., Laurentsyeva, N., & Wachs, J. (2024). Large language models reduce public knowledge sharing on online Q&A platforms. PNAS Nexus, 3(9), gae400.
+Dellermann, D., Calma, A., Lipusch, N., Weber, T., Weigel, S., & Ebel, P. (2021). The future of human-AI collaboration: a taxonomy of design knowledge for hybrid intelligence systems. In arXiv [cs.AI]. arXiv. https://doi.org/10.48550/arXiv.2105.03354
+Delone, W. H., & McLean, E. R. (2003). The DeLone and McLean model of information systems success: A ten-year update. Journal of Management Information Systems, 19(4), 9–30.
+Doshi, A. R., & Hauser, O. P. (2024). Generative AI enhances individual creativity but reduces the collective diversity of novel content. Science Advances, 10(28), eadn5290.
+Durcikova, A., & Gray, P. (2014). How Knowledge Validation Processes Affect Knowledge Contribution. Journal of Management Information Systems, 81–108.
+Fügener, A., University of Cologne, Grahl, J., Gupta, A., Ketter, W., University of Cologne, University of Minnesota, University of Cologne, & Erasmus University. (2021). Will humans-in-the-loop become Borgs? Merits and pitfalls of working with AI. MIS Quarterly: Management Information Systems, 45(3), 1527–1556.
+Goodhue, D. L., & Thompson, R. L. (1995). Task-technology fit and individual performance. MIS Quarterly, 19(2), 213–236.
+Grisold, T., Berente, N., & Seidel, S. (2025). Guardrails for human-AI ecologies: Norm-based coordination and design for predictability. MIS Quarterly, 49(4), 1239–1266.
+Grote, G., Parker, S. K., & Crowston, K. (2024). Taming artificial intelligence: A theory of control-accountability alignment among AI developers and users. Academy of Management Review. https://doi.org/10.5465/amr.2023.0117
+Guo, Y., Shang, G., Vazirgiannis, M., & Clavel, C. (2024). The curious decline of linguistic diversity: Training language models on synthetic text. Findings of the Association for Computational Linguistics: NAACL 2024. Findings of the Association for Computational Linguistics: NAACL 2024, Mexico City, Mexico. https://doi.org/10.18653/v1/2024.findings-naacl.228
+Hall, S. (2007). Encoding and decoding in the television discourse. In A. Gray, J. Campbell, M. Erickson, S. Hanson, & H. Wood (Eds.), Culture, Media, Language: Working Papers in Cultural Studies (pp. 13–38). Routledge.
+Harrison, D. A., & Klein, K. J. (2007). What’s the difference? diversity constructs as separation, variety, or disparity in organizations. Academy of Management Review, 32(4), 1199–1228.
+Huang, J., Kaul, R., & Narayanan, S. (2025). Novelty in content creation: Experimental results using deep learning–based image recognition on a large social network. Marketing Science, mksc.2023.0547. https://doi.org/10.1287/mksc.2023.0547
+Huang, P., Tafti, A., & Mithas, S. (2018). Platform sponsor investments and user contributions in knowledge communities: The role of knowledge Seeding1. MIS Quarterly, 42(1), 213–240.
+Hukal, P., Henfridsson, O., Shaikh, M., & Parker, G. (2020). Platform signaling for generating platform content. MIS Quarterly, 44(3), 1177–1205.
+Im, G., & Rai, A. (2014). IT-enabled coordination for ambidextrous interorganizational relationships. Information Systems Research, 25(1), 72–92.
+Kitchens, B., Johnson, S. L., & Gray, P. (2020). Understanding echo chambers and filter bubbles: The impact of social media on diversification and partisan shifts in news consumption. MIS Quarterly, 44(4), 1619–1649.
+Lee, B. C., & Chung, J. J. (2024). An empirical investigation of the impact of ChatGPT on creativity. Nature Human Behaviour, 8(10), 1906–1914.
+Li, P., & Tuzhilin, A. (2024). When variety seeking meets unexpectedness: Incorporating variety-seeking behaviors into design of unexpected recommender systems. Information Systems Research, 35(3), 1257–1273.
+Liel, Y., & Zalmanson, L. (2025). Turning off your better judgment: Algorithmic conformity in artificial intelligence-human collaboration. Journal of Management Information Systems, 42(4), 1087–1117.
+Liu, X., Wang, G. A., Fan, W., & Zhang, Z. (2020). Finding useful solutions in online knowledge communities: A theory-driven design and multilevel analysis. Information Systems Research, 31(3), 731–752.
+Meincke, L., Mollick, E. R., & Terwiesch, C. (2024). Prompting diverse ideas: Increasing AI idea variance. In arXiv [cs.CY]. arXiv. http://arxiv.org/abs/2402.01727
+Mikolov, T., Chen, K., Corrado, G., & Dean, J. (2013). Efficient estimation of word representations in vector space. In arXiv [cs.CL]. arXiv. http://arxiv.org/abs/1301.3781
+Moon, K., Green, A. E., & Kushlev, K. (2025). Homogenizing effect of large language models (LLMs) on creative diversity: An empirical comparison of human and ChatGPT writing. Computers in Human Behavior: Artificial Humans, 6(100207), 100207.
+Park, Y., Pavlou, P. A., & Saraf, N. (2020). Configurations for achieving organizational ambidexterity with digitization. Information Systems Research, 31(4), 1376–1397.
+Peterson, A. J. (2025). AI and the problem of knowledge collapse. AI & Society. https://doi.org/10.1007/s00146-024-02173-x
+Rai, A., Lang, S. S., & Welker, R. B. (2002). Assessing the validity of IS success models: An empirical test and theoretical analysis. Information Systems Research, 13(1), 50–69.
+Rai, A., Tian, J., & Xue, L. (2026). FAIR: A design theory for artificial intelligence fairness. MIS Quarterly.
+Schegloff, E. (2000). On Granularity. Annual Review of Sociology, 26, 715–720.
+Seddon, P. B. (1997). A respecification and extension of the DeLone and McLean model of IS success. Information Systems Research, 8(3), 240–253.
+Shankar, R., & Sim, J. (2024). Advances in generative AI and platform moderation: Implications for online knowledge sharing. SSRN Electronic Journal. https://doi.org/10.2139/ssrn.4867815
+Shumailov, I., Shumaylov, Z., Zhao, Y., Papernot, N., Anderson, R., & Gal, Y. (2024). AI models collapse when trained on recursively generated data. Nature, 631(8022), 755–759.
+Su, Y., Zhang, K., Wang, Q., & Qiu, L. (2023). Generative AI and human knowledge sharing: Evidence from A natural experiment. SSRN Electronic Journal. https://doi.org/10.2139/ssrn.4628786
+Tunç, M., Cavusoglu, H., & Raghunathan, S. (2021). Online product reviews: finer-grained rating scheme superior coarser one? MIS Quarterly, 45, 2193–2234.
+von Krogh, G. (2018). Artificial intelligence in organizations: New opportunities for phenomenon-based theorizing. Academy of Management Discoveries, 4(4), 404–409.
+Wang, Y., Meister, D. B., & Gray, P. H. (2013). Social influence and knowledge management systems use: Evidence from panel Data1. MIS Quarterly, 37(1), 299–314.
+Wenger, E., & Kenett, Y. (2025). We’re different, we’re the same: Creative homogeneity across LLMs. In arXiv [cs.CY]. arXiv. https://doi.org/10.48550/arXiv.2501.19361
+Yan, J. (kevin), Leidner, D. E., & Benbya, H. (2018). Differential innovativeness outcomes of user and employee participation in an online user innovation community. Journal of Management Information Systems, 35(3), 900–933.

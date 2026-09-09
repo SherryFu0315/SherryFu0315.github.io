@@ -1,0 +1,59 @@
+Acemoglu D, Restrepo P (2019) Artificial intelligence, automation, and work. Agrawal A, Gans J, Goldfarb A, eds. The Economics of Artificial Intelligence: An Agenda (University of Chicago Press, Chicago), 197–236.
+Akşin Z, Armony M, Mehrotra V (2007) The modern call center: A multi-disciplinary perspective on operations management research. Production and Operations Management 16(6):665–688.
+Athey S, Tibshirani J, Wager S (2019) Generalized random forests. The Annals of Statistics 47(2):1148–1178.
+Bai B, Dai H, Zhang DJ, Zhang F, Hu H (2022) The impacts of algorithmic work assignment on fairness perceptions and productivity: Evidence from field experiments. Manufacturing & Service Operations Management 24(6):3060–3078.
+Balakrishnan M, Ferreira KJ, Tong J (2026) Human-algorithm collaboration with private information: Naïve advice-weighting behavior and mitigation. Management Science 72(1):265–284.
+Beer R, Qi A, Rios I (2026) Behavioral externalities of process automation. Management Science 72(1):575–593.
+Beil D, Duenyas I, Leider S, Li J, Qi A (2026) Human decision making in dynamic resource allocation. Management Science 72(6):5150–5170.
+Benjaafar S, Wang Z, Yang X (2025) The impact of automation on workers when workers are strategic: The case of ride-hailing. Manufacturing & Service Operations Management 27(5):1571–1586.
+Brynjolfsson E, Li D, Raymond L (2025) Generative AI at work. Quarterly Journal of Economics 140(2):889–942.
+Calonico S, Cattaneo MD, Titiunik R (2014) Robust nonparametric confidence intervals for regression-discontinuity designs. Econometrica 82(6):2295–2326.
+Cao X, Hu C, Sun J, Zhang DJ (2026) How forced intervention facilitates AI adoption. Manufacturing & Service Operations Management 28(4):1286–1306.
+Caro F, Colliard JE, Katok E, Ockenfels A, Stier-Moses N, Tucker C, Wu DJ (2026) Introduction to the special issue on the human-algorithm connection. Management Science 72(1):1–13.
+Cho DD, Bretthauer KM, Cattani KD, Mills AF (2019) Behavior aware service staffing. Production and Operations Management 28(5):1285–1304.
+Cohen MC, Dai T, Perakis G, Agrawal N, Allon G, Boute R, Cachon G, Chen Z, Cohen M, Cristian R, et al. (2026) OM Forum—Supply chain management in the AI era: A vision statement from the operations management community. Manufacturing & Service Operations Management 28(3):687–705.
+Cui KZ, Demirer M, Jaffe S, Musolff L, Peng S, Salz T (2026) The effects of generative AI on high-skilled work: Evidence from three field experiments with software developers. Management Science, ePub ahead of print February 27, https://doi.org/10.1287/mnsc.2025.00535.
+Dai T, Singh S (2025) Using artificial intelligence as gatekeeper or second opinion: Designing patient pathways for artificial intelligence augmented healthcare. Production and Operations Management, ePub ahead of print November 20, https://doi.org/10.1177/10591478251403269.
+Dai T, Swaminathan JM (2026) Artificial intelligence and operations: A foundational framework of emerging research and practice. Production and Operations Management 35(9):3255–3271.
+Dell’Acqua F, Ayoubi C, Lifshitz H, Sadun R, Mollick E, Mollick L, Han Y, Goldman J, Nair H, Taub S, Lakhani KR (2026a) The cybernetic teammate: A field experiment on generative AI and teamwork. Organization Science 37(4):1217–1242.
+Dell’Acqua F, McFowland E, Mollick E, Lifshitz H, Kellogg K, Rajendran S, Krayer L, Candelon F, Lakhani KR (2026b) Navigating the jagged technological frontier: Field experimental evidence of the effects of artificial intelligence on knowledge worker productivity and quality. Organization Science 37(2):403–423.
+Donohue K, Özer Ö, Zheng Y (2020) Behavioral operations: Past, present, and future. Manufacturing & Service Operations Management 22(1):191–202.
+DosSantos DiSorbo M, Ferreira KJ, Balakrishnan M, Tong J (2025) Warnings and endorsements: Improving human–AI collaboration in the presence of outliers. Manufacturing & Service Operations Management 27(6):1814–1831.
+Fang Z, Chang Y, Luo X, Wu Q, Aspara J (2026) Artificial intelligence, emotional labor, and service operations. Manufacturing & Service Operations Management, ePub ahead of print May 7, https://doi.org/10.1287/msom.2024.1459.
+Freeman M, Savva N, Scholtes S (2017) Gatekeepers at work: An empirical analysis of a maternity unit. Management Science 63(10):3147–3167.
+Freeman M, Robinson S, Scholtes S (2021) Gatekeeping, fast and slow: An empirical study of referral errors in the emergency department. Management Science 67(7):4209–4232.
+Fügener A, Walzner DD, Gupta A (2026) Roles of artificial intelligence in collaboration with humans: Automation, augmentation, and the future of work. Management Science 72(1):538–557.
+Gelbach JB (2016) When do covariates matter? And which ones, and how much? Journal of Labor Economics 34(2):509–543.
+Hausman C, Rapson DS (2018) Regression discontinuity in time: Considerations for empirical applications. Annual Review of Resource Economics 10:533–552.
+Hu B, Hu M, Zhu H (2022) Surge pricing and two-sided temporal responses in ride hailing. Manufacturing & Service Operations Management 24(1):91–109.
+Ibanez MR, Clark JR, Huckman RS, Staats BR (2018) Discretionary task ordering: Queue management in radiological services. Management Science 64(9):4389–4407.
+Ibanez MR, Toffel MW (2020) How scheduling can bias quality assessment: Evidence from food-safety inspections. Management Science 66(6):2396–2416.
+Ibrahim R, Kim SH, Tong J (2021) Eliciting human judgment for prediction algorithms. Management Science 67(4):2314–2325.
+Jia N, Luo X, Fang Z, Liao C (2024) When and how artificial intelligence augments employee creativity. Academy of Management Journal 67(1):5–32.
+KC DS, Terwiesch C (2009) Impact of workload on service time and patient safety: An econometric analysis of hospital operations. Management Science 55(9):1486–1498.
+KC DS, Staats BR, Kouchaki M, Gino F (2020) Task selection and workload: A focus on completing easy tasks hurts performance. Management Science 66(10):4397–4416.
+Kawaguchi K (2021) When will workers follow an algorithm? A field experiment with a retail business. Management Science 67(3):1670–1695.
+Kesavan S, Lambert SJ, Williams JC, Pendem PK (2022) Doing well by doing good: Improving retail store performance with responsible scheduling practices at the Gap, Inc. Management Science 68(11):7818–7836.
+Kostami V (2024) If you love your agents, set them free: Task discretion in online workplaces. Management Science 70(3):1787–1809.
+Krakowski S, Haftor DM, Luger J, Pashkevich N, Raisch S (2026) Human-centered artificial intelligence: A field experiment. Management Science 72(1):57–72.
+Lippman SA, McCall JJ (1976) The economics of job search: A survey. Economic Inquiry 14(2):155–189.
+Liu Y, Wang X, Gilbert S, Lai G (2023) On the participation, competition and welfare at customer-intensive discretionary service platforms. Manufacturing & Service Operations Management 25(1):218–234.
+Manzoor E, Ascarza E, Netzer O (2025) Learning when to quit in sales conversations. Working paper, Harvard Business School, Boston. https://ssrn.com/abstract=5692084.
+McCall JJ (1970) Economics of information and job search. Quarterly Journal of Economics 84(1):113–126.
+Mehrotra V, Ross K, Ryder G, Zhou YP (2012) Routing to manage resolution and waiting time in call centers with heterogeneous servers. Manufacturing & Service Operations Management 14(1):66–81.
+Ni X, Wang Y, Feng T, Lu LX, Wang Y, Zhou C (2026) Generative AI in action: Field experimental evidence from Alibaba’s customer service operations. Working paper, Fudan University, Shanghai. https://ssrn.com/abstract=5012601.
+Roels G, Staats BR (2021) OM Forum—People-centric operations: Achievements and future research directions. Manufacturing & Service Operations Management 23(4):745–757.
+Saghafian S, Hopp WJ, Iravani SMR, Cheng Y, Diermeier D (2018) Workload management in telemedical physician triage and other knowledge-based service systems. Management Science 64(11):5180–5197.
+Shumsky RA, Pinker EJ (2003) Gatekeepers and referrals in services. Management Science 49(7):839–856.
+Snyder C, Keppler S, Leider S (2026) Algorithm reliance: Fast and slow. Management Science 72(1):368–385.
+Song H, Lai G, Xiao W (2024) Optimal salesforce compensation with general demand and operational considerations. Manufacturing & Service Operations Management 26(6):2274–2283.
+Stigler GJ (1961) The economics of information. Journal of Political Economy 69(3):213–225.
+Sunar N, Tu Y, Ziya S (2021) Pooled vs. dedicated queues when customers are delay-sensitive. Management Science 67(6):3785–3802.
+Tan TF, Netessine S (2014) When does the devil make work? An empirical study of the impact of workload on worker productivity. Management Science 60(6):1574–1593.
+Tong S, Jia N, Luo X, Fang Z (2021) The Janus face of artificial intelligence feedback: Deployment versus disclosure effects on employee performance. Strategic Management Journal 42(9):1600–1631.
+Wager S, Athey S (2018) Estimation and inference of heterogeneous treatment effects using random forests. Journal of the American Statistical Association 113(523):1228–1242.
+Wallace RB, Whitt W (2005) A staffing algorithm for call centers with skill-based routing. Manufacturing & Service Operations Management 7(4):276–294.
+Wang L, Huang N, Hong Y, Liu L, Guo X, Chen G (2023) Voice-based AI in call center customer service: A natural field experiment. Production and Operations Management 32(4):1002–1018.
+Wang Q, Huang Y, Jasin S, Singh PV (2023) Algorithmic transparency with strategic users. Management Science 69(4):2297–2317.
+Yuan D, Aseri M, Ramasubbu N (2026) Backfiring AI? AI deployment in workplace. Management Science, ePub ahead of print May 4, https://doi.org/10.1287/mnsc.2023.03108.
+Zhang S, Narayandas D (2026) Engaging customers with AI in online chats: Evidence from a randomized field experiment. Management Science 72(1):73–95.

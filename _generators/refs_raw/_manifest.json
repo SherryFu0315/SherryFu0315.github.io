@@ -1,0 +1,62 @@
+{
+ "retrieval": {
+  "file": "/Users/xinyufu/Downloads/[External] RE_ [External]Resubmission of 12942-R2/JMIS-12942-Final-Manuscript.docx",
+  "title": "Knowing Is Not Enough: Information Retrievability as a Precondition to Effective LLM Oversight",
+  "n": 43
+ },
+ "errors": {
+  "file": "/Users/xinyufu/Downloads/DetectAIErrors_DSS 3/01-DetectAIErrors-Manuscript-DSS.docx",
+  "title": "Detecting AI Errors: Examining the Impact of Transfer of Training and Reflective Practice",
+  "n": 55
+ },
+ "secd": {
+  "file": "/Users/xinyufu/Library/CloudStorage/OneDrive-GeorgiaStateUniversity/ECM-MISQ/Epistemic Convergence Clean.docx",
+  "title": "Calibrating Epistemic Convergence in Generative AI",
+  "n": 50
+ },
+ "creativity": {
+  "file": "/Users/xinyufu/Downloads/Authenticity project/Try1-JMIS/Crowdfunding-AIdisclosure-20260614.docx",
+  "title": "When Transparency Backfires:",
+  "n": 69
+ },
+ "manufacturing": {
+  "file": "/Users/xinyufu/Downloads/EmbodiedAI-20260701 LM.docx",
+  "title": "Reinventing Manufacturing:",
+  "n": 87
+ },
+ "sales": {
+  "file": "/Users/xinyufu/Downloads/AISales-paper-20260905.docx",
+  "title": "\ufeff",
+  "n": 59
+ },
+ "stimulus": {
+  "file": "/Users/xinyufu/Downloads/02_GSS_Manuscript_0907.docx",
+  "title": "Generative Stimulus Sampling:",
+  "n": 53
+ },
+ "service": {
+  "file": "/Users/xinyufu/Downloads/OneDrive_1_8-24-2026/Service robot_Manuscript_Sub.docx",
+  "title": "The Privacy Asymmetry of Service Robots: Spatial and Data Privacy Concerns in Boundary-Spanning Service Encounters",
+  "n": 80
+ },
+ "investment": {
+  "file": "/Users/xinyufu/Downloads/Managerial Investment Expectations and Corporate Investment.docx",
+  "title": "Managerial Investment Expectations and Corporate Investment",
+  "n": 35
+ },
+ "triage": {
+  "file": "/Users/xinyufu/Downloads/AITriage/AI_Triage_FullManuscript_MISQ_Updated.docx",
+  "title": "Need Assessment in Online Credence Services:",
+  "n": 37
+ },
+ "misaligned": {
+  "file": "/Users/xinyufu/Downloads/Aligned Social Signals/CostOfConformity_MISQ_v5_tracked.docx",
+  "title": "The Cost of Conformity: How Social Signal Alignment Backfires on Identity-Expressive Creative Platforms",
+  "n": 42
+ },
+ "remote": {
+  "file": "/Users/xinyufu/Library/CloudStorage/Dropbox-GSUDropbox/Xinyu Fu/share_with_Xinyu/Paper_MSOM/Submission/Remote_work_Manusript_Sub.docx",
+  "title": "Adaptive Work Configurations: Leveraging Workforce Agility for Enhancing Firm Performance",
+  "n": 30
+ }
+}

@@ -1,0 +1,69 @@
+ADDIN ZOTERO_BIBL {"uncited":[],"omitted":[],"custom":[]} CSL_BIBLIOGRAPHY 1.	Abadie, A. and Imbens, G.W. Large Sample Properties of Matching Estimators for Average Treatment Effects. Econometrica, 74, 1 (January 2006), 235–267.
+2.	Austin, P.C. An Introduction to Propensity Score Methods for Reducing the Effects of Confounding in Observational Studies. Multivariate Behavioral Research, 46, 3 (May 2011), 399–424.
+3.	Barlow, M.A.; Verhaal, J.C.; and Hoskins, J.D. Guilty by Association: Product-Level Category Stigma and Audience Expectations in the U.S. Craft Beer Industry. Journal of Management, 44, 7 (September 2018), 2934–2960.
+4.	Benbya, H.; Pachidi, S.; Jarvenpaa, S.L. Special Issue Editorial: Artificial Intelligence in Organizations: Implications for Information Systems Research. Journal of the Association for Information Systems, 22, 2 (2021), 281–303.
+5.	Burtch, G.; Ghose, A.; and Wattal, S. An Empirical Examination of the Antecedents and Consequences of Contribution Patterns in Crowd-Funded Markets. Information Systems Research, 24, 3 (September 2013), 499–519.
+6.	Burtch, G.; Ghose, A.; and Wattal, S. Secret Admirers: An Empirical Examination of Information Hiding and Contribution Dynamics in Online Crowdfunding. Information Systems Research, 27, 3 (September 2016), 478–496.
+7.	Calic, G. and Mosakowski, E. Kicking Off Social Entrepreneurship: How A Sustainability Orientation Influences Crowdfunding Success. Journal of Management Studies, 53, 5 (July 2016), 738–767.
+8.	Carroll, G.R. and Wheaton, D.R. The organizational construction of authenticity: An examination of contemporary food and dining in the U.S. Research in Organizational Behavior, 29, (2009), 255–282.
+9.	Castelo, N.; Bos, M.W.; and Lehmann, D.R. Task-Dependent Algorithm Aversion. Journal of Marketing Research, 56, 5 (October 2019), 809–825.
+10.	Chakraborty, S. and Swinney, R. Signaling to the Crowd: Private Quality Information and Rewards-Based Crowdfunding. Manufacturing & Service Operations Management, 23, 1 (January 2021), 155–169.
+11.	Chan, C.S.R. and Parhankangas, A. Crowdfunding Innovative Ideas: How Incremental and Radical Innovativeness Influence Funding Outcomes. Entrepreneurship Theory and Practice, 41, 2 (2017), 237–263.
+12.	Chen, S. and Chaiken, S. The heuristic-systematic model in its broader context. In 1999.
+13.	Connelly, B.L.; Certo, S.T.; Ireland, R.D.; and Reutzel, C.R. Signaling Theory: A Review and Assessment. Journal of Management, 37, 1 (January 2011), 39–67.
+14.	Cornelius, P.B. and Gokpinar, B. The Role of Customer Investor Involvement in Crowdfunding Success. Management Science, 66, 1 (January 2020), 452–472.
+15.	Cumming, D.; Hornuf, L.; Karami, M.; and Schweizer, D. Disentangling Crowdfunding from Fraudfunding. Journal of Business Ethics, 182, 4 (February 2023), 1103–1128.
+16.	Dang, J. and Liu, L. Extended artificial intelligence aversion: People deny humanness to artificial intelligence users. Journal of Personality and Social Psychology, (November 2024), 1–18.
+17.	Deeds Pamphile, V. and Ruttan, R.L. The (Bounded) Role of Stated-Lived Value Congruence and Authenticity in Employee Evaluations of Organizations. Organization Science, 34, 6 (November 2023), 2332–2351.
+18.	Featherman, M.S.; Valacich, J.S.; and Wells, J.D. Is that authentic or artificial? Understanding consumer perceptions of risk in e‐service encounters. Information Systems Journal, 16, 2 (April 2006), 107–134.
+19.	Festinger, L. A theory of cognitive dissonance. Stanford University Press, 1957.
+20.	Frake, J. Selling Out: The Inauthenticity Discount in the Craft Beer Industry. Management Science, 63, 11 (November 2017), 3930–3943.
+21.	Fu, W.; Shang, G.; and Tong, X. Budget Disclosure in Crowdfunding: Information Asymmetry and Cost Transparency. Manufacturing & Service Operations Management, 27, 2 (March 2025), 659–678.
+22.	Fügener, A.; Grahl, J.; Gupta, A.; and Ketter, W. Will Humans-in-the-Loop Become Borgs? Merits and Pitfalls of Working with AI. MIS Quarterly, 45, 3 (September 2021), 1527–1556.
+23.	Gefen, D.; Karahanna, E.; and Straub, D.W. Trust and TAM in Online Shopping: An Integrated Model1. MIS Quarterly, 27, 1 (March 2003), 51–90.
+24.	Geva, H.; Barzilay, O.; Goldstein, A.; and Oestreicher-Singer, G. Equal Opportunity for All? The Long Tail of Crowdfunding: Evidence from Kickstarter. MIS Quarterly, 48, 3 (September 2024), 1223–1238.
+25.	Gigerenzer, G. and Goldstein, D.G. Reasoning the fast and frugal way: Models of bounded rationality. Psychological Review, 103, 4 (October 1996), 650–669.
+26.	Gleasure, R.; Conboy, K.; and Morgan, L. Talking Up a Storm: How Backers Use Public Discourse to Exert Control in Crowdfunded Systems Development Projects. Information Systems Research, 30, 2 (June 2019), 447–465.
+27.	Gong, J.; Pavlou, P.A.; and Zheng, Z. (Alvin). On the Use of Probabilistic Uncertain Rewards on Crowdfunding Platforms: The Case of the Lottery. Information Systems Research, 32, 1 (March 2021), 115–129.
+28.	Gopal, R.D.; Li, J.; Riemer, K.; et al. Inventing with Machines: Generative AI and the Evolving Landscape of IS Research. Information Systems Research, 36, 4 (December 2025), 1949–1967.
+29.	Granados, N.; Gupta, A.; and Kauffman, R.J. Research Commentary—Information Transparency in Business-to-Consumer Markets: Concepts, Framework, and Research Agenda. Information Systems Research, 21, 2 (June 2010), 207–226.
+30.	Hahl, O.; Zuckerman, E.W.; and Kim, M. Why Elites Love Authentic Lowbrow Culture: Overcoming High-Status Denigration with Outsider Art. American Sociological Review, 82, 4 (August 2017), 828–856.
+31.	Heckman, J.J.; Ichimura, H.; and Todd, P.E. Matching As An Econometric Evaluation Estimator: Evidence from Evaluating a Job Training Programme. The Review of Economic Studies, 64, 4 (October 1997), 605–654.
+32.	Jiang, Y.; (Chad) Ho, Y.-C.; Yan, X.; and Tan, Y. Investor Platform Choice: Herding, Platform Attributes, and Regulations. Journal of Management Information Systems, 35, 1 (January 2018), 86–116.
+33.	Jussupow, E.; Benbasat, I.; and Heinzl, A. An Integrative Perspective on Algorithm Aversion and Appreciation in Decision-Making1. Management Information Systems Quarterly, 48, 4 (December 2024), 1575–1590.
+34.	Kim, K.; Park, J.; Pan, Y.; Zhang, K.; and Zhang, X. (Michael). Risk Disclosure in Crowdfunding. Information Systems Research, 33, 3 (September 2022), 1023–1041.
+35.	Kovács, B.; Carroll, G.R.; and Lehman, D.W. Authenticity and Consumer Value Ratings: Empirical Tests from the Restaurant Domain. Organization Science, 25, 2 (April 2014), 458–478.
+36.	Lane, D.A. and Maxfield, R.R. Ontological uncertainty and innovation. Journal of Evolutionary Economics, 15, 1 (March 2005), 3–50.
+37.	Lehman, D.W.; O’Connor, K.; Kovács, B.; and Newman, G.E. Authenticity. Academy of Management Annals, 13, 1 (January 2019), 1–42.
+38.	Leung, M.D. and Sharkey, A.J. Out of Sight, Out of Mind? Evidence of Perceptual Factors in the Multiple-Category Discount. Organization Science, 25, 1 (February 2014), 171–184.
+39.	Lewis, A.C.; Cordero, A.M.; and Xiong, R. Too Red for Crowdfunding: The Legitimation and Adoption of Crowdfunding Across Political Cultures. Entrepreneurship Theory and Practice, 45, 3 (May 2021), 471–504.
+40.	Luo, X.; Tong, S.; Fang, Z.; and Qu, Z. Frontiers: Machines vs. Humans: The Impact of Artificial Intelligence Chatbot Disclosure on Customer Purchases. Marketing Science, 38, 6 (September 2019), 937–947.
+41.	Ma, H. (Vivian); Huang, W. (Wayne); and Dennis, A.R. Unintended Consequences of Disclosing Recommendations by Artificial Intelligence versus Humans on True and Fake News Believability and Engagement. Journal of Management Information Systems, 41, 3 (July 2024), 616–644.
+42.	Majzoubi, M. and Zhao, E.Y. Going beyond optimal distinctiveness: Strategic positioning for gaining an audience composition premium. Strategic Management Journal, 44, 3 (March 2023), 737–777.
+43.	Newman, G.E. and Dhar, R. Authenticity is Contagious: Brand Essence and the Original Source of Production. Journal of Marketing Research, 51, 3 (June 2014), 371–386.
+44.	Nunes, J.C.; Ordanini, A.; and Giambastiani, G. The Concept of Authenticity: What It Means to Consumers. Journal of Marketing, 85, 4 (July 2021), 1–20.
+45.	Ody-Brasier, A. and Vermeulen, F. The Price You Pay: Price-setting as a Response to Norm Violations in the Market for Champagne Grapes. Administrative Science Quarterly, 59, 1 (March 2014), 109–144.
+46.	Oo, P.P.; Allison, T.H.; and Hmieleski, K.M. The Dark Side of Source Credibility: Differential Effectiveness of Credibility Cues in Fraudulent Versus Legitimate Crowdfunding Campaigns. Journal of Business Ethics, (December 2025), 1–22.
+47.	Paolella, L. and Durand, R. Category Spanning, Evaluation, and Performance: Revised Theory and Test on the Corporate Law Market. Academy of Management Journal, 59, 1 (February 2016), 330–351.
+48.	Paulus, P.B.; Nijstad, B.A.; van der Zee, K.I.; and Kenworthy, J.B. The Oxford Handbook of Group Creativity and Innovation. Oxford, UK: Oxford University Press., 2019.
+49.	Pavlou, P.A. and Gefen, D. Building Effective Online Marketplaces with Institution-Based Trust. Information Systems Research, 15, 1 (March 2004), 37–59.
+50.	Pontikes, E.G. Two Sides of the Same Coin: How Ambiguous Classification Affects Multiple Audiences’ Evaluations. Administrative Science Quarterly, 57, 1 (March 2012), 81–118.
+51.	Radoynovska, N. and King, B.G. To Whom Are You True? Audience Perceptions of Authenticity in Nascent Crowdfunding Ventures. Organization Science, 30, 4 (July 2019), 781–802.
+52.	Roma, P.; Gal-Or, E.; and Chen, R.R. Reward-Based Crowdfunding Campaigns: Informational Value and Access to Venture Capital. Information Systems Research, 29, 3 (September 2018), 679–697.
+53.	Schilke, O. and Reimann, M. The transparency dilemma: How AI disclosure erodes trust. Organizational Behavior and Human Decision Processes, 188, (May 2025), 1–16.
+54.	Shi, Z. (June); Srinivasan, K.; and Zhang, K. Design of Platform Reputation Systems: Optimal Information Disclosure. Marketing Science, 42, 3 (May 2023), 500–520.
+55.	Siering, M.; Koch, J.-A.; and Deokar, A.V. Detecting Fraudulent Behavior on Crowdfunding Platforms: The Role of Linguistic and Content-Based Cues in Static and Dynamic Contexts. Journal of Management Information Systems, 33, 2 (April 2016), 421–455.
+56.	Spence, M. Job Market Signaling. The Quarterly Journal of Economics, 87, 3 (2008), 355–374.
+57.	Stern, I.; Dukerich, J.M.; and Zajac, E. Unmixed signals: How reputation and status affect alliance formation. Strategic Management Journal, 35, 4 (April 2014), 512–531.
+58.	Taeuscher, K.; Bouncken, R.B.; and Pesch, R. Gaining Legitimacy by Being Different: Optimal Distinctiveness in Crowdfunding Platforms. Academy of Management Journal, 64, 1 (2021), 149–179.
+59.	Tong, S.; Jia, N.; Luo, X.; and Fang, Z. The Janus face of artificial intelligence feedback: Deployment versus disclosure effects on employee performance. Strategic Management Journal, 42, 9 (September 2021), 1600–1631.
+60.	Trilling, L. Sincerity and Authenticity. Cambridge, MA: Harvard University Press, 1972.
+61.	Turel, O. and Kalhan, S. Prejudiced against the Machine? Implicit Associations and the Transience of Algorithm Aversion. MIS Quarterly, 47, 4 (December 2023), 1369–1394.
+62.	Wang, N. and Liang, C. How to Disclose? Strategic AI Disclosure in Crowdfunding (Working Paper). 2026.
+63.	Wang, Z.; Yang, L.; and Hahn, J. Winner Takes All? The Blockbuster Effect on Crowdfunding Platforms. Information Systems Research, 34, 3 (September 2023), 935–960.
+64.	Weinmann, M.; Mishra, A.N.; Kaiser, L.F.; and Vom Brocke, J. The Attraction Effect in Crowdfunding. Information Systems Research, 34, 3 (September 2023), 1276–1295.
+65.	Wu, Y.; Ye, H. (Jonathan); Jensen, M.L.; and Liu, L. Impact of Project Updates and Their Social Endorsement in Online Medical Crowdfunding. Journal of Management Information Systems, 41, 1 (January 2024), 73–110.
+66.	Xu, D.; Hong, H.; Deng, L.; and Zhang, X. (Michael). Crowdfunding Success Factors: A Meta-Analytic Investigation. Information Systems Research, (May 2025), 1–23.
+67.	Yang, J.; Li, Y.; Calic, G.; and Shevchenko, A. How multimedia shape crowdfunding outcomes: The overshadowing effect of images and videos on text in campaign information. Journal of Business Research, 117, (September 2020), 6–18.
+68.	Yang, L.; Wang, Z.; and Hahn, J. Scarcity Strategy in Crowdfunding: An Empirical Exploration of Reward Limits. Information Systems Research, 31, 4 (December 2020), 1107–1131.
+69.	Zuckerman, E.W. The Categorical Imperative: Securities Analysts and the Illegitimacy Discount. American Journal of Sociology, 104, 5 (March 1999), 1398–1438.

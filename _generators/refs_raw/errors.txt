@@ -1,0 +1,55 @@
+[1]	A. Misra, J. Wang, S. Mccullers, K. White, J.L. Ferres, Measuring AI Diffusion: A Population-Normalized Metric for Tracking Global AI Usage, (2026).
+[2]	H. Jain, B. Padmanabhan, P.A. Pavlou, T.S. Raghu, Editorial for the Special Section on Humans, Algorithms, and Augmented Intelligence: The Future of Work, Organizations, and Society, Information Systems Research 32 (2021) 675–687.
+[3]	M. Tarafdar, X. Page, M. Marabelli, Algorithms as co-workers: Human algorithm role interactions in algorithmic work, Information Systems Journal 33 (2023) 232–267.
+[4]	M. Pinski, M. Tarafdar, A. Benlian, Why Executives Can’t Get Comfortable With AI, MIT Sloan Manag. Rev. (2024).
+[5]	S. Lebovitz, N. Levina, H. Lifshitz-Assaf, Is AI Ground Truth Really True?  The Dangers of Training and Evaluating AI Tools Based on Experts’ Know-What, MIS Quarterly 45 (2021) 1501–1525.
+[6]	G. Grote, S.K. Parker, K. Crowston, Taming Artificial Intelligence: A Theory of Control-Acountability Alignment among AI Developers and Users, Academy of Management Review (2024).
+[7]	E. Jussupow, K. Spohrer, A. Heinzl, J. Gawlitza, Augmenting Medical Diagnosis Decisions? An Investigation into Physicians’ Decision-Making Process with Artificial Intelligence, Information Systems Research 32 (2021) 713–735.
+[8]	A. Lambrecht, C. Tucker, Algorithmic Bias? An Empirical Study of Apparent Gender-Based Discrimination in the Display of STEM Career Ads, Manage. Sci. 65 (2017) 2966–2981.
+[9]	Perspective, Does Perspective make mistakes? , Google Perspective (2022).
+[10]	Meta Transparency Center, How enforcement technology works, (2022). https://transparency.meta.com/enforcement/detecting-violations/how-enforcement-technology-works/ (accessed September 29, 2024).
+[11]	D.F. Galletta, A. Durcikova, A. Everard, B.M. Jones, Does spell-checking software need a warning label?, Commun. ACM 48 (2005) 82–86.
+[12]	J. Gunaratne, L. Zalmanson, O. Nov, The Persuasive Power of Algorithmic and Crowdsourced Advice, Journal of Management Information Systems 35 (2018) 1092–1120. https://doi.org/10.1080/07421222.2018.1523534/SUPPL_FILE/MMIS_A_1523534_SM5633.DOCX.
+[13]	C. Yang, L. Allen, D. Restrepo-Amariles, A. Troussel, GPT in the Loop: Evidence from the Field, Proceedings of the Annual Hawaii International Conference on System Sciences (2023) 4343–4352.
+[14]	J.W. Burton, M.K. Stein, T.B. Jensen, A systematic review of algorithm aversion in augmented decision making, J. Behav. Decis. Mak. 33 (2020) 220–239.
+[15]	Dietvorst, Simmons, Massey, Algorithm aversion: People erroneously avoid algorithms after seeing them err, J. Exp. Psychol. Gen. 144 (2015) 114–126.
+[16]	C.D. Wickens, S.R. Dixon, The benefits of imperfect diagnostic automation: A synthesis of the literature, Theor. Issues Ergon. Sci. 8 (2007) 201–212.
+[17]	O. Turel, S. Kalhan, Prejudiced against the Machine? Implicit Associations and the Transience of Algorithm Aversion, MIS Q. 47 (2023) 1369–1394.
+[18]	M. Adam, C. Diebel, M. Goutier, A. Benlian, Navigating autonomy and control in human-AI delegation: User responses to technology- versus user-invoked task allocation, Decis. Support Syst. 180 (2024) 114193.
+[19]	T. Thuis, T. Li, E. van Heck, Who Takes Responsibility for AI? A Field Study on AI-Related Task Shifts, Explainability, and Responsibility Attributions, ICIS 2023 Proceedings (2023). https://aisel.aisnet.org/icis2023/aiinbus/aiinbus/3 (accessed January 20, 2025).
+[20]	M. Schaschek, N. Spatscheck, A. Winkelmann, For Those About to Rely—A Taxonomy of Experimental Studies on AI Reliance, Wirtschaftsinformatik 2024 Proceedings (2024). https://aisel.aisnet.org/wi2024/89 (accessed January 22, 2025).
+[21]	M.S. Wogalter, Communication-Human Information Processing (C-HIP) Model, Forensic Human Factors and Ergonomics (2018) 33–49. https://doi.org/10.1201/9780429462269-3.
+[22]	V.C. Conzola, M.S. Wogalter, A Communication–Human Information Processing (C–HIP) approach to warning effectiveness in the workplace, J. Risk Res. 4 (2001) 309–322.
+[23]	A. Fügener, J. Grahl, A. Gupta, W. Ketter, WIll humans-in-the-loop become borgs? merits and pitfalls of working with AI, MIS Q. 45 (2021) 1527–1556.
+[24]	Y. Ni, T. Xu, C. Li, E. Zheng, B. Gu, Machine Behaviorism: Exploring the Behavioral Dynamics of Large Language Models in Decision Making, in: Proceedings of the 58th Hawaii International Conference on System Sciences, 2025.
+[25]	T. Lu, Y. Zhang, 1 + 1 > 2? Information, Humans, and Machines, Information Systems Research (2024).
+[26]	J.E. Bahner, A.-D. Hu¨per, D. Manzey, Misuse of automated decision aids: Complacency, automation bias and the impact of training experience, Int. J. Hum. Comput. Stud. 66 (2008) 688–699.
+[27]	M.F. Chan Fung, Overcoming complacency in the face of infectious disease, Nature Medicine 2021 27:3 27 (2021) 363–363..
+[28]	I.L. Singh, R. Molloy, R. Parasuraman, Automation-Induced “Complacency”: Development of the Complacency-Potential Rating Scale, Int. J. Aviat. Psychol. 3 (1993) 111–122.
+[29]	N. Castelo, M.W. Bos, D.R. Lehmann, Task-dependent algorithm aversion, Journal of Marketing Research 56 (2019) 809–825.
+[30]	M. Liu, X. Tang, S. Xia, S. Zhang, Y. Zhu, Q. Meng, Algorithm Aversion: Evidence from Ridesharing Drivers, Manage. Sci. (2023).
+[31]	S. Lebovitz, H. Lifshitz-Assaf, N. Levina, To Engage or Not to Engage with AI for Critical Judgments: How Professionals Deal with Opacity When Using AI for Medical Diagnosis, Organization Science 33 (2022) 126–148.
+[32]	S.J. Simon, V. Grover, J.T.C. Teng, K. Whitcomb, The Relationship of Information System Training Methods and Cognitive Ability to End-user Satisfaction, Comprehension, and Skill Transfer: A Longitudinal Field Study, Information Systems Research 7 (1996) 466–490.
+[33]	D.F. Galletta, M. Ahuja, A. Hartman, T. Teo, a. G. Peace, Social influence and end-user training, Commun. ACM 38 (1995) 70–79.
+[34]	S. Baker, The Boeing 737 Max crashes have revived decades-old fears about what happens when airplane computers become more powerful than pilots, Business Insider (2020).
+[35]	S. You, C.L. Yang, X. Li, Algorithmic versus Human Advice: Does Presenting Prediction Performance Matter for Algorithm Appreciation?, Journal of Management Information Systems 39 (2022) 336–365.
+[36]	L.J. Skitka, K.L. Mosier, M. Burdick, B. Rosenblatt, Automation Bias and Errors: Are Crews Better Than Individuals?, Int. J. Aviat. Psychol. 10 (2009) 85–97.
+[37]	D.U. Wulff, M. Mergenthaler-Canseco, R. Hertwig, A meta-analytic review of two modes of learning and the description-experience gap, Psychol. Bull. 144 (2018) 140–176.
+[38]	U.R. Karmarkar, D. Kupor, The unlikelihood effect: When knowing more creates the perception of less, J. Exp. Psychol. Gen. 152 (2023) 906–920.
+[39]	M.S. Wogalter, V.C. Conzola, T.L. Smith-Jackson, Research-based guidelines for warning design and evaluation, Appl. Ergon. 33 (2002) 219–230.
+[40]	A. Vance, J.L. Jenkins, B.B. Anderson, D.K. Bjornn, C.B. Kirwan, Tuning out security warnings: A longitudinal examination of habituation through fMRI, eye tracking, and field experiments, MIS Q. 42 (2018) 355–380.
+[41]	C.G. Horner, D. Galletta, J. Crawford, A. Shirsat, Emotions: The Unexplored Fuel of Fake News on Social Media, Fake News on the Internet (2023) 147–174.
+[42]	D.A. Schön, The reflective practitioner: How professionals think in action, The Reflective Practitioner: How Professionals Think in Action (1986) 1–374.
+[43]	A. Baird, E. Davidson, L. Mathiassen, Reflective Technology Assimilation: Facilitating Electronic Health Record Assimilation in Small Physician Practices, Journal of Management Information Systems 34 (2017) 664–694.
+[44]	D. Yanow, H. Tsoukas, What is Reflection-In-Action? A Phenomenological Account, Journal of Management Studies 46 (2009) 1339–1364.
+[45]	A. Savoli, H. Barki, Examining How Chronically Ill Patients’ Reactions to and Effective Use of Information Technology Can Influence How Well They Self-Manage Their Illness, MIS Quarterly 44 (2020) 1–xx.
+[46]	C. Bao, I.R. Bardhan, H. Singh, B.A. Meyer, K. Kirksey, Patient-provider Engagement and its Impact on Health Outcomes: A longitudinal study of patient portal use, MIS Quarterly 44 (2020) 699–723.
+[47]	N. Hauptmann, H. Boehm, M. Madenach, M. Lurz, M. Groh, G. Gedrich, K. Krcmar, Theory-driven Visual Design to Support Reflective Dietary Practice via mHealth: A Design Science Approach, AIS Transactions on Human-Computer Interaction 15 (2023) 22–54.
+[48]	S.A. Davis, R.P. Bostrom, Training End Users: An Experimental Investigation of the Roles of the Computer Interface and Training Methods, MIS Quarterly 17 (1993) 61–85.
+[49]	R.M. Schuetzler, G.M. Grimes, J. Scott Giboney, The impact of chatbot conversational skill on engagement and perceived humanness, Journal of Management Information Systems 37 (2020) 875–900.
+[50]	D.F. Galletta, A learning model of information systems: the effects of orienting materials, ability, expectations, and experience on performance, usage, and attitudes (advance, cognitive organizers, office automation, electronic mail, computers), University of Minnesota, 1985.
+[51]	S.M. Barnett, S.J. Ceci, When and where do we apply what we learn? A taxonomy for far transfer, Psychol. Bull. 128 (2002) 612–637.
+[52]	R. Parasuraman, D.H. Manzey, Complacency and bias in human use of automation: An attentional integration, Hum. Factors 52 (2010) 381–410.
+[53]	S.M. Merritt, A. Ako-Brew, W.J. Bryant, A. Staley, M. McKenna, A. Leone, L. Shirase, Automation-induced complacency potential: Development and validation of a new scale, Front. Psychol. 10 (2019) 225.
+[54]	K. Mosier, L. Skitka, Human Decision Makers and Automated Decision Aids: Made for Each Other?, in: R. Parasuraman, M. Mouloua (Eds.), Automation and Human Performance: Theory and Applications, 1st Edition, CRC Press, Boca Raton, 1996: pp. 201–220.
+[55]	J.K. Ford, T.T. Baldwin, J. Prasad, Transfer of training: The known and the unknown, Annual Review of Organizational Psychology and Organizational Behavior 5 (2018) 201–225.

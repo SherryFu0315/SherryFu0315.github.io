@@ -1,0 +1,42 @@
+Athey, S., & Imbens, G. (2016). Recursive partitioning for heterogeneous causal effects. Proceedings of the National Academy of Sciences, 113(27), 7353–7360.
+Athey, S., Tibshirani, J., & Wager, S. (2019). Generalized random forests. Annals of Statistics, 47(2), 1148–1178.
+Belk, R. W. (2013). Extended self in a digital world. Journal of Consumer Research, 40(3), 477–500.
+Bender, R., & Lange, S. (2001). Adjusting for multiple testing—When and how? Journal of Clinical Epidemiology, 54(4), 343–349.
+Berger, J., & Heath, C. (2007). Where consumers diverge from others: Identity signaling and product domains. Journal of Consumer Research, 34(2), 121–134.
+Berger, J., & Heath, C. (2008). Who drives divergence? Identity signaling, outgroup dissimilarity, and the abandonment of cultural tastes. Journal of Personality and Social Psychology, 95(3), 593–607.
+Bhattacharjee, A., Goh, K. Y., & Mahajan, V. (2024). The creator economy: Managing ecosystem supply, revenue sharing, and platform design. Management Science.
+Brewer, M. B. (1991). The social self: On being the same and different at the same time. Personality and Social Psychology Bulletin, 17(5), 475–482.
+Brodie, R. J., Hollebeek, L. D., Jurić, B., & Ilić, A. (2011). Customer engagement: Conceptual domain, fundamental propositions, and implications for research. Journal of Service Research, 14(3), 252–271.
+Burtch, G., He, Q., Hong, Y., & Lee, D. (2023). Motivating user-generated content: The unintended consequences of incentive thresholds. MIS Quarterly, 47(3), 1015–1042.
+Card, D., & Krueger, A. B. (1994). Minimum wages and employment: A case study of the fast-food industry in New Jersey and Pennsylvania. American Economic Review, 84(4), 772–793.
+Chan, C., Berger, J., & Van Boven, L. (2012). Identifiable but not identical: Combining social identity and uniqueness motives in choice. Journal of Consumer Research, 39(3), 561–573.
+Cheung, C. M. K., Chiu, P. Y., & Lee, M. K. O. (2015). Online social networks: Why do students use Facebook? Computers in Human Behavior, 27(4), 1337–1343.
+Claussen, J., Kretschmer, T., & Mayrhofer, P. (2013). The effects of rewarding user engagement: The case of Facebook apps. Information Systems Research, 24(1), 186–200.
+Deci, E. L., & Ryan, R. M. (2000). The “what” and “why” of goal pursuits: Human needs and the self-determination of behavior. Psychological Inquiry, 11(4), 227–268.
+Faraj, S., Kudaravalli, S., & Wasko, M. (2015). Leading collaboration in online communities. MIS Quarterly, 39(2), 393–412.
+Goes, P. B., Lin, M., & Au Yeung, C. (2014). “Popularity effect” in user-generated content: Evidence from online product reviews. Information Systems Research, 25(2), 222–238.
+Goes, P. B., Guo, C., & Lin, M. (2016). Do incentive hierarchies induce user effort? Evidence from an online knowledge exchange. Information Systems Research, 27(3), 497–516.
+Hong, Y., Pavlou, P. A., Shi, N., & Wang, K. (2020). On the role of fairness and social distance in designing effective social referral systems. Information Systems Research, 31(3), 939–963.
+Imai, K., Keele, L., & Tingley, D. (2010). A general approach to causal mediation analysis. Psychological Methods, 15(4), 309–334.
+Khern-am-nuai, W., Kannan, K., & Ghasemkhani, H. (2018). Extrinsic versus intrinsic rewards for contributing reviews in an online platform. Information Systems Research, 29(4), 871–892.
+Kummer, M. E., Slivko, O., & Zhang, X. (2020). Unemployment and digital public goods contribution. Information Systems Research, 31(3), 801–819.
+Leonardelli, G. J., Pickett, C. L., & Brewer, M. B. (2010). Optimal distinctiveness theory: A framework for social identity, social cognition, and intergroup relations. Advances in Experimental Social Psychology, 43, 63–113.
+Muchnik, L., Aral, S., & Taylor, S. J. (2013). Social influence bias: A randomized experiment. Science, 341(6146), 647–651.
+Pickett, C. L., Bonner, B. L., & Coleman, J. M. (2002). Motivated self-stereotyping: Heightened assimilation and differentiation needs result in increased levels of positive and negative self-stereotyping. Journal of Personality and Social Psychology, 82(4), 543–562.
+Ren, Y., Harper, F. M., Drenner, S., Terveen, L., Kiesler, S., Riedl, J., & Kraut, R. E. (2012). Building member attachment in online communities: Applying theories of group identity and interpersonal bonds. MIS Quarterly, 36(3), 841–864.
+Ritzer, G., & Jurgenson, N. (2010). Production, consumption, prosumption: The nature of capitalism in the age of the digital prosumer. Journal of Consumer Culture, 10(1), 13–36.
+Salganik, M. J., Dodds, P. S., & Watts, D. J. (2006). Experimental study of inequality and unpredictability in an artificial cultural market. Science, 311(5762), 854–856.
+Schau, H. J., & Gilly, M. C. (2003). We are what we post? Self-presentation in personal web space. Journal of Consumer Research, 30(3), 385–404.
+Schneider, C., Weinmann, M., Mohr, P. N. C., & vom Brocke, J. (2020). When the stars shine too bright: The influence of multidimensional ratings on online consumer ratings. Management Science, 67(6), 3871–3898.
+Shore, L. M., Randel, A. E., Chung, B. G., Dean, M. A., Ehrhart, K. H., & Singh, G. (2011). Inclusion and diversity in work groups: A review and model for future research. Journal of Management, 37(4), 1262–1289.
+Susarla, A., Oh, J. H., & Tan, Y. (2012). Social networks and the diffusion of user-generated content: Evidence from YouTube. Information Systems Research, 23(1), 23–41.
+Swann, W. B. (1983). Self-verification: Bringing social reality into harmony with the self. In J. Suls & A. G. Greenwald (Eds.), Social psychological perspectives on the self (Vol. 2, pp. 33–66). Erlbaum.
+Tian, K. T., Bearden, W. O., & Hunter, G. L. (2001). Consumers’ need for uniqueness: Scale development and validation. Journal of Consumer Research, 28(1), 50–66.
+Toubia, O., & Stephen, A. T. (2013). Intrinsic vs. image-related utility in social media: Why do people contribute content to Twitter? Marketing Science, 32(3), 368–392.
+Vargo, S. L., & Lusch, R. F. (2008). Service-dominant logic: Continuing the evolution. Journal of the Academy of Marketing Science, 36(1), 1–10.
+Wager, S., & Athey, S. (2018). Estimation and inference of heterogeneous treatment effects using random forests. Journal of the American Statistical Association, 113(523), 1228–1242.
+Wang, J., Li, G., & Hui, K.-L. (2021). Monetary incentives and knowledge spillover: Evidence from a natural experiment. Management Science, 68(5), 3549–3572.
+Wasko, M. M., & Faraj, S. (2005). Why should I share? Examining social capital and knowledge contribution in electronic networks of practice. MIS Quarterly, 29(1), 35–57.
+Xu, L., Nian, T., & Cabral, L. (2019). What makes geeks tick? A study of Stack Overflow careers. Management Science, 66(5), 1991–2009.
+Zhang, D., Zhang, K., Yang, Y., & Schweidel, D. A. (2024). TM-OKC: An unsupervised topic model for text in online knowledge communities. MIS Quarterly, 48(2), 469–494.
+Zhang, X., & Zhu, F. (2011). Group size and incentives to contribute: A natural experiment at Chinese Wikipedia. American Economic Review, 101(4), 1601–1615.

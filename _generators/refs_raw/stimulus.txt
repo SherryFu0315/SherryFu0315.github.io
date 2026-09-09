@@ -1,0 +1,53 @@
+Abbaraju P, Harmon K, Song J (2019) Effect of dynamic text on habituation to polymorphic warnings. Proc. 25th Americas Conf. Inform. Systems (AMCIS), Paper 17.
+Abbasi A, Parsons J, Pant G, Sheng ORL, Sarker S (2024) Pathways for design research on artificial intelligence. Inform. Systems Res. 35(2):441–459.
+Anderson BB, Jenkins JL, Vance A, Kirwan CB, Eargle D (2016) Your memory is working against you: How eye tracking and memory explain habituation to security warnings. Decision Support Systems 92:3–13.
+Anderson BB, Kirwan CB, Jenkins JL, Eargle D, Howard S, Vance A (2015) How polymorphic warnings reduce habituation in the brain—Insights from an fMRI study. Proc. 33rd Annual ACM Conf. Human Factors Comput. Systems (CHI ’15) (ACM, New York), 2883–2892.
+Baribault B, Donkin C, Little DR, Trueblood JS, Oravecz Z, van Ravenzwaaij D, White CN, De Boeck P, Vandekerckhove J (2018) Metastudies for robust tests of theory. Proc. Natl. Acad. Sci. USA 115(11):2607–2612.
+Behrend TS, Landers RN (2025) Participant interactions with artificial intelligence: Using large language models to generate research materials for surveys and experiments. J. Bus. Psych. 40(6):1275–1297.
+Blanchard SJ, Duani N, Garvey AM, Netzer O, Oh TT (2025) New tools, new rules: A practical guide to effective and responsible generative AI use for surveys and experiments in research. J. Marketing 89(6):119–139.
+Boruvka A, Almirall D, Witkiewitz K, Murphy SA (2018) Assessing time-varying causal effect moderation in mobile health. J. Amer. Statist. Assoc. 113(523):1112–1121.
+Bradley RA, Terry ME (1952) Rank analysis of incomplete block designs: I. The method of paired comparisons. Biometrika 39(3/4):324–345.
+Brunswik E (1955) Representative design and probabilistic theory in a functional psychology. Psych. Rev. 62(3):193–217.
+Chataigner C, Ma R, Ganesh P, Chen Y, Taïk A, Creager E, Farnadi G (2026) Say it another way: Auditing LLMs with a user-grounded automated paraphrasing framework. Proc. 19th Conf. European Chapter Assoc. Comput. Linguistics 1:1441–1467.
+Chen Y, Liu C-W, Wen M-H (2026) Alert for alerts: How investment price tracking alerts affect retail investors. MIS Quart. Forthcoming.
+Clark HH (1973) The language-as-fixed-effect fallacy: A critique of language statistics in psychological research. J. Verbal Learning Verbal Behav. 12(4):335–359.
+DeKay ML, Rubinchik N, Li Z, De Boeck P (2022) Accelerating psychological science with metastudies: A demonstration using the risky-choice framing effect. Perspect. Psych. Sci. 17(6):1704–1736.
+Duan X, Xiao B, Kan B, Cai ZG (2025) StimMAS: A multi-agent framework for automated linguistic stimulus construction in psychological research. PsyArXiv, https://osf.io/preprints/psyarxiv/83zev_v2.
+Fiedler K (2000) Beware of samples! A cognitive-ecological sampling approach to judgment biases. Psych. Rev. 107(4):659–676.
+Fügener A, Grahl J, Gupta A, Ketter W (2022) Cognitive challenges in human–artificial intelligence collaboration: Investigating the path toward productive delegation. Inform. Systems Res. 33(2):678–696.
+Gopal RD, Li J, Riemer K, Sarker S, Singh PV, Susarla A, Bichler M, Thatcher JB (2025) Inventing with machines: Generative AI and the evolving landscape of IS research. Inform. Systems Res. 36(4):1949–1967.
+Haugtvedt CP, Schumann DW, Schneier WL, Warren WL (1994) Advertising repetition and variation strategies: Implications for understanding attitude strength. J. Consumer Res. 21(1):176–189.
+Judd CM, Westfall J, Kenny DA (2012) Treating stimuli as a random factor in social psychology: A new and comprehensive solution to a pervasive but largely ignored problem. J. Personality Soc. Psych. 103(1):54–69.
+Jussupow E, Spohrer K, Heinzl A, Gawlitza J (2021) Augmenting medical diagnosis decisions? An investigation into physicians’ decision-making process with artificial intelligence. Inform. Systems Res. 32(3):713–735.
+Khern-am-nuai W, Hashim MJ, Pinsonneault A, Yang W, Li N (2022) Augmenting password strength meter design using the elaboration likelihood model: Evidence from randomized experiments. Inform. Systems Res. 34(1):157–177.
+Klasnja P, Hekler EB, Shiffman S, Boruvka A, Almirall D, Tewari A, Murphy SA (2015) Microrandomized trials: An experimental design for developing just-in-time adaptive interventions. Health Psych. 34(Suppl.):1220–1228.
+Kounios J, Kotz SA, Holcomb PJ (2000) On the locus of the semantic satiation effect: Evidence from event-related brain potentials. Memory Cognition 28(8):1366–1377.
+Lambert WE, Jakobovits LA (1960) Verbal satiation and changes in the intensity of meaning. J. Experiment. Psych. 60(6):376–383.
+Landy JF, Jia M, Ding IL, Viganola D, Tierney W, Dreber A, Johannesson M, Pfeiffer T, Ebersole CR, Gronau QF, Ly A, van den Bergh D, Marsman M, Derks K, Wagenmakers EJ, Proctor A, Bartels DM, Bauman CW, Brady WJ, … Uhlmann EL (2020) Crowdsourcing hypothesis tests: Making transparent how design choices shape research results. Psych. Bull. 146(5):451–479.
+Lechuga J, Karle NN (2026) Generating experimental text stimuli for psychological research using ChatGPT. Adv. Methods Practices Psych. Sci. 9(1):1–18.
+Montgomery JM, Nyhan B, Torres M (2018) How conditioning on posttreatment variables can ruin your experiment and what to do about it. Amer. J. Political Sci. 62(3):760–775.
+Pechmann C, Stewart DW (1988) Advertising repetition: A critical review of wearin and wearout. Current Issues Res. Advertising 11(1–2):285–329.
+Pieper M, Fallon M, Heinzl A (2025) Micro-randomized trials in Information Systems research: An experimental method for advancing knowledge about our dynamic and digitalized world. J. Inform. Tech. 40(2):214–234.
+Pillet JC, Larsen KR, Dobolyi D, Queiroz M, Handler A, Arnulf JK, Sharma R (2026) AI-augmented content validation in behavioral research: Development and evaluation of the RATER system. MIS Quart. 50(1):59–86.
+Rankin CH, Abrams T, Barry RJ, Bhatnagar S, Clayton DF, Colombo J, Coppola G, Geyer MA, Glanzman DL, Marsland S, McSweeney FK, Wilson DA, Wu CF, Thompson RF (2009) Habituation revisited: An updated and revised description of the behavioral characteristics of habituation. Neurobiol. Learning Memory 92(2):135–138.
+Schmidt S, Eisend M (2015) Advertising repetition: A meta-analysis on effective frequency in advertising. J. Advertising 44(4):415–428.
+Schumann DW, Petty RE, Clemons DS (1990) Predicting the effectiveness of different strategies of advertising variation: A test of the repetition-variation hypotheses. J. Consumer Res. 17(2):192–202.
+Sclar M, Choi Y, Tsvetkov Y, Suhr A (2024) Quantifying language models’ sensitivity to spurious features in prompt design or: How I learned to start worrying about prompt formatting. Proc. Internat. Conf. Learning Representations.
+Simonsohn U, Montealegre A, Evangelidis I (2025) Stimulus sampling reimagined: Designing experiments with mix-and-match, analyzing results with stimulus plots. J. Personality Soc. Psych. 129(1):71–90.
+Sokolov EN (1963) Higher nervous functions: The orienting reflex. Annual Rev. Physiol. 25:545–580.
+Tam KY, Ho SY (2006) Understanding the impact of web personalization on user information processing and decision outcomes. MIS Quart. 30(4):865–890.
+Thompson RF, Spencer WA (1966) Habituation: A model phenomenon for the study of neuronal substrates of behavior. Psych. Rev. 73(1):16–43.
+Tian X, Huber DE (2010) Testing an associative account of semantic satiation. Cognitive Psych. 60(4):267–290.
+Tomaino G, Mazar A, Carmon Z, Wertenbroch K (2025) A simple method for improving generalizability in behavioral science: Scope testing with AI-generated stimuli (STAGS). Consumer Psych. Rev. 8(1):87–97.
+Unnava HR, Burnkrant RE (1991) Effects of repeating varied ad executions on brand name memory. J. Marketing Res. 28(4):406–416.
+VanderWeele TJ, Hernán MA (2013) Causal inference under multiple versions of treatment. J. Causal Inference 1(1):1–20.
+van Berlo ZMC, Campbell C, Voorveld HAM (2024) The MADE framework: Best practices for creating effective experimental stimuli using generative AI. J. Advertising 53(5):732–753.
+Vance A, Eargle D, Kirwan CB, Anderson BB, Jenkins JL (2025) The fog of warnings: How non-security-related notifications diminish the efficacy of security warnings. MIS Quart. 49(4):1357–1384.
+Vance A, Jenkins JL, Anderson BB, Bjornn DK, Kirwan CB (2018) Tuning out security warnings: A longitudinal examination of habituation through fMRI, eye tracking, and field experiments. MIS Quart. 42(2):355–380.
+Wang L, Huang N, He Y, Liu D, Guo X, Sun Y, Chen G (2025) Artificial intelligence (AI) assistant in online shopping: A randomized field experiment on a livestream selling platform. Inform. Systems Res. 36(4):2358–2374.
+Weinert C, Maier C, Laumer S, Weitzel T (2022) Repeated IT interruption: Habituation and sensitization of user responses. J. Management Inform. Systems 39(1):187–217.
+Wells GL, Windschitl PD (1999) Stimulus sampling and social psychological experimentation. Personality Soc. Psych. Bull. 25(9):1115–1125.
+Westfall J, Judd CM, Kenny DA (2015) Replicating studies in which samples of participants respond to samples of stimuli. Perspect. Psych. Sci. 10(3):390–399.
+Westfall J, Kenny DA, Judd CM (2014) Statistical power and optimal design in experiments in which samples of participants respond to samples of stimuli. J. Experiment. Psych.: General 143(5):2020–2045.
+Yang CL, Bauer K, Li X, Hinz O (2025) My advisor, her AI, and me: Evidence from a field experiment on human–AI collaboration and investment decisions. Management Sci. 72(1):242–264.
+Yarkoni T (2022) The generalizability crisis. Behav. Brain Sci. 45:e1.

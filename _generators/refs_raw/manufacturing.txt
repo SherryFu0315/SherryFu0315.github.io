@@ -1,0 +1,87 @@
+Abele, A. E., & Wojciszke, B. (2007). Agency and communion from the perspective of self versus others. Journal of Personality and Social Psychology, 93(5), 751–763.
+Abele, A. E., & Wojciszke, B. (2014). Communal and agentic content in social cognition: A dual perspective model. Advances in Experimental Social Psychology, 50, 195–255.
+Abele, A. E., Hauke, N., Peters, K., Louvet, E., Szymkow, A., & Duan, Y. (2016). Facets of the fundamental content dimensions: Agency with competence and assertiveness – communion with warmth and morality. Frontiers in Psychology, 7, 1810.
+Acemoglu, D., & Restrepo, P. (2019). Automation and new tasks: How technology displaces and reinstates labor. Journal of Economic Perspectives, 33(2), 3–30.
+Acemoglu, D., & Restrepo, P. (2022). Tasks, automation, and the rise in U.S. wage inequality. Econometrica, 90(5), 1973–2016.
+Acemoglu, D., Autor, D., Hazell, J., & Restrepo, P. (2022). Artificial intelligence and jobs: Evidence from online vacancies. Journal of Labor Economics, 40(S1), S293–S340.
+Adler, P. S., & Borys, B. (1996). Two types of bureaucracy: Enabling and coercive. Administrative Science Quarterly, 41(1), 61–89.
+Agrawal, A., Gans, J. S., & Goldfarb, A. (2019). Artificial intelligence: The ambiguous labor market impact of automating prediction. Journal of Economic Perspectives, 33(2), 31–50.
+Amis, J. M., Mair, J., & Munir, K. A. (2020). The organizational reproduction of inequality. Academy of Management Annals, 14(1), 195–230.
+Autor, D. H. (2015). Why are there still so many jobs? The history and future of workplace automation. Journal of Economic Perspectives, 29(3), 3–30.
+Badura, K. L., Grijalva, E., Newman, D. A., Yan, T. T., & Jeon, G. (2018). Gender and leadership emergence: A meta-analysis and explanatory model. Personnel Psychology, 71(3), 335–367.
+Bailey, D. E., Leonardi, P. M., & Barley, S. R. (2012). The lure of the virtual. Organization Science, 23(5), 1485–1504.
+Baird, A., & Maruping, L. M. (2021). The next generation of research on IS use: A theoretical framework of delegation to and from agentic IS artifacts. MIS Quarterly, 45(1), 315–341.
+Bakan, D. (1966). The duality of human existence: An essay on psychology and religion. Rand McNally.
+Bankins, S., Ocampo, A. C., Marrone, M., Restubog, S. L. D., & Woo, S. E. (2024). A multilevel review of artificial intelligence in organizations: Implications for organizational behavior research and practice. Journal of Organizational Behavior, 45(2), 159–182.
+Barley, S. R. (1986). Technology as an occasion for structuring: Evidence from observations of CT scanners and the social order of radiology departments. Administrative Science Quarterly, 31(1), 78–108.
+Barrett, M., Davidson, E., Prabhu, J., & Vargo, S. L. (2015). Service innovation in the digital age: Key contributions and future directions. MIS Quarterly, 39(1), 135–154.
+Barrett, M., Oborn, E., & Orlikowski, W. J. (2012). Reconfiguring boundary relations: Robotic innovations in pharmacy work. Organization Science, 23(5), 1448–1466.
+Beane, M. (2019). Shadow learning: Building robotic surgical skill when approved means fail. Administrative Science Quarterly, 64(1), 87–123.
+Becker, G. S., & Murphy, K. M. (1992). The division of labor, coordination costs, and knowledge. Quarterly Journal of Economics, 107(4), 1137–1160.
+Berends, H., & Deken, F. (2021). Composing qualitative process research. Strategic Organization, 19(1), 134–146.
+Berente, N., Gu, B., Recker, J., & Santhanam, R. (2021). Managing artificial intelligence. MIS Quarterly, 45(3), 1433–1450.
+Bharadwaj, A., El Sawy, O. A., Pavlou, P. A., & Venkatraman, N. (2013). Digital business strategy: Toward a next generation of insights. MIS Quarterly, 37(2), 471–482.
+Bloom, V., & Green, M. (2026). NAM manufacturers’ outlook survey: First quarter 2026. National Association of Manufacturers. https://nam.org/2026-first-quarter-manufacturers-outlook-survey/
+Braverman, H. (1974). Labor and monopoly capital: The degradation of work in the twentieth century. Monthly Review Press.
+Ciccarelli, M., Papetti, A., & Germani, M. (2023). Exploring how new industrial paradigms affect the workforce: A literature review of Operator 4.0. Journal of Manufacturing Systems, 70, 464–483.
+Conger, J. A., & Kanungo, R. N. (1988). The empowerment process: Integrating theory and practice. Academy of Management Review, 13(3), 471–482.
+Coykendall, J., Hardin, K., Morehouse, J., Reyes, V., & Carrick, G. (2024). Taking charge: Manufacturers support growth with active workforce strategies. Deloitte Insights.
+Coykendall, J., Morehouse, J., Hardin, K., & Shepley, S. (2025). 2025 manufacturing industry outlook. Deloitte Insights.
+Deming, D. J. (2017). The growing importance of social skills in the labor market. Quarterly Journal of Economics, 132(4), 1593–1640.
+Dondeti, S., & Tippur, H. V. (2019). A comparative study of dynamic fracture of soda-lime glass using photoelasticity, digital image correlation and digital gradient sensing techniques. Experimental Mechanics.
+Eagly, A. H., & Karau, S. J. (2002). Role congruity theory of prejudice toward female leaders. Psychological Review, 109(3), 573–598.
+Eagly, A. H., & Wood, W. (1999). The origins of sex differences in human behavior: Evolved dispositions versus social roles. American Psychologist, 54(6), 408–423.
+Faraj, S., Pachidi, S., & Sayegh, K. (2018). Working and organizing in the age of the learning algorithm. Information and Organization, 28(1), 62–70.
+Fiske, S. T., Cuddy, A. J. C., & Glick, P. (2007). Universal dimensions of social cognition: Warmth and competence. Trends in Cognitive Sciences, 11(2), 77–83.
+Fügener, A., Grahl, J., Gupta, A., & Ketter, W. (2021). Will humans-in-the-loop become borgs? Merits and pitfalls of working with AI. MIS Quarterly, 45(3), 1527–1556.
+Galbraith, J. R. (1973). Designing complex organizations. Addison-Wesley.
+Gioia, D. A., Corley, K. G., & Hamilton, A. L. (2013). Seeking qualitative rigor in inductive research: Notes on the Gioia methodology. Organizational Research Methods, 16(1), 15–31.
+Glikson, E., & Woolley, A. W. (2020). Human trust in artificial intelligence: Review of empirical research. Academy of Management Annals, 14(2), 627–660.
+Graetz, G., & Michaels, G. (2018). Robots at work. The Review of Economics and Statistics, 100(5), 753–768.
+Hanelt, A., Bohnsack, R., Marz, D., & Antunes Marante, C. (2021). A systematic review of the literature on digital transformation: Insights and implications for strategy and organizational change. Journal of Management Studies, 58(5), 1159–1197.
+Heilman, M. E., Caleo, S., & Manzi, F. (2024). Women at work: Pathways from gender stereotypes to gender bias and discrimination. Annual Review of Organizational Psychology and Organizational Behavior, 11, 165–192.
+Helgeson, V. S. (1994). Relation of agency and communion to well-being: Evidence and potential explanations. Psychological Bulletin, 116(3), 412–428.
+Hermann, M., Pentek, T., & Otto, B. (2016). Design principles for Industrie 4.0 scenarios. Proceedings of the 49th Hawaii International Conference on System Sciences (HICSS), 3928–3937.
+Hirsch-Kreinsen, H. (2023). Industry 4.0: Options for human-oriented work design. Sci, 5(1), 9.
+Kadir, B. A., & Broberg, O. (2021). Human-centered design of work systems in the transition to industry 4.0. Applied Ergonomics, 92, 103334.
+Kanter, R. M. (1977). Men and women of the corporation. Basic Books.
+Kellogg, K. C., Valentine, M. A., & Christin, A. (2020). Algorithms at work: The new contested terrain of control. Academy of Management Annals, 14(1), 366–410.
+Langley, A. (1999). Strategies for theorizing from process data. Academy of Management Review, 24(4), 691–710.
+Lebovitz, S., Lifshitz-Assaf, H., & Levina, N. (2022). To engage or not to engage with AI for critical judgments: How professionals deal with opacity when using AI for medical diagnosis. Organization Science, 33(1), 126–148.
+Leonardi, P. M. (2011). When flexible routines meet flexible technologies: Affordance, constraint, and the imbrication of human and material agencies. MIS Quarterly, 35(1), 147–167.
+Ma, A., Rosette, A. S., & Koval, C. Z. (2022). Reconciling female agentic advantage and disadvantage with the CADDIS measure of agency. Journal of Applied Psychology, 107(12), 2101–2123.
+Matheson, E., Minto, R., Zampieri, E. G. G., Faccio, M., & Rosati, G. (2019). Human–robot collaboration in manufacturing applications: A review. Robotics, 8(4), 100.
+Melville, N. P., Robert, L., & Xiao, X. (2022). Putting humans back in the loop: An affordance conceptualization of the 4th industrial revolution. Information Systems Journal, 32(6), 1306–1333.
+Nambisan, S., Lyytinen, K., Majchrzak, A., & Song, M. (2017). Digital innovation management: Reinventing innovation management research in a digital world. MIS Quarterly, 41(1), 223–238.
+Neumann, W. P., Winkelhaus, S., Grosse, E. H., & Glock, C. H. (2021). Industry 4.0 and the human factor: A systems framework and analysis methodology for successful development. International Journal of Production Economics, 233, 107992.
+Nguyen Ngoc, H., Lasa, G., & Iriarte, I. (2022). Human-centred design in industry 4.0: Case study review and opportunities for future research. Journal of Intelligent Manufacturing, 33(1), 35–76.
+Noe, R. A., Clarke, A. D. M., & Klein, H. J. (2014). Learning in the twenty-first-century workplace. Annual Review of Organizational Psychology and Organizational Behavior, 1, 245–275.
+Orlikowski, W. J. (1992). The duality of technology: Rethinking the concept of technology in organizations. Organization Science, 3(3), 398–427.
+Raisch, S., & Krakowski, S. (2021). Artificial intelligence and management: The automation–augmentation paradox. Academy of Management Review, 46(1), 192–210.
+Reiman, A., Kaivo-oja, J., Parviainen, E., Takala, E.-P., & Lauraeus, T. (2021). Human factors and ergonomics in manufacturing in the industry 4.0 context: A scoping review. Technology in Society, 65, 101572.
+Rosette, A. S., & Tost, L. P. (2010). Agentic women and communal leadership: How role prescriptions confer advantage to top women leaders. Journal of Applied Psychology, 95(2), 221–235.
+Rosso, B. D., Dekas, K. H., & Wrzesniewski, A. (2010). On the meaning of work: A theoretical integration and review. Research in Organizational Behavior, 30, 91–127.
+Rostain, M., & Huising, R. (2024). Vicarious coding: Breaching computational opacity in the digital era. Academy of Management Journal, 67(2), 359–38155.
+Rudman, L. A., & Glick, P. (1999). Feminized management and backlash toward agentic women: The hidden costs to women of a kinder, gentler image of middle managers. Journal of Personality and Social Psychology, 77(5), 1004–1010.
+Sarker, S., Chatterjee, S., Xiao, X., & Elbanna, A. (2019). The sociotechnical axis of cohesion for the IS discipline: Its historical legacy and its continued relevance. MIS Quarterly, 43(3), 695–719.
+Seibert, S. E., Wang, G., & Courtright, S. H. (2011). Antecedents and consequences of psychological and team empowerment in organizations: A meta-analytic review. Journal of Applied Psychology, 96(5), 981–1003.
+Shepley, S., Morehouse, J., Hardin, K., & Dwivedi, K. (2025). 2026 manufacturing industry outlook. Deloitte Insights.
+Spreitzer, G. M. (1995). Psychological empowerment in the workplace: Dimensions, measurement, and validation. Academy of Management Journal, 38(5), 1442–1465.
+Stephany, F., & Teutloff, O. (2024). What is the price of a skill? The value of complementarity. Research Policy, 53(1), 104898.
+Tao, F., Zhang, H., Liu, A., & Nee, A. Y. C. (2019). Digital twin in industry: State-of-the-art. IEEE Transactions on Industrial Informatics, 15(4), 2405–2415.
+Sætre, A. S., & Van de Ven, A. (2021). Generating theory by abduction. Academy of Management Review, 46(4), 684–701.
+Thomas, K. W., & Velthouse, B. A. (1990). Cognitive elements of empowerment: An “interpretive” model of intrinsic task motivation. Academy of Management Review, 15(4), 666–681.
+Timmermans, S., & Tavory, I. (2012). Theory construction in qualitative research: From grounded theory to abductive analysis. Sociological Theory, 30(3), 167–186.
+Trapnell, P. D., & Paulhus, D. L. (2012). Agentic and communal values: Their scope and measurement. Journal of Personality Assessment, 94(1), 39–52.
+U.S. Bureau of Labor Statistics (2026). Employer-reported workplace injuries and illnesses—2024 (USDL-26-0101). U.S. Department of Labor. https://www.bls.gov/news.release/archives/osh_01222026.htm
+Vardi, Y. (1980). Organizational career mobility: An integrative model. Academy of Management Review, 5(3), 341–355.
+Verhoef, P. C., Broekhuizen, T., Bart, Y., Bhattacharya, A., Qi Dong, J., Fabian, N., & Haenlein, M. (2021). Digital transformation: A multidisciplinary reflection and research agenda. Journal of Business Research, 122, 889–901.
+Vial, G. (2019). Understanding digital transformation: A review and a research agenda. Journal of Strategic Information Systems, 28(2), 118–144.
+Walsham, G. (1995). Interpretive case studies in IS research: Nature and method. European Journal of Information Systems, 4(2), 74–81.
+Weaver, A., & Osterman, P. (2017). Skill demands and mismatch in U.S. manufacturing. Industrial and Labor Relations Review, 70(2), 275–307.
+Wirtz, J., Patterson, P. G., Kunz, W. H., Gruber, T., Lu, V. N., Paluch, S., & Martins, A. (2018). Brave new world: Service robots in the frontline. Journal of Service Management, 29(5), 907–931.
+World Bank Group (2007). Environmental, health, and safety guidelines for glass manufacturing. International Finance Corporation. https://www.ifc.org/content/dam/ifc/doc/2000/2007-glass-manufacturing-ehs-guidelines-en.pdf
+Yin, R. K. (2018). Case study research and applications: Design and methods (6th ed.). Sage.
+You, S., & Robert, L. P. (2018). Emotional attachment, performance, and viability in teams collaborating with embodied physical action (EPA) robots. Journal of the Association for Information Systems, 19(5), 377–407.
+Zammuto, R. F., & O’Connor, E. J. (1992). Gaining advanced manufacturing technologies’ benefits: The roles of organization design and culture. Academy of Management Review, 17(4), 701–728.
+Zuboff, S. (1988). In the age of the smart machine: The future of work and power. Basic Books.
