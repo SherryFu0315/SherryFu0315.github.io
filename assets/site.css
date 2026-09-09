@@ -513,6 +513,23 @@ button:focus-visible{ outline:3px solid var(--blue); outline-offset:2px }
 .entry-art{ position:relative; overflow:hidden; min-height:240px; background:var(--ink) }
 .entry-art img{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover }
 
+/* an emoji standing in until the photograph for this project arrives */
+.entry-art.is-emoji{
+  background:
+    radial-gradient(120% 120% at 50% 45%, color-mix(in srgb, var(--c) 22%, var(--paper)) 0%, var(--paper) 72%);
+  border-left:var(--rule-w) solid var(--rule);
+  display:flex; align-items:center; justify-content:center;
+  min-height:200px;
+}
+.entry-art.is-emoji span{
+  font-size:clamp(56px,7vw,96px); line-height:1;
+  filter:saturate(.9);
+}
+@media(max-width:899px){ .entry-art.is-emoji{ border-left:0; border-top:var(--rule-w) solid var(--rule) } }
+
+/* the kind of AI, named on the entry now the page runs by maturity */
+.chip--kind{ background:var(--c); border-color:var(--ink); color:var(--ink) }
+
 /* ---------- news strip ---------------------------------------------------- */
 
 .strip{ display:grid; grid-template-columns:1fr; border-bottom:var(--rule-w) solid var(--rule) }
