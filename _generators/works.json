@@ -1,0 +1,8487 @@
+[
+ {
+  "key": "abdelkarim|2023|aibased-systems-can",
+  "authors": [
+   "Abdel-Karim",
+   "Pfeuffer",
+   "Carl",
+   "Hinz"
+  ],
+  "year": 2023,
+  "title": "How AI-based systems can induce reflections: The case of AI-augmented diagnostic work",
+  "venue": "MIS Quarterly",
+  "cited_by": [
+   "retrieval"
+  ]
+ },
+ {
+  "key": "allen|2022|algorithmaugmented-work-domain",
+  "authors": [
+   "Allen",
+   "Choudhury"
+  ],
+  "year": 2022,
+  "title": "Algorithm-augmented work and domain experience: The countervailing forces of ability and aversion",
+  "venue": "Organization Science",
+  "cited_by": [
+   "retrieval"
+  ]
+ },
+ {
+  "key": "bauer|2023|explained-impact-explainable",
+  "authors": [
+   "Bauer",
+   "von Zahn",
+   "Hinz"
+  ],
+  "year": 2023,
+  "title": "Expl(AI)ned: The impact of explainable artificial intelligence on users' information processing",
+  "venue": "Information Systems Research",
+  "cited_by": [
+   "retrieval"
+  ]
+ },
+ {
+  "key": "bisra|2018|inducing-selfexplanation-metaanalysis",
+  "authors": [
+   "Bisra",
+   "Liu",
+   "Nesbit",
+   "Salimi",
+   "Winne"
+  ],
+  "year": 2018,
+  "title": "Inducing self-explanation: A meta-analysis",
+  "venue": "Educational Psychology Review",
+  "cited_by": [
+   "retrieval"
+  ]
+ },
+ {
+  "key": "brynjolfsson|2025|generative-ai-work",
+  "authors": [
+   "Brynjolfsson",
+   "Li",
+   "Raymond"
+  ],
+  "year": 2025,
+  "title": "Generative AI at work",
+  "venue": "The Quarterly Journal of Economics",
+  "cited_by": [
+   "retrieval",
+   "sales"
+  ]
+ },
+ {
+  "key": "bucinca|2021|trust-think-cognitive",
+  "authors": [
+   "Bucinca",
+   "Malaya",
+   "Gajos"
+  ],
+  "year": 2021,
+  "title": "To trust or to think: Cognitive forcing functions can reduce overreliance on AI in AI-assisted decision-making",
+  "venue": "Proceedings of the ACM on Human-Computer Interaction",
+  "cited_by": [
+   "retrieval"
+  ]
+ },
+ {
+  "key": "bussewitz|2025|mistakefilled-legal-briefs",
+  "authors": [
+   "Bussewitz"
+  ],
+  "year": 2025,
+  "title": "Mistake-filled legal briefs show the limits of relying on AI tools at work",
+  "venue": "AP News",
+  "cited_by": [
+   "retrieval"
+  ]
+ },
+ {
+  "key": "cantor|2017|expertise-effects-moses",
+  "authors": [
+   "Cantor",
+   "Marsh"
+  ],
+  "year": 2017,
+  "title": "Expertise effects in the Moses illusion: detecting contradictions with stored knowledge",
+  "venue": "Memory",
+  "cited_by": [
+   "retrieval"
+  ]
+ },
+ {
+  "key": "chi|1989|selfexplanations-students-study",
+  "authors": [
+   "Chi",
+   "Bassok",
+   "Lewis",
+   "Reimann",
+   "Glaser"
+  ],
+  "year": 1989,
+  "title": "Self-explanations: How students study and use examples in learning to solve problems",
+  "venue": "Cognitive Science",
+  "cited_by": [
+   "retrieval"
+  ]
+ },
+ {
+  "key": "chi|1994|eliciting-selfexplanations-improves",
+  "authors": [
+   "Chi",
+   "de Leeuw",
+   "Chiu",
+   "LaVancher"
+  ],
+  "year": 1994,
+  "title": "Eliciting self-explanations improves understanding",
+  "venue": "Cognitive Science",
+  "cited_by": [
+   "retrieval"
+  ]
+ },
+ {
+  "key": "craik|1972|levels-processing-framework",
+  "authors": [
+   "Craik",
+   "Lockhart"
+  ],
+  "year": 1972,
+  "title": "Levels of processing: A framework for memory research",
+  "venue": "Journal of Verbal Learning and Verbal Behavior",
+  "cited_by": [
+   "retrieval"
+  ]
+ },
+ {
+  "key": "feldman|1988|selfgenerated-validity-other",
+  "authors": [
+   "Feldman",
+   "Lynch"
+  ],
+  "year": 1988,
+  "title": "Self-generated validity and other effects of measurement on belief, attitude, intention, and behavior",
+  "venue": "Journal of Applied Psychology",
+  "cited_by": [
+   "retrieval"
+  ]
+ },
+ {
+  "key": "fernandezloria|2022|explaining-datadriven-decisions",
+  "authors": [
+   "Fernandez-Loria",
+   "Provost",
+   "Han"
+  ],
+  "year": 2022,
+  "title": "Explaining data-driven decisions made by AI systems: The counterfactual approach",
+  "venue": "MIS Quarterly",
+  "cited_by": [
+   "retrieval"
+  ]
+ },
+ {
+  "key": "frederick|1991|auditors-representation-retrieval",
+  "authors": [
+   "Frederick"
+  ],
+  "year": 1991,
+  "title": "Auditors' representation and retrieval of internal control knowledge",
+  "venue": "The Accounting Review",
+  "cited_by": [
+   "retrieval"
+  ]
+ },
+ {
+  "key": "fugener|2022|cognitive-challenges-humanartificial",
+  "authors": [
+   "Fugener",
+   "Grahl",
+   "Gupta",
+   "Ketter"
+  ],
+  "year": 2022,
+  "title": "Cognitive challenges in human-artificial intelligence collaboration: Investigating the path toward productive delegation",
+  "venue": "Information Systems Research",
+  "cited_by": [
+   "retrieval",
+   "stimulus"
+  ]
+ },
+ {
+  "key": "gregor|1999|explanations-intelligent-systems",
+  "authors": [
+   "Gregor",
+   "Benbasat"
+  ],
+  "year": 1999,
+  "title": "Explanations from intelligent systems: Theoretical foundations and implications for practice",
+  "venue": "MIS Quarterly",
+  "cited_by": [
+   "retrieval"
+  ]
+ },
+ {
+  "key": "jussupow|2024|integrative-perspective-algorithm",
+  "authors": [
+   "Jussupow",
+   "Benbasat",
+   "Heinzl"
+  ],
+  "year": 2024,
+  "title": "An integrative perspective on algorithm aversion and appreciation in decision-making",
+  "venue": "MIS Quarterly",
+  "cited_by": [
+   "retrieval",
+   "creativity",
+   "triage"
+  ]
+ },
+ {
+  "key": "jussupow|2021|augmenting-medical-diagnosis",
+  "authors": [
+   "Jussupow",
+   "Spohrer",
+   "Heinzl",
+   "Gawlitza"
+  ],
+  "year": 2021,
+  "title": "Augmenting medical diagnosis decisions? An investigation into physicians' decision-making process with artificial intelligence",
+  "venue": "Information Systems Research",
+  "cited_by": [
+   "retrieval",
+   "errors",
+   "stimulus"
+  ]
+ },
+ {
+  "key": "lebovitz|2021|ai-ground-truth",
+  "authors": [
+   "Lebovitz",
+   "Levina",
+   "Lifshitz-Assaf"
+  ],
+  "year": 2021,
+  "title": "Is AI ground truth really true? The dangers of training and evaluating AI tools based on experts' know-what",
+  "venue": "MIS Quarterly",
+  "cited_by": [
+   "retrieval",
+   "errors",
+   "triage"
+  ]
+ },
+ {
+  "key": "lebovitz|2022|engage-not-engage",
+  "authors": [
+   "Lebovitz",
+   "Lifshitz-Assaf",
+   "Levina"
+  ],
+  "year": 2022,
+  "title": "To engage or not to engage with AI for critical judgments: How professionals deal with opacity when using AI for medical diagnosis",
+  "venue": "Organization Science",
+  "cited_by": [
+   "retrieval",
+   "errors",
+   "manufacturing"
+  ]
+ },
+ {
+  "key": "lee|2004|trust-automation-designing",
+  "authors": [
+   "Lee",
+   "See"
+  ],
+  "year": 2004,
+  "title": "Trust in automation: designing for appropriate reliance",
+  "venue": "Human Factors",
+  "cited_by": [
+   "retrieval"
+  ]
+ },
+ {
+  "key": "liel|2025|turning-off-your",
+  "authors": [
+   "Liel",
+   "Zalmanson"
+  ],
+  "year": 2025,
+  "title": "Turning off your better judgment: Algorithmic conformity in artificial intelligence-human collaboration",
+  "venue": "Journal of Management Information Systems",
+  "cited_by": [
+   "retrieval",
+   "secd"
+  ]
+ },
+ {
+  "key": "limayem|2007|habit-limits-predictive",
+  "authors": [
+   "Limayem",
+   "Hirt",
+   "Cheung"
+  ],
+  "year": 2007,
+  "title": "How habit limits the predictive power of intention: The case of information systems continuance",
+  "venue": "MIS Quarterly",
+  "cited_by": [
+   "retrieval"
+  ]
+ },
+ {
+  "key": "lin|2024|chatbots-augment-human",
+  "authors": [
+   "Lin",
+   "Wang",
+   "Shao",
+   "Taylor"
+  ],
+  "year": 2024,
+  "title": "How chatbots augment human intelligence in customer services: A mixed-methods study",
+  "venue": "Journal of Management Information Systems",
+  "cited_by": [
+   "retrieval"
+  ]
+ },
+ {
+  "key": "ma|2025|artificial-intelligence-recommendations",
+  "authors": [
+   "Ma",
+   "Dennis",
+   "Dennis",
+   "Huang"
+  ],
+  "year": 2025,
+  "title": "Artificial intelligence recommendations amplify the sharing of true and fake news on social media by appealing to fast cognition",
+  "venue": "Journal of Management Information Systems",
+  "cited_by": [
+   "retrieval"
+  ]
+ },
+ {
+  "key": "mcdermott|2021|practicing-retrieval-facilitates",
+  "authors": [
+   "McDermott"
+  ],
+  "year": 2021,
+  "title": "Practicing retrieval facilitates learning",
+  "venue": "Annual Review of Psychology",
+  "cited_by": [
+   "retrieval"
+  ]
+ },
+ {
+  "key": "morris|1977|levels-processing-versus",
+  "authors": [
+   "Morris",
+   "Bransford",
+   "Franks"
+  ],
+  "year": 1977,
+  "title": "Levels of processing versus transfer appropriate processing",
+  "venue": "Journal of Verbal Learning and Verbal Behavior",
+  "cited_by": [
+   "retrieval"
+  ]
+ },
+ {
+  "key": "parasuraman|2010|complacency-bias-human",
+  "authors": [
+   "Parasuraman",
+   "Manzey"
+  ],
+  "year": 2010,
+  "title": "Complacency and bias in human use of automation: an attentional integration",
+  "venue": "Human Factors",
+  "cited_by": [
+   "retrieval",
+   "errors"
+  ]
+ },
+ {
+  "key": "peng|2023|identification-causal-mechanisms",
+  "authors": [
+   "Peng"
+  ],
+  "year": 2023,
+  "title": "Identification of causal mechanisms from randomized experiments: A framework for endogenous mediation analysis",
+  "venue": "Information Systems Research",
+  "cited_by": [
+   "retrieval",
+   "service"
+  ]
+ },
+ {
+  "key": "revilla|2023|humanartificial-intelligence-collaboration",
+  "authors": [
+   "Revilla",
+   "Saenz",
+   "Seifert",
+   "Ma"
+  ],
+  "year": 2023,
+  "title": "Human-artificial intelligence collaboration in prediction: A field experiment in the retail industry",
+  "venue": "Journal of Management Information Systems",
+  "cited_by": [
+   "retrieval"
+  ]
+ },
+ {
+  "key": "rogers|2016|reminders-through-association",
+  "authors": [
+   "Rogers",
+   "Milkman"
+  ],
+  "year": 2016,
+  "title": "Reminders through association",
+  "venue": "Psychological Science",
+  "cited_by": [
+   "retrieval"
+  ]
+ },
+ {
+  "key": "skitka|1999|automation-bias-decisionmaking",
+  "authors": [
+   "Skitka",
+   "Mosier",
+   "Burdick"
+  ],
+  "year": 1999,
+  "title": "Does automation bias decision-making?",
+  "venue": "International Journal of Human-Computer Studies",
+  "cited_by": [
+   "retrieval"
+  ]
+ },
+ {
+  "key": "spencer|2005|establishing-causal-chain",
+  "authors": [
+   "Spencer",
+   "Zanna",
+   "Fong"
+  ],
+  "year": 2005,
+  "title": "Establishing a causal chain: why experiments are often more effective than mediational analyses in examining psychological processes",
+  "venue": "Journal of Personality and Social Psychology",
+  "cited_by": [
+   "retrieval"
+  ]
+ },
+ {
+  "key": "tsai|2016|pursuit-information-sharing",
+  "authors": [
+   "Tsai",
+   "Bendersky"
+  ],
+  "year": 2016,
+  "title": "The pursuit of information sharing: Expressing task conflicts as debates vs. disagreements increases perceived receptivity to dissenting opinions in groups",
+  "venue": "Organization Science",
+  "cited_by": [
+   "retrieval"
+  ]
+ },
+ {
+  "key": "tulving|1966|availability-versus-accessibility",
+  "authors": [
+   "Tulving",
+   "Pearlstone"
+  ],
+  "year": 1966,
+  "title": "Availability versus accessibility of information in memory for words",
+  "venue": "Journal of Verbal Learning and Verbal Behavior",
+  "cited_by": [
+   "retrieval"
+  ]
+ },
+ {
+  "key": "tulving|1973|encoding-specificity-retrieval",
+  "authors": [
+   "Tulving",
+   "Thomson"
+  ],
+  "year": 1973,
+  "title": "Encoding specificity and retrieval processes in episodic memory",
+  "venue": "Psychological Review",
+  "cited_by": [
+   "retrieval"
+  ]
+ },
+ {
+  "key": "vance|2018|tuning-out-security",
+  "authors": [
+   "Vance",
+   "Jenkins",
+   "Anderson",
+   "Bjornn",
+   "Kirwan"
+  ],
+  "year": 2018,
+  "title": "Tuning out security warnings: A longitudinal examination of habituation through fMRI, eye tracking, and field experiments",
+  "venue": "MIS Quarterly",
+  "cited_by": [
+   "retrieval",
+   "errors",
+   "stimulus"
+  ]
+ },
+ {
+  "key": "wang|2023|measuring-user-competence",
+  "authors": [
+   "Wang",
+   "Rau",
+   "Yuan"
+  ],
+  "year": 2023,
+  "title": "Measuring user competence in using artificial intelligence: validity and reliability of artificial intelligence literacy scale",
+  "venue": "Behaviour & Information Technology",
+  "cited_by": [
+   "retrieval"
+  ]
+ },
+ {
+  "key": "wang|2024|friend-foe-teaming",
+  "authors": [
+   "Wang",
+   "Gao",
+   "Agarwal"
+  ],
+  "year": 2024,
+  "title": "Friend or foe? Teaming between artificial intelligence and workers with variation in experience",
+  "venue": "Management Science",
+  "cited_by": [
+   "retrieval"
+  ]
+ },
+ {
+  "key": "wixted|2004|psychology-neuroscience-forgetting",
+  "authors": [
+   "Wixted"
+  ],
+  "year": 2004,
+  "title": "The psychology and neuroscience of forgetting",
+  "venue": "Annual Review of Psychology",
+  "cited_by": [
+   "retrieval"
+  ]
+ },
+ {
+  "key": "yin|2026|illusion-authenticity-online",
+  "authors": [
+   "Yin",
+   "Bond",
+   "Zhang"
+  ],
+  "year": 2026,
+  "title": "The illusion of authenticity in online reviews: Truth bias and the role of valence",
+  "venue": "Information Systems Research",
+  "cited_by": [
+   "retrieval"
+  ]
+ },
+ {
+  "key": "you|2022|algorithmic-versus-human",
+  "authors": [
+   "You",
+   "Yang",
+   "Li"
+  ],
+  "year": 2022,
+  "title": "Algorithmic versus human advice: Does presenting prediction performance matter for algorithm appreciation?",
+  "venue": "Journal of Management Information Systems",
+  "cited_by": [
+   "retrieval",
+   "errors"
+  ]
+ },
+ {
+  "key": "vonzahn|2025|knowing-not-know",
+  "authors": [
+   "von Zahn",
+   "Liebich",
+   "Jussupow",
+   "Hinz",
+   "Bauer"
+  ],
+  "year": 2025,
+  "title": "Knowing (not) to know: Explainable artificial intelligence and human metacognition",
+  "venue": "Information Systems Research",
+  "cited_by": [
+   "retrieval"
+  ]
+ },
+ {
+  "key": "misra|2026|measuring-ai-diffusion",
+  "authors": [
+   "Misra",
+   "Wang",
+   "Mccullers",
+   "White",
+   "Ferres"
+  ],
+  "year": 2026,
+  "title": "Measuring AI diffusion: A population-normalized metric for tracking global AI usage",
+  "venue": "Preprint",
+  "cited_by": [
+   "errors"
+  ]
+ },
+ {
+  "key": "jain|2021|editorial-special-section",
+  "authors": [
+   "Jain",
+   "Padmanabhan",
+   "Pavlou",
+   "Raghu"
+  ],
+  "year": 2021,
+  "title": "Editorial for the special section on humans, algorithms, and augmented intelligence: The future of work, organizations, and society",
+  "venue": "Information Systems Research",
+  "cited_by": [
+   "errors"
+  ]
+ },
+ {
+  "key": "tarafdar|2023|algorithms-coworkers-human",
+  "authors": [
+   "Tarafdar",
+   "Page",
+   "Marabelli"
+  ],
+  "year": 2023,
+  "title": "Algorithms as co-workers: Human algorithm role interactions in algorithmic work",
+  "venue": "Information Systems Journal",
+  "cited_by": [
+   "errors"
+  ]
+ },
+ {
+  "key": "pinski|2024|executives-cant-get",
+  "authors": [
+   "Pinski",
+   "Tarafdar",
+   "Benlian"
+  ],
+  "year": 2024,
+  "title": "Why executives can't get comfortable with AI",
+  "venue": "MIT Sloan Management Review",
+  "cited_by": [
+   "errors"
+  ]
+ },
+ {
+  "key": "grote|2024|taming-artificial-intelligence",
+  "authors": [
+   "Grote",
+   "Parker",
+   "Crowston"
+  ],
+  "year": 2024,
+  "title": "Taming artificial intelligence: A theory of control-accountability alignment among AI developers and users",
+  "venue": "Academy of Management Review",
+  "cited_by": [
+   "errors",
+   "secd"
+  ]
+ },
+ {
+  "key": "lambrecht|2017|algorithmic-bias-empirical",
+  "authors": [
+   "Lambrecht",
+   "Tucker"
+  ],
+  "year": 2017,
+  "title": "Algorithmic bias? An empirical study of apparent gender-based discrimination in the display of STEM career ads",
+  "venue": "Management Science",
+  "cited_by": [
+   "errors"
+  ]
+ },
+ {
+  "key": "perspective|2022|perspective-make-mistakes",
+  "authors": [
+   "Perspective"
+  ],
+  "year": 2022,
+  "title": "Does Perspective make mistakes?",
+  "venue": "Google Perspective",
+  "cited_by": [
+   "errors"
+  ]
+ },
+ {
+  "key": "meta|2022|enforcement-technology-works",
+  "authors": [
+   "Meta"
+  ],
+  "year": 2022,
+  "title": "How enforcement technology works",
+  "venue": "Meta Transparency Center",
+  "cited_by": [
+   "errors"
+  ]
+ },
+ {
+  "key": "galletta|2005|spellchecking-software-need",
+  "authors": [
+   "Galletta",
+   "Durcikova",
+   "Everard",
+   "Jones"
+  ],
+  "year": 2005,
+  "title": "Does spell-checking software need a warning label?",
+  "venue": "Communications of the ACM",
+  "cited_by": [
+   "errors"
+  ]
+ },
+ {
+  "key": "gunaratne|2018|persuasive-power-algorithmic",
+  "authors": [
+   "Gunaratne",
+   "Zalmanson",
+   "Nov"
+  ],
+  "year": 2018,
+  "title": "The persuasive power of algorithmic and crowdsourced advice",
+  "venue": "Journal of Management Information Systems",
+  "cited_by": [
+   "errors"
+  ]
+ },
+ {
+  "key": "yang|2023|gpt-loop-evidence",
+  "authors": [
+   "Yang",
+   "Allen",
+   "Restrepo-Amariles",
+   "Troussel"
+  ],
+  "year": 2023,
+  "title": "GPT in the loop: Evidence from the field",
+  "venue": "Proceedings of the Hawaii International Conference on System Sciences",
+  "cited_by": [
+   "errors"
+  ]
+ },
+ {
+  "key": "burton|2020|systematic-review-algorithm",
+  "authors": [
+   "Burton",
+   "Stein",
+   "Jensen"
+  ],
+  "year": 2020,
+  "title": "A systematic review of algorithm aversion in augmented decision making",
+  "venue": "Journal of Behavioral Decision Making",
+  "cited_by": [
+   "errors"
+  ]
+ },
+ {
+  "key": "dietvorst|2015|algorithm-aversion-people",
+  "authors": [
+   "Dietvorst",
+   "Simmons",
+   "Massey"
+  ],
+  "year": 2015,
+  "title": "Algorithm aversion: People erroneously avoid algorithms after seeing them err",
+  "venue": "Journal of Experimental Psychology: General",
+  "cited_by": [
+   "errors"
+  ]
+ },
+ {
+  "key": "wickens|2007|benefits-imperfect-diagnostic",
+  "authors": [
+   "Wickens",
+   "Dixon"
+  ],
+  "year": 2007,
+  "title": "The benefits of imperfect diagnostic automation: A synthesis of the literature",
+  "venue": "Theoretical Issues in Ergonomics Science",
+  "cited_by": [
+   "errors"
+  ]
+ },
+ {
+  "key": "turel|2023|prejudiced-against-machine",
+  "authors": [
+   "Turel",
+   "Kalhan"
+  ],
+  "year": 2023,
+  "title": "Prejudiced against the machine? Implicit associations and the transience of algorithm aversion",
+  "venue": "MIS Quarterly",
+  "cited_by": [
+   "errors",
+   "creativity"
+  ]
+ },
+ {
+  "key": "adam|2024|navigating-autonomy-control",
+  "authors": [
+   "Adam",
+   "Diebel",
+   "Goutier",
+   "Benlian"
+  ],
+  "year": 2024,
+  "title": "Navigating autonomy and control in human-AI delegation: User responses to technology- versus user-invoked task allocation",
+  "venue": "Decision Support Systems",
+  "cited_by": [
+   "errors"
+  ]
+ },
+ {
+  "key": "thuis|2023|who-takes-responsibility",
+  "authors": [
+   "Thuis",
+   "Li",
+   "van Heck"
+  ],
+  "year": 2023,
+  "title": "Who takes responsibility for AI? A field study on AI-related task shifts, explainability, and responsibility attributions",
+  "venue": "Proceedings of the International Conference on Information Systems",
+  "cited_by": [
+   "errors"
+  ]
+ },
+ {
+  "key": "schaschek|2024|about-rely-taxonomy",
+  "authors": [
+   "Schaschek",
+   "Spatscheck",
+   "Winkelmann"
+  ],
+  "year": 2024,
+  "title": "For those about to rely\u2014A taxonomy of experimental studies on AI reliance",
+  "venue": "Proceedings of the International Conference on Wirtschaftsinformatik",
+  "cited_by": [
+   "errors"
+  ]
+ },
+ {
+  "key": "wogalter|2018|communicationhuman-information-processing",
+  "authors": [
+   "Wogalter"
+  ],
+  "year": 2018,
+  "title": "Communication-human information processing (C-HIP) model",
+  "venue": "Forensic Human Factors and Ergonomics",
+  "cited_by": [
+   "errors"
+  ]
+ },
+ {
+  "key": "conzola|2001|communicationhuman-information-processing",
+  "authors": [
+   "Conzola",
+   "Wogalter"
+  ],
+  "year": 2001,
+  "title": "A communication\u2013human information processing (C\u2013HIP) approach to warning effectiveness in the workplace",
+  "venue": "Journal of Risk Research",
+  "cited_by": [
+   "errors"
+  ]
+ },
+ {
+  "key": "fugener|2021|will-humansintheloop-become",
+  "authors": [
+   "Fugener",
+   "Grahl",
+   "Gupta",
+   "Ketter"
+  ],
+  "year": 2021,
+  "title": "Will humans-in-the-loop become borgs? Merits and pitfalls of working with AI",
+  "venue": "MIS Quarterly",
+  "cited_by": [
+   "errors",
+   "secd",
+   "creativity",
+   "manufacturing"
+  ]
+ },
+ {
+  "key": "ni|2025|machine-behaviorism-exploring",
+  "authors": [
+   "Ni",
+   "Xu",
+   "Li",
+   "Zheng",
+   "Gu"
+  ],
+  "year": 2025,
+  "title": "Machine behaviorism: Exploring the behavioral dynamics of large language models in decision making",
+  "venue": "Proceedings of the Hawaii International Conference on System Sciences",
+  "cited_by": [
+   "errors"
+  ]
+ },
+ {
+  "key": "lu|2024|1-1-2",
+  "authors": [
+   "Lu",
+   "Zhang"
+  ],
+  "year": 2024,
+  "title": "1 + 1 > 2? Information, humans, and machines",
+  "venue": "Information Systems Research",
+  "cited_by": [
+   "errors"
+  ]
+ },
+ {
+  "key": "bahner|2008|misuse-automated-decision",
+  "authors": [
+   "Bahner",
+   "Huper",
+   "Manzey"
+  ],
+  "year": 2008,
+  "title": "Misuse of automated decision aids: Complacency, automation bias and the impact of training experience",
+  "venue": "International Journal of Human-Computer Studies",
+  "cited_by": [
+   "errors"
+  ]
+ },
+ {
+  "key": "chanfung|2021|overcoming-complacency-face",
+  "authors": [
+   "Chan Fung"
+  ],
+  "year": 2021,
+  "title": "Overcoming complacency in the face of infectious disease",
+  "venue": "Nature Medicine",
+  "cited_by": [
+   "errors"
+  ]
+ },
+ {
+  "key": "singh|1993|automationinduced-complacency-development",
+  "authors": [
+   "Singh",
+   "Molloy",
+   "Parasuraman"
+  ],
+  "year": 1993,
+  "title": "Automation-induced \"complacency\": Development of the complacency-potential rating scale",
+  "venue": "International Journal of Aviation Psychology",
+  "cited_by": [
+   "errors"
+  ]
+ },
+ {
+  "key": "castelo|2019|taskdependent-algorithm-aversion",
+  "authors": [
+   "Castelo",
+   "Bos",
+   "Lehmann"
+  ],
+  "year": 2019,
+  "title": "Task-dependent algorithm aversion",
+  "venue": "Journal of Marketing Research",
+  "cited_by": [
+   "errors",
+   "creativity"
+  ]
+ },
+ {
+  "key": "liu|2023|algorithm-aversion-evidence",
+  "authors": [
+   "Liu",
+   "Tang",
+   "Xia",
+   "Zhang",
+   "Zhu",
+   "Meng"
+  ],
+  "year": 2023,
+  "title": "Algorithm aversion: Evidence from ridesharing drivers",
+  "venue": "Management Science",
+  "cited_by": [
+   "errors"
+  ]
+ },
+ {
+  "key": "simon|1996|relationship-information-system",
+  "authors": [
+   "Simon",
+   "Grover",
+   "Teng",
+   "Whitcomb"
+  ],
+  "year": 1996,
+  "title": "The relationship of information system training methods and cognitive ability to end-user satisfaction, comprehension, and skill transfer: A longitudinal field study",
+  "venue": "Information Systems Research",
+  "cited_by": [
+   "errors"
+  ]
+ },
+ {
+  "key": "galletta|1995|social-influence-enduser",
+  "authors": [
+   "Galletta",
+   "Ahuja",
+   "Hartman",
+   "Teo",
+   "Peace"
+  ],
+  "year": 1995,
+  "title": "Social influence and end-user training",
+  "venue": "Communications of the ACM",
+  "cited_by": [
+   "errors"
+  ]
+ },
+ {
+  "key": "baker|2020|boeing-737-max",
+  "authors": [
+   "Baker"
+  ],
+  "year": 2020,
+  "title": "The Boeing 737 Max crashes have revived decades-old fears about what happens when airplane computers become more powerful than pilots",
+  "venue": "Business Insider",
+  "cited_by": [
+   "errors"
+  ]
+ },
+ {
+  "key": "skitka|2009|automation-bias-errors",
+  "authors": [
+   "Skitka",
+   "Mosier",
+   "Burdick",
+   "Rosenblatt"
+  ],
+  "year": 2009,
+  "title": "Automation bias and errors: Are crews better than individuals?",
+  "venue": "International Journal of Aviation Psychology",
+  "cited_by": [
+   "errors"
+  ]
+ },
+ {
+  "key": "wulff|2018|metaanalytic-review-two",
+  "authors": [
+   "Wulff",
+   "Mergenthaler-Canseco",
+   "Hertwig"
+  ],
+  "year": 2018,
+  "title": "A meta-analytic review of two modes of learning and the description-experience gap",
+  "venue": "Psychological Bulletin",
+  "cited_by": [
+   "errors"
+  ]
+ },
+ {
+  "key": "karmarkar|2023|unlikelihood-effect-knowing",
+  "authors": [
+   "Karmarkar",
+   "Kupor"
+  ],
+  "year": 2023,
+  "title": "The unlikelihood effect: When knowing more creates the perception of less",
+  "venue": "Journal of Experimental Psychology: General",
+  "cited_by": [
+   "errors"
+  ]
+ },
+ {
+  "key": "wogalter|2002|researchbased-guidelines-warning",
+  "authors": [
+   "Wogalter",
+   "Conzola",
+   "Smith-Jackson"
+  ],
+  "year": 2002,
+  "title": "Research-based guidelines for warning design and evaluation",
+  "venue": "Applied Ergonomics",
+  "cited_by": [
+   "errors"
+  ]
+ },
+ {
+  "key": "horner|2023|emotions-unexplored-fuel",
+  "authors": [
+   "Horner",
+   "Galletta",
+   "Crawford",
+   "Shirsat"
+  ],
+  "year": 2023,
+  "title": "Emotions: The unexplored fuel of fake news on social media",
+  "venue": "Fake News on the Internet",
+  "cited_by": [
+   "errors"
+  ]
+ },
+ {
+  "key": "schon|1986|reflective-practitioner-professionals",
+  "authors": [
+   "Schon"
+  ],
+  "year": 1986,
+  "title": "The reflective practitioner: How professionals think in action",
+  "venue": "Basic Books",
+  "cited_by": [
+   "errors"
+  ]
+ },
+ {
+  "key": "baird|2017|reflective-technology-assimilation",
+  "authors": [
+   "Baird",
+   "Davidson",
+   "Mathiassen"
+  ],
+  "year": 2017,
+  "title": "Reflective technology assimilation: Facilitating electronic health record assimilation in small physician practices",
+  "venue": "Journal of Management Information Systems",
+  "cited_by": [
+   "errors"
+  ]
+ },
+ {
+  "key": "yanow|2009|reflectioninaction-phenomenological-account",
+  "authors": [
+   "Yanow",
+   "Tsoukas"
+  ],
+  "year": 2009,
+  "title": "What is reflection-in-action? A phenomenological account",
+  "venue": "Journal of Management Studies",
+  "cited_by": [
+   "errors"
+  ]
+ },
+ {
+  "key": "savoli|2020|examining-chronically-ill",
+  "authors": [
+   "Savoli",
+   "Barki"
+  ],
+  "year": 2020,
+  "title": "Examining how chronically ill patients' reactions to and effective use of information technology can influence how well they self-manage their illness",
+  "venue": "MIS Quarterly",
+  "cited_by": [
+   "errors"
+  ]
+ },
+ {
+  "key": "bao|2020|patientprovider-engagement-its",
+  "authors": [
+   "Bao",
+   "Bardhan",
+   "Singh",
+   "Meyer",
+   "Kirksey"
+  ],
+  "year": 2020,
+  "title": "Patient-provider engagement and its impact on health outcomes: A longitudinal study of patient portal use",
+  "venue": "MIS Quarterly",
+  "cited_by": [
+   "errors"
+  ]
+ },
+ {
+  "key": "hauptmann|2023|theorydriven-visual-design",
+  "authors": [
+   "Hauptmann",
+   "Boehm",
+   "Madenach",
+   "Lurz",
+   "Groh",
+   "Gedrich",
+   "Krcmar"
+  ],
+  "year": 2023,
+  "title": "Theory-driven visual design to support reflective dietary practice via mHealth: A design science approach",
+  "venue": "AIS Transactions on Human-Computer Interaction",
+  "cited_by": [
+   "errors"
+  ]
+ },
+ {
+  "key": "davis|1993|training-end-users",
+  "authors": [
+   "Davis",
+   "Bostrom"
+  ],
+  "year": 1993,
+  "title": "Training end users: An experimental investigation of the roles of the computer interface and training methods",
+  "venue": "MIS Quarterly",
+  "cited_by": [
+   "errors"
+  ]
+ },
+ {
+  "key": "schuetzler|2020|impact-chatbot-conversational",
+  "authors": [
+   "Schuetzler",
+   "Grimes",
+   "Giboney"
+  ],
+  "year": 2020,
+  "title": "The impact of chatbot conversational skill on engagement and perceived humanness",
+  "venue": "Journal of Management Information Systems",
+  "cited_by": [
+   "errors"
+  ]
+ },
+ {
+  "key": "galletta|1985|learning-model-information",
+  "authors": [
+   "Galletta"
+  ],
+  "year": 1985,
+  "title": "A learning model of information systems: The effects of orienting materials, ability, expectations, and experience on performance, usage, and attitudes (advance, cognitive organizers, office automation, electronic mail, computers)",
+  "venue": "University of Minnesota",
+  "cited_by": [
+   "errors"
+  ]
+ },
+ {
+  "key": "barnett|2002|where-we-apply",
+  "authors": [
+   "Barnett",
+   "Ceci"
+  ],
+  "year": 2002,
+  "title": "When and where do we apply what we learn? A taxonomy for far transfer",
+  "venue": "Psychological Bulletin",
+  "cited_by": [
+   "errors"
+  ]
+ },
+ {
+  "key": "merritt|2019|automationinduced-complacency-potential",
+  "authors": [
+   "Merritt",
+   "Ako-Brew",
+   "Bryant",
+   "Staley",
+   "McKenna",
+   "Leone",
+   "Shirase"
+  ],
+  "year": 2019,
+  "title": "Automation-induced complacency potential: Development and validation of a new scale",
+  "venue": "Frontiers in Psychology",
+  "cited_by": [
+   "errors"
+  ]
+ },
+ {
+  "key": "mosier|1996|human-decision-makers",
+  "authors": [
+   "Mosier",
+   "Skitka"
+  ],
+  "year": 1996,
+  "title": "Human decision makers and automated decision aids: Made for each other?",
+  "venue": "CRC Press",
+  "cited_by": [
+   "errors"
+  ]
+ },
+ {
+  "key": "ford|2018|transfer-training-known",
+  "authors": [
+   "Ford",
+   "Baldwin",
+   "Prasad"
+  ],
+  "year": 2018,
+  "title": "Transfer of training: The known and the unknown",
+  "venue": "Annual Review of Organizational Psychology and Organizational Behavior",
+  "cited_by": [
+   "errors"
+  ]
+ },
+ {
+  "key": "acar|2024|collective-creativity-innovation",
+  "authors": [
+   "Acar",
+   "Tuncdogan",
+   "van Knippenberg",
+   "Lakhani"
+  ],
+  "year": 2024,
+  "title": "Collective creativity and innovation: An interdisciplinary review, integration, and research agenda",
+  "venue": "Journal of Management",
+  "cited_by": [
+   "secd"
+  ]
+ },
+ {
+  "key": "aral|2011|diversitybandwidth-tradeoff",
+  "authors": [
+   "Aral",
+   "Van Alstyne"
+  ],
+  "year": 2011,
+  "title": "The diversity-bandwidth trade-off",
+  "venue": "American Journal of Sociology",
+  "cited_by": [
+   "secd"
+  ]
+ },
+ {
+  "key": "bateman|2011|research-note-impact",
+  "authors": [
+   "Bateman",
+   "Gray",
+   "Butler"
+  ],
+  "year": 2011,
+  "title": "Research note\u2014the impact of community commitment on participation in online communities",
+  "venue": "Information Systems Research",
+  "cited_by": [
+   "secd"
+  ]
+ },
+ {
+  "key": "baumann|2019|effective-search-rugged",
+  "authors": [
+   "Baumann",
+   "Schmidt",
+   "Stieglitz"
+  ],
+  "year": 2019,
+  "title": "Effective search in rugged performance landscapes: A review and outlook",
+  "venue": "Journal of Management",
+  "cited_by": [
+   "secd"
+  ]
+ },
+ {
+  "key": "boussioux|2024|crowdless-future-generative",
+  "authors": [
+   "Boussioux",
+   "Lane",
+   "Zhang",
+   "Jacimovic",
+   "Lakhani"
+  ],
+  "year": 2024,
+  "title": "The crowdless future? Generative AI and creative problem-solving",
+  "venue": "Organization Science",
+  "cited_by": [
+   "secd"
+  ]
+ },
+ {
+  "key": "burtch|2022|peer-awards-motivate",
+  "authors": [
+   "Burtch",
+   "He",
+   "Hong",
+   "Lee"
+  ],
+  "year": 2022,
+  "title": "How do peer awards motivate creative content? Experimental evidence from Reddit",
+  "venue": "Management Science",
+  "cited_by": [
+   "secd"
+  ]
+ },
+ {
+  "key": "burtch|2024|consequences-generative-ai",
+  "authors": [
+   "Burtch",
+   "Lee",
+   "Chen"
+  ],
+  "year": 2024,
+  "title": "The consequences of generative AI for online knowledge communities",
+  "venue": "Scientific Reports",
+  "cited_by": [
+   "secd"
+  ]
+ },
+ {
+  "key": "butler|2014|attractionselectionattrition-theory-online",
+  "authors": [
+   "Butler",
+   "Bateman",
+   "Gray",
+   "Diamant"
+  ],
+  "year": 2014,
+  "title": "An attraction-selection-attrition theory of online community size and resilience",
+  "venue": "MIS Quarterly",
+  "cited_by": [
+   "secd"
+  ]
+ },
+ {
+  "key": "cao|2025|relevancy-everything-deeplearning",
+  "authors": [
+   "Cao",
+   "Li",
+   "Zhang"
+  ],
+  "year": 2025,
+  "title": "Is relevancy everything? A deep-learning approach to understand the effect of image-text congruence",
+  "venue": "Management Science",
+  "cited_by": [
+   "secd"
+  ]
+ },
+ {
+  "key": "cecezkecmanovic|2014|sociomateriality-information-systems",
+  "authors": [
+   "Cecez-Kecmanovic",
+   "Galliers",
+   "Henfridsson",
+   "Newell",
+   "Vidgen"
+  ],
+  "year": 2014,
+  "title": "The sociomateriality of information systems: Current status, future directions",
+  "venue": "MIS Quarterly",
+  "cited_by": [
+   "secd"
+  ]
+ },
+ {
+  "key": "chen|2022|intelligent-system-knowledge",
+  "authors": [
+   "Chen",
+   "Hsieh",
+   "Rai"
+  ],
+  "year": 2022,
+  "title": "How does intelligent system knowledge empowerment yield payoffs? Uncovering the adaptation mechanisms and contingency role of work experience",
+  "venue": "Information Systems Research",
+  "cited_by": [
+   "secd"
+  ]
+ },
+ {
+  "key": "constantinides|2023|augmenting-humanmachine-learning",
+  "authors": [
+   "Constantinides",
+   "Rai"
+  ],
+  "year": 2023,
+  "title": "Augmenting human-machine learning",
+  "venue": "Academy of Management Proceedings",
+  "cited_by": [
+   "secd"
+  ]
+ },
+ {
+  "key": "delriochanona|2024|large-language-models",
+  "authors": [
+   "Del Rio-Chanona",
+   "Laurentsyeva",
+   "Wachs"
+  ],
+  "year": 2024,
+  "title": "Large language models reduce public knowledge sharing on online Q&A platforms",
+  "venue": "PNAS Nexus",
+  "cited_by": [
+   "secd"
+  ]
+ },
+ {
+  "key": "dellermann|2021|future-humanai-collaboration",
+  "authors": [
+   "Dellermann",
+   "Calma",
+   "Lipusch",
+   "Weber",
+   "Weigel",
+   "Ebel"
+  ],
+  "year": 2021,
+  "title": "The future of human-AI collaboration: A taxonomy of design knowledge for hybrid intelligence systems",
+  "venue": "Preprint",
+  "cited_by": [
+   "secd"
+  ]
+ },
+ {
+  "key": "delone|2003|delone-mclean-model",
+  "authors": [
+   "DeLone",
+   "McLean"
+  ],
+  "year": 2003,
+  "title": "The DeLone and McLean model of information systems success: A ten-year update",
+  "venue": "Journal of Management Information Systems",
+  "cited_by": [
+   "secd"
+  ]
+ },
+ {
+  "key": "doshi|2024|generative-ai-enhances",
+  "authors": [
+   "Doshi",
+   "Hauser"
+  ],
+  "year": 2024,
+  "title": "Generative AI enhances individual creativity but reduces the collective diversity of novel content",
+  "venue": "Science Advances",
+  "cited_by": [
+   "secd"
+  ]
+ },
+ {
+  "key": "durcikova|2014|knowledge-validation-processes",
+  "authors": [
+   "Durcikova",
+   "Gray"
+  ],
+  "year": 2014,
+  "title": "How knowledge validation processes affect knowledge contribution",
+  "venue": "Journal of Management Information Systems",
+  "cited_by": [
+   "secd"
+  ]
+ },
+ {
+  "key": "goodhue|1995|tasktechnology-fit-individual",
+  "authors": [
+   "Goodhue",
+   "Thompson"
+  ],
+  "year": 1995,
+  "title": "Task-technology fit and individual performance",
+  "venue": "MIS Quarterly",
+  "cited_by": [
+   "secd"
+  ]
+ },
+ {
+  "key": "grisold|2025|guardrails-humanai-ecologies",
+  "authors": [
+   "Grisold",
+   "Berente",
+   "Seidel"
+  ],
+  "year": 2025,
+  "title": "Guardrails for human-AI ecologies: Norm-based coordination and design for predictability",
+  "venue": "MIS Quarterly",
+  "cited_by": [
+   "secd"
+  ]
+ },
+ {
+  "key": "guo|2024|curious-decline-linguistic",
+  "authors": [
+   "Guo",
+   "Shang",
+   "Vazirgiannis",
+   "Clavel"
+  ],
+  "year": 2024,
+  "title": "The curious decline of linguistic diversity: Training language models on synthetic text",
+  "venue": "Findings of the Association for Computational Linguistics: NAACL 2024",
+  "cited_by": [
+   "secd"
+  ]
+ },
+ {
+  "key": "hall|2007|encoding-decoding-television",
+  "authors": [
+   "Hall"
+  ],
+  "year": 2007,
+  "title": "Encoding and decoding in the television discourse",
+  "venue": "Routledge",
+  "cited_by": [
+   "secd"
+  ]
+ },
+ {
+  "key": "harrison|2007|difference-diversity-constructs",
+  "authors": [
+   "Harrison",
+   "Klein"
+  ],
+  "year": 2007,
+  "title": "What's the difference? Diversity constructs as separation, variety, or disparity in organizations",
+  "venue": "Academy of Management Review",
+  "cited_by": [
+   "secd"
+  ]
+ },
+ {
+  "key": "huang|2025|novelty-content-creation",
+  "authors": [
+   "Huang",
+   "Kaul",
+   "Narayanan"
+  ],
+  "year": 2025,
+  "title": "Novelty in content creation: Experimental results using deep learning-based image recognition on a large social network",
+  "venue": "Marketing Science",
+  "cited_by": [
+   "secd"
+  ]
+ },
+ {
+  "key": "huang|2018|platform-sponsor-investments",
+  "authors": [
+   "Huang",
+   "Tafti",
+   "Mithas"
+  ],
+  "year": 2018,
+  "title": "Platform sponsor investments and user contributions in knowledge communities: The role of knowledge seeding",
+  "venue": "MIS Quarterly",
+  "cited_by": [
+   "secd"
+  ]
+ },
+ {
+  "key": "hukal|2020|platform-signaling-generating",
+  "authors": [
+   "Hukal",
+   "Henfridsson",
+   "Shaikh",
+   "Parker"
+  ],
+  "year": 2020,
+  "title": "Platform signaling for generating platform content",
+  "venue": "MIS Quarterly",
+  "cited_by": [
+   "secd"
+  ]
+ },
+ {
+  "key": "im|2014|itenabled-coordination-ambidextrous",
+  "authors": [
+   "Im",
+   "Rai"
+  ],
+  "year": 2014,
+  "title": "IT-enabled coordination for ambidextrous interorganizational relationships",
+  "venue": "Information Systems Research",
+  "cited_by": [
+   "secd"
+  ]
+ },
+ {
+  "key": "kitchens|2020|understanding-echo-chambers",
+  "authors": [
+   "Kitchens",
+   "Johnson",
+   "Gray"
+  ],
+  "year": 2020,
+  "title": "Understanding echo chambers and filter bubbles: The impact of social media on diversification and partisan shifts in news consumption",
+  "venue": "MIS Quarterly",
+  "cited_by": [
+   "secd"
+  ]
+ },
+ {
+  "key": "lee|2024|empirical-investigation-impact",
+  "authors": [
+   "Lee",
+   "Chung"
+  ],
+  "year": 2024,
+  "title": "An empirical investigation of the impact of ChatGPT on creativity",
+  "venue": "Nature Human Behaviour",
+  "cited_by": [
+   "secd"
+  ]
+ },
+ {
+  "key": "li|2024|variety-seeking-meets",
+  "authors": [
+   "Li",
+   "Tuzhilin"
+  ],
+  "year": 2024,
+  "title": "When variety seeking meets unexpectedness: Incorporating variety-seeking behaviors into design of unexpected recommender systems",
+  "venue": "Information Systems Research",
+  "cited_by": [
+   "secd"
+  ]
+ },
+ {
+  "key": "liu|2020|finding-useful-solutions",
+  "authors": [
+   "Liu",
+   "Wang",
+   "Fan",
+   "Zhang"
+  ],
+  "year": 2020,
+  "title": "Finding useful solutions in online knowledge communities: A theory-driven design and multilevel analysis",
+  "venue": "Information Systems Research",
+  "cited_by": [
+   "secd"
+  ]
+ },
+ {
+  "key": "meincke|2024|prompting-diverse-ideas",
+  "authors": [
+   "Meincke",
+   "Mollick",
+   "Terwiesch"
+  ],
+  "year": 2024,
+  "title": "Prompting diverse ideas: Increasing AI idea variance",
+  "venue": "Preprint",
+  "cited_by": [
+   "secd"
+  ]
+ },
+ {
+  "key": "mikolov|2013|efficient-estimation-word",
+  "authors": [
+   "Mikolov",
+   "Chen",
+   "Corrado",
+   "Dean"
+  ],
+  "year": 2013,
+  "title": "Efficient estimation of word representations in vector space",
+  "venue": "Preprint",
+  "cited_by": [
+   "secd"
+  ]
+ },
+ {
+  "key": "moon|2025|homogenizing-effect-large",
+  "authors": [
+   "Moon",
+   "Green",
+   "Kushlev"
+  ],
+  "year": 2025,
+  "title": "Homogenizing effect of large language models (LLMs) on creative diversity: An empirical comparison of human and ChatGPT writing",
+  "venue": "Computers in Human Behavior: Artificial Humans",
+  "cited_by": [
+   "secd"
+  ]
+ },
+ {
+  "key": "park|2020|configurations-achieving-organizational",
+  "authors": [
+   "Park",
+   "Pavlou",
+   "Saraf"
+  ],
+  "year": 2020,
+  "title": "Configurations for achieving organizational ambidexterity with digitization",
+  "venue": "Information Systems Research",
+  "cited_by": [
+   "secd"
+  ]
+ },
+ {
+  "key": "peterson|2025|ai-problem-knowledge",
+  "authors": [
+   "Peterson"
+  ],
+  "year": 2025,
+  "title": "AI and the problem of knowledge collapse",
+  "venue": "AI & Society",
+  "cited_by": [
+   "secd"
+  ]
+ },
+ {
+  "key": "rai|2002|assessing-validity-success",
+  "authors": [
+   "Rai",
+   "Lang",
+   "Welker"
+  ],
+  "year": 2002,
+  "title": "Assessing the validity of IS success models: An empirical test and theoretical analysis",
+  "venue": "Information Systems Research",
+  "cited_by": [
+   "secd"
+  ]
+ },
+ {
+  "key": "rai|2026|fair-design-theory",
+  "authors": [
+   "Rai",
+   "Tian",
+   "Xue"
+  ],
+  "year": 2026,
+  "title": "FAIR: A design theory for artificial intelligence fairness",
+  "venue": "MIS Quarterly",
+  "cited_by": [
+   "secd"
+  ]
+ },
+ {
+  "key": "schegloff|2000|granularity",
+  "authors": [
+   "Schegloff"
+  ],
+  "year": 2000,
+  "title": "On granularity",
+  "venue": "Annual Review of Sociology",
+  "cited_by": [
+   "secd"
+  ]
+ },
+ {
+  "key": "seddon|1997|respecification-extension-delone",
+  "authors": [
+   "Seddon"
+  ],
+  "year": 1997,
+  "title": "A respecification and extension of the DeLone and McLean model of IS success",
+  "venue": "Information Systems Research",
+  "cited_by": [
+   "secd"
+  ]
+ },
+ {
+  "key": "shankar|2024|advances-generative-ai",
+  "authors": [
+   "Shankar",
+   "Sim"
+  ],
+  "year": 2024,
+  "title": "Advances in generative AI and platform moderation: Implications for online knowledge sharing",
+  "venue": "Working paper",
+  "cited_by": [
+   "secd"
+  ]
+ },
+ {
+  "key": "shumailov|2024|ai-models-collapse",
+  "authors": [
+   "Shumailov",
+   "Shumaylov",
+   "Zhao",
+   "Papernot",
+   "Anderson",
+   "Gal"
+  ],
+  "year": 2024,
+  "title": "AI models collapse when trained on recursively generated data",
+  "venue": "Nature",
+  "cited_by": [
+   "secd"
+  ]
+ },
+ {
+  "key": "su|2023|generative-ai-human",
+  "authors": [
+   "Su",
+   "Zhang",
+   "Wang",
+   "Qiu"
+  ],
+  "year": 2023,
+  "title": "Generative AI and human knowledge sharing: Evidence from a natural experiment",
+  "venue": "Working paper",
+  "cited_by": [
+   "secd"
+  ]
+ },
+ {
+  "key": "tunc|2021|online-product-reviews",
+  "authors": [
+   "Tunc",
+   "Cavusoglu",
+   "Raghunathan"
+  ],
+  "year": 2021,
+  "title": "Online product reviews: Finer-grained rating scheme superior coarser one?",
+  "venue": "MIS Quarterly",
+  "cited_by": [
+   "secd"
+  ]
+ },
+ {
+  "key": "vonkrogh|2018|artificial-intelligence-organizations",
+  "authors": [
+   "von Krogh"
+  ],
+  "year": 2018,
+  "title": "Artificial intelligence in organizations: New opportunities for phenomenon-based theorizing",
+  "venue": "Academy of Management Discoveries",
+  "cited_by": [
+   "secd"
+  ]
+ },
+ {
+  "key": "wang|2013|social-influence-knowledge",
+  "authors": [
+   "Wang",
+   "Meister",
+   "Gray"
+  ],
+  "year": 2013,
+  "title": "Social influence and knowledge management systems use: Evidence from panel data",
+  "venue": "MIS Quarterly",
+  "cited_by": [
+   "secd"
+  ]
+ },
+ {
+  "key": "wenger|2025|were-different-were",
+  "authors": [
+   "Wenger",
+   "Kenett"
+  ],
+  "year": 2025,
+  "title": "We're different, we're the same: Creative homogeneity across LLMs",
+  "venue": "Preprint",
+  "cited_by": [
+   "secd"
+  ]
+ },
+ {
+  "key": "yan|2018|differential-innovativeness-outcomes",
+  "authors": [
+   "Yan",
+   "Leidner",
+   "Benbya"
+  ],
+  "year": 2018,
+  "title": "Differential innovativeness outcomes of user and employee participation in an online user innovation community",
+  "venue": "Journal of Management Information Systems",
+  "cited_by": [
+   "secd"
+  ]
+ },
+ {
+  "key": "abadie|2006|large-sample-properties",
+  "authors": [
+   "Abadie",
+   "Imbens"
+  ],
+  "year": 2006,
+  "title": "Large sample properties of matching estimators for average treatment effects",
+  "venue": "Econometrica",
+  "cited_by": [
+   "creativity"
+  ]
+ },
+ {
+  "key": "austin|2011|introduction-propensity-score",
+  "authors": [
+   "Austin"
+  ],
+  "year": 2011,
+  "title": "An introduction to propensity score methods for reducing the effects of confounding in observational studies",
+  "venue": "Multivariate Behavioral Research",
+  "cited_by": [
+   "creativity"
+  ]
+ },
+ {
+  "key": "barlow|2018|guilty-association-productlevel",
+  "authors": [
+   "Barlow",
+   "Verhaal",
+   "Hoskins"
+  ],
+  "year": 2018,
+  "title": "Guilty by association: Product-level category stigma and audience expectations in the U.S. craft beer industry",
+  "venue": "Journal of Management",
+  "cited_by": [
+   "creativity"
+  ]
+ },
+ {
+  "key": "benbya|2021|special-issue-editorial",
+  "authors": [
+   "Benbya",
+   "Pachidi",
+   "Jarvenpaa"
+  ],
+  "year": 2021,
+  "title": "Special issue editorial: Artificial intelligence in organizations: Implications for information systems research",
+  "venue": "Journal of the Association for Information Systems",
+  "cited_by": [
+   "creativity"
+  ]
+ },
+ {
+  "key": "burtch|2013|empirical-examination-antecedents",
+  "authors": [
+   "Burtch",
+   "Ghose",
+   "Wattal"
+  ],
+  "year": 2013,
+  "title": "An empirical examination of the antecedents and consequences of contribution patterns in crowd-funded markets",
+  "venue": "Information Systems Research",
+  "cited_by": [
+   "creativity"
+  ]
+ },
+ {
+  "key": "burtch|2016|secret-admirers-empirical",
+  "authors": [
+   "Burtch",
+   "Ghose",
+   "Wattal"
+  ],
+  "year": 2016,
+  "title": "Secret admirers: An empirical examination of information hiding and contribution dynamics in online crowdfunding",
+  "venue": "Information Systems Research",
+  "cited_by": [
+   "creativity"
+  ]
+ },
+ {
+  "key": "calic|2016|kicking-off-social",
+  "authors": [
+   "Calic",
+   "Mosakowski"
+  ],
+  "year": 2016,
+  "title": "Kicking off social entrepreneurship: How a sustainability orientation influences crowdfunding success",
+  "venue": "Journal of Management Studies",
+  "cited_by": [
+   "creativity"
+  ]
+ },
+ {
+  "key": "carroll|2009|organizational-construction-authenticity",
+  "authors": [
+   "Carroll",
+   "Wheaton"
+  ],
+  "year": 2009,
+  "title": "The organizational construction of authenticity: An examination of contemporary food and dining in the U.S.",
+  "venue": "Research in Organizational Behavior",
+  "cited_by": [
+   "creativity"
+  ]
+ },
+ {
+  "key": "chakraborty|2021|signaling-crowd-private",
+  "authors": [
+   "Chakraborty",
+   "Swinney"
+  ],
+  "year": 2021,
+  "title": "Signaling to the crowd: Private quality information and rewards-based crowdfunding",
+  "venue": "Manufacturing & Service Operations Management",
+  "cited_by": [
+   "creativity"
+  ]
+ },
+ {
+  "key": "chan|2017|crowdfunding-innovative-ideas",
+  "authors": [
+   "Chan",
+   "Parhankangas"
+  ],
+  "year": 2017,
+  "title": "Crowdfunding innovative ideas: How incremental and radical innovativeness influence funding outcomes",
+  "venue": "Entrepreneurship Theory and Practice",
+  "cited_by": [
+   "creativity"
+  ]
+ },
+ {
+  "key": "chen|1999|heuristicsystematic-model-its",
+  "authors": [
+   "Chen",
+   "Chaiken"
+  ],
+  "year": 1999,
+  "title": "The heuristic-systematic model in its broader context",
+  "venue": "Dual-Process Theories in Social Psychology",
+  "cited_by": [
+   "creativity"
+  ]
+ },
+ {
+  "key": "connelly|2011|signaling-theory-review",
+  "authors": [
+   "Connelly",
+   "Certo",
+   "Ireland",
+   "Reutzel"
+  ],
+  "year": 2011,
+  "title": "Signaling theory: A review and assessment",
+  "venue": "Journal of Management",
+  "cited_by": [
+   "creativity"
+  ]
+ },
+ {
+  "key": "cornelius|2020|role-customer-investor",
+  "authors": [
+   "Cornelius",
+   "Gokpinar"
+  ],
+  "year": 2020,
+  "title": "The role of customer investor involvement in crowdfunding success",
+  "venue": "Management Science",
+  "cited_by": [
+   "creativity"
+  ]
+ },
+ {
+  "key": "cumming|2023|disentangling-crowdfunding-fraudfunding",
+  "authors": [
+   "Cumming",
+   "Hornuf",
+   "Karami",
+   "Schweizer"
+  ],
+  "year": 2023,
+  "title": "Disentangling crowdfunding from fraudfunding",
+  "venue": "Journal of Business Ethics",
+  "cited_by": [
+   "creativity"
+  ]
+ },
+ {
+  "key": "dang|2024|extended-artificial-intelligence",
+  "authors": [
+   "Dang",
+   "Liu"
+  ],
+  "year": 2024,
+  "title": "Extended artificial intelligence aversion: People deny humanness to artificial intelligence users",
+  "venue": "Journal of Personality and Social Psychology",
+  "cited_by": [
+   "creativity"
+  ]
+ },
+ {
+  "key": "deedspamphile|2023|bounded-role-statedlived",
+  "authors": [
+   "Deeds Pamphile",
+   "Ruttan"
+  ],
+  "year": 2023,
+  "title": "The (bounded) role of stated-lived value congruence and authenticity in employee evaluations of organizations",
+  "venue": "Organization Science",
+  "cited_by": [
+   "creativity"
+  ]
+ },
+ {
+  "key": "featherman|2006|authentic-artificial-understanding",
+  "authors": [
+   "Featherman",
+   "Valacich",
+   "Wells"
+  ],
+  "year": 2006,
+  "title": "Is that authentic or artificial? Understanding consumer perceptions of risk in e-service encounters",
+  "venue": "Information Systems Journal",
+  "cited_by": [
+   "creativity"
+  ]
+ },
+ {
+  "key": "festinger|1957|theory-cognitive-dissonance",
+  "authors": [
+   "Festinger"
+  ],
+  "year": 1957,
+  "title": "A theory of cognitive dissonance",
+  "venue": "Stanford University Press",
+  "cited_by": [
+   "creativity"
+  ]
+ },
+ {
+  "key": "frake|2017|selling-out-inauthenticity",
+  "authors": [
+   "Frake"
+  ],
+  "year": 2017,
+  "title": "Selling out: The inauthenticity discount in the craft beer industry",
+  "venue": "Management Science",
+  "cited_by": [
+   "creativity"
+  ]
+ },
+ {
+  "key": "fu|2025|budget-disclosure-crowdfunding",
+  "authors": [
+   "Fu",
+   "Shang",
+   "Tong"
+  ],
+  "year": 2025,
+  "title": "Budget disclosure in crowdfunding: Information asymmetry and cost transparency",
+  "venue": "Manufacturing & Service Operations Management",
+  "cited_by": [
+   "creativity"
+  ]
+ },
+ {
+  "key": "gefen|2003|trust-tam-online",
+  "authors": [
+   "Gefen",
+   "Karahanna",
+   "Straub"
+  ],
+  "year": 2003,
+  "title": "Trust and TAM in online shopping: An integrated model",
+  "venue": "MIS Quarterly",
+  "cited_by": [
+   "creativity"
+  ]
+ },
+ {
+  "key": "geva|2024|equal-opportunity-all",
+  "authors": [
+   "Geva",
+   "Barzilay",
+   "Goldstein",
+   "Oestreicher-Singer"
+  ],
+  "year": 2024,
+  "title": "Equal opportunity for all? The long tail of crowdfunding: Evidence from Kickstarter",
+  "venue": "MIS Quarterly",
+  "cited_by": [
+   "creativity"
+  ]
+ },
+ {
+  "key": "gigerenzer|1996|reasoning-fast-frugal",
+  "authors": [
+   "Gigerenzer",
+   "Goldstein"
+  ],
+  "year": 1996,
+  "title": "Reasoning the fast and frugal way: Models of bounded rationality",
+  "venue": "Psychological Review",
+  "cited_by": [
+   "creativity"
+  ]
+ },
+ {
+  "key": "gleasure|2019|talking-up-storm",
+  "authors": [
+   "Gleasure",
+   "Conboy",
+   "Morgan"
+  ],
+  "year": 2019,
+  "title": "Talking up a storm: How backers use public discourse to exert control in crowdfunded systems development projects",
+  "venue": "Information Systems Research",
+  "cited_by": [
+   "creativity"
+  ]
+ },
+ {
+  "key": "gong|2021|use-probabilistic-uncertain",
+  "authors": [
+   "Gong",
+   "Pavlou",
+   "Zheng"
+  ],
+  "year": 2021,
+  "title": "On the use of probabilistic uncertain rewards on crowdfunding platforms: The case of the lottery",
+  "venue": "Information Systems Research",
+  "cited_by": [
+   "creativity"
+  ]
+ },
+ {
+  "key": "gopal|2025|inventing-machines-generative",
+  "authors": [
+   "Gopal",
+   "Li",
+   "Riemer"
+  ],
+  "year": 2025,
+  "title": "Inventing with machines: Generative AI and the evolving landscape of IS research",
+  "venue": "Information Systems Research",
+  "cited_by": [
+   "creativity",
+   "stimulus"
+  ]
+ },
+ {
+  "key": "granados|2010|research-commentary-information",
+  "authors": [
+   "Granados",
+   "Gupta",
+   "Kauffman"
+  ],
+  "year": 2010,
+  "title": "Research commentary\u2014Information transparency in business-to-consumer markets: Concepts, framework, and research agenda",
+  "venue": "Information Systems Research",
+  "cited_by": [
+   "creativity"
+  ]
+ },
+ {
+  "key": "hahl|2017|elites-love-authentic",
+  "authors": [
+   "Hahl",
+   "Zuckerman",
+   "Kim"
+  ],
+  "year": 2017,
+  "title": "Why elites love authentic lowbrow culture: Overcoming high-status denigration with outsider art",
+  "venue": "American Sociological Review",
+  "cited_by": [
+   "creativity"
+  ]
+ },
+ {
+  "key": "heckman|1997|matching-econometric-evaluation",
+  "authors": [
+   "Heckman",
+   "Ichimura",
+   "Todd"
+  ],
+  "year": 1997,
+  "title": "Matching as an econometric evaluation estimator: Evidence from evaluating a job training programme",
+  "venue": "Review of Economic Studies",
+  "cited_by": [
+   "creativity"
+  ]
+ },
+ {
+  "key": "jiang|2018|investor-platform-choice",
+  "authors": [
+   "Jiang",
+   "Ho",
+   "Yan",
+   "Tan"
+  ],
+  "year": 2018,
+  "title": "Investor platform choice: Herding, platform attributes, and regulations",
+  "venue": "Journal of Management Information Systems",
+  "cited_by": [
+   "creativity"
+  ]
+ },
+ {
+  "key": "kim|2022|risk-disclosure-crowdfunding",
+  "authors": [
+   "Kim",
+   "Park",
+   "Pan",
+   "Zhang",
+   "Zhang"
+  ],
+  "year": 2022,
+  "title": "Risk disclosure in crowdfunding",
+  "venue": "Information Systems Research",
+  "cited_by": [
+   "creativity"
+  ]
+ },
+ {
+  "key": "kovacs|2014|authenticity-consumer-value",
+  "authors": [
+   "Kovacs",
+   "Carroll",
+   "Lehman"
+  ],
+  "year": 2014,
+  "title": "Authenticity and consumer value ratings: Empirical tests from the restaurant domain",
+  "venue": "Organization Science",
+  "cited_by": [
+   "creativity"
+  ]
+ },
+ {
+  "key": "lane|2005|ontological-uncertainty-innovation",
+  "authors": [
+   "Lane",
+   "Maxfield"
+  ],
+  "year": 2005,
+  "title": "Ontological uncertainty and innovation",
+  "venue": "Journal of Evolutionary Economics",
+  "cited_by": [
+   "creativity"
+  ]
+ },
+ {
+  "key": "lehman|2019|authenticity",
+  "authors": [
+   "Lehman",
+   "O'Connor",
+   "Kovacs",
+   "Newman"
+  ],
+  "year": 2019,
+  "title": "Authenticity",
+  "venue": "Academy of Management Annals",
+  "cited_by": [
+   "creativity"
+  ]
+ },
+ {
+  "key": "leung|2014|out-sight-out",
+  "authors": [
+   "Leung",
+   "Sharkey"
+  ],
+  "year": 2014,
+  "title": "Out of sight, out of mind? Evidence of perceptual factors in the multiple-category discount",
+  "venue": "Organization Science",
+  "cited_by": [
+   "creativity"
+  ]
+ },
+ {
+  "key": "lewis|2021|too-red-crowdfunding",
+  "authors": [
+   "Lewis",
+   "Cordero",
+   "Xiong"
+  ],
+  "year": 2021,
+  "title": "Too red for crowdfunding: The legitimation and adoption of crowdfunding across political cultures",
+  "venue": "Entrepreneurship Theory and Practice",
+  "cited_by": [
+   "creativity"
+  ]
+ },
+ {
+  "key": "luo|2019|frontiers-machines-vs",
+  "authors": [
+   "Luo",
+   "Tong",
+   "Fang",
+   "Qu"
+  ],
+  "year": 2019,
+  "title": "Frontiers: Machines vs. humans: The impact of artificial intelligence chatbot disclosure on customer purchases",
+  "venue": "Marketing Science",
+  "cited_by": [
+   "creativity"
+  ]
+ },
+ {
+  "key": "ma|2024|unintended-consequences-disclosing",
+  "authors": [
+   "Ma",
+   "Huang",
+   "Dennis"
+  ],
+  "year": 2024,
+  "title": "Unintended consequences of disclosing recommendations by artificial intelligence versus humans on true and fake news believability and engagement",
+  "venue": "Journal of Management Information Systems",
+  "cited_by": [
+   "creativity"
+  ]
+ },
+ {
+  "key": "majzoubi|2023|going-beyond-optimal",
+  "authors": [
+   "Majzoubi",
+   "Zhao"
+  ],
+  "year": 2023,
+  "title": "Going beyond optimal distinctiveness: Strategic positioning for gaining an audience composition premium",
+  "venue": "Strategic Management Journal",
+  "cited_by": [
+   "creativity"
+  ]
+ },
+ {
+  "key": "newman|2014|authenticity-contagious-brand",
+  "authors": [
+   "Newman",
+   "Dhar"
+  ],
+  "year": 2014,
+  "title": "Authenticity is contagious: Brand essence and the original source of production",
+  "venue": "Journal of Marketing Research",
+  "cited_by": [
+   "creativity"
+  ]
+ },
+ {
+  "key": "nunes|2021|concept-authenticity-it",
+  "authors": [
+   "Nunes",
+   "Ordanini",
+   "Giambastiani"
+  ],
+  "year": 2021,
+  "title": "The concept of authenticity: What it means to consumers",
+  "venue": "Journal of Marketing",
+  "cited_by": [
+   "creativity"
+  ]
+ },
+ {
+  "key": "odybrasier|2014|price-you-pay",
+  "authors": [
+   "Ody-Brasier",
+   "Vermeulen"
+  ],
+  "year": 2014,
+  "title": "The price you pay: Price-setting as a response to norm violations in the market for champagne grapes",
+  "venue": "Administrative Science Quarterly",
+  "cited_by": [
+   "creativity"
+  ]
+ },
+ {
+  "key": "oo|2025|dark-side-source",
+  "authors": [
+   "Oo",
+   "Allison",
+   "Hmieleski"
+  ],
+  "year": 2025,
+  "title": "The dark side of source credibility: Differential effectiveness of credibility cues in fraudulent versus legitimate crowdfunding campaigns",
+  "venue": "Journal of Business Ethics",
+  "cited_by": [
+   "creativity"
+  ]
+ },
+ {
+  "key": "paolella|2016|category-spanning-evaluation",
+  "authors": [
+   "Paolella",
+   "Durand"
+  ],
+  "year": 2016,
+  "title": "Category spanning, evaluation, and performance: Revised theory and test on the corporate law market",
+  "venue": "Academy of Management Journal",
+  "cited_by": [
+   "creativity"
+  ]
+ },
+ {
+  "key": "paulus|2019|oxford-handbook-group",
+  "authors": [
+   "Paulus",
+   "Nijstad",
+   "van der Zee",
+   "Kenworthy"
+  ],
+  "year": 2019,
+  "title": "The Oxford handbook of group creativity and innovation",
+  "venue": "Oxford University Press",
+  "cited_by": [
+   "creativity"
+  ]
+ },
+ {
+  "key": "pavlou|2004|building-effective-online",
+  "authors": [
+   "Pavlou",
+   "Gefen"
+  ],
+  "year": 2004,
+  "title": "Building effective online marketplaces with institution-based trust",
+  "venue": "Information Systems Research",
+  "cited_by": [
+   "creativity"
+  ]
+ },
+ {
+  "key": "pontikes|2012|two-sides-same",
+  "authors": [
+   "Pontikes"
+  ],
+  "year": 2012,
+  "title": "Two sides of the same coin: How ambiguous classification affects multiple audiences' evaluations",
+  "venue": "Administrative Science Quarterly",
+  "cited_by": [
+   "creativity"
+  ]
+ },
+ {
+  "key": "radoynovska|2019|whom-you-true",
+  "authors": [
+   "Radoynovska",
+   "King"
+  ],
+  "year": 2019,
+  "title": "To whom are you true? Audience perceptions of authenticity in nascent crowdfunding ventures",
+  "venue": "Organization Science",
+  "cited_by": [
+   "creativity"
+  ]
+ },
+ {
+  "key": "roma|2018|rewardbased-crowdfunding-campaigns",
+  "authors": [
+   "Roma",
+   "Gal-Or",
+   "Chen"
+  ],
+  "year": 2018,
+  "title": "Reward-based crowdfunding campaigns: Informational value and access to venture capital",
+  "venue": "Information Systems Research",
+  "cited_by": [
+   "creativity"
+  ]
+ },
+ {
+  "key": "schilke|2025|transparency-dilemma-ai",
+  "authors": [
+   "Schilke",
+   "Reimann"
+  ],
+  "year": 2025,
+  "title": "The transparency dilemma: How AI disclosure erodes trust",
+  "venue": "Organizational Behavior and Human Decision Processes",
+  "cited_by": [
+   "creativity"
+  ]
+ },
+ {
+  "key": "shi|2023|design-platform-reputation",
+  "authors": [
+   "Shi",
+   "Srinivasan",
+   "Zhang"
+  ],
+  "year": 2023,
+  "title": "Design of platform reputation systems: Optimal information disclosure",
+  "venue": "Marketing Science",
+  "cited_by": [
+   "creativity"
+  ]
+ },
+ {
+  "key": "siering|2016|detecting-fraudulent-behavior",
+  "authors": [
+   "Siering",
+   "Koch",
+   "Deokar"
+  ],
+  "year": 2016,
+  "title": "Detecting fraudulent behavior on crowdfunding platforms: The role of linguistic and content-based cues in static and dynamic contexts",
+  "venue": "Journal of Management Information Systems",
+  "cited_by": [
+   "creativity"
+  ]
+ },
+ {
+  "key": "spence|2008|job-market-signaling",
+  "authors": [
+   "Spence"
+  ],
+  "year": 2008,
+  "title": "Job market signaling",
+  "venue": "Quarterly Journal of Economics",
+  "cited_by": [
+   "creativity"
+  ]
+ },
+ {
+  "key": "stern|2014|unmixed-signals-reputation",
+  "authors": [
+   "Stern",
+   "Dukerich",
+   "Zajac"
+  ],
+  "year": 2014,
+  "title": "Unmixed signals: How reputation and status affect alliance formation",
+  "venue": "Strategic Management Journal",
+  "cited_by": [
+   "creativity"
+  ]
+ },
+ {
+  "key": "taeuscher|2021|gaining-legitimacy-being",
+  "authors": [
+   "Taeuscher",
+   "Bouncken",
+   "Pesch"
+  ],
+  "year": 2021,
+  "title": "Gaining legitimacy by being different: Optimal distinctiveness in crowdfunding platforms",
+  "venue": "Academy of Management Journal",
+  "cited_by": [
+   "creativity"
+  ]
+ },
+ {
+  "key": "tong|2021|janus-face-artificial",
+  "authors": [
+   "Tong",
+   "Jia",
+   "Luo",
+   "Fang"
+  ],
+  "year": 2021,
+  "title": "The Janus face of artificial intelligence feedback: Deployment versus disclosure effects on employee performance",
+  "venue": "Strategic Management Journal",
+  "cited_by": [
+   "creativity",
+   "sales"
+  ]
+ },
+ {
+  "key": "trilling|1972|sincerity-authenticity",
+  "authors": [
+   "Trilling"
+  ],
+  "year": 1972,
+  "title": "Sincerity and authenticity",
+  "venue": "Harvard University Press",
+  "cited_by": [
+   "creativity"
+  ]
+ },
+ {
+  "key": "wang|2026|disclose-strategic-ai",
+  "authors": [
+   "Wang",
+   "Liang"
+  ],
+  "year": 2026,
+  "title": "How to disclose? Strategic AI disclosure in crowdfunding",
+  "venue": "Working paper",
+  "cited_by": [
+   "creativity"
+  ]
+ },
+ {
+  "key": "wang|2023|winner-takes-all",
+  "authors": [
+   "Wang",
+   "Yang",
+   "Hahn"
+  ],
+  "year": 2023,
+  "title": "Winner takes all? The blockbuster effect on crowdfunding platforms",
+  "venue": "Information Systems Research",
+  "cited_by": [
+   "creativity"
+  ]
+ },
+ {
+  "key": "weinmann|2023|attraction-effect-crowdfunding",
+  "authors": [
+   "Weinmann",
+   "Mishra",
+   "Kaiser",
+   "Vom Brocke"
+  ],
+  "year": 2023,
+  "title": "The attraction effect in crowdfunding",
+  "venue": "Information Systems Research",
+  "cited_by": [
+   "creativity"
+  ]
+ },
+ {
+  "key": "wu|2024|impact-project-updates",
+  "authors": [
+   "Wu",
+   "Ye",
+   "Jensen",
+   "Liu"
+  ],
+  "year": 2024,
+  "title": "Impact of project updates and their social endorsement in online medical crowdfunding",
+  "venue": "Journal of Management Information Systems",
+  "cited_by": [
+   "creativity"
+  ]
+ },
+ {
+  "key": "xu|2025|crowdfunding-success-factors",
+  "authors": [
+   "Xu",
+   "Hong",
+   "Deng",
+   "Zhang"
+  ],
+  "year": 2025,
+  "title": "Crowdfunding success factors: A meta-analytic investigation",
+  "venue": "Information Systems Research",
+  "cited_by": [
+   "creativity"
+  ]
+ },
+ {
+  "key": "yang|2020|multimedia-shape-crowdfunding",
+  "authors": [
+   "Yang",
+   "Li",
+   "Calic",
+   "Shevchenko"
+  ],
+  "year": 2020,
+  "title": "How multimedia shape crowdfunding outcomes: The overshadowing effect of images and videos on text in campaign information",
+  "venue": "Journal of Business Research",
+  "cited_by": [
+   "creativity"
+  ]
+ },
+ {
+  "key": "yang|2020|scarcity-strategy-crowdfunding",
+  "authors": [
+   "Yang",
+   "Wang",
+   "Hahn"
+  ],
+  "year": 2020,
+  "title": "Scarcity strategy in crowdfunding: An empirical exploration of reward limits",
+  "venue": "Information Systems Research",
+  "cited_by": [
+   "creativity"
+  ]
+ },
+ {
+  "key": "zuckerman|1999|categorical-imperative-securities",
+  "authors": [
+   "Zuckerman"
+  ],
+  "year": 1999,
+  "title": "The categorical imperative: Securities analysts and the illegitimacy discount",
+  "venue": "American Journal of Sociology",
+  "cited_by": [
+   "creativity"
+  ]
+ },
+ {
+  "key": "abele|2007|agency-communion-perspective",
+  "authors": [
+   "Abele",
+   "Wojciszke"
+  ],
+  "year": 2007,
+  "title": "Agency and communion from the perspective of self versus others",
+  "venue": "Journal of Personality and Social Psychology",
+  "cited_by": [
+   "manufacturing"
+  ]
+ },
+ {
+  "key": "abele|2014|communal-agentic-content",
+  "authors": [
+   "Abele",
+   "Wojciszke"
+  ],
+  "year": 2014,
+  "title": "Communal and agentic content in social cognition: A dual perspective model",
+  "venue": "Advances in Experimental Social Psychology",
+  "cited_by": [
+   "manufacturing"
+  ]
+ },
+ {
+  "key": "abele|2016|facets-fundamental-content",
+  "authors": [
+   "Abele",
+   "Hauke",
+   "Peters",
+   "Louvet",
+   "Szymkow",
+   "Duan"
+  ],
+  "year": 2016,
+  "title": "Facets of the fundamental content dimensions: Agency with competence and assertiveness - communion with warmth and morality",
+  "venue": "Frontiers in Psychology",
+  "cited_by": [
+   "manufacturing"
+  ]
+ },
+ {
+  "key": "acemoglu|2019|automation-new-tasks",
+  "authors": [
+   "Acemoglu",
+   "Restrepo"
+  ],
+  "year": 2019,
+  "title": "Automation and new tasks: How technology displaces and reinstates labor",
+  "venue": "Journal of Economic Perspectives",
+  "cited_by": [
+   "manufacturing"
+  ]
+ },
+ {
+  "key": "acemoglu|2022|tasks-automation-rise",
+  "authors": [
+   "Acemoglu",
+   "Restrepo"
+  ],
+  "year": 2022,
+  "title": "Tasks, automation, and the rise in U.S. wage inequality",
+  "venue": "Econometrica",
+  "cited_by": [
+   "manufacturing"
+  ]
+ },
+ {
+  "key": "acemoglu|2022|artificial-intelligence-jobs",
+  "authors": [
+   "Acemoglu",
+   "Autor",
+   "Hazell",
+   "Restrepo"
+  ],
+  "year": 2022,
+  "title": "Artificial intelligence and jobs: Evidence from online vacancies",
+  "venue": "Journal of Labor Economics",
+  "cited_by": [
+   "manufacturing"
+  ]
+ },
+ {
+  "key": "adler|1996|two-types-bureaucracy",
+  "authors": [
+   "Adler",
+   "Borys"
+  ],
+  "year": 1996,
+  "title": "Two types of bureaucracy: Enabling and coercive",
+  "venue": "Administrative Science Quarterly",
+  "cited_by": [
+   "manufacturing"
+  ]
+ },
+ {
+  "key": "agrawal|2019|artificial-intelligence-ambiguous",
+  "authors": [
+   "Agrawal",
+   "Gans",
+   "Goldfarb"
+  ],
+  "year": 2019,
+  "title": "Artificial intelligence: The ambiguous labor market impact of automating prediction",
+  "venue": "Journal of Economic Perspectives",
+  "cited_by": [
+   "manufacturing"
+  ]
+ },
+ {
+  "key": "amis|2020|organizational-reproduction-inequality",
+  "authors": [
+   "Amis",
+   "Mair",
+   "Munir"
+  ],
+  "year": 2020,
+  "title": "The organizational reproduction of inequality",
+  "venue": "Academy of Management Annals",
+  "cited_by": [
+   "manufacturing"
+  ]
+ },
+ {
+  "key": "autor|2015|there-still-so",
+  "authors": [
+   "Autor"
+  ],
+  "year": 2015,
+  "title": "Why are there still so many jobs? The history and future of workplace automation",
+  "venue": "Journal of Economic Perspectives",
+  "cited_by": [
+   "manufacturing"
+  ]
+ },
+ {
+  "key": "badura|2018|gender-leadership-emergence",
+  "authors": [
+   "Badura",
+   "Grijalva",
+   "Newman",
+   "Yan",
+   "Jeon"
+  ],
+  "year": 2018,
+  "title": "Gender and leadership emergence: A meta-analysis and explanatory model",
+  "venue": "Personnel Psychology",
+  "cited_by": [
+   "manufacturing"
+  ]
+ },
+ {
+  "key": "bailey|2012|lure-virtual",
+  "authors": [
+   "Bailey",
+   "Leonardi",
+   "Barley"
+  ],
+  "year": 2012,
+  "title": "The lure of the virtual",
+  "venue": "Organization Science",
+  "cited_by": [
+   "manufacturing"
+  ]
+ },
+ {
+  "key": "baird|2021|next-generation-research",
+  "authors": [
+   "Baird",
+   "Maruping"
+  ],
+  "year": 2021,
+  "title": "The next generation of research on IS use: A theoretical framework of delegation to and from agentic IS artifacts",
+  "venue": "MIS Quarterly",
+  "cited_by": [
+   "manufacturing"
+  ]
+ },
+ {
+  "key": "bakan|1966|duality-human-existence",
+  "authors": [
+   "Bakan"
+  ],
+  "year": 1966,
+  "title": "The duality of human existence: An essay on psychology and religion",
+  "venue": "Rand McNally",
+  "cited_by": [
+   "manufacturing"
+  ]
+ },
+ {
+  "key": "bankins|2024|multilevel-review-artificial",
+  "authors": [
+   "Bankins",
+   "Ocampo",
+   "Marrone",
+   "Restubog",
+   "Woo"
+  ],
+  "year": 2024,
+  "title": "A multilevel review of artificial intelligence in organizations: Implications for organizational behavior research and practice",
+  "venue": "Journal of Organizational Behavior",
+  "cited_by": [
+   "manufacturing"
+  ]
+ },
+ {
+  "key": "barley|1986|technology-occasion-structuring",
+  "authors": [
+   "Barley"
+  ],
+  "year": 1986,
+  "title": "Technology as an occasion for structuring: Evidence from observations of CT scanners and the social order of radiology departments",
+  "venue": "Administrative Science Quarterly",
+  "cited_by": [
+   "manufacturing"
+  ]
+ },
+ {
+  "key": "barrett|2015|service-innovation-digital",
+  "authors": [
+   "Barrett",
+   "Davidson",
+   "Prabhu",
+   "Vargo"
+  ],
+  "year": 2015,
+  "title": "Service innovation in the digital age: Key contributions and future directions",
+  "venue": "MIS Quarterly",
+  "cited_by": [
+   "manufacturing"
+  ]
+ },
+ {
+  "key": "barrett|2012|reconfiguring-boundary-relations",
+  "authors": [
+   "Barrett",
+   "Oborn",
+   "Orlikowski"
+  ],
+  "year": 2012,
+  "title": "Reconfiguring boundary relations: Robotic innovations in pharmacy work",
+  "venue": "Organization Science",
+  "cited_by": [
+   "manufacturing",
+   "service"
+  ]
+ },
+ {
+  "key": "beane|2019|shadow-learning-building",
+  "authors": [
+   "Beane"
+  ],
+  "year": 2019,
+  "title": "Shadow learning: Building robotic surgical skill when approved means fail",
+  "venue": "Administrative Science Quarterly",
+  "cited_by": [
+   "manufacturing"
+  ]
+ },
+ {
+  "key": "becker|1992|division-labor-coordination",
+  "authors": [
+   "Becker",
+   "Murphy"
+  ],
+  "year": 1992,
+  "title": "The division of labor, coordination costs, and knowledge",
+  "venue": "Quarterly Journal of Economics",
+  "cited_by": [
+   "manufacturing"
+  ]
+ },
+ {
+  "key": "berends|2021|composing-qualitative-process",
+  "authors": [
+   "Berends",
+   "Deken"
+  ],
+  "year": 2021,
+  "title": "Composing qualitative process research",
+  "venue": "Strategic Organization",
+  "cited_by": [
+   "manufacturing"
+  ]
+ },
+ {
+  "key": "berente|2021|managing-artificial-intelligence",
+  "authors": [
+   "Berente",
+   "Gu",
+   "Recker",
+   "Santhanam"
+  ],
+  "year": 2021,
+  "title": "Managing artificial intelligence",
+  "venue": "MIS Quarterly",
+  "cited_by": [
+   "manufacturing",
+   "triage"
+  ]
+ },
+ {
+  "key": "bharadwaj|2013|digital-business-strategy",
+  "authors": [
+   "Bharadwaj",
+   "El Sawy",
+   "Pavlou",
+   "Venkatraman"
+  ],
+  "year": 2013,
+  "title": "Digital business strategy: Toward a next generation of insights",
+  "venue": "MIS Quarterly",
+  "cited_by": [
+   "manufacturing"
+  ]
+ },
+ {
+  "key": "bloom|2026|nam-manufacturers-outlook",
+  "authors": [
+   "Bloom",
+   "Green"
+  ],
+  "year": 2026,
+  "title": "NAM manufacturers' outlook survey: First quarter 2026",
+  "venue": "National Association of Manufacturers",
+  "cited_by": [
+   "manufacturing"
+  ]
+ },
+ {
+  "key": "braverman|1974|labor-monopoly-capital",
+  "authors": [
+   "Braverman"
+  ],
+  "year": 1974,
+  "title": "Labor and monopoly capital: The degradation of work in the twentieth century",
+  "venue": "Monthly Review Press",
+  "cited_by": [
+   "manufacturing"
+  ]
+ },
+ {
+  "key": "ciccarelli|2023|exploring-new-industrial",
+  "authors": [
+   "Ciccarelli",
+   "Papetti",
+   "Germani"
+  ],
+  "year": 2023,
+  "title": "Exploring how new industrial paradigms affect the workforce: A literature review of Operator 4.0",
+  "venue": "Journal of Manufacturing Systems",
+  "cited_by": [
+   "manufacturing"
+  ]
+ },
+ {
+  "key": "conger|1988|empowerment-process-integrating",
+  "authors": [
+   "Conger",
+   "Kanungo"
+  ],
+  "year": 1988,
+  "title": "The empowerment process: Integrating theory and practice",
+  "venue": "Academy of Management Review",
+  "cited_by": [
+   "manufacturing"
+  ]
+ },
+ {
+  "key": "coykendall|2024|taking-charge-manufacturers",
+  "authors": [
+   "Coykendall",
+   "Hardin",
+   "Morehouse",
+   "Reyes",
+   "Carrick"
+  ],
+  "year": 2024,
+  "title": "Taking charge: Manufacturers support growth with active workforce strategies",
+  "venue": "Deloitte Insights",
+  "cited_by": [
+   "manufacturing"
+  ]
+ },
+ {
+  "key": "coykendall|2025|2025-manufacturing-industry",
+  "authors": [
+   "Coykendall",
+   "Morehouse",
+   "Hardin",
+   "Shepley"
+  ],
+  "year": 2025,
+  "title": "2025 manufacturing industry outlook",
+  "venue": "Deloitte Insights",
+  "cited_by": [
+   "manufacturing"
+  ]
+ },
+ {
+  "key": "deming|2017|growing-importance-social",
+  "authors": [
+   "Deming"
+  ],
+  "year": 2017,
+  "title": "The growing importance of social skills in the labor market",
+  "venue": "Quarterly Journal of Economics",
+  "cited_by": [
+   "manufacturing"
+  ]
+ },
+ {
+  "key": "dondeti|2019|comparative-study-dynamic",
+  "authors": [
+   "Dondeti",
+   "Tippur"
+  ],
+  "year": 2019,
+  "title": "A comparative study of dynamic fracture of soda-lime glass using photoelasticity, digital image correlation and digital gradient sensing techniques",
+  "venue": "Experimental Mechanics",
+  "cited_by": [
+   "manufacturing"
+  ]
+ },
+ {
+  "key": "eagly|2002|role-congruity-theory",
+  "authors": [
+   "Eagly",
+   "Karau"
+  ],
+  "year": 2002,
+  "title": "Role congruity theory of prejudice toward female leaders",
+  "venue": "Psychological Review",
+  "cited_by": [
+   "manufacturing"
+  ]
+ },
+ {
+  "key": "eagly|1999|origins-sex-differences",
+  "authors": [
+   "Eagly",
+   "Wood"
+  ],
+  "year": 1999,
+  "title": "The origins of sex differences in human behavior: Evolved dispositions versus social roles",
+  "venue": "American Psychologist",
+  "cited_by": [
+   "manufacturing"
+  ]
+ },
+ {
+  "key": "faraj|2018|working-organizing-age",
+  "authors": [
+   "Faraj",
+   "Pachidi",
+   "Sayegh"
+  ],
+  "year": 2018,
+  "title": "Working and organizing in the age of the learning algorithm",
+  "venue": "Information and Organization",
+  "cited_by": [
+   "manufacturing"
+  ]
+ },
+ {
+  "key": "fiske|2007|universal-dimensions-social",
+  "authors": [
+   "Fiske",
+   "Cuddy",
+   "Glick"
+  ],
+  "year": 2007,
+  "title": "Universal dimensions of social cognition: Warmth and competence",
+  "venue": "Trends in Cognitive Sciences",
+  "cited_by": [
+   "manufacturing"
+  ]
+ },
+ {
+  "key": "galbraith|1973|designing-complex-organizations",
+  "authors": [
+   "Galbraith"
+  ],
+  "year": 1973,
+  "title": "Designing complex organizations",
+  "venue": "Addison-Wesley",
+  "cited_by": [
+   "manufacturing"
+  ]
+ },
+ {
+  "key": "gioia|2013|seeking-qualitative-rigor",
+  "authors": [
+   "Gioia",
+   "Corley",
+   "Hamilton"
+  ],
+  "year": 2013,
+  "title": "Seeking qualitative rigor in inductive research: Notes on the Gioia methodology",
+  "venue": "Organizational Research Methods",
+  "cited_by": [
+   "manufacturing"
+  ]
+ },
+ {
+  "key": "glikson|2020|human-trust-artificial",
+  "authors": [
+   "Glikson",
+   "Woolley"
+  ],
+  "year": 2020,
+  "title": "Human trust in artificial intelligence: Review of empirical research",
+  "venue": "Academy of Management Annals",
+  "cited_by": [
+   "manufacturing"
+  ]
+ },
+ {
+  "key": "graetz|2018|robots-work",
+  "authors": [
+   "Graetz",
+   "Michaels"
+  ],
+  "year": 2018,
+  "title": "Robots at work",
+  "venue": "Review of Economics and Statistics",
+  "cited_by": [
+   "manufacturing"
+  ]
+ },
+ {
+  "key": "hanelt|2021|systematic-review-literature",
+  "authors": [
+   "Hanelt",
+   "Bohnsack",
+   "Marz",
+   "Antunes Marante"
+  ],
+  "year": 2021,
+  "title": "A systematic review of the literature on digital transformation: Insights and implications for strategy and organizational change",
+  "venue": "Journal of Management Studies",
+  "cited_by": [
+   "manufacturing"
+  ]
+ },
+ {
+  "key": "heilman|2024|women-work-pathways",
+  "authors": [
+   "Heilman",
+   "Caleo",
+   "Manzi"
+  ],
+  "year": 2024,
+  "title": "Women at work: Pathways from gender stereotypes to gender bias and discrimination",
+  "venue": "Annual Review of Organizational Psychology and Organizational Behavior",
+  "cited_by": [
+   "manufacturing"
+  ]
+ },
+ {
+  "key": "helgeson|1994|relation-agency-communion",
+  "authors": [
+   "Helgeson"
+  ],
+  "year": 1994,
+  "title": "Relation of agency and communion to well-being: Evidence and potential explanations",
+  "venue": "Psychological Bulletin",
+  "cited_by": [
+   "manufacturing"
+  ]
+ },
+ {
+  "key": "hermann|2016|design-principles-industrie",
+  "authors": [
+   "Hermann",
+   "Pentek",
+   "Otto"
+  ],
+  "year": 2016,
+  "title": "Design principles for Industrie 4.0 scenarios",
+  "venue": "Proceedings of the 49th Hawaii International Conference on System Sciences",
+  "cited_by": [
+   "manufacturing"
+  ]
+ },
+ {
+  "key": "hirschkreinsen|2023|industry-40-options",
+  "authors": [
+   "Hirsch-Kreinsen"
+  ],
+  "year": 2023,
+  "title": "Industry 4.0: Options for human-oriented work design",
+  "venue": "Sci",
+  "cited_by": [
+   "manufacturing"
+  ]
+ },
+ {
+  "key": "kadir|2021|humancentered-design-work",
+  "authors": [
+   "Kadir",
+   "Broberg"
+  ],
+  "year": 2021,
+  "title": "Human-centered design of work systems in the transition to industry 4.0",
+  "venue": "Applied Ergonomics",
+  "cited_by": [
+   "manufacturing"
+  ]
+ },
+ {
+  "key": "kanter|1977|men-women-corporation",
+  "authors": [
+   "Kanter"
+  ],
+  "year": 1977,
+  "title": "Men and women of the corporation",
+  "venue": "Basic Books",
+  "cited_by": [
+   "manufacturing"
+  ]
+ },
+ {
+  "key": "kellogg|2020|algorithms-work-new",
+  "authors": [
+   "Kellogg",
+   "Valentine",
+   "Christin"
+  ],
+  "year": 2020,
+  "title": "Algorithms at work: The new contested terrain of control",
+  "venue": "Academy of Management Annals",
+  "cited_by": [
+   "manufacturing"
+  ]
+ },
+ {
+  "key": "langley|1999|strategies-theorizing-process",
+  "authors": [
+   "Langley"
+  ],
+  "year": 1999,
+  "title": "Strategies for theorizing from process data",
+  "venue": "Academy of Management Review",
+  "cited_by": [
+   "manufacturing"
+  ]
+ },
+ {
+  "key": "leonardi|2011|flexible-routines-meet",
+  "authors": [
+   "Leonardi"
+  ],
+  "year": 2011,
+  "title": "When flexible routines meet flexible technologies: Affordance, constraint, and the imbrication of human and material agencies",
+  "venue": "MIS Quarterly",
+  "cited_by": [
+   "manufacturing"
+  ]
+ },
+ {
+  "key": "ma|2022|reconciling-female-agentic",
+  "authors": [
+   "Ma",
+   "Rosette",
+   "Koval"
+  ],
+  "year": 2022,
+  "title": "Reconciling female agentic advantage and disadvantage with the CADDIS measure of agency",
+  "venue": "Journal of Applied Psychology",
+  "cited_by": [
+   "manufacturing"
+  ]
+ },
+ {
+  "key": "matheson|2019|humanrobot-collaboration-manufacturing",
+  "authors": [
+   "Matheson",
+   "Minto",
+   "Zampieri",
+   "Faccio",
+   "Rosati"
+  ],
+  "year": 2019,
+  "title": "Human-robot collaboration in manufacturing applications: A review",
+  "venue": "Robotics",
+  "cited_by": [
+   "manufacturing"
+  ]
+ },
+ {
+  "key": "melville|2022|putting-humans-back",
+  "authors": [
+   "Melville",
+   "Robert",
+   "Xiao"
+  ],
+  "year": 2022,
+  "title": "Putting humans back in the loop: An affordance conceptualization of the 4th industrial revolution",
+  "venue": "Information Systems Journal",
+  "cited_by": [
+   "manufacturing"
+  ]
+ },
+ {
+  "key": "nambisan|2017|digital-innovation-management",
+  "authors": [
+   "Nambisan",
+   "Lyytinen",
+   "Majchrzak",
+   "Song"
+  ],
+  "year": 2017,
+  "title": "Digital innovation management: Reinventing innovation management research in a digital world",
+  "venue": "MIS Quarterly",
+  "cited_by": [
+   "manufacturing"
+  ]
+ },
+ {
+  "key": "neumann|2021|industry-40-human",
+  "authors": [
+   "Neumann",
+   "Winkelhaus",
+   "Grosse",
+   "Glock"
+  ],
+  "year": 2021,
+  "title": "Industry 4.0 and the human factor: A systems framework and analysis methodology for successful development",
+  "venue": "International Journal of Production Economics",
+  "cited_by": [
+   "manufacturing"
+  ]
+ },
+ {
+  "key": "nguyenngoc|2022|humancentred-design-industry",
+  "authors": [
+   "Nguyen Ngoc",
+   "Lasa",
+   "Iriarte"
+  ],
+  "year": 2022,
+  "title": "Human-centred design in industry 4.0: Case study review and opportunities for future research",
+  "venue": "Journal of Intelligent Manufacturing",
+  "cited_by": [
+   "manufacturing"
+  ]
+ },
+ {
+  "key": "noe|2014|learning-twentyfirstcentury-workplace",
+  "authors": [
+   "Noe",
+   "Clarke",
+   "Klein"
+  ],
+  "year": 2014,
+  "title": "Learning in the twenty-first-century workplace",
+  "venue": "Annual Review of Organizational Psychology and Organizational Behavior",
+  "cited_by": [
+   "manufacturing"
+  ]
+ },
+ {
+  "key": "orlikowski|1992|duality-technology-rethinking",
+  "authors": [
+   "Orlikowski"
+  ],
+  "year": 1992,
+  "title": "The duality of technology: Rethinking the concept of technology in organizations",
+  "venue": "Organization Science",
+  "cited_by": [
+   "manufacturing"
+  ]
+ },
+ {
+  "key": "raisch|2021|artificial-intelligence-management",
+  "authors": [
+   "Raisch",
+   "Krakowski"
+  ],
+  "year": 2021,
+  "title": "Artificial intelligence and management: The automation-augmentation paradox",
+  "venue": "Academy of Management Review",
+  "cited_by": [
+   "manufacturing",
+   "triage"
+  ]
+ },
+ {
+  "key": "reiman|2021|human-factors-ergonomics",
+  "authors": [
+   "Reiman",
+   "Kaivo-oja",
+   "Parviainen",
+   "Takala",
+   "Lauraeus"
+  ],
+  "year": 2021,
+  "title": "Human factors and ergonomics in manufacturing in the industry 4.0 context: A scoping review",
+  "venue": "Technology in Society",
+  "cited_by": [
+   "manufacturing"
+  ]
+ },
+ {
+  "key": "rosette|2010|agentic-women-communal",
+  "authors": [
+   "Rosette",
+   "Tost"
+  ],
+  "year": 2010,
+  "title": "Agentic women and communal leadership: How role prescriptions confer advantage to top women leaders",
+  "venue": "Journal of Applied Psychology",
+  "cited_by": [
+   "manufacturing"
+  ]
+ },
+ {
+  "key": "rosso|2010|meaning-work-theoretical",
+  "authors": [
+   "Rosso",
+   "Dekas",
+   "Wrzesniewski"
+  ],
+  "year": 2010,
+  "title": "On the meaning of work: A theoretical integration and review",
+  "venue": "Research in Organizational Behavior",
+  "cited_by": [
+   "manufacturing"
+  ]
+ },
+ {
+  "key": "rostain|2024|vicarious-coding-breaching",
+  "authors": [
+   "Rostain",
+   "Huising"
+  ],
+  "year": 2024,
+  "title": "Vicarious coding: Breaching computational opacity in the digital era",
+  "venue": "Academy of Management Journal",
+  "cited_by": [
+   "manufacturing"
+  ]
+ },
+ {
+  "key": "rudman|1999|feminized-management-backlash",
+  "authors": [
+   "Rudman",
+   "Glick"
+  ],
+  "year": 1999,
+  "title": "Feminized management and backlash toward agentic women: The hidden costs to women of a kinder, gentler image of middle managers",
+  "venue": "Journal of Personality and Social Psychology",
+  "cited_by": [
+   "manufacturing"
+  ]
+ },
+ {
+  "key": "sarker|2019|sociotechnical-axis-cohesion",
+  "authors": [
+   "Sarker",
+   "Chatterjee",
+   "Xiao",
+   "Elbanna"
+  ],
+  "year": 2019,
+  "title": "The sociotechnical axis of cohesion for the IS discipline: Its historical legacy and its continued relevance",
+  "venue": "MIS Quarterly",
+  "cited_by": [
+   "manufacturing"
+  ]
+ },
+ {
+  "key": "seibert|2011|antecedents-consequences-psychological",
+  "authors": [
+   "Seibert",
+   "Wang",
+   "Courtright"
+  ],
+  "year": 2011,
+  "title": "Antecedents and consequences of psychological and team empowerment in organizations: A meta-analytic review",
+  "venue": "Journal of Applied Psychology",
+  "cited_by": [
+   "manufacturing"
+  ]
+ },
+ {
+  "key": "shepley|2025|2026-manufacturing-industry",
+  "authors": [
+   "Shepley",
+   "Morehouse",
+   "Hardin",
+   "Dwivedi"
+  ],
+  "year": 2025,
+  "title": "2026 manufacturing industry outlook",
+  "venue": "Deloitte Insights",
+  "cited_by": [
+   "manufacturing"
+  ]
+ },
+ {
+  "key": "spreitzer|1995|psychological-empowerment-workplace",
+  "authors": [
+   "Spreitzer"
+  ],
+  "year": 1995,
+  "title": "Psychological empowerment in the workplace: Dimensions, measurement, and validation",
+  "venue": "Academy of Management Journal",
+  "cited_by": [
+   "manufacturing"
+  ]
+ },
+ {
+  "key": "stephany|2024|price-skill-value",
+  "authors": [
+   "Stephany",
+   "Teutloff"
+  ],
+  "year": 2024,
+  "title": "What is the price of a skill? The value of complementarity",
+  "venue": "Research Policy",
+  "cited_by": [
+   "manufacturing"
+  ]
+ },
+ {
+  "key": "tao|2019|digital-twin-industry",
+  "authors": [
+   "Tao",
+   "Zhang",
+   "Liu",
+   "Nee"
+  ],
+  "year": 2019,
+  "title": "Digital twin in industry: State-of-the-art",
+  "venue": "IEEE Transactions on Industrial Informatics",
+  "cited_by": [
+   "manufacturing"
+  ]
+ },
+ {
+  "key": "saetre|2021|generating-theory-abduction",
+  "authors": [
+   "Saetre",
+   "Van de Ven"
+  ],
+  "year": 2021,
+  "title": "Generating theory by abduction",
+  "venue": "Academy of Management Review",
+  "cited_by": [
+   "manufacturing"
+  ]
+ },
+ {
+  "key": "thomas|1990|cognitive-elements-empowerment",
+  "authors": [
+   "Thomas",
+   "Velthouse"
+  ],
+  "year": 1990,
+  "title": "Cognitive elements of empowerment: An \"interpretive\" model of intrinsic task motivation",
+  "venue": "Academy of Management Review",
+  "cited_by": [
+   "manufacturing"
+  ]
+ },
+ {
+  "key": "timmermans|2012|theory-construction-qualitative",
+  "authors": [
+   "Timmermans",
+   "Tavory"
+  ],
+  "year": 2012,
+  "title": "Theory construction in qualitative research: From grounded theory to abductive analysis",
+  "venue": "Sociological Theory",
+  "cited_by": [
+   "manufacturing"
+  ]
+ },
+ {
+  "key": "trapnell|2012|agentic-communal-values",
+  "authors": [
+   "Trapnell",
+   "Paulhus"
+  ],
+  "year": 2012,
+  "title": "Agentic and communal values: Their scope and measurement",
+  "venue": "Journal of Personality Assessment",
+  "cited_by": [
+   "manufacturing"
+  ]
+ },
+ {
+  "key": "bls|2026|employerreported-workplace-injuries",
+  "authors": [
+   "BLS"
+  ],
+  "year": 2026,
+  "title": "Employer-reported workplace injuries and illnesses-2024 (USDL-26-0101)",
+  "venue": "U.S. Department of Labor",
+  "cited_by": [
+   "manufacturing"
+  ]
+ },
+ {
+  "key": "vardi|1980|organizational-career-mobility",
+  "authors": [
+   "Vardi"
+  ],
+  "year": 1980,
+  "title": "Organizational career mobility: An integrative model",
+  "venue": "Academy of Management Review",
+  "cited_by": [
+   "manufacturing"
+  ]
+ },
+ {
+  "key": "verhoef|2021|digital-transformation-multidisciplinary",
+  "authors": [
+   "Verhoef",
+   "Broekhuizen",
+   "Bart",
+   "Bhattacharya",
+   "Qi Dong",
+   "Fabian",
+   "Haenlein"
+  ],
+  "year": 2021,
+  "title": "Digital transformation: A multidisciplinary reflection and research agenda",
+  "venue": "Journal of Business Research",
+  "cited_by": [
+   "manufacturing"
+  ]
+ },
+ {
+  "key": "vial|2019|understanding-digital-transformation",
+  "authors": [
+   "Vial"
+  ],
+  "year": 2019,
+  "title": "Understanding digital transformation: A review and a research agenda",
+  "venue": "Journal of Strategic Information Systems",
+  "cited_by": [
+   "manufacturing"
+  ]
+ },
+ {
+  "key": "walsham|1995|interpretive-case-studies",
+  "authors": [
+   "Walsham"
+  ],
+  "year": 1995,
+  "title": "Interpretive case studies in IS research: Nature and method",
+  "venue": "European Journal of Information Systems",
+  "cited_by": [
+   "manufacturing"
+  ]
+ },
+ {
+  "key": "weaver|2017|skill-demands-mismatch",
+  "authors": [
+   "Weaver",
+   "Osterman"
+  ],
+  "year": 2017,
+  "title": "Skill demands and mismatch in U.S. manufacturing",
+  "venue": "Industrial and Labor Relations Review",
+  "cited_by": [
+   "manufacturing"
+  ]
+ },
+ {
+  "key": "wirtz|2018|brave-new-world",
+  "authors": [
+   "Wirtz",
+   "Patterson",
+   "Kunz",
+   "Gruber",
+   "Lu",
+   "Paluch",
+   "Martins"
+  ],
+  "year": 2018,
+  "title": "Brave new world: Service robots in the frontline",
+  "venue": "Journal of Service Management",
+  "cited_by": [
+   "manufacturing",
+   "service"
+  ]
+ },
+ {
+  "key": "worldbank|2007|environmental-health-safety",
+  "authors": [
+   "World Bank"
+  ],
+  "year": 2007,
+  "title": "Environmental, health, and safety guidelines for glass manufacturing",
+  "venue": "International Finance Corporation",
+  "cited_by": [
+   "manufacturing"
+  ]
+ },
+ {
+  "key": "yin|2018|case-study-research",
+  "authors": [
+   "Yin"
+  ],
+  "year": 2018,
+  "title": "Case study research and applications: Design and methods",
+  "venue": "Sage",
+  "cited_by": [
+   "manufacturing"
+  ]
+ },
+ {
+  "key": "you|2018|emotional-attachment-performance",
+  "authors": [
+   "You",
+   "Robert"
+  ],
+  "year": 2018,
+  "title": "Emotional attachment, performance, and viability in teams collaborating with embodied physical action (EPA) robots",
+  "venue": "Journal of the Association for Information Systems",
+  "cited_by": [
+   "manufacturing"
+  ]
+ },
+ {
+  "key": "zammuto|1992|gaining-advanced-manufacturing",
+  "authors": [
+   "Zammuto",
+   "O'Connor"
+  ],
+  "year": 1992,
+  "title": "Gaining advanced manufacturing technologies' benefits: The roles of organization design and culture",
+  "venue": "Academy of Management Review",
+  "cited_by": [
+   "manufacturing"
+  ]
+ },
+ {
+  "key": "zuboff|1988|age-smart-machine",
+  "authors": [
+   "Zuboff"
+  ],
+  "year": 1988,
+  "title": "In the age of the smart machine: The future of work and power",
+  "venue": "Basic Books",
+  "cited_by": [
+   "manufacturing"
+  ]
+ },
+ {
+  "key": "acemoglu|2019|artificial-intelligence-automation",
+  "authors": [
+   "Acemoglu",
+   "Restrepo"
+  ],
+  "year": 2019,
+  "title": "Artificial intelligence, automation, and work",
+  "venue": "University of Chicago Press",
+  "cited_by": [
+   "sales"
+  ]
+ },
+ {
+  "key": "aksin|2007|modern-call-center",
+  "authors": [
+   "Aksin",
+   "Armony",
+   "Mehrotra"
+  ],
+  "year": 2007,
+  "title": "The modern call center: A multi-disciplinary perspective on operations management research",
+  "venue": "Production and Operations Management",
+  "cited_by": [
+   "sales"
+  ]
+ },
+ {
+  "key": "athey|2019|generalized-random-forests",
+  "authors": [
+   "Athey",
+   "Tibshirani",
+   "Wager"
+  ],
+  "year": 2019,
+  "title": "Generalized random forests",
+  "venue": "The Annals of Statistics",
+  "cited_by": [
+   "sales",
+   "misaligned"
+  ]
+ },
+ {
+  "key": "bai|2022|impacts-algorithmic-work",
+  "authors": [
+   "Bai",
+   "Dai",
+   "Zhang",
+   "Zhang",
+   "Hu"
+  ],
+  "year": 2022,
+  "title": "The impacts of algorithmic work assignment on fairness perceptions and productivity: Evidence from field experiments",
+  "venue": "Manufacturing & Service Operations Management",
+  "cited_by": [
+   "sales"
+  ]
+ },
+ {
+  "key": "balakrishnan|2026|humanalgorithm-collaboration-private",
+  "authors": [
+   "Balakrishnan",
+   "Ferreira",
+   "Tong"
+  ],
+  "year": 2026,
+  "title": "Human-algorithm collaboration with private information: Naive advice-weighting behavior and mitigation",
+  "venue": "Management Science",
+  "cited_by": [
+   "sales"
+  ]
+ },
+ {
+  "key": "beer|2026|behavioral-externalities-process",
+  "authors": [
+   "Beer",
+   "Qi",
+   "Rios"
+  ],
+  "year": 2026,
+  "title": "Behavioral externalities of process automation",
+  "venue": "Management Science",
+  "cited_by": [
+   "sales"
+  ]
+ },
+ {
+  "key": "beil|2026|human-decision-making",
+  "authors": [
+   "Beil",
+   "Duenyas",
+   "Leider",
+   "Li",
+   "Qi"
+  ],
+  "year": 2026,
+  "title": "Human decision making in dynamic resource allocation",
+  "venue": "Management Science",
+  "cited_by": [
+   "sales"
+  ]
+ },
+ {
+  "key": "benjaafar|2025|impact-automation-workers",
+  "authors": [
+   "Benjaafar",
+   "Wang",
+   "Yang"
+  ],
+  "year": 2025,
+  "title": "The impact of automation on workers when workers are strategic: The case of ride-hailing",
+  "venue": "Manufacturing & Service Operations Management",
+  "cited_by": [
+   "sales"
+  ]
+ },
+ {
+  "key": "calonico|2014|robust-nonparametric-confidence",
+  "authors": [
+   "Calonico",
+   "Cattaneo",
+   "Titiunik"
+  ],
+  "year": 2014,
+  "title": "Robust nonparametric confidence intervals for regression-discontinuity designs",
+  "venue": "Econometrica",
+  "cited_by": [
+   "sales"
+  ]
+ },
+ {
+  "key": "cao|2026|forced-intervention-facilitates",
+  "authors": [
+   "Cao",
+   "Hu",
+   "Sun",
+   "Zhang"
+  ],
+  "year": 2026,
+  "title": "How forced intervention facilitates AI adoption",
+  "venue": "Manufacturing & Service Operations Management",
+  "cited_by": [
+   "sales"
+  ]
+ },
+ {
+  "key": "caro|2026|introduction-special-issue",
+  "authors": [
+   "Caro",
+   "Colliard",
+   "Katok",
+   "Ockenfels",
+   "Stier-Moses",
+   "Tucker",
+   "Wu"
+  ],
+  "year": 2026,
+  "title": "Introduction to the special issue on the human-algorithm connection",
+  "venue": "Management Science",
+  "cited_by": [
+   "sales"
+  ]
+ },
+ {
+  "key": "cho|2019|behavior-aware-service",
+  "authors": [
+   "Cho",
+   "Bretthauer",
+   "Cattani",
+   "Mills"
+  ],
+  "year": 2019,
+  "title": "Behavior aware service staffing",
+  "venue": "Production and Operations Management",
+  "cited_by": [
+   "sales"
+  ]
+ },
+ {
+  "key": "cohen|2026|supply-chain-management",
+  "authors": [
+   "Cohen",
+   "Dai",
+   "Perakis",
+   "Agrawal",
+   "Allon",
+   "Boute",
+   "Cachon",
+   "Chen"
+  ],
+  "year": 2026,
+  "title": "Supply chain management in the AI era: A vision statement from the operations management community",
+  "venue": "Manufacturing & Service Operations Management",
+  "cited_by": [
+   "sales"
+  ]
+ },
+ {
+  "key": "cui|2026|effects-generative-ai",
+  "authors": [
+   "Cui",
+   "Demirer",
+   "Jaffe",
+   "Musolff",
+   "Peng",
+   "Salz"
+  ],
+  "year": 2026,
+  "title": "The effects of generative AI on high-skilled work: Evidence from three field experiments with software developers",
+  "venue": "Management Science",
+  "cited_by": [
+   "sales"
+  ]
+ },
+ {
+  "key": "dai|2025|using-artificial-intelligence",
+  "authors": [
+   "Dai",
+   "Singh"
+  ],
+  "year": 2025,
+  "title": "Using artificial intelligence as gatekeeper or second opinion: Designing patient pathways for artificial intelligence augmented healthcare",
+  "venue": "Production and Operations Management",
+  "cited_by": [
+   "sales"
+  ]
+ },
+ {
+  "key": "dai|2026|artificial-intelligence-operations",
+  "authors": [
+   "Dai",
+   "Swaminathan"
+  ],
+  "year": 2026,
+  "title": "Artificial intelligence and operations: A foundational framework of emerging research and practice",
+  "venue": "Production and Operations Management",
+  "cited_by": [
+   "sales"
+  ]
+ },
+ {
+  "key": "dellacqua|2026|cybernetic-teammate-field",
+  "authors": [
+   "Dell'Acqua",
+   "Ayoubi",
+   "Lifshitz",
+   "Sadun",
+   "Mollick",
+   "Mollick",
+   "Han",
+   "Goldman"
+  ],
+  "year": 2026,
+  "title": "The cybernetic teammate: A field experiment on generative AI and teamwork",
+  "venue": "Organization Science",
+  "cited_by": [
+   "sales"
+  ]
+ },
+ {
+  "key": "dellacqua|2026|navigating-jagged-technological",
+  "authors": [
+   "Dell'Acqua",
+   "McFowland",
+   "Mollick",
+   "Lifshitz",
+   "Kellogg",
+   "Rajendran",
+   "Krayer",
+   "Candelon"
+  ],
+  "year": 2026,
+  "title": "Navigating the jagged technological frontier: Field experimental evidence of the effects of artificial intelligence on knowledge worker productivity and quality",
+  "venue": "Organization Science",
+  "cited_by": [
+   "sales"
+  ]
+ },
+ {
+  "key": "donohue|2020|behavioral-operations-past",
+  "authors": [
+   "Donohue",
+   "Ozer",
+   "Zheng"
+  ],
+  "year": 2020,
+  "title": "Behavioral operations: Past, present, and future",
+  "venue": "Manufacturing & Service Operations Management",
+  "cited_by": [
+   "sales"
+  ]
+ },
+ {
+  "key": "dossantosdisorbo|2025|warnings-endorsements-improving",
+  "authors": [
+   "DosSantos DiSorbo",
+   "Ferreira",
+   "Balakrishnan",
+   "Tong"
+  ],
+  "year": 2025,
+  "title": "Warnings and endorsements: Improving human-AI collaboration in the presence of outliers",
+  "venue": "Manufacturing & Service Operations Management",
+  "cited_by": [
+   "sales"
+  ]
+ },
+ {
+  "key": "fang|2026|artificial-intelligence-emotional",
+  "authors": [
+   "Fang",
+   "Chang",
+   "Luo",
+   "Wu",
+   "Aspara"
+  ],
+  "year": 2026,
+  "title": "Artificial intelligence, emotional labor, and service operations",
+  "venue": "Manufacturing & Service Operations Management",
+  "cited_by": [
+   "sales"
+  ]
+ },
+ {
+  "key": "freeman|2017|gatekeepers-work-empirical",
+  "authors": [
+   "Freeman",
+   "Savva",
+   "Scholtes"
+  ],
+  "year": 2017,
+  "title": "Gatekeepers at work: An empirical analysis of a maternity unit",
+  "venue": "Management Science",
+  "cited_by": [
+   "sales"
+  ]
+ },
+ {
+  "key": "freeman|2021|gatekeeping-fast-slow",
+  "authors": [
+   "Freeman",
+   "Robinson",
+   "Scholtes"
+  ],
+  "year": 2021,
+  "title": "Gatekeeping, fast and slow: An empirical study of referral errors in the emergency department",
+  "venue": "Management Science",
+  "cited_by": [
+   "sales"
+  ]
+ },
+ {
+  "key": "fugener|2026|roles-artificial-intelligence",
+  "authors": [
+   "Fugener",
+   "Walzner",
+   "Gupta"
+  ],
+  "year": 2026,
+  "title": "Roles of artificial intelligence in collaboration with humans: Automation, augmentation, and the future of work",
+  "venue": "Management Science",
+  "cited_by": [
+   "sales"
+  ]
+ },
+ {
+  "key": "gelbach|2016|covariates-matter-ones",
+  "authors": [
+   "Gelbach"
+  ],
+  "year": 2016,
+  "title": "When do covariates matter? And which ones, and how much?",
+  "venue": "Journal of Labor Economics",
+  "cited_by": [
+   "sales"
+  ]
+ },
+ {
+  "key": "hausman|2018|regression-discontinuity-time",
+  "authors": [
+   "Hausman",
+   "Rapson"
+  ],
+  "year": 2018,
+  "title": "Regression discontinuity in time: Considerations for empirical applications",
+  "venue": "Annual Review of Resource Economics",
+  "cited_by": [
+   "sales"
+  ]
+ },
+ {
+  "key": "hu|2022|surge-pricing-twosided",
+  "authors": [
+   "Hu",
+   "Hu",
+   "Zhu"
+  ],
+  "year": 2022,
+  "title": "Surge pricing and two-sided temporal responses in ride hailing",
+  "venue": "Manufacturing & Service Operations Management",
+  "cited_by": [
+   "sales"
+  ]
+ },
+ {
+  "key": "ibanez|2018|discretionary-task-ordering",
+  "authors": [
+   "Ibanez",
+   "Clark",
+   "Huckman",
+   "Staats"
+  ],
+  "year": 2018,
+  "title": "Discretionary task ordering: Queue management in radiological services",
+  "venue": "Management Science",
+  "cited_by": [
+   "sales"
+  ]
+ },
+ {
+  "key": "ibanez|2020|scheduling-can-bias",
+  "authors": [
+   "Ibanez",
+   "Toffel"
+  ],
+  "year": 2020,
+  "title": "How scheduling can bias quality assessment: Evidence from food-safety inspections",
+  "venue": "Management Science",
+  "cited_by": [
+   "sales"
+  ]
+ },
+ {
+  "key": "ibrahim|2021|eliciting-human-judgment",
+  "authors": [
+   "Ibrahim",
+   "Kim",
+   "Tong"
+  ],
+  "year": 2021,
+  "title": "Eliciting human judgment for prediction algorithms",
+  "venue": "Management Science",
+  "cited_by": [
+   "sales"
+  ]
+ },
+ {
+  "key": "jia|2024|artificial-intelligence-augments",
+  "authors": [
+   "Jia",
+   "Luo",
+   "Fang",
+   "Liao"
+  ],
+  "year": 2024,
+  "title": "When and how artificial intelligence augments employee creativity",
+  "venue": "Academy of Management Journal",
+  "cited_by": [
+   "sales"
+  ]
+ },
+ {
+  "key": "kc|2009|impact-workload-service",
+  "authors": [
+   "KC",
+   "Terwiesch"
+  ],
+  "year": 2009,
+  "title": "Impact of workload on service time and patient safety: An econometric analysis of hospital operations",
+  "venue": "Management Science",
+  "cited_by": [
+   "sales"
+  ]
+ },
+ {
+  "key": "kc|2020|task-selection-workload",
+  "authors": [
+   "KC",
+   "Staats",
+   "Kouchaki",
+   "Gino"
+  ],
+  "year": 2020,
+  "title": "Task selection and workload: A focus on completing easy tasks hurts performance",
+  "venue": "Management Science",
+  "cited_by": [
+   "sales"
+  ]
+ },
+ {
+  "key": "kawaguchi|2021|will-workers-follow",
+  "authors": [
+   "Kawaguchi"
+  ],
+  "year": 2021,
+  "title": "When will workers follow an algorithm? A field experiment with a retail business",
+  "venue": "Management Science",
+  "cited_by": [
+   "sales"
+  ]
+ },
+ {
+  "key": "kesavan|2022|doing-well-doing",
+  "authors": [
+   "Kesavan",
+   "Lambert",
+   "Williams",
+   "Pendem"
+  ],
+  "year": 2022,
+  "title": "Doing well by doing good: Improving retail store performance with responsible scheduling practices at the Gap, Inc",
+  "venue": "Management Science",
+  "cited_by": [
+   "sales"
+  ]
+ },
+ {
+  "key": "kostami|2024|if-you-love",
+  "authors": [
+   "Kostami"
+  ],
+  "year": 2024,
+  "title": "If you love your agents, set them free: Task discretion in online workplaces",
+  "venue": "Management Science",
+  "cited_by": [
+   "sales"
+  ]
+ },
+ {
+  "key": "krakowski|2026|humancentered-artificial-intelligence",
+  "authors": [
+   "Krakowski",
+   "Haftor",
+   "Luger",
+   "Pashkevich",
+   "Raisch"
+  ],
+  "year": 2026,
+  "title": "Human-centered artificial intelligence: A field experiment",
+  "venue": "Management Science",
+  "cited_by": [
+   "sales"
+  ]
+ },
+ {
+  "key": "lippman|1976|economics-job-search",
+  "authors": [
+   "Lippman",
+   "McCall"
+  ],
+  "year": 1976,
+  "title": "The economics of job search: A survey",
+  "venue": "Economic Inquiry",
+  "cited_by": [
+   "sales"
+  ]
+ },
+ {
+  "key": "liu|2023|participation-competition-welfare",
+  "authors": [
+   "Liu",
+   "Wang",
+   "Gilbert",
+   "Lai"
+  ],
+  "year": 2023,
+  "title": "On the participation, competition and welfare at customer-intensive discretionary service platforms",
+  "venue": "Manufacturing & Service Operations Management",
+  "cited_by": [
+   "sales"
+  ]
+ },
+ {
+  "key": "manzoor|2025|learning-quit-sales",
+  "authors": [
+   "Manzoor",
+   "Ascarza",
+   "Netzer"
+  ],
+  "year": 2025,
+  "title": "Learning when to quit in sales conversations",
+  "venue": "Working paper",
+  "cited_by": [
+   "sales"
+  ]
+ },
+ {
+  "key": "mccall|1970|economics-information-job",
+  "authors": [
+   "McCall"
+  ],
+  "year": 1970,
+  "title": "Economics of information and job search",
+  "venue": "Quarterly Journal of Economics",
+  "cited_by": [
+   "sales"
+  ]
+ },
+ {
+  "key": "mehrotra|2012|routing-manage-resolution",
+  "authors": [
+   "Mehrotra",
+   "Ross",
+   "Ryder",
+   "Zhou"
+  ],
+  "year": 2012,
+  "title": "Routing to manage resolution and waiting time in call centers with heterogeneous servers",
+  "venue": "Manufacturing & Service Operations Management",
+  "cited_by": [
+   "sales"
+  ]
+ },
+ {
+  "key": "ni|2026|generative-ai-action",
+  "authors": [
+   "Ni",
+   "Wang",
+   "Feng",
+   "Lu",
+   "Wang",
+   "Zhou"
+  ],
+  "year": 2026,
+  "title": "Generative AI in action: Field experimental evidence from Alibaba's customer service operations",
+  "venue": "Working paper",
+  "cited_by": [
+   "sales"
+  ]
+ },
+ {
+  "key": "roels|2021|peoplecentric-operations-achievements",
+  "authors": [
+   "Roels",
+   "Staats"
+  ],
+  "year": 2021,
+  "title": "People-centric operations: Achievements and future research directions",
+  "venue": "Manufacturing & Service Operations Management",
+  "cited_by": [
+   "sales"
+  ]
+ },
+ {
+  "key": "saghafian|2018|workload-management-telemedical",
+  "authors": [
+   "Saghafian",
+   "Hopp",
+   "Iravani",
+   "Cheng",
+   "Diermeier"
+  ],
+  "year": 2018,
+  "title": "Workload management in telemedical physician triage and other knowledge-based service systems",
+  "venue": "Management Science",
+  "cited_by": [
+   "sales"
+  ]
+ },
+ {
+  "key": "shumsky|2003|gatekeepers-referrals-services",
+  "authors": [
+   "Shumsky",
+   "Pinker"
+  ],
+  "year": 2003,
+  "title": "Gatekeepers and referrals in services",
+  "venue": "Management Science",
+  "cited_by": [
+   "sales"
+  ]
+ },
+ {
+  "key": "snyder|2026|algorithm-reliance-fast",
+  "authors": [
+   "Snyder",
+   "Keppler",
+   "Leider"
+  ],
+  "year": 2026,
+  "title": "Algorithm reliance: Fast and slow",
+  "venue": "Management Science",
+  "cited_by": [
+   "sales"
+  ]
+ },
+ {
+  "key": "song|2024|optimal-salesforce-compensation",
+  "authors": [
+   "Song",
+   "Lai",
+   "Xiao"
+  ],
+  "year": 2024,
+  "title": "Optimal salesforce compensation with general demand and operational considerations",
+  "venue": "Manufacturing & Service Operations Management",
+  "cited_by": [
+   "sales"
+  ]
+ },
+ {
+  "key": "stigler|1961|economics-information",
+  "authors": [
+   "Stigler"
+  ],
+  "year": 1961,
+  "title": "The economics of information",
+  "venue": "Journal of Political Economy",
+  "cited_by": [
+   "sales"
+  ]
+ },
+ {
+  "key": "sunar|2021|pooled-vs-dedicated",
+  "authors": [
+   "Sunar",
+   "Tu",
+   "Ziya"
+  ],
+  "year": 2021,
+  "title": "Pooled vs. dedicated queues when customers are delay-sensitive",
+  "venue": "Management Science",
+  "cited_by": [
+   "sales"
+  ]
+ },
+ {
+  "key": "tan|2014|devil-make-work",
+  "authors": [
+   "Tan",
+   "Netessine"
+  ],
+  "year": 2014,
+  "title": "When does the devil make work? An empirical study of the impact of workload on worker productivity",
+  "venue": "Management Science",
+  "cited_by": [
+   "sales"
+  ]
+ },
+ {
+  "key": "wager|2018|estimation-inference-heterogeneous",
+  "authors": [
+   "Wager",
+   "Athey"
+  ],
+  "year": 2018,
+  "title": "Estimation and inference of heterogeneous treatment effects using random forests",
+  "venue": "Journal of the American Statistical Association",
+  "cited_by": [
+   "sales",
+   "misaligned"
+  ]
+ },
+ {
+  "key": "wallace|2005|staffing-algorithm-call",
+  "authors": [
+   "Wallace",
+   "Whitt"
+  ],
+  "year": 2005,
+  "title": "A staffing algorithm for call centers with skill-based routing",
+  "venue": "Manufacturing & Service Operations Management",
+  "cited_by": [
+   "sales"
+  ]
+ },
+ {
+  "key": "wang|2023|voicebased-ai-call",
+  "authors": [
+   "Wang",
+   "Huang",
+   "Hong",
+   "Liu",
+   "Guo",
+   "Chen"
+  ],
+  "year": 2023,
+  "title": "Voice-based AI in call center customer service: A natural field experiment",
+  "venue": "Production and Operations Management",
+  "cited_by": [
+   "sales"
+  ]
+ },
+ {
+  "key": "wang|2023|algorithmic-transparency-strategic",
+  "authors": [
+   "Wang",
+   "Huang",
+   "Jasin",
+   "Singh"
+  ],
+  "year": 2023,
+  "title": "Algorithmic transparency with strategic users",
+  "venue": "Management Science",
+  "cited_by": [
+   "sales"
+  ]
+ },
+ {
+  "key": "yuan|2026|backfiring-ai-ai",
+  "authors": [
+   "Yuan",
+   "Aseri",
+   "Ramasubbu"
+  ],
+  "year": 2026,
+  "title": "Backfiring AI? AI deployment in workplace",
+  "venue": "Management Science",
+  "cited_by": [
+   "sales"
+  ]
+ },
+ {
+  "key": "zhang|2026|engaging-customers-ai",
+  "authors": [
+   "Zhang",
+   "Narayandas"
+  ],
+  "year": 2026,
+  "title": "Engaging customers with AI in online chats: Evidence from a randomized field experiment",
+  "venue": "Management Science",
+  "cited_by": [
+   "sales"
+  ]
+ },
+ {
+  "key": "abbaraju|2019|effect-dynamic-text",
+  "authors": [
+   "Abbaraju",
+   "Harmon",
+   "Song"
+  ],
+  "year": 2019,
+  "title": "Effect of dynamic text on habituation to polymorphic warnings",
+  "venue": "Proceedings of the 25th Americas Conference on Information Systems",
+  "cited_by": [
+   "stimulus"
+  ]
+ },
+ {
+  "key": "abbasi|2024|pathways-design-research",
+  "authors": [
+   "Abbasi",
+   "Parsons",
+   "Pant",
+   "Sheng",
+   "Sarker"
+  ],
+  "year": 2024,
+  "title": "Pathways for design research on artificial intelligence",
+  "venue": "Information Systems Research",
+  "cited_by": [
+   "stimulus"
+  ]
+ },
+ {
+  "key": "anderson|2016|your-memory-working",
+  "authors": [
+   "Anderson",
+   "Jenkins",
+   "Vance",
+   "Kirwan",
+   "Eargle"
+  ],
+  "year": 2016,
+  "title": "Your memory is working against you: How eye tracking and memory explain habituation to security warnings",
+  "venue": "Decision Support Systems",
+  "cited_by": [
+   "stimulus"
+  ]
+ },
+ {
+  "key": "anderson|2015|polymorphic-warnings-reduce",
+  "authors": [
+   "Anderson",
+   "Kirwan",
+   "Jenkins",
+   "Eargle",
+   "Howard",
+   "Vance"
+  ],
+  "year": 2015,
+  "title": "How polymorphic warnings reduce habituation in the brain\u2014Insights from an fMRI study",
+  "venue": "Proceedings of the 33rd Annual ACM Conference on Human Factors in Computing Systems",
+  "cited_by": [
+   "stimulus"
+  ]
+ },
+ {
+  "key": "baribault|2018|metastudies-robust-tests",
+  "authors": [
+   "Baribault",
+   "Donkin",
+   "Little",
+   "Trueblood",
+   "Oravecz",
+   "van Ravenzwaaij",
+   "White",
+   "De Boeck"
+  ],
+  "year": 2018,
+  "title": "Metastudies for robust tests of theory",
+  "venue": "Proceedings of the National Academy of Sciences",
+  "cited_by": [
+   "stimulus"
+  ]
+ },
+ {
+  "key": "behrend|2025|participant-interactions-artificial",
+  "authors": [
+   "Behrend",
+   "Landers"
+  ],
+  "year": 2025,
+  "title": "Participant interactions with artificial intelligence: Using large language models to generate research materials for surveys and experiments",
+  "venue": "Journal of Business and Psychology",
+  "cited_by": [
+   "stimulus"
+  ]
+ },
+ {
+  "key": "blanchard|2025|new-tools-new",
+  "authors": [
+   "Blanchard",
+   "Duani",
+   "Garvey",
+   "Netzer",
+   "Oh"
+  ],
+  "year": 2025,
+  "title": "New tools, new rules: A practical guide to effective and responsible generative AI use for surveys and experiments in research",
+  "venue": "Journal of Marketing",
+  "cited_by": [
+   "stimulus"
+  ]
+ },
+ {
+  "key": "boruvka|2018|assessing-timevarying-causal",
+  "authors": [
+   "Boruvka",
+   "Almirall",
+   "Witkiewitz",
+   "Murphy"
+  ],
+  "year": 2018,
+  "title": "Assessing time-varying causal effect moderation in mobile health",
+  "venue": "Journal of the American Statistical Association",
+  "cited_by": [
+   "stimulus"
+  ]
+ },
+ {
+  "key": "bradley|1952|rank-analysis-incomplete",
+  "authors": [
+   "Bradley",
+   "Terry"
+  ],
+  "year": 1952,
+  "title": "Rank analysis of incomplete block designs: I. The method of paired comparisons",
+  "venue": "Biometrika",
+  "cited_by": [
+   "stimulus"
+  ]
+ },
+ {
+  "key": "brunswik|1955|representative-design-probabilistic",
+  "authors": [
+   "Brunswik"
+  ],
+  "year": 1955,
+  "title": "Representative design and probabilistic theory in a functional psychology",
+  "venue": "Psychological Review",
+  "cited_by": [
+   "stimulus"
+  ]
+ },
+ {
+  "key": "chataigner|2026|say-it-another",
+  "authors": [
+   "Chataigner",
+   "Ma",
+   "Ganesh",
+   "Chen",
+   "Taik",
+   "Creager",
+   "Farnadi"
+  ],
+  "year": 2026,
+  "title": "Say it another way: Auditing LLMs with a user-grounded automated paraphrasing framework",
+  "venue": "Proceedings of the 19th Conference of the European Chapter of the Association for Computational Linguistics",
+  "cited_by": [
+   "stimulus"
+  ]
+ },
+ {
+  "key": "chen|2026|alert-alerts-investment",
+  "authors": [
+   "Chen",
+   "Liu",
+   "Wen"
+  ],
+  "year": 2026,
+  "title": "Alert for alerts: How investment price tracking alerts affect retail investors",
+  "venue": "MIS Quarterly",
+  "cited_by": [
+   "stimulus"
+  ]
+ },
+ {
+  "key": "clark|1973|languageasfixedeffect-fallacy-critique",
+  "authors": [
+   "Clark"
+  ],
+  "year": 1973,
+  "title": "The language-as-fixed-effect fallacy: A critique of language statistics in psychological research",
+  "venue": "Journal of Verbal Learning and Verbal Behavior",
+  "cited_by": [
+   "stimulus"
+  ]
+ },
+ {
+  "key": "dekay|2022|accelerating-psychological-science",
+  "authors": [
+   "DeKay",
+   "Rubinchik",
+   "Li",
+   "De Boeck"
+  ],
+  "year": 2022,
+  "title": "Accelerating psychological science with metastudies: A demonstration using the risky-choice framing effect",
+  "venue": "Perspectives on Psychological Science",
+  "cited_by": [
+   "stimulus"
+  ]
+ },
+ {
+  "key": "duan|2025|stimmas-multiagent-framework",
+  "authors": [
+   "Duan",
+   "Xiao",
+   "Kan",
+   "Cai"
+  ],
+  "year": 2025,
+  "title": "StimMAS: A multi-agent framework for automated linguistic stimulus construction in psychological research",
+  "venue": "Preprint",
+  "cited_by": [
+   "stimulus"
+  ]
+ },
+ {
+  "key": "fiedler|2000|beware-samples-cognitiveecological",
+  "authors": [
+   "Fiedler"
+  ],
+  "year": 2000,
+  "title": "Beware of samples! A cognitive-ecological sampling approach to judgment biases",
+  "venue": "Psychological Review",
+  "cited_by": [
+   "stimulus"
+  ]
+ },
+ {
+  "key": "haugtvedt|1994|advertising-repetition-variation",
+  "authors": [
+   "Haugtvedt",
+   "Schumann",
+   "Schneier",
+   "Warren"
+  ],
+  "year": 1994,
+  "title": "Advertising repetition and variation strategies: Implications for understanding attitude strength",
+  "venue": "Journal of Consumer Research",
+  "cited_by": [
+   "stimulus"
+  ]
+ },
+ {
+  "key": "judd|2012|treating-stimuli-random",
+  "authors": [
+   "Judd",
+   "Westfall",
+   "Kenny"
+  ],
+  "year": 2012,
+  "title": "Treating stimuli as a random factor in social psychology: A new and comprehensive solution to a pervasive but largely ignored problem",
+  "venue": "Journal of Personality and Social Psychology",
+  "cited_by": [
+   "stimulus"
+  ]
+ },
+ {
+  "key": "khernamnuai|2022|augmenting-password-strength",
+  "authors": [
+   "Khern-am-nuai",
+   "Hashim",
+   "Pinsonneault",
+   "Yang",
+   "Li"
+  ],
+  "year": 2022,
+  "title": "Augmenting password strength meter design using the elaboration likelihood model: Evidence from randomized experiments",
+  "venue": "Information Systems Research",
+  "cited_by": [
+   "stimulus"
+  ]
+ },
+ {
+  "key": "klasnja|2015|microrandomized-trials-experimental",
+  "authors": [
+   "Klasnja",
+   "Hekler",
+   "Shiffman",
+   "Boruvka",
+   "Almirall",
+   "Tewari",
+   "Murphy"
+  ],
+  "year": 2015,
+  "title": "Microrandomized trials: An experimental design for developing just-in-time adaptive interventions",
+  "venue": "Health Psychology",
+  "cited_by": [
+   "stimulus"
+  ]
+ },
+ {
+  "key": "kounios|2000|locus-semantic-satiation",
+  "authors": [
+   "Kounios",
+   "Kotz",
+   "Holcomb"
+  ],
+  "year": 2000,
+  "title": "On the locus of the semantic satiation effect: Evidence from event-related brain potentials",
+  "venue": "Memory & Cognition",
+  "cited_by": [
+   "stimulus"
+  ]
+ },
+ {
+  "key": "lambert|1960|verbal-satiation-changes",
+  "authors": [
+   "Lambert",
+   "Jakobovits"
+  ],
+  "year": 1960,
+  "title": "Verbal satiation and changes in the intensity of meaning",
+  "venue": "Journal of Experimental Psychology",
+  "cited_by": [
+   "stimulus"
+  ]
+ },
+ {
+  "key": "landy|2020|crowdsourcing-hypothesis-tests",
+  "authors": [
+   "Landy",
+   "Jia",
+   "Ding",
+   "Viganola",
+   "Tierney",
+   "Dreber",
+   "Johannesson",
+   "Pfeiffer"
+  ],
+  "year": 2020,
+  "title": "Crowdsourcing hypothesis tests: Making transparent how design choices shape research results",
+  "venue": "Psychological Bulletin",
+  "cited_by": [
+   "stimulus"
+  ]
+ },
+ {
+  "key": "lechuga|2026|generating-experimental-text",
+  "authors": [
+   "Lechuga",
+   "Karle"
+  ],
+  "year": 2026,
+  "title": "Generating experimental text stimuli for psychological research using ChatGPT",
+  "venue": "Advances in Methods and Practices in Psychological Science",
+  "cited_by": [
+   "stimulus"
+  ]
+ },
+ {
+  "key": "montgomery|2018|conditioning-posttreatment-variables",
+  "authors": [
+   "Montgomery",
+   "Nyhan",
+   "Torres"
+  ],
+  "year": 2018,
+  "title": "How conditioning on posttreatment variables can ruin your experiment and what to do about it",
+  "venue": "American Journal of Political Science",
+  "cited_by": [
+   "stimulus"
+  ]
+ },
+ {
+  "key": "pechmann|1988|advertising-repetition-critical",
+  "authors": [
+   "Pechmann",
+   "Stewart"
+  ],
+  "year": 1988,
+  "title": "Advertising repetition: A critical review of wearin and wearout",
+  "venue": "Current Issues and Research in Advertising",
+  "cited_by": [
+   "stimulus"
+  ]
+ },
+ {
+  "key": "pieper|2025|microrandomized-trials-information",
+  "authors": [
+   "Pieper",
+   "Fallon",
+   "Heinzl"
+  ],
+  "year": 2025,
+  "title": "Micro-randomized trials in Information Systems research: An experimental method for advancing knowledge about our dynamic and digitalized world",
+  "venue": "Journal of Information Technology",
+  "cited_by": [
+   "stimulus"
+  ]
+ },
+ {
+  "key": "pillet|2026|aiaugmented-content-validation",
+  "authors": [
+   "Pillet",
+   "Larsen",
+   "Dobolyi",
+   "Queiroz",
+   "Handler",
+   "Arnulf",
+   "Sharma"
+  ],
+  "year": 2026,
+  "title": "AI-augmented content validation in behavioral research: Development and evaluation of the RATER system",
+  "venue": "MIS Quarterly",
+  "cited_by": [
+   "stimulus"
+  ]
+ },
+ {
+  "key": "rankin|2009|habituation-revisited-updated",
+  "authors": [
+   "Rankin",
+   "Abrams",
+   "Barry",
+   "Bhatnagar",
+   "Clayton",
+   "Colombo",
+   "Coppola",
+   "Geyer"
+  ],
+  "year": 2009,
+  "title": "Habituation revisited: An updated and revised description of the behavioral characteristics of habituation",
+  "venue": "Neurobiology of Learning and Memory",
+  "cited_by": [
+   "stimulus"
+  ]
+ },
+ {
+  "key": "schmidt|2015|advertising-repetition-metaanalysis",
+  "authors": [
+   "Schmidt",
+   "Eisend"
+  ],
+  "year": 2015,
+  "title": "Advertising repetition: A meta-analysis on effective frequency in advertising",
+  "venue": "Journal of Advertising",
+  "cited_by": [
+   "stimulus"
+  ]
+ },
+ {
+  "key": "schumann|1990|predicting-effectiveness-different",
+  "authors": [
+   "Schumann",
+   "Petty",
+   "Clemons"
+  ],
+  "year": 1990,
+  "title": "Predicting the effectiveness of different strategies of advertising variation: A test of the repetition-variation hypotheses",
+  "venue": "Journal of Consumer Research",
+  "cited_by": [
+   "stimulus"
+  ]
+ },
+ {
+  "key": "sclar|2024|quantifying-language-models",
+  "authors": [
+   "Sclar",
+   "Choi",
+   "Tsvetkov",
+   "Suhr"
+  ],
+  "year": 2024,
+  "title": "Quantifying language models\u2019 sensitivity to spurious features in prompt design or: How I learned to start worrying about prompt formatting",
+  "venue": "Proceedings of the International Conference on Learning Representations",
+  "cited_by": [
+   "stimulus"
+  ]
+ },
+ {
+  "key": "simonsohn|2025|stimulus-sampling-reimagined",
+  "authors": [
+   "Simonsohn",
+   "Montealegre",
+   "Evangelidis"
+  ],
+  "year": 2025,
+  "title": "Stimulus sampling reimagined: Designing experiments with mix-and-match, analyzing results with stimulus plots",
+  "venue": "Journal of Personality and Social Psychology",
+  "cited_by": [
+   "stimulus"
+  ]
+ },
+ {
+  "key": "sokolov|1963|higher-nervous-functions",
+  "authors": [
+   "Sokolov"
+  ],
+  "year": 1963,
+  "title": "Higher nervous functions: The orienting reflex",
+  "venue": "Annual Review of Physiology",
+  "cited_by": [
+   "stimulus"
+  ]
+ },
+ {
+  "key": "tam|2006|understanding-impact-web",
+  "authors": [
+   "Tam",
+   "Ho"
+  ],
+  "year": 2006,
+  "title": "Understanding the impact of web personalization on user information processing and decision outcomes",
+  "venue": "MIS Quarterly",
+  "cited_by": [
+   "stimulus"
+  ]
+ },
+ {
+  "key": "thompson|1966|habituation-model-phenomenon",
+  "authors": [
+   "Thompson",
+   "Spencer"
+  ],
+  "year": 1966,
+  "title": "Habituation: A model phenomenon for the study of neuronal substrates of behavior",
+  "venue": "Psychological Review",
+  "cited_by": [
+   "stimulus"
+  ]
+ },
+ {
+  "key": "tian|2010|testing-associative-account",
+  "authors": [
+   "Tian",
+   "Huber"
+  ],
+  "year": 2010,
+  "title": "Testing an associative account of semantic satiation",
+  "venue": "Cognitive Psychology",
+  "cited_by": [
+   "stimulus"
+  ]
+ },
+ {
+  "key": "tomaino|2025|simple-method-improving",
+  "authors": [
+   "Tomaino",
+   "Mazar",
+   "Carmon",
+   "Wertenbroch"
+  ],
+  "year": 2025,
+  "title": "A simple method for improving generalizability in behavioral science: Scope testing with AI-generated stimuli (STAGS)",
+  "venue": "Consumer Psychology Review",
+  "cited_by": [
+   "stimulus"
+  ]
+ },
+ {
+  "key": "unnava|1991|effects-repeating-varied",
+  "authors": [
+   "Unnava",
+   "Burnkrant"
+  ],
+  "year": 1991,
+  "title": "Effects of repeating varied ad executions on brand name memory",
+  "venue": "Journal of Marketing Research",
+  "cited_by": [
+   "stimulus"
+  ]
+ },
+ {
+  "key": "vanderweele|2013|causal-inference-multiple",
+  "authors": [
+   "VanderWeele",
+   "Hernan"
+  ],
+  "year": 2013,
+  "title": "Causal inference under multiple versions of treatment",
+  "venue": "Journal of Causal Inference",
+  "cited_by": [
+   "stimulus"
+  ]
+ },
+ {
+  "key": "vanberlo|2024|made-framework-best",
+  "authors": [
+   "van Berlo",
+   "Campbell",
+   "Voorveld"
+  ],
+  "year": 2024,
+  "title": "The MADE framework: Best practices for creating effective experimental stimuli using generative AI",
+  "venue": "Journal of Advertising",
+  "cited_by": [
+   "stimulus"
+  ]
+ },
+ {
+  "key": "vance|2025|fog-warnings-nonsecurityrelated",
+  "authors": [
+   "Vance",
+   "Eargle",
+   "Kirwan",
+   "Anderson",
+   "Jenkins"
+  ],
+  "year": 2025,
+  "title": "The fog of warnings: How non-security-related notifications diminish the efficacy of security warnings",
+  "venue": "MIS Quarterly",
+  "cited_by": [
+   "stimulus"
+  ]
+ },
+ {
+  "key": "wang|2025|artificial-intelligence-ai",
+  "authors": [
+   "Wang",
+   "Huang",
+   "He",
+   "Liu",
+   "Guo",
+   "Sun",
+   "Chen"
+  ],
+  "year": 2025,
+  "title": "Artificial intelligence (AI) assistant in online shopping: A randomized field experiment on a livestream selling platform",
+  "venue": "Information Systems Research",
+  "cited_by": [
+   "stimulus"
+  ]
+ },
+ {
+  "key": "weinert|2022|repeated-it-interruption",
+  "authors": [
+   "Weinert",
+   "Maier",
+   "Laumer",
+   "Weitzel"
+  ],
+  "year": 2022,
+  "title": "Repeated IT interruption: Habituation and sensitization of user responses",
+  "venue": "Journal of Management Information Systems",
+  "cited_by": [
+   "stimulus"
+  ]
+ },
+ {
+  "key": "wells|1999|stimulus-sampling-social",
+  "authors": [
+   "Wells",
+   "Windschitl"
+  ],
+  "year": 1999,
+  "title": "Stimulus sampling and social psychological experimentation",
+  "venue": "Personality and Social Psychology Bulletin",
+  "cited_by": [
+   "stimulus"
+  ]
+ },
+ {
+  "key": "westfall|2015|replicating-studies-samples",
+  "authors": [
+   "Westfall",
+   "Judd",
+   "Kenny"
+  ],
+  "year": 2015,
+  "title": "Replicating studies in which samples of participants respond to samples of stimuli",
+  "venue": "Perspectives on Psychological Science",
+  "cited_by": [
+   "stimulus"
+  ]
+ },
+ {
+  "key": "westfall|2014|statistical-power-optimal",
+  "authors": [
+   "Westfall",
+   "Kenny",
+   "Judd"
+  ],
+  "year": 2014,
+  "title": "Statistical power and optimal design in experiments in which samples of participants respond to samples of stimuli",
+  "venue": "Journal of Experimental Psychology: General",
+  "cited_by": [
+   "stimulus"
+  ]
+ },
+ {
+  "key": "yang|2025|my-advisor-her",
+  "authors": [
+   "Yang",
+   "Bauer",
+   "Li",
+   "Hinz"
+  ],
+  "year": 2025,
+  "title": "My advisor, her AI, and me: Evidence from a field experiment on human\u2013AI collaboration and investment decisions",
+  "venue": "Management Science",
+  "cited_by": [
+   "stimulus",
+   "triage"
+  ]
+ },
+ {
+  "key": "yarkoni|2022|generalizability-crisis",
+  "authors": [
+   "Yarkoni"
+  ],
+  "year": 2022,
+  "title": "The generalizability crisis",
+  "venue": "Behavioral and Brain Sciences",
+  "cited_by": [
+   "stimulus"
+  ]
+ },
+ {
+  "key": "adjerid|2018|beyond-privacy-paradox",
+  "authors": [
+   "Adjerid",
+   "Peer",
+   "Acquisti"
+  ],
+  "year": 2018,
+  "title": "Beyond the privacy paradox: Objective versus relative risk in privacy decision making",
+  "venue": "MIS Quarterly",
+  "cited_by": [
+   "service"
+  ]
+ },
+ {
+  "key": "alnatour|2020|empirical-investigation-antecedents",
+  "authors": [
+   "Al-Natour",
+   "Cavusoglu",
+   "Benbasat",
+   "Aleem"
+  ],
+  "year": 2020,
+  "title": "An empirical investigation of the antecedents and consequences of privacy uncertainty in the context of mobile apps",
+  "venue": "Information Systems Research",
+  "cited_by": [
+   "service"
+  ]
+ },
+ {
+  "key": "altman|1975|environment-social-behavior",
+  "authors": [
+   "Altman"
+  ],
+  "year": 1975,
+  "title": "The environment and social behavior: Privacy, personal space, territory, crowding",
+  "venue": "Brooks/Cole",
+  "cited_by": [
+   "service"
+  ]
+ },
+ {
+  "key": "amo|2022|technological-entitlement-its",
+  "authors": [
+   "Amo",
+   "Grijalva",
+   "Herath",
+   "Lemoine",
+   "Rao"
+  ],
+  "year": 2022,
+  "title": "Technological entitlement: It's my technology and I'll (Ab)Use it how I want to",
+  "venue": "MIS Quarterly",
+  "cited_by": [
+   "service"
+  ]
+ },
+ {
+  "key": "angst|2009|adoption-electronic-health",
+  "authors": [
+   "Angst",
+   "Agarwal"
+  ],
+  "year": 2009,
+  "title": "Adoption of electronic health records in the presence of privacy concerns: The elaboration likelihood model and individual persuasion",
+  "venue": "MIS Quarterly",
+  "cited_by": [
+   "service"
+  ]
+ },
+ {
+  "key": "belanger|2011|privacy-digital-age",
+  "authors": [
+   "Belanger",
+   "Crossler"
+  ],
+  "year": 2011,
+  "title": "Privacy in the digital age: A review of information privacy research in information systems",
+  "venue": "MIS Quarterly",
+  "cited_by": [
+   "service"
+  ]
+ },
+ {
+  "key": "belanger|2020|theory-multilevel-information",
+  "authors": [
+   "Belanger",
+   "James"
+  ],
+  "year": 2020,
+  "title": "A theory of multilevel information privacy management for the digital era",
+  "venue": "Information Systems Research",
+  "cited_by": [
+   "service"
+  ]
+ },
+ {
+  "key": "brady|2001|some-new-thoughts",
+  "authors": [
+   "Brady",
+   "Cronin"
+  ],
+  "year": 2001,
+  "title": "Some new thoughts on conceptualizing perceived service quality: A hierarchical approach",
+  "venue": "Journal of Marketing",
+  "cited_by": [
+   "service"
+  ]
+ },
+ {
+  "key": "brennan|2025|hundreds-chicago-residents",
+  "authors": [
+   "Brennan",
+   "Price"
+  ],
+  "year": 2025,
+  "title": "Hundreds of Chicago residents sign petition to pause robot delivery pilot program over safety concerns",
+  "venue": "CBS News",
+  "cited_by": [
+   "service"
+  ]
+ },
+ {
+  "key": "calleja|2023|some-agents-more",
+  "authors": [
+   "Calleja",
+   "Schepers",
+   "Nijssen"
+  ],
+  "year": 2023,
+  "title": "Some agents are more similar than others: Customer orientation of frontline robots and employees",
+  "venue": "Journal of Service Management",
+  "cited_by": [
+   "service"
+  ]
+ },
+ {
+  "key": "calo|2017|robots-privacy",
+  "authors": [
+   "Calo"
+  ],
+  "year": 2017,
+  "title": "Robots and privacy",
+  "venue": "Routledge",
+  "cited_by": [
+   "service"
+  ]
+ },
+ {
+  "key": "cichy|2021|privacy-concerns-data",
+  "authors": [
+   "Cichy",
+   "Salge",
+   "Kohli"
+  ],
+  "year": 2021,
+  "title": "Privacy concerns and data sharing in the Internet of Things: Mixed methods evidence from connected cars",
+  "venue": "MIS Quarterly",
+  "cited_by": [
+   "service"
+  ]
+ },
+ {
+  "key": "dacunto|2021|most-americans-like",
+  "authors": [
+   "D'Acunto",
+   "Volo",
+   "Filieri"
+  ],
+  "year": 2021,
+  "title": "\"Most Americans like their privacy.\" Exploring privacy concerns through US guests' reviews",
+  "venue": "International Journal of Contemporary Hospitality Management",
+  "cited_by": [
+   "service"
+  ]
+ },
+ {
+  "key": "dinev|2006|extended-privacy-calculus",
+  "authors": [
+   "Dinev",
+   "Hart"
+  ],
+  "year": 2006,
+  "title": "An extended privacy calculus model for e-commerce transactions",
+  "venue": "Information Systems Research",
+  "cited_by": [
+   "service"
+  ]
+ },
+ {
+  "key": "dinev|2015|research-commentary-informing",
+  "authors": [
+   "Dinev",
+   "McConnell",
+   "Smith"
+  ],
+  "year": 2015,
+  "title": "Research commentary\u2014Informing privacy research through information systems, psychology, and behavioral economics: Thinking outside the \"APCO\" box",
+  "venue": "Information Systems Research",
+  "cited_by": [
+   "service"
+  ]
+ },
+ {
+  "key": "feine|2019|taxonomy-social-cues",
+  "authors": [
+   "Feine",
+   "Gnewuch",
+   "Morana",
+   "Maedche"
+  ],
+  "year": 2019,
+  "title": "A taxonomy of social cues for conversational agents",
+  "venue": "International Journal of Human-Computer Studies",
+  "cited_by": [
+   "service"
+  ]
+ },
+ {
+  "key": "gale|2019|robot-hotel-loses",
+  "authors": [
+   "Gale",
+   "Mochizuki"
+  ],
+  "year": 2019,
+  "title": "Robot hotel loses love for robots",
+  "venue": "Dow Jones Institutional News",
+  "cited_by": [
+   "service"
+  ]
+ },
+ {
+  "key": "goffman|1959|presentation-self-everyday",
+  "authors": [
+   "Goffman"
+  ],
+  "year": 1959,
+  "title": "The presentation of self in everyday life",
+  "venue": "Routledge",
+  "cited_by": [
+   "service"
+  ]
+ },
+ {
+  "key": "goffman|1963|behavior-public-places",
+  "authors": [
+   "Goffman"
+  ],
+  "year": 1963,
+  "title": "Behavior in public places. Notes on the social organization of gatherings",
+  "venue": "The Free Press",
+  "cited_by": [
+   "service"
+  ]
+ },
+ {
+  "key": "gong|2019|graphonomy-universal-human",
+  "authors": [
+   "Gong",
+   "Gao",
+   "Liang",
+   "Shen",
+   "Wang",
+   "Lin"
+  ],
+  "year": 2019,
+  "title": "Graphonomy: Universal human parsing via graph transfer learning",
+  "venue": "Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition",
+  "cited_by": [
+   "service"
+  ]
+ },
+ {
+  "key": "goodwin|1989|social-distance-within",
+  "authors": [
+   "Goodwin",
+   "Frame"
+  ],
+  "year": 1989,
+  "title": "Social distance within the service encounter: Does the consumer want to be your friend?",
+  "venue": "Advances in Consumer Research",
+  "cited_by": [
+   "service"
+  ]
+ },
+ {
+  "key": "gretry|2017|dont-pretend-my",
+  "authors": [
+   "Gretry",
+   "Horvath",
+   "Belei",
+   "Van Riel"
+  ],
+  "year": 2017,
+  "title": "\"Don't pretend to be my friend!\" When an informal brand communication style backfires on social media",
+  "venue": "Journal of Business Research",
+  "cited_by": [
+   "service"
+  ]
+ },
+ {
+  "key": "gupta|2018|economic-experiments-information",
+  "authors": [
+   "Gupta",
+   "Kannan",
+   "Sanyal"
+  ],
+  "year": 2018,
+  "title": "Economic experiments in information systems",
+  "venue": "MIS Quarterly",
+  "cited_by": [
+   "service"
+  ]
+ },
+ {
+  "key": "hair|2019|multivariate-data-analysis",
+  "authors": [
+   "Hair"
+  ],
+  "year": 2019,
+  "title": "Multivariate data analysis",
+  "venue": "Cengage",
+  "cited_by": [
+   "service"
+  ]
+ },
+ {
+  "key": "hall|1990|hidden-dimension",
+  "authors": [
+   "Hall"
+  ],
+  "year": 1990,
+  "title": "The hidden dimension",
+  "venue": "Knopf Doubleday Publishing Group",
+  "cited_by": [
+   "service"
+  ]
+ },
+ {
+  "key": "heirati|2025|unintended-consequences-service",
+  "authors": [
+   "Heirati",
+   "Pitardi",
+   "Wirtz",
+   "Jayawardhena",
+   "Kunz",
+   "Paluch"
+  ],
+  "year": 2025,
+  "title": "Unintended consequences of service robots\u2014recent progress and future research directions",
+  "venue": "Journal of Business Research",
+  "cited_by": [
+   "service"
+  ]
+ },
+ {
+  "key": "holthower|2023|robots-not-judge",
+  "authors": [
+   "Holthower",
+   "van Doorn"
+  ],
+  "year": 2023,
+  "title": "Robots do not judge: Service robots can alleviate embarrassment in service encounters",
+  "venue": "Journal of the Academy of Marketing Science",
+  "cited_by": [
+   "service"
+  ]
+ },
+ {
+  "key": "holthower|2025|increasing-accountability-compliance",
+  "authors": [
+   "Holthower",
+   "Van Doorn",
+   "Noble"
+  ],
+  "year": 2025,
+  "title": "Increasing accountability and compliance with robot advice",
+  "venue": "Journal of Marketing",
+  "cited_by": [
+   "service"
+  ]
+ },
+ {
+  "key": "hong|2013|internet-privacy-concerns",
+  "authors": [
+   "Hong",
+   "Thong"
+  ],
+  "year": 2013,
+  "title": "Internet privacy concerns: An integrated conceptualization and four empirical studies",
+  "venue": "MIS Quarterly",
+  "cited_by": [
+   "service"
+  ]
+ },
+ {
+  "key": "hu|2025|information-transparency-privacy",
+  "authors": [
+   "Hu",
+   "Min"
+  ],
+  "year": 2025,
+  "title": "Information transparency, privacy concerns, and customers' behavioral intentions regarding AI-powered hospitality robots: A situational awareness perspective",
+  "venue": "Journal of Hospitality and Tourism Management",
+  "cited_by": [
+   "service"
+  ]
+ },
+ {
+  "key": "hu|2023|dark-side-artificial",
+  "authors": [
+   "Hu",
+   "Min"
+  ],
+  "year": 2023,
+  "title": "The dark side of artificial intelligence in service: The \"Watching-eye\" effect and privacy concerns",
+  "venue": "International Journal of Hospitality Management",
+  "cited_by": [
+   "service"
+  ]
+ },
+ {
+  "key": "intelmarketresearch|2026|autonomous-delivery-robots",
+  "authors": [
+   "Intel Market Research"
+  ],
+  "year": 2026,
+  "title": "Autonomous delivery robots market 2026 to 2034",
+  "venue": "Intel Market Research",
+  "cited_by": [
+   "service"
+  ]
+ },
+ {
+  "key": "jayaraman|2024|privacy-utility-perceptions",
+  "authors": [
+   "Jayaraman",
+   "Phillips",
+   "Church",
+   "Riek"
+  ],
+  "year": 2024,
+  "title": "Privacy and utility perceptions of social robots in healthcare",
+  "venue": "Computers in Human Behavior: Artificial Humans",
+  "cited_by": [
+   "service"
+  ]
+ },
+ {
+  "key": "jia|2024|social-robot-privacy",
+  "authors": [
+   "Jia",
+   "Chi",
+   "Lu"
+  ],
+  "year": 2024,
+  "title": "Social robot privacy concern (SRPC): Rethinking privacy concerns within the hospitality domain",
+  "venue": "International Journal of Hospitality Management",
+  "cited_by": [
+   "service"
+  ]
+ },
+ {
+  "key": "kantharak|2017|design-development-service",
+  "authors": [
+   "Kantharak",
+   "Somboonchai",
+   "Nguyen",
+   "Nguyen"
+  ],
+  "year": 2017,
+  "title": "Design and development of service robot based human-robot interaction (HRI)",
+  "venue": "Proceedings of the 2017 International Conference on System Science and Engineering (ICSSE)",
+  "cited_by": [
+   "service"
+  ]
+ },
+ {
+  "key": "li|2024|contextual-integrity-personal",
+  "authors": [
+   "Li",
+   "Luo",
+   "Sarathy",
+   "Xu"
+  ],
+  "year": 2024,
+  "title": "Contextual integrity and personal health information sharing in online social networks",
+  "venue": "Journal of the Association for Information Systems",
+  "cited_by": [
+   "service"
+  ]
+ },
+ {
+  "key": "li|2022|selfcorrection-human-parsing",
+  "authors": [
+   "Li",
+   "Xu",
+   "Wei",
+   "Yang"
+  ],
+  "year": 2022,
+  "title": "Self-correction for human parsing",
+  "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+  "cited_by": [
+   "service"
+  ]
+ },
+ {
+  "key": "lin|2021|privacy-concerns-digital",
+  "authors": [
+   "Lin",
+   "Carter",
+   "Liu"
+  ],
+  "year": 2021,
+  "title": "Privacy concerns and digital government: Exploring citizen willingness to adopt the COVIDSafe app",
+  "venue": "European Journal of Information Systems",
+  "cited_by": [
+   "service"
+  ]
+ },
+ {
+  "key": "lin|2019|beyond-information-role",
+  "authors": [
+   "Lin",
+   "Armstrong"
+  ],
+  "year": 2019,
+  "title": "Beyond information: The role of territory in privacy management behavior on social networking sites",
+  "venue": "Journal of the Association for Information Systems",
+  "cited_by": [
+   "service"
+  ]
+ },
+ {
+  "key": "lu|2020|service-robots-customers",
+  "authors": [
+   "Lu",
+   "Wirtz",
+   "Kunz",
+   "Paluch",
+   "Gruber",
+   "Martins",
+   "Patterson"
+  ],
+  "year": 2020,
+  "title": "Service robots, customers and service employees: What can we learn from the academic literature and where are the gaps?",
+  "venue": "Journal of Service Theory and Practice",
+  "cited_by": [
+   "service"
+  ]
+ },
+ {
+  "key": "lutz|2020|robot-privacy-paradox",
+  "authors": [
+   "Lutz",
+   "Tamo-Larrieux"
+  ],
+  "year": 2020,
+  "title": "The robot privacy paradox: Understanding how privacy concerns shape intentions to use social robots",
+  "venue": "Human-Machine Communication",
+  "cited_by": [
+   "service"
+  ]
+ },
+ {
+  "key": "luu|2026|understanding-information-privacy",
+  "authors": [
+   "Luu",
+   "Harrison"
+  ],
+  "year": 2026,
+  "title": "Understanding information privacy concerns: A meta-analytic of three decades of research",
+  "venue": "Information Systems Research",
+  "cited_by": [
+   "service"
+  ]
+ },
+ {
+  "key": "ma|2025|understanding-mitigating-robot",
+  "authors": [
+   "Ma",
+   "Ge",
+   "Jia",
+   "Wang"
+  ],
+  "year": 2025,
+  "title": "Understanding and mitigating the robot disadvantage in luxury services: The role of desire for superiority",
+  "venue": "Information Systems Research",
+  "cited_by": [
+   "service"
+  ]
+ },
+ {
+  "key": "mackenzie|2011|construct-measurement-validation",
+  "authors": [
+   "MacKenzie",
+   "Podsakoff",
+   "Podsakoff"
+  ],
+  "year": 2011,
+  "title": "Construct measurement and validation procedures in MIS and behavioral research: Integrating new and existing techniques",
+  "venue": "MIS Quarterly",
+  "cited_by": [
+   "service"
+  ]
+ },
+ {
+  "key": "malhotra|2004|internet-users-information",
+  "authors": [
+   "Malhotra",
+   "Kim",
+   "Agarwal"
+  ],
+  "year": 2004,
+  "title": "Internet users' information privacy concerns (IUIPC): The construct, the scale, and a causal model",
+  "venue": "Information Systems Research",
+  "cited_by": [
+   "service"
+  ]
+ },
+ {
+  "key": "martin|2016|cutting-edge-robots",
+  "authors": [
+   "Martin"
+  ],
+  "year": 2016,
+  "title": "Cutting edge: Robots deliver fun with hotel room service orders, and they don't expect a tip",
+  "venue": "Los Angeles Times",
+  "cited_by": [
+   "service"
+  ]
+ },
+ {
+  "key": "mccarron|2024|robots-love-their",
+  "authors": [
+   "McCarron"
+  ],
+  "year": 2024,
+  "title": "Do robots love their customers? Automated restaurants face human issues",
+  "venue": "New York Times",
+  "cited_by": [
+   "service"
+  ]
+ },
+ {
+  "key": "mettler|2017|service-robots-hospitals",
+  "authors": [
+   "Mettler",
+   "Sprenger",
+   "Winter"
+  ],
+  "year": 2017,
+  "title": "Service robots in hospitals: New perspectives on niche evolution and technology affordances",
+  "venue": "European Journal of Information Systems",
+  "cited_by": [
+   "service"
+  ]
+ },
+ {
+  "key": "nationalfinancialregulatoryadministration|2024|risk-alert-preventing",
+  "authors": [
+   "National Financial Regulatory Administration"
+  ],
+  "year": 2024,
+  "title": "Risk alert on preventing new types of telecommunications network fraud",
+  "venue": "National Financial Regulatory Administration",
+  "cited_by": [
+   "service"
+  ]
+ },
+ {
+  "key": "nissenbaum|2010|privacy-context-technology",
+  "authors": [
+   "Nissenbaum"
+  ],
+  "year": 2010,
+  "title": "Privacy in context: Technology, policy, and the integrity of social life",
+  "venue": "Stanford Law Books",
+  "cited_by": [
+   "service"
+  ]
+ },
+ {
+  "key": "orlikowski|2021|liminal-innovation-practice",
+  "authors": [
+   "Orlikowski",
+   "Scott"
+  ],
+  "year": 2021,
+  "title": "Liminal innovation in practice: Understanding the reconfiguration of digital work in crisis",
+  "venue": "Information and Organization",
+  "cited_by": [
+   "service"
+  ]
+ },
+ {
+  "key": "otterbring|2021|too-close-comfort",
+  "authors": [
+   "Otterbring",
+   "Wu",
+   "Kristensson"
+  ],
+  "year": 2021,
+  "title": "Too close for comfort? The impact of salesperson-customer proximity on consumers' purchase behavior",
+  "venue": "Psychology & Marketing",
+  "cited_by": [
+   "service"
+  ]
+ },
+ {
+  "key": "palen|2003|unpacking-privacy-networked",
+  "authors": [
+   "Palen",
+   "Dourish"
+  ],
+  "year": 2003,
+  "title": "Unpacking \"privacy\" for a networked world",
+  "venue": "Proceedings of the SIGCHI Conference on Human Factors in Computing Systems",
+  "cited_by": [
+   "service"
+  ]
+ },
+ {
+  "key": "popovic|2019|mis-quarterly-research",
+  "authors": [
+   "Popovic",
+   "Smith",
+   "Thong",
+   "Wattal"
+  ],
+  "year": 2019,
+  "title": "MIS quarterly research curation on information privacy",
+  "venue": "MIS Quarterly",
+  "cited_by": [
+   "service"
+  ]
+ },
+ {
+  "key": "researchandmarkets|2026|service-robotics-market",
+  "authors": [
+   "Research and Markets"
+  ],
+  "year": 2026,
+  "title": "Service robotics market report 2026",
+  "venue": "Research and Markets",
+  "cited_by": [
+   "service"
+  ]
+ },
+ {
+  "key": "sarker|2025|advancing-nextgeneration-multimethod",
+  "authors": [
+   "Sarker",
+   "Bala",
+   "Hong",
+   "Kankanhalli",
+   "Rossi",
+   "Gu",
+   "Oestreicher-Singer"
+  ],
+  "year": 2025,
+  "title": "Advancing next-generation multimethod research in information systems: A framework and some recommendations for authors and evaluators",
+  "venue": "Information Systems Research",
+  "cited_by": [
+   "service"
+  ]
+ },
+ {
+  "key": "schwabe|2025|doubleedged-sword-informality",
+  "authors": [
+   "Schwabe",
+   "Altenmuller",
+   "Gollwitzer"
+  ],
+  "year": 2025,
+  "title": "The double-edged sword of informality: How informal communication shapes closeness and trustworthiness in personal and professional relationships",
+  "venue": "Journal of Social and Personal Relationships",
+  "cited_by": [
+   "service"
+  ]
+ },
+ {
+  "key": "sergeeva|2020|losing-touch-embodiment",
+  "authors": [
+   "Sergeeva",
+   "Faraj",
+   "Huysman"
+  ],
+  "year": 2020,
+  "title": "Losing touch: An embodiment perspective on coordination in robotic surgery",
+  "venue": "Organization Science",
+  "cited_by": [
+   "service"
+  ]
+ },
+ {
+  "key": "seymour|2025|less-artificial-more",
+  "authors": [
+   "Seymour",
+   "Yuan",
+   "Riemer",
+   "Dennis"
+  ],
+  "year": 2025,
+  "title": "Less artificial, more intelligent: Understanding affinity, trustworthiness, and preference for digital humans",
+  "venue": "Information Systems Research",
+  "cited_by": [
+   "service"
+  ]
+ },
+ {
+  "key": "sia|2002|group-polarization-computermediated",
+  "authors": [
+   "Sia",
+   "Tan",
+   "Wei"
+  ],
+  "year": 2002,
+  "title": "Group polarization and computer-mediated communication: Effects of communication cues, social presence, and anonymity",
+  "venue": "Information Systems Research",
+  "cited_by": [
+   "service"
+  ]
+ },
+ {
+  "key": "smith|2011|information-privacy-research",
+  "authors": [
+   "Smith",
+   "Dinev",
+   "Xu"
+  ],
+  "year": 2011,
+  "title": "Information privacy research: An interdisciplinary review",
+  "venue": "MIS Quarterly",
+  "cited_by": [
+   "service"
+  ]
+ },
+ {
+  "key": "smith|1996|information-privacy-measuring",
+  "authors": [
+   "Smith",
+   "Milberg",
+   "Burke"
+  ],
+  "year": 1996,
+  "title": "Information privacy: Measuring individuals' concerns about organizational practices",
+  "venue": "MIS Quarterly",
+  "cited_by": [
+   "service"
+  ]
+ },
+ {
+  "key": "song|2024|calculate-privacy-privacy",
+  "authors": [
+   "Song",
+   "Xu",
+   "Hu",
+   "Li",
+   "Guo"
+  ],
+  "year": 2024,
+  "title": "How to calculate privacy: Privacy concerns and service robots' use intention in hospitality",
+  "venue": "Current Issues in Tourism",
+  "cited_by": [
+   "service"
+  ]
+ },
+ {
+  "key": "tan|2025|enhancing-customer-service",
+  "authors": [
+   "Tan",
+   "Li",
+   "Huang",
+   "Liu"
+  ],
+  "year": 2025,
+  "title": "Enhancing customer service chatbot effectiveness: The effect of dyadic communication traits on customer purchase intention",
+  "venue": "Journal of the Association for Information Systems",
+  "cited_by": [
+   "service"
+  ]
+ },
+ {
+  "key": "tene|2024|navigating-privacy-data",
+  "authors": [
+   "Tene"
+  ],
+  "year": 2024,
+  "title": "Navigating privacy and data security challenges in the hospitality industry: Key considerations for hotel management agreements",
+  "venue": "Goodwin Law",
+  "cited_by": [
+   "service"
+  ]
+ },
+ {
+  "key": "turner|1964|betwixt-liminal-period",
+  "authors": [
+   "Turner"
+  ],
+  "year": 1964,
+  "title": "Betwixt and between: The liminal period in rites of passage",
+  "venue": "Oxford University Press",
+  "cited_by": [
+   "service"
+  ]
+ },
+ {
+  "key": "turner|1977|ritual-process-structure",
+  "authors": [
+   "Turner"
+  ],
+  "year": 1977,
+  "title": "The ritual process: Structure and anti-structure",
+  "venue": "Cornell University Press",
+  "cited_by": [
+   "service"
+  ]
+ },
+ {
+  "key": "vandoorn|2017|domo-arigato-mr",
+  "authors": [
+   "van Doorn",
+   "Mende",
+   "Noble",
+   "Hulland",
+   "Ostrom",
+   "Grewal",
+   "Petersen"
+  ],
+  "year": 2017,
+  "title": "Domo Arigato Mr. Roboto: Emergence of automated social presence in organizational frontlines and customers' service experiences",
+  "venue": "Journal of Service Research",
+  "cited_by": [
+   "service"
+  ]
+ },
+ {
+  "key": "venkatesh|2017|personorganization-personjob-fit",
+  "authors": [
+   "Venkatesh",
+   "Windeler",
+   "Bartol",
+   "Williamson"
+  ],
+  "year": 2017,
+  "title": "Person\u2013organization and person\u2013job fit perceptions of new IT employees: Work outcomes and gender differences",
+  "venue": "MIS Quarterly",
+  "cited_by": [
+   "service"
+  ]
+ },
+ {
+  "key": "wang|2023|neural-codec-language",
+  "authors": [
+   "Wang",
+   "Chen",
+   "Wu",
+   "Zhang",
+   "Zhou",
+   "Liu",
+   "Chen",
+   "Liu"
+  ],
+  "year": 2023,
+  "title": "Neural codec language models are zero-shot text to speech synthesizers",
+  "venue": "Preprint",
+  "cited_by": [
+   "service"
+  ]
+ },
+ {
+  "key": "weijters|2012|misresponse-reversed-negated",
+  "authors": [
+   "Weijters",
+   "Baumgartner"
+  ],
+  "year": 2012,
+  "title": "Misresponse to reversed and negated items in surveys: A review",
+  "venue": "Journal of Marketing Research",
+  "cited_by": [
+   "service"
+  ]
+ },
+ {
+  "key": "whitecrummey|2024|public-servants-uneasy",
+  "authors": [
+   "White-Crummey",
+   "Cote-Sroka"
+  ],
+  "year": 2024,
+  "title": "Public servants uneasy as government spy robot prowls federal offices",
+  "venue": "CBC News",
+  "cited_by": [
+   "service"
+  ]
+ },
+ {
+  "key": "xie|2021|segformer-simple-efficient",
+  "authors": [
+   "Xie",
+   "Wang",
+   "Yu",
+   "Anandkumar",
+   "Alvarez",
+   "Luo"
+  ],
+  "year": 2021,
+  "title": "SegFormer: Simple and efficient design for semantic segmentation with transformers",
+  "venue": "Advances in Neural Information Processing Systems",
+  "cited_by": [
+   "service"
+  ]
+ },
+ {
+  "key": "xu|2022|contextualizing-context-theorizing",
+  "authors": [
+   "Xu",
+   "Zhang"
+  ],
+  "year": 2022,
+  "title": "From contextualizing to context theorizing: Assessing context effects in privacy research",
+  "venue": "Management Science",
+  "cited_by": [
+   "service"
+  ]
+ },
+ {
+  "key": "yao|2024|impact-customer-privacy",
+  "authors": [
+   "Yao",
+   "Hu",
+   "Zhou"
+  ],
+  "year": 2024,
+  "title": "The impact of customer privacy concerns on service robot adoption intentions: A credence/experience service typology perspective",
+  "venue": "Technological Forecasting and Social Change",
+  "cited_by": [
+   "service"
+  ]
+ },
+ {
+  "key": "yoganathan|2021|checkin-robodesk-effects",
+  "authors": [
+   "Yoganathan",
+   "Osburg",
+   "Kunz",
+   "Toporowski"
+  ],
+  "year": 2021,
+  "title": "Check-in at the Robo-desk: Effects of automated social presence on social cognition and service implications",
+  "venue": "Tourism Management",
+  "cited_by": [
+   "service"
+  ]
+ },
+ {
+  "key": "zhang|2022|peer-privacy-concern",
+  "authors": [
+   "Zhang",
+   "Wang",
+   "Karahanna",
+   "Xu"
+  ],
+  "year": 2022,
+  "title": "Peer privacy concern: Conceptualization and measurement",
+  "venue": "MIS Quarterly",
+  "cited_by": [
+   "service"
+  ]
+ },
+ {
+  "key": "baker|2003|market-matter-stock",
+  "authors": [
+   "Baker",
+   "Stein",
+   "Wurgler"
+  ],
+  "year": 2003,
+  "title": "When does the market matter? Stock prices and the investment of equity-dependent firms",
+  "venue": "The Quarterly Journal of Economics",
+  "cited_by": [
+   "investment"
+  ]
+ },
+ {
+  "key": "bernanke|1983|irreversibility-uncertainty-cyclical",
+  "authors": [
+   "Bernanke"
+  ],
+  "year": 1983,
+  "title": "Irreversibility, uncertainty, and cyclical investment",
+  "venue": "The Quarterly Journal of Economics",
+  "cited_by": [
+   "investment"
+  ]
+ },
+ {
+  "key": "bolton|2006|executive-compensation-shorttermist",
+  "authors": [
+   "Bolton",
+   "Scheinkman",
+   "Xiong"
+  ],
+  "year": 2006,
+  "title": "Executive compensation and short-termist behaviour in speculative markets",
+  "venue": "Review of Economic Studies",
+  "cited_by": [
+   "investment"
+  ]
+ },
+ {
+  "key": "bushee|2004|managerial-investor-responses",
+  "authors": [
+   "Bushee",
+   "Matsumoto",
+   "Miller"
+  ],
+  "year": 2004,
+  "title": "Managerial and investor responses to disclosure regulation: The case of Regulation Fair Disclosure and conference calls",
+  "venue": "The Accounting Review",
+  "cited_by": [
+   "investment"
+  ]
+ },
+ {
+  "key": "dixit|1994|investment-uncertainty",
+  "authors": [
+   "Dixit",
+   "Pindyck"
+  ],
+  "year": 1994,
+  "title": "Investment under uncertainty",
+  "venue": "Princeton University Press",
+  "cited_by": [
+   "investment"
+  ]
+ },
+ {
+  "key": "fazzari|1988|financing-constraints-corporate",
+  "authors": [
+   "Fazzari",
+   "Hubbard",
+   "Petersen"
+  ],
+  "year": 1988,
+  "title": "Financing constraints and corporate investment",
+  "venue": "Brookings Papers on Economic Activity",
+  "cited_by": [
+   "investment"
+  ]
+ },
+ {
+  "key": "frankel|1999|empirical-examination-conference",
+  "authors": [
+   "Frankel",
+   "Johnson",
+   "Skinner"
+  ],
+  "year": 1999,
+  "title": "An empirical examination of conference calls as a voluntary disclosure medium",
+  "venue": "Journal of Accounting Research",
+  "cited_by": [
+   "investment"
+  ]
+ },
+ {
+  "key": "froot|1993|risk-management-coordinating",
+  "authors": [
+   "Froot",
+   "Scharfstein",
+   "Stein"
+  ],
+  "year": 1993,
+  "title": "Risk management: Coordinating corporate investment and financing policies",
+  "venue": "The Journal of Finance",
+  "cited_by": [
+   "investment"
+  ]
+ },
+ {
+  "key": "grossman|1981|informational-role-warranties",
+  "authors": [
+   "Grossman"
+  ],
+  "year": 1981,
+  "title": "The informational role of warranties and private disclosure about product quality",
+  "venue": "Journal of Law and Economics",
+  "cited_by": [
+   "investment"
+  ]
+ },
+ {
+  "key": "gulen|2016|policy-uncertainty-corporate",
+  "authors": [
+   "Gulen",
+   "Ion"
+  ],
+  "year": 2016,
+  "title": "Policy uncertainty and corporate investment",
+  "venue": "Review of Financial Studies",
+  "cited_by": [
+   "investment"
+  ]
+ },
+ {
+  "key": "hayashi|1982|tobins-marginal-q",
+  "authors": [
+   "Hayashi"
+  ],
+  "year": 1982,
+  "title": "Tobin's marginal q and average q: A neoclassical interpretation",
+  "venue": "Econometrica",
+  "cited_by": [
+   "investment"
+  ]
+ },
+ {
+  "key": "hennessy|2004|tobins-q-debt",
+  "authors": [
+   "Hennessy"
+  ],
+  "year": 2004,
+  "title": "Tobin's q, debt overhang, and investment",
+  "venue": "The Journal of Finance",
+  "cited_by": [
+   "investment"
+  ]
+ },
+ {
+  "key": "hollander|2010|silence-speak-empirical",
+  "authors": [
+   "Hollander",
+   "Pronk",
+   "Roelofsen"
+  ],
+  "year": 2010,
+  "title": "Does silence speak? An empirical analysis of disclosure choices during conference calls",
+  "venue": "Journal of Accounting Research",
+  "cited_by": [
+   "investment"
+  ]
+ },
+ {
+  "key": "holmstrom|1979|moral-hazard-observability",
+  "authors": [
+   "Holmstrom"
+  ],
+  "year": 1979,
+  "title": "Moral hazard and observability",
+  "venue": "The Bell Journal of Economics",
+  "cited_by": [
+   "investment"
+  ]
+ },
+ {
+  "key": "holmstrom|1999|managerial-incentive-problems",
+  "authors": [
+   "Holmstrom"
+  ],
+  "year": 1999,
+  "title": "Managerial incentive problems: A dynamic perspective",
+  "venue": "Review of Economic Studies",
+  "cited_by": [
+   "investment"
+  ]
+ },
+ {
+  "key": "holmstrom|1997|financial-intermediation-loanable",
+  "authors": [
+   "Holmstrom",
+   "Tirole"
+  ],
+  "year": 1997,
+  "title": "Financial intermediation, loanable funds, and the real sector",
+  "venue": "The Quarterly Journal of Economics",
+  "cited_by": [
+   "investment"
+  ]
+ },
+ {
+  "key": "hubbard|1998|capitalmarket-imperfections-investment",
+  "authors": [
+   "Hubbard"
+  ],
+  "year": 1998,
+  "title": "Capital-market imperfections and investment",
+  "venue": "Journal of Economic Literature",
+  "cited_by": [
+   "investment"
+  ]
+ },
+ {
+  "key": "jensen|1986|agency-costs-free",
+  "authors": [
+   "Jensen"
+  ],
+  "year": 1986,
+  "title": "Agency costs of free cash flow, corporate finance, and takeovers",
+  "venue": "American Economic Review",
+  "cited_by": [
+   "investment"
+  ]
+ },
+ {
+  "key": "jensen|1976|theory-firm-managerial",
+  "authors": [
+   "Jensen",
+   "Meckling"
+  ],
+  "year": 1976,
+  "title": "Theory of the firm: Managerial behavior, agency costs, and capital structure",
+  "venue": "Journal of Financial Economics",
+  "cited_by": [
+   "investment"
+  ]
+ },
+ {
+  "key": "julio|2012|political-uncertainty-corporate",
+  "authors": [
+   "Julio",
+   "Yook"
+  ],
+  "year": 2012,
+  "title": "Political uncertainty and corporate investment cycles",
+  "venue": "The Journal of Finance",
+  "cited_by": [
+   "investment"
+  ]
+ },
+ {
+  "key": "lamont|2000|investment-plans-stock",
+  "authors": [
+   "Lamont"
+  ],
+  "year": 2000,
+  "title": "Investment plans and stock returns",
+  "venue": "The Journal of Finance",
+  "cited_by": [
+   "investment"
+  ]
+ },
+ {
+  "key": "leahy|1996|effect-uncertainty-investment",
+  "authors": [
+   "Leahy",
+   "Whited"
+  ],
+  "year": 1996,
+  "title": "The effect of uncertainty on investment: Some stylized facts",
+  "venue": "Journal of Money, Credit and Banking",
+  "cited_by": [
+   "investment"
+  ]
+ },
+ {
+  "key": "leland|1977|informational-asymmetries-financial",
+  "authors": [
+   "Leland",
+   "Pyle"
+  ],
+  "year": 1977,
+  "title": "Informational asymmetries, financial structure, and financial intermediation",
+  "venue": "The Journal of Finance",
+  "cited_by": [
+   "investment"
+  ]
+ },
+ {
+  "key": "loughran|2016|textual-analysis-accounting",
+  "authors": [
+   "Loughran",
+   "McDonald"
+  ],
+  "year": 2016,
+  "title": "Textual analysis in accounting and finance: A survey",
+  "venue": "Journal of Accounting Research",
+  "cited_by": [
+   "investment"
+  ]
+ },
+ {
+  "key": "milgrom|1981|good-news-bad",
+  "authors": [
+   "Milgrom"
+  ],
+  "year": 1981,
+  "title": "Good news and bad news: Representation theorems and applications",
+  "venue": "The Bell Journal of Economics",
+  "cited_by": [
+   "investment"
+  ]
+ },
+ {
+  "key": "miller|1985|dividend-policy-asymmetric",
+  "authors": [
+   "Miller",
+   "Rock"
+  ],
+  "year": 1985,
+  "title": "Dividend policy under asymmetric information",
+  "venue": "The Journal of Finance",
+  "cited_by": [
+   "investment"
+  ]
+ },
+ {
+  "key": "modigliani|1958|cost-capital-corporation",
+  "authors": [
+   "Modigliani",
+   "Miller"
+  ],
+  "year": 1958,
+  "title": "The cost of capital, corporation finance and the theory of investment",
+  "venue": "American Economic Review",
+  "cited_by": [
+   "investment"
+  ]
+ },
+ {
+  "key": "myers|1984|corporate-financing-investment",
+  "authors": [
+   "Myers",
+   "Majluf"
+  ],
+  "year": 1984,
+  "title": "Corporate financing and investment decisions when firms have information that investors do not have",
+  "venue": "Journal of Financial Economics",
+  "cited_by": [
+   "investment"
+  ]
+ },
+ {
+  "key": "narayanan|1985|managerial-incentives-shortterm",
+  "authors": [
+   "Narayanan"
+  ],
+  "year": 1985,
+  "title": "Managerial incentives for short-term results",
+  "venue": "The Journal of Finance",
+  "cited_by": [
+   "investment"
+  ]
+ },
+ {
+  "key": "ott|2005|finance-investment-investment",
+  "authors": [
+   "Ott",
+   "Riddiough",
+   "Yi"
+  ],
+  "year": 2005,
+  "title": "Finance, investment and investment performance: Evidence from the REIT sector",
+  "venue": "Real Estate Economics",
+  "cited_by": [
+   "investment"
+  ]
+ },
+ {
+  "key": "stein|1989|efficient-capital-markets",
+  "authors": [
+   "Stein"
+  ],
+  "year": 1989,
+  "title": "Efficient capital markets, inefficient firms: A model of myopic corporate behavior",
+  "venue": "The Quarterly Journal of Economics",
+  "cited_by": [
+   "investment"
+  ]
+ },
+ {
+  "key": "stein|2003|agency-information-corporate",
+  "authors": [
+   "Stein"
+  ],
+  "year": 2003,
+  "title": "Agency, information and corporate investment",
+  "venue": "Handbook of the Economics of Finance",
+  "cited_by": [
+   "investment"
+  ]
+ },
+ {
+  "key": "stulz|1990|managerial-discretion-optimal",
+  "authors": [
+   "Stulz"
+  ],
+  "year": 1990,
+  "title": "Managerial discretion and optimal financing policies",
+  "venue": "Journal of Financial Economics",
+  "cited_by": [
+   "investment"
+  ]
+ },
+ {
+  "key": "tobin|1969|general-equilibrium-approach",
+  "authors": [
+   "Tobin"
+  ],
+  "year": 1969,
+  "title": "A general equilibrium approach to monetary theory",
+  "venue": "Journal of Money, Credit and Banking",
+  "cited_by": [
+   "investment"
+  ]
+ },
+ {
+  "key": "zwiebel|1996|dynamic-capital-structure",
+  "authors": [
+   "Zwiebel"
+  ],
+  "year": 1996,
+  "title": "Dynamic capital structure under managerial entrenchment",
+  "venue": "American Economic Review",
+  "cited_by": [
+   "investment"
+  ]
+ },
+ {
+  "key": "arrow|1963|uncertainty-welfare-economics",
+  "authors": [
+   "Arrow"
+  ],
+  "year": 1963,
+  "title": "Uncertainty and the welfare economics of medical care",
+  "venue": "American Economic Review",
+  "cited_by": [
+   "triage"
+  ]
+ },
+ {
+  "key": "bardhan|2020|connecting-systems-data",
+  "authors": [
+   "Bardhan",
+   "Chen",
+   "Karahanna"
+  ],
+  "year": 2020,
+  "title": "Connecting systems, data, and people: A multidisciplinary research roadmap for chronic disease management",
+  "venue": "MIS Quarterly",
+  "cited_by": [
+   "triage"
+  ]
+ },
+ {
+  "key": "callaway|2021|differenceindifferences-multiple-time",
+  "authors": [
+   "Callaway",
+   "Sant'Anna"
+  ],
+  "year": 2021,
+  "title": "Difference-in-differences with multiple time periods",
+  "venue": "Journal of Econometrics",
+  "cited_by": [
+   "triage"
+  ]
+ },
+ {
+  "key": "chen|2008|online-consumer-review",
+  "authors": [
+   "Chen",
+   "Xie"
+  ],
+  "year": 2008,
+  "title": "Online consumer review: Word-of-mouth as a new element of marketing communication mix",
+  "venue": "Management Science",
+  "cited_by": [
+   "triage"
+  ]
+ },
+ {
+  "key": "chernozhukov|2018|doubledebiased-machine-learning",
+  "authors": [
+   "Chernozhukov",
+   "Chetverikov",
+   "Demirer",
+   "Duflo",
+   "Hansen",
+   "Newey",
+   "Robins"
+  ],
+  "year": 2018,
+  "title": "Double/debiased machine learning for treatment and structural parameters",
+  "venue": "The Econometrics Journal",
+  "cited_by": [
+   "triage"
+  ]
+ },
+ {
+  "key": "constantinides|2018|introduction-platforms-infrastructures",
+  "authors": [
+   "Constantinides",
+   "Henfridsson",
+   "Parker"
+  ],
+  "year": 2018,
+  "title": "Introduction\u2014Platforms and infrastructures in the digital age",
+  "venue": "Information Systems Research",
+  "cited_by": [
+   "triage"
+  ]
+ },
+ {
+  "key": "darby|1973|free-competition-optimal",
+  "authors": [
+   "Darby",
+   "Karni"
+  ],
+  "year": 1973,
+  "title": "Free competition and the optimal amount of fraud",
+  "venue": "Journal of Law and Economics",
+  "cited_by": [
+   "triage"
+  ]
+ },
+ {
+  "key": "devericourt|2026|your-machine-better",
+  "authors": [
+   "de Vericourt",
+   "Gurkan"
+  ],
+  "year": 2026,
+  "title": "Is your machine better than you? You may never know",
+  "venue": "Management Science",
+  "cited_by": [
+   "triage"
+  ]
+ },
+ {
+  "key": "dulleck|2006|doctors-mechanics-computer",
+  "authors": [
+   "Dulleck",
+   "Kerschbamer"
+  ],
+  "year": 2006,
+  "title": "On doctors, mechanics, and computer specialists: The economics of credence goods",
+  "venue": "Journal of Economic Literature",
+  "cited_by": [
+   "triage"
+  ]
+ },
+ {
+  "key": "dulleck|2011|economics-credence-goods",
+  "authors": [
+   "Dulleck",
+   "Kerschbamer",
+   "Sutter"
+  ],
+  "year": 2011,
+  "title": "The economics of credence goods: An experiment on the role of liability, verifiability, reputation, and competition",
+  "venue": "American Economic Review",
+  "cited_by": [
+   "triage"
+  ]
+ },
+ {
+  "key": "esteva|2017|dermatologistlevel-classification-skin",
+  "authors": [
+   "Esteva",
+   "Kuprel",
+   "Novoa",
+   "Ko",
+   "Swetter",
+   "Blau",
+   "Thrun"
+  ],
+  "year": 2017,
+  "title": "Dermatologist-level classification of skin cancer with deep neural networks",
+  "venue": "Nature",
+  "cited_by": [
+   "triage"
+  ]
+ },
+ {
+  "key": "farbmacher|2022|causal-mediation-analysis",
+  "authors": [
+   "Farbmacher",
+   "Huber",
+   "Laffers",
+   "Langen",
+   "Spindler"
+  ],
+  "year": 2022,
+  "title": "Causal mediation analysis with double machine learning",
+  "venue": "The Econometrics Journal",
+  "cited_by": [
+   "triage"
+  ]
+ },
+ {
+  "key": "geng|2025|predicting-consultation-success",
+  "authors": [
+   "Geng",
+   "Zhang",
+   "Xie",
+   "Liang",
+   "Niu",
+   "Ram"
+  ],
+  "year": 2025,
+  "title": "Predicting consultation success in online health platforms using dynamic knowledge networks and multimodal data fusion",
+  "venue": "MIS Quarterly",
+  "cited_by": [
+   "triage"
+  ]
+ },
+ {
+  "key": "ghose|2011|estimating-helpfulness-economic",
+  "authors": [
+   "Ghose",
+   "Ipeirotis"
+  ],
+  "year": 2011,
+  "title": "Estimating the helpfulness and economic impact of product reviews: Mining text and reviewer characteristics",
+  "venue": "Management Science",
+  "cited_by": [
+   "triage"
+  ]
+ },
+ {
+  "key": "hong|2014|framework-guidelines-contextspecific",
+  "authors": [
+   "Hong",
+   "Chan",
+   "Thong",
+   "Chasalow",
+   "Dhillon"
+  ],
+  "year": 2014,
+  "title": "A framework and guidelines for context-specific theorizing in information systems research",
+  "venue": "Information Systems Research",
+  "cited_by": [
+   "triage"
+  ]
+ },
+ {
+  "key": "huang|2018|artificial-intelligence-service",
+  "authors": [
+   "Huang",
+   "Rust"
+  ],
+  "year": 2018,
+  "title": "Artificial intelligence in service",
+  "venue": "Journal of Service Research",
+  "cited_by": [
+   "triage"
+  ]
+ },
+ {
+  "key": "huck|2016|medical-insurance-free",
+  "authors": [
+   "Huck",
+   "Lunser",
+   "Spitzer",
+   "Tyran"
+  ],
+  "year": 2016,
+  "title": "Medical insurance and free choice of physician shape patient overtreatment: A laboratory experiment",
+  "venue": "Journal of Economic Behavior & Organization",
+  "cited_by": [
+   "triage"
+  ]
+ },
+ {
+  "key": "kurtz|1996|calgarycambridge-referenced-observation",
+  "authors": [
+   "Kurtz",
+   "Silverman"
+  ],
+  "year": 1996,
+  "title": "The Calgary\u2013Cambridge referenced observation guides: An aid to defining the curriculum and organizing the teaching in communication training programmes",
+  "venue": "Medical Education",
+  "cited_by": [
+   "triage"
+  ]
+ },
+ {
+  "key": "liu|2023|understanding-digital-resilience",
+  "authors": [
+   "Liu",
+   "Xin",
+   "Jin",
+   "Deng"
+  ],
+  "year": 2023,
+  "title": "Understanding the digital resilience of physicians during the COVID-19 pandemic: An empirical study",
+  "venue": "MIS Quarterly",
+  "cited_by": [
+   "triage"
+  ]
+ },
+ {
+  "key": "lu|2018|can-we-trust",
+  "authors": [
+   "Lu",
+   "Rui"
+  ],
+  "year": 2018,
+  "title": "Can we trust online physician ratings? Evidence from a natural experiment",
+  "venue": "Information Systems Research",
+  "cited_by": [
+   "triage"
+  ]
+ },
+ {
+  "key": "luca|2016|reviews-reputation-revenue",
+  "authors": [
+   "Luca"
+  ],
+  "year": 2016,
+  "title": "Reviews, reputation, and revenue: The case of Yelp.com",
+  "venue": "Harvard Business School Working Paper",
+  "cited_by": [
+   "triage"
+  ]
+ },
+ {
+  "key": "mayzlin|2014|promotional-reviews-empirical",
+  "authors": [
+   "Mayzlin",
+   "Dover",
+   "Chevalier"
+  ],
+  "year": 2014,
+  "title": "Promotional reviews: An empirical investigation of online review manipulation",
+  "venue": "American Economic Review",
+  "cited_by": [
+   "triage"
+  ]
+ },
+ {
+  "key": "rai|2019|nextgeneration-digital-platforms",
+  "authors": [
+   "Rai",
+   "Constantinides",
+   "Sarker"
+  ],
+  "year": 2019,
+  "title": "Next-generation digital platforms: Toward human\u2013AI hybrids",
+  "venue": "MIS Quarterly",
+  "cited_by": [
+   "triage"
+  ]
+ },
+ {
+  "key": "roter|2002|roter-interaction-analysis",
+  "authors": [
+   "Roter",
+   "Larson"
+  ],
+  "year": 2002,
+  "title": "The Roter Interaction Analysis System (RIAS): Utility and flexibility for analysis of medical interactions",
+  "venue": "Patient Education and Counseling",
+  "cited_by": [
+   "triage"
+  ]
+ },
+ {
+  "key": "saifee|2020|online-reviews-physicians",
+  "authors": [
+   "Saifee",
+   "Bardhan",
+   "Lahiri"
+  ],
+  "year": 2020,
+  "title": "Are online reviews of physicians reliable indicators of clinical quality? Evidence from a natural experiment",
+  "venue": "Information Systems Research",
+  "cited_by": [
+   "triage"
+  ]
+ },
+ {
+  "key": "schneider|2012|agency-problems-reputation",
+  "authors": [
+   "Schneider"
+  ],
+  "year": 2012,
+  "title": "Agency problems and reputation in expert services: Evidence from auto repair",
+  "venue": "Journal of Industrial Economics",
+  "cited_by": [
+   "triage"
+  ]
+ },
+ {
+  "key": "semigran|2015|evaluation-symptom-checkers",
+  "authors": [
+   "Semigran",
+   "Linder",
+   "Gidengil",
+   "Mehrotra"
+  ],
+  "year": 2015,
+  "title": "Evaluation of symptom checkers for self diagnosis and triage: Audit study",
+  "venue": "BMJ",
+  "cited_by": [
+   "triage"
+  ]
+ },
+ {
+  "key": "shi|2023|optional-verification-signaling",
+  "authors": [
+   "Shi",
+   "Viswanathan"
+  ],
+  "year": 2023,
+  "title": "Optional verification and signaling in online matching markets: Evidence from a randomized field experiment",
+  "venue": "Information Systems Research",
+  "cited_by": [
+   "triage"
+  ]
+ },
+ {
+  "key": "shipp|2021|other-time-review",
+  "authors": [
+   "Shipp",
+   "Jansen"
+  ],
+  "year": 2021,
+  "title": "The 'other' time: A review of the subjective experience of time in organizations",
+  "venue": "Academy of Management Annals",
+  "cited_by": [
+   "triage"
+  ]
+ },
+ {
+  "key": "sun|2021|estimating-dynamic-treatment",
+  "authors": [
+   "Sun",
+   "Abraham"
+  ],
+  "year": 2021,
+  "title": "Estimating dynamic treatment effects in event studies with heterogeneous treatment effects",
+  "venue": "Journal of Econometrics",
+  "cited_by": [
+   "triage"
+  ]
+ },
+ {
+  "key": "topol|2019|deep-medicine-artificial",
+  "authors": [
+   "Topol"
+  ],
+  "year": 2019,
+  "title": "Deep medicine: How artificial intelligence can make healthcare human again",
+  "venue": "Basic Books",
+  "cited_by": [
+   "triage"
+  ]
+ },
+ {
+  "key": "zhang|2026|influencers-delegate-replies",
+  "authors": [
+   "Zhang",
+   "Gao",
+   "Li",
+   "Johnson"
+  ],
+  "year": 2026,
+  "title": "When influencers delegate replies: How social AI agents shape user engagement",
+  "venue": "Information Systems Research",
+  "cited_by": [
+   "triage"
+  ]
+ },
+ {
+  "key": "athey|2016|recursive-partitioning-heterogeneous",
+  "authors": [
+   "Athey",
+   "Imbens"
+  ],
+  "year": 2016,
+  "title": "Recursive partitioning for heterogeneous causal effects",
+  "venue": "Proceedings of the National Academy of Sciences",
+  "cited_by": [
+   "misaligned",
+   "remote"
+  ]
+ },
+ {
+  "key": "belk|2013|extended-self-digital",
+  "authors": [
+   "Belk"
+  ],
+  "year": 2013,
+  "title": "Extended self in a digital world",
+  "venue": "Journal of Consumer Research",
+  "cited_by": [
+   "misaligned"
+  ]
+ },
+ {
+  "key": "bender|2001|adjusting-multiple-testing",
+  "authors": [
+   "Bender",
+   "Lange"
+  ],
+  "year": 2001,
+  "title": "Adjusting for multiple testing\u2014When and how?",
+  "venue": "Journal of Clinical Epidemiology",
+  "cited_by": [
+   "misaligned"
+  ]
+ },
+ {
+  "key": "berger|2007|where-consumers-diverge",
+  "authors": [
+   "Berger",
+   "Heath"
+  ],
+  "year": 2007,
+  "title": "Where consumers diverge from others: Identity signaling and product domains",
+  "venue": "Journal of Consumer Research",
+  "cited_by": [
+   "misaligned"
+  ]
+ },
+ {
+  "key": "berger|2008|who-drives-divergence",
+  "authors": [
+   "Berger",
+   "Heath"
+  ],
+  "year": 2008,
+  "title": "Who drives divergence? Identity signaling, outgroup dissimilarity, and the abandonment of cultural tastes",
+  "venue": "Journal of Personality and Social Psychology",
+  "cited_by": [
+   "misaligned"
+  ]
+ },
+ {
+  "key": "bhattacharjee|2024|creator-economy-managing",
+  "authors": [
+   "Bhattacharjee",
+   "Goh",
+   "Mahajan"
+  ],
+  "year": 2024,
+  "title": "The creator economy: Managing ecosystem supply, revenue sharing, and platform design",
+  "venue": "Management Science",
+  "cited_by": [
+   "misaligned"
+  ]
+ },
+ {
+  "key": "brewer|1991|social-self-being",
+  "authors": [
+   "Brewer"
+  ],
+  "year": 1991,
+  "title": "The social self: On being the same and different at the same time",
+  "venue": "Personality and Social Psychology Bulletin",
+  "cited_by": [
+   "misaligned"
+  ]
+ },
+ {
+  "key": "brodie|2011|customer-engagement-conceptual",
+  "authors": [
+   "Brodie",
+   "Hollebeek",
+   "Juric",
+   "Ilic"
+  ],
+  "year": 2011,
+  "title": "Customer engagement: Conceptual domain, fundamental propositions, and implications for research",
+  "venue": "Journal of Service Research",
+  "cited_by": [
+   "misaligned"
+  ]
+ },
+ {
+  "key": "burtch|2023|motivating-usergenerated-content",
+  "authors": [
+   "Burtch",
+   "He",
+   "Hong",
+   "Lee"
+  ],
+  "year": 2023,
+  "title": "Motivating user-generated content: The unintended consequences of incentive thresholds",
+  "venue": "MIS Quarterly",
+  "cited_by": [
+   "misaligned"
+  ]
+ },
+ {
+  "key": "card|1994|minimum-wages-employment",
+  "authors": [
+   "Card",
+   "Krueger"
+  ],
+  "year": 1994,
+  "title": "Minimum wages and employment: A case study of the fast-food industry in New Jersey and Pennsylvania",
+  "venue": "American Economic Review",
+  "cited_by": [
+   "misaligned"
+  ]
+ },
+ {
+  "key": "chan|2012|identifiable-not-identical",
+  "authors": [
+   "Chan",
+   "Berger",
+   "Van Boven"
+  ],
+  "year": 2012,
+  "title": "Identifiable but not identical: Combining social identity and uniqueness motives in choice",
+  "venue": "Journal of Consumer Research",
+  "cited_by": [
+   "misaligned"
+  ]
+ },
+ {
+  "key": "cheung|2015|online-social-networks",
+  "authors": [
+   "Cheung",
+   "Chiu",
+   "Lee"
+  ],
+  "year": 2015,
+  "title": "Online social networks: Why do students use Facebook?",
+  "venue": "Computers in Human Behavior",
+  "cited_by": [
+   "misaligned"
+  ]
+ },
+ {
+  "key": "claussen|2013|effects-rewarding-user",
+  "authors": [
+   "Claussen",
+   "Kretschmer",
+   "Mayrhofer"
+  ],
+  "year": 2013,
+  "title": "The effects of rewarding user engagement: The case of Facebook apps",
+  "venue": "Information Systems Research",
+  "cited_by": [
+   "misaligned"
+  ]
+ },
+ {
+  "key": "deci|2000|goal-pursuits-human",
+  "authors": [
+   "Deci",
+   "Ryan"
+  ],
+  "year": 2000,
+  "title": "The \"what\" and \"why\" of goal pursuits: Human needs and the self-determination of behavior",
+  "venue": "Psychological Inquiry",
+  "cited_by": [
+   "misaligned"
+  ]
+ },
+ {
+  "key": "faraj|2015|leading-collaboration-online",
+  "authors": [
+   "Faraj",
+   "Kudaravalli",
+   "Wasko"
+  ],
+  "year": 2015,
+  "title": "Leading collaboration in online communities",
+  "venue": "MIS Quarterly",
+  "cited_by": [
+   "misaligned"
+  ]
+ },
+ {
+  "key": "goes|2014|popularity-effect-usergenerated",
+  "authors": [
+   "Goes",
+   "Lin",
+   "Au Yeung"
+  ],
+  "year": 2014,
+  "title": "\"Popularity effect\" in user-generated content: Evidence from online product reviews",
+  "venue": "Information Systems Research",
+  "cited_by": [
+   "misaligned"
+  ]
+ },
+ {
+  "key": "goes|2016|incentive-hierarchies-induce",
+  "authors": [
+   "Goes",
+   "Guo",
+   "Lin"
+  ],
+  "year": 2016,
+  "title": "Do incentive hierarchies induce user effort? Evidence from an online knowledge exchange",
+  "venue": "Information Systems Research",
+  "cited_by": [
+   "misaligned"
+  ]
+ },
+ {
+  "key": "hong|2020|role-fairness-social",
+  "authors": [
+   "Hong",
+   "Pavlou",
+   "Shi",
+   "Wang"
+  ],
+  "year": 2020,
+  "title": "On the role of fairness and social distance in designing effective social referral systems",
+  "venue": "Information Systems Research",
+  "cited_by": [
+   "misaligned"
+  ]
+ },
+ {
+  "key": "imai|2010|general-approach-causal",
+  "authors": [
+   "Imai",
+   "Keele",
+   "Tingley"
+  ],
+  "year": 2010,
+  "title": "A general approach to causal mediation analysis",
+  "venue": "Psychological Methods",
+  "cited_by": [
+   "misaligned"
+  ]
+ },
+ {
+  "key": "khernamnuai|2018|extrinsic-versus-intrinsic",
+  "authors": [
+   "Khern-am-nuai",
+   "Kannan",
+   "Ghasemkhani"
+  ],
+  "year": 2018,
+  "title": "Extrinsic versus intrinsic rewards for contributing reviews in an online platform",
+  "venue": "Information Systems Research",
+  "cited_by": [
+   "misaligned"
+  ]
+ },
+ {
+  "key": "kummer|2020|unemployment-digital-public",
+  "authors": [
+   "Kummer",
+   "Slivko",
+   "Zhang"
+  ],
+  "year": 2020,
+  "title": "Unemployment and digital public goods contribution",
+  "venue": "Information Systems Research",
+  "cited_by": [
+   "misaligned"
+  ]
+ },
+ {
+  "key": "leonardelli|2010|optimal-distinctiveness-theory",
+  "authors": [
+   "Leonardelli",
+   "Pickett",
+   "Brewer"
+  ],
+  "year": 2010,
+  "title": "Optimal distinctiveness theory: A framework for social identity, social cognition, and intergroup relations",
+  "venue": "Advances in Experimental Social Psychology",
+  "cited_by": [
+   "misaligned"
+  ]
+ },
+ {
+  "key": "muchnik|2013|social-influence-bias",
+  "authors": [
+   "Muchnik",
+   "Aral",
+   "Taylor"
+  ],
+  "year": 2013,
+  "title": "Social influence bias: A randomized experiment",
+  "venue": "Science",
+  "cited_by": [
+   "misaligned"
+  ]
+ },
+ {
+  "key": "pickett|2002|motivated-selfstereotyping-heightened",
+  "authors": [
+   "Pickett",
+   "Bonner",
+   "Coleman"
+  ],
+  "year": 2002,
+  "title": "Motivated self-stereotyping: Heightened assimilation and differentiation needs result in increased levels of positive and negative self-stereotyping",
+  "venue": "Journal of Personality and Social Psychology",
+  "cited_by": [
+   "misaligned"
+  ]
+ },
+ {
+  "key": "ren|2012|building-member-attachment",
+  "authors": [
+   "Ren",
+   "Harper",
+   "Drenner",
+   "Terveen",
+   "Kiesler",
+   "Riedl",
+   "Kraut"
+  ],
+  "year": 2012,
+  "title": "Building member attachment in online communities: Applying theories of group identity and interpersonal bonds",
+  "venue": "MIS Quarterly",
+  "cited_by": [
+   "misaligned"
+  ]
+ },
+ {
+  "key": "ritzer|2010|production-consumption-prosumption",
+  "authors": [
+   "Ritzer",
+   "Jurgenson"
+  ],
+  "year": 2010,
+  "title": "Production, consumption, prosumption: The nature of capitalism in the age of the digital prosumer",
+  "venue": "Journal of Consumer Culture",
+  "cited_by": [
+   "misaligned"
+  ]
+ },
+ {
+  "key": "salganik|2006|experimental-study-inequality",
+  "authors": [
+   "Salganik",
+   "Dodds",
+   "Watts"
+  ],
+  "year": 2006,
+  "title": "Experimental study of inequality and unpredictability in an artificial cultural market",
+  "venue": "Science",
+  "cited_by": [
+   "misaligned"
+  ]
+ },
+ {
+  "key": "schau|2003|we-we-post",
+  "authors": [
+   "Schau",
+   "Gilly"
+  ],
+  "year": 2003,
+  "title": "We are what we post? Self-presentation in personal web space",
+  "venue": "Journal of Consumer Research",
+  "cited_by": [
+   "misaligned"
+  ]
+ },
+ {
+  "key": "schneider|2020|stars-shine-too",
+  "authors": [
+   "Schneider",
+   "Weinmann",
+   "Mohr",
+   "vom Brocke"
+  ],
+  "year": 2020,
+  "title": "When the stars shine too bright: The influence of multidimensional ratings on online consumer ratings",
+  "venue": "Management Science",
+  "cited_by": [
+   "misaligned"
+  ]
+ },
+ {
+  "key": "shore|2011|inclusion-diversity-work",
+  "authors": [
+   "Shore",
+   "Randel",
+   "Chung",
+   "Dean",
+   "Ehrhart",
+   "Singh"
+  ],
+  "year": 2011,
+  "title": "Inclusion and diversity in work groups: A review and model for future research",
+  "venue": "Journal of Management",
+  "cited_by": [
+   "misaligned"
+  ]
+ },
+ {
+  "key": "susarla|2012|social-networks-diffusion",
+  "authors": [
+   "Susarla",
+   "Oh",
+   "Tan"
+  ],
+  "year": 2012,
+  "title": "Social networks and the diffusion of user-generated content: Evidence from YouTube",
+  "venue": "Information Systems Research",
+  "cited_by": [
+   "misaligned"
+  ]
+ },
+ {
+  "key": "swann|1983|selfverification-bringing-social",
+  "authors": [
+   "Swann"
+  ],
+  "year": 1983,
+  "title": "Self-verification: Bringing social reality into harmony with the self",
+  "venue": "Erlbaum",
+  "cited_by": [
+   "misaligned"
+  ]
+ },
+ {
+  "key": "tian|2001|consumers-need-uniqueness",
+  "authors": [
+   "Tian",
+   "Bearden",
+   "Hunter"
+  ],
+  "year": 2001,
+  "title": "Consumers' need for uniqueness: Scale development and validation",
+  "venue": "Journal of Consumer Research",
+  "cited_by": [
+   "misaligned"
+  ]
+ },
+ {
+  "key": "toubia|2013|intrinsic-vs-imagerelated",
+  "authors": [
+   "Toubia",
+   "Stephen"
+  ],
+  "year": 2013,
+  "title": "Intrinsic vs. image-related utility in social media: Why do people contribute content to Twitter?",
+  "venue": "Marketing Science",
+  "cited_by": [
+   "misaligned"
+  ]
+ },
+ {
+  "key": "vargo|2008|servicedominant-logic-continuing",
+  "authors": [
+   "Vargo",
+   "Lusch"
+  ],
+  "year": 2008,
+  "title": "Service-dominant logic: Continuing the evolution",
+  "venue": "Journal of the Academy of Marketing Science",
+  "cited_by": [
+   "misaligned"
+  ]
+ },
+ {
+  "key": "wang|2021|monetary-incentives-knowledge",
+  "authors": [
+   "Wang",
+   "Li",
+   "Hui"
+  ],
+  "year": 2021,
+  "title": "Monetary incentives and knowledge spillover: Evidence from a natural experiment",
+  "venue": "Management Science",
+  "cited_by": [
+   "misaligned"
+  ]
+ },
+ {
+  "key": "wasko|2005|should-i-share",
+  "authors": [
+   "Wasko",
+   "Faraj"
+  ],
+  "year": 2005,
+  "title": "Why should I share? Examining social capital and knowledge contribution in electronic networks of practice",
+  "venue": "MIS Quarterly",
+  "cited_by": [
+   "misaligned"
+  ]
+ },
+ {
+  "key": "xu|2019|makes-geeks-tick",
+  "authors": [
+   "Xu",
+   "Nian",
+   "Cabral"
+  ],
+  "year": 2019,
+  "title": "What makes geeks tick? A study of Stack Overflow careers",
+  "venue": "Management Science",
+  "cited_by": [
+   "misaligned"
+  ]
+ },
+ {
+  "key": "zhang|2024|tmokc-unsupervised-topic",
+  "authors": [
+   "Zhang",
+   "Zhang",
+   "Yang",
+   "Schweidel"
+  ],
+  "year": 2024,
+  "title": "TM-OKC: An unsupervised topic model for text in online knowledge communities",
+  "venue": "MIS Quarterly",
+  "cited_by": [
+   "misaligned"
+  ]
+ },
+ {
+  "key": "zhang|2011|group-size-incentives",
+  "authors": [
+   "Zhang",
+   "Zhu"
+  ],
+  "year": 2011,
+  "title": "Group size and incentives to contribute: A natural experiment at Chinese Wikipedia",
+  "venue": "American Economic Review",
+  "cited_by": [
+   "misaligned"
+  ]
+ },
+ {
+  "key": "aksoy|2023|time-savings-working",
+  "authors": [
+   "Aksoy",
+   "Barrero",
+   "Bloom",
+   "Davis",
+   "Dolls",
+   "Zarate"
+  ],
+  "year": 2023,
+  "title": "Time savings when working from home",
+  "venue": "National Bureau of Economic Research",
+  "cited_by": [
+   "remote"
+  ]
+ },
+ {
+  "key": "barrero|2023|evolution-work-home",
+  "authors": [
+   "Barrero",
+   "Bloom",
+   "Davis"
+  ],
+  "year": 2023,
+  "title": "The evolution of work from home",
+  "venue": "Journal of Economic Perspectives",
+  "cited_by": [
+   "remote"
+  ]
+ },
+ {
+  "key": "bloom|2020|impact-covid19-productivity",
+  "authors": [
+   "Bloom",
+   "Bunn",
+   "Mizen",
+   "Smietanka",
+   "Thwaites"
+  ],
+  "year": 2020,
+  "title": "The impact of COVID-19 on productivity",
+  "venue": "National Bureau of Economic Research",
+  "cited_by": [
+   "remote"
+  ]
+ },
+ {
+  "key": "bloom|2020|covid19-shifted-patent",
+  "authors": [
+   "Bloom",
+   "Davis",
+   "Zhestkova"
+  ],
+  "year": 2020,
+  "title": "COVID-19 shifted patent applications toward technologies that support working from home",
+  "venue": "SSRN Electronic Journal",
+  "cited_by": [
+   "remote"
+  ]
+ },
+ {
+  "key": "bloom|2024|hybrid-working-home",
+  "authors": [
+   "Bloom",
+   "Han",
+   "Liang"
+  ],
+  "year": 2024,
+  "title": "Hybrid working from home improves retention without damaging performance",
+  "venue": "Nature",
+  "cited_by": [
+   "remote"
+  ]
+ },
+ {
+  "key": "bloom|2015|working-home-work",
+  "authors": [
+   "Bloom",
+   "Liang",
+   "Roberts",
+   "Ying"
+  ],
+  "year": 2015,
+  "title": "Does working from home work? Evidence from a Chinese experiment",
+  "venue": "Quarterly Journal of Economics",
+  "cited_by": [
+   "remote"
+  ]
+ },
+ {
+  "key": "han|2022|covid19-ecommerce-operations",
+  "authors": [
+   "Han",
+   "Sun",
+   "Chu",
+   "Wu"
+  ],
+  "year": 2022,
+  "title": "COVID-19 and e-commerce operations: Evidence from Alibaba",
+  "venue": "Manufacturing & Service Operations Management",
+  "cited_by": [
+   "remote"
+  ]
+ },
+ {
+  "key": "brynjolfsson|2020|covid19-remote-work",
+  "authors": [
+   "Brynjolfsson",
+   "Horton",
+   "Ozimek",
+   "Rock",
+   "Sharma",
+   "TuYe"
+  ],
+  "year": 2020,
+  "title": "COVID-19 and remote work: An early look at US data",
+  "venue": "National Bureau of Economic Research",
+  "cited_by": [
+   "remote"
+  ]
+ },
+ {
+  "key": "choudhury|2021|workfromanywhere-productivity-effects",
+  "authors": [
+   "Choudhury",
+   "Foroughi",
+   "Larson"
+  ],
+  "year": 2021,
+  "title": "Work-from-anywhere: The productivity effects of geographic flexibility",
+  "venue": "Strategic Management Journal",
+  "cited_by": [
+   "remote"
+  ]
+ },
+ {
+  "key": "cui|2022|gender-inequality-research",
+  "authors": [
+   "Cui",
+   "Ding",
+   "Zhu"
+  ],
+  "year": 2022,
+  "title": "Gender inequality in research productivity during the COVID-19 pandemic",
+  "venue": "Manufacturing & Service Operations Management",
+  "cited_by": [
+   "remote"
+  ]
+ },
+ {
+  "key": "friebel|2016|flexibility-specialization-individual",
+  "authors": [
+   "Friebel",
+   "Yilmaz"
+  ],
+  "year": 2016,
+  "title": "Flexibility, specialization and individual productivity: Evidence from call center data",
+  "venue": "SSRN Electronic Journal",
+  "cited_by": [
+   "remote"
+  ]
+ },
+ {
+  "key": "gans|2003|telephone-call-centers",
+  "authors": [
+   "Gans",
+   "Koole",
+   "Mandelbaum"
+  ],
+  "year": 2003,
+  "title": "Telephone call centers: Tutorial, review, and research prospects",
+  "venue": "Manufacturing & Service Operations Management",
+  "cited_by": [
+   "remote"
+  ]
+ },
+ {
+  "key": "ge|2022|working-home-firm",
+  "authors": [
+   "Ge",
+   "Huang",
+   "Wang",
+   "Jiang",
+   "Liu"
+  ],
+  "year": 2022,
+  "title": "Working from home and firm resilience to the COVID-19 pandemic",
+  "venue": "Journal of Operations Management",
+  "cited_by": [
+   "remote"
+  ]
+ },
+ {
+  "key": "gibbs|2023|work-home-productivity",
+  "authors": [
+   "Gibbs",
+   "Mengel",
+   "Siemroth"
+  ],
+  "year": 2023,
+  "title": "Work from home and productivity: Evidence from personnel and analytics data on information technology professionals",
+  "venue": "Journal of Political Economy Microeconomics",
+  "cited_by": [
+   "remote"
+  ]
+ },
+ {
+  "key": "gorlich|2023|creativity-productivity-during",
+  "authors": [
+   "Gorlich"
+  ],
+  "year": 2023,
+  "title": "Creativity and productivity during the COVID-19 pandemic",
+  "venue": "Scientific Reports",
+  "cited_by": [
+   "remote"
+  ]
+ },
+ {
+  "key": "hansen|2023|remote-work-across",
+  "authors": [
+   "Hansen",
+   "Lambert",
+   "Bloom",
+   "Davis",
+   "Sadun",
+   "Taska"
+  ],
+  "year": 2023,
+  "title": "Remote work across jobs, companies, and space",
+  "venue": "National Bureau of Economic Research",
+  "cited_by": [
+   "remote"
+  ]
+ },
+ {
+  "key": "hirano|2005|propensity-score-continuous",
+  "authors": [
+   "Hirano",
+   "Imbens"
+  ],
+  "year": 2005,
+  "title": "The propensity score with continuous treatments",
+  "venue": "Applied Bayesian Modeling and Causal Inference from Incomplete-Data Perspectives",
+  "cited_by": [
+   "remote"
+  ]
+ },
+ {
+  "key": "hopp|2004|benefits-skill-chaining",
+  "authors": [
+   "Hopp",
+   "Tekin",
+   "Van Oyen"
+  ],
+  "year": 2004,
+  "title": "Benefits of skill chaining in serial production lines with cross-trained workers",
+  "venue": "Management Science",
+  "cited_by": [
+   "remote"
+  ]
+ },
+ {
+  "key": "imbens|2000|role-propensity-score",
+  "authors": [
+   "Imbens"
+  ],
+  "year": 2000,
+  "title": "The role of the propensity score in estimating dose-response functions",
+  "venue": "Biometrika",
+  "cited_by": [
+   "remote"
+  ]
+ },
+ {
+  "key": "iravani|2007|workforce-agility-repair",
+  "authors": [
+   "Iravani",
+   "Krishnamurthy"
+  ],
+  "year": 2007,
+  "title": "Workforce agility in repair and maintenance environments",
+  "venue": "Manufacturing & Service Operations Management",
+  "cited_by": [
+   "remote"
+  ]
+ },
+ {
+  "key": "iravani|2005|structural-flexibility-new",
+  "authors": [
+   "Iravani",
+   "Van Oyen",
+   "Sims"
+  ],
+  "year": 2005,
+  "title": "Structural flexibility: A new perspective on the design of manufacturing and service operations",
+  "venue": "Management Science",
+  "cited_by": [
+   "remote"
+  ]
+ },
+ {
+  "key": "jones|2021|past-present-future",
+  "authors": [
+   "Jones",
+   "Hutcheson",
+   "Camba"
+  ],
+  "year": 2021,
+  "title": "Past, present, and future barriers to digital transformation in manufacturing: A review",
+  "venue": "Journal of Manufacturing Systems",
+  "cited_by": [
+   "remote"
+  ]
+ },
+ {
+  "key": "manyika|2015|digital-america-tale",
+  "authors": [
+   "Manyika",
+   "Ramaswamy",
+   "Khanna",
+   "Sarrazin",
+   "Pinkus",
+   "Sethupathy",
+   "Yaffe"
+  ],
+  "year": 2015,
+  "title": "Digital America: A tale of the haves and have-mores",
+  "venue": "McKinsey Global Institute",
+  "cited_by": [
+   "remote"
+  ]
+ },
+ {
+  "key": "mas|2020|alternative-work-arrangements",
+  "authors": [
+   "Mas",
+   "Pallais"
+  ],
+  "year": 2020,
+  "title": "Alternative work arrangements",
+  "venue": "Annual Review of Economics",
+  "cited_by": [
+   "remote"
+  ]
+ },
+ {
+  "key": "morikawa|2022|workfromhome-productivity-during",
+  "authors": [
+   "Morikawa"
+  ],
+  "year": 2022,
+  "title": "Work-from-home productivity during the COVID-19 pandemic: Evidence from Japan",
+  "venue": "Economic Inquiry",
+  "cited_by": [
+   "remote"
+  ]
+ },
+ {
+  "key": "pinker|2000|efficiencyquality-tradeoff-crosstrained",
+  "authors": [
+   "Pinker",
+   "Shumsky"
+  ],
+  "year": 2000,
+  "title": "The efficiency-quality trade-off of cross-trained workers",
+  "venue": "Manufacturing & Service Operations Management",
+  "cited_by": [
+   "remote"
+  ]
+ },
+ {
+  "key": "qin|2015|workforce-agility-operations",
+  "authors": [
+   "Qin",
+   "Nembhard"
+  ],
+  "year": 2015,
+  "title": "Workforce agility in operations management",
+  "venue": "Surveys in Operations Research and Management Science",
+  "cited_by": [
+   "remote"
+  ]
+ },
+ {
+  "key": "ramdas|2020|remote-shared-care",
+  "authors": [
+   "Ramdas",
+   "Ahmed",
+   "Darzi"
+  ],
+  "year": 2020,
+  "title": "Remote shared care delivery: A virtual response to COVID-19",
+  "venue": "The Lancet Digital Health",
+  "cited_by": [
+   "remote"
+  ]
+ },
+ {
+  "key": "zarate|2024|working-home-vary",
+  "authors": [
+   "Zarate",
+   "Dolls",
+   "Davis",
+   "Bloom",
+   "Barrero",
+   "Aksoy"
+  ],
+  "year": 2024,
+  "title": "Why does working from home vary across countries and people?",
+  "venue": "National Bureau of Economic Research",
+  "cited_by": [
+   "remote"
+  ]
+ }
+]

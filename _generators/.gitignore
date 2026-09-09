@@ -1,0 +1,2 @@
+# per-lookup OpenAlex cache: hundreds of tiny files, regenerable by resolve_oa.py
+oa_cache/

@@ -1,0 +1,136 @@
+# -*- coding: utf-8 -*-
+"""
+Resolve each work Xinyu Fu cites to an OpenAlex record, and pull that record's own
+reference list. That second hop is what makes the sky deep: her papers cite ~600
+works, and those works in turn rest on a shared foundation that first-order
+coupling cannot see.
+
+    python3 resolve_oa.py            # resumable; caches every lookup to oa_cache/
+
+No API key is needed. Nothing personal is sent — only the bibliographic strings that
+already appear in the manuscripts' reference lists.
+"""
+import json, os, re, sys, time, unicodedata, urllib.parse, urllib.request
+from concurrent.futures import ThreadPoolExecutor
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+CACHE = os.path.join(HERE, 'oa_cache')
+os.makedirs(CACHE, exist_ok=True)
+
+API = 'https://api.openalex.org/works'
+SELECT = 'id,display_name,publication_year,authorships,referenced_works,cited_by_count,primary_location'
+UA = 'xinyufu-website-citation-map/1.0'
+
+
+def strip(s):
+    s = unicodedata.normalize('NFKD', s or '')
+    return ''.join(c for c in s if not unicodedata.combining(c))
+
+
+def norm_title(s):
+    return re.sub(r'[^a-z0-9 ]', ' ', strip(s).lower()).strip()
+
+
+def toks(s):
+    STOP = set('a an the of on in at to for from with and or but as by is are be'.split())
+    return set(w for w in norm_title(s).split() if w not in STOP and len(w) > 2)
+
+
+def sim(a, b):
+    ta, tb = toks(a), toks(b)
+    if not ta or not tb:
+        return 0.0
+    return len(ta & tb) / len(ta | tb)
+
+
+def get(url, tries=4):
+    for i in range(tries):
+        try:
+            req = urllib.request.Request(url, headers={'User-Agent': UA,
+                                                       'Accept': 'application/json'})
+            with urllib.request.urlopen(req, timeout=30) as r:
+                return json.loads(r.read().decode('utf8'))
+        except Exception as e:
+            if i == tries - 1:
+                return {'_error': str(e)}
+            time.sleep(1.2 * (i + 1))
+    return {'_error': 'unreachable'}
+
+
+def cache_path(key):
+    safe = re.sub(r'[^a-z0-9]+', '_', key.lower())[:120]
+    return os.path.join(CACHE, safe + '.json')
+
+
+def resolve(w):
+    """Find the OpenAlex record for one cited work. Conservative: an unmatched work
+    is better than a wrong one, because a wrong match imports someone else's
+    reference list into the graph."""
+    cp = cache_path(w['key'])
+    if os.path.exists(cp):
+        try:
+            return json.load(open(cp, encoding='utf8'))
+        except Exception:
+            pass
+
+    title = (w.get('title') or '').strip()
+    out = {'key': w['key'], 'matched': False}
+    if len(norm_title(title)) < 12:
+        json.dump(out, open(cp, 'w')); return out
+
+    q = urllib.parse.quote(norm_title(title)[:220])
+    data = get('%s?filter=title.search:%s&per-page=5&select=%s' % (API, q, SELECT))
+    results = data.get('results') or []
+    if not results and not data.get('_error'):
+        data = get('%s?search=%s&per-page=5&select=%s' % (API, q, SELECT))
+        results = data.get('results') or []
+
+    want_year = w.get('year') or 0
+    want_a1 = strip((w['authors'][0] if w.get('authors') else '')).lower()
+
+    best, best_s = None, 0.0
+    for r in results:
+        s = sim(title, r.get('display_name') or '')
+        yr = r.get('publication_year') or 0
+        names = [strip((a.get('author') or {}).get('display_name') or '').lower()
+                 for a in (r.get('authorships') or [])]
+        a1_ok = any(want_a1 and want_a1 in n for n in names[:6])
+        yr_ok = bool(want_year) and abs(yr - want_year) <= 2
+
+        # a title alone must be near-identical; with author or year agreement, relax it
+        ok = (s >= 0.85) or (s >= 0.62 and (a1_ok or yr_ok)) or (s >= 0.5 and a1_ok and yr_ok)
+        if ok and s > best_s:
+            best, best_s = r, s
+
+    if best:
+        out = {'key': w['key'], 'matched': True,
+               'oa': best['id'].rsplit('/', 1)[-1],
+               'title': best.get('display_name'),
+               'year': best.get('publication_year'),
+               'cites': best.get('cited_by_count') or 0,
+               'refs': [x.rsplit('/', 1)[-1] for x in (best.get('referenced_works') or [])],
+               'sim': round(best_s, 3)}
+    json.dump(out, open(cp, 'w'))
+    return out
+
+
+if __name__ == '__main__':
+    works = json.load(open(os.path.join(HERE, 'works.json'), encoding='utf8'))
+    print('resolving %d cited works against OpenAlex...' % len(works))
+    done = []
+    with ThreadPoolExecutor(max_workers=6) as ex:
+        for i, r in enumerate(ex.map(resolve, works), 1):
+            done.append(r)
+            if i % 50 == 0:
+                m = sum(1 for x in done if x.get('matched'))
+                print('  %4d/%d  matched %d (%.0f%%)' % (i, len(works), m, 100.0 * m / i))
+                sys.stdout.flush()
+
+    json.dump(done, open(os.path.join(HERE, 'oa_level1.json'), 'w'), indent=1)
+    m = [x for x in done if x.get('matched')]
+    nrefs = sum(len(x['refs']) for x in m)
+    print()
+    print('matched %d/%d (%.0f%%)' % (len(m), len(done), 100.0 * len(m) / max(1, len(done))))
+    print('second-hop references pulled: %d' % nrefs)
+    with_refs = sum(1 for x in m if x['refs'])
+    print('matched works that expose a reference list: %d' % with_refs)
