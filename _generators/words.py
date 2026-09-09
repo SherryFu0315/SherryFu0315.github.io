@@ -156,11 +156,7 @@ HOME_RECENT_TITLE = "Recent"
 # Where it appears: "Recent" column, the 2026 item
 HOME_RECENT_JMIS = "<i>Knowing Is Not Enough</i> accepted at the Journal of Management Information Systems"
 
-# Where it appears: "Recent" column, the 2025 item
-HOME_RECENT_TEACHING_AWARD = "Unforgettable Educator Award, Robinson College of Business &mdash; nominated by students"
 
-# Where it appears: "Recent" column, the 2024 item
-HOME_RECENT_NSSFC = "National Social Science Fund of China, national-level funding"
 
 # Where it appears: heading of the second of the three columns near the bottom of the front page
 HOME_PRESS_TITLE = "In the press"

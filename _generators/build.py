@@ -272,8 +272,6 @@ HOME = '''<!DOCTYPE html>
         <li><span class="yr">2026</span>%s</li>
         <li><span class="yr">2026</span>%s</li>
         <li><span class="yr">2026</span>%s</li>
-        <li><span class="yr">2025</span>%s</li>
-        <li><span class="yr">2024</span>%s</li>
       </ul>
     </div>
     <div class="strip-cell">
@@ -364,8 +362,6 @@ HOME = '''<!DOCTYPE html>
        T.HOME_RECENT_CIST,
        T.HOME_RECENT_ICIS,
        T.HOME_RECENT_CHAPTER,
-       T.HOME_RECENT_TEACHING_AWARD,
-       T.HOME_RECENT_NSSFC,
        T.HOME_PRESS_TITLE,
        T.HOME_PRESS_PATH,
        T.HOME_PRESS_EDUBOT,
