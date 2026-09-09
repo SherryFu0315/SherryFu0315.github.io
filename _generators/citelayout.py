@@ -40,7 +40,12 @@ S_GRAVITY = 0.0016
 S_DAMP    = 0.86
 
 # ---- stage 2: the halo of literature around each study --------------------
-HALO      = 150.0      # radius a study's own references spread over
+# Radius grows with the square root of how many works a study cites, so halo
+# AREA is proportional to the count and every dot gets the same room. A fixed
+# radius looked fairer but was not: it packed a 148-reference review chapter
+# and a 30-reference paper into the same circle, so the difference showed up as
+# density — a smudge — instead of as size.
+HALO      = 150.0      # radius for a study of median size
 HALO_MIN  = 0.20       # nothing sits right on top of its study
 SHARED_J  = 0.20       # jitter for a work pulled between several studies
 DECLUMP   = 40         # relaxation passes to separate coincident points
@@ -111,19 +116,28 @@ def layout(studies, works, box=None):
     spos = _study_positions(sid, pairs)
 
     # ---- stage 2: hang each work off the study or studies that cite it ----
+    load = {}
+    for w in works:
+        for c in w['cited_by']:
+            if c in idx:
+                load[c] = load.get(c, 0) + 1
+    med = float(np.median([load.get(s, 1) for s in sid])) or 1.0
+    halo = {s: HALO * math.sqrt(load.get(s, 1) / med) for s in sid}
+
     wpos = np.zeros((len(works), 2))
     for j, w in enumerate(works):
         cs = [idx[c] for c in w['cited_by'] if c in idx]
         base = spos[cs].mean(axis=0)
         ang = _h(w['key'], 'a') * 2 * math.pi
+        HALO_J = sum(halo[sid[c]] for c in cs) / len(cs)
         if len(cs) == 1:
             # sqrt keeps the disc evenly filled; the exponent pulls it inward so
             # the halo has a dense core and a thin edge, the way a cluster looks
             u = HALO_MIN + (1 - HALO_MIN) * _h(w['key'], 'r')
-            rad = HALO * (u ** 0.62)
+            rad = HALO_J * (u ** 0.62)
         else:
             # a shared work belongs to the space between its citers, not to a halo
-            rad = HALO * 0.30 * _h(w['key'], 'r')
+            rad = HALO_J * 0.30 * _h(w['key'], 'r')
         wpos[j] = base + [rad * math.cos(ang), rad * math.sin(ang) * 0.88]
 
     # ---- fit into the frame, one uniform scale so distance keeps meaning ----
