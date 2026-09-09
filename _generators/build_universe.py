@@ -344,7 +344,7 @@ PAGE = u'''<!DOCTYPE html>
   </div>
 
   <p class="blurb is-off" id="blurb-axis">Where I file each study. The constellations are real ones &mdash; Ursa Major, Cassiopeia, Orion, Lyra, Corvus, Crux &mdash; and the grey points are the places still open in each cell.</p>
-  <p class="blurb" id="blurb-cite">Where the literature files them. Every faint star is a work one of these studies cites; the bright ones are the studies. <b>No position here is chosen by hand</b> &mdash; a force simulation runs over the real citation graph, so two studies sit close together only when they draw on the same references, and a work several papers lean on is pulled into the space between them. <b>__N_CITED__</b> works cited, <b>__N_SHARED__</b> of them by two or more studies. Three studies have no finished manuscript to read a reference list from, so they appear only under <b>Two axes</b>.</p>
+  <p class="blurb" id="blurb-cite">Where the literature files them. Every faint star is a work one of these studies cites; the bright ones are the studies. <b>No position here is chosen by hand</b> &mdash; a force simulation runs over the real citation graph, so two studies sit close together only when they draw on the same references, and a work several papers lean on is pulled into the space between them. <b>__N_CITED__</b> works cited, <b>__N_SHARED__</b> of them by two or more studies.</p>
 
   <section class="index-list">
     <h2>Everything on the map, in plain text</h2>
@@ -736,8 +736,11 @@ PAGE = u'''<!DOCTYPE html>
 </body>
 </html>
 '''
-# biggest literature first, so those names win when the citation sky gets tight
-js_stars.sort(key=lambda s: -(s.get('nref') or 0))
+# Label priority when the sky is too tight for every name: published and
+# forthcoming work first, then whichever study carries the most literature.
+# Sorting by reference count alone let the forthcoming JMIS paper lose its
+# label to a working paper that happens to cite more.
+js_stars.sort(key=lambda s: (-(s.get('s') or 0), -(s.get('nref') or 0)))
 
 PAGE = (PAGE.replace('__COLS__',   json.dumps(js_cols,   ensure_ascii=False))
             .replace('__ROWS__',   json.dumps(js_rows,   ensure_ascii=False))

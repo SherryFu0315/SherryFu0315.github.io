@@ -135,7 +135,7 @@ button:focus-visible{ outline:3px solid var(--blue); outline-offset:2px }
 .rail{ padding:var(--pad); display:flex; flex-direction:column; gap:22px }
 .rail-top{ display:flex; align-items:flex-start; gap:18px; flex-wrap:wrap }
 .rail-photo{
-  width:104px; height:104px; flex:none;
+  width:clamp(108px,9.4vw,136px); aspect-ratio:1; height:auto; flex:none;
   border-radius:50%;
   object-fit:cover;
 }

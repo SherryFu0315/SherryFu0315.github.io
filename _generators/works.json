@@ -790,7 +790,8 @@
   "title": "Algorithm aversion: People erroneously avoid algorithms after seeing them err",
   "venue": "Journal of Experimental Psychology: General",
   "cited_by": [
-   "errors"
+   "errors",
+   "hrm"
   ]
  },
  {
@@ -1373,7 +1374,8 @@
   "title": "The crowdless future? Generative AI and creative problem-solving",
   "venue": "Organization Science",
   "cited_by": [
-   "secd"
+   "secd",
+   "hrm"
   ]
  },
  {
@@ -1914,7 +1916,8 @@
   "title": "Artificial intelligence in organizations: New opportunities for phenomenon-based theorizing",
   "venue": "Academy of Management Discoveries",
   "cited_by": [
-   "secd"
+   "secd",
+   "hrm"
   ]
  },
  {
@@ -2722,7 +2725,8 @@
   "venue": "Strategic Management Journal",
   "cited_by": [
    "creativity",
-   "sales"
+   "sales",
+   "hrm"
   ]
  },
  {
@@ -3638,7 +3642,8 @@
   "venue": "Academy of Management Review",
   "cited_by": [
    "manufacturing",
-   "triage"
+   "triage",
+   "hrm"
   ]
  },
  {
@@ -5533,7 +5538,8 @@
   "venue": "Management Science",
   "cited_by": [
    "stimulus",
-   "triage"
+   "triage",
+   "hrm"
   ]
  },
  {
@@ -7294,7 +7300,8 @@
   "title": "Artificial intelligence in service",
   "venue": "Journal of Service Research",
   "cited_by": [
-   "triage"
+   "triage",
+   "hrm"
   ]
  },
  {
@@ -8482,6 +8489,1946 @@
   "venue": "National Bureau of Economic Research",
   "cited_by": [
    "remote"
+  ]
+ },
+ {
+  "key": "acemoglu|2020|robots-jobs-evidence",
+  "authors": [
+   "Acemoglu",
+   "Restrepo"
+  ],
+  "year": 2020,
+  "title": "Robots and jobs: Evidence from US labor markets",
+  "venue": "Journal of Political Economy",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "allalcherif|2021|intelligent-recruitment-identify",
+  "authors": [
+   "Allal-Cherif",
+   "Yela Aranega",
+   "Castano Sanchez"
+  ],
+  "year": 2021,
+  "title": "Intelligent recruitment: How to identify, select, and retain talents from around the world using artificial intelligence",
+  "venue": "Technological Forecasting and Social Change",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "arslan|2021|artificial-intelligence-human",
+  "authors": [
+   "Arslan",
+   "Cooper",
+   "Khan"
+  ],
+  "year": 2021,
+  "title": "Artificial intelligence and human workers interaction at team level: A conceptual assessment of the challenges and potential HRM strategies",
+  "venue": "International Journal of Manpower",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "audenaert|2019|employee-performance-management",
+  "authors": [
+   "Audenaert",
+   "Decramer",
+   "George"
+  ],
+  "year": 2019,
+  "title": "When employee performance management affects individual innovation in public organizations: The role of consistency and LMX",
+  "venue": "The International Journal of Human Resource Management",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "azadeh|2018|intelligent-algorithm-optimizing",
+  "authors": [
+   "Azadeh",
+   "Yazdanparast",
+   "Abdolhossein Zadeh",
+   "Keramati"
+  ],
+  "year": 2018,
+  "title": "An intelligent algorithm for optimizing emergency department job and patient satisfaction",
+  "venue": "International Journal of Health Care Quality Assurance",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "aztiria|2013|learning-frequent-behaviors",
+  "authors": [
+   "Aztiria",
+   "Augusto",
+   "Basagoiti"
+  ],
+  "year": 2013,
+  "title": "Learning frequent behaviors of the users in intelligent environments",
+  "venue": "IEEE Transactions on Systems, Man, and Cybernetics: Systems",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "bansal|2022|internet-privacy-concerns",
+  "authors": [
+   "Bansal",
+   "Nah"
+  ],
+  "year": 2022,
+  "title": "Internet privacy concerns revisited: Oversight from surveillance and right to be forgotten as new dimensions",
+  "venue": "Information & Management",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "barkhi|2002|effects-decision-guidance",
+  "authors": [
+   "Barkhi"
+  ],
+  "year": 2002,
+  "title": "The effects of decision guidance and problem modeling on group decision-making",
+  "venue": "Journal of Management Information Systems",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "benbya|2020|artificial-intelligence-organizations",
+  "authors": [
+   "Benbya",
+   "Davenport",
+   "Pachidi"
+  ],
+  "year": 2020,
+  "title": "Artificial intelligence in organizations: Current state and future opportunities",
+  "venue": "MIS Quarterly Executive",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "berg|2010|perceiving-responding-challenges",
+  "authors": [
+   "Berg",
+   "Wrzesniewski",
+   "Dutton"
+  ],
+  "year": 2010,
+  "title": "Perceiving and responding to challenges in job crafting at different ranks: When proactivity requires adaptivity",
+  "venue": "Journal of Organizational Behavior",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "berretta|2023|defining-humanai-teaming",
+  "authors": [
+   "Berretta",
+   "Tausch",
+   "Ontrup"
+  ],
+  "year": 2023,
+  "title": "Defining human-AI teaming the human-centered way: A scoping review and network analysis",
+  "venue": "Frontiers in Artificial Intelligence",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "adiga|2021|aidriven-agentbased-models",
+  "authors": [
+   "Adiga",
+   "Brown",
+   "Barrett",
+   "Marathe"
+  ],
+  "year": 2021,
+  "title": "AI-driven agent-based models to study the role of vaccine acceptance in controlling COVID-19 spread in the US",
+  "venue": "IEEE International Conference on Big Data",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "bockstedt|2025|humans-use-ai",
+  "authors": [
+   "Bockstedt",
+   "Buckman"
+  ],
+  "year": 2025,
+  "title": "Humans' use of AI assistance: The effect of loss aversion on willingness to delegate decisions",
+  "venue": "Management Science",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "bohmer|2023|critical-exploration-aidriven",
+  "authors": [
+   "Bohmer",
+   "Schinnenburg"
+  ],
+  "year": 2023,
+  "title": "Critical exploration of AI-driven HRM to build up organizational capabilities",
+  "venue": "Employee Relations",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "boyd|2023|automated-emotion-recognition",
+  "authors": [
+   "Boyd",
+   "Andalibi"
+  ],
+  "year": 2023,
+  "title": "Automated emotion recognition in the workplace: How proposed technologies reveal potential futures of work",
+  "venue": "Proceedings of the ACM on Human-Computer Interaction",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "buck|2018|ai-performance-management",
+  "authors": [
+   "Buck",
+   "Morrow"
+  ],
+  "year": 2018,
+  "title": "AI, performance management and engagement: Keeping your best their best",
+  "venue": "Strategic HR Review",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "budhwar|2022|artificial-intelligence-challenges",
+  "authors": [
+   "Budhwar",
+   "Malik",
+   "De Silva",
+   "Thevisuthan"
+  ],
+  "year": 2022,
+  "title": "Artificial intelligence - challenges and opportunities for international HRM: A review and research agenda",
+  "venue": "The International Journal of Human Resource Management",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "burleigh|2024|google-clouds-hr",
+  "authors": [
+   "Burleigh"
+  ],
+  "year": 2024,
+  "title": "How Google Cloud's HR team used AI to transform their recruiting process and speed up employee onboarding",
+  "venue": "Yahoo Finance",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "bussler|2002|information-systems-quiet",
+  "authors": [
+   "Bussler",
+   "Davis"
+  ],
+  "year": 2002,
+  "title": "Information systems: The quiet revolution in human resource management",
+  "venue": "Journal of Computer Information Systems",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "carlson|2018|automating-judgment-algorithmic",
+  "authors": [
+   "Carlson"
+  ],
+  "year": 2018,
+  "title": "Automating judgment? Algorithmic judgment, news knowledge, and journalistic professionalism",
+  "venue": "New Media & Society",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "cartis|2020|chatbots-job-candidate",
+  "authors": [
+   "Cartis",
+   "Suciu"
+  ],
+  "year": 2020,
+  "title": "Chatbots as a job candidate evaluation tool: Short paper",
+  "venue": "On the Move to Meaningful Internet Systems: OTM 2019 Workshops",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "cascio|2016|technology-changing-work",
+  "authors": [
+   "Cascio",
+   "Montealegre"
+  ],
+  "year": 2016,
+  "title": "How technology is changing work and organizations",
+  "venue": "Annual Review of Organizational Psychology and Organizational Behavior",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "chen|2021|responding-imposed-job",
+  "authors": [
+   "Chen",
+   "Reay"
+  ],
+  "year": 2021,
+  "title": "Responding to imposed job redesign: The evolving dynamics of work and identity in restructuring professional identity",
+  "venue": "Human Relations",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "chowdhury|2022|aiemployee-collaboration-business",
+  "authors": [
+   "Chowdhury",
+   "Budhwar",
+   "Dey"
+  ],
+  "year": 2022,
+  "title": "AI-employee collaboration and business performance: Integrating knowledge-based view, socio-technical systems and organisational socialisation framework",
+  "venue": "Journal of Business Research",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "claggett|2018|unpacking-structure-coordination",
+  "authors": [
+   "Claggett",
+   "Karahanna"
+  ],
+  "year": 2018,
+  "title": "Unpacking the structure of coordination mechanisms and the role of relational coordination in an era of digitally mediated work processes",
+  "venue": "Academy of Management Review",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "clauvice|2009|modeling-intermediation-system",
+  "authors": [
+   "Clauvice"
+  ],
+  "year": 2009,
+  "title": "Modeling intermediation system based on intelligent agents for community of practices",
+  "venue": "International Conference on Computer Supported Cooperative Work in Design",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "collins|2003|strategic-human-resource",
+  "authors": [
+   "Collins",
+   "Clark"
+  ],
+  "year": 2003,
+  "title": "Strategic human resource practices, top management team social networks, and firm performance: The role of human resource practices in creating organizational competitive advantage",
+  "venue": "Academy of Management Journal",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "consoli|2016|achieving-distributed-decisionmaking",
+  "authors": [
+   "Consoli"
+  ],
+  "year": 2016,
+  "title": "Achieving distributed decision-making using BDI and Coo2 for future distributed tactical decision aids",
+  "venue": "Intelligent Decision Technologies",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "copeland|2017|linkedins-latest-hr",
+  "authors": [
+   "Copeland"
+  ],
+  "year": 2017,
+  "title": "LinkedIn's latest HR tool: Talent insights",
+  "venue": "LinkedIn",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "dabbous|2022|enabling-organizational-use",
+  "authors": [
+   "Dabbous",
+   "Aoun Barakat",
+   "Merhej Sayegh"
+  ],
+  "year": 2022,
+  "title": "Enabling organizational use of artificial intelligence: An employee perspective",
+  "venue": "Journal of Asia Business Studies",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "dargnies|2024|aversion-hiring-algorithms",
+  "authors": [
+   "Dargnies",
+   "Hakimov",
+   "Kubler"
+  ],
+  "year": 2024,
+  "title": "Aversion to hiring algorithms: Transparency, gender profiling, and self-confidence",
+  "venue": "Management Science",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "davenport|2001|data-knowledge-results",
+  "authors": [
+   "Davenport",
+   "Harris",
+   "De Long",
+   "Jacobson"
+  ],
+  "year": 2001,
+  "title": "Data to knowledge to results: Building an analytic capability",
+  "venue": "California Management Review",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "debritoneto|2014|elearning-multicultural-environments",
+  "authors": [
+   "de Brito Neto",
+   "Smith",
+   "Pedersen"
+  ],
+  "year": 2014,
+  "title": "E-learning in multicultural environments: An analysis of online flight attendant training",
+  "venue": "British Journal of Educational Technology",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "demirci|2025|who-ai-replacing",
+  "authors": [
+   "Demirci",
+   "Hannane",
+   "Zhu"
+  ],
+  "year": 2025,
+  "title": "Who is AI replacing? The impact of generative AI on online freelancing platforms",
+  "venue": "Management Science",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "deng|2024|educational-countermeasures-different",
+  "authors": [
+   "Deng"
+  ],
+  "year": 2024,
+  "title": "Educational countermeasures of different learners in virtual learning community based on artificial intelligence",
+  "venue": "International Journal of Data Mining and Bioinformatics",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "denisi|2017|performance-appraisal-performance",
+  "authors": [
+   "DeNisi",
+   "Murphy"
+  ],
+  "year": 2017,
+  "title": "Performance appraisal and performance management: 100 years of progress?",
+  "venue": "Journal of Applied Psychology",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "dierdorff|2010|frameofreference-training-effectiveness",
+  "authors": [
+   "Dierdorff",
+   "Surface",
+   "Brown"
+  ],
+  "year": 2010,
+  "title": "Frame-of-reference training effectiveness: Effects of goal orientation and self-efficacy on affective, cognitive, skill-based, and transfer outcomes",
+  "venue": "Journal of Applied Psychology",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "dietvorst|2018|overcoming-algorithm-aversion",
+  "authors": [
+   "Dietvorst",
+   "Simmons",
+   "Massey"
+  ],
+  "year": 2018,
+  "title": "Overcoming algorithm aversion: People will use imperfect algorithms if they can (even slightly) modify them",
+  "venue": "Management Science",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "doshi|2025|generative-artificial-intelligence",
+  "authors": [
+   "Doshi",
+   "Bell",
+   "Mirzayev",
+   "Vanneste"
+  ],
+  "year": 2025,
+  "title": "Generative artificial intelligence and evaluating strategic decisions",
+  "venue": "Strategic Management Journal",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "duong|2022|ai-recruitment-influence",
+  "authors": [
+   "Duong",
+   "Thi"
+  ],
+  "year": 2022,
+  "title": "How does AI recruitment influence satisfaction among student job-seekers? The role of self-efficacy as a moderator and mediator",
+  "venue": "The Education and Science Journal",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "eloundou|2023|gpts-gpts-early",
+  "authors": [
+   "Eloundou",
+   "Manning",
+   "Mishkin",
+   "Rock"
+  ],
+  "year": 2023,
+  "title": "GPTs are GPTs: An early look at the labor market impact potential of large language models",
+  "venue": "Preprint",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "endacott|2021|work-identity-construction",
+  "authors": [
+   "Endacott"
+  ],
+  "year": 2021,
+  "title": "The work of identity construction in the age of intelligent machines",
+  "venue": "Doctoral dissertation, University of California, Santa Barbara",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "francosantos|2017|performance-management-wellbeing",
+  "authors": [
+   "Franco-Santos",
+   "Doherty"
+  ],
+  "year": 2017,
+  "title": "Performance management and well-being: A close look at the changing nature of the UK higher education workplace",
+  "venue": "The International Journal of Human Resource Management",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "garg|2022|review-machine-learning",
+  "authors": [
+   "Garg",
+   "Sinha",
+   "Kar",
+   "Mani"
+  ],
+  "year": 2022,
+  "title": "A review of machine learning applications in human resource management",
+  "venue": "International Journal of Productivity and Performance Management",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "ghitulescu|2016|job-crafting-social",
+  "authors": [
+   "Ghitulescu"
+  ],
+  "year": 2016,
+  "title": "Job crafting and social embeddedness at work",
+  "venue": "Doctoral dissertation, University of Pittsburgh",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "giest|2024|more-than-digital",
+  "authors": [
+   "Giest",
+   "Klievink"
+  ],
+  "year": 2024,
+  "title": "More than a digital system: How AI is changing the role of bureaucrats in different organizational contexts",
+  "venue": "Public Management Review",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "gmyrek|2023|generative-ai-jobs",
+  "authors": [
+   "Gmyrek",
+   "Berg",
+   "Bescond"
+  ],
+  "year": 2023,
+  "title": "Generative AI and jobs: A global analysis of potential effects on job quantity and quality",
+  "venue": "SSRN Electronic Journal",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "gostautaite|2024|can-you-outsmart",
+  "authors": [
+   "Gostautaite",
+   "Liuberte",
+   "Parker",
+   "Buciuniene"
+  ],
+  "year": 2024,
+  "title": "Can you outsmart the robot? An unexpected path to work meaningfulness",
+  "venue": "Academy of Management Discoveries",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "grant|2009|redesigning-work-design",
+  "authors": [
+   "Grant",
+   "Parker"
+  ],
+  "year": 2009,
+  "title": "Redesigning work design theories: The rise of relational and proactive perspectives",
+  "venue": "Academy of Management Annals",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "hackman|1976|motivation-through-design",
+  "authors": [
+   "Hackman",
+   "Oldham"
+  ],
+  "year": 1976,
+  "title": "Motivation through the design of work: Test of a theory",
+  "venue": "Organizational Behavior and Human Performance",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "hancock|2018|straight-talk-about",
+  "authors": [
+   "Hancock",
+   "Schaninger",
+   "Rahilly"
+  ],
+  "year": 2018,
+  "title": "Straight talk about employee evaluation and performance management",
+  "venue": "McKinsey Quarterly",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "harriswatson|2023|social-perception-humanai",
+  "authors": [
+   "Harris-Watson",
+   "Larson",
+   "Lauharatanahirun"
+  ],
+  "year": 2023,
+  "title": "Social perception in human-AI teams: Warmth and competence predict receptivity to AI teammates",
+  "venue": "Computers in Human Behavior",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "he|2023|aipowered-touch-points",
+  "authors": [
+   "He",
+   "Zhang"
+  ],
+  "year": 2023,
+  "title": "AI-powered touch points in the customer journey: A systematic literature review and research agenda",
+  "venue": "Journal of Research in Interactive Marketing",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "henderson|2003|human-gaze-control",
+  "authors": [
+   "Henderson"
+  ],
+  "year": 2003,
+  "title": "Human gaze control during real-world scene perception",
+  "venue": "Trends in Cognitive Sciences",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "howard|2019|artificial-intelligence-implications",
+  "authors": [
+   "Howard"
+  ],
+  "year": 2019,
+  "title": "Artificial intelligence: Implications for the future of work",
+  "venue": "American Journal of Industrial Medicine",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "hutson|2017|even-artificial-intelligence",
+  "authors": [
+   "Hutson"
+  ],
+  "year": 2017,
+  "title": "Even artificial intelligence can acquire biases against race and gender",
+  "venue": "Science",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "isaak|2024|humanmachine-collaboration-framework",
+  "authors": [
+   "Isaak"
+  ],
+  "year": 2024,
+  "title": "A human-machine collaboration framework for the development of schemas",
+  "venue": "Preprint",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "jarrahi|2018|artificial-intelligence-future",
+  "authors": [
+   "Jarrahi"
+  ],
+  "year": 2018,
+  "title": "Artificial intelligence and the future of work: Human-AI symbiosis in organizational decision making",
+  "venue": "Business Horizons",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "jembere|2022|artificial-intelligence-research",
+  "authors": [
+   "Jembere",
+   "Gerber",
+   "Viriri",
+   "Pillay"
+  ],
+  "year": 2022,
+  "title": "Artificial intelligence research: Second Southern African Conference, SACAIR 2021, Durban, South Africa, December 6-10, 2021, proceedings",
+  "venue": "Springer International Publishing",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "jones|1992|economic-approach-conceptualizing",
+  "authors": [
+   "Jones",
+   "Wright"
+  ],
+  "year": 1992,
+  "title": "An economic approach to conceptualizing the utility of human resource management practices",
+  "venue": "Research in Personnel and Human Resources Management",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "jonesjang|2022|people-react-ai",
+  "authors": [
+   "Jones-Jang",
+   "Park"
+  ],
+  "year": 2022,
+  "title": "How do people react to AI failure? Automation bias, algorithmic aversion, and perceived controllability",
+  "venue": "Journal of Computer-Mediated Communication",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "jung|2018|lifespan-perspective-understanding",
+  "authors": [
+   "Jung",
+   "Takeuchi"
+  ],
+  "year": 2018,
+  "title": "A lifespan perspective for understanding career self-management and satisfaction: The role of developmental human resource practices and organizational support",
+  "venue": "Human Relations",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "kambur|2022|traditional-smart-human",
+  "authors": [
+   "Kambur",
+   "Yildirim"
+  ],
+  "year": 2022,
+  "title": "From traditional to smart human resources management",
+  "venue": "International Journal of Manpower",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "kanazawa|2025|ai-skill-productivity",
+  "authors": [
+   "Kanazawa",
+   "Ma",
+   "Owan"
+  ],
+  "year": 2025,
+  "title": "AI, skill, and productivity: The case of taxi drivers",
+  "venue": "Management Science",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "kaplan|2020|rulers-world-unite",
+  "authors": [
+   "Kaplan",
+   "Haenlein"
+  ],
+  "year": 2020,
+  "title": "Rulers of the world, unite! The challenges and opportunities of artificial intelligence",
+  "venue": "Business Horizons",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "kaushal|2023|artificial-intelligence-hrm",
+  "authors": [
+   "Kaushal",
+   "Kaurav",
+   "Sivathanu",
+   "Kaushik"
+  ],
+  "year": 2023,
+  "title": "Artificial intelligence and HRM: Identifying future research agenda using systematic literature review and bibliometric analysis",
+  "venue": "Management Review Quarterly",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "kirby|1998|analysis-applying-artificial",
+  "authors": [
+   "Kirby",
+   "Dufner",
+   "Palmer"
+  ],
+  "year": 1998,
+  "title": "An analysis of applying artificial neural networks for employee selection",
+  "venue": "Americas Conference on Information Systems",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "ko|2011|profiting-knowledge-management",
+  "authors": [
+   "Ko",
+   "Dennis"
+  ],
+  "year": 2011,
+  "title": "Profiting from knowledge management: The impact of time and experience",
+  "venue": "Information Systems Research",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "kong|2022|evaluating-artificial-intelligence",
+  "authors": [
+   "Kong",
+   "Cheung",
+   "Zhang"
+  ],
+  "year": 2022,
+  "title": "Evaluating artificial intelligence literacy courses for fostering conceptual learning, literacy and empowerment in university students: Refocusing to conceptual building",
+  "venue": "Computers in Human Behavior Reports",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "koren|2024|gatekeeper-effect-implications",
+  "authors": [
+   "Koren"
+  ],
+  "year": 2024,
+  "title": "The gatekeeper effect: The implications of pre-screening, self-selection, and bias for hiring processes",
+  "venue": "Management Science",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "kuvaas|2020|individual-variable-pay",
+  "authors": [
+   "Kuvaas",
+   "Buch",
+   "Dysvik"
+  ],
+  "year": 2020,
+  "title": "Individual variable pay for performance, controlling effects, and intrinsic motivation",
+  "venue": "Motivation and Emotion",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "lanzolla|2020|digital-transformation-new",
+  "authors": [
+   "Lanzolla",
+   "Lorenz",
+   "Miron-Spektor"
+  ],
+  "year": 2020,
+  "title": "Digital transformation: What is new if anything? Emerging patterns and management research",
+  "venue": "Academy of Management Discoveries",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "larson|2020|leading-teams-digital",
+  "authors": [
+   "Larson",
+   "DeChurch"
+  ],
+  "year": 2020,
+  "title": "Leading teams in the digital age: Four perspectives on technology and what they mean for leading teams",
+  "venue": "The Leadership Quarterly",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "lawler|1993|artificial-intelligence-hrm",
+  "authors": [
+   "Lawler",
+   "Elliot"
+  ],
+  "year": 1993,
+  "title": "Artificial intelligence in HRM: An experimental study of an expert system",
+  "venue": "ACM SIGCPR Conference on Computer Personnel Research",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "lee|2019|ai-superpowers-china",
+  "authors": [
+   "Lee"
+  ],
+  "year": 2019,
+  "title": "AI superpowers: China, Silicon Valley, and the new world order",
+  "venue": "HarperBusiness",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "liboni|2019|smart-industry-pathways",
+  "authors": [
+   "Liboni",
+   "Cezarino",
+   "Jabbour"
+  ],
+  "year": 2019,
+  "title": "Smart industry and the pathways to HRM 4.0: Implications for SCM",
+  "venue": "Supply Chain Management: An International Journal",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "liu|2025|artificial-intelligencepowered-digital",
+  "authors": [
+   "Liu",
+   "Wang",
+   "Yang",
+   "Wang"
+  ],
+  "year": 2025,
+  "title": "Artificial intelligence-powered digital streamers in online retail: Empirical insights and design strategies from experiments",
+  "venue": "Information Systems Research",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "logg|2019|algorithm-appreciation-people",
+  "authors": [
+   "Logg",
+   "Minson",
+   "Moore"
+  ],
+  "year": 2019,
+  "title": "Algorithm appreciation: People prefer algorithmic to human judgment",
+  "venue": "Organizational Behavior and Human Decision Processes",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "makarius|2020|rising-machines-sociotechnical",
+  "authors": [
+   "Makarius",
+   "Mukherjee",
+   "Fox",
+   "Fox"
+  ],
+  "year": 2020,
+  "title": "Rising with the machines: A sociotechnical framework for bringing artificial intelligence into the organization",
+  "venue": "Journal of Business Research",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "malik|2023|artificial-intelligence-aiassisted",
+  "authors": [
+   "Malik",
+   "Budhwar",
+   "Kazmi"
+  ],
+  "year": 2023,
+  "title": "Artificial intelligence (AI)-assisted HRM: Towards an extended strategic framework",
+  "venue": "Human Resource Management Review",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "manoharan|2011|integrated-fuzzy-multiattribute",
+  "authors": [
+   "Manoharan",
+   "Muralidharan",
+   "Deshmukh"
+  ],
+  "year": 2011,
+  "title": "An integrated fuzzy multi-attribute decision-making model for employees' performance appraisal",
+  "venue": "The International Journal of Human Resource Management",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "marinova|2017|getting-smart-learning",
+  "authors": [
+   "Marinova",
+   "de Ruyter",
+   "Huang"
+  ],
+  "year": 2017,
+  "title": "Getting smart: Learning from technology-empowered frontline interactions",
+  "venue": "Journal of Service Research",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "markus|2001|toward-theory-knowledge",
+  "authors": [
+   "Markus"
+  ],
+  "year": 2001,
+  "title": "Toward a theory of knowledge reuse: Types of knowledge reuse situations and factors in reuse success",
+  "venue": "Journal of Management Information Systems",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "martinez|2017|unwanted-scraps-alert",
+  "authors": [
+   "Martinez"
+  ],
+  "year": 2017,
+  "title": "'Unwanted scraps' or 'an alert, resolute, resentful people'? Chinese railroad workers in French Congo",
+  "venue": "International Labor and Working-Class History",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "mctear|2016|conversational-interface-talking",
+  "authors": [
+   "McTear",
+   "Callejas",
+   "Griol"
+  ],
+  "year": 2016,
+  "title": "The conversational interface: Talking to smart devices",
+  "venue": "Springer International Publishing",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "mehrabad|2007|development-expert-system",
+  "authors": [
+   "Mehrabad",
+   "Brojeny"
+  ],
+  "year": 2007,
+  "title": "The development of an expert system for effective selection and appointment of the jobs applicants in human resource management",
+  "venue": "Computers & Industrial Engineering",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "minbaeva|2021|disrupted-hr",
+  "authors": [
+   "Minbaeva"
+  ],
+  "year": 2021,
+  "title": "Disrupted HR?",
+  "venue": "Human Resource Management Review",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "monzani|2014|loafing-digital-age",
+  "authors": [
+   "Monzani",
+   "Ripoll",
+   "Peiro",
+   "Van Dick"
+  ],
+  "year": 2014,
+  "title": "Loafing in the digital age: The role of computer mediated communication in the relation between perceived loafing and group affective outcomes",
+  "venue": "Computers in Human Behavior",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "munyaka|2023|decision-making-strategies",
+  "authors": [
+   "Munyaka",
+   "Ashktorab",
+   "Dugan"
+  ],
+  "year": 2023,
+  "title": "Decision making strategies and team efficacy in human-AI teams",
+  "venue": "Proceedings of the ACM on Human-Computer Interaction",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "nah|2004|knowledgebased-support-group",
+  "authors": [
+   "Nah",
+   "Benbasat"
+  ],
+  "year": 2004,
+  "title": "Knowledge-based support in a group decision-making context: An expert-novice comparison",
+  "venue": "Journal of the Association for Information Systems",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "nah|2023|activity-systembased-perspective",
+  "authors": [
+   "Nah",
+   "Cai",
+   "Zheng",
+   "Pang"
+  ],
+  "year": 2023,
+  "title": "An activity system-based perspective of generative AI: Challenges and research directions",
+  "venue": "AIS Transactions on Human-Computer Interaction",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "nah|2023|generative-ai-chatgpt",
+  "authors": [
+   "Nah",
+   "Zheng",
+   "Cai"
+  ],
+  "year": 2023,
+  "title": "Generative AI and ChatGPT: Applications, challenges, and AI-human collaboration",
+  "venue": "Journal of Information Technology Case and Application Research",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "nah|1999|effectiveness-expert-support",
+  "authors": [
+   "Nah",
+   "Mao",
+   "Benbasat"
+  ],
+  "year": 1999,
+  "title": "The effectiveness of expert support technology for decision making: Individuals versus small groups",
+  "venue": "Journal of Information Technology",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "neshov|2020|supporting-business-model",
+  "authors": [
+   "Neshov",
+   "Manolova",
+   "Tonchev",
+   "Ivanov"
+  ],
+  "year": 2020,
+  "title": "Supporting business model innovation based on deep learning scene semantic segmentation",
+  "venue": "Indian Journal of Computer Science and Engineering",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "njoto|2022|gender-bias-ai",
+  "authors": [
+   "Njoto",
+   "Cheong",
+   "Lederman",
+   "McLoughney",
+   "Ruppanner",
+   "Wirth"
+  ],
+  "year": 2022,
+  "title": "Gender bias in AI recruitment systems: A sociological- and data science-based case study",
+  "venue": "IEEE International Symposium on Technology and Society",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "ock|2015|managing-interpersonal-aspect",
+  "authors": [
+   "Ock",
+   "Oswald"
+  ],
+  "year": 2015,
+  "title": "Managing the interpersonal aspect of performance management",
+  "venue": "Industrial and Organizational Psychology",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "otley|1999|performance-management-framework",
+  "authors": [
+   "Otley"
+  ],
+  "year": 1999,
+  "title": "Performance management: A framework for management control systems research",
+  "venue": "Management Accounting Research",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "parentrocheleau|2022|algorithms-work-designers",
+  "authors": [
+   "Parent-Rocheleau",
+   "Parker"
+  ],
+  "year": 2022,
+  "title": "Algorithms as work designers: How algorithmic management influences the design of jobs",
+  "venue": "Human Resource Management Review",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "parker|2022|automation-algorithms-beyond",
+  "authors": [
+   "Parker",
+   "Grote"
+  ],
+  "year": 2022,
+  "title": "Automation, algorithms, and beyond: Why work design matters more than ever in a digital world",
+  "venue": "Applied Psychology",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "pereira|2023|systematic-literature-review",
+  "authors": [
+   "Pereira",
+   "Hadjielias",
+   "Christofi",
+   "Vrontis"
+  ],
+  "year": 2023,
+  "title": "A systematic literature review on the impact of artificial intelligence on workplace outcomes: A multi-process perspective",
+  "venue": "Human Resource Management Review",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "pessach|2020|employees-recruitment-prescriptive",
+  "authors": [
+   "Pessach",
+   "Singer",
+   "Avrahami"
+  ],
+  "year": 2020,
+  "title": "Employees recruitment: A prescriptive analytics approach via machine learning and mathematical programming",
+  "venue": "Decision Support Systems",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "pobanzaou|2021|impacts-artificial-intelligence",
+  "authors": [
+   "Poba-Nzaou",
+   "Galani",
+   "Uwizeyemungu",
+   "Ceric"
+  ],
+  "year": 2021,
+  "title": "The impacts of artificial intelligence (AI) on jobs: An industry perspective",
+  "venue": "Strategic HR Review",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "premnath|2019|artificial-intelligence-human",
+  "authors": [
+   "Premnath",
+   "Chully"
+  ],
+  "year": 2019,
+  "title": "Artificial intelligence in human resource management: A qualitative study in the Indian context",
+  "venue": "Journal of Xi'an University of Architecture & Technology",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "puranam|2021|humanai-collaborative-decisionmaking",
+  "authors": [
+   "Puranam"
+  ],
+  "year": 2021,
+  "title": "Human-AI collaborative decision-making as an organization design problem",
+  "venue": "Journal of Organization Design",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "qiong|2018|conceptual-artificial-intelligence",
+  "authors": [
+   "Qiong",
+   "Guo",
+   "Li",
+   "Li",
+   "Chen"
+  ],
+  "year": 2018,
+  "title": "A conceptual artificial intelligence application framework in human resource management",
+  "venue": "International Conference on Electronic Business",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "rajpurohit|2023|marketing-automation-through",
+  "authors": [
+   "Rajpurohit",
+   "Kaushik",
+   "Karad"
+  ],
+  "year": 2023,
+  "title": "Marketing automation through AI: A decision support strategy",
+  "venue": "International Conference on Advances in Computing, Communication Control and Networking",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "reilly|2019|impact-artificial-intelligence",
+  "authors": [
+   "Reilly"
+  ],
+  "year": 2019,
+  "title": "The impact of artificial intelligence on the HR function",
+  "venue": "Institute for Employment Studies",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "rogers|2023|tracing-visualizing-humanmlai",
+  "authors": [
+   "Rogers",
+   "Crisan"
+  ],
+  "year": 2023,
+  "title": "Tracing and visualizing human-ML/AI collaborative processes through artifacts of data work",
+  "venue": "CHI Conference on Human Factors in Computing Systems",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "rogers|2024|marketing-educators-artificial",
+  "authors": [
+   "Rogers",
+   "Allen",
+   "Busby"
+  ],
+  "year": 2024,
+  "title": "Marketing educators and artificial intelligence: A perspective on productivity and innovation",
+  "venue": "Journal of Marketing Education",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "rosenbaum|2019|ibm-artificial-intelligence",
+  "authors": [
+   "Rosenbaum"
+  ],
+  "year": 2019,
+  "title": "IBM artificial intelligence can predict with 95% accuracy which workers are about to quit their jobs",
+  "venue": "CNBC",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "rosenberg|2016|artificial-swarm-intelligence",
+  "authors": [
+   "Rosenberg"
+  ],
+  "year": 2016,
+  "title": "Artificial swarm intelligence, a human-in-the-loop approach to A.I.",
+  "venue": "AAAI Conference on Artificial Intelligence",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "rozman|2023|maximizing-employee-engagement",
+  "authors": [
+   "Rozman",
+   "Tominc",
+   "Milfelner"
+  ],
+  "year": 2023,
+  "title": "Maximizing employee engagement through artificial intelligent organizational culture in the context of leadership and training of employees: Testing linear and non-linear relationships",
+  "venue": "Cogent Business & Management",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "rusli|2013|evaluating-hazard-conflicts",
+  "authors": [
+   "Rusli",
+   "Shariff",
+   "Khan"
+  ],
+  "year": 2013,
+  "title": "Evaluating hazard conflicts using inherently safer design concept",
+  "venue": "Safety Science",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "samarasinghe|2020|artificial-intelligence-based",
+  "authors": [
+   "Samarasinghe",
+   "Medis"
+  ],
+  "year": 2020,
+  "title": "Artificial intelligence based strategic human resource management (AISHRM) for industry 4.0",
+  "venue": "Global Journal of Management and Business Research",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "schepers|2020|metaanalysis-frontline-employees",
+  "authors": [
+   "Schepers",
+   "van der Borgh"
+  ],
+  "year": 2020,
+  "title": "A meta-analysis of frontline employees' role behavior and the moderating effects of national culture",
+  "venue": "Journal of Service Research",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "schwartz|2024|ai-knowledge-creation",
+  "authors": [
+   "Schwartz",
+   "Te'eni"
+  ],
+  "year": 2024,
+  "title": "AI for knowledge creation, curation, and consumption in context",
+  "venue": "Journal of the Association for Information Systems",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "seeber|2020|machines-teammates-research",
+  "authors": [
+   "Seeber",
+   "Bittner",
+   "Briggs"
+  ],
+  "year": 2020,
+  "title": "Machines as teammates: A research agenda on AI in team collaboration",
+  "venue": "Information & Management",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "selenko|2022|artificial-intelligence-future",
+  "authors": [
+   "Selenko",
+   "Bankins",
+   "Shoss"
+  ],
+  "year": 2022,
+  "title": "Artificial intelligence and the future of work: A functional-identity perspective",
+  "venue": "Current Directions in Psychological Science",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "shrestha|2019|organizational-decisionmaking-structures",
+  "authors": [
+   "Shrestha",
+   "Ben-Menahem",
+   "von Krogh"
+  ],
+  "year": 2019,
+  "title": "Organizational decision-making structures in the age of artificial intelligence",
+  "venue": "California Management Review",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "singsungnoen|2021|development-smart-human",
+  "authors": [
+   "Singsungnoen",
+   "Wannapiroon",
+   "Nilsook"
+  ],
+  "year": 2021,
+  "title": "Development of smart human resource planning system within Rajabhat University",
+  "venue": "Higher Education Studies",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "smids|2020|robots-workplace-threat",
+  "authors": [
+   "Smids",
+   "Nyholm",
+   "Berkers"
+  ],
+  "year": 2020,
+  "title": "Robots in the workplace: A threat to-or opportunity for-meaningful work?",
+  "venue": "Philosophy & Technology",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "sohrabi|2018|ai-planning-solution",
+  "authors": [
+   "Sohrabi",
+   "Riabov",
+   "Katz",
+   "Udrea"
+  ],
+  "year": 2018,
+  "title": "An AI planning solution to scenario generation for enterprise risk management",
+  "venue": "AAAI Conference on Artificial Intelligence",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "somers|2009|using-artificial-neural",
+  "authors": [
+   "Somers",
+   "Casal"
+  ],
+  "year": 2009,
+  "title": "Using artificial neural networks to model nonlinearity: The case of the job satisfaction-job performance relationship",
+  "venue": "Organizational Research Methods",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "song|2022|decoding-agility-artificial",
+  "authors": [
+   "Song",
+   "Gyory",
+   "Zhang"
+  ],
+  "year": 2022,
+  "title": "Decoding the agility of artificial intelligence-assisted human design teams",
+  "venue": "Design Studies",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "stanimirovic|2022|human-resource-planning",
+  "authors": [
+   "Stanimirovic",
+   "Pribakovic Brinovec"
+  ],
+  "year": 2022,
+  "title": "Human resource planning in health care: Outlining a basic model and related complexities",
+  "venue": "Studies in Health Technology and Informatics",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "sundararajan|2017|sharing-economy-end",
+  "authors": [
+   "Sundararajan"
+  ],
+  "year": 2017,
+  "title": "The sharing economy: The end of employment and the rise of crowd-based capitalism",
+  "venue": "MIT Press",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "tambe|2019|artificial-intelligence-human",
+  "authors": [
+   "Tambe",
+   "Cappelli",
+   "Yakubovich"
+  ],
+  "year": 2019,
+  "title": "Artificial intelligence in human resources management: Challenges and a path forward",
+  "venue": "California Management Review",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "tarasewich|2008|mobile-interaction-design",
+  "authors": [
+   "Tarasewich",
+   "Gong",
+   "Nah",
+   "DeWester"
+  ],
+  "year": 2008,
+  "title": "Mobile interaction design: Integrating individual and organizational perspectives",
+  "venue": "Information Knowledge Systems Management",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "taylor|2017|ai-places-third",
+  "authors": [
+   "Taylor"
+  ],
+  "year": 2017,
+  "title": "AI places third in a recruitment sourcing competition",
+  "venue": "HR Dive",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "toxtli|2021|quantifying-invisible-labor",
+  "authors": [
+   "Toxtli",
+   "Suri",
+   "Savage"
+  ],
+  "year": 2021,
+  "title": "Quantifying the invisible labor in crowd work",
+  "venue": "Preprint",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "tripathi|2012|human-resource-management",
+  "authors": [
+   "Tripathi",
+   "Ranjan",
+   "Pandeya"
+  ],
+  "year": 2012,
+  "title": "Human resource management through AI approach: An experimental study of an expert system",
+  "venue": "National Conference on Communication Technologies and Its Impact on Next Generation Computing",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "trunk|2020|current-state-combining",
+  "authors": [
+   "Trunk",
+   "Birkel",
+   "Hartmann"
+  ],
+  "year": 2020,
+  "title": "On the current state of combining human and artificial intelligence for strategic organizational decision making",
+  "venue": "Business Research",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "ulfert|2020|model-team-trust",
+  "authors": [
+   "Ulfert",
+   "Georganta"
+  ],
+  "year": 2020,
+  "title": "A model of team trust in human-agent teams",
+  "venue": "International Conference on Multimodal Interaction",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "vonschenk|2021|predictably-satisfied-contributions",
+  "authors": [
+   "von Schenk"
+  ],
+  "year": 2021,
+  "title": "Predictably satisfied: Contributions of artificial intelligence to intra-organizational communication",
+  "venue": "SSRN Electronic Journal",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "vrontis|2022|artificial-intelligence-robotics",
+  "authors": [
+   "Vrontis",
+   "Christofi",
+   "Pereira"
+  ],
+  "year": 2022,
+  "title": "Artificial intelligence, robotics, advanced technologies and human resource management: A systematic review",
+  "venue": "The International Journal of Human Resource Management",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "wallace|2022|impact-artificial-intelligence",
+  "authors": [
+   "Wallace",
+   "Sharma",
+   "Bhandari"
+  ],
+  "year": 2022,
+  "title": "Impact of artificial intelligence on miss rate of colorectal neoplasia",
+  "venue": "Gastroenterology",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "wang|2022|development-validation-artificial",
+  "authors": [
+   "Wang",
+   "Wang"
+  ],
+  "year": 2022,
+  "title": "Development and validation of an artificial intelligence anxiety scale: An initial application in predicting motivated learning behavior",
+  "venue": "Interactive Learning Environments",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "webber|2019|team-challenges-artificial",
+  "authors": [
+   "Webber",
+   "Detjen",
+   "MacLean",
+   "Thomas"
+  ],
+  "year": 2019,
+  "title": "Team challenges: Is artificial intelligence the solution?",
+  "venue": "Business Horizons",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "wilkens|2020|artificial-intelligence-workplace",
+  "authors": [
+   "Wilkens"
+  ],
+  "year": 2020,
+  "title": "Artificial intelligence in the workplace - A double-edged sword",
+  "venue": "International Journal of Information and Learning Technology",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "wilson|2014|humans-use-directed",
+  "authors": [
+   "Wilson",
+   "Geana",
+   "White"
+  ],
+  "year": 2014,
+  "title": "Humans use directed and random exploration to solve the explore-exploit dilemma",
+  "venue": "Journal of Experimental Psychology: General",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "wrzesniewski|2001|crafting-job-revisioning",
+  "authors": [
+   "Wrzesniewski",
+   "Dutton"
+  ],
+  "year": 2001,
+  "title": "Crafting a job: Revisioning employees as active crafters of their work",
+  "venue": "Academy of Management Review",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "yuan|2022|human-resource-planning",
+  "authors": [
+   "Yuan",
+   "Qi",
+   "Dai",
+   "Liang"
+  ],
+  "year": 2022,
+  "title": "Human resource planning and configuration based on machine learning",
+  "venue": "Computational Intelligence and Neuroscience",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "zeng|2020|artificial-intelligence-chinas",
+  "authors": [
+   "Zeng"
+  ],
+  "year": 2020,
+  "title": "Artificial intelligence and China's authoritarian governance",
+  "venue": "International Affairs",
+  "cited_by": [
+   "hrm"
+  ]
+ },
+ {
+  "key": "zhu|2021|impact-artificial-intelligence",
+  "authors": [
+   "Zhu"
+  ],
+  "year": 2021,
+  "title": "Impact of artificial intelligence on human resource management and its countermeasures",
+  "venue": "International Conference on Artificial Intelligence and Advanced Manufacture",
+  "cited_by": [
+   "hrm"
   ]
  }
 ]
