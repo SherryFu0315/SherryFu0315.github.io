@@ -194,7 +194,7 @@ HOME = '''<!DOCTYPE html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>%s</title>
-<meta name="description" content="Xinyu Fu is an Assistant Professor of Computer Information Systems at Georgia State University. Her research explores the design of human-AI collaboration and its behavioral and organizational implications.">
+<meta name="description" content="Xinyu Fu is an Assistant Professor of Computer Information Systems at Georgia State University. She studies how different ways of working with AI shape human performance, the organization of work, and the consequences of AI use.">
 %s
 </head>
 <body>

@@ -206,7 +206,10 @@ button:focus-visible{ outline:3px solid var(--blue); outline-offset:2px }
   letter-spacing:.012em; text-transform:uppercase; color:var(--ink);
   max-width:22ch; margin:0 0 20px; text-wrap:balance;
 }
-.thesis span{
+/* a term that must not break across lines */
+.nb{ white-space:nowrap }
+
+.thesis > span{
   display:block; font-size:15.5px; line-height:1.62;
   color:var(--muted); max-width:40ch;
 }
