@@ -93,7 +93,7 @@ PROJECTS = [
    links=[]),
 
  dict(id='creativity', col='llm', row='observational', order=6,
-   chip='Working paper &middot; revision in progress', venue='',
+   chip='Working paper', venue='',
    title='AI Authenticity: How AI Disclosure and Authenticity Signals Shape Crowdfunding Valuation',
    short='AI Authenticity',
    authors='Yang, J., <b>Fu, X.</b>, Ramasubbu, N., &amp; Fan, C.',
@@ -169,7 +169,7 @@ PROJECTS = [
    chip='In progress', venue='',
    title='Need Assessment in Online Credence Services: How AI Triage Reshapes Demand Allocation',
    short='AI Triage in Credence Services',
-   authors='<b>Fu, X.</b>, Chen, L., Geng, S., Hsieh, J. P. A., Xie, H., Xie, J., &amp; Zhang, W.',
+   authors='<b>Fu, X.</b>, Chen, L., Geng, S., Hsieh, J. P. A., Xie, J., &amp; Zhang, W.',
    method='In progress',
    finding=("When customers cannot judge the service they are buying &mdash; a diagnosis, a legal opinion, a "
             "repair &mdash; putting a model at the front door decides who reaches which expert. That routing is "

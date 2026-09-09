@@ -617,3 +617,16 @@ button:focus-visible{ outline:3px solid var(--blue); outline-offset:2px }
 
 .cr-h{ font-family:"IBM Plex Mono",monospace; font-size:11px; letter-spacing:.14em;
   text-transform:uppercase; color:var(--muted); margin:28px 0 10px; font-weight:500 }
+
+/* a publication written in a language other than the page's */
+.lang{ font-family:"IBM Plex Mono",monospace; font-size:10px; letter-spacing:.09em;
+  text-transform:uppercase; color:var(--muted); border:1px solid var(--rule);
+  padding:1px 6px; margin-left:6px; white-space:nowrap; vertical-align:1px }
+
+/* the service list is a short list of roles, not a bibliography */
+.pubs.service li{
+  padding:7px 0 7px 18px; border-bottom:0; font-size:15px; position:relative;
+}
+.pubs.service li::before{
+  content:"\2022"; position:absolute; left:2px; top:7px; color:var(--muted);
+}
