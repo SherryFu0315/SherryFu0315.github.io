@@ -4,12 +4,33 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import words as T
 from projects import PROJECTS, COLS, ROWS
 
-# The map card quotes these. Read them from the same file the map is built from,
-# so the figure on the homepage cannot drift away from what the map shows.
-_works = json.load(io.open(os.path.join(os.path.dirname(os.path.abspath(__file__)),
-                                        'works.json'), encoding='utf-8'))
+# The map card quotes these, and draws a miniature of the real map. Both come
+# from the same file and the same layout the map itself uses, so neither the
+# figures nor the picture can drift away from it. The layout is deterministic,
+# so computing it here gives the identical arrangement.
+import citelayout as _CL
+_HERE = os.path.dirname(os.path.abspath(__file__))
+_works = json.load(io.open(os.path.join(_HERE, 'works.json'), encoding='utf-8'))
 N_CITED = len(_works)
 N_STUDIES = len(set(c for w in _works for c in w['cited_by']))
+
+_ids = set(c for w in _works for c in w['cited_by'])
+_studies = [p for p in PROJECTS if p['id'] in _ids]
+_byid = {p['id']: p for p in _studies}
+_CBY = {c['id']: c['c'] for c in COLS}
+_MW, _MH = 1600, 1024
+_sxy, _wxy, _kept, _ = _CL.layout(_studies, _works, box=(_MW, _MH))
+_pairs = _CL.coupling(_studies, _kept)
+
+def _n(p):
+    return [round(p[0] / _MW, 4), round(p[1] / _MH, 4)]
+
+MINI = {
+    'w': [_n(_wxy[w['key']]) + [len([c for c in w['cited_by'] if c in _byid])]
+          for w in _kept],
+    's': [_n(_sxy[p['id']]) + [_CBY.get(p['col']) or '#8E7FA8'] for p in _studies],
+    'l': [_n(_sxy[a]) + _n(_sxy[b]) + [n] for (a, b), n in _pairs.items()],
+}
 
 R = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))   # repo root
 
@@ -294,7 +315,11 @@ HOME = '''<!DOCTYPE html>
 (function(){
   var cv = document.getElementById('skystars');
   if (!cv) return;
-  var CLOUDS = [[0.16,0.32,'#8FA6FF'],[0.42,0.68,'#FF7874'],[0.70,0.28,'#ECB8FF'],[0.90,0.60,'#DCFF96']];
+  /* A miniature of the real map, not a decorative starfield: the same 13
+     studies at the same positions the citation layout puts them, the works
+     they cite, and the lines where two studies share a reference. It sits to
+     the right so the text keeps the left. */
+  var MINI = __MINI__;
   function paint(){
     var r = cv.getBoundingClientRect();
     if (r.width < 2 || r.height < 2) return;
@@ -302,21 +327,47 @@ HOME = '''<!DOCTYPE html>
     cv.width = Math.round(r.width*dpr); cv.height = Math.round(r.height*dpr);
     var g = cv.getContext('2d'); g.setTransform(dpr,0,0,dpr,0,0);
     g.clearRect(0,0,r.width,r.height);
-    CLOUDS.forEach(function(c){
-      var x=c[0]*r.width, y=c[1]*r.height, rad=Math.max(r.width,r.height)*0.24;
-      var n=parseInt(c[2].slice(1),16), rgb=((n>>16)&255)+','+((n>>8)&255)+','+(n&255);
-      var grd=g.createRadialGradient(x,y,4,x,y,rad);
-      grd.addColorStop(0,'rgba('+rgb+',.18)'); grd.addColorStop(1,'rgba('+rgb+',0)');
-      g.fillStyle=grd; g.beginPath(); g.arc(x,y,rad,0,Math.PI*2); g.fill();
-    });
+
+    /* faint dust everywhere, so the card is not empty on the left */
     var seed=4242; function rnd(){ seed=(seed*1103515245+12345)&0x7fffffff; return seed/0x7fffffff; }
-    for (var i=0;i<250;i++){
-      g.globalAlpha=0.2+rnd()*0.55; g.fillStyle='#FFFFFF';
-      g.beginPath(); g.arc(rnd()*r.width, rnd()*r.height, rnd()*1.0+0.3, 0, Math.PI*2); g.fill();
+    for (var i=0;i<180;i++){
+      g.globalAlpha=0.10+rnd()*0.28; g.fillStyle='#CFC2E8';
+      g.beginPath(); g.arc(rnd()*r.width, rnd()*r.height, rnd()*0.9+0.3, 0, Math.PI*2); g.fill();
     }
-    CLOUDS.forEach(function(c){
-      g.globalAlpha=0.95; g.fillStyle=c[2];
-      g.beginPath(); g.arc(c[0]*r.width, c[1]*r.height, 2.6, 0, Math.PI*2); g.fill();
+
+    /* Drawn larger than the card and allowed to crop. Fitted whole it read as
+       a stamp in the corner; running off the edge it reads as a window onto
+       something bigger, which is what it is. The text column runs to 56ch, so
+       side by side only works on a wide card; below that it sits underneath. */
+    var narrow = r.width < 1080;
+    var mh = narrow ? r.height*1.15 : r.height*1.55;
+    var mw = mh*1.5625;                            // the map is 1600x1024
+    if (narrow){ mw = r.width*1.5; mh = mw/1.5625; }
+    var ox = narrow ? (r.width-mw)/2 : r.width*0.42;
+    var oy = narrow ? r.height - mh*0.62 : (r.height-mh)/2;
+    function X(v){ return ox + v*mw; }
+    function Y(v){ return oy + v*mh; }
+
+    MINI.l.forEach(function(l){
+      g.strokeStyle='#C9B6FF';
+      g.globalAlpha=Math.min(0.08+l[4]*0.05, 0.34);
+      g.lineWidth=Math.min(0.4+l[4]*0.22, 1.4);
+      g.beginPath(); g.moveTo(X(l[0]),Y(l[1])); g.lineTo(X(l[2]),Y(l[3])); g.stroke();
+    });
+    MINI.w.forEach(function(w){
+      var shared = w[2] > 1;
+      g.globalAlpha = shared ? 0.9 : 0.34;
+      g.fillStyle = shared ? '#FFF4D6' : '#B9A9DA';
+      g.beginPath(); g.arc(X(w[0]), Y(w[1]), shared ? 1.9 : 1.05, 0, Math.PI*2); g.fill();
+    });
+    MINI.s.forEach(function(st){
+      var x=X(st[0]), y=Y(st[1]);
+      var grd=g.createRadialGradient(x,y,0,x,y,10);
+      grd.addColorStop(0,st[2]); grd.addColorStop(1,'rgba(0,0,0,0)');
+      g.globalAlpha=0.55; g.fillStyle=grd;
+      g.beginPath(); g.arc(x,y,10,0,Math.PI*2); g.fill();
+      g.globalAlpha=1; g.fillStyle=st[2];
+      g.beginPath(); g.arc(x,y,2.8,0,Math.PI*2); g.fill();
     });
     g.globalAlpha=1;
   }
@@ -362,6 +413,7 @@ HOME = '''<!DOCTYPE html>
        T.HOME_TEACHING_S26,
        T.HOME_TEACHING_ALL_COURSES,
        FOOT)
-HOME = HOME.replace('__N_CITED__', str(N_CITED)).replace('__N_STUDIES__', str(N_STUDIES))
+HOME = (HOME.replace('__N_CITED__', str(N_CITED)).replace('__N_STUDIES__', str(N_STUDIES))
+            .replace('__MINI__', json.dumps(MINI, separators=(',', ':'))))
 io.open(os.path.join(R, 'index.html'), 'w', encoding='utf-8').write(HOME)
 print('index.html', len(HOME), 'bytes,', len(featured), 'featured')
