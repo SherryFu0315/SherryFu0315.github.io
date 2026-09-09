@@ -507,8 +507,10 @@ button:focus-visible{ outline:3px solid var(--blue); outline-offset:2px }
 
 /* an entry that has a photograph puts it alongside the text */
 @media(min-width:900px){
-  .entry.has-art{ display:grid; grid-template-columns:1fr 1fr }
+  .entry.has-art{ display:grid; grid-template-columns:1fr 1fr; align-items:stretch }
   .entry.has-art .entry-art{ border-left:var(--rule-w) solid var(--rule) }
+  /* every other entry puts its picture on the left */
+  .entry.art-left .entry-art{ order:-1; border-left:0; border-right:var(--rule-w) solid var(--rule) }
 }
 .entry-art{ position:relative; overflow:hidden; min-height:240px; background:var(--ink) }
 .entry-art img{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover }
@@ -525,7 +527,7 @@ button:focus-visible{ outline:3px solid var(--blue); outline-offset:2px }
   font-size:clamp(56px,7vw,96px); line-height:1;
   filter:saturate(.9);
 }
-@media(max-width:899px){ .entry-art.is-emoji{ border-left:0; border-top:var(--rule-w) solid var(--rule) } }
+@media(max-width:899px){ .entry-art.is-emoji{ border-left:0; border-right:0; border-top:var(--rule-w) solid var(--rule) } }
 
 /* the kind of AI, named on the entry now the page runs by maturity */
 .chip--kind{ background:var(--c); border-color:var(--ink); color:var(--ink) }
