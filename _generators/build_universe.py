@@ -137,7 +137,7 @@ PAGE = u'''<!DOCTYPE html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Research Universe &mdash; Xinyu Fu</title>
-<meta name="description" content="A map of Xinyu Fu's research on two axes: what kind of AI a study is about, and whether it asks how the benefit gets built, what it set off, or how to govern that.">
+<meta name="description" content="Where Xinyu Fu's research comes from: every study drawn among the works it cites, positioned by the real citation graph rather than by hand. A second view arranges the same studies by what kind of AI they are about.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=IBM+Plex+Mono:wght@400;500&display=swap">
@@ -192,9 +192,11 @@ PAGE = u'''<!DOCTYPE html>
    animates the star from one arrangement to the other. */
 .star{ position:absolute; left:0; top:0;
   transform:translate(var(--x,0),var(--y,0)) translate(-50%,-50%);
-  transition:transform .9s cubic-bezier(.33,.02,.16,1), opacity .5s ease;
   background:none; border:0; padding:0; margin:0; cursor:pointer; display:block }
 .star.absent{ opacity:0; pointer-events:none }
+/* Stars only travel when you switch view. Without this the first paint would
+   fly all fifteen in from the corner, since they start with no --x/--y. */
+.sky.ready .star{ transition:transform .9s cubic-bezier(.33,.02,.16,1), opacity .5s ease }
 .star-dot{
   display:block; width:var(--sz,20px); height:var(--sz,20px); overflow:visible;
   fill:var(--c,#fff);
@@ -313,16 +315,16 @@ PAGE = u'''<!DOCTYPE html>
 
   <div class="sky-head">
     <div><h1>How the work<br>connects</h1></div>
-    <p id="head-copy">Two axes. Across: <b>what kind of AI</b> the study is about. Down: whether it <b>intervenes</b> &mdash; building something that makes people better at the work &mdash; or <b>observes</b> what AI set off once it arrived. Click an axis to fall into it; click a star to go to the study.</p>
+    <p id="head-copy">Where the literature puts them. Across: nothing &mdash; there are no axes here. Two studies are close together <b>only because they cite the same work</b>, and every faint star is one of those works. Hover a faint star to see what it is; click a bright one to go to the study.</p>
     <div class="hint" style="border:0;padding:0">
       <div class="viewtoggle" role="group" aria-label="Choose an arrangement">
-        <button type="button" id="v-axis" aria-pressed="true">Two axes</button>
-        <button type="button" id="v-cite" aria-pressed="false">Citation sky</button>
+        <button type="button" id="v-axis" aria-pressed="false">Two axes</button>
+        <button type="button" id="v-cite" aria-pressed="true">Citation sky</button>
       </div>
     </div>
   </div>
 
-  <div class="sky mode-axis" id="sky">
+  <div class="sky mode-cite" id="sky">
     <div class="sky-world" id="world">
       <div class="axis-layer" id="axis-layer">
         <canvas id="neb" width="__CW__" height="__CH__"></canvas>
@@ -341,8 +343,8 @@ PAGE = u'''<!DOCTYPE html>
     </div>
   </div>
 
-  <p class="blurb" id="blurb-axis">Where I file each study. The constellations are real ones &mdash; Ursa Major, Cassiopeia, Orion, Lyra, Corvus, Crux &mdash; and the grey points are the places still open in each cell.</p>
-  <p class="blurb is-off" id="blurb-cite">Where the literature files them. Every faint star is a work one of these studies cites; the bright ones are the studies. <b>No position here is chosen by hand</b> &mdash; a force simulation runs over the real citation graph, so two studies sit close together only when they draw on the same references, and a work several papers lean on is pulled into the space between them. <b>__N_CITED__</b> works cited, <b>__N_SHARED__</b> of them by two or more studies.</p>
+  <p class="blurb is-off" id="blurb-axis">Where I file each study. The constellations are real ones &mdash; Ursa Major, Cassiopeia, Orion, Lyra, Corvus, Crux &mdash; and the grey points are the places still open in each cell.</p>
+  <p class="blurb" id="blurb-cite">Where the literature files them. Every faint star is a work one of these studies cites; the bright ones are the studies. <b>No position here is chosen by hand</b> &mdash; a force simulation runs over the real citation graph, so two studies sit close together only when they draw on the same references, and a work several papers lean on is pulled into the space between them. <b>__N_CITED__</b> works cited, <b>__N_SHARED__</b> of them by two or more studies. Three studies have no finished manuscript to read a reference list from, so they appear only under <b>Two axes</b>.</p>
 
   <section class="index-list">
     <h2>Everything on the map, in plain text</h2>
@@ -367,13 +369,13 @@ PAGE = u'''<!DOCTYPE html>
   var axisLayer=document.getElementById('axis-layer'), citeLayer=document.getElementById('cite-layer');
   var tip=document.getElementById('tip');
   var W=__W__, H=__H__, DPR=__DPR__;
-  var mode='axis';
+  var mode='cite';
 
-  var COPY_AXIS = document.getElementById('head-copy').innerHTML;
-  var COPY_CITE = 'Where the literature puts them. Across: nothing &mdash; there are no axes here. '
-    + 'Two studies are close together <b>only because they cite the same work</b>, and every faint '
-    + 'star is one of those works. Hover a faint star to see what it is; click a bright one to go '
-    + 'to the study.';
+  var COPY_CITE = document.getElementById('head-copy').innerHTML;
+  var COPY_AXIS = 'Two axes. Across: <b>what kind of AI</b> the study is about. Down: whether it '
+    + '<b>intervenes</b> &mdash; building something that makes people better at the work &mdash; or '
+    + '<b>observes</b> what AI set off once it arrived. Click an axis to fall into it; click a star '
+    + 'to go to the study.';
   var colById={}, rowById={};
   COLS.forEach(function(c){ colById[c.id]=c; });
   ROWS.forEach(function(r){ rowById[r.id]=r; });
@@ -641,7 +643,14 @@ PAGE = u'''<!DOCTYPE html>
   /* ---- camera ---- */
   var cam={x:W/2,y:H/2,s:1}, tgt={x:W/2,y:H/2,s:1}, raf=null, atFit=true;
   var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  function fitScale(){ var r=sky.getBoundingClientRect(); return Math.min(r.width/W, r.height/H); }
+  function fitScale(){
+    var r=sky.getBoundingClientRect();
+    var s=Math.min(r.width/W, r.height/H);
+    // A container measured at zero — hidden parent, prerender, first layout —
+    // would otherwise set the camera scale to 0 and the map would draw nothing,
+    // with no way back once the pending frame is dropped.
+    return (s>0 && isFinite(s)) ? s : 0.5;
+  }
   function clampCam(c){
     c.s=Math.max(fitScale()*0.92, Math.min(4.2, c.s));
     var r=sky.getBoundingClientRect();
@@ -707,6 +716,7 @@ PAGE = u'''<!DOCTYPE html>
   function refit(){
     if (atFit) tgt=clampCam({x:W/2,y:H/2,s:fitScale()});
     else tgt=clampCam({x:tgt.x,y:tgt.y,s:tgt.s});
+    if (!(cam.s>0)) { snap(); return; }   // recover from a zero-size first layout
     go();
   }
   window.addEventListener('resize', refit);
@@ -715,6 +725,9 @@ PAGE = u'''<!DOCTYPE html>
   position();
   cam.s=tgt.s=fitScale(); apply();
   measureLabels();
+  requestAnimationFrame(function(){ requestAnimationFrame(function(){
+    sky.classList.add('ready'); placeLabels();
+  }); });
   if (document.fonts && document.fonts.ready) document.fonts.ready.then(function(){
     measureLabels(); placeLabels();
   });
