@@ -39,7 +39,7 @@ PROJECTS = [
    method='Multi-country firm panel',
    finding=("Firms that went remote early and <b>kept it</b> grew sales faster by the third survey round, "
             "about a year on. Going remote late, or going and then retreating, bought nothing. And more remote "
-            "was not better &mdash; performance rose with the remote share up to a point, then fell."),
+            "was not better: performance rose with the remote share up to a point, then fell."),
    photo=('remote.jpg','An empty boardroom at dusk, a conference speakerphone on the table and a city skyline beyond the glass.'),
    metrics=[('+7.8pp','faster sales growth for early, persistent adopters'),
             ('3,199','firms across 19 countries')],
@@ -55,7 +55,7 @@ PROJECTS = [
             "your name. The design intuition is that showing people more of what is popular encourages "
             "them to make something. It does the reverse: when the signal from a user&rsquo;s friends and "
             "the signal from the platform <b>agree</b>, recording falls off. Signals that disagree send "
-            "browsing and preparation sharply up &mdash; and almost none of it turns into a finished "
+            "browsing and preparation sharply up, and almost none of it turns into a finished "
             "track. The drop lands hardest on the platform&rsquo;s most active creators, the ones it can "
             "least afford to lose."),
    photo=('misaligned.jpg','A tiled pattern of music-making app icons.'),
@@ -84,12 +84,12 @@ PROJECTS = [
    authors='Rai, A., <b>Fu, X.</b>, &amp; Xia, Y.',
    method='Computational field study',
    finding=("Ask a room of people the same programming question and you get genuinely different answers. "
-            "Ask a model the same question many times and the answers cluster &mdash; and <b>newer models "
+            "Ask a model the same question many times and the answers cluster, and <b>newer models "
             "cluster tighter, not looser</b>. Broadening the prompt, raising the temperature and keeping prior "
             "answers out of the context pull some of the variety back, but nowhere near all of it."),
    photo=('secd.jpg','A lightbulb made up of many small differently coloured figures.'),
    metrics=[('375','Stack Overflow questions, sampled after every training cutoff'),
-            ('2.4&ndash;6.8%','of the narrowing those levers recover &mdash; still far more alike than human answers')],
+            ('2.4&ndash;6.8%','of the narrowing those levers recover; still far more alike than human answers')],
    links=[]),
 
  dict(id='creativity', col='llm', row='observational', order=6,
@@ -124,7 +124,7 @@ PROJECTS = [
    short='Generative Stimulus Sampling',
    authors='<b>Fu, X.</b>, Ramasubbu, N., Maruping, L. M., Wang, G., Xie, J., &amp; Wang, K.',
    method='Full-text census and experiments',
-   finding=("Repeat a message and the effect fades &mdash; but is that the intervention wearing off, or "
+   finding=("Repeat a message and the effect fades, but is that the intervention wearing off, or "
             "just that one wording? <b>Generative stimulus sampling</b> builds an audited pool of differently "
             "worded versions that all carry the same intervention, then randomises not only which one a person "
             "sees but <b>how far it moves from the one they saw last</b>. The distance between one message and "
@@ -173,8 +173,8 @@ PROJECTS = [
    short='AI Triage in Credence Services',
    authors='<b>Fu, X.</b>, Chen, L., Geng, S., Hsieh, J. P. A., Xie, J., &amp; Zhang, W.',
    method='In progress',
-   finding=("When customers cannot judge the service they are buying &mdash; a diagnosis, a legal opinion, a "
-            "repair &mdash; putting a model at the front door decides who reaches which expert. That routing is "
+   finding=("When customers cannot judge the service they are buying (a diagnosis, a legal opinion, a "
+            "repair), putting a model at the front door decides who reaches which expert. That routing is "
             "an allocation decision wearing the costume of a convenience feature."),
    photo=('triage.jpg','A phone showing a healthcare chatbot triaging a patient&rsquo;s symptoms, with a robot mascot beside it.'),
    metrics=[], links=[]),
@@ -187,7 +187,7 @@ PROJECTS = [
    method='Book chapter',
    finding=("Chapter 14 of <em>Advances in Human&ndash;AI Collaboration</em>, edited by V. G. Duffy, "
             "W. Karwowski and G. Salvendy (Wiley, 2026, pp. 263&ndash;285), on what changes for the people "
-            "doing the work when AI enters hiring, evaluation and development &mdash; and on which parts of "
+            "doing the work when AI enters hiring, evaluation and development, and on which parts of "
             "the job it stubbornly should not take over."),
    photo=('hrm.jpg','An isometric illustration titled AI in HR: candidate profiles on screens, a magnifying glass and a chart, being worked through by two people.'),
    metrics=[],
@@ -201,10 +201,10 @@ PROJECTS = [
    authors='<b>Fu, X.</b>, Mathiassen, L., &amp; Ramasubbu, N.',
    method='Revelatory case study',
    finding=("A U.S. auto-glass plant put embodied AI on its shop floor. Workers came out of it describing "
-            "their jobs as more meaningful &mdash; and the ones who grew the most, taking on more control "
+            "their jobs as more meaningful. And the ones who grew the most, taking on more control "
             "<em>and</em> more responsibility at once, were the <b>least likely to advance</b>. The firm's "
-            "advancement criteria had been built for a more divided shop floor, and had no category &mdash; and "
-            "no role &mdash; for people whose work now crossed all of them."),
+            "advancement criteria had been built for a more divided shop floor, and had no category, and "
+            "no role, for people whose work now crossed all of them."),
    photo=('manufacturing.jpg','A robotic arm moving a large sheet of flat glass along a conveyor in a bright glass plant.'),
    metrics=[], links=[]),
 
@@ -216,7 +216,7 @@ PROJECTS = [
    method='Clinical team study',
    finding=("A surgeon drives the console, but an operating theatre is a team. When a robot joins the "
             "table, the scrub nurse, the anaesthetist and the assistants all have to learn a new set of "
-            "cues from one another &mdash; where to stand, when to speak, what a paused arm means. This "
+            "cues from one another: where to stand, when to speak, what a paused arm means. This "
             "project asks how that <b>shared choreography</b> gets learned, and how much of the surgical "
             "outcome rides on the team settling into it rather than on any one person's skill at the "
             "controls."),
@@ -235,8 +235,8 @@ PROJECTS = [
             "Physical guard drops, informational guard goes up. Any service design that treats &ldquo;privacy&rdquo; "
             "as one dial will get one of them wrong."),
    photo=('service.jpg','A hotel guest in a white robe reaching into the open lid of a delivery robot in a carpeted corridor.'),
-   metrics=[('&minus;0.79','spatial guard &mdash; the door opens wider'),
-            ('+1.03','informational guard &mdash; the guest says less')],
+   metrics=[('&minus;0.79','spatial guard, the door opens wider'),
+            ('+1.03','informational guard, the guest says less')],
    links=[]),
 ]
 
@@ -286,10 +286,10 @@ CARD_LINE = {
                      'evaluation and development.',
     'edubot':        'An AI tutor teaching the curriculum in local Nigerian languages, '
                      'built by students.',
-    'sales':         'Handing the cold calls to an AI left agents better leads &mdash; '
+    'sales':         'Handing the cold calls to an AI left agents better leads, '
                      'and they closed fewer of them.',
-    'manufacturing': 'The workers who grew the most &mdash; more control and more '
-                     'responsibility at once &mdash; were the least likely to advance.',
+    'manufacturing': 'The workers who grew the most, taking on more control and more '
+                     'responsibility at once, were the least likely to advance.',
     'service':       'A robot at the door: guests open it wider and say less. Physical '
                      'guard drops, informational guard rises.',
 }

@@ -133,7 +133,7 @@ PAGE = u'''<!DOCTYPE html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>__MAP_PAGE_TITLE__</title>
-<meta name="description" content="Xinyu Fu's research drawn among the literature it rests on — every study placed by the real citation graph rather than by hand, to show how small a part of a field any one body of work is. A second view arranges the same studies by what kind of AI they are about.">
+<meta name="description" content="Xinyu Fu's research drawn among the literature it rests on. Every study is placed by the real citation graph rather than by hand, to show how small a part of a field any one body of work is. A second view arranges the same studies by what kind of AI they are about.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=IBM+Plex+Mono:wght@400;500&display=swap">
@@ -505,7 +505,7 @@ PAGE = u'''<!DOCTYPE html>
     var a=document.createElement('a');
     a.className='star'; a.href=st.href;
     a.style.setProperty('--c', st.c); a.style.setProperty('--sz', size+'px');
-    a.setAttribute('aria-label', st.t.replace(/&[a-z]+;/g,' ') + ' \u2014 ' + st.v.replace(/&[a-z]+;/g,' '));
+    a.setAttribute('aria-label', st.t.replace(/&[a-z]+;/g,' ') + ', ' + st.v.replace(/&[a-z]+;/g,' '));
     a.innerHTML = STAR_PATH;
     a.dataset.star='1';
     world.appendChild(a);

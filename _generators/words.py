@@ -76,7 +76,7 @@ HOME_FOOT_CREDIT_LINE = """Photography and figure credits: <a href="/credits/">c
 # ---- The front page (/) ----
 
 # Where it appears: browser tab and search results title for the front page
-HOME_PAGE_TITLE = "Xinyu Fu &mdash; Human&ndash;AI Complementarity"
+HOME_PAGE_TITLE = "Xinyu Fu &middot; Human&ndash;AI Complementarity"
 
 # Where it appears: the greeting at the top of the front page, in the serif face
 HOME_HELLO = "Hi, I&rsquo;m Xinyu Fu."
@@ -114,7 +114,7 @@ HOME_NEWS_TITLE = "Latest news"
 # before each one is the year it happened.
 HOME_NEWS_1 = """<a href="https://arxiv.org/abs/2609.01976"><i>Knowing Is Not Enough</i></a> accepted at the Journal of Management Information Systems"""
 HOME_NEWS_2 = """<i>The Privacy Asymmetry of Service Robots</i> accepted at CIST, with doctoral candidate <a href="/join/#advising">Anqi Zhang</a>"""
-HOME_NEWS_3 = """<i>Pathways to AI-Ready Entry-Level Talent</i> accepted at ICIS &mdash; the curriculum paper from <a href="https://path.mit.edu/">PATH</a>"""
+HOME_NEWS_3 = """<i>Pathways to AI-Ready Entry-Level Talent</i> accepted at ICIS, the curriculum paper from <a href="https://path.mit.edu/">PATH</a>"""
 HOME_NEWS_4 = """<a href="https://onlinelibrary.wiley.com/doi/10.1002/9781394266401.ch14">AI in Human Resource Management</a> published in <i>Advances in Human&ndash;AI Collaboration</i> (Wiley)"""
 
 # Where it appears: link under the four news items. It goes to the publications
@@ -135,7 +135,7 @@ HOME_PRESS_1_OUTLET = "ITEdgeNews"
 HOME_PRESS_1 = """<a href="https://www.itedgenews.africa/edubot-naija-launches-ai-powered-multilingual-learning-platform-across-nigeria/">EduBot Naija launches AI-powered multilingual learning platform across Nigeria</a> &middot; also in <a href="https://techafricanews.com/2025/08/14/a-computer-training-launches-edubot-nigeria-to-deliver-ai-powered-education-in-indigenous-languages/">TechAfrica News</a> and <a href="https://www.youtube.com/watch?v=3TnI3x-V_eQ">on video</a>"""
 
 HOME_PRESS_2_OUTLET = "GSU News"
-HOME_PRESS_2 = """<a href="https://news.gsu.edu/2026/04/03/mit-raise-and-georgia-state-university-announce-path">MIT RAISE and Georgia State announce PATH</a> &mdash; the initiative the Agentic AI course is taught under &middot; <a href="https://www.youtube.com/watch?v=LnyWCPhFzzA&amp;list=PL8lQ0qMEI-E8-64gGMvrHBSqbGQkAsXCD&amp;index=1">talks on video</a>"""
+HOME_PRESS_2 = """<a href="https://news.gsu.edu/2026/04/03/mit-raise-and-georgia-state-university-announce-path">MIT RAISE and Georgia State announce PATH</a>, the initiative the Agentic AI course is taught under &middot; <a href="https://www.youtube.com/watch?v=LnyWCPhFzzA&amp;list=PL8lQ0qMEI-E8-64gGMvrHBSqbGQkAsXCD&amp;index=1">talks on video</a>"""
 
 
 # Where it appears: heading of the teaching cell, bottom right of the news band
@@ -156,7 +156,7 @@ HOME_COURSE_ALL = "All courses &rarr;"
 # ---- The research page (/research/) ----
 
 # Where it appears: browser tab and search results title for the research page
-RESEARCH_PAGE_TITLE = "Projects &mdash; Xinyu Fu"
+RESEARCH_PAGE_TITLE = "Projects &middot; Xinyu Fu"
 
 # Where it appears: heading at the top of the research page
 RESEARCH_HEADING = "Projects"
@@ -186,7 +186,7 @@ RESEARCH_MATRIX_CORNER = "Research&nbsp;/ AI"
 # ==========================================================================
 
 # Where it appears: browser tab / search-result title for the research map page
-MAP_PAGE_TITLE = "Research map &mdash; Xinyu Fu"
+MAP_PAGE_TITLE = "Research map &middot; Xinyu Fu"
 
 # Where it appears: top navigation bar, first link (back to the front page)
 MAP_NAV_HOME = "Home"
@@ -211,7 +211,7 @@ MAP_H1 = "How the work<br>connects"
 
 # Where it appears: the paragraph beside the map's headline, in the two-axis
 # view. The literature view swaps in MAP_HEAD_COPY_CITE.
-MAP_HEAD_COPY_AXIS = """Two axes. Across: <b>what kind of AI</b> the study is about. Down: whether it <b>intervenes</b> &mdash; building something that makes people better at the work &mdash; or <b>observes</b> what AI set off once it arrived. Click an axis to fall into it; click a star to go to the study."""
+MAP_HEAD_COPY_AXIS = """Two axes. Across: <b>what kind of AI</b> the study is about. Down: whether it <b>intervenes</b>, building something that makes people better at the work, or <b>observes</b> what AI set off once it arrived. Click an axis to fall into it; click a star to go to the study."""
 
 # Where it appears: paragraph beside the headline, shown while the map is in
 # the "The literature" arrangement (the study and paper counts fill themselves in)
@@ -230,11 +230,11 @@ MAP_BTN_ZOOM_OUT = "Zoom out"
 MAP_BTN_WHOLE_SKY = "Whole sky"
 
 # Where it appears: caption under the map while the "Two axes" arrangement is showing
-MAP_BLURB_AXIS = "Where I file each study. The constellations are real ones &mdash; Ursa Major, Cassiopeia, Orion, Lyra, Corvus, Crux &mdash; and the grey points are the places still open in each cell."
+MAP_BLURB_AXIS = "Where I file each study. The constellations are real ones (Ursa Major, Cassiopeia, Orion, Lyra, Corvus, Crux), and the grey points are the places still open in each cell."
 
 # Where it appears: caption under the map while the "The literature" arrangement is
 # showing (the two counts fill themselves in)
-MAP_BLURB_CITE = """I took the reference list of every piece of work I have finished &mdash; __N_CSTUDIES__ of them, citing __N_CITED__ different papers between them &mdash; and matched the lists against each other, so a paper cited by two studies becomes one star rather than two. Then a physics simulation runs on it: every study pulls on the papers it cites, and every star pushes its neighbours away. Left to settle, studies that share references drift together and studies that share none drift apart."""
+MAP_BLURB_CITE = """I took the reference list of every piece of work I have finished: __N_CSTUDIES__ of them, citing __N_CITED__ different papers between them. I matched the lists against each other, so a paper cited by two studies becomes one star rather than two. Then a physics simulation runs on it: every study pulls on the papers it cites, and every star pushes its neighbours away. Left to settle, studies that share references drift together and studies that share none drift apart."""
 
 
 # Where it appears: stand-in shown for a study that has no one-line finding written yet
@@ -246,7 +246,7 @@ MAP_FINDING_COMING_SOON = "A short description of this project is coming."
 # ==========================================================================
 
 # Where it appears: browser tab and search results title for the contact page
-JOIN_PAGE_TITLE = "Mentoring &mdash; Xinyu Fu"
+JOIN_PAGE_TITLE = "Mentoring &middot; Xinyu Fu"
 
 # Where it appears: the page title at the top of the contact page, in the serif
 JOIN_CTA_HEADLINE = "Students I work with"
@@ -269,9 +269,9 @@ JOIN_RA_LEDE = """I take on student research assistant volunteers year-round, un
 
 # Where it appears: heading of the first of the three columns
 JOIN_WHAT_YOU_WOULD_DO_TITLE = "What the work is"
-JOIN_WHAT_YOU_WOULD_DO_DATA = "Cleaning and coding field data &mdash; call records, transcripts, scrapes"
+JOIN_WHAT_YOU_WOULD_DO_DATA = "Cleaning and coding field data: call records, transcripts, scrapes"
 JOIN_WHAT_YOU_WOULD_DO_LITERATURE = "Literature searches, and keeping a real annotated bibliography"
-JOIN_WHAT_YOU_WOULD_DO_PLATFORMS = "Building the platforms studies run on &mdash; React, Python, Qualtrics, Prolific"
+JOIN_WHAT_YOU_WOULD_DO_PLATFORMS = "Building the platforms studies run on: React, Python, Qualtrics, Prolific"
 JOIN_WHAT_YOU_WOULD_DO_ANALYSIS = "Sitting in on analysis, from the first regression to the last robustness check"
 
 # Where it appears: heading of the second of the three columns
@@ -279,12 +279,12 @@ JOIN_WHAT_I_ASK_FOR_TITLE = "What I ask"
 JOIN_WHAT_I_ASK_FOR_HOURS = "Five to eight hours a week in term, agreed in advance"
 JOIN_WHAT_I_ASK_FOR_SEMESTER = "A semester or more, since research moves slowly"
 JOIN_WHAT_I_ASK_FOR_SPEAK_UP = "A word when something is not working, early rather than late"
-JOIN_WHAT_I_ASK_FOR_CODING = "Any coding is useful &mdash; Python, R, SQL &mdash; though no project needs all of it"
+JOIN_WHAT_I_ASK_FOR_CODING = "Any coding is useful (Python, R, SQL), though no project needs all of it"
 
 # Where it appears: heading of the third of the three columns
 JOIN_SEND_TITLE = "What to send"
 JOIN_SEND_CV = "A CV or r&eacute;sum&eacute;, one page"
-JOIN_SEND_WRITING_SAMPLE = "One writing sample &mdash; a course project report is perfectly fine"
+JOIN_SEND_WRITING_SAMPLE = "One writing sample. A course project report is perfectly fine"
 JOIN_SEND_WHICH_PROJECT = "Two sentences on which project caught your eye, and why"
 
 # Where it appears: the email button under the three columns
@@ -296,14 +296,14 @@ JOIN_STUDENTS_NOW = "Currently"
 JOIN_STUDENTS_PAST = "Previously"
 
 # Where it appears: browser tab and search results title for the teaching page
-TEACHING_PAGE_TITLE = "Teaching &mdash; Xinyu Fu"
+TEACHING_PAGE_TITLE = "Teaching &middot; Xinyu Fu"
 
 # Where it appears: main heading at the top of the teaching page
 TEACHING_HEADING = "Teaching"
 
 # Where it appears: small caption beside the "Teaching" heading
 TEACHING_AWARDS_TITLE = "Teaching awards"
-TEACHING_AWARD_NOTE = "<b>2025 Unforgettable Educator Award</b> &mdash; Robinson College of Business, Georgia State University"
+TEACHING_AWARD_NOTE = "<b>2025 Unforgettable Educator Award</b>, Robinson College of Business, Georgia State University"
 
 # Where it appears: first institution heading on the teaching page
 TEACHING_GSU_HEADING = "Georgia State University"
@@ -312,10 +312,10 @@ TEACHING_GSU_HEADING = "Georgia State University"
 TEACHING_AGENTIC_AI_TITLE = "Agentic AI"
 
 # Where it appears: description of the Fall 2026 Agentic AI course
-TEACHING_AGENTIC_AI_DESC = "Build. Break. Iterate. The full agent lifecycle practiced from day one &mdash; the brain, the tools, the orchestration, the self-evaluation &mdash; ending in a capstone where teams take a real problem from idea to working prototype and pitch it."
+TEACHING_AGENTIC_AI_DESC = "Build. Break. Iterate. The full agent lifecycle practiced from day one: the brain, the tools, the orchestration, the self-evaluation. It ends in a capstone where teams take a real problem from idea to working prototype and pitch it."
 
 # Where it appears: second paragraph of the Fall 2026 Agentic AI course, about the PATH initiative
-TEACHING_AGENTIC_AI_PATH_NOTE = """Taught as part of <a href="https://path.mit.edu/"><b>PATH</b></a> &mdash; Pathways for AI Training and Hiring, a multi-year MIT RAISE and Georgia State initiative building industry-aligned AI training, with the Robinson College of Business anchoring the Georgia hub."""
+TEACHING_AGENTIC_AI_PATH_NOTE = """Taught as part of <a href="https://path.mit.edu/"><b>PATH</b></a> (Pathways for AI Training and Hiring), a multi-year MIT RAISE and Georgia State initiative building industry-aligned AI training, with the Robinson College of Business anchoring the Georgia hub."""
 
 # Where it appears: link row under the Fall 2026 Agentic AI course, course site link
 TEACHING_AGENTIC_AI_LINK_COURSE_SITE = "Course site"
@@ -339,7 +339,7 @@ TEACHING_AGENTIC_AI_SPRING_2026_DESC = "Undergraduate. The first run of the cour
 TEACHING_DATA_PROGRAMMING_TITLE = "Data Programming"
 
 # Where it appears: description of the Georgia State data programming course
-TEACHING_DATA_PROGRAMMING_DESC = "Undergraduate. Python and machine learning for people who came to solve business problems rather than to write software &mdash; wrangling the data, training a model, reading what it is actually telling you, and the point at which it earns the right to be believed."
+TEACHING_DATA_PROGRAMMING_DESC = "Undergraduate. Python and machine learning for people who came to solve business problems rather than to write software: wrangling the data, training a model, reading what it is actually telling you, and the point at which it earns the right to be believed."
 
 # Where it appears: course name of the Georgia State graduate database course
 TEACHING_DB_FUNDAMENTALS_TITLE = "Fundamentals of Database Management Systems"
@@ -375,7 +375,7 @@ TEACHING_DATA_PROGRAMMING_ESSENTIALS_TITLE = """<a href="https://www.katz.busine
 TEACHING_DATA_PROGRAMMING_ESSENTIALS_DESC = "MBA and MS elective. Instructor; also teaching assistant for this course in Spring and Fall 2019."
 
 # Where it appears: second award badge beside the "Teaching" heading
-TEACHING_AWARD_NOTE_2021 = "<b>2021 <span class=\"nb\">Doris &amp; Douglas</span> Bernstein Doctoral Student Teaching Award</b> &mdash; University of Pittsburgh"
+TEACHING_AWARD_NOTE_2021 = "<b>2021 <span class=\"nb\">Doris &amp; Douglas</span> Bernstein Doctoral Student Teaching Award</b>, University of Pittsburgh"
 
 # Where it appears: course name of the Pittsburgh R elective
 TEACHING_ADVANCED_R_TITLE = """<a href="https://www.katz.business.pitt.edu/course/data-programming-r">Advanced Data Programming with R</a>"""
@@ -400,7 +400,7 @@ TEACHING_CAREER_CENTER_DESC = "Tsinghua University."
 
 
 # Where it appears: second paragraph of the note under the map, in the literature view
-MAP_BLURB_CITE_2 = """Only __N_SHARED__ of those __N_CITED__ papers are cited by more than one study, which is why most stars sit in a single halo. Those __N_SHARED__ are the pale gold ones, and a line is drawn between two studies wherever they share a reference &mdash; the more they share, the heavier the line."""
+MAP_BLURB_CITE_2 = """Only __N_SHARED__ of those __N_CITED__ papers are cited by more than one study, which is why most stars sit in a single halo. Those __N_SHARED__ are the pale gold ones, and a line is drawn between two studies wherever they share a reference, and the more they share the heavier the line."""
 
 # Where it appears: last paragraph of the note under the map, in the literature view
 MAP_BLURB_CITE_3 = """The proportion is the part worth standing back for. A working life of research is a small, well-lit patch of somebody else&rsquo;s field. Every study is also listed in plain words on the <a href="/research/">research page</a>."""

@@ -42,7 +42,7 @@ JOIN = '''<!DOCTYPE html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>__JOIN_PAGE_TITLE__</title>
-<meta name="description" content="The students Xinyu Fu advises at Georgia State University, and how to volunteer as a student research assistant — open year-round, undergraduate and graduate.">
+<meta name="description" content="The students Xinyu Fu advises at Georgia State University, and how to volunteer as a student research assistant, open year-round, undergraduate and graduate.">
 FONTS
 </head>
 <body>
