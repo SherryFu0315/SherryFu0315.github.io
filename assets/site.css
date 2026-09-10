@@ -195,7 +195,9 @@ button:focus-visible{ outline:3px solid var(--blue); outline-offset:2px }
 
 .rail{
   background:var(--paper);
-  padding:clamp(26px,3vw,40px) var(--pad);
+  /* less air above the name than below the question: the panel should start
+     close to its top edge and finish with room to spare */
+  padding:clamp(20px,2vw,26px) var(--pad) clamp(26px,3vw,40px);
   display:flex; flex-direction:column;
   /* The gap between who she is and what she works on is the one interval that
      has to read as a break, now that there is no rule doing it. */
@@ -205,11 +207,11 @@ button:focus-visible{ outline:3px solid var(--blue); outline-offset:2px }
 
 /* ---- who ---- */
 .rail-id{ display:flex; align-items:flex-start; gap:clamp(14px,1.5vw,20px); flex-wrap:wrap }
-.rail-id > div{ min-width:0; flex:1 1 220px }
+.rail-id > div{ min-width:0; flex:1 1 150px }
 /* Square, like everything else here. The circle was the only rounded object on
    the site, and beside a grid of hard-edged photographs it read as a sticker. */
 .rail-photo{
-  width:clamp(110px,10.8vw,152px); aspect-ratio:1; height:auto; flex:none;
+  width:clamp(124px,12.2vw,171px); aspect-ratio:1; height:auto; flex:none;
   object-fit:cover;
 }
 /* One line. Broken over two it took the height of a headline and pushed the
@@ -255,13 +257,19 @@ button:focus-visible{ outline:3px solid var(--blue); outline-offset:2px }
    still the largest prose on the page, which is enough. */
 .thesis b{
   display:block; font-family:"Archivo",Arial,sans-serif;
-  font-variation-settings:"wdth" 100,"wght" 520;
-  font-size:clamp(24px,2.47vw,35px); line-height:1.22;
-  letter-spacing:-.005em; color:var(--ink);
+  /* Uppercase sets about a tenth wider than sentence case at the same size, so
+     going up 6% and going to caps at once would have cost the three-line break
+     this was arranged around. The width axis pays for both — 80 is the widest
+     setting where "THAN THE SUM OF ITS PARTS?" still fits the column — and the
+     weight, 540 against the name's 850, is what keeps them two different voices
+     of the same face rather than one repeated. */
+  font-variation-settings:"wdth" 80,"wght" 540;
+  font-size:clamp(25px,2.62vw,37px); line-height:1.16;
+  letter-spacing:.004em; text-transform:uppercase; color:var(--ink);
   /* wide enough that "What makes human-AI collaboration" holds together on
      the first line; balance then splits the rest evenly rather than leaving
      a short tail */
-  max-width:36ch; margin:0 0 22px; text-wrap:balance;
+  max-width:36ch; margin:0 0 16px; text-wrap:balance;
 }
 /* a term that must not break across lines, at any width */
 .nb{ white-space:nowrap }
@@ -546,7 +554,15 @@ a.btn:hover, .btn:hover{ background:var(--coral); color:var(--ink) }
    them the rows stretch and they get a little deeper, which is still landscape.
    None of the four shows its whole frame — they are crops, deliberately. */
 @media(min-width:900px){
-  .tile{ aspect-ratio:3/2 }
+  /* Not aspect-ratio. Given a definite height — which is what height:100% or a
+     stretched grid row hands it — aspect-ratio turns around and computes the
+     WIDTH from that height, and the photographs overflow their own columns.
+     A spacer whose padding is a percentage of the width sets a minimum height
+     and never touches the width, so the row can be taller and the tile simply
+     fills it. Everything drawn on the tile is absolutely positioned, so the
+     spacer pushes nothing. */
+  .tile{ aspect-ratio:auto }
+  .tile::before{ content:""; display:block; padding-top:66.67% }
 }
 .tile img{
   position:absolute; inset:0; width:100%; height:100%; object-fit:cover;
