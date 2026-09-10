@@ -282,6 +282,82 @@ button:focus-visible{ outline:3px solid var(--blue); outline-offset:2px }
   color:var(--muted-2); max-width:40ch;
 }
 
+/* ---------- the research cards -------------------------------------------
+   Six photographs in a 3x2 grid. What is always visible is the least a card
+   needs to be chosen between: the picture, what the study is called, and how
+   far along it is. The one line of finding waits for the pointer, because a
+   grid of six paragraphs is not a grid any more, it is a page of text with
+   pictures on it.
+
+   On a phone there is no pointer and nothing is revealed — the card is simply
+   a link, which is what it is on a desktop too. Keyboard focus reveals it, so
+   the line is not reachable by mouse alone. */
+
+.cards{
+  display:grid; grid-template-columns:1fr;
+  gap:var(--rule-w); background:var(--rule);
+  border-bottom:var(--rule-w) solid var(--rule);
+}
+@media(min-width:620px){ .cards{ grid-template-columns:repeat(2,1fr) } }
+@media(min-width:1000px){ .cards{ grid-template-columns:repeat(3,1fr) } }
+
+.card{
+  position:relative; display:block; overflow:hidden;
+  aspect-ratio:4/3; background:var(--ink);
+  text-decoration:none; color:var(--white); border-bottom:0;
+}
+.card img{
+  position:absolute; inset:0; width:100%; height:100%; object-fit:cover;
+  /* the same correction the hero photographs get, so the two sets match */
+  filter:saturate(.88) contrast(1.04);
+}
+.card[href$="#edubot"] img{ filter:saturate(.88) contrast(1.04) brightness(.88) }
+/* Darkening is what the hover does. It is one property, it cannot reflow
+   anything, and it reads as the card coming forward rather than as movement. */
+.card-wash{
+  position:absolute; inset:0; z-index:1;
+  background:linear-gradient(180deg,
+    rgba(24,13,38,.10) 0%, rgba(24,13,38,.34) 46%, rgba(24,13,38,.88) 100%);
+}
+.card:hover .card-wash,
+.card:focus-visible .card-wash{
+  background:linear-gradient(180deg,
+    rgba(24,13,38,.58) 0%, rgba(24,13,38,.74) 46%, rgba(24,13,38,.95) 100%);
+}
+.card-in{
+  position:absolute; left:0; right:0; bottom:0; z-index:2;
+  padding:clamp(15px,1.5vw,22px);
+}
+.card-chip{
+  display:inline-block; margin:0 0 10px;
+  font-family:"IBM Plex Mono",monospace; font-size:10px;
+  letter-spacing:.14em; text-transform:uppercase;
+  background:var(--ink); color:var(--white); padding:4px 8px;
+}
+.card-t{
+  display:block; font-family:"Archivo",Arial,sans-serif;
+  font-variation-settings:"wdth" 82,"wght" 800;
+  text-transform:uppercase; letter-spacing:-.012em; line-height:1.02;
+  font-size:clamp(19px,1.75vw,25px);
+}
+.card-x{ display:block; max-height:0; opacity:0; overflow:hidden }
+.card:hover .card-x,
+.card:focus-visible .card-x{ max-height:11em; opacity:1; margin-top:11px }
+.card-f{
+  display:block; font-size:13.5px; line-height:1.46;
+  color:rgba(255,255,255,.93);
+}
+.card-go{
+  display:block; margin-top:9px;
+  font-family:"IBM Plex Mono",monospace; font-size:10.5px;
+  letter-spacing:.12em; text-transform:uppercase; color:var(--lime);
+}
+@media (prefers-reduced-motion: no-preference){
+  .card-wash{ transition:background .32s ease }
+  .card-x{ transition:max-height .32s ease, opacity .32s ease, margin-top .32s ease }
+}
+.card:focus-visible{ outline:3px solid var(--lime); outline-offset:-6px }
+
 /* ---------- doorway into the research map -------------------------------- */
 
 .skylink{

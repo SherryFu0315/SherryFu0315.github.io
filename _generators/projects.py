@@ -266,3 +266,40 @@ STAR_SIZE = {'Forthcoming': 3, 'Published': 3, 'Deployed': 3, 'Under review': 2}
 # page keeps its own order (the `order` field), and everything left out is one
 # click away under "all projects".
 FEATURED = ['retrieval', 'errors', 'edubot', 'creativity', 'hrm', 'remote']
+
+
+# What each study is called on the front page's cards, and the one line that
+# appears when you hover one. Short on purpose: the full title, the authors, the
+# method and the numbers are all on the project page, one click away, and the
+# card exists to make you want to go there.
+#
+# Every line below is condensed from that study's own description further up
+# this file — nothing here says anything the longer version does not.
+CARD = {
+    'retrieval':  'Effective LLM oversight',
+    'errors':     'Detecting AI errors',
+    'edubot':     'EduBot Naija',
+    'creativity': 'AI authenticity',
+    'hrm':        'AI in human resources',
+    'remote':     'Remote work',
+}
+
+CARD_LINE = {
+    'retrieval':  'Writing the explanation yourself catches far more of the errors '
+                  'than reading the system&rsquo;s.',
+    'errors':     'When the checking happens matters more than what the checking says.',
+    'edubot':     'An AI tutor teaching the curriculum in local Nigerian languages, '
+                  'built by students.',
+    'creativity': 'Authenticity works as armour right up until the moment it is '
+                  'contradicted.',
+    'hrm':        'What changes for the people doing the work when AI enters hiring '
+                  'and evaluation.',
+    'remote':     'Early and persistent adopters grew faster &mdash; but more remote '
+                  'was not better.',
+}
+
+# A card is too small for "Journal of Management Information Systems".
+VENUE_SHORT = {
+    'retrieval': 'JMIS',
+    'hrm':       'Book chapter',
+}

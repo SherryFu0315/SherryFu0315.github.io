@@ -30,7 +30,6 @@ live in projects.py, one block per study.
 """
 
 
-
 # ==========================================================================
 #  THE HOMEPAGE AND THE RESEARCH PAGE
 #  Also the navigation and the footer, which appear on every page except the map.
@@ -99,11 +98,6 @@ HOME_LINK_EMAIL = "Email"
 HOME_THESIS = """<b>What makes <span class="nb">human&ndash;AI</span> collaboration greater than the <span class="keep">sum of its parts?</span></b><span>I study how different ways of working with AI shape human performance, the organization of work, and the consequences of AI use.</span>"""
 
 
-
-
-
-
-
 # Where it appears: small label at the top of the starry card linking to the research map
 HOME_MAP_EYEBROW = "Interactive &middot; the citation map"
 
@@ -123,32 +117,6 @@ HOME_SELECTED_RESEARCH_TITLE = "Selected Research"
 # Where it appears: small caption beside the "Selected Research" heading
 HOME_SELECTED_RESEARCH_COUNT = """__N_FEATURED__ of __N_PROJECTS__ &middot; <a href="/research/">all projects</a>"""
 
-# Where it appears: small boxed label above the headline of the "come work with me" block
-HOME_JOIN_EYEBROW = "Student research assistants"
-
-# Where it appears: headline of the "come work with me" block on the front page
-HOME_JOIN_HEADLINE = "Come see how a study gets built"
-
-# Where it appears: opening paragraph of the "come work with me" block on the front page
-HOME_JOIN_LEDE = "I take on <b>student research assistant volunteers</b> year-round, undergraduate and graduate. You do not need research experience and you do not need to have taken my class. You need to be curious and to finish things."
-
-# Where it appears: second paragraph of the "come work with me" block, about past students
-HOME_JOIN_RECENT_STUDENTS = "Recent students have cleaned and coded field data, run literature searches, built the experiment platforms my studies run on, and sat in on analysis from the first regression to the last."
-
-# Where it appears: item 01 of the numbered "what to send" list on the front page
-HOME_JOIN_SEND_CV = "A <b>CV or r&eacute;sum&eacute;</b>. One page is plenty."
-
-# Where it appears: item 02 of the numbered "what to send" list on the front page
-HOME_JOIN_SEND_WRITING_SAMPLE = "One <b>writing sample</b>. A course project report is perfectly fine &mdash; I care how you build an argument, not where it was published."
-
-# Where it appears: item 03 of the numbered "what to send" list on the front page
-HOME_JOIN_SEND_WHICH_PROJECT = "Two sentences on <b>which project caught your eye</b>, and why."
-
-# Where it appears: label on the email button under the "what to send" list
-HOME_JOIN_EMAIL_BUTTON = "Email xinyufu [at] gsu.edu"
-
-# Where it appears: small link under the email button, to the contact page
-HOME_JOIN_MORE_LINK = "Who I work with, and what the work is like &rarr;"
 
 # Where it appears: heading of the first of the three columns near the bottom of the front page
 HOME_RECENT_TITLE = "Recent"
@@ -157,8 +125,15 @@ HOME_RECENT_TITLE = "Recent"
 HOME_RECENT_JMIS = """<a href="https://arxiv.org/abs/2609.01976"><i>Knowing Is Not Enough</i></a> accepted at the Journal of Management Information Systems"""
 
 
+# Where it appears: link at the foot of the "Recent" column on the front page,
+# under the two most recent items
+HOME_RECENT_MORE = "More news &rarr;"
 
-# Where it appears: heading of the second of the three columns near the bottom of the front page
+# Where it appears: the words revealed when the pointer rests on a research
+# card on the front page
+HOME_CARD_GO = "View project &rarr;"
+
+# Where it appears: heading of the "In the press" column on the front page
 HOME_PRESS_TITLE = "In the press"
 
 # Where it appears: "In the press" column, the 2025 item
@@ -254,7 +229,6 @@ MAP_BLURB_AXIS = "Where I file each study. The constellations are real ones &mda
 # Where it appears: caption under the map while the "The literature" arrangement is
 # showing (the two counts fill themselves in)
 MAP_BLURB_CITE = """I took the reference list of every piece of work I have finished &mdash; __N_CSTUDIES__ of them, citing __N_CITED__ different papers between them &mdash; and matched the lists against each other, so a paper cited by two studies becomes one star rather than two. Then a physics simulation runs on it: every study pulls on the papers it cites, and every star pushes its neighbours away. Left to settle, studies that share references drift together and studies that share none drift apart."""
-
 
 
 # Where it appears: stand-in shown for a study that has no one-line finding written yet
@@ -492,7 +466,6 @@ TEACHING_INTRO_IS_TITLE = "Introduction to Information Systems"
 TEACHING_INTRO_IS_DESC = "Undergraduate core. Instructor."
 
 
-
 # Where it appears: course name of the Pittsburgh Python elective
 TEACHING_DATA_PROGRAMMING_ESSENTIALS_TITLE = "Data Programming Essentials with Python"
 
@@ -536,11 +509,6 @@ MAP_METHOD_HEADING = "How this is drawn"
 # Where it appears: "Recent" column, the CIST acceptance
 HOME_RECENT_CIST = """<i>The Privacy Asymmetry of Service Robots</i> accepted at CIST, with doctoral candidate <a href="/join/#students">Anqi Zhang</a>"""
 
-# Where it appears: "Recent" column, the ICIS acceptance
-HOME_RECENT_ICIS = """<i>Pathways to AI-Ready Entry-Level Talent</i> accepted at ICIS &mdash; the curriculum paper from <a href="https://path.mit.edu/">PATH</a>"""
-
-# Where it appears: "Recent" column, the book chapter
-HOME_RECENT_CHAPTER = """<a href="https://onlinelibrary.wiley.com/doi/10.1002/9781394266401.ch14">AI in Human Resource Management</a> published in <i>Advances in Human&ndash;AI Collaboration</i> (Wiley)"""
 
 # Where it appears: "In the press" column, the PATH announcement
 HOME_PRESS_PATH = """<a href="https://news.gsu.edu/2026/04/03/mit-raise-and-georgia-state-university-announce-path">MIT RAISE and Georgia State announce PATH</a> &mdash; GSU News, on the initiative the Agentic AI course is taught under &middot; <a href="https://path.mit.edu/">the programme</a> &middot; <a href="https://www.youtube.com/watch?v=LnyWCPhFzzA&amp;list=PL8lQ0qMEI-E8-64gGMvrHBSqbGQkAsXCD&amp;index=1">talks</a>"""

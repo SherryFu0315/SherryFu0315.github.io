@@ -2,7 +2,8 @@
 import hashlib, io, os, sys, json
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import words as T
-from projects import PROJECTS, COLS, ROWS, LABEL, STAR_SIZE, FEATURED
+from projects import (PROJECTS, COLS, ROWS, LABEL, STAR_SIZE, FEATURED,
+                      CARD, CARD_LINE, VENUE_SHORT)
 
 # The map card quotes these, and draws a miniature of the real map. Both come
 # from the same file and the same layout the map itself uses, so neither the
@@ -258,7 +259,35 @@ _by_id = {x['id']: x for x in PROJECTS}
 featured = [_by_id[i] for i in FEATURED]
 _missing = [p['id'] for p in featured if not (p.get('photo') and p['finding'])]
 assert not _missing, 'featured on the front page but has no photo or finding: %s' % _missing
-home_entries = '\n\n'.join(entry(x, i) for i, x in enumerate(featured))
+CARD_TPL = """  <a class="card" href="/research/#%(id)s">
+    <img src="/assets/img/%(img)s" alt="%(alt)s"%(lazy)s>
+    <span class="card-wash" aria-hidden="true"></span>
+    <span class="card-in">
+      <span class="card-chip">%(chip)s</span>
+      <span class="card-t">%(title)s</span>
+      <span class="card-x">
+        <span class="card-f">%(line)s</span>
+        <span class="card-go">%(go)s</span>
+      </span>
+    </span>
+  </a>"""
+
+
+def card(p, i):
+    """A photograph, what the study is called, and how far along it is. The one
+    line of finding waits for a hover — on a phone there is no hover and the
+    card is simply a link, which is what it is on a desktop too."""
+    venue = VENUE_SHORT.get(p['id'], p['venue'])
+    return CARD_TPL % dict(
+        id=p['id'], img=p['photo'][0], alt=p['photo'][1],
+        lazy='' if i < 3 else ' loading="lazy" decoding="async"',
+        chip=p['chip'] + ((' &middot; ' + venue) if venue else ''),
+        title=CARD.get(p['id'], p['short']),
+        line=CARD_LINE.get(p['id'], ''),
+        go=T.HOME_CARD_GO)
+
+
+home_cards = '\n'.join(card(x, i) for i, x in enumerate(featured))
 
 HOME = '''<!DOCTYPE html>
 <html lang="en">
@@ -297,32 +326,13 @@ HOME = '''<!DOCTYPE html>
 %(TILES)s
   </header>
 
-  <div class="sec-head">
-    <h2>%(SR_TITLE)s</h2>
-    <span class="count">%(SR_COUNT)s</span>
-  </div>
-
-%(ENTRIES)s
-
-  <a class="skylink" href="/universe/">
-    <canvas class="skylink-stars" id="skystars" aria-hidden="true"></canvas>
-    <span class="skylink-scrim" aria-hidden="true"></span>
-    <span class="skylink-in">
-      <span class="eyebrow" style="color:#9A8CB4">%(MAP_EYEBROW)s</span>
-      <span class="skylink-h">%(MAP_HEADLINE)s</span>
-      <span class="skylink-p">%(MAP_BLURB)s</span>
-      <span class="skylink-btn">%(MAP_BUTTON)s</span>
-    </span>
-  </a>
-
   <div class="strip">
     <div class="strip-cell">
       <h3>%(RECENT_TITLE)s</h3>
       <ul>
         <li><span class="yr">2026</span>%(RECENT_JMIS)s</li>
         <li><span class="yr">2026</span>%(RECENT_CIST)s</li>
-        <li><span class="yr">2026</span>%(RECENT_ICIS)s</li>
-        <li><span class="yr">2026</span>%(RECENT_CHAPTER)s</li>
+        <li><a href="/publications/">%(RECENT_MORE)s</a></li>
       </ul>
     </div>
     <div class="strip-cell">
@@ -342,23 +352,25 @@ HOME = '''<!DOCTYPE html>
     </div>
   </div>
 
-  <section class="cta" id="join">
-    <div>
-      <p class="eyebrow eyebrow--boxed">%(JOIN_EYEBROW)s</p>
-      <h2>%(JOIN_HEADLINE)s</h2>
-      <p class="lede">%(JOIN_LEDE)s</p>
-      <p style="font-size:15.5px;color:var(--muted);max-width:52ch">%(JOIN_STUDENTS)s</p>
-    </div>
-    <div>
-      <ol class="send-list">
-        <li><span class="n">01</span><span>%(JOIN_CV)s</span></li>
-        <li><span class="n">02</span><span>%(JOIN_SAMPLE)s</span></li>
-        <li><span class="n">03</span><span>%(JOIN_PROJECT)s</span></li>
-      </ol>
-      <p style="margin:22px 0 0"><a class="btn mail" data-u="xinyufu" data-d="gsu.edu" data-s="Research assistant volunteer" href="#">%(JOIN_BUTTON)s</a></p>
-      <p style="margin:14px 0 0;font-size:13.5px"><a href="/join/">%(JOIN_MORE)s</a></p>
-    </div>
-  </section>
+  <a class="skylink" href="/universe/">
+    <canvas class="skylink-stars" id="skystars" aria-hidden="true"></canvas>
+    <span class="skylink-scrim" aria-hidden="true"></span>
+    <span class="skylink-in">
+      <span class="eyebrow" style="color:#9A8CB4">%(MAP_EYEBROW)s</span>
+      <span class="skylink-h">%(MAP_HEADLINE)s</span>
+      <span class="skylink-p">%(MAP_BLURB)s</span>
+      <span class="skylink-btn">%(MAP_BUTTON)s</span>
+    </span>
+  </a>
+
+  <div class="sec-head">
+    <h2>%(SR_TITLE)s</h2>
+    <span class="count">%(SR_COUNT)s</span>
+  </div>
+
+  <div class="cards">
+%(ENTRIES)s
+  </div>
 
 %(FOOT)s
 
@@ -485,21 +497,11 @@ HOME = '''<!DOCTYPE html>
     'MAP_BUTTON': T.HOME_MAP_BUTTON,
     'SR_TITLE': T.HOME_SELECTED_RESEARCH_TITLE,
     'SR_COUNT': T.HOME_SELECTED_RESEARCH_COUNT,
-    'ENTRIES': home_entries,
-    'JOIN_EYEBROW': T.HOME_JOIN_EYEBROW,
-    'JOIN_HEADLINE': T.HOME_JOIN_HEADLINE,
-    'JOIN_LEDE': T.HOME_JOIN_LEDE,
-    'JOIN_STUDENTS': T.HOME_JOIN_RECENT_STUDENTS,
-    'JOIN_CV': T.HOME_JOIN_SEND_CV,
-    'JOIN_SAMPLE': T.HOME_JOIN_SEND_WRITING_SAMPLE,
-    'JOIN_PROJECT': T.HOME_JOIN_SEND_WHICH_PROJECT,
-    'JOIN_BUTTON': T.HOME_JOIN_EMAIL_BUTTON,
-    'JOIN_MORE': T.HOME_JOIN_MORE_LINK,
+    'ENTRIES': home_cards,
     'RECENT_TITLE': T.HOME_RECENT_TITLE,
     'RECENT_JMIS': T.HOME_RECENT_JMIS,
     'RECENT_CIST': T.HOME_RECENT_CIST,
-    'RECENT_ICIS': T.HOME_RECENT_ICIS,
-    'RECENT_CHAPTER': T.HOME_RECENT_CHAPTER,
+    'RECENT_MORE': T.HOME_RECENT_MORE,
     'PRESS_TITLE': T.HOME_PRESS_TITLE,
     'PRESS_PATH': T.HOME_PRESS_PATH,
     'PRESS_EDUBOT': T.HOME_PRESS_EDUBOT,
