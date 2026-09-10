@@ -3,3 +3,4 @@ oa_cache/
 # unzipped .docx working copy, and the CV that fix_cv.py writes from it
 cvx/
 CV_*_tracked.docx
+.oa_mailto

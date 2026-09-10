@@ -90,9 +90,21 @@ From the 155 works resolved so far (21%), the difference is large:
 First-order coupling links 32 pairs of studies; second-order coupling links all
 10 of the studies resolved so far to each other.
 
-**This run is incomplete.** OpenAlex allows 1000 requests a day per address and
-the run has now exhausted two days of them, reaching 171 of the 752 works. The
-allowance resets at midnight UTC. To carry on:
+**This run is incomplete** — 171 of 752 works. To carry on, double-click
+**Finish the citation map.command** in the main folder any time after the
+allowance resets. It checks first and says how long is left rather than
+half-running, picks up from the cache, and stops on its own before the day's
+budget is gone.
+
+The allowance is **1000 requests a day, per IP, resetting at midnight UTC**, and
+it is not raised by identifying yourself — `OA_MAILTO` buys a much better rate
+per second, nothing more. Finishing needs about 640 lookups plus roughly 120
+batched calls for the ancestors' titles, so one clean day is enough.
+
+`OA_MAILTO` is read from `_generators/.oa_mailto`, which git ignores: the
+address goes to OpenAlex, not into a public repository.
+
+Or by hand:
 
 ```bash
 cd ~/Documents/website/_generators
@@ -123,3 +135,8 @@ Two things to keep in mind if this is ever rewritten:
   daily allowance running out, and the first version simply slept on it — which
   from the outside is indistinguishable from a hung process. Anything over five
   minutes now ends the run with a message saying when it resets.
+- A rejected request costs the same as a served one. The first version retried a
+  429 six times per lookup, so once the budget got tight it spent what was left
+  learning the same thing six times over — 41 works resolved out of a thousand
+  requests. It now watches `X-RateLimit-Remaining` on every answer and stops
+  with 25 to spare, which is what makes tomorrow's run start from a clean point.

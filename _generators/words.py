@@ -112,7 +112,7 @@ HOME_MAP_HEADLINE = "The shoulders we stand on"
 
 # Where it appears: paragraph on the starry card linking to the research map
 # (the study and paper counts fill themselves in)
-HOME_MAP_BLURB = "__N_STUDIES__ of my studies, drawn among the __N_CITED__ papers they lean on. Nothing here is placed by hand &mdash; two studies sit near each other only because they draw on the same work. Mostly it shows what a small corner of a field any one person&rsquo;s research is."
+HOME_MAP_BLURB = "Explore my research and the scholarship it builds on. Studies that share references appear closer together, revealing connections across topics."
 
 # Where it appears: button at the bottom of the starry card linking to the research map
 HOME_MAP_BUTTON = "Open the map &rarr;"

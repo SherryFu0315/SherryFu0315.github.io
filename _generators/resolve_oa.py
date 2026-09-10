@@ -64,7 +64,22 @@ _last = [0.0]
 # looked exactly like a hung process. A long Retry-After is not something to wait
 # out; it is the end of the run, and the only thing to do is say so and stop.
 BURST_MAX = 300.0                     # seconds; longer than this is the daily cap
+STOP_AT   = 25                        # leave this much of the day's budget unspent
 _exhausted = threading.Event()
+_remaining = [None]                   # what OpenAlex last said was left for today
+
+
+def _note_budget(headers):
+    """Every answer carries the day's remaining budget. Watching it is the
+    difference between a run that stops with a clean resume point and one that
+    spends its last hundred requests on retries and stops mid-lookup."""
+    try:
+        n = int(headers.get('X-RateLimit-Remaining'))
+    except (TypeError, ValueError):
+        return
+    _remaining[0] = n
+    if n <= STOP_AT:
+        _exhausted.set()
 
 
 def get(url, tries=6):
@@ -83,14 +98,20 @@ def get(url, tries=6):
                                          headers={'User-Agent': UA,
                                                   'Accept': 'application/json'})
             with urllib.request.urlopen(req, timeout=40) as r:
+                _note_budget(r.headers)
                 return json.loads(r.read().decode('utf8'))
         except urllib.error.HTTPError as e:
             if e.code in (429, 503):
+                _note_budget(e.headers)
                 back = float(e.headers.get('Retry-After') or 0) or min(60, 4 * (i + 1) ** 2)
                 if back > BURST_MAX:
                     _exhausted.set()
                     return {'_error': 'daily quota exhausted; resets in %d h %d min'
                                       % (back // 3600, (back % 3600) // 60)}
+                if i >= 1:
+                    # a rejected request still costs one. Two are enough to learn
+                    # that the pace is wrong; a third just spends the budget.
+                    return {'_error': 'rate limited'}
                 time.sleep(back)
                 continue
             return {'_error': 'http %d' % e.code}
@@ -176,7 +197,10 @@ if __name__ == '__main__':
             done.append(r)
             if i % 25 == 0:
                 m = sum(1 for x in done if x.get('matched'))
-                print('  %4d/%d  matched %d (%.0f%%)' % (i, len(works), m, 100.0 * m / i))
+                left = ('' if _remaining[0] is None
+                        else '   budget left today: %d' % _remaining[0])
+                print('  %4d/%d  matched %d (%.0f%%)%s'
+                      % (i, len(works), m, 100.0 * m / i, left))
                 sys.stdout.flush()
 
     json.dump(done, open(os.path.join(HERE, 'oa_level1.json'), 'w'), indent=1)
@@ -186,6 +210,10 @@ if __name__ == '__main__':
         quota = [x for x in err if 'quota' in x['error']]
         if quota:
             print('   ' + sorted(quota, key=lambda x: x['error'])[-1]['error'])
+        elif _remaining[0] is not None and _remaining[0] <= STOP_AT:
+            print('   stopped with %d requests left of today\'s allowance, on'
+                  ' purpose — run again after it resets at midnight UTC'
+                  % _remaining[0])
     m = [x for x in done if x.get('matched')]
     nrefs = sum(len(x['refs']) for x in m)
     print()
