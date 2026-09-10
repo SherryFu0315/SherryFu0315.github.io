@@ -448,8 +448,12 @@ button:focus-visible{ outline:3px solid var(--blue); outline-offset:2px }
 .band{ border-bottom:var(--rule-w) solid var(--rule) }
 .band > *:last-child{ border-bottom:0 }
 .band--students{ background:var(--wash) }
-/* the audience tag sits on its own line above the heading, not beside it */
-.sec-head .eyebrow{ width:100%; margin:0 0 10px }
+/* The audience tag sits on its own line above the heading. It needs a
+   full-width line without being a full-width box, so the line is a wrapper
+   and the box is the tag inside it — flex:0 0 100% on the tag itself drew a
+   700px-wide border around two words. */
+.sec-head .sec-tag{ flex:0 0 100%; margin:0 0 10px }
+.sec-head .sec-tag .eyebrow{ margin:0 }
 
 /* ---------- section scaffolding ------------------------------------------ */
 
@@ -465,7 +469,7 @@ button:focus-visible{ outline:3px solid var(--blue); outline-offset:2px }
 .sec-head .count{
   font-family:"IBM Plex Mono",monospace; font-size:12px;
   letter-spacing:.1em; text-transform:uppercase; color:var(--muted);
-  margin-left:auto;
+  margin-left:auto; min-width:0; text-align:right;
 }
 
 /* Awards sit under the heading, in the reading path, as plain sentences.

@@ -295,6 +295,8 @@ HOME = '''<!DOCTYPE html>
       <h1 class="hello">%(HELLO)s</h1>
       <p class="intro">%(INTRO_1)s</p>
       <p class="intro">%(INTRO_2)s</p>
+      <p class="intro">%(INTRO_3)s</p>
+      <p class="intro">%(INTRO_4)s</p>
     </div>
   </header>
 
@@ -350,6 +352,8 @@ HOME = '''<!DOCTYPE html>
     'HELLO': T.HOME_HELLO,
     'INTRO_1': T.HOME_INTRO_1,
     'INTRO_2': T.HOME_INTRO_2,
+    'INTRO_3': T.HOME_INTRO_3,
+    'INTRO_4': T.HOME_INTRO_4,
     'EMAIL': T.HOME_EMAIL,
     'FONTS': FONTS,
     'NAV': nav('/'),

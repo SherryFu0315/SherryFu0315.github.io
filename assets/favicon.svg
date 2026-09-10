@@ -1,7 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-label="Xinyu Fu">
-  <!-- The four-point star the research map draws every study as. A tab icon is
-       16px of ink, which is no place for a face. -->
-  <rect width="100" height="100" fill="#1E102F"/>
-  <path fill="#DCFF96"
-        d="M50 4 C57 33 67 43 96 50 C67 57 57 67 50 96 C43 67 33 57 4 50 C33 43 43 33 50 4 Z"/>
+  <!-- The four-point star the research map draws every study as. No ground of its
+       own: it sits on whatever the browser's tab bar is, and inverts in dark mode
+       so it does not disappear into it. -->
+  <style>
+    path { fill: #1E102F }
+    @media (prefers-color-scheme: dark) { path { fill: #F1EEF7 } }
+  </style>
+  <path d="M50 3 C57.5 33 67 42.5 97 50 C67 57.5 57.5 67 50 97 C42.5 67 33 57.5 3 50 C33 42.5 42.5 33 50 3 Z"/>
 </svg>

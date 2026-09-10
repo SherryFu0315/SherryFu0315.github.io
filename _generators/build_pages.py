@@ -73,7 +73,7 @@ NAV
 
   <section class="band band--students">
   <div class="sec-head" id="students">
-    <p class="eyebrow eyebrow--boxed">__JOIN_RA_WHO__</p>
+    <div class="sec-tag"><p class="eyebrow eyebrow--boxed">__JOIN_RA_WHO__</p></div>
     <h2>__JOIN_RA_TITLE__</h2>
     <span class="count">__JOIN_RA_SUBTITLE__</span>
   </div>

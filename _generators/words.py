@@ -88,6 +88,13 @@ HOME_INTRO_1 = "I&rsquo;m an Assistant Professor of Computer Information Systems
 # question is the last sentence of it rather than a headline of its own.
 HOME_INTRO_2 = """My research explores <span class="nb">human&ndash;AI</span> collaboration: how different ways of working with AI shape human performance, the organization of work, and the consequences of AI use. At the heart of this work is a question &mdash; what makes <span class="nb">human&ndash;AI</span> collaboration greater than the sum of its parts?"""
 
+# Where it appears: third paragraph of the front page introduction &mdash; how the
+# work gets done, and what it has been recognized for
+HOME_INTRO_3 = """Much of it runs inside real organizations &mdash; an insurer&rsquo;s call floor, an <span class="nb">auto-glass</span> plant, a hotel corridor. Field experiments and lab experiments, computational studies, and econometrics on natural experiments and firm panels. Some of the work outside the journals has been picked up in the press, and the teaching has picked up two awards: the 2025 Unforgettable Educator Award at Robinson, and the 2021 <span class="nb">Doris &amp; Douglas</span> Bernstein Doctoral Student Teaching Award at Pittsburgh."""
+
+# Where it appears: fourth and last paragraph of the front page introduction
+HOME_INTRO_4 = """My PhD is in Information Systems and Technology Management, from the Katz Graduate School of Business at the University of Pittsburgh, where I was advised by Dr. Dennis Galletta and Dr. Narayan Ramasubbu. I spent 2019 as a visiting scholar at Harvard University."""
+
 # Where it appears: under the portrait at the top of the front page
 HOME_EMAIL = "xinyufu [at] gsu.edu"
 
@@ -249,7 +256,7 @@ JOIN_EYEBROW = "Contact"
 JOIN_CTA_HEADLINE = "What are you working on?"
 
 # Where it appears: opening paragraph under the headline on the contact page
-JOIN_LEDE = "I am glad to hear from anyone asking the same questions &mdash; <b>research collaborations</b> with faculty and doctoral students, <b>organizations</b> curious about what AI is doing to work inside their own walls, and <b>students</b> looking for a way into research."
+JOIN_LEDE = "<span class=\"nb\">Human&ndash;AI</span> collaboration is a large question, and I am glad to hear from anyone working on a piece of it &mdash; <b>research collaborations</b> with faculty and doctoral students, <b>organizations</b> curious about what AI is doing to work inside their own walls, and <b>students</b> looking for a way into research."
 
 # Where it appears: second paragraph in the green block at the top of the contact page
 JOIN_CONTACT_NOTE = "Much of my work runs inside real organizations &mdash; sales floors, factory floors, clinics, hotel corridors. If you run one and have wondered what a study there would look like, that is a conversation worth having."
@@ -287,10 +294,10 @@ JOIN_RA_TITLE = "Student research assistants"
 JOIN_RA_SUBTITLE = "Volunteer positions, open year-round"
 
 # Where it appears: opening paragraph of the student research assistant section
-JOIN_RA_LEDE = "I take on <b>student research assistant volunteers</b> year-round, undergraduate and graduate. You do not need prior research experience, and you do not need to have taken my class. You need to be curious and to finish things."
+JOIN_RA_LEDE = "I take on <b>student research assistant volunteers</b> year-round, undergraduate and graduate. No prior research experience, no need to have taken my class. Be curious, and finish things."
 
 # Where it appears: second paragraph of the student research assistant section, about the positions being unpaid
-JOIN_UNPAID_NOTE = "These are unpaid volunteer positions. What they are worth is the part you cannot get from coursework: seeing how a study is actually built, and how data actually behaves."
+JOIN_UNPAID_NOTE = "Unpaid. What they are worth is the part coursework cannot give you: seeing how a study is actually built, and how data actually behaves."
 
 # Where it appears: heading above the numbered "what to send" list
 JOIN_SEND_TITLE = "What to send"
@@ -318,32 +325,32 @@ JOIN_STUDENTS_SUBTITLE = "Doctoral committees and advising"
 JOIN_WHAT_YOU_WOULD_DO_TITLE = "What you would actually do"
 
 # Where it appears: "What you would actually do" column, data item
-JOIN_WHAT_YOU_WOULD_DO_DATA = "Clean, code and merge field data &mdash; call records, interview transcripts, platform scrapes"
+JOIN_WHAT_YOU_WOULD_DO_DATA = "Clean and code field data &mdash; call records, transcripts, scrapes"
 
 # Where it appears: "What you would actually do" column, literature search item
-JOIN_WHAT_YOU_WOULD_DO_LITERATURE = "Run structured literature searches and keep a real annotated bibliography"
+JOIN_WHAT_YOU_WOULD_DO_LITERATURE = "Run literature searches and keep a real annotated bibliography"
 
 # Where it appears: "What you would actually do" column, experiment platform item
-JOIN_WHAT_YOU_WOULD_DO_PLATFORMS = "Build the experiment platforms studies run on (React, Python, Qualtrics, Prolific)"
+JOIN_WHAT_YOU_WOULD_DO_PLATFORMS = "Build the platforms studies run on &mdash; React, Python, Qualtrics, Prolific"
 
 # Where it appears: "What you would actually do" column, analysis item
-JOIN_WHAT_YOU_WOULD_DO_ANALYSIS = "Sit in on analysis, from the first regression to the last robustness check"
+JOIN_WHAT_YOU_WOULD_DO_ANALYSIS = "Sit in on analysis, first regression to last robustness check"
 
 
 # Where it appears: heading of the second of the three columns on the contact page
 JOIN_WHAT_I_ASK_FOR_TITLE = "What I ask for"
 
 # Where it appears: "What I ask for" column, hours item
-JOIN_WHAT_I_ASK_FOR_HOURS = "Roughly 5&ndash;8 hours a week during term, agreed in advance"
+JOIN_WHAT_I_ASK_FOR_HOURS = "5&ndash;8 hours a week in term, agreed in advance"
 
 # Where it appears: "What I ask for" column, length of commitment item
-JOIN_WHAT_I_ASK_FOR_SEMESTER = "One semester minimum. Research is slow; a month teaches you nothing"
+JOIN_WHAT_I_ASK_FOR_SEMESTER = "One semester minimum &mdash; research is slow, and a month teaches you nothing"
 
 # Where it appears: "What I ask for" column, speaking up item
-JOIN_WHAT_I_ASK_FOR_SPEAK_UP = "Tell me early when something is not working. That is not failure, that is the job"
+JOIN_WHAT_I_ASK_FOR_SPEAK_UP = "Say early when something is not working. That is the job, not failure"
 
 # Where it appears: "What I ask for" column, coding background item
-JOIN_WHAT_I_ASK_FOR_CODING = "Any coding background helps &mdash; Python, R, SQL, JavaScript &mdash; but none is required for every project"
+JOIN_WHAT_I_ASK_FOR_CODING = "Any coding helps &mdash; Python, R, SQL &mdash; but no project needs all of it"
 
 # Where it appears: heading of the third of the three columns on the contact page
 JOIN_WHAT_YOU_GET_BACK_TITLE = "What you get back"
@@ -352,13 +359,13 @@ JOIN_WHAT_YOU_GET_BACK_TITLE = "What you get back"
 JOIN_WHAT_YOU_GET_BACK_REFERENCE = "A reference that says something specific, because I will know your work"
 
 # Where it appears: "What you get back" column, co-authorship item
-JOIN_WHAT_YOU_GET_BACK_COAUTHORSHIP = "Co-authorship on conference submissions where the contribution earns it"
+JOIN_WHAT_YOU_GET_BACK_COAUTHORSHIP = "Co-authorship where the contribution earns it"
 
 # Where it appears: "What you get back" column, PhD advice item
-JOIN_WHAT_YOU_GET_BACK_PHD_ADVICE = "An honest read on whether a PhD is right for you, from someone with no stake in the answer"
+JOIN_WHAT_YOU_GET_BACK_PHD_ADVICE = "An honest read on whether a PhD is right for you"
 
 # Where it appears: "What you get back" column, transferable skills item
-JOIN_WHAT_YOU_GET_BACK_SKILLS = "Skills that transfer: cleaning messy data, defending a claim, writing to be understood"
+JOIN_WHAT_YOU_GET_BACK_SKILLS = "Skills that transfer &mdash; messy data, a defended claim, clear writing"
 
 # Where it appears: heading above the questions and answers on the contact page
 JOIN_FAQ_TITLE = "Common questions"
