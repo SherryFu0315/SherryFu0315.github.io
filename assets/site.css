@@ -279,6 +279,7 @@ button:focus-visible{ outline:3px solid var(--blue); outline-offset:2px }
 .news{
   display:grid; grid-template-columns:1fr;
   gap:var(--rule-w); background:var(--rule);
+  border-top:var(--rule-w) solid var(--rule);
   border-bottom:var(--rule-w) solid var(--rule);
 }
 @media(min-width:900px){ .news{ grid-template-columns:1fr 1fr } }
@@ -342,10 +343,15 @@ button:focus-visible{ outline:3px solid var(--blue); outline-offset:2px }
    a link, which is what it is on a desktop too. Keyboard focus reveals it, so
    the line is not reachable by mouse alone. */
 
+/* The grid sits in the same column as every piece of type on the page. Run
+   edge to edge it was the only block flush to the shell, so the heading above
+   it and the news below it both looked inset — the page read as if it narrowed
+   halfway down. Margin rather than padding, so the ink ground that draws the
+   rules between cards stays inside the grid. */
 .cards{
   display:grid; grid-template-columns:1fr;
+  margin:0 var(--pad) var(--pad);
   gap:var(--rule-w); background:var(--rule);
-  border-bottom:var(--rule-w) solid var(--rule);
 }
 @media(min-width:620px){ .cards{ grid-template-columns:repeat(2,1fr) } }
 @media(min-width:1000px){ .cards{ grid-template-columns:repeat(3,1fr) } }

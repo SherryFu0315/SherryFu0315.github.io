@@ -259,27 +259,21 @@ LABEL = {
 STAR_SIZE = {'Forthcoming': 3, 'Published': 3, 'Deployed': 3, 'Under review': 2}
 
 
-# What the front page shows, and in what order. This is an editorial sequence,
-# not a date: the accepted paper opens, the study that shares its question
-# follows, then the one that got built and deployed, then the wider consequences
-# of AI use, then the survey chapter, and the shop floor last. The research page
-# keeps its own order (the `order` field), and everything left out is one click
-# away under "all projects".
-#
-# Every card is named "AI+ something", so a study only belongs here if AI is
-# actually in it. That is why Remote Work is not on this list: it is real work
-# and it is on the research page, but it is about going remote, not about AI,
-# and "AI+ Remote work" would be a claim the paper does not make.
-FEATURED = ['retrieval', 'errors', 'edubot', 'creativity', 'hrm', 'manufacturing']
+# What the front page shows, and in what order — left to right, top to bottom.
+# Every card is named "AI+ a setting", so the six are chosen by the settings the
+# work happens in rather than by date. The research page keeps its own order
+# (the `order` field), and everything left out is one click away under
+# "all projects".
+FEATURED = ['retrieval', 'hrm', 'edubot', 'sales', 'manufacturing', 'service']
 
 # The half of the card's name that changes. "AI+" is fixed in the template.
 CARD = {
     'retrieval':     'Oversight',
-    'errors':        'Judgment',
+    'hrm':           'Organizational behavior',
     'edubot':        'Education',
-    'creativity':    'Creative work',
-    'hrm':           'HR',
+    'sales':         'Sales',
     'manufacturing': 'Manufacturing',
+    'service':       'Service',
 }
 
 # The one line that appears when the pointer rests on a card. Each is condensed
@@ -288,15 +282,16 @@ CARD = {
 CARD_LINE = {
     'retrieval':     'Writing the explanation yourself catches far more of the errors '
                      'than reading the system&rsquo;s.',
-    'errors':        'When the checking happens matters more than what the checking says.',
+    'hrm':           'What changes for the people doing the work when AI enters hiring, '
+                     'evaluation and development.',
     'edubot':        'An AI tutor teaching the curriculum in local Nigerian languages, '
                      'built by students.',
-    'creativity':    'Authenticity works as armour right up until the moment it is '
-                     'contradicted.',
-    'hrm':           'What changes for the people doing the work when AI enters hiring '
-                     'and evaluation.',
+    'sales':         'Handing the cold calls to an AI left agents better leads &mdash; '
+                     'and they closed fewer of them.',
     'manufacturing': 'The workers who grew the most &mdash; more control and more '
                      'responsibility at once &mdash; were the least likely to advance.',
+    'service':       'A robot at the door: guests open it wider and say less. Physical '
+                     'guard drops, informational guard rises.',
 }
 
 # A card is too small for "Journal of Management Information Systems".
