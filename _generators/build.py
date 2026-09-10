@@ -91,8 +91,8 @@ def nav(cur):
     out=['  <nav class="nav">','    <a class="brand" href="/">%s</a>' % T.HOME_NAV_HOME,'    <div class="navlinks">']
     for href,label in items:
         out.append('      <a href="%s"%s>%s</a>' % (href, ' aria-current="page"' if href==cur else '', label))
-    out.append('      <a href="/join/" class="is-cta"%s>%s</a>'
-               % (' aria-current="page"' if cur=='/join/' else '', T.HOME_NAV_CONTACT))
+    out.append('      <a href="/join/"%s>%s</a>'
+               % (' aria-current="page"' if cur=='/join/' else '', T.HOME_NAV_MENTORING))
     out+=['    </div>','  </nav>']
     return '\n'.join(out)
 
@@ -288,7 +288,11 @@ HOME = '''<!DOCTYPE html>
   <header class="hero">
     <div class="hero-me">
       <img class="hero-photo" src="/profile.png" alt="Xinyu Fu" fetchpriority="high">
-      <p class="hero-mail"><a class="mail" data-u="xinyufu" data-d="gsu.edu" href="#">%(EMAIL)s</a></p>
+      <ul class="hero-links">
+        <li><a class="mail" data-u="xinyufu" data-d="gsu.edu" href="#">%(EMAIL)s</a></li>
+        <li><a href="https://scholar.google.com/citations?user=0OM4QfkAAAAJ&amp;hl=en">%(LINK_SCHOLAR)s</a></li>
+        <li><a href="https://www.linkedin.com/in/xinyu-fu-pitt">%(LINK_LINKEDIN)s</a></li>
+      </ul>
     </div>
 
     <div class="hero-say">
@@ -351,6 +355,8 @@ HOME = '''<!DOCTYPE html>
     'INTRO_1': T.HOME_INTRO_1,
     'INTRO_2': T.HOME_INTRO_2,
     'EMAIL': T.HOME_EMAIL,
+    'LINK_SCHOLAR': T.HOME_LINK_SCHOLAR,
+    'LINK_LINKEDIN': T.HOME_LINK_LINKEDIN,
     'FONTS': FONTS,
     'NAV': nav('/'),
     'SR_TITLE': T.HOME_SELECTED_RESEARCH_TITLE,

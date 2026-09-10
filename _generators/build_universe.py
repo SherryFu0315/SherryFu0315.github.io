@@ -140,7 +140,6 @@ PAGE = u'''<!DOCTYPE html>
 .sky-page .navlinks a{ color:var(--dim) }
 .sky-page .navlinks a:hover{ color:#fff; border-color:#6B5A8C }
 .sky-page .navlinks a[aria-current="page"]{ background:#EFEAF6; color:var(--void) }
-.sky-page .navlinks a.is-cta{ background:var(--coral); color:#1E102F; border-color:var(--coral) }
 
 .sky-head{ padding:26px var(--pad) 20px; border-bottom:1px solid #3A2B52;
   display:flex; gap:24px; align-items:flex-end; flex-wrap:wrap }
@@ -314,7 +313,7 @@ PAGE = u'''<!DOCTYPE html>
       <a href="/universe/" aria-current="page">__MAP_NAV_MAP__</a>
       <a href="/publications/">__MAP_NAV_PUBLICATIONS__</a>
       <a href="/teaching/">__MAP_NAV_TEACHING__</a>
-      <a href="/join/" class="is-cta">__MAP_NAV_CONTACT__</a>
+      <a href="/join/">__MAP_NAV_MENTORING__</a>
     </div>
   </nav>
 
@@ -836,7 +835,7 @@ PAGE = (PAGE.replace('__COLS__',   json.dumps(js_cols,   ensure_ascii=False))
             .replace('__MAP_NAV_MAP__', T.MAP_NAV_MAP)
             .replace('__MAP_NAV_PUBLICATIONS__', T.MAP_NAV_PUBLICATIONS)
             .replace('__MAP_NAV_TEACHING__', T.MAP_NAV_TEACHING)
-            .replace('__MAP_NAV_CONTACT__', T.MAP_NAV_CONTACT)
+            .replace('__MAP_NAV_MENTORING__', T.MAP_NAV_MENTORING)
             .replace('__MAP_H1__', T.MAP_H1)
             .replace('__MAP_HEAD_COPY_CITE__', T.MAP_HEAD_COPY_CITE)
             .replace('__MAP_VIEW_TOGGLE_AXES__', T.MAP_VIEW_TOGGLE_AXES)

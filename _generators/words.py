@@ -51,7 +51,7 @@ HOME_NAV_PUBLICATIONS = "Publications"
 HOME_NAV_TEACHING = "Teaching"
 
 # Where it appears: top navigation bar, the highlighted button at the right
-HOME_NAV_CONTACT = "Contact"
+HOME_NAV_MENTORING = "Mentoring"
 
 # Where it appears: footer, the postal address in the first column
 HOME_FOOT_ADDRESS = """Department of Computer Information Systems<br>
@@ -88,8 +88,10 @@ HOME_INTRO_1 = """I&rsquo;m an Assistant Professor of Computer Information Syste
 # Where it appears: second and last paragraph of the front page introduction
 HOME_INTRO_2 = """My PhD is in Information Systems and Technology Management, from the Katz Graduate School of Business at the University of Pittsburgh, where I was advised by Dr. Dennis Galletta and Dr. Narayan Ramasubbu. I spent 2019 as a visiting scholar at Harvard University."""
 
-# Where it appears: under the portrait at the top of the front page
+# Where it appears: the three links under the portrait at the top of the front page
 HOME_EMAIL = "xinyufu [at] gsu.edu"
+HOME_LINK_SCHOLAR = "Google Scholar"
+HOME_LINK_LINKEDIN = "LinkedIn"
 
 
 # Where it appears: heading of the projects section in the middle of the front page
@@ -202,7 +204,7 @@ MAP_NAV_PUBLICATIONS = "Publications"
 MAP_NAV_TEACHING = "Teaching"
 
 # Where it appears: top navigation bar, the highlighted button at the right
-MAP_NAV_CONTACT = "Contact"
+MAP_NAV_MENTORING = "Mentoring"
 
 # Where it appears: the big headline at the top of the map page
 MAP_H1 = "How the work<br>connects"
@@ -240,24 +242,13 @@ MAP_FINDING_COMING_SOON = "A short description of this project is coming."
 # ==========================================================================
 
 # Where it appears: browser tab and search results title for the contact page
-JOIN_PAGE_TITLE = "Contact &mdash; Xinyu Fu"
+JOIN_PAGE_TITLE = "Mentoring &mdash; Xinyu Fu"
 
 # Where it appears: the page title at the top of the contact page, in the serif
-JOIN_CTA_HEADLINE = "What are you working on?"
+JOIN_CTA_HEADLINE = "Students I work with"
 
 # Where it appears: the one paragraph under the title
-JOIN_LEDE = """I look forward to hearing what you are working on, and what you make of <span class="nb">human&ndash;AI</span> collaboration &mdash; a study you are planning, a question inside your own organization, or a way into research."""
-
-# Where it appears: labels and values in the contact details, right of the opening
-JOIN_CONTACT_EMAIL_LABEL = "Email"
-JOIN_CONTACT_OFFICE_LABEL = "Office"
-JOIN_CONTACT_OFFICE = "55 Park Place NE<br>Atlanta, GA 30303"
-JOIN_CONTACT_DEPT_LABEL = "Department"
-JOIN_CONTACT_DEPT = "Computer Information Systems<br>J. Mack Robinson College of Business<br>Georgia State University"
-JOIN_CONTACT_ELSEWHERE_LABEL = "Elsewhere"
-
-# Where it appears: the email button under the contact details
-JOIN_CONTACT_BUTTON = "Email xinyufu [at] gsu.edu"
+JOIN_LEDE = """I sit on doctoral committees at Georgia State and advise undergraduate and master&rsquo;s students, and I take on student research assistant volunteers year-round. What follows is who I am working with, and what volunteering actually involves."""
 
 
 # ==========================================================================
@@ -296,8 +287,7 @@ JOIN_SEND_WHICH_PROJECT = "Two sentences on which project caught your eye, and w
 JOIN_EMAIL_BUTTON = "Email xinyufu [at] gsu.edu"
 
 
-# Where it appears: heading of the advising section, and the two groups in it
-JOIN_STUDENTS_TITLE = "Students I work with"
+# Where it appears: the two group headings in the advising section
 JOIN_STUDENTS_NOW = "Currently"
 JOIN_STUDENTS_PAST = "Previously"
 

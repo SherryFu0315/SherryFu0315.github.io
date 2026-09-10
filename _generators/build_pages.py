@@ -42,7 +42,7 @@ JOIN = '''<!DOCTYPE html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>__JOIN_PAGE_TITLE__</title>
-<meta name="description" content="How to reach Xinyu Fu at Georgia State University — research collaborations, work with organizations, and student research assistant volunteer positions, open year-round.">
+<meta name="description" content="The students Xinyu Fu advises at Georgia State University, and how to volunteer as a student research assistant — open year-round, undergraduate and graduate.">
 FONTS
 </head>
 <body>
@@ -52,23 +52,25 @@ FONTS
 
 NAV
 
-  <header class="page-head">
+  <header class="page-head page-head--solo">
     <div>
       <h1 class="page-title">__JOIN_CTA_HEADLINE__</h1>
       <p class="intro">__JOIN_LEDE__</p>
     </div>
-    <div>
-      <ul class="deets">
-        <li><span class="k">__JOIN_CONTACT_EMAIL_LABEL__</span><span><a class="mail" data-u="xinyufu" data-d="gsu.edu" href="#">xinyufu [at] gsu.edu</a></span></li>
-        <li><span class="k">__JOIN_CONTACT_OFFICE_LABEL__</span><span>__JOIN_CONTACT_OFFICE__</span></li>
-        <li><span class="k">__JOIN_CONTACT_DEPT_LABEL__</span><span>__JOIN_CONTACT_DEPT__</span></li>
-        <li><span class="k">__JOIN_CONTACT_ELSEWHERE_LABEL__</span><span><a href="https://scholar.google.com/citations?user=0OM4QfkAAAAJ&amp;hl=en">__SCHOLAR_LABEL__</a></span></li>
-      </ul>
-      <p class="deets-go"><a class="btn mail" data-u="xinyufu" data-d="gsu.edu" data-s="Hello from your website" href="#">__JOIN_CONTACT_BUTTON__</a></p>
-    </div>
   </header>
 
-  <section class="sec" id="students">
+  <section class="sec mod" id="advising">
+    <h3>__JOIN_STUDENTS_NOW__</h3>
+    <ul class="people">
+PEOPLE_NOW
+    </ul>
+    <h3>__JOIN_STUDENTS_PAST__</h3>
+    <ul class="people">
+PEOPLE_PAST
+    </ul>
+  </section>
+
+  <section class="sec mod mod--tint" id="students">
     <h2>__JOIN_RA_TITLE__</h2>
     <p class="intro">__JOIN_RA_LEDE__</p>
 
@@ -104,17 +106,6 @@ NAV
 
   </section>
 
-  <section class="sec" id="advising">
-    <h2>__JOIN_STUDENTS_TITLE__</h2>
-    <h3>__JOIN_STUDENTS_NOW__</h3>
-    <ul class="people">
-PEOPLE_NOW
-    </ul>
-    <h3>__JOIN_STUDENTS_PAST__</h3>
-    <ul class="people">
-PEOPLE_PAST
-    </ul>
-  </section>
 
 FOOT
 
@@ -125,14 +116,6 @@ FOOT
 JOIN = (JOIN.replace('FONTS', B.FONTS).replace('NAV', B.nav('/join/'))
             .replace('PEOPLE_NOW', people_now).replace('PEOPLE_PAST', people_past).replace('FOOT', B.FOOT)
             .replace('__JOIN_PAGE_TITLE__', T.JOIN_PAGE_TITLE)
-            .replace('__JOIN_CONTACT_EMAIL_LABEL__', T.JOIN_CONTACT_EMAIL_LABEL)
-            .replace('__JOIN_CONTACT_OFFICE_LABEL__', T.JOIN_CONTACT_OFFICE_LABEL)
-            .replace('__JOIN_CONTACT_OFFICE__', T.JOIN_CONTACT_OFFICE)
-            .replace('__JOIN_CONTACT_DEPT_LABEL__', T.JOIN_CONTACT_DEPT_LABEL)
-            .replace('__JOIN_CONTACT_DEPT__', T.JOIN_CONTACT_DEPT)
-            .replace('__JOIN_CONTACT_ELSEWHERE_LABEL__', T.JOIN_CONTACT_ELSEWHERE_LABEL)
-            .replace('__SCHOLAR_LABEL__', T.HOME_FOOT_GOOGLE_SCHOLAR)
-            .replace('__JOIN_CONTACT_BUTTON__', T.JOIN_CONTACT_BUTTON)
             .replace('__JOIN_RA_TITLE__', T.JOIN_RA_TITLE)
             .replace('__JOIN_RA_LEDE__', T.JOIN_RA_LEDE)
             .replace('__JOIN_SEND_TITLE__', T.JOIN_SEND_TITLE)
@@ -142,7 +125,6 @@ JOIN = (JOIN.replace('FONTS', B.FONTS).replace('NAV', B.nav('/join/'))
             .replace('__JOIN_SEND_WRITING_SAMPLE__', T.JOIN_SEND_WRITING_SAMPLE)
             .replace('__JOIN_SEND_WHICH_PROJECT__', T.JOIN_SEND_WHICH_PROJECT)
             .replace('__JOIN_EMAIL_BUTTON__', T.JOIN_EMAIL_BUTTON)
-            .replace('__JOIN_STUDENTS_TITLE__', T.JOIN_STUDENTS_TITLE)
             .replace('__JOIN_STUDENTS_NOW__', T.JOIN_STUDENTS_NOW)
             .replace('__JOIN_STUDENTS_PAST__', T.JOIN_STUDENTS_PAST)
             .replace('__JOIN_WHAT_YOU_WOULD_DO_TITLE__', T.JOIN_WHAT_YOU_WOULD_DO_TITLE)
@@ -183,8 +165,7 @@ NAV
     </div>
   </div>
 
-  <div class="prose">
-
+  <section class="mod mod--tint">
     <h3>__TEACHING_GSU_HEADING__</h3>
 
     <div class="course">
@@ -233,7 +214,9 @@ NAV
         <p>__TEACHING_DBMS_DESC__</p>
       </div>
     </div>
+  </section>
 
+  <section class="mod">
     <h3>__TEACHING_PITT_HEADING__</h3>
 
     <div class="course">
@@ -259,7 +242,9 @@ NAV
         <p>__TEACHING_ADVANCED_R_DESC__</p>
       </div>
     </div>
+  </section>
 
+  <section class="mod mod--tint">
     <h3>__TEACHING_ELSEWHERE_HEADING__</h3>
 
     <div class="course">
@@ -277,13 +262,12 @@ NAV
         <p>__TEACHING_CAREER_CENTER_DESC__</p>
       </div>
     </div>
+  </section>
 
-  </div>
-
-  <div class="prose">
+  <section class="mod">
     <h3>__TEACHING_COACHING_TITLE__</h3>
     <p>__TEACHING_COACHING_TEXT__</p>
-  </div>
+  </section>
 
 FOOT
 
