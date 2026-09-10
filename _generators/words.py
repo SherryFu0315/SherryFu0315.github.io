@@ -121,7 +121,7 @@ HOME_MAP_BUTTON = "Open the map &rarr;"
 HOME_SELECTED_RESEARCH_TITLE = "Selected Research"
 
 # Where it appears: small caption beside the "Selected Research" heading
-HOME_SELECTED_RESEARCH_COUNT = """Six of thirteen &middot; <a href="/research/">all projects</a>"""
+HOME_SELECTED_RESEARCH_COUNT = """__N_FEATURED__ of __N_PROJECTS__ &middot; <a href="/research/">all projects</a>"""
 
 # Where it appears: small boxed label above the headline of the "come work with me" block
 HOME_JOIN_EYEBROW = "Student research assistants"

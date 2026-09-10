@@ -2,7 +2,7 @@
 import hashlib, io, os, sys, json
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import words as T
-from projects import PROJECTS, COLS, ROWS, LABEL, STAR_SIZE
+from projects import PROJECTS, COLS, ROWS, LABEL, STAR_SIZE, FEATURED
 
 # The map card quotes these, and draws a miniature of the real map. Both come
 # from the same file and the same layout the map itself uses, so neither the
@@ -254,7 +254,10 @@ _short = {p['id']: p['short'] for p in PROJECTS}
 tiles = [TILE_TPL % (pid, img, alt, note, label, _short.get(pid, ''))
          for pid, label, img, note, alt in MOSAIC]
 
-featured = [x for x in sorted(PROJECTS, key=lambda y: y['order']) if x.get('photo') and x['finding']][:6]
+_by_id = {x['id']: x for x in PROJECTS}
+featured = [_by_id[i] for i in FEATURED]
+_missing = [p['id'] for p in featured if not (p.get('photo') and p['finding'])]
+assert not _missing, 'featured on the front page but has no photo or finding: %s' % _missing
 home_entries = '\n\n'.join(entry(x, i) for i, x in enumerate(featured))
 
 HOME = '''<!DOCTYPE html>
@@ -262,9 +265,9 @@ HOME = '''<!DOCTYPE html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>%s</title>
+<title>%(PAGE_TITLE)s</title>
 <meta name="description" content="Xinyu Fu is an Assistant Professor of Computer Information Systems at Georgia State University. She studies how different ways of working with AI shape human performance, the organization of work, and the consequences of AI use.">
-%s
+%(FONTS)s
 </head>
 <body>
 
@@ -272,7 +275,7 @@ HOME = '''<!DOCTYPE html>
 
 <div class="shell">
 
-%s
+%(NAV)s
 
   <header class="hero">
     <div class="rail">
@@ -280,84 +283,84 @@ HOME = '''<!DOCTYPE html>
         <img class="rail-photo" src="/profile.png" alt="Xinyu Fu">
         <div>
           <h1>Xinyu Fu</h1>
-          <p class="role">%s</p>
+          <p class="role">%(ROLE)s</p>
           <ul class="rail-meta">
-            <li><a href="https://scholar.google.com/citations?user=0OM4QfkAAAAJ&amp;hl=en">%s</a></li>
-            <li><a class="mail" data-u="xinyufu" data-d="gsu.edu" href="#">%s</a></li>
+            <li><a href="https://scholar.google.com/citations?user=0OM4QfkAAAAJ&amp;hl=en">%(LINK_SCHOLAR)s</a></li>
+            <li><a class="mail" data-u="xinyufu" data-d="gsu.edu" href="#">%(LINK_EMAIL)s</a></li>
           </ul>
         </div>
       </div>
 
-      <p class="thesis">%s</p>
+      <p class="thesis">%(THESIS)s</p>
     </div>
 
-%s
+%(TILES)s
   </header>
+
+  <div class="sec-head">
+    <h2>%(SR_TITLE)s</h2>
+    <span class="count">%(SR_COUNT)s</span>
+  </div>
+
+%(ENTRIES)s
 
   <a class="skylink" href="/universe/">
     <canvas class="skylink-stars" id="skystars" aria-hidden="true"></canvas>
     <span class="skylink-scrim" aria-hidden="true"></span>
     <span class="skylink-in">
-      <span class="eyebrow" style="color:#9A8CB4">%s</span>
-      <span class="skylink-h">%s</span>
-      <span class="skylink-p">%s</span>
-      <span class="skylink-btn">%s</span>
+      <span class="eyebrow" style="color:#9A8CB4">%(MAP_EYEBROW)s</span>
+      <span class="skylink-h">%(MAP_HEADLINE)s</span>
+      <span class="skylink-p">%(MAP_BLURB)s</span>
+      <span class="skylink-btn">%(MAP_BUTTON)s</span>
     </span>
   </a>
 
-  <div class="sec-head">
-    <h2>%s</h2>
-    <span class="count">%s</span>
+  <div class="strip">
+    <div class="strip-cell">
+      <h3>%(RECENT_TITLE)s</h3>
+      <ul>
+        <li><span class="yr">2026</span>%(RECENT_JMIS)s</li>
+        <li><span class="yr">2026</span>%(RECENT_CIST)s</li>
+        <li><span class="yr">2026</span>%(RECENT_ICIS)s</li>
+        <li><span class="yr">2026</span>%(RECENT_CHAPTER)s</li>
+      </ul>
+    </div>
+    <div class="strip-cell">
+      <h3>%(PRESS_TITLE)s</h3>
+      <ul>
+        <li><span class="yr">2026</span>%(PRESS_PATH)s</li>
+        <li><span class="yr">2025</span>%(PRESS_EDUBOT)s</li>
+      </ul>
+    </div>
+    <div class="strip-cell">
+      <h3>%(TEACH_TITLE)s</h3>
+      <ul>
+        <li><span class="yr">F26</span>%(TEACH_F26)s</li>
+        <li><span class="yr">S26</span>%(TEACH_S26)s</li>
+        <li><a href="/teaching/">%(TEACH_ALL)s</a></li>
+      </ul>
+    </div>
   </div>
-
-%s
 
   <section class="cta" id="join">
     <div>
-      <p class="eyebrow eyebrow--boxed">%s</p>
-      <h2>%s</h2>
-      <p class="lede">%s</p>
-      <p style="font-size:15.5px;color:var(--muted);max-width:52ch">%s</p>
+      <p class="eyebrow eyebrow--boxed">%(JOIN_EYEBROW)s</p>
+      <h2>%(JOIN_HEADLINE)s</h2>
+      <p class="lede">%(JOIN_LEDE)s</p>
+      <p style="font-size:15.5px;color:var(--muted);max-width:52ch">%(JOIN_STUDENTS)s</p>
     </div>
     <div>
       <ol class="send-list">
-        <li><span class="n">01</span><span>%s</span></li>
-        <li><span class="n">02</span><span>%s</span></li>
-        <li><span class="n">03</span><span>%s</span></li>
+        <li><span class="n">01</span><span>%(JOIN_CV)s</span></li>
+        <li><span class="n">02</span><span>%(JOIN_SAMPLE)s</span></li>
+        <li><span class="n">03</span><span>%(JOIN_PROJECT)s</span></li>
       </ol>
-      <p style="margin:22px 0 0"><a class="btn mail" data-u="xinyufu" data-d="gsu.edu" data-s="Research assistant volunteer" href="#">%s</a></p>
-      <p style="margin:14px 0 0;font-size:13.5px"><a href="/join/">%s</a></p>
+      <p style="margin:22px 0 0"><a class="btn mail" data-u="xinyufu" data-d="gsu.edu" data-s="Research assistant volunteer" href="#">%(JOIN_BUTTON)s</a></p>
+      <p style="margin:14px 0 0;font-size:13.5px"><a href="/join/">%(JOIN_MORE)s</a></p>
     </div>
   </section>
 
-  <div class="strip">
-    <div class="strip-cell">
-      <h3>%s</h3>
-      <ul>
-        <li><span class="yr">2026</span>%s</li>
-        <li><span class="yr">2026</span>%s</li>
-        <li><span class="yr">2026</span>%s</li>
-        <li><span class="yr">2026</span>%s</li>
-      </ul>
-    </div>
-    <div class="strip-cell">
-      <h3>%s</h3>
-      <ul>
-        <li><span class="yr">2026</span>%s</li>
-        <li><span class="yr">2025</span>%s</li>
-      </ul>
-    </div>
-    <div class="strip-cell">
-      <h3>%s</h3>
-      <ul>
-        <li><span class="yr">F26</span>%s</li>
-        <li><span class="yr">S26</span>%s</li>
-        <li><a href="/teaching/">%s</a></li>
-      </ul>
-    </div>
-  </div>
-
-%s
+%(FOOT)s
 
 </div>
 
@@ -464,45 +467,63 @@ HOME = '''<!DOCTYPE html>
 </script>
 </body>
 </html>
-''' % (T.HOME_PAGE_TITLE,
-       FONTS,
-       nav('/'),
-       T.HOME_ROLE,
-       T.HOME_LINK_SCHOLAR,
-       T.HOME_LINK_EMAIL,
-       T.HOME_THESIS,
+''' % {
+    # Named rather than positional: the front page has 37 substitutions and
+    # its blocks get reordered. Positionally, moving one block silently
+    # shifts every value after it, and the page still builds.
+    'PAGE_TITLE': T.HOME_PAGE_TITLE,
+    'FONTS': FONTS,
+    'NAV': nav('/'),
+    'ROLE': T.HOME_ROLE,
+    'LINK_SCHOLAR': T.HOME_LINK_SCHOLAR,
+    'LINK_EMAIL': T.HOME_LINK_EMAIL,
+    'THESIS': T.HOME_THESIS,
+    'TILES': '\n\n'.join(tiles),
+    'MAP_EYEBROW': T.HOME_MAP_EYEBROW,
+    'MAP_HEADLINE': T.HOME_MAP_HEADLINE,
+    'MAP_BLURB': T.HOME_MAP_BLURB,
+    'MAP_BUTTON': T.HOME_MAP_BUTTON,
+    'SR_TITLE': T.HOME_SELECTED_RESEARCH_TITLE,
+    'SR_COUNT': T.HOME_SELECTED_RESEARCH_COUNT,
+    'ENTRIES': home_entries,
+    'JOIN_EYEBROW': T.HOME_JOIN_EYEBROW,
+    'JOIN_HEADLINE': T.HOME_JOIN_HEADLINE,
+    'JOIN_LEDE': T.HOME_JOIN_LEDE,
+    'JOIN_STUDENTS': T.HOME_JOIN_RECENT_STUDENTS,
+    'JOIN_CV': T.HOME_JOIN_SEND_CV,
+    'JOIN_SAMPLE': T.HOME_JOIN_SEND_WRITING_SAMPLE,
+    'JOIN_PROJECT': T.HOME_JOIN_SEND_WHICH_PROJECT,
+    'JOIN_BUTTON': T.HOME_JOIN_EMAIL_BUTTON,
+    'JOIN_MORE': T.HOME_JOIN_MORE_LINK,
+    'RECENT_TITLE': T.HOME_RECENT_TITLE,
+    'RECENT_JMIS': T.HOME_RECENT_JMIS,
+    'RECENT_CIST': T.HOME_RECENT_CIST,
+    'RECENT_ICIS': T.HOME_RECENT_ICIS,
+    'RECENT_CHAPTER': T.HOME_RECENT_CHAPTER,
+    'PRESS_TITLE': T.HOME_PRESS_TITLE,
+    'PRESS_PATH': T.HOME_PRESS_PATH,
+    'PRESS_EDUBOT': T.HOME_PRESS_EDUBOT,
+    'TEACH_TITLE': T.HOME_TEACHING_TITLE,
+    'TEACH_F26': T.HOME_TEACHING_F26,
+    'TEACH_S26': T.HOME_TEACHING_S26,
+    'TEACH_ALL': T.HOME_TEACHING_ALL_COURSES,
+    'FOOT': FOOT,
+}
+_NUM = {1:'One',2:'Two',3:'Three',4:'Four',5:'Five',6:'Six',7:'Seven',8:'Eight',
+        9:'Nine',10:'Ten',11:'Eleven',12:'Twelve',13:'Thirteen',14:'Fourteen',
+        15:'Fifteen',16:'Sixteen',17:'Seventeen',18:'Eighteen'}
 
-       '\n\n'.join(tiles),
-       T.HOME_MAP_EYEBROW,
-       T.HOME_MAP_HEADLINE,
-       T.HOME_MAP_BLURB,
-       T.HOME_MAP_BUTTON,
-       T.HOME_SELECTED_RESEARCH_TITLE,
-       T.HOME_SELECTED_RESEARCH_COUNT,
-       home_entries,
-       T.HOME_JOIN_EYEBROW,
-       T.HOME_JOIN_HEADLINE,
-       T.HOME_JOIN_LEDE,
-       T.HOME_JOIN_RECENT_STUDENTS,
-       T.HOME_JOIN_SEND_CV,
-       T.HOME_JOIN_SEND_WRITING_SAMPLE,
-       T.HOME_JOIN_SEND_WHICH_PROJECT,
-       T.HOME_JOIN_EMAIL_BUTTON,
-       T.HOME_JOIN_MORE_LINK,
-       T.HOME_RECENT_TITLE,
-       T.HOME_RECENT_JMIS,
-       T.HOME_RECENT_CIST,
-       T.HOME_RECENT_ICIS,
-       T.HOME_RECENT_CHAPTER,
-       T.HOME_PRESS_TITLE,
-       T.HOME_PRESS_PATH,
-       T.HOME_PRESS_EDUBOT,
-       T.HOME_TEACHING_TITLE,
-       T.HOME_TEACHING_F26,
-       T.HOME_TEACHING_S26,
-       T.HOME_TEACHING_ALL_COURSES,
-       FOOT)
-HOME = (HOME.replace('__N_CITED__', str(N_CITED)).replace('__N_STUDIES__', str(N_STUDIES))
+
+def _num(n):
+    """Spelled out, because these counts sit in sentences. Derived rather than
+    written down: the front page said 'Six of thirteen' for some time after
+    there were fifteen."""
+    return _NUM.get(n, str(n))
+
+
+HOME = (HOME.replace('__N_FEATURED__', _num(len(featured)))
+            .replace('__N_PROJECTS__', _num(len(PROJECTS)).lower())
+            .replace('__N_CITED__', str(N_CITED)).replace('__N_STUDIES__', str(N_STUDIES))
             .replace('__MINI__', json.dumps(MINI, separators=(',', ':'))))
 io.open(os.path.join(R, 'index.html'), 'w', encoding='utf-8').write(HOME)
 print('index.html', len(HOME), 'bytes,', len(featured), 'featured')

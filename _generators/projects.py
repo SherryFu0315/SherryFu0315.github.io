@@ -257,3 +257,12 @@ LABEL = {
 
 # How large a star is drawn, by how far along the work is.
 STAR_SIZE = {'Forthcoming': 3, 'Published': 3, 'Deployed': 3, 'Under review': 2}
+
+
+# What the front page shows, and in what order. This is an editorial sequence,
+# not a date: the accepted paper opens, the study that shares its question
+# follows, then the one that got built and deployed, then the wider consequences
+# of AI use, then the broader survey, and the adjacent work last. The research
+# page keeps its own order (the `order` field), and everything left out is one
+# click away under "all projects".
+FEATURED = ['retrieval', 'errors', 'edubot', 'creativity', 'hrm', 'remote']
