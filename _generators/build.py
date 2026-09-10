@@ -270,22 +270,19 @@ HOME = '''<!DOCTYPE html>
 %s
 
   <header class="hero">
-    <div class="rail">
-      <div class="rail-top">
-        <img class="rail-photo" src="/profile.png" alt="Xinyu Fu">
-        <div>
-          <h1>Xinyu<br>Fu</h1>
-          <p class="role">%s</p>
-        </div>
+    <div class="rail rail--id">
+      <img class="rail-photo" src="/profile.png" alt="Xinyu Fu">
+      <div>
+        <h1>Xinyu<br>Fu</h1>
+        <p class="role">%s</p>
       </div>
+    </div>
 
+    <div class="rail rail--ask">
       <p class="thesis">%s</p>
-
     </div>
 
-    <div class="mosaic">
 %s
-    </div>
   </header>
 
   <a class="skylink" href="/universe/">

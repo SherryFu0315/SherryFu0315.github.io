@@ -159,25 +159,63 @@ p:last-child{ margin-bottom:0 }
 a:focus-visible,
 button:focus-visible{ outline:3px solid var(--blue); outline-offset:2px }
 
-/* ---------- hero: info rail (left) + mosaic (right) ----------------------- */
+/* ---------- hero: one grid, both columns in it ----------------------------
+   The photographs on the right were already a ruled grid; the left column was a
+   flex stack that happened to sit beside it, so the two halves shared an edge
+   but not a structure. Now they are cells of the same grid — identity and
+   question on the left, four settings on the right — and the horizontal rule
+   between the two rows runs unbroken across all three columns, because it is
+   the same rule. Nothing has to be aligned by hand.
+
+   The rules are drawn by the grid's own gap over an ink ground, so they are
+   correct at three columns, two, or one, with no per-cell borders to re-fight
+   every time the column count changes. */
 
 .hero{
   display:grid;
   grid-template-columns:1fr;
+  gap:var(--rule-w); background:var(--rule);
   border-bottom:var(--rule-w) solid var(--rule);
 }
 @media(min-width:900px){
-  .hero{ grid-template-columns:minmax(360px,45%) 1fr }
-  .rail{ border-right:var(--rule-w) solid var(--rule) }
+  .hero{
+    grid-template-columns:minmax(360px,45%) 1fr 1fr;
+    /* Equal rows, not content-sized ones. Sized by their content the identity
+       cell came out shorter than the question cell, and because the tiles take
+       their height from the same rows, the four photographs came out two
+       different sizes. Both rows are now the height of the taller one. */
+    grid-template-rows:1fr 1fr;
+  }
+  /* The two left cells are placed; the four tiles then flow into the remaining
+     cells in source order — row 1 right, row 1 far right, row 2 right, row 2
+     far right — which is the reading order they already had. */
+  .rail--id { grid-area:1 / 1 }
+  .rail--ask{ grid-area:2 / 1 }
+}
+@media(min-width:561px) and (max-width:899px){
+  .hero{ grid-template-columns:1fr 1fr }
+  .rail{ grid-column:1 / -1 }
 }
 
-.rail{ padding:var(--pad); display:flex; flex-direction:column; gap:22px }
-.rail-top{ display:flex; align-items:flex-start; gap:18px; flex-wrap:wrap }
-/* let the name column narrow instead of dropping below the portrait */
-.rail-top > div{ min-width:0; flex:1 1 200px }
+.rail{
+  background:var(--paper);
+  /* Two cells now carry the vertical padding one used to, so it comes down or
+     the hero grows by the difference and pushes the map card off the fold. */
+  padding:clamp(22px,2.4vw,30px) var(--pad);
+  display:flex; flex-direction:column; gap:20px;
+}
+/* the identity cell is a photograph beside a name, not another stack */
+.rail--id{
+  flex-direction:row; align-items:flex-start; gap:18px; flex-wrap:wrap;
+  justify-content:flex-start; align-content:center;
+}
+.rail--id > div{ min-width:0; flex:1 1 200px }
+.rail--ask{ justify-content:center }
+
+/* Square, like everything else here. The circle was the only rounded object on
+   the site, and beside a grid of hard-edged photographs it read as a sticker. */
 .rail-photo{
-  width:clamp(116px,12vw,168px); aspect-ratio:1; height:auto; flex:none;
-  border-radius:50%;
+  width:clamp(112px,11.5vw,162px); aspect-ratio:1; height:auto; flex:none;
   object-fit:cover;
 }
 .rail h1{
@@ -193,12 +231,14 @@ button:focus-visible{ outline:3px solid var(--blue); outline-offset:2px }
 
 /* The opening statement is the most important sentence on the site, so it is
    set as a statement: display face, tight, at size, with the elaboration
-   stepped down beneath it. The highlighter it used to wear made it look
-   annotated rather than said. */
+   stepped down beneath it. */
 .thesis{ margin:0; padding:0; border:0 }
+/* Lime is the deck's colour but it is nearly the value of the paper — at 5px on
+   #F6F4F9 the mark was there and could not be seen. Coral carries at this size,
+   and it is the one brand colour with no other job on the page. */
 .thesis::before{
-  content:""; display:block; width:46px; height:5px;
-  background:var(--lime); margin:0 0 22px;
+  content:""; display:block; width:52px; height:6px;
+  background:var(--coral); margin:0 0 22px;
 }
 .thesis b{
   display:block; font-family:"Archivo",Arial,sans-serif;
@@ -217,18 +257,6 @@ button:focus-visible{ outline:3px solid var(--blue); outline-offset:2px }
   display:block; font-size:17.5px; line-height:1.6;
   color:var(--muted); max-width:38ch;
 }
-
-.rail-links{ display:flex; flex-direction:column; gap:0; margin:0; padding:0; list-style:none }
-.rail-links li{ border-top:1px solid var(--faint) }
-.rail-links li:last-child{ border-bottom:1px solid var(--faint) }
-.rail-links a{
-  display:flex; justify-content:space-between; gap:14px; align-items:baseline;
-  padding:10px 0; text-decoration:none; font-size:12px; letter-spacing:.06em;
-  text-transform:uppercase; color:var(--muted);
-}
-.rail-links a:hover{ color:var(--blue) }
-.mail{ white-space:nowrap }
-.rail-links a span{ color:var(--ink); text-transform:none; letter-spacing:0; font-size:14px }
 
 /* ---------- doorway into the research map -------------------------------- */
 
@@ -491,26 +519,16 @@ a.btn:hover, .btn:hover{ background:var(--coral); color:var(--ink) }
 
 /* ---------- mosaic ------------------------------------------------------- */
 
-.mosaic{ display:grid; grid-template-columns:repeat(2,1fr); gap:0 }
-@media(max-width:560px){ .mosaic{ grid-template-columns:1fr } }
-/* Beside the rail, the two rows split whatever height the rail turns out to be,
-   and the photographs crop to fit. Left on a fixed 4:3 the mosaic is only as
-   tall as its own tiles, and any difference between that and the rail shows up
-   as a band of paper between the rows. Below 900 the hero is one column, there
-   is no rail to match, and the tiles go back to setting their own height. */
-@media(min-width:900px){
-  .mosaic{ grid-template-rows:1fr 1fr }
-  .mosaic .tile{ aspect-ratio:auto }
-}
-
 .tile{
   position:relative; aspect-ratio:4/3; overflow:hidden; display:block;
-  border-bottom:var(--rule-w) solid var(--rule);
-  border-right:var(--rule-w) solid var(--rule);
   text-decoration:none; background:var(--ink);
 }
-.tile:nth-child(2n){ border-right:0 }
-@media(max-width:560px){ .tile{ border-right:0 } }
+/* Beside the rail a tile takes its height from the grid row rather than from a
+   fixed 4:3, so the two columns always end on the same line and the photographs
+   crop to fit. The floor stops a short question from squashing the lower row. */
+@media(min-width:900px){
+  .tile{ aspect-ratio:auto; min-height:clamp(170px,15vw,250px) }
+}
 .tile img{ position:absolute; inset:0; width:100%; height:100%; object-fit:cover }
 .tile::after{
   content:""; position:absolute; inset:0;
