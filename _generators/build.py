@@ -83,7 +83,7 @@ FONTS = ('<link rel="preconnect" href="https://fonts.googleapis.com">\n'
  '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=IBM+Plex+Mono:wght@400;500&display=swap">\n'
  '<link rel="stylesheet" href="%s">\n'
  '<script src="%s" defer></script>\n'
- '<link rel="icon" href="/profile.png">') % (CSS_URL, JS_URL)
+ '<link rel="icon" href="/assets/favicon.svg">') % (CSS_URL, JS_URL)
 
 def nav(cur):
     items=[('/research/',T.HOME_NAV_RESEARCH),('/universe/',T.HOME_NAV_MAP),
@@ -240,9 +240,10 @@ assert not _missing, 'featured on the front page but has no photo or finding: %s
 CARD_TPL = """  <a class="card" href="/research/#%(id)s">
     <img src="/assets/img/%(img)s" alt="%(alt)s"%(lazy)s>
     <span class="card-wash" aria-hidden="true"></span>
+    <span class="card-chip">%(chip)s</span>
+    <span class="card-arrow" aria-hidden="true">&#8599;</span>
     <span class="card-in">
-      <span class="card-chip">%(chip)s</span>
-      <span class="card-t">%(title)s</span>
+      <span class="card-t"><span class="plus">AI+</span><span class="dom">%(title)s</span></span>
       <span class="card-x">
         <span class="card-f">%(line)s</span>
         <span class="card-go">%(go)s</span>
@@ -302,6 +303,15 @@ HOME = '''<!DOCTYPE html>
     </div>
   </header>
 
+  <div class="sec-head">
+    <h2>%(SR_TITLE)s</h2>
+    <span class="count">%(SR_COUNT)s</span>
+  </div>
+
+  <div class="cards">
+%(ENTRIES)s
+  </div>
+
   <section class="news">
     <div class="news-cell news-cell--list">
       <p class="eyebrow">%(NEWS_TITLE)s</p>
@@ -317,10 +327,11 @@ HOME = '''<!DOCTYPE html>
     <div class="news-side">
       <div class="news-cell">
         <p class="eyebrow">%(PRESS_TITLE)s</p>
-        <p class="news-outlet">%(PRESS_OUTLET)s</p>
-        <h3 class="news-h">%(PRESS_HEADLINE)s</h3>
-        <p class="news-note">%(PRESS_NOTE)s</p>
-        <p class="news-also">%(PRESS_ALSO)s</p>
+        <ul class="newslist">
+          <li><span class="yr">%(PRESS_1_OUTLET)s</span><span>%(PRESS_1)s</span></li>
+          <li><span class="yr">%(PRESS_2_OUTLET)s</span><span>%(PRESS_2)s</span></li>
+          <li><span class="yr">%(PRESS_3_OUTLET)s</span><span>%(PRESS_3)s</span></li>
+        </ul>
       </div>
       <div class="news-cell news-cell--teaching">
         <p class="eyebrow">%(COURSE_TITLE)s</p>
@@ -331,15 +342,6 @@ HOME = '''<!DOCTYPE html>
       </div>
     </div>
   </section>
-
-  <div class="sec-head">
-    <h2>%(SR_TITLE)s</h2>
-    <span class="count">%(SR_COUNT)s</span>
-  </div>
-
-  <div class="cards">
-%(ENTRIES)s
-  </div>
 
 %(FOOT)s
 
@@ -368,10 +370,12 @@ HOME = '''<!DOCTYPE html>
     'NEWS_4': T.HOME_NEWS_4,
     'NEWS_MORE': T.HOME_NEWS_MORE,
     'PRESS_TITLE': T.HOME_PRESS_TITLE,
-    'PRESS_OUTLET': T.HOME_PRESS_OUTLET,
-    'PRESS_HEADLINE': T.HOME_PRESS_HEADLINE,
-    'PRESS_NOTE': T.HOME_PRESS_NOTE,
-    'PRESS_ALSO': T.HOME_PRESS_ALSO,
+    'PRESS_1_OUTLET': T.HOME_PRESS_1_OUTLET,
+    'PRESS_1': T.HOME_PRESS_1,
+    'PRESS_2_OUTLET': T.HOME_PRESS_2_OUTLET,
+    'PRESS_2': T.HOME_PRESS_2,
+    'PRESS_3_OUTLET': T.HOME_PRESS_3_OUTLET,
+    'PRESS_3': T.HOME_PRESS_3,
     'COURSE_TITLE': T.HOME_COURSE_TITLE,
     'COURSE_NAME': T.HOME_COURSE_NAME,
     'COURSE_TERM': T.HOME_COURSE_TERM,

@@ -262,40 +262,41 @@ STAR_SIZE = {'Forthcoming': 3, 'Published': 3, 'Deployed': 3, 'Under review': 2}
 # What the front page shows, and in what order. This is an editorial sequence,
 # not a date: the accepted paper opens, the study that shares its question
 # follows, then the one that got built and deployed, then the wider consequences
-# of AI use, then the broader survey, and the adjacent work last. The research
-# page keeps its own order (the `order` field), and everything left out is one
-# click away under "all projects".
-FEATURED = ['retrieval', 'errors', 'edubot', 'creativity', 'hrm', 'remote']
-
-
-# What each study is called on the front page's cards, and the one line that
-# appears when you hover one. Short on purpose: the full title, the authors, the
-# method and the numbers are all on the project page, one click away, and the
-# card exists to make you want to go there.
+# of AI use, then the survey chapter, and the shop floor last. The research page
+# keeps its own order (the `order` field), and everything left out is one click
+# away under "all projects".
 #
-# Every line below is condensed from that study's own description further up
-# this file — nothing here says anything the longer version does not.
+# Every card is named "AI+ something", so a study only belongs here if AI is
+# actually in it. That is why Remote Work is not on this list: it is real work
+# and it is on the research page, but it is about going remote, not about AI,
+# and "AI+ Remote work" would be a claim the paper does not make.
+FEATURED = ['retrieval', 'errors', 'edubot', 'creativity', 'hrm', 'manufacturing']
+
+# The half of the card's name that changes. "AI+" is fixed in the template.
 CARD = {
-    'retrieval':  'Effective LLM oversight',
-    'errors':     'Detecting AI errors',
-    'edubot':     'EduBot Naija',
-    'creativity': 'AI authenticity',
-    'hrm':        'AI in human resources',
-    'remote':     'Remote work',
+    'retrieval':     'Oversight',
+    'errors':        'Judgment',
+    'edubot':        'Education',
+    'creativity':    'Creative work',
+    'hrm':           'HR',
+    'manufacturing': 'Manufacturing',
 }
 
+# The one line that appears when the pointer rests on a card. Each is condensed
+# from that study's own description further up this file — nothing here says
+# anything the longer version does not.
 CARD_LINE = {
-    'retrieval':  'Writing the explanation yourself catches far more of the errors '
-                  'than reading the system&rsquo;s.',
-    'errors':     'When the checking happens matters more than what the checking says.',
-    'edubot':     'An AI tutor teaching the curriculum in local Nigerian languages, '
-                  'built by students.',
-    'creativity': 'Authenticity works as armour right up until the moment it is '
-                  'contradicted.',
-    'hrm':        'What changes for the people doing the work when AI enters hiring '
-                  'and evaluation.',
-    'remote':     'Early and persistent adopters grew faster &mdash; but more remote '
-                  'was not better.',
+    'retrieval':     'Writing the explanation yourself catches far more of the errors '
+                     'than reading the system&rsquo;s.',
+    'errors':        'When the checking happens matters more than what the checking says.',
+    'edubot':        'An AI tutor teaching the curriculum in local Nigerian languages, '
+                     'built by students.',
+    'creativity':    'Authenticity works as armour right up until the moment it is '
+                     'contradicted.',
+    'hrm':           'What changes for the people doing the work when AI enters hiring '
+                     'and evaluation.',
+    'manufacturing': 'The workers who grew the most &mdash; more control and more '
+                     'responsibility at once &mdash; were the least likely to advance.',
 }
 
 # A card is too small for "Journal of Management Information Systems".

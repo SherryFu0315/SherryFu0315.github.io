@@ -134,8 +134,10 @@ HOME_NEWS_2 = """<i>The Privacy Asymmetry of Service Robots</i> accepted at CIST
 HOME_NEWS_3 = """<i>Pathways to AI-Ready Entry-Level Talent</i> accepted at ICIS &mdash; the curriculum paper from <a href="https://path.mit.edu/">PATH</a>"""
 HOME_NEWS_4 = """<a href="https://onlinelibrary.wiley.com/doi/10.1002/9781394266401.ch14">AI in Human Resource Management</a> published in <i>Advances in Human&ndash;AI Collaboration</i> (Wiley)"""
 
-# Where it appears: link under the four news items, to the publications page
-HOME_NEWS_MORE = "More news &rarr;"
+# Where it appears: link under the four news items. It goes to the publications
+# page, so it says so — "more news" pointing at a publication list is a small
+# broken promise.
+HOME_NEWS_MORE = "All publications &rarr;"
 
 # Where it appears: the words revealed when the pointer rests on a research
 # card on the front page
@@ -145,31 +147,29 @@ HOME_CARD_GO = "View project &rarr;"
 # Where it appears: heading of the press cell, top right of the news band
 HOME_PRESS_TITLE = "In the press"
 
-# Where it appears: the outlet that ran the story
-HOME_PRESS_OUTLET = "ITEdgeNews"
+# Where it appears: the three press items, each an outlet and a headline
+HOME_PRESS_1_OUTLET = "ITEdgeNews"
+HOME_PRESS_1 = """<a href="https://www.itedgenews.africa/edubot-naija-launches-ai-powered-multilingual-learning-platform-across-nigeria/">EduBot Naija launches AI-powered multilingual learning platform across Nigeria</a> &middot; also in <a href="https://techafricanews.com/2025/08/14/a-computer-training-launches-edubot-nigeria-to-deliver-ai-powered-education-in-indigenous-languages/">TechAfrica News</a> and <a href="https://www.youtube.com/watch?v=3TnI3x-V_eQ">on video</a>"""
 
-# Where it appears: the story's own headline
-HOME_PRESS_HEADLINE = """<a href="https://www.itedgenews.africa/edubot-naija-launches-ai-powered-multilingual-learning-platform-across-nigeria/">EduBot Naija launches AI-powered multilingual learning platform across Nigeria</a>"""
+HOME_PRESS_2_OUTLET = "GSU News"
+HOME_PRESS_2 = """<a href="https://news.gsu.edu/2026/04/03/mit-raise-and-georgia-state-university-announce-path">MIT RAISE and Georgia State announce PATH</a> &mdash; the initiative the Agentic AI course is taught under"""
 
-# Where it appears: one line of background under the story headline
-HOME_PRESS_NOTE = "A student&ndash;faculty project building curriculum-aligned lessons in local Nigerian languages."
-
-# Where it appears: the last line of the press cell, where the other coverage goes
-HOME_PRESS_ALSO = """Also in <a href="https://techafricanews.com/2025/08/14/a-computer-training-launches-edubot-nigeria-to-deliver-ai-powered-education-in-indigenous-languages/">TechAfrica News</a>, and <a href="https://www.youtube.com/watch?v=3TnI3x-V_eQ">on video</a>."""
+HOME_PRESS_3_OUTLET = "On video"
+HOME_PRESS_3 = """<a href="https://www.youtube.com/watch?v=LnyWCPhFzzA&amp;list=PL8lQ0qMEI-E8-64gGMvrHBSqbGQkAsXCD&amp;index=1">Talks from the PATH programme</a>"""
 
 
 # Where it appears: heading of the teaching cell, bottom right of the news band
-HOME_COURSE_TITLE = "Teaching highlights"
+HOME_COURSE_TITLE = "Teaching"
 
-# Where it appears: the course name and term, in the teaching cell
+# Where it appears: the course name and the terms it has run, in the teaching cell
 HOME_COURSE_NAME = "Agentic AI"
-HOME_COURSE_TERM = "Fall 2026"
+HOME_COURSE_TERM = "Fall 2026 &middot; Spring 2026"
 
 # Where it appears: one line on what the course is for
 HOME_COURSE_AIM = "Build. Break. Iterate. The whole agent lifecycle from day one, ending in a capstone that takes a real problem to a working prototype."
 
 # Where it appears: the line under that, on the programme the course belongs to
-HOME_COURSE_PATH = """Taught as part of <a href="https://path.mit.edu/">PATH</a>, the MIT RAISE and Georgia State initiative."""
+HOME_COURSE_PATH = """Taught as part of <a href="https://path.mit.edu/">PATH</a>, the MIT RAISE and Georgia State initiative. Machine learning and data programming alongside it, since 2023."""
 
 # Where it appears: the two links at the foot of the teaching cell
 HOME_COURSE_LINK = "Course site &rarr;"

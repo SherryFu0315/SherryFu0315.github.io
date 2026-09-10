@@ -132,7 +132,7 @@ PAGE = u'''<!DOCTYPE html>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <link rel="stylesheet" href="__CSS_URL__">
 <script src="__JS_URL__" defer></script>
-<link rel="icon" href="/profile.png">
+<link rel="icon" href="/assets/favicon.svg">
 <style>
 .sky-page{ --void:#120A1F; --dim:#9A8CB4; background:var(--void); color:#EFEAF6 }
 .sky-page .nav{ border-bottom-color:#3A2B52 }
