@@ -243,13 +243,10 @@ MAP_FINDING_COMING_SOON = "A short description of this project is coming."
 JOIN_PAGE_TITLE = "Contact &mdash; Xinyu Fu"
 
 # Where it appears: the page title at the top of the contact page, in the serif
-JOIN_CTA_HEADLINE = "Get in touch"
+JOIN_CTA_HEADLINE = "What are you working on?"
 
-# Where it appears: the opening paragraph under that title
-JOIN_LEDE = """<span class="nb">Human&ndash;AI</span> collaboration is a large question, and I am glad to hear from anyone working on a piece of it &mdash; faculty and doctoral students thinking about a collaboration, organizations curious about what AI is doing to work inside their own walls, and students looking for a way into research."""
-
-# Where it appears: the second paragraph, ending on the invitation
-JOIN_CONTACT_NOTE = """Much of my work runs inside real organizations &mdash; sales floors, factory floors, clinics, hotel corridors. If you run one and have wondered what a study there would look like, that is a conversation worth having. So: what are you working on?"""
+# Where it appears: the one paragraph under the title
+JOIN_LEDE = """I look forward to hearing what you are working on, and what you make of <span class="nb">human&ndash;AI</span> collaboration &mdash; a study you are planning, a question inside your own organization, or a way into research."""
 
 # Where it appears: labels and values in the contact details, right of the opening
 JOIN_CONTACT_EMAIL_LABEL = "Email"
@@ -272,10 +269,8 @@ JOIN_CONTACT_BUTTON = "Email xinyufu [at] gsu.edu"
 JOIN_RA_TITLE = "Student research assistants"
 
 # Where it appears: the paragraph under that heading
-JOIN_RA_LEDE = """I take on student research assistant volunteers year-round, undergraduate and graduate. No prior research experience is needed, and you do not need to have taken my class."""
+JOIN_RA_LEDE = """I take on student research assistant volunteers year-round, undergraduate and graduate. No prior research experience is needed, and you do not need to have taken my class. The positions are unpaid; where a contribution warrants it, they can lead to co-authorship on a submission, or to a reference that speaks to specifics."""
 
-# Where it appears: the second paragraph, on what the positions are and are not
-JOIN_UNPAID_NOTE = """These are unpaid volunteer positions of roughly five to eight hours a week, for a semester or more. What they offer is the part coursework cannot: seeing how a study is actually built, and how data behaves when it is real. Where a contribution warrants it, that can extend to co-authorship on a submission, or to a reference that speaks to specifics."""
 
 # Where it appears: heading of the first of the three columns
 JOIN_WHAT_YOU_WOULD_DO_TITLE = "What the work is"
@@ -299,24 +294,6 @@ JOIN_SEND_WHICH_PROJECT = "Two sentences on which project caught your eye, and w
 
 # Where it appears: the email button under the three columns
 JOIN_EMAIL_BUTTON = "Email xinyufu [at] gsu.edu"
-
-# Where it appears: heading above the questions, which open when clicked
-JOIN_FAQ_TITLE = "Common questions"
-
-JOIN_FAQ_NOT_CIS_Q = "I am not a CIS major. Should I still write?"
-JOIN_FAQ_NOT_CIS_A = "Yes. My studies run on sales calls, factory floors, hotel corridors, crowdfunding pages and online communities. Psychology, economics, management, statistics, communication, computer science &mdash; all of it is useful. Say in your email what you bring."
-
-JOIN_FAQ_NO_ACADEMIC_WRITING_Q = "I have never written anything academic. What do I send?"
-JOIN_FAQ_NO_ACADEMIC_WRITING_A = "A course project report. A term paper. A technical write-up from an internship. A well-argued blog post. I am reading for whether you can hold a claim and support it, not for a literature review."
-
-JOIN_FAQ_NOT_AT_GSU_Q = "I am not at Georgia State."
-JOIN_FAQ_NOT_AT_GSU_A = "Still write. Some projects work remotely. Say where you are and what your term dates look like."
-
-JOIN_FAQ_PAID_OR_THESIS_Q = "Can this turn into a paid position or a thesis?"
-JOIN_FAQ_PAID_OR_THESIS_A = "Sometimes. Funded slots come and go with grants, and undergraduate projects have grown out of assistant work before. Start with the volunteer route and we will see what it becomes."
-
-JOIN_FAQ_NO_REPLY_Q = "I emailed and did not hear back."
-JOIN_FAQ_NO_REPLY_A = "Please do follow up once more &mdash; a second message is always welcome."
 
 
 # Where it appears: heading of the advising section, and the two groups in it

@@ -56,7 +56,6 @@ NAV
     <div>
       <h1 class="page-title">__JOIN_CTA_HEADLINE__</h1>
       <p class="intro">__JOIN_LEDE__</p>
-      <p class="intro">__JOIN_CONTACT_NOTE__</p>
     </div>
     <div>
       <ul class="deets">
@@ -72,7 +71,6 @@ NAV
   <section class="sec" id="students">
     <h2>__JOIN_RA_TITLE__</h2>
     <p class="intro">__JOIN_RA_LEDE__</p>
-    <p class="intro">__JOIN_UNPAID_NOTE__</p>
 
     <div class="cols">
       <div>
@@ -104,14 +102,6 @@ NAV
       </div>
     </div>
 
-    <h3 class="faq-h">__JOIN_FAQ_TITLE__</h3>
-    <div class="faq">
-      <details><summary>__JOIN_FAQ_NOT_CIS_Q__</summary><p>__JOIN_FAQ_NOT_CIS_A__</p></details>
-      <details><summary>__JOIN_FAQ_NO_ACADEMIC_WRITING_Q__</summary><p>__JOIN_FAQ_NO_ACADEMIC_WRITING_A__</p></details>
-      <details><summary>__JOIN_FAQ_NOT_AT_GSU_Q__</summary><p>__JOIN_FAQ_NOT_AT_GSU_A__</p></details>
-      <details><summary>__JOIN_FAQ_PAID_OR_THESIS_Q__</summary><p>__JOIN_FAQ_PAID_OR_THESIS_A__</p></details>
-      <details><summary>__JOIN_FAQ_NO_REPLY_Q__</summary><p>__JOIN_FAQ_NO_REPLY_A__</p></details>
-    </div>
   </section>
 
   <section class="sec" id="advising">
@@ -135,7 +125,6 @@ FOOT
 JOIN = (JOIN.replace('FONTS', B.FONTS).replace('NAV', B.nav('/join/'))
             .replace('PEOPLE_NOW', people_now).replace('PEOPLE_PAST', people_past).replace('FOOT', B.FOOT)
             .replace('__JOIN_PAGE_TITLE__', T.JOIN_PAGE_TITLE)
-            .replace('__JOIN_CONTACT_NOTE__', T.JOIN_CONTACT_NOTE)
             .replace('__JOIN_CONTACT_EMAIL_LABEL__', T.JOIN_CONTACT_EMAIL_LABEL)
             .replace('__JOIN_CONTACT_OFFICE_LABEL__', T.JOIN_CONTACT_OFFICE_LABEL)
             .replace('__JOIN_CONTACT_OFFICE__', T.JOIN_CONTACT_OFFICE)
@@ -149,7 +138,6 @@ JOIN = (JOIN.replace('FONTS', B.FONTS).replace('NAV', B.nav('/join/'))
             .replace('__JOIN_SEND_TITLE__', T.JOIN_SEND_TITLE)
             .replace('__JOIN_CTA_HEADLINE__', T.JOIN_CTA_HEADLINE)
             .replace('__JOIN_LEDE__', T.JOIN_LEDE)
-            .replace('__JOIN_UNPAID_NOTE__', T.JOIN_UNPAID_NOTE)
             .replace('__JOIN_SEND_CV__', T.JOIN_SEND_CV)
             .replace('__JOIN_SEND_WRITING_SAMPLE__', T.JOIN_SEND_WRITING_SAMPLE)
             .replace('__JOIN_SEND_WHICH_PROJECT__', T.JOIN_SEND_WHICH_PROJECT)
@@ -166,18 +154,7 @@ JOIN = (JOIN.replace('FONTS', B.FONTS).replace('NAV', B.nav('/join/'))
             .replace('__JOIN_WHAT_I_ASK_FOR_HOURS__', T.JOIN_WHAT_I_ASK_FOR_HOURS)
             .replace('__JOIN_WHAT_I_ASK_FOR_SEMESTER__', T.JOIN_WHAT_I_ASK_FOR_SEMESTER)
             .replace('__JOIN_WHAT_I_ASK_FOR_SPEAK_UP__', T.JOIN_WHAT_I_ASK_FOR_SPEAK_UP)
-            .replace('__JOIN_WHAT_I_ASK_FOR_CODING__', T.JOIN_WHAT_I_ASK_FOR_CODING)
-            .replace('__JOIN_FAQ_TITLE__', T.JOIN_FAQ_TITLE)
-            .replace('__JOIN_FAQ_NOT_CIS_Q__', T.JOIN_FAQ_NOT_CIS_Q)
-            .replace('__JOIN_FAQ_NOT_CIS_A__', T.JOIN_FAQ_NOT_CIS_A)
-            .replace('__JOIN_FAQ_NO_ACADEMIC_WRITING_Q__', T.JOIN_FAQ_NO_ACADEMIC_WRITING_Q)
-            .replace('__JOIN_FAQ_NO_ACADEMIC_WRITING_A__', T.JOIN_FAQ_NO_ACADEMIC_WRITING_A)
-            .replace('__JOIN_FAQ_NOT_AT_GSU_Q__', T.JOIN_FAQ_NOT_AT_GSU_Q)
-            .replace('__JOIN_FAQ_NOT_AT_GSU_A__', T.JOIN_FAQ_NOT_AT_GSU_A)
-            .replace('__JOIN_FAQ_PAID_OR_THESIS_Q__', T.JOIN_FAQ_PAID_OR_THESIS_Q)
-            .replace('__JOIN_FAQ_PAID_OR_THESIS_A__', T.JOIN_FAQ_PAID_OR_THESIS_A)
-            .replace('__JOIN_FAQ_NO_REPLY_Q__', T.JOIN_FAQ_NO_REPLY_Q)
-            .replace('__JOIN_FAQ_NO_REPLY_A__', T.JOIN_FAQ_NO_REPLY_A))
+            .replace('__JOIN_WHAT_I_ASK_FOR_CODING__', T.JOIN_WHAT_I_ASK_FOR_CODING))
 io.open(os.path.join(R, 'join/index.html'), 'w', encoding='utf-8').write(JOIN)
 print('join/index.html', len(JOIN), 'bytes,', len(PEOPLE), 'people')
 
