@@ -86,7 +86,7 @@ HOME_HELLO = "Hi, I&rsquo;m Xinyu Fu."
 HOME_INTRO_1 = """I&rsquo;m an Assistant Professor of Computer Information Systems at the J. Mack Robinson College of Business, Georgia State University. I am fascinated by what makes <span class="nb">human&ndash;AI</span> collaboration greater than the sum of its parts. Specifically, my research explores how different <span class="nb">human&ndash;AI</span> configurations shape human performance, the organization of work, and the consequences of AI use."""
 
 # Where it appears: second and last paragraph of the front page introduction
-HOME_INTRO_2 = """My PhD is in Information Systems and Technology Management, from the Katz Graduate School of Business at the University of Pittsburgh, where I was advised by Dr. Dennis Galletta and Dr. Narayan Ramasubbu. I spent 2019 as a visiting scholar at Harvard University."""
+HOME_INTRO_2 = """My PhD is in Information Systems and Technology Management, from the Katz Graduate School of Business at the University of Pittsburgh, where I was advised by Dr. Dennis Galletta and Dr. Narayan Ramasubbu. I spent the summer of 2019 as a visiting scholar at Harvard University."""
 
 # Where it appears: the three links under the portrait at the top of the front page
 HOME_EMAIL = "xinyufu [at] gsu.edu"
