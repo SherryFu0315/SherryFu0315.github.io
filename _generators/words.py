@@ -120,31 +120,29 @@ HOME_SELECTED_RESEARCH_COUNT = """__N_FEATURED__ of __N_PROJECTS__ &middot; <a h
 
 # ==========================================================================
 #  THE NEWS BAND ON THE FRONT PAGE
-#  One milestone, one story, and this term's course. Everything else is a
-#  click away on the publications page, which is where it all lives anyway.
+#  Latest news down the left, the press and the current course stacked on
+#  the right.
 # ==========================================================================
 
-# Where it appears: small label above the milestone, top left of the news band
-HOME_RECENT_TITLE = "Recent"
+# Where it appears: heading of the news column, left of the news band
+HOME_NEWS_TITLE = "Latest news"
 
-# Where it appears: the milestone itself, in large type
-HOME_RECENT_HEADLINE = """<a href="https://arxiv.org/abs/2609.01976">Knowing Is Not Enough</a>"""
+# Where it appears: the four items of that column, newest first. The short text
+# before each one is the year it happened.
+HOME_NEWS_1 = """<a href="https://arxiv.org/abs/2609.01976"><i>Knowing Is Not Enough</i></a> accepted at the Journal of Management Information Systems"""
+HOME_NEWS_2 = """<i>The Privacy Asymmetry of Service Robots</i> accepted at CIST, with doctoral candidate <a href="/join/#students">Anqi Zhang</a>"""
+HOME_NEWS_3 = """<i>Pathways to AI-Ready Entry-Level Talent</i> accepted at ICIS &mdash; the curriculum paper from <a href="https://path.mit.edu/">PATH</a>"""
+HOME_NEWS_4 = """<a href="https://onlinelibrary.wiley.com/doi/10.1002/9781394266401.ch14">AI in Human Resource Management</a> published in <i>Advances in Human&ndash;AI Collaboration</i> (Wiley)"""
 
-# Where it appears: the line under the milestone, naming the journal
-HOME_RECENT_VENUE = "Accepted &middot; Journal of Management Information Systems"
-
-# Where it appears: one line saying what the paper found
-HOME_RECENT_NOTE = "Reading a system&rsquo;s own account of why it erred is not enough. People made to write that explanation themselves caught meaningfully more of its errors."
-
-# Where it appears: link at the foot of the milestone, to the publications page
-HOME_RECENT_MORE = "More news &rarr;"
+# Where it appears: link under the four news items, to the publications page
+HOME_NEWS_MORE = "More news &rarr;"
 
 # Where it appears: the words revealed when the pointer rests on a research
 # card on the front page
 HOME_CARD_GO = "View project &rarr;"
 
 
-# Where it appears: small label above the press story, bottom left of the news band
+# Where it appears: heading of the press cell, top right of the news band
 HOME_PRESS_TITLE = "In the press"
 
 # Where it appears: the outlet that ran the story
@@ -154,29 +152,28 @@ HOME_PRESS_OUTLET = "ITEdgeNews"
 HOME_PRESS_HEADLINE = """<a href="https://www.itedgenews.africa/edubot-naija-launches-ai-powered-multilingual-learning-platform-across-nigeria/">EduBot Naija launches AI-powered multilingual learning platform across Nigeria</a>"""
 
 # Where it appears: one line of background under the story headline
-HOME_PRESS_NOTE = "A student&ndash;faculty project building curriculum-aligned lessons in local Nigerian languages, for communities the English-only internet was never going to reach."
+HOME_PRESS_NOTE = "A student&ndash;faculty project building curriculum-aligned lessons in local Nigerian languages."
 
 # Where it appears: the last line of the press cell, where the other coverage goes
 HOME_PRESS_ALSO = """Also in <a href="https://techafricanews.com/2025/08/14/a-computer-training-launches-edubot-nigeria-to-deliver-ai-powered-education-in-indigenous-languages/">TechAfrica News</a>, and <a href="https://www.youtube.com/watch?v=3TnI3x-V_eQ">on video</a>."""
 
 
-# Where it appears: small label at the top of the green course panel
-HOME_COURSE_TITLE = "This semester"
+# Where it appears: heading of the teaching cell, bottom right of the news band
+HOME_COURSE_TITLE = "Teaching highlights"
 
-# Where it appears: the course name, the largest words in the green panel
+# Where it appears: the course name and term, in the teaching cell
 HOME_COURSE_NAME = "Agentic AI"
-
-# Where it appears: the term, under the course name
-HOME_COURSE_TERM = "Fall 2026 &middot; Georgia State"
+HOME_COURSE_TERM = "Fall 2026"
 
 # Where it appears: one line on what the course is for
-HOME_COURSE_AIM = "Build. Break. Iterate. The whole agent lifecycle practiced from day one, ending in a capstone that takes a real problem to a working prototype."
+HOME_COURSE_AIM = "Build. Break. Iterate. The whole agent lifecycle from day one, ending in a capstone that takes a real problem to a working prototype."
 
 # Where it appears: the line under that, on the programme the course belongs to
-HOME_COURSE_PATH = """Taught as part of <a href="https://path.mit.edu/">PATH</a> &mdash; the MIT RAISE and Georgia State initiative <a href="https://news.gsu.edu/2026/04/03/mit-raise-and-georgia-state-university-announce-path">announced last April</a>."""
+HOME_COURSE_PATH = """Taught as part of <a href="https://path.mit.edu/">PATH</a>, the MIT RAISE and Georgia State initiative."""
 
-# Where it appears: the link at the foot of the green course panel
+# Where it appears: the two links at the foot of the teaching cell
 HOME_COURSE_LINK = "Course site &rarr;"
+HOME_COURSE_ALL = "All courses &rarr;"
 
 # ---- The research page (/research/) ----
 

@@ -285,43 +285,36 @@ HOME = '''<!DOCTYPE html>
 %(NAV)s
 
   <header class="hero">
-    <div class="rail">
-      <div class="rail-id">
-        <img class="rail-photo" src="/profile.png" alt="Xinyu Fu">
-        <div>
-          <h1>Xinyu Fu</h1>
-          <p class="role">%(ROLE)s</p>
-          <ul class="rail-meta">
-            <li><a href="https://scholar.google.com/citations?user=0OM4QfkAAAAJ&amp;hl=en">%(LINK_SCHOLAR)s</a></li>
-            <li><a class="mail" data-u="xinyufu" data-d="gsu.edu" href="#">%(LINK_EMAIL)s</a></li>
-          </ul>
-        </div>
+    <div class="rail rail--who">
+      <img class="rail-photo" src="/profile.png" alt="Xinyu Fu" fetchpriority="high">
+      <div>
+        <h1>Xinyu Fu</h1>
+        <p class="role">%(ROLE)s</p>
+        <ul class="rail-meta">
+          <li><a href="https://scholar.google.com/citations?user=0OM4QfkAAAAJ&amp;hl=en">%(LINK_SCHOLAR)s</a></li>
+          <li><a class="mail" data-u="xinyufu" data-d="gsu.edu" href="#">%(LINK_EMAIL)s</a></li>
+        </ul>
       </div>
-
-      <p class="thesis">%(THESIS)s</p>
     </div>
 
-  <a class="skylink" href="/universe/">
-    <canvas class="skylink-stars" id="skystars" aria-hidden="true"></canvas>
-    <span class="skylink-scrim" aria-hidden="true"></span>
-    <span class="skylink-in">
-      <span class="eyebrow" style="color:#9A8CB4">%(MAP_EYEBROW)s</span>
-      <span class="skylink-h">%(MAP_HEADLINE)s</span>
-      <span class="skylink-p">%(MAP_BLURB)s</span>
-      <span class="skylink-btn">%(MAP_BUTTON)s</span>
-    </span>
-  </a>
+    <div class="rail rail--ask">
+      <p class="thesis">%(THESIS)s</p>
+    </div>
   </header>
 
   <section class="news">
-    <div class="news-main">
-      <div class="news-cell">
-        <p class="eyebrow">%(RECENT_TITLE)s</p>
-        <h3 class="news-h">%(RECENT_HEADLINE)s</h3>
-        <p class="news-venue">%(RECENT_VENUE)s</p>
-        <p class="news-note">%(RECENT_NOTE)s</p>
-        <p class="news-more"><a href="/publications/">%(RECENT_MORE)s</a></p>
-      </div>
+    <div class="news-cell news-cell--list">
+      <p class="eyebrow">%(NEWS_TITLE)s</p>
+      <ul class="newslist">
+        <li><span class="yr">2026</span><span>%(NEWS_1)s</span></li>
+        <li><span class="yr">2026</span><span>%(NEWS_2)s</span></li>
+        <li><span class="yr">2026</span><span>%(NEWS_3)s</span></li>
+        <li><span class="yr">2026</span><span>%(NEWS_4)s</span></li>
+      </ul>
+      <p class="news-more"><a href="/publications/">%(NEWS_MORE)s</a></p>
+    </div>
+
+    <div class="news-side">
       <div class="news-cell">
         <p class="eyebrow">%(PRESS_TITLE)s</p>
         <p class="news-outlet">%(PRESS_OUTLET)s</p>
@@ -329,15 +322,13 @@ HOME = '''<!DOCTYPE html>
         <p class="news-note">%(PRESS_NOTE)s</p>
         <p class="news-also">%(PRESS_ALSO)s</p>
       </div>
-    </div>
-
-    <div class="poster">
-      <p class="eyebrow">%(COURSE_TITLE)s</p>
-      <p class="poster-name">%(COURSE_NAME)s</p>
-      <p class="poster-term">%(COURSE_TERM)s</p>
-      <p class="poster-aim">%(COURSE_AIM)s</p>
-      <p class="poster-path">%(COURSE_PATH)s</p>
-      <p class="poster-go"><a href="https://sherryfu0315.github.io/cis4394-agentic-ai/index.html">%(COURSE_LINK)s</a></p>
+      <div class="news-cell news-cell--teaching">
+        <p class="eyebrow">%(COURSE_TITLE)s</p>
+        <p class="course-name">%(COURSE_NAME)s<span class="course-term">%(COURSE_TERM)s</span></p>
+        <p class="news-note">%(COURSE_AIM)s</p>
+        <p class="news-also">%(COURSE_PATH)s</p>
+        <p class="news-more"><a href="https://sherryfu0315.github.io/cis4394-agentic-ai/index.html">%(COURSE_LINK)s</a> &nbsp;<a href="/teaching/">%(COURSE_ALL)s</a></p>
+      </div>
     </div>
   </section>
 
@@ -354,113 +345,6 @@ HOME = '''<!DOCTYPE html>
 
 </div>
 
-<script>
-(function(){
-  var cv = document.getElementById('skystars');
-  if (!cv) return;
-  /* Not a decorative starfield: this is the real map, zoomed to its core. The
-     same studies at the positions the citation layout gives them, the works
-     they cite in the same colours, and the lines where two studies share a
-     reference. It is deliberately cropped &mdash; what runs off the edge is the
-     rest of the map, which is the thing the card is inviting you into. */
-  var MINI = __MINI__;
-  var SPARK = new Path2D('M50 2 C54 31 69 46 98 50 C69 54 54 69 50 98 '
-                       + 'C46 69 31 54 2 50 C31 46 46 31 50 2 Z');
-
-  function paint(){
-    var r = cv.getBoundingClientRect();
-    if (r.width < 2 || r.height < 2) return;
-    var dpr = Math.min(window.devicePixelRatio || 1, 2);
-    cv.width = Math.round(r.width*dpr); cv.height = Math.round(r.height*dpr);
-    var g = cv.getContext('2d'); g.setTransform(dpr,0,0,dpr,0,0);
-    g.clearRect(0,0,r.width,r.height);
-
-    /* faint dust, so the frame does not go empty where the literature thins */
-    var seed=4242; function rnd(){ seed=(seed*1103515245+12345)&0x7fffffff; return seed/0x7fffffff; }
-    for (var i=0;i<190;i++){
-      g.globalAlpha=0.07+rnd()*0.22; g.fillStyle='#CFC2E8';
-      g.beginPath(); g.arc(rnd()*r.width, rnd()*r.height, rnd()*0.9+0.3, 0, Math.PI*2); g.fill();
-    }
-
-    /* Zoom to the studies rather than fitting the whole map in. Fitted whole it
-       read as a stamp in the corner; at roughly the scale the map itself opens
-       at, the constellation is legible and the labels can be read. On a wide
-       card the text keeps the left, so the core is pushed right of centre. */
-    /* The words are along the foot of the panel now, so the constellation is
-       centred across it and lifted clear of them rather than pushed to one
-       side. */
-    var b = MINI.b, pad = 78;
-    var s = r.width*0.74 / ((b[2]-b[0]) + pad*2);
-    var ox = r.width*0.50 - (b[0]+b[2])/2 * s;
-    var oy = r.height*0.32 - b[4] * s;
-    function X(u){ return ox + u*s; }
-    function Y(v){ return oy + v*s; }
-
-    MINI.l.forEach(function(l){
-      g.strokeStyle='#C9B6FF';
-      g.globalAlpha=Math.min(0.10+l[4]*0.05, 0.38);
-      g.lineWidth=Math.min(0.5+l[4]*0.28, 1.9);
-      g.beginPath(); g.moveTo(X(l[0]),Y(l[1])); g.lineTo(X(l[2]),Y(l[3])); g.stroke();
-    });
-    MINI.w.forEach(function(w){
-      var shared = w[3] > 1;
-      g.globalAlpha = shared ? 0.92 : 0.44;
-      g.fillStyle = w[2];
-      g.beginPath(); g.arc(X(w[0]), Y(w[1]), shared ? 2.1 : 1.2, 0, Math.PI*2); g.fill();
-    });
-    /* The glyphs are drawn in screen pixels, so at a smaller frame they have to
-       come down with the scale or thirteen stars a hundred pixels apart are
-       drawn twenty pixels across and merge into one smear. */
-    var glyph = Math.max(0.55, Math.min(1.15, s / 1.6));
-    MINI.s.forEach(function(st){
-      var x=X(st[0]), y=Y(st[1]);
-      if (x < -60 || x > r.width+60 || y < -60 || y > r.height+60) return;
-      var R = (8 + st[4]*3.2) * glyph;
-      var grd=g.createRadialGradient(x,y,0,x,y,R*2.6);
-      grd.addColorStop(0,st[2]); grd.addColorStop(1,'rgba(0,0,0,0)');
-      g.globalAlpha=0.4; g.fillStyle=grd;
-      g.beginPath(); g.arc(x,y,R*2.6,0,Math.PI*2); g.fill();
-      g.globalAlpha=1; g.fillStyle=st[2];
-      g.save(); g.translate(x-R, y-R); g.scale(R/50, R/50); g.fill(SPARK); g.restore();
-    });
-
-    /* Labels, kept off the words and off each other. The text column is
-       measured rather than guessed at, so this holds at every width. A label
-       that cannot be placed is dropped rather than nudged: the star still
-       shows, and the whole map is one click away. */
-    var txt = cv.parentNode.querySelector('.skylink-in');
-    var tr = txt && txt.getBoundingClientRect();
-    var ex = tr && {l:tr.left-r.left-14, t:tr.top-r.top-12,
-                    rt:tr.right-r.left+14, b:tr.bottom-r.top+12};
-    g.font='500 12px "IBM Plex Mono", ui-monospace, monospace';
-    g.textBaseline='top';
-    var taken=[];
-    MINI.s.forEach(function(st){
-      var x=X(st[0]), y=Y(st[1]);
-      if (x < 8 || x > r.width-14) return;
-      var R = (8 + st[4]*3.2) * glyph;
-      var bw = g.measureText(st[3]).width + 14, bh = 20;
-      var bx = Math.min(Math.max(x-bw/2, 8), r.width-bw-8), by = y + R + 7;
-      if (by < 8 || by+bh > r.height-8) return;
-      if (ex && bx < ex.rt && bx+bw > ex.l && by < ex.b && by+bh > ex.t) return;
-      for (var k=0;k<taken.length;k++){
-        var t=taken[k];
-        if (bx < t[0]+t[2]+7 && bx+bw+7 > t[0] && by < t[1]+t[3]+5 && by+bh+5 > t[1]) return;
-      }
-      taken.push([bx,by,bw,bh]);
-      g.globalAlpha=0.76; g.fillStyle='#120A1F';
-      g.fillRect(bx, by, bw, bh);
-      g.globalAlpha=1; g.fillStyle='#E9E1F6';
-      g.fillText(st[3], bx+7, by+4);
-    });
-    g.globalAlpha=1;
-  }
-  paint();
-  // the labels are set in a web font; measured before it lands they come out wrong
-  if (document.fonts && document.fonts.ready) document.fonts.ready.then(paint);
-  var t; window.addEventListener('resize', function(){ clearTimeout(t); t=setTimeout(paint,160); });
-})();
-</script>
 </body>
 </html>
 ''' % {
@@ -474,18 +358,15 @@ HOME = '''<!DOCTYPE html>
     'LINK_SCHOLAR': T.HOME_LINK_SCHOLAR,
     'LINK_EMAIL': T.HOME_LINK_EMAIL,
     'THESIS': T.HOME_THESIS,
-    'MAP_EYEBROW': T.HOME_MAP_EYEBROW,
-    'MAP_HEADLINE': T.HOME_MAP_HEADLINE,
-    'MAP_BLURB': T.HOME_MAP_BLURB,
-    'MAP_BUTTON': T.HOME_MAP_BUTTON,
     'SR_TITLE': T.HOME_SELECTED_RESEARCH_TITLE,
     'SR_COUNT': T.HOME_SELECTED_RESEARCH_COUNT,
     'ENTRIES': home_cards,
-    'RECENT_TITLE': T.HOME_RECENT_TITLE,
-    'RECENT_HEADLINE': T.HOME_RECENT_HEADLINE,
-    'RECENT_VENUE': T.HOME_RECENT_VENUE,
-    'RECENT_NOTE': T.HOME_RECENT_NOTE,
-    'RECENT_MORE': T.HOME_RECENT_MORE,
+    'NEWS_TITLE': T.HOME_NEWS_TITLE,
+    'NEWS_1': T.HOME_NEWS_1,
+    'NEWS_2': T.HOME_NEWS_2,
+    'NEWS_3': T.HOME_NEWS_3,
+    'NEWS_4': T.HOME_NEWS_4,
+    'NEWS_MORE': T.HOME_NEWS_MORE,
     'PRESS_TITLE': T.HOME_PRESS_TITLE,
     'PRESS_OUTLET': T.HOME_PRESS_OUTLET,
     'PRESS_HEADLINE': T.HOME_PRESS_HEADLINE,
@@ -497,6 +378,7 @@ HOME = '''<!DOCTYPE html>
     'COURSE_AIM': T.HOME_COURSE_AIM,
     'COURSE_PATH': T.HOME_COURSE_PATH,
     'COURSE_LINK': T.HOME_COURSE_LINK,
+    'COURSE_ALL': T.HOME_COURSE_ALL,
     'FOOT': FOOT,
 }
 _NUM = {1:'One',2:'Two',3:'Three',4:'Four',5:'Five',6:'Six',7:'Seven',8:'Eight',
@@ -512,9 +394,7 @@ def _num(n):
 
 
 HOME = (HOME.replace('__N_FEATURED__', _num(len(featured)))
-            .replace('__N_PROJECTS__', _num(len(PROJECTS)).lower())
-            .replace('__N_CITED__', str(N_CITED)).replace('__N_STUDIES__', str(N_STUDIES))
-            .replace('__MINI__', json.dumps(MINI, separators=(',', ':'))))
+            .replace('__N_PROJECTS__', _num(len(PROJECTS)).lower()))
 io.open(os.path.join(R, 'index.html'), 'w', encoding='utf-8').write(HOME)
 print('index.html', len(HOME), 'bytes,', len(featured), 'featured')
 
