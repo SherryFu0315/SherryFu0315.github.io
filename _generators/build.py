@@ -80,7 +80,7 @@ CSS_URL, JS_URL = asset('assets/site.css'), asset('assets/site.js')
 
 FONTS = ('<link rel="preconnect" href="https://fonts.googleapis.com">\n'
  '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n'
- '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=IBM+Plex+Mono:wght@400;500&family=Playfair+Display:ital,wght@1,600;1,700&display=swap">\n'
+ '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=IBM+Plex+Mono:wght@400;500&family=Playfair+Display:ital,wght@0,600;1,600;1,700&display=swap">\n'
  '<link rel="stylesheet" href="%s">\n'
  '<script src="%s" defer></script>\n'
  '<link rel="icon" href="/assets/favicon.svg">') % (CSS_URL, JS_URL)

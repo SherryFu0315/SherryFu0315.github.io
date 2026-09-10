@@ -7,24 +7,24 @@ import build as B   # reuse FONTS, nav(), FOOT so every page stays identical
 R = B.R
 
 PEOPLE = [
- dict(name='Anqi Zhang', url='https://anqizhang1.github.io/',
+ dict(name='Anqi Zhang', url='https://anqizhang1.github.io/', now=True,
       role='Doctoral candidate, Computer Information Systems',
-      note='Committee co-chair, with Prof. Likoebe M. Maruping. Service automation, privacy and human&ndash;robot interaction.'),
- dict(name='Xinyuan Wei', url='https://xinyuan-wei-xw.github.io/',
-      role='Doctoral student, Center for Digital Innovation (CDIN)',
-      note='Committee member. Robinson College of Business.'),
- dict(name='Shaohui Wang', url='https://drusagi.github.io/',
+      note='Committee co-chair, with Prof. Likoebe M. Maruping'),
+ dict(name='Xinyuan Wei', url='https://xinyuan-wei-xw.github.io/', now=True,
+      role='Doctoral student, Center for Digital Innovation',
+      note='Committee member'),
+ dict(name='Shaohui Wang', url='https://drusagi.github.io/', now=True,
       role='Doctoral candidate, Computer Information Systems',
-      note='Committee member.'),
- dict(name='Yingxin Zhou', url='https://ualr.edu/business/people/yingxin-zhou/',
-      role='Assistant Professor of Business Information Systems, University of Arkansas at Little Rock',
-      note='Committee member. Graduated from Georgia State.'),
- dict(name='Kartikeya Negi', url='https://www.linkedin.com/in/kartik-negi/',
-      role='Assistant Professor, Texas State University',
-      note='Committee member. Graduated from Georgia State.'),
- dict(name='Theresa Le', url='https://aisel.aisnet.org/treos_amcis2025/194/',
+      note='Committee member'),
+ dict(name='Theresa Le', url='https://aisel.aisnet.org/treos_amcis2025/194/', now=True,
       role='Master&rsquo;s student, Georgia State University',
-      note='Advised as an undergraduate on the AMCIS 2025 TREO talk <em>Talk to Me: A Preliminary Review on the Evolution and Impact of Emotional AI</em>, with Kaitlyn Yu Mai.'),
+      note='Advised as an undergraduate on an AMCIS 2025 TREO talk'),
+ dict(name='Yingxin Zhou', url='https://ualr.edu/business/people/yingxin-zhou/', now=False,
+      role='Assistant Professor of Business Information Systems, University of Arkansas at Little Rock',
+      note='Committee member'),
+ dict(name='Kartikeya Negi', url='https://www.linkedin.com/in/kartik-negi/', now=False,
+      role='Assistant Professor, Texas State University',
+      note='Committee member'),
 ]
 
 def person(p):
@@ -33,7 +33,8 @@ def person(p):
             '        <span class="p-role">%s</span>\n'
             '        <span class="p-note">%s</span>\n      </li>' % (nm, p['role'], p['note']))
 
-people_html = '\n'.join(person(p) for p in PEOPLE)
+people_now  = '\n'.join(person(x) for x in PEOPLE if x['now'])
+people_past = '\n'.join(person(x) for x in PEOPLE if not x['now'])
 
 JOIN = '''<!DOCTYPE html>
 <html lang="en">
@@ -47,116 +48,83 @@ FONTS
 <body>
 
 <div class="topbar"></div>
-<div class="shell">
+<div class="shell page-quiet">
 
 NAV
 
-  <section class="cta">
+  <header class="page-head">
     <div>
-      <p class="eyebrow eyebrow--boxed">__JOIN_EYEBROW__</p>
-      <h2>__JOIN_CTA_HEADLINE__</h2>
-      <p class="lede">__JOIN_LEDE__</p>
-      <p style="font-size:16px;max-width:52ch">__JOIN_CONTACT_NOTE__</p>
+      <h1 class="page-title">__JOIN_CTA_HEADLINE__</h1>
+      <p class="intro">__JOIN_LEDE__</p>
+      <p class="intro">__JOIN_CONTACT_NOTE__</p>
     </div>
     <div>
-      <ul class="send-list">
-        <li><span class="n">__JOIN_CONTACT_EMAIL_LABEL__</span><span><a class="mail" data-u="xinyufu" data-d="gsu.edu" href="#">xinyufu [at] gsu.edu</a></span></li>
-        <li><span class="n">__JOIN_CONTACT_OFFICE_LABEL__</span><span>__JOIN_CONTACT_OFFICE__</span></li>
-        <li><span class="n">__JOIN_CONTACT_DEPT_LABEL__</span><span>__JOIN_CONTACT_DEPT__</span></li>
-        <li><span class="n">__JOIN_CONTACT_ELSEWHERE_LABEL__</span><span><a href="https://scholar.google.com/citations?user=0OM4QfkAAAAJ&amp;hl=en">__SCHOLAR_LABEL__</a></span></li>
+      <ul class="deets">
+        <li><span class="k">__JOIN_CONTACT_EMAIL_LABEL__</span><span><a class="mail" data-u="xinyufu" data-d="gsu.edu" href="#">xinyufu [at] gsu.edu</a></span></li>
+        <li><span class="k">__JOIN_CONTACT_OFFICE_LABEL__</span><span>__JOIN_CONTACT_OFFICE__</span></li>
+        <li><span class="k">__JOIN_CONTACT_DEPT_LABEL__</span><span>__JOIN_CONTACT_DEPT__</span></li>
+        <li><span class="k">__JOIN_CONTACT_ELSEWHERE_LABEL__</span><span><a href="https://scholar.google.com/citations?user=0OM4QfkAAAAJ&amp;hl=en">__SCHOLAR_LABEL__</a></span></li>
       </ul>
-      <p style="margin:22px 0 0">
-        <a class="btn mail" data-u="xinyufu" data-d="gsu.edu" data-s="Hello from your website" href="#">__JOIN_CONTACT_BUTTON__</a>
-      </p>
+      <p class="deets-go"><a class="btn mail" data-u="xinyufu" data-d="gsu.edu" data-s="Hello from your website" href="#">__JOIN_CONTACT_BUTTON__</a></p>
     </div>
-  </section>
+  </header>
 
-  <section class="band band--students">
-  <div class="sec-head" id="students">
-    <div class="sec-tag"><p class="eyebrow eyebrow--boxed">__JOIN_RA_WHO__</p></div>
+  <section class="sec" id="students">
     <h2>__JOIN_RA_TITLE__</h2>
-    <span class="count">__JOIN_RA_SUBTITLE__</span>
-  </div>
+    <p class="intro">__JOIN_RA_LEDE__</p>
+    <p class="intro">__JOIN_UNPAID_NOTE__</p>
 
-  <div class="prose">
-    <p class="lede">__JOIN_RA_LEDE__</p>
-    <p>__JOIN_UNPAID_NOTE__</p>
-  </div>
-
-  <div class="strip">
-    <div class="strip-cell">
-      <h3>__JOIN_WHAT_YOU_WOULD_DO_TITLE__</h3>
-      <ul>
-        <li>__JOIN_WHAT_YOU_WOULD_DO_DATA__</li>
-        <li>__JOIN_WHAT_YOU_WOULD_DO_LITERATURE__</li>
-        <li>__JOIN_WHAT_YOU_WOULD_DO_PLATFORMS__</li>
-        <li>__JOIN_WHAT_YOU_WOULD_DO_ANALYSIS__</li>
-      </ul>
+    <div class="cols">
+      <div>
+        <h3>__JOIN_WHAT_YOU_WOULD_DO_TITLE__</h3>
+        <ul>
+          <li>__JOIN_WHAT_YOU_WOULD_DO_DATA__</li>
+          <li>__JOIN_WHAT_YOU_WOULD_DO_LITERATURE__</li>
+          <li>__JOIN_WHAT_YOU_WOULD_DO_PLATFORMS__</li>
+          <li>__JOIN_WHAT_YOU_WOULD_DO_ANALYSIS__</li>
+        </ul>
+      </div>
+      <div>
+        <h3>__JOIN_WHAT_I_ASK_FOR_TITLE__</h3>
+        <ul>
+          <li>__JOIN_WHAT_I_ASK_FOR_HOURS__</li>
+          <li>__JOIN_WHAT_I_ASK_FOR_SEMESTER__</li>
+          <li>__JOIN_WHAT_I_ASK_FOR_SPEAK_UP__</li>
+          <li>__JOIN_WHAT_I_ASK_FOR_CODING__</li>
+        </ul>
+      </div>
+      <div>
+        <h3>__JOIN_SEND_TITLE__</h3>
+        <ul>
+          <li>__JOIN_SEND_CV__</li>
+          <li>__JOIN_SEND_WRITING_SAMPLE__</li>
+          <li>__JOIN_SEND_WHICH_PROJECT__</li>
+        </ul>
+        <p class="cols-go"><a class="btn mail" data-u="xinyufu" data-d="gsu.edu" data-s="Research assistant volunteer" data-b="Hi Dr. Fu,&#10;&#10;I would like to volunteer as a research assistant.&#10;&#10;Attached: my CV and a writing sample.&#10;&#10;The project that caught my eye: " href="#">__JOIN_EMAIL_BUTTON__</a></p>
+      </div>
     </div>
-    <div class="strip-cell">
-      <h3>__JOIN_WHAT_I_ASK_FOR_TITLE__</h3>
-      <ul>
-        <li>__JOIN_WHAT_I_ASK_FOR_HOURS__</li>
-        <li>__JOIN_WHAT_I_ASK_FOR_SEMESTER__</li>
-        <li>__JOIN_WHAT_I_ASK_FOR_SPEAK_UP__</li>
-        <li>__JOIN_WHAT_I_ASK_FOR_CODING__</li>
-      </ul>
+
+    <h3 class="faq-h">__JOIN_FAQ_TITLE__</h3>
+    <div class="faq">
+      <details><summary>__JOIN_FAQ_NOT_CIS_Q__</summary><p>__JOIN_FAQ_NOT_CIS_A__</p></details>
+      <details><summary>__JOIN_FAQ_NO_ACADEMIC_WRITING_Q__</summary><p>__JOIN_FAQ_NO_ACADEMIC_WRITING_A__</p></details>
+      <details><summary>__JOIN_FAQ_NOT_AT_GSU_Q__</summary><p>__JOIN_FAQ_NOT_AT_GSU_A__</p></details>
+      <details><summary>__JOIN_FAQ_PAID_OR_THESIS_Q__</summary><p>__JOIN_FAQ_PAID_OR_THESIS_A__</p></details>
+      <details><summary>__JOIN_FAQ_NO_REPLY_Q__</summary><p>__JOIN_FAQ_NO_REPLY_A__</p></details>
     </div>
-    <div class="strip-cell">
-      <h3>__JOIN_WHAT_YOU_GET_BACK_TITLE__</h3>
-      <ul>
-        <li>__JOIN_WHAT_YOU_GET_BACK_REFERENCE__</li>
-        <li>__JOIN_WHAT_YOU_GET_BACK_COAUTHORSHIP__</li>
-        <li>__JOIN_WHAT_YOU_GET_BACK_PHD_ADVICE__</li>
-        <li>__JOIN_WHAT_YOU_GET_BACK_SKILLS__</li>
-      </ul>
-    </div>
-  </div>
-
-  <div class="prose">
-    <h3>__JOIN_SEND_TITLE__</h3>
-    <ol class="send-list" style="max-width:60ch">
-      <li><span class="n">01</span><span>__JOIN_SEND_CV__</span></li>
-      <li><span class="n">02</span><span>__JOIN_SEND_WRITING_SAMPLE__</span></li>
-      <li><span class="n">03</span><span>__JOIN_SEND_WHICH_PROJECT__</span></li>
-    </ol>
-    <p style="margin:24px 0 0">
-      <a class="btn mail" data-u="xinyufu" data-d="gsu.edu" data-s="Research assistant volunteer" data-b="Hi Dr. Fu,&#10;&#10;I would like to volunteer as a research assistant.&#10;&#10;Attached: my CV and a writing sample.&#10;&#10;The project that caught my eye: " href="#">__JOIN_EMAIL_BUTTON__</a>
-    </p>
-
-    <h3>__JOIN_FAQ_TITLE__</h3>
-
-    <p><b>__JOIN_FAQ_NOT_CIS_Q__</b><br>
-    __JOIN_FAQ_NOT_CIS_A__</p>
-
-    <p><b>__JOIN_FAQ_NO_ACADEMIC_WRITING_Q__</b><br>
-    __JOIN_FAQ_NO_ACADEMIC_WRITING_A__</p>
-
-    <p><b>__JOIN_FAQ_NOT_AT_GSU_Q__</b><br>
-    __JOIN_FAQ_NOT_AT_GSU_A__</p>
-
-    <p><b>__JOIN_FAQ_PAID_OR_THESIS_Q__</b><br>
-    __JOIN_FAQ_PAID_OR_THESIS_A__</p>
-
-    <p><b>__JOIN_FAQ_NO_REPLY_Q__</b><br>
-    __JOIN_FAQ_NO_REPLY_A__</p>
-
-  </div>
   </section>
 
-  <div class="sec-head" id="advising">
+  <section class="sec" id="advising">
     <h2>__JOIN_STUDENTS_TITLE__</h2>
-    <span class="count">__JOIN_STUDENTS_SUBTITLE__</span>
-  </div>
-
-  <div class="prose">
+    <h3>__JOIN_STUDENTS_NOW__</h3>
     <ul class="people">
-PEOPLE
+PEOPLE_NOW
     </ul>
-
-    <h3>__JOIN_COACHING_TITLE__</h3>
-    <p>__JOIN_COACHING_TEXT__</p>
-  </div>
+    <h3>__JOIN_STUDENTS_PAST__</h3>
+    <ul class="people">
+PEOPLE_PAST
+    </ul>
+  </section>
 
 FOOT
 
@@ -165,9 +133,8 @@ FOOT
 </html>
 '''
 JOIN = (JOIN.replace('FONTS', B.FONTS).replace('NAV', B.nav('/join/'))
-            .replace('PEOPLE', people_html).replace('FOOT', B.FOOT)
+            .replace('PEOPLE_NOW', people_now).replace('PEOPLE_PAST', people_past).replace('FOOT', B.FOOT)
             .replace('__JOIN_PAGE_TITLE__', T.JOIN_PAGE_TITLE)
-            .replace('__JOIN_EYEBROW__', T.JOIN_EYEBROW)
             .replace('__JOIN_CONTACT_NOTE__', T.JOIN_CONTACT_NOTE)
             .replace('__JOIN_CONTACT_EMAIL_LABEL__', T.JOIN_CONTACT_EMAIL_LABEL)
             .replace('__JOIN_CONTACT_OFFICE_LABEL__', T.JOIN_CONTACT_OFFICE_LABEL)
@@ -177,9 +144,7 @@ JOIN = (JOIN.replace('FONTS', B.FONTS).replace('NAV', B.nav('/join/'))
             .replace('__JOIN_CONTACT_ELSEWHERE_LABEL__', T.JOIN_CONTACT_ELSEWHERE_LABEL)
             .replace('__SCHOLAR_LABEL__', T.HOME_FOOT_GOOGLE_SCHOLAR)
             .replace('__JOIN_CONTACT_BUTTON__', T.JOIN_CONTACT_BUTTON)
-            .replace('__JOIN_RA_WHO__', T.JOIN_RA_WHO)
             .replace('__JOIN_RA_TITLE__', T.JOIN_RA_TITLE)
-            .replace('__JOIN_RA_SUBTITLE__', T.JOIN_RA_SUBTITLE)
             .replace('__JOIN_RA_LEDE__', T.JOIN_RA_LEDE)
             .replace('__JOIN_SEND_TITLE__', T.JOIN_SEND_TITLE)
             .replace('__JOIN_CTA_HEADLINE__', T.JOIN_CTA_HEADLINE)
@@ -190,7 +155,8 @@ JOIN = (JOIN.replace('FONTS', B.FONTS).replace('NAV', B.nav('/join/'))
             .replace('__JOIN_SEND_WHICH_PROJECT__', T.JOIN_SEND_WHICH_PROJECT)
             .replace('__JOIN_EMAIL_BUTTON__', T.JOIN_EMAIL_BUTTON)
             .replace('__JOIN_STUDENTS_TITLE__', T.JOIN_STUDENTS_TITLE)
-            .replace('__JOIN_STUDENTS_SUBTITLE__', T.JOIN_STUDENTS_SUBTITLE)
+            .replace('__JOIN_STUDENTS_NOW__', T.JOIN_STUDENTS_NOW)
+            .replace('__JOIN_STUDENTS_PAST__', T.JOIN_STUDENTS_PAST)
             .replace('__JOIN_WHAT_YOU_WOULD_DO_TITLE__', T.JOIN_WHAT_YOU_WOULD_DO_TITLE)
             .replace('__JOIN_WHAT_YOU_WOULD_DO_DATA__', T.JOIN_WHAT_YOU_WOULD_DO_DATA)
             .replace('__JOIN_WHAT_YOU_WOULD_DO_LITERATURE__', T.JOIN_WHAT_YOU_WOULD_DO_LITERATURE)
@@ -201,11 +167,6 @@ JOIN = (JOIN.replace('FONTS', B.FONTS).replace('NAV', B.nav('/join/'))
             .replace('__JOIN_WHAT_I_ASK_FOR_SEMESTER__', T.JOIN_WHAT_I_ASK_FOR_SEMESTER)
             .replace('__JOIN_WHAT_I_ASK_FOR_SPEAK_UP__', T.JOIN_WHAT_I_ASK_FOR_SPEAK_UP)
             .replace('__JOIN_WHAT_I_ASK_FOR_CODING__', T.JOIN_WHAT_I_ASK_FOR_CODING)
-            .replace('__JOIN_WHAT_YOU_GET_BACK_TITLE__', T.JOIN_WHAT_YOU_GET_BACK_TITLE)
-            .replace('__JOIN_WHAT_YOU_GET_BACK_REFERENCE__', T.JOIN_WHAT_YOU_GET_BACK_REFERENCE)
-            .replace('__JOIN_WHAT_YOU_GET_BACK_COAUTHORSHIP__', T.JOIN_WHAT_YOU_GET_BACK_COAUTHORSHIP)
-            .replace('__JOIN_WHAT_YOU_GET_BACK_PHD_ADVICE__', T.JOIN_WHAT_YOU_GET_BACK_PHD_ADVICE)
-            .replace('__JOIN_WHAT_YOU_GET_BACK_SKILLS__', T.JOIN_WHAT_YOU_GET_BACK_SKILLS)
             .replace('__JOIN_FAQ_TITLE__', T.JOIN_FAQ_TITLE)
             .replace('__JOIN_FAQ_NOT_CIS_Q__', T.JOIN_FAQ_NOT_CIS_Q)
             .replace('__JOIN_FAQ_NOT_CIS_A__', T.JOIN_FAQ_NOT_CIS_A)
@@ -216,9 +177,7 @@ JOIN = (JOIN.replace('FONTS', B.FONTS).replace('NAV', B.nav('/join/'))
             .replace('__JOIN_FAQ_PAID_OR_THESIS_Q__', T.JOIN_FAQ_PAID_OR_THESIS_Q)
             .replace('__JOIN_FAQ_PAID_OR_THESIS_A__', T.JOIN_FAQ_PAID_OR_THESIS_A)
             .replace('__JOIN_FAQ_NO_REPLY_Q__', T.JOIN_FAQ_NO_REPLY_Q)
-            .replace('__JOIN_FAQ_NO_REPLY_A__', T.JOIN_FAQ_NO_REPLY_A)
-            .replace('__JOIN_COACHING_TITLE__', T.JOIN_COACHING_TITLE)
-            .replace('__JOIN_COACHING_TEXT__', T.JOIN_COACHING_TEXT))
+            .replace('__JOIN_FAQ_NO_REPLY_A__', T.JOIN_FAQ_NO_REPLY_A))
 io.open(os.path.join(R, 'join/index.html'), 'w', encoding='utf-8').write(JOIN)
 print('join/index.html', len(JOIN), 'bytes,', len(PEOPLE), 'people')
 
@@ -344,6 +303,11 @@ NAV
 
   </div>
 
+  <div class="prose">
+    <h3>__TEACHING_COACHING_TITLE__</h3>
+    <p>__TEACHING_COACHING_TEXT__</p>
+  </div>
+
 FOOT
 
 </div>
@@ -353,6 +317,8 @@ FOOT
 TEACH = (TEACH.replace('FONTS', B.FONTS).replace('NAV', B.nav('/teaching/')).replace('FOOT', B.FOOT)
               .replace('__TEACHING_PAGE_TITLE__', T.TEACHING_PAGE_TITLE)
               .replace('__TEACHING_HEADING__', T.TEACHING_HEADING)
+            .replace('__TEACHING_COACHING_TITLE__', T.TEACHING_COACHING_TITLE)
+            .replace('__TEACHING_COACHING_TEXT__', T.TEACHING_COACHING_TEXT)
               .replace('__TEACHING_AWARD_NOTE__', T.TEACHING_AWARD_NOTE)
               .replace('__TEACHING_GSU_HEADING__', T.TEACHING_GSU_HEADING)
               .replace('__TEACHING_AGENTIC_AI_TITLE__', T.TEACHING_AGENTIC_AI_TITLE)

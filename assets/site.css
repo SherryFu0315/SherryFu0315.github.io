@@ -29,7 +29,7 @@
   --rule-w:   1px;       /* the line between blocks. It was 2px, which on a page
                             with this many blocks read as scaffolding */
   --pad:      clamp(18px, 4.2vw, 46px);
-  --photo-col: clamp(150px, 17vw, 248px);   /* the front page portrait */
+  --photo-col: clamp(150px, 20vw, 300px);   /* the front page portrait */
   --maxw:     1440px;
 }
 
@@ -205,13 +205,97 @@ button:focus-visible{ outline:3px solid var(--blue); outline-offset:2px }
   font-size:clamp(30px,3.6vw,50px);
   margin:0 0 clamp(16px,1.6vw,24px); color:var(--ink);
 }
+/* A 60ch measure in a 900px column left a third of the band empty on the right.
+   The measure goes to 70ch and the type up with it, which is still inside what
+   is comfortable to read and closes most of the gap. */
 .intro{
-  font-size:clamp(16.5px,1.25vw,18.5px); line-height:1.7;
-  color:var(--muted-2); max-width:60ch; margin:0 0 1em;
+  font-size:clamp(16.5px,1.35vw,19.5px); line-height:1.68;
+  color:var(--muted-2); max-width:70ch; margin:0 0 1em;
 }
 .intro:last-child{ margin-bottom:0 }
 /* a term that must not break across lines, at any width */
 .nb{ white-space:nowrap }
+
+/* ---------- the quiet pages ----------------------------------------------
+   The contact page asks three things of a reader: what they can write about,
+   how a student applies, and who she is advising. None of that needs a
+   fluorescent field or a wall of heavy uppercase, so on this page the display
+   face steps back to sentence case at reading weights, and only the page title
+   is set in the serif. */
+
+.page-quiet h2,
+.page-quiet h3{
+  text-transform:none; letter-spacing:-.012em;
+  font-variation-settings:"wdth" 96,"wght" 680;
+}
+.page-quiet h2{ font-size:clamp(21px,2vw,27px); margin:0 0 14px; line-height:1.2 }
+.page-quiet h3{ font-size:16.5px; margin:0 0 12px; color:var(--ink) }
+
+.page-head{
+  display:grid; grid-template-columns:1fr; gap:clamp(26px,3vw,54px);
+  margin:0 var(--pad); padding:clamp(30px,3.6vw,54px) 0;
+  position:relative;
+}
+@media(min-width:860px){ .page-head{ grid-template-columns:1.35fr 1fr } }
+.page-head::after{
+  content:""; position:absolute; left:0; right:0; bottom:0;
+  border-bottom:var(--rule-w) solid var(--rule);
+}
+.page-title{
+  font-family:"Playfair Display",Georgia,"Times New Roman",serif;
+  font-weight:600; font-variation-settings:normal;
+  text-transform:none; letter-spacing:-.012em; line-height:1.1;
+  font-size:clamp(30px,3.4vw,46px); margin:0 0 clamp(16px,1.6vw,24px);
+}
+
+/* the contact details: a label column and a value column, quietly ruled */
+.deets{ margin:0; padding:0; list-style:none; border-top:1px solid var(--faint) }
+.deets li{
+  display:grid; grid-template-columns:auto 1fr; gap:16px;
+  padding:12px 0; border-bottom:1px solid var(--faint);
+  font-size:15.5px; line-height:1.5;
+}
+.deets .k{
+  font-family:"IBM Plex Mono",monospace; font-size:11px; letter-spacing:.1em;
+  text-transform:uppercase; color:var(--muted); padding-top:4px; white-space:nowrap;
+}
+.deets-go{ margin:22px 0 0 }
+
+.sec{ margin:0 var(--pad); padding:clamp(30px,3.4vw,50px) 0; position:relative }
+.sec::after{
+  content:""; position:absolute; left:0; right:0; bottom:0;
+  border-bottom:var(--rule-w) solid var(--rule);
+}
+.sec:last-of-type::after{ border-bottom:0 }
+.sec .intro{ max-width:66ch }
+
+/* three plain columns, no cell backgrounds and no rules between them */
+.cols{ display:grid; grid-template-columns:1fr; gap:clamp(22px,2.6vw,42px); margin-top:clamp(24px,2.6vw,38px) }
+@media(min-width:760px){ .cols{ grid-template-columns:repeat(3,1fr) } }
+.cols ul{ margin:0; padding:0; list-style:none }
+.cols li{
+  font-size:15.5px; line-height:1.5; color:var(--muted-2);
+  padding:9px 0; border-top:1px solid var(--faint);
+}
+.cols li:first-child{ border-top:0; padding-top:0 }
+.cols-go{ margin:20px 0 0 }
+
+/* questions that open when asked, rather than five paragraphs nobody scrolls */
+.page-quiet .faq-h{ margin-top:clamp(34px,3.4vw,52px) }
+.faq details{ border-top:1px solid var(--faint) }
+.faq details:last-child{ border-bottom:1px solid var(--faint) }
+.faq summary{
+  cursor:pointer; padding:13px 0; font-size:16px; line-height:1.45;
+  list-style:none; display:flex; justify-content:space-between; gap:16px;
+}
+.faq summary::-webkit-details-marker{ display:none }
+.faq summary::after{ content:"+"; color:var(--muted); font-family:"IBM Plex Mono",monospace }
+.faq details[open] summary::after{ content:"\2212" }
+.faq summary:hover{ color:var(--blue) }
+.faq details p{
+  margin:0 0 16px; font-size:15.5px; line-height:1.6;
+  color:var(--muted-2); max-width:70ch;
+}
 
 /* ---------- the news band -------------------------------------------------
    Four dated items down the left, where a list belongs; the press story and the

@@ -242,162 +242,87 @@ MAP_FINDING_COMING_SOON = "A short description of this project is coming."
 # Where it appears: browser tab and search results title for the contact page
 JOIN_PAGE_TITLE = "Contact &mdash; Xinyu Fu"
 
-# Where it appears: small boxed label above the headline at the top of the contact page
-JOIN_EYEBROW = "Contact"
+# Where it appears: the page title at the top of the contact page, in the serif
+JOIN_CTA_HEADLINE = "Get in touch"
 
-# Where it appears: main headline at the top of the contact page
-JOIN_CTA_HEADLINE = "What are you working on?"
+# Where it appears: the opening paragraph under that title
+JOIN_LEDE = """<span class="nb">Human&ndash;AI</span> collaboration is a large question, and I am glad to hear from anyone working on a piece of it &mdash; faculty and doctoral students thinking about a collaboration, organizations curious about what AI is doing to work inside their own walls, and students looking for a way into research."""
 
-# Where it appears: opening paragraph under the headline on the contact page
-JOIN_LEDE = "<span class=\"nb\">Human&ndash;AI</span> collaboration is a large question, and I am glad to hear from anyone working on a piece of it &mdash; <b>research collaborations</b> with faculty and doctoral students, <b>organizations</b> curious about what AI is doing to work inside their own walls, and <b>students</b> looking for a way into research."
+# Where it appears: the second paragraph, ending on the invitation
+JOIN_CONTACT_NOTE = """Much of my work runs inside real organizations &mdash; sales floors, factory floors, clinics, hotel corridors. If you run one and have wondered what a study there would look like, that is a conversation worth having. So: what are you working on?"""
 
-# Where it appears: second paragraph in the green block at the top of the contact page
-JOIN_CONTACT_NOTE = "Much of my work runs inside real organizations &mdash; sales floors, factory floors, clinics, hotel corridors. If you run one and have wondered what a study there would look like, that is a conversation worth having."
-
-# Where it appears: label beside the email address in the contact details
+# Where it appears: labels and values in the contact details, right of the opening
 JOIN_CONTACT_EMAIL_LABEL = "Email"
-
-# Where it appears: label beside the office address in the contact details
 JOIN_CONTACT_OFFICE_LABEL = "Office"
-
-# Where it appears: the office address in the contact details
 JOIN_CONTACT_OFFICE = "55 Park Place NE<br>Atlanta, GA 30303"
-
-# Where it appears: label beside the department in the contact details
 JOIN_CONTACT_DEPT_LABEL = "Department"
-
-# Where it appears: the department and university in the contact details
 JOIN_CONTACT_DEPT = "Computer Information Systems<br>J. Mack Robinson College of Business<br>Georgia State University"
-
-# Where it appears: label beside the Google Scholar link in the contact details
 JOIN_CONTACT_ELSEWHERE_LABEL = "Elsewhere"
 
-# Where it appears: label on the email button in the green block at the top of the contact page
+# Where it appears: the email button under the contact details
 JOIN_CONTACT_BUTTON = "Email xinyufu [at] gsu.edu"
 
 
-# Where it appears: small boxed tag above the "Student research assistants"
-# heading, saying who that whole block is addressed to
-JOIN_RA_WHO = "For students"
+# ==========================================================================
+#  THE STUDENT SECTION
+#  Short on purpose. Who it is for, what it asks, what to send.
+# ==========================================================================
 
-# Where it appears: heading of the student research assistant section on the contact page
+# Where it appears: heading of the student section
 JOIN_RA_TITLE = "Student research assistants"
 
-# Where it appears: small caption beside the "Student research assistants" heading
-JOIN_RA_SUBTITLE = "Volunteer positions, open year-round"
+# Where it appears: the paragraph under that heading
+JOIN_RA_LEDE = """I take on student research assistant volunteers year-round, undergraduate and graduate. No prior research experience is needed, and you do not need to have taken my class."""
 
-# Where it appears: opening paragraph of the student research assistant section
-JOIN_RA_LEDE = "I take on <b>student research assistant volunteers</b> year-round, undergraduate and graduate. No prior research experience, no need to have taken my class. Be curious, and finish things."
+# Where it appears: the second paragraph, on what the positions are and are not
+JOIN_UNPAID_NOTE = """These are unpaid volunteer positions of roughly five to eight hours a week, for a semester or more. What they offer is the part coursework cannot: seeing how a study is actually built, and how data behaves when it is real. Where a contribution warrants it, that can extend to co-authorship on a submission, or to a reference that speaks to specifics."""
 
-# Where it appears: second paragraph of the student research assistant section, about the positions being unpaid
-JOIN_UNPAID_NOTE = "Unpaid. What they are worth is the part coursework cannot give you: seeing how a study is actually built, and how data actually behaves."
+# Where it appears: heading of the first of the three columns
+JOIN_WHAT_YOU_WOULD_DO_TITLE = "What the work is"
+JOIN_WHAT_YOU_WOULD_DO_DATA = "Cleaning and coding field data &mdash; call records, transcripts, scrapes"
+JOIN_WHAT_YOU_WOULD_DO_LITERATURE = "Literature searches, and keeping a real annotated bibliography"
+JOIN_WHAT_YOU_WOULD_DO_PLATFORMS = "Building the platforms studies run on &mdash; React, Python, Qualtrics, Prolific"
+JOIN_WHAT_YOU_WOULD_DO_ANALYSIS = "Sitting in on analysis, from the first regression to the last robustness check"
 
-# Where it appears: heading above the numbered "what to send" list
+# Where it appears: heading of the second of the three columns
+JOIN_WHAT_I_ASK_FOR_TITLE = "What I ask"
+JOIN_WHAT_I_ASK_FOR_HOURS = "Five to eight hours a week in term, agreed in advance"
+JOIN_WHAT_I_ASK_FOR_SEMESTER = "A semester or more, since research moves slowly"
+JOIN_WHAT_I_ASK_FOR_SPEAK_UP = "A word when something is not working, early rather than late"
+JOIN_WHAT_I_ASK_FOR_CODING = "Any coding is useful &mdash; Python, R, SQL &mdash; though no project needs all of it"
+
+# Where it appears: heading of the third of the three columns
 JOIN_SEND_TITLE = "What to send"
+JOIN_SEND_CV = "A CV or r&eacute;sum&eacute;, one page"
+JOIN_SEND_WRITING_SAMPLE = "One writing sample &mdash; a course project report is perfectly fine"
+JOIN_SEND_WHICH_PROJECT = "Two sentences on which project caught your eye, and why"
 
-# Where it appears: item 01 of the numbered "what to send" list on the contact page
-JOIN_SEND_CV = "A <b>CV or r&eacute;sum&eacute;</b>. One page is plenty."
-
-# Where it appears: item 02 of the numbered "what to send" list on the contact page
-JOIN_SEND_WRITING_SAMPLE = "One <b>writing sample</b>. A course project report is perfectly fine &mdash; I care how you build an argument, not where it was published."
-
-# Where it appears: item 03 of the numbered "what to send" list on the contact page
-JOIN_SEND_WHICH_PROJECT = "Two sentences on <b>which project caught your eye</b>, and why."
-
-# Where it appears: label on the email button under the "what to send" list
+# Where it appears: the email button under the three columns
 JOIN_EMAIL_BUTTON = "Email xinyufu [at] gsu.edu"
 
-
-# Where it appears: section heading above the list of students, on the contact page
-JOIN_STUDENTS_TITLE = "Students I work with"
-
-# Where it appears: small caption beside the "Students I work with" heading
-JOIN_STUDENTS_SUBTITLE = "Doctoral committees and advising"
-
-# Where it appears: heading of the first of the three columns on the contact page
-JOIN_WHAT_YOU_WOULD_DO_TITLE = "What you would actually do"
-
-# Where it appears: "What you would actually do" column, data item
-JOIN_WHAT_YOU_WOULD_DO_DATA = "Clean and code field data &mdash; call records, transcripts, scrapes"
-
-# Where it appears: "What you would actually do" column, literature search item
-JOIN_WHAT_YOU_WOULD_DO_LITERATURE = "Run literature searches and keep a real annotated bibliography"
-
-# Where it appears: "What you would actually do" column, experiment platform item
-JOIN_WHAT_YOU_WOULD_DO_PLATFORMS = "Build the platforms studies run on &mdash; React, Python, Qualtrics, Prolific"
-
-# Where it appears: "What you would actually do" column, analysis item
-JOIN_WHAT_YOU_WOULD_DO_ANALYSIS = "Sit in on analysis, first regression to last robustness check"
-
-
-# Where it appears: heading of the second of the three columns on the contact page
-JOIN_WHAT_I_ASK_FOR_TITLE = "What I ask for"
-
-# Where it appears: "What I ask for" column, hours item
-JOIN_WHAT_I_ASK_FOR_HOURS = "5&ndash;8 hours a week in term, agreed in advance"
-
-# Where it appears: "What I ask for" column, length of commitment item
-JOIN_WHAT_I_ASK_FOR_SEMESTER = "One semester minimum &mdash; research is slow, and a month teaches you nothing"
-
-# Where it appears: "What I ask for" column, speaking up item
-JOIN_WHAT_I_ASK_FOR_SPEAK_UP = "Say early when something is not working. That is the job, not failure"
-
-# Where it appears: "What I ask for" column, coding background item
-JOIN_WHAT_I_ASK_FOR_CODING = "Any coding helps &mdash; Python, R, SQL &mdash; but no project needs all of it"
-
-# Where it appears: heading of the third of the three columns on the contact page
-JOIN_WHAT_YOU_GET_BACK_TITLE = "What you get back"
-
-# Where it appears: "What you get back" column, reference letter item
-JOIN_WHAT_YOU_GET_BACK_REFERENCE = "A reference that says something specific, because I will know your work"
-
-# Where it appears: "What you get back" column, co-authorship item
-JOIN_WHAT_YOU_GET_BACK_COAUTHORSHIP = "Co-authorship where the contribution earns it"
-
-# Where it appears: "What you get back" column, PhD advice item
-JOIN_WHAT_YOU_GET_BACK_PHD_ADVICE = "An honest read on whether a PhD is right for you"
-
-# Where it appears: "What you get back" column, transferable skills item
-JOIN_WHAT_YOU_GET_BACK_SKILLS = "Skills that transfer &mdash; messy data, a defended claim, clear writing"
-
-# Where it appears: heading above the questions and answers on the contact page
+# Where it appears: heading above the questions, which open when clicked
 JOIN_FAQ_TITLE = "Common questions"
 
-# Where it appears: common questions, first question
 JOIN_FAQ_NOT_CIS_Q = "I am not a CIS major. Should I still write?"
-
-# Where it appears: common questions, answer to the first question
 JOIN_FAQ_NOT_CIS_A = "Yes. My studies run on sales calls, factory floors, hotel corridors, crowdfunding pages and online communities. Psychology, economics, management, statistics, communication, computer science &mdash; all of it is useful. Say in your email what you bring."
 
-# Where it appears: common questions, second question
 JOIN_FAQ_NO_ACADEMIC_WRITING_Q = "I have never written anything academic. What do I send?"
-
-# Where it appears: common questions, answer to the second question
 JOIN_FAQ_NO_ACADEMIC_WRITING_A = "A course project report. A term paper. A technical write-up from an internship. A well-argued blog post. I am reading for whether you can hold a claim and support it, not for a literature review."
 
-# Where it appears: common questions, third question
 JOIN_FAQ_NOT_AT_GSU_Q = "I am not at Georgia State."
-
-# Where it appears: common questions, answer to the third question
 JOIN_FAQ_NOT_AT_GSU_A = "Still write. Some projects work remotely. Say where you are and what your term dates look like."
 
-# Where it appears: common questions, fourth question
 JOIN_FAQ_PAID_OR_THESIS_Q = "Can this turn into a paid position or a thesis?"
+JOIN_FAQ_PAID_OR_THESIS_A = "Sometimes. Funded slots come and go with grants, and undergraduate projects have grown out of assistant work before. Start with the volunteer route and we will see what it becomes."
 
-# Where it appears: common questions, answer to the fourth question
-JOIN_FAQ_PAID_OR_THESIS_A = "Sometimes. Funded slots come and go with grants, and undergraduate projects have grown out of RA work before. Start with the volunteer route and we will see what it becomes."
-
-# Where it appears: common questions, fifth question
 JOIN_FAQ_NO_REPLY_Q = "I emailed and did not hear back."
-
-# Where it appears: common questions, answer to the fifth question
 JOIN_FAQ_NO_REPLY_A = "Please do follow up once more &mdash; a second message is always welcome."
 
-# Where it appears: heading of the last section on the contact page
-JOIN_COACHING_TITLE = "Competition coaching"
 
-# Where it appears: paragraph under the "Competition coaching" heading
-JOIN_COACHING_TEXT = """I coached the Georgia State team at <a href="https://carlsonschool.umn.edu/conferences/comis"><b>CoMIS 2025</b></a>, the international undergraduate MIS case competition hosted by the Carlson School at the University of Minnesota. The team took first place at the group level and advanced to the final round."""
+# Where it appears: heading of the advising section, and the two groups in it
+JOIN_STUDENTS_TITLE = "Students I work with"
+JOIN_STUDENTS_NOW = "Currently"
+JOIN_STUDENTS_PAST = "Previously"
 
 # Where it appears: browser tab and search results title for the teaching page
 TEACHING_PAGE_TITLE = "Teaching &mdash; Xinyu Fu"
@@ -455,6 +380,11 @@ TEACHING_DBMS_TITLE = "Database Management Systems"
 
 # Where it appears: description of the Georgia State undergraduate database course
 TEACHING_DBMS_DESC = "Undergraduate core."
+
+# Where it appears: the coaching section near the foot of the teaching page
+TEACHING_COACHING_TITLE = "Competition coaching"
+
+TEACHING_COACHING_TEXT = """I coached the Georgia State team at <a href="https://carlsonschool.umn.edu/conferences/comis">CoMIS 2025</a>, the international undergraduate MIS case competition hosted by the Carlson School at the University of Minnesota. The team took first place at the group level and advanced to the final round."""
 
 # Where it appears: second institution heading on the teaching page
 TEACHING_PITT_HEADING = "University of Pittsburgh"
