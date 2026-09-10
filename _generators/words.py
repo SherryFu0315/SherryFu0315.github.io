@@ -78,44 +78,25 @@ HOME_FOOT_CREDIT_LINE = """Photography and figure credits: <a href="/credits/">c
 # Where it appears: browser tab and search results title for the front page
 HOME_PAGE_TITLE = "Xinyu Fu &mdash; Human&ndash;AI Complementarity"
 
-# Where it appears: job title and affiliation beside the photo at the top of the front page
-HOME_ROLE = """<b>Assistant Professor</b><br>
-          <b>Computer Information Systems</b><br>
-          J. Mack Robinson College of Business<br>Georgia State University"""
+# Where it appears: the greeting at the top of the front page, in the serif face
+HOME_HELLO = "Hi, I&rsquo;m Xinyu Fu."
 
-# Where it appears: small link under the name at the top of the front page
-HOME_LINK_SCHOLAR = "Google Scholar"
+# Where it appears: first paragraph of the front page introduction
+HOME_INTRO_1 = "I&rsquo;m an Assistant Professor of Computer Information Systems at the J. Mack Robinson College of Business, Georgia State University."
 
-# Where it appears: small link under the name at the top of the front page
-HOME_LINK_EMAIL = "Email"
+# Where it appears: second paragraph of the front page introduction. The research
+# question is the last sentence of it rather than a headline of its own.
+HOME_INTRO_2 = """My research explores <span class="nb">human&ndash;AI</span> collaboration: how different ways of working with AI shape human performance, the organization of work, and the consequences of AI use. At the heart of this work is a question &mdash; what makes <span class="nb">human&ndash;AI</span> collaboration greater than the sum of its parts?"""
 
-# Where it appears: the statement paragraph under the name at the top of the front page
-# (the nb span just keeps "human-AI" from breaking across two lines)
-# <span class="nb"> holds a phrase together at every width; <span class="keep">
-# holds one only where the column is wide enough. They are here so the question
-# never breaks inside "human-AI" or inside "the sum of its parts" — the rest of
-# the line breaks are left to the browser, which evens the three lines out.
-HOME_THESIS = """<b>What makes <span class="nb">human&ndash;AI</span> collaboration greater than the <span class="keep">sum of its parts?</span></b><span>I study how different ways of working with AI shape human performance, the organization of work, and the consequences of AI use.</span>"""
+# Where it appears: under the portrait at the top of the front page
+HOME_EMAIL = "xinyufu [at] gsu.edu"
 
-
-# Where it appears: small label at the top of the starry card linking to the research map
-HOME_MAP_EYEBROW = "Interactive &middot; the citation map"
-
-# Where it appears: headline on the starry card linking to the research map
-HOME_MAP_HEADLINE = "The shoulders we stand on"
-
-# Where it appears: paragraph on the starry card linking to the research map
-# (the study and paper counts fill themselves in)
-HOME_MAP_BLURB = "Explore my research and the scholarship it builds on. Studies that share references appear closer together, revealing connections across topics."
-
-# Where it appears: button at the bottom of the starry card linking to the research map
-HOME_MAP_BUTTON = "Open the map &rarr;"
 
 # Where it appears: heading of the projects section in the middle of the front page
 HOME_SELECTED_RESEARCH_TITLE = "Selected Research"
 
 # Where it appears: small caption beside the "Selected Research" heading
-HOME_SELECTED_RESEARCH_COUNT = """__N_FEATURED__ of __N_PROJECTS__ &middot; <a href="/research/">all projects</a>"""
+HOME_SELECTED_RESEARCH_COUNT = """<a href="/research/">All projects &rarr;</a>"""
 
 
 # ==========================================================================
@@ -147,15 +128,12 @@ HOME_CARD_GO = "View project &rarr;"
 # Where it appears: heading of the press cell, top right of the news band
 HOME_PRESS_TITLE = "In the press"
 
-# Where it appears: the three press items, each an outlet and a headline
+# Where it appears: the two press items, each an outlet and a headline
 HOME_PRESS_1_OUTLET = "ITEdgeNews"
 HOME_PRESS_1 = """<a href="https://www.itedgenews.africa/edubot-naija-launches-ai-powered-multilingual-learning-platform-across-nigeria/">EduBot Naija launches AI-powered multilingual learning platform across Nigeria</a> &middot; also in <a href="https://techafricanews.com/2025/08/14/a-computer-training-launches-edubot-nigeria-to-deliver-ai-powered-education-in-indigenous-languages/">TechAfrica News</a> and <a href="https://www.youtube.com/watch?v=3TnI3x-V_eQ">on video</a>"""
 
 HOME_PRESS_2_OUTLET = "GSU News"
-HOME_PRESS_2 = """<a href="https://news.gsu.edu/2026/04/03/mit-raise-and-georgia-state-university-announce-path">MIT RAISE and Georgia State announce PATH</a> &mdash; the initiative the Agentic AI course is taught under"""
-
-HOME_PRESS_3_OUTLET = "On video"
-HOME_PRESS_3 = """<a href="https://www.youtube.com/watch?v=LnyWCPhFzzA&amp;list=PL8lQ0qMEI-E8-64gGMvrHBSqbGQkAsXCD&amp;index=1">Talks from the PATH programme</a>"""
+HOME_PRESS_2 = """<a href="https://news.gsu.edu/2026/04/03/mit-raise-and-georgia-state-university-announce-path">MIT RAISE and Georgia State announce PATH</a> &mdash; the initiative the Agentic AI course is taught under &middot; <a href="https://www.youtube.com/watch?v=LnyWCPhFzzA&amp;list=PL8lQ0qMEI-E8-64gGMvrHBSqbGQkAsXCD&amp;index=1">talks on video</a>"""
 
 
 # Where it appears: heading of the teaching cell, bottom right of the news band
@@ -165,8 +143,6 @@ HOME_COURSE_TITLE = "Teaching"
 HOME_COURSE_NAME = "Agentic AI"
 HOME_COURSE_TERM = "Fall 2026 &middot; Spring 2026"
 
-# Where it appears: one line on what the course is for
-HOME_COURSE_AIM = "Build. Break. Iterate. The whole agent lifecycle from day one, ending in a capstone that takes a real problem to a working prototype."
 
 # Where it appears: the line under that, on the programme the course belongs to
 HOME_COURSE_PATH = """Taught as part of <a href="https://path.mit.edu/">PATH</a>, the MIT RAISE and Georgia State initiative. Machine learning and data programming alongside it, since 2023."""

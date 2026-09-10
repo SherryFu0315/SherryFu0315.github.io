@@ -135,7 +135,7 @@ PROJECTS = [
    links=[]),
 
  dict(id='edubot', col='agentic', row='intervention', order=3,
-   chip='Deployed', venue='Student&ndash;faculty project',
+   chip='Deployed', venue='Engaged scholarship',
    title='EduBot Naija',
    short='EduBot Naija',
    authors='A student&ndash;faculty collaboration supported by Georgia State University',

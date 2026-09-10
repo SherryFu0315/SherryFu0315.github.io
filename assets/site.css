@@ -29,6 +29,7 @@
   --rule-w:   1px;       /* the line between blocks. It was 2px, which on a page
                             with this many blocks read as scaffolding */
   --pad:      clamp(18px, 4.2vw, 46px);
+  --photo-col: clamp(150px, 17vw, 248px);   /* the front page portrait */
   --maxw:     1440px;
 }
 
@@ -163,111 +164,54 @@ p:last-child{ margin-bottom:0 }
 a:focus-visible,
 button:focus-visible{ outline:3px solid var(--blue); outline-offset:2px }
 
-/* ---------- hero: who she is, beside what she is asking -------------------
-   One band of paper, not two panels with a line down the middle. The map has
-   its own page and the nav points at it; sitting here it was the loudest thing
-   on a screen whose job is to say who this is — and the four photographs it
-   had replaced were showing the same studies as the cards below. */
+/* ---------- hero: a greeting, and two paragraphs -------------------------
+   A name in 53px display caps and a question in 33px display caps, side by
+   side, were two headlines competing on the one screen whose job is to say who
+   this is. It is a person introducing herself now: a round portrait, one line
+   in the serif, and the research question as the last sentence of the second
+   paragraph rather than a headline of its own. */
 
 .hero{
-  display:grid;
-  grid-template-columns:1fr;
-  background:var(--paper);
+  display:grid; grid-template-columns:1fr;
+  gap:clamp(22px,3vw,44px);
+  margin:0 var(--pad);
+  padding:clamp(30px,3.6vw,54px) 0;
+  position:relative;
+}
+@media(min-width:760px){
+  .hero{ grid-template-columns:minmax(150px,var(--photo-col)) 1fr; align-items:start }
+}
+.hero::after{
+  content:""; position:absolute; left:0; right:0; bottom:0;
   border-bottom:var(--rule-w) solid var(--rule);
 }
-@media(min-width:860px){
-  .hero{ grid-template-columns:minmax(300px,42%) 1fr; align-items:center }
-}
 
-.rail{
-  padding:clamp(26px,3vw,44px) var(--pad);
-  display:flex; flex-direction:column; justify-content:center;
+.hero-me{ display:flex; flex-direction:column; align-items:center; gap:14px }
+.hero-photo{
+  width:100%; max-width:var(--photo-col); aspect-ratio:1; height:auto;
+  border-radius:50%; object-fit:cover;
 }
-@media(min-width:860px){
-  /* one band, so only its outer edges take the page padding */
-  .rail--who{ padding-right:clamp(18px,2.2vw,36px) }
-  .rail--ask{ padding-left:clamp(18px,2.2vw,36px) }
+.hero-mail{
+  margin:0; font-size:14px; text-align:center;
+  font-family:"IBM Plex Mono",monospace; letter-spacing:.01em;
 }
+.hero-mail a{ color:#8C5A6B; text-decoration:none; border-bottom:1px solid rgba(140,90,107,.35) }
+.hero-mail a:hover{ color:var(--blue); border-bottom-color:var(--blue) }
 
-/* ---- who ---- */
-.rail--who{
-  flex-direction:row; align-items:flex-start;
-  gap:clamp(14px,1.5vw,20px); flex-wrap:wrap;
+.hello{
+  font-family:"Playfair Display",Georgia,"Times New Roman",serif;
+  font-style:italic; font-weight:700; font-variation-settings:normal;
+  text-transform:none; letter-spacing:-.012em; line-height:1.05;
+  font-size:clamp(30px,3.6vw,50px);
+  margin:0 0 clamp(16px,1.6vw,24px); color:var(--ink);
 }
-.rail--who > div{ min-width:0; flex:1 1 150px }
-/* Square, like everything else here. The circle was the only rounded object on
-   the site, and beside a grid of hard-edged photographs it read as a sticker. */
-.rail-photo{
-  width:clamp(124px,12.2vw,171px); aspect-ratio:1; height:auto; flex:none;
-  object-fit:cover;
+.intro{
+  font-size:clamp(16.5px,1.25vw,18.5px); line-height:1.7;
+  color:var(--muted-2); max-width:60ch; margin:0 0 1em;
 }
-/* One line. Broken over two it took the height of a headline and pushed the
-   rank and the university into a narrow gutter beside the photograph. */
-.rail h1{
-  font-size:clamp(30px,4.3vw,53px);
-  font-variation-settings:"wdth" 74,"wght" 850;
-  line-height:1; letter-spacing:-.022em;
-  margin:0 0 10px; white-space:nowrap;
-}
-@media(max-width:400px){ .rail h1{ white-space:normal } }
-.rail .role{
-  font-size:14.5px; line-height:1.45; color:var(--muted); margin:0; max-width:38ch;
-}
-.rail .role b{ color:var(--ink); font-weight:600 }
-
-/* the three things an academic visitor looks for, at the size of a caption */
-.rail-meta{
-  display:flex; flex-wrap:wrap; gap:0 14px; margin:14px 0 0; padding:0;
-  list-style:none;
-  font-family:"IBM Plex Mono",monospace; font-size:11.5px; letter-spacing:.08em;
-  text-transform:uppercase;
-}
-.rail-meta li + li::before{ content:"\00b7"; margin-right:14px; color:var(--muted) }
-.rail-meta a{
-  color:var(--muted); text-decoration:none;
-  border-bottom:1.5px solid transparent; padding-bottom:2px;
-}
-.rail-meta a:hover{ color:var(--blue); border-bottom-color:var(--blue) }
-
-/* ---- what ---- */
-.thesis{ margin:0; padding:0; border:0 }
-/* Lime is the deck's colour but it is nearly the value of the paper — at 5px on
-   #F6F4F9 the mark was there and could not be seen. Coral carries at this size,
-   and it is the one brand colour with no other job on the page. */
-.thesis::before{
-  content:""; display:block; width:52px; height:6px;
-  background:var(--coral); margin:0 0 20px;
-}
-/* Sentence case, and lighter. Set in heavy uppercase the question was a block
-   of shouting rather than something anyone reads: the name above it is already
-   the loud thing, and this is the sentence that has to be understood. It is
-   still the largest prose on the page, which is enough. */
-.thesis b{
-  display:block; font-family:"Archivo",Arial,sans-serif;
-  /* Uppercase sets about a tenth wider than sentence case at the same size, so
-     going up 6% and going to caps at once would have cost the three-line break
-     this was arranged around. The width axis pays for both — 80 is the widest
-     setting where "THAN THE SUM OF ITS PARTS?" still fits the column — and the
-     weight, 540 against the name's 850, is what keeps them two different voices
-     of the same face rather than one repeated. */
-  font-variation-settings:"wdth" 80,"wght" 540;
-  font-size:clamp(25px,2.62vw,37px); line-height:1.16;
-  letter-spacing:.004em; text-transform:uppercase; color:var(--ink);
-  /* wide enough that "What makes human-AI collaboration" holds together on
-     the first line; balance then splits the rest evenly rather than leaving
-     a short tail */
-  max-width:36ch; margin:0 0 16px; text-wrap:balance;
-}
+.intro:last-child{ margin-bottom:0 }
 /* a term that must not break across lines, at any width */
 .nb{ white-space:nowrap }
-/* a phrase that should stay whole where there is room for it to. Below this it
-   is allowed to break rather than push a line off the side of a phone. */
-@media(min-width:720px){ .keep{ white-space:nowrap } }
-
-.thesis > span{
-  display:block; font-size:17px; line-height:1.6;
-  color:var(--muted-2); max-width:40ch;
-}
 
 /* ---------- the news band -------------------------------------------------
    Four dated items down the left, where a list belongs; the press story and the
@@ -276,25 +220,38 @@ button:focus-visible{ outline:3px solid var(--blue); outline-offset:2px }
    palest relative of the deck's green — a full field of it beside a dark map
    was two loud things on one screen. */
 
+/* The band's own edges are drawn inside the page's margin, like everything
+   else. A rule that runs past the block above it reads as a loose line. */
 .news{
   display:grid; grid-template-columns:1fr;
+  margin:0 var(--pad);
   gap:var(--rule-w); background:var(--rule);
   border-top:var(--rule-w) solid var(--rule);
   border-bottom:var(--rule-w) solid var(--rule);
 }
 @media(min-width:900px){ .news{ grid-template-columns:1fr 1fr } }
 .news-side{ display:grid; gap:var(--rule-w); background:var(--rule) }
-.news-cell{ background:var(--paper); padding:clamp(22px,2.3vw,34px) var(--pad) }
+.news-cell{ background:var(--paper); padding:clamp(22px,2.3vw,34px) clamp(18px,1.9vw,30px) }
 .news-cell--teaching{ background:var(--sage) }
 
 /* ---- the list ---- */
-.newslist{ margin:0; padding:0; list-style:none }
-.newslist li{
-  display:grid; grid-template-columns:auto 1fr; gap:14px;
+/* One grid for the whole list rather than one per row: each row sized its own
+   label column, so the stories started at a different x on every line. The rows
+   are display:contents so their two halves become cells of the list's grid —
+   max-content then holds one column as wide as the longest label and every
+   story begins on the same vertical. role="list" is on the <ul> because a list
+   item set to display:contents can lose its list semantics to a screen
+   reader. */
+.newslist{
+  margin:0; padding:0; list-style:none;
+  display:grid; grid-template-columns:max-content 1fr; column-gap:16px;
+}
+.newslist li{ display:contents }
+.newslist li > *{
   padding:13px 0; border-top:1px solid var(--faint);
   font-size:16px; line-height:1.5;
 }
-.newslist li:first-child{ border-top:0; padding-top:2px }
+.newslist li:first-child > *{ border-top:0; padding-top:2px }
 .newslist .yr{
   font-family:"IBM Plex Mono",monospace; font-size:11px; color:var(--muted);
   letter-spacing:.06em; padding-top:4px; white-space:nowrap;
@@ -501,6 +458,9 @@ button:focus-visible{ outline:3px solid var(--blue); outline-offset:2px }
   padding:var(--pad) var(--pad) 20px;
   border-bottom:var(--rule-w) solid var(--rule);
 }
+/* On the front page the heading sits directly over its own grid of cards, so
+   the rule under it would be a second line a few pixels above the first. */
+.sec-head--bare{ border-bottom:0; padding-left:0; padding-right:0; margin:0 var(--pad) }
 .sec-head h2{ font-size:clamp(28px,4.2vw,50px) }
 .sec-head .count{
   font-family:"IBM Plex Mono",monospace; font-size:12px;
@@ -825,7 +785,7 @@ a.btn:hover, .btn:hover{ background:var(--coral); color:var(--ink) }
 
 /* ---------- footer -------------------------------------------------------- */
 
-.foot{ padding:var(--pad); display:grid; grid-template-columns:1fr; gap:22px }
+.foot{ padding:var(--pad) 0; margin:0 var(--pad); display:grid; grid-template-columns:1fr; gap:22px }
 @media(min-width:820px){ .foot{ grid-template-columns:1.4fr 1fr 1fr } }
 .foot h3{ font-size:14px; margin-bottom:12px; font-variation-settings:"wdth" 88,"wght" 800 }
 .foot p, .foot li{ font-size:13.5px; color:var(--muted); line-height:1.55 }

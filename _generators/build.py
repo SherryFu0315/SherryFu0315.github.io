@@ -80,7 +80,7 @@ CSS_URL, JS_URL = asset('assets/site.css'), asset('assets/site.js')
 
 FONTS = ('<link rel="preconnect" href="https://fonts.googleapis.com">\n'
  '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n'
- '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=IBM+Plex+Mono:wght@400;500&display=swap">\n'
+ '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=IBM+Plex+Mono:wght@400;500&family=Playfair+Display:ital,wght@1,600;1,700&display=swap">\n'
  '<link rel="stylesheet" href="%s">\n'
  '<script src="%s" defer></script>\n'
  '<link rel="icon" href="/assets/favicon.svg">') % (CSS_URL, JS_URL)
@@ -286,24 +286,19 @@ HOME = '''<!DOCTYPE html>
 %(NAV)s
 
   <header class="hero">
-    <div class="rail rail--who">
-      <img class="rail-photo" src="/profile.png" alt="Xinyu Fu" fetchpriority="high">
-      <div>
-        <h1>Xinyu Fu</h1>
-        <p class="role">%(ROLE)s</p>
-        <ul class="rail-meta">
-          <li><a href="https://scholar.google.com/citations?user=0OM4QfkAAAAJ&amp;hl=en">%(LINK_SCHOLAR)s</a></li>
-          <li><a class="mail" data-u="xinyufu" data-d="gsu.edu" href="#">%(LINK_EMAIL)s</a></li>
-        </ul>
-      </div>
+    <div class="hero-me">
+      <img class="hero-photo" src="/profile.png" alt="Xinyu Fu" fetchpriority="high">
+      <p class="hero-mail"><a class="mail" data-u="xinyufu" data-d="gsu.edu" href="#">%(EMAIL)s</a></p>
     </div>
 
-    <div class="rail rail--ask">
-      <p class="thesis">%(THESIS)s</p>
+    <div class="hero-say">
+      <h1 class="hello">%(HELLO)s</h1>
+      <p class="intro">%(INTRO_1)s</p>
+      <p class="intro">%(INTRO_2)s</p>
     </div>
   </header>
 
-  <div class="sec-head">
+  <div class="sec-head sec-head--bare">
     <h2>%(SR_TITLE)s</h2>
     <span class="count">%(SR_COUNT)s</span>
   </div>
@@ -315,7 +310,7 @@ HOME = '''<!DOCTYPE html>
   <section class="news">
     <div class="news-cell news-cell--list">
       <p class="eyebrow">%(NEWS_TITLE)s</p>
-      <ul class="newslist">
+      <ul class="newslist" role="list">
         <li><span class="yr">2026</span><span>%(NEWS_1)s</span></li>
         <li><span class="yr">2026</span><span>%(NEWS_2)s</span></li>
         <li><span class="yr">2026</span><span>%(NEWS_3)s</span></li>
@@ -327,16 +322,14 @@ HOME = '''<!DOCTYPE html>
     <div class="news-side">
       <div class="news-cell">
         <p class="eyebrow">%(PRESS_TITLE)s</p>
-        <ul class="newslist">
+        <ul class="newslist" role="list">
           <li><span class="yr">%(PRESS_1_OUTLET)s</span><span>%(PRESS_1)s</span></li>
           <li><span class="yr">%(PRESS_2_OUTLET)s</span><span>%(PRESS_2)s</span></li>
-          <li><span class="yr">%(PRESS_3_OUTLET)s</span><span>%(PRESS_3)s</span></li>
         </ul>
       </div>
       <div class="news-cell news-cell--teaching">
         <p class="eyebrow">%(COURSE_TITLE)s</p>
         <p class="course-name">%(COURSE_NAME)s<span class="course-term">%(COURSE_TERM)s</span></p>
-        <p class="news-note">%(COURSE_AIM)s</p>
         <p class="news-also">%(COURSE_PATH)s</p>
         <p class="news-more"><a href="https://sherryfu0315.github.io/cis4394-agentic-ai/index.html">%(COURSE_LINK)s</a> &nbsp;<a href="/teaching/">%(COURSE_ALL)s</a></p>
       </div>
@@ -354,12 +347,12 @@ HOME = '''<!DOCTYPE html>
     # its blocks get reordered. Positionally, moving one block silently
     # shifts every value after it, and the page still builds.
     'PAGE_TITLE': T.HOME_PAGE_TITLE,
+    'HELLO': T.HOME_HELLO,
+    'INTRO_1': T.HOME_INTRO_1,
+    'INTRO_2': T.HOME_INTRO_2,
+    'EMAIL': T.HOME_EMAIL,
     'FONTS': FONTS,
     'NAV': nav('/'),
-    'ROLE': T.HOME_ROLE,
-    'LINK_SCHOLAR': T.HOME_LINK_SCHOLAR,
-    'LINK_EMAIL': T.HOME_LINK_EMAIL,
-    'THESIS': T.HOME_THESIS,
     'SR_TITLE': T.HOME_SELECTED_RESEARCH_TITLE,
     'SR_COUNT': T.HOME_SELECTED_RESEARCH_COUNT,
     'ENTRIES': home_cards,
@@ -374,12 +367,9 @@ HOME = '''<!DOCTYPE html>
     'PRESS_1': T.HOME_PRESS_1,
     'PRESS_2_OUTLET': T.HOME_PRESS_2_OUTLET,
     'PRESS_2': T.HOME_PRESS_2,
-    'PRESS_3_OUTLET': T.HOME_PRESS_3_OUTLET,
-    'PRESS_3': T.HOME_PRESS_3,
     'COURSE_TITLE': T.HOME_COURSE_TITLE,
     'COURSE_NAME': T.HOME_COURSE_NAME,
     'COURSE_TERM': T.HOME_COURSE_TERM,
-    'COURSE_AIM': T.HOME_COURSE_AIM,
     'COURSE_PATH': T.HOME_COURSE_PATH,
     'COURSE_LINK': T.HOME_COURSE_LINK,
     'COURSE_ALL': T.HOME_COURSE_ALL,
