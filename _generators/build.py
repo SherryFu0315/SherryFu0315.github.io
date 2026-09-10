@@ -222,18 +222,12 @@ MOSAIC = [
 ]
 TILE_TPL = (
   '      <a class="tile" href="/research/#%s">\n'
-  '        <img src="/assets/img/%s" alt="%s"%s>\n'
+  '        <img src="/assets/img/%s" alt="%s">\n'
 
   '        <span class="tile-note">%s</span>\n'
   '        <span class="tile-label"><span class="plus">AI+</span><span class="dom">%s</span></span>\n'
   '      </a>')
-# The strip puts four photographs in a row; on most screens only the first two
-# are above the fold, so the other two wait rather than competing for the
-# connection with the portrait and the first pair.
-tiles = [TILE_TPL % (pid, img, alt,
-                     '' if i < 2 else ' loading="lazy" decoding="async"',
-                     note, label)
-         for i, (pid, label, img, note, alt) in enumerate(MOSAIC)]
+tiles = [TILE_TPL % (pid, img, alt, note, label) for pid, label, img, note, alt in MOSAIC]
 
 featured = [x for x in sorted(PROJECTS, key=lambda y: y['order']) if x.get('photo') and x['finding']][:6]
 home_entries = '\n\n'.join(entry(x, i) for i, x in enumerate(featured))
@@ -256,17 +250,20 @@ HOME = '''<!DOCTYPE html>
 %s
 
   <header class="hero">
-    <div class="masthead">
-      <img class="mh-photo" src="/profile.png" alt="Xinyu Fu" fetchpriority="high">
-      <h1 class="mh-name">Xinyu Fu</h1>
-      <p class="mh-role">%s</p>
-    </div>
+    <div class="rail">
+      <div class="rail-top">
+        <img class="rail-photo" src="/profile.png" alt="Xinyu Fu">
+        <div>
+          <h1>Xinyu<br>Fu</h1>
+          <p class="role">%s</p>
+        </div>
+      </div>
 
-    <div class="opening">
       <p class="thesis">%s</p>
+
     </div>
 
-    <div class="mosaic mosaic--strip">
+    <div class="mosaic">
 %s
     </div>
   </header>
