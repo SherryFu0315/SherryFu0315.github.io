@@ -95,6 +95,13 @@ for sid, (x, y) in sxy.items():
         byid[sid]['cy'] = y
         byid[sid]['nref'] = sum(1 for w in cworks if sid in w['cited_by'])
 
+# Where the literature view opens: the median study, not the middle of the
+# world. The layout leaves a wide margin around the studies for the outliers
+# above and below, and centring on the world centres on that margin.
+_cx = sorted(v[0] for v in sxy.values())
+_cy = sorted(v[1] for v in sxy.values())
+OPEN_AT_CITE = {'x': round(_cx[len(_cx) // 2], 1), 'y': round(_cy[len(_cy) // 2], 1)}
+
 js_works = []
 for w in cworks:
     x, y = wxy[w['key']]
@@ -547,7 +554,7 @@ PAGE = u'''<!DOCTYPE html>
     document.getElementById('head-copy').innerHTML = (m==='cite') ? COPY_CITE : COPY_AXIS;
     if (m!=='cite') STARS.forEach(function(st){ st.lbl.style.transform=''; st.lbl.className='star-name'; });
     hideTip();
-    if (atFit){ fitMul=openMul(); tgt=clampCam({x:W/2,y:H/2,s:fitScale()*fitMul}); go(); }
+    if (atFit){ fitMul=openMul(); tgt=clampCam({x:openAt().x,y:openAt().y,s:fitScale()*fitMul}); go(); }
     position();
     measureLabels();
     // the arrangement moves for most of a second; keep the labels honest as it does
@@ -712,12 +719,19 @@ PAGE = u'''<!DOCTYPE html>
      Fitted precisely, the frame is wider than the map's 1600x1024 and the
      constellation sits in the middle of two empty margins. WHOLE SKY still
      goes to the true fit, and once it has, a resize keeps it there. */
-  /* The literature view opens a little inside the whole sky: fitted exactly,
-     the frame is wider than the map and the constellation sits between two
-     empty margins. The two-axis view cannot afford that — its row labels live
-     at the very left edge of the world, and a 15% crop cuts them in half. */
-  var OPEN_CITE=1.15, OPEN_AXIS=1.0;
+  /* The literature view opens well inside the whole sky, on the band where the
+     studies actually are: fitted whole, most of the frame is the empty margin
+     the layout leaves around them, and the labels are too small to read. It
+     centres on the studies' median rather than the middle of the world, since
+     the outliers above and below are what the margin is made of.
+
+     The two-axis view opens at the true fit and cannot do otherwise — its row
+     labels live at the very left edge of the world, and any crop cuts them in
+     half. WHOLE SKY goes to the true fit in either view. */
+  var OPEN_CITE=2.6, OPEN_AXIS=1.0;
+  var OPEN_AT_CITE=__OPEN_AT_CITE__;
   function openMul(){ return mode==='cite' ? OPEN_CITE : OPEN_AXIS; }
+  function openAt(){ return mode==='cite' ? OPEN_AT_CITE : {x:W/2,y:H/2}; }
   var fitMul=OPEN_CITE;
   var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   function fitScale(){
@@ -794,7 +808,8 @@ PAGE = u'''<!DOCTYPE html>
   sky.addEventListener('pointercancel', function(){ drag=null; sky.classList.remove('is-drag'); });
 
   function refit(){
-    if (atFit) tgt=clampCam({x:W/2,y:H/2,s:fitScale()*fitMul});
+    if (atFit) tgt=clampCam(fitMul===1 ? {x:W/2,y:H/2,s:fitScale()}
+                                       : {x:openAt().x,y:openAt().y,s:fitScale()*fitMul});
     else tgt=clampCam({x:tgt.x,y:tgt.y,s:tgt.s});
     if (!(cam.s>0)) { snap(); return; }   // recover from a zero-size first layout
     go();
@@ -803,7 +818,10 @@ PAGE = u'''<!DOCTYPE html>
   if (window.ResizeObserver) new ResizeObserver(refit).observe(sky);
 
   position();
-  cam.s=tgt.s=Math.min(4.2, fitScale()*openMul()); apply();
+  (function openCamera(){
+    var c=clampCam({x:openAt().x, y:openAt().y, s:Math.min(4.2, fitScale()*openMul())});
+    cam.x=tgt.x=c.x; cam.y=tgt.y=c.y; cam.s=tgt.s=c.s; apply();
+  })();
   measureLabels();
   requestAnimationFrame(function(){ requestAnimationFrame(function(){
     sky.classList.add('ready'); placeLabels();
@@ -845,6 +863,7 @@ PAGE = (PAGE.replace('__COLS__',   json.dumps(js_cols,   ensure_ascii=False))
             .replace('__MAP_H1__', T.MAP_H1)
             .replace('__MAP_HEAD_COPY_CITE__', T.MAP_HEAD_COPY_CITE)
             .replace('__COPY_AXIS__', json.dumps(T.MAP_HEAD_COPY_AXIS))
+            .replace('__OPEN_AT_CITE__', json.dumps(OPEN_AT_CITE))
             .replace('__MAP_VIEW_TOGGLE_AXES__', T.MAP_VIEW_TOGGLE_AXES)
             .replace('__MAP_VIEW_TOGGLE_LITERATURE__', T.MAP_VIEW_TOGGLE_LITERATURE)
             .replace('__MAP_BTN_ZOOM_OUT__', T.MAP_BTN_ZOOM_OUT)
