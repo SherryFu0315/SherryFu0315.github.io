@@ -178,9 +178,9 @@ button:focus-visible{ outline:3px solid var(--blue); outline-offset:2px }
 }
 @media(min-width:900px){
   .hero{
-    /* The photographs take 55% of the width, the words the other 45%. The
-       rail keeps a floor so it never collapses under its own type. */
-    grid-template-columns:minmax(360px,45%) 1fr 1fr;
+    /* The photographs take about 60% of the width, the words the other 40%.
+       The rail keeps a floor so it never collapses under its own type. */
+    grid-template-columns:minmax(340px,40%) 1fr 1fr;
     /* Equal rows, so all four photographs come out the same size. */
     grid-template-rows:1fr 1fr;
   }
@@ -537,14 +537,14 @@ a.btn:hover, .btn:hover{ background:var(--coral); color:var(--ink) }
   position:relative; aspect-ratio:4/3; overflow:hidden; display:block;
   text-decoration:none; background:var(--ink);
 }
-/* Beside the rail the photographs are upright by declaration, not by accident.
-   Left to take their height from the grid row, they were as tall as whatever
-   the words next to them happened to measure — so shortening the question by
-   one line turned all four back into squares. 4:5 holds at every width; if the
-   panel of words is taller than two of them, the rows stretch and they get
-   taller still, which keeps them upright either way. */
+/* Landscape, and the same landscape at every width. Left to take their height
+   from the grid row alone they were as tall as whatever the words beside them
+   happened to measure, so a one-line change to the question turned all four
+   into squares. 3:2 is the floor; if the panel of words runs taller than two of
+   them the rows stretch and they get a little deeper, which is still landscape.
+   None of the four shows its whole frame — they are crops, deliberately. */
 @media(min-width:900px){
-  .tile{ aspect-ratio:4/5 }
+  .tile{ aspect-ratio:3/2 }
 }
 .tile img{
   position:absolute; inset:0; width:100%; height:100%; object-fit:cover;
