@@ -26,6 +26,7 @@
   --rule-w:   2px;
   --pad:      clamp(18px, 4.2vw, 46px);
   --maxw:     1440px;
+  --tile-w:   clamp(190px, 19vw, 268px);   /* one hero photograph */
 }
 
 *{ box-sizing:border-box }
@@ -179,7 +180,11 @@ button:focus-visible{ outline:3px solid var(--blue); outline-offset:2px }
 }
 @media(min-width:900px){
   .hero{
-    grid-template-columns:minmax(360px,45%) 1fr 1fr;
+    /* The photographs get a width of their own rather than a share of the
+       page, so they stay upright rectangles instead of drifting back to
+       squares as the window widens. Whatever they do not take goes to the
+       words, which is the right way round. */
+    grid-template-columns:minmax(360px,1fr) var(--tile-w) var(--tile-w);
     /* Equal rows, not content-sized ones. Sized by their content the identity
        cell came out shorter than the question cell, and because the tiles take
        their height from the same rows, the four photographs came out two
@@ -248,7 +253,7 @@ button:focus-visible{ outline:3px solid var(--blue); outline-offset:2px }
   font-variation-settings:"wdth" 104,"wght" 560;
   font-size:clamp(25px,2.7vw,37px); line-height:1.13;
   letter-spacing:.012em; text-transform:uppercase; color:var(--ink);
-  max-width:26ch; margin:0 0 20px; text-wrap:balance;
+  max-width:30ch; margin:0 0 20px; text-wrap:balance;
 }
 /* a term that must not break across lines */
 .nb{ white-space:nowrap }
@@ -535,15 +540,18 @@ a.btn:hover, .btn:hover{ background:var(--coral); color:var(--ink) }
   background:linear-gradient(180deg,rgba(30,16,47,.10) 0%,rgba(30,16,47,.16) 42%,rgba(30,16,47,.74) 100%);
 }
 .tile-label{
-  position:absolute; left:0; bottom:0; z-index:2; padding:0 20px 18px;
+  position:absolute; left:0; bottom:0; z-index:2; padding:0 15px 14px;
   color:var(--white); font-family:"Archivo",Arial,sans-serif;
   font-variation-settings:"wdth" 76,"wght" 800;
   text-transform:uppercase; line-height:.9; letter-spacing:-.01em;
 }
-.tile-label .plus{ display:block; font-size:clamp(17px,2vw,26px) }
-.tile-label .dom{ display:block; font-size:clamp(22px,2.9vw,39px) }
+/* MANUFACTURING is the longest of the four and sets the ceiling: thirteen
+   heavy condensed caps have to fit inside the narrower tile, or the label
+   runs off the photograph it belongs to. */
+.tile-label .plus{ display:block; font-size:clamp(12px,1.3vw,17px) }
+.tile-label .dom{ display:block; font-size:clamp(16px,1.85vw,24px) }
 .tile-note{
-  position:absolute; top:0; left:0; z-index:2; margin:14px 0 0 20px;
+  position:absolute; top:0; left:0; z-index:2; margin:12px 0 0 15px;
   font-family:"IBM Plex Mono",monospace; font-size:10px;
   letter-spacing:.14em; text-transform:uppercase;
   color:var(--white); background:var(--ink); padding:4px 8px;
