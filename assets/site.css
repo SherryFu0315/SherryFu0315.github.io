@@ -19,6 +19,8 @@
 
   /* neutrals biased toward the ink's hue, never a flat grey */
   --muted:    #6B5F7D;
+  --muted-2:  #574A6B;   /* a notch darker, for prose that has to hold its
+                            own beside a large area of photography */
   --faint:    #E4DFEC;
   --wash:     #E9E4F2;   /* a second ground, for a block addressed to someone else */
   --rule:     #1E102F;
@@ -197,7 +199,7 @@ button:focus-visible{ outline:3px solid var(--blue); outline-offset:2px }
   display:flex; flex-direction:column;
   /* The gap between who she is and what she works on is the one interval that
      has to read as a break, now that there is no rule doing it. */
-  gap:clamp(30px,4.2vw,56px);
+  gap:clamp(25px,3.4vw,45px);
   justify-content:center;
 }
 
@@ -207,7 +209,7 @@ button:focus-visible{ outline:3px solid var(--blue); outline-offset:2px }
 /* Square, like everything else here. The circle was the only rounded object on
    the site, and beside a grid of hard-edged photographs it read as a sticker. */
 .rail-photo{
-  width:clamp(96px,9.4vw,132px); aspect-ratio:1; height:auto; flex:none;
+  width:clamp(110px,10.8vw,152px); aspect-ratio:1; height:auto; flex:none;
   object-fit:cover;
 }
 /* One line. Broken over two it took the height of a headline and pushed the
@@ -269,7 +271,7 @@ button:focus-visible{ outline:3px solid var(--blue); outline-offset:2px }
 
 .thesis > span{
   display:block; font-size:17px; line-height:1.6;
-  color:var(--muted); max-width:40ch;
+  color:var(--muted-2); max-width:40ch;
 }
 
 /* ---------- doorway into the research map -------------------------------- */

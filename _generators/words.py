@@ -80,7 +80,8 @@ HOME_FOOT_CREDIT_LINE = """Photography and figure credits: <a href="/credits/">c
 HOME_PAGE_TITLE = "Xinyu Fu &mdash; Human&ndash;AI Complementarity"
 
 # Where it appears: job title and affiliation beside the photo at the top of the front page
-HOME_ROLE = """<b>Assistant Professor of Computer Information Systems</b><br>
+HOME_ROLE = """<b>Assistant Professor</b><br>
+          <b>Computer Information Systems</b><br>
           J. Mack Robinson College of Business<br>Georgia State University"""
 
 # Where it appears: small link under the name at the top of the front page
@@ -91,11 +92,11 @@ HOME_LINK_EMAIL = "Email"
 
 # Where it appears: the statement paragraph under the name at the top of the front page
 # (the nb span just keeps "human-AI" from breaking across two lines)
-# The two <span class="keep"> marks hold a phrase together on one line where the
-# column is wide enough for it; <span class="nb"> holds one at every width. They
-# are here so the question breaks after "collaboration" rather than in the
-# middle of "human-AI collaboration" or "the sum of its parts".
-HOME_THESIS = """<b>What makes <span class="keep"><span class="nb">human&ndash;AI</span> collaboration</span> greater than the <span class="keep">sum of its parts?</span></b><span>I study how different ways of working with AI shape human performance, the organization of work, and the consequences of AI use.</span>"""
+# <span class="nb"> holds a phrase together at every width; <span class="keep">
+# holds one only where the column is wide enough. They are here so the question
+# never breaks inside "human-AI" or inside "the sum of its parts" — the rest of
+# the line breaks are left to the browser, which evens the three lines out.
+HOME_THESIS = """<b>What makes <span class="nb">human&ndash;AI</span> collaboration greater than the <span class="keep">sum of its parts?</span></b><span>I study how different ways of working with AI shape human performance, the organization of work, and the consequences of AI use.</span>"""
 
 
 
