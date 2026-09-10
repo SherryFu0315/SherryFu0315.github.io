@@ -118,38 +118,65 @@ HOME_SELECTED_RESEARCH_TITLE = "Selected Research"
 HOME_SELECTED_RESEARCH_COUNT = """__N_FEATURED__ of __N_PROJECTS__ &middot; <a href="/research/">all projects</a>"""
 
 
-# Where it appears: heading of the first of the three columns near the bottom of the front page
+# ==========================================================================
+#  THE NEWS BAND ON THE FRONT PAGE
+#  One milestone, one story, and this term's course. Everything else is a
+#  click away on the publications page, which is where it all lives anyway.
+# ==========================================================================
+
+# Where it appears: small label above the milestone, top left of the news band
 HOME_RECENT_TITLE = "Recent"
 
-# Where it appears: "Recent" column, the 2026 item
-HOME_RECENT_JMIS = """<a href="https://arxiv.org/abs/2609.01976"><i>Knowing Is Not Enough</i></a> accepted at the Journal of Management Information Systems"""
+# Where it appears: the milestone itself, in large type
+HOME_RECENT_HEADLINE = """<a href="https://arxiv.org/abs/2609.01976">Knowing Is Not Enough</a>"""
 
+# Where it appears: the line under the milestone, naming the journal
+HOME_RECENT_VENUE = "Accepted &middot; Journal of Management Information Systems"
 
-# Where it appears: link at the foot of the "Recent" column on the front page,
-# under the two most recent items
+# Where it appears: one line saying what the paper found
+HOME_RECENT_NOTE = "Reading a system&rsquo;s own account of why it erred is not enough. People made to write that explanation themselves caught meaningfully more of its errors."
+
+# Where it appears: link at the foot of the milestone, to the publications page
 HOME_RECENT_MORE = "More news &rarr;"
 
 # Where it appears: the words revealed when the pointer rests on a research
 # card on the front page
 HOME_CARD_GO = "View project &rarr;"
 
-# Where it appears: heading of the "In the press" column on the front page
+
+# Where it appears: small label above the press story, bottom left of the news band
 HOME_PRESS_TITLE = "In the press"
 
-# Where it appears: "In the press" column, the 2025 item
-HOME_PRESS_EDUBOT = """<a href="https://www.itedgenews.africa/edubot-naija-launches-ai-powered-multilingual-learning-platform-across-nigeria/">EduBot Naija launches AI-powered multilingual learning platform across Nigeria</a> &mdash; ITEdgeNews, on a student&ndash;faculty project building curriculum-aligned lessons in local Nigerian languages &middot; also in <a href="https://techafricanews.com/2025/08/14/a-computer-training-launches-edubot-nigeria-to-deliver-ai-powered-education-in-indigenous-languages/">TechAfrica News</a> &middot; <a href="https://www.youtube.com/watch?v=3TnI3x-V_eQ">the launch on video</a>"""
+# Where it appears: the outlet that ran the story
+HOME_PRESS_OUTLET = "ITEdgeNews"
 
-# Where it appears: heading of the third of the three columns near the bottom of the front page
-HOME_TEACHING_TITLE = "Teaching now"
+# Where it appears: the story's own headline
+HOME_PRESS_HEADLINE = """<a href="https://www.itedgenews.africa/edubot-naija-launches-ai-powered-multilingual-learning-platform-across-nigeria/">EduBot Naija launches AI-powered multilingual learning platform across Nigeria</a>"""
 
-# Where it appears: "Teaching now" column, the Fall 2026 course
-HOME_TEACHING_F26 = """<a href="https://sherryfu0315.github.io/cis4394-agentic-ai/index.html">Agentic AI</a> &mdash; a <a href="https://path.mit.edu/">PATH</a> course"""
+# Where it appears: one line of background under the story headline
+HOME_PRESS_NOTE = "A student&ndash;faculty project building curriculum-aligned lessons in local Nigerian languages, for communities the English-only internet was never going to reach."
 
-# Where it appears: "Teaching now" column, the Spring 2026 course
-HOME_TEACHING_S26 = "Agentic AI"
+# Where it appears: the last line of the press cell, where the other coverage goes
+HOME_PRESS_ALSO = """Also in <a href="https://techafricanews.com/2025/08/14/a-computer-training-launches-edubot-nigeria-to-deliver-ai-powered-education-in-indigenous-languages/">TechAfrica News</a>, and <a href="https://www.youtube.com/watch?v=3TnI3x-V_eQ">on video</a>."""
 
-# Where it appears: last row of the "Teaching now" column, linking to the teaching page
-HOME_TEACHING_ALL_COURSES = "All courses &rarr;"
+
+# Where it appears: small label at the top of the green course panel
+HOME_COURSE_TITLE = "This semester"
+
+# Where it appears: the course name, the largest words in the green panel
+HOME_COURSE_NAME = "Agentic AI"
+
+# Where it appears: the term, under the course name
+HOME_COURSE_TERM = "Fall 2026 &middot; Georgia State"
+
+# Where it appears: one line on what the course is for
+HOME_COURSE_AIM = "Build. Break. Iterate. The whole agent lifecycle practiced from day one, ending in a capstone that takes a real problem to a working prototype."
+
+# Where it appears: the line under that, on the programme the course belongs to
+HOME_COURSE_PATH = """Taught as part of <a href="https://path.mit.edu/">PATH</a> &mdash; the MIT RAISE and Georgia State initiative <a href="https://news.gsu.edu/2026/04/03/mit-raise-and-georgia-state-university-announce-path">announced last April</a>."""
+
+# Where it appears: the link at the foot of the green course panel
+HOME_COURSE_LINK = "Course site &rarr;"
 
 # ---- The research page (/research/) ----
 
@@ -506,9 +533,4 @@ MAP_BLURB_CITE_3 = """The proportion is the part worth standing back for. A work
 # Where it appears: heading above the note under the map, in the literature view
 MAP_METHOD_HEADING = "How this is drawn"
 
-# Where it appears: "Recent" column, the CIST acceptance
-HOME_RECENT_CIST = """<i>The Privacy Asymmetry of Service Robots</i> accepted at CIST, with doctoral candidate <a href="/join/#students">Anqi Zhang</a>"""
 
-
-# Where it appears: "In the press" column, the PATH announcement
-HOME_PRESS_PATH = """<a href="https://news.gsu.edu/2026/04/03/mit-raise-and-georgia-state-university-announce-path">MIT RAISE and Georgia State announce PATH</a> &mdash; GSU News, on the initiative the Agentic AI course is taught under &middot; <a href="https://path.mit.edu/">the programme</a> &middot; <a href="https://www.youtube.com/watch?v=LnyWCPhFzzA&amp;list=PL8lQ0qMEI-E8-64gGMvrHBSqbGQkAsXCD&amp;index=1">talks</a>"""

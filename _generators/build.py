@@ -231,34 +231,12 @@ RESEARCH = '''<!DOCTYPE html>
 io.open(os.path.join(R, 'research/index.html'), 'w', encoding='utf-8').write(RESEARCH)
 print('research/index.html', len(RESEARCH), 'bytes')
 
-MOSAIC = [
-  ('manufacturing','Manufacturing','manufacturing.jpg','Embodied AI',
-   'A robotic arm moving a large sheet of flat glass along a conveyor in a bright glass plant.'),
-  ('service','Service','service.jpg','Embodied AI',
-   'A hotel guest in a white robe reaching into the open lid of a delivery robot in a carpeted corridor.'),
-  ('sales','Sales','sales.jpg','Agentic AI',
-   'A humanoid AI head in profile beside a woman wearing a call-centre headset.'),
-  ('edubot','Education','edubot.jpg','Agentic AI',
-   'Secondary-school students in uniform seated together at the EduBot Naija launch.'),
-]
-TILE_TPL = (
-  '      <a class="tile" href="/research/#%s">\n'
-  '        <img src="/assets/img/%s" alt="%s">\n'
-  '        <span class="tile-note">%s</span>\n'
-  '        <span class="tile-arrow" aria-hidden="true">&#8599;</span>\n'
-  '        <span class="tile-label"><span class="plus">AI+</span><span class="dom">%s</span>'
-  '<span class="tile-more">%s</span></span>\n'
-  '      </a>')
-# hovering a card names the study it opens, so the four settings are an index
-# rather than four photographs with a category on them
-_short = {p['id']: p['short'] for p in PROJECTS}
-tiles = [TILE_TPL % (pid, img, alt, note, label, _short.get(pid, ''))
-         for pid, label, img, note, alt in MOSAIC]
 
 _by_id = {x['id']: x for x in PROJECTS}
 featured = [_by_id[i] for i in FEATURED]
 _missing = [p['id'] for p in featured if not (p.get('photo') and p['finding'])]
 assert not _missing, 'featured on the front page but has no photo or finding: %s' % _missing
+
 CARD_TPL = """  <a class="card" href="/research/#%(id)s">
     <img src="/assets/img/%(img)s" alt="%(alt)s"%(lazy)s>
     <span class="card-wash" aria-hidden="true"></span>
@@ -323,35 +301,6 @@ HOME = '''<!DOCTYPE html>
       <p class="thesis">%(THESIS)s</p>
     </div>
 
-%(TILES)s
-  </header>
-
-  <div class="strip">
-    <div class="strip-cell">
-      <h3>%(RECENT_TITLE)s</h3>
-      <ul>
-        <li><span class="yr">2026</span>%(RECENT_JMIS)s</li>
-        <li><span class="yr">2026</span>%(RECENT_CIST)s</li>
-        <li><a href="/publications/">%(RECENT_MORE)s</a></li>
-      </ul>
-    </div>
-    <div class="strip-cell">
-      <h3>%(PRESS_TITLE)s</h3>
-      <ul>
-        <li><span class="yr">2026</span>%(PRESS_PATH)s</li>
-        <li><span class="yr">2025</span>%(PRESS_EDUBOT)s</li>
-      </ul>
-    </div>
-    <div class="strip-cell">
-      <h3>%(TEACH_TITLE)s</h3>
-      <ul>
-        <li><span class="yr">F26</span>%(TEACH_F26)s</li>
-        <li><span class="yr">S26</span>%(TEACH_S26)s</li>
-        <li><a href="/teaching/">%(TEACH_ALL)s</a></li>
-      </ul>
-    </div>
-  </div>
-
   <a class="skylink" href="/universe/">
     <canvas class="skylink-stars" id="skystars" aria-hidden="true"></canvas>
     <span class="skylink-scrim" aria-hidden="true"></span>
@@ -362,6 +311,35 @@ HOME = '''<!DOCTYPE html>
       <span class="skylink-btn">%(MAP_BUTTON)s</span>
     </span>
   </a>
+  </header>
+
+  <section class="news">
+    <div class="news-main">
+      <div class="news-cell">
+        <p class="eyebrow">%(RECENT_TITLE)s</p>
+        <h3 class="news-h">%(RECENT_HEADLINE)s</h3>
+        <p class="news-venue">%(RECENT_VENUE)s</p>
+        <p class="news-note">%(RECENT_NOTE)s</p>
+        <p class="news-more"><a href="/publications/">%(RECENT_MORE)s</a></p>
+      </div>
+      <div class="news-cell">
+        <p class="eyebrow">%(PRESS_TITLE)s</p>
+        <p class="news-outlet">%(PRESS_OUTLET)s</p>
+        <h3 class="news-h">%(PRESS_HEADLINE)s</h3>
+        <p class="news-note">%(PRESS_NOTE)s</p>
+        <p class="news-also">%(PRESS_ALSO)s</p>
+      </div>
+    </div>
+
+    <div class="poster">
+      <p class="eyebrow">%(COURSE_TITLE)s</p>
+      <p class="poster-name">%(COURSE_NAME)s</p>
+      <p class="poster-term">%(COURSE_TERM)s</p>
+      <p class="poster-aim">%(COURSE_AIM)s</p>
+      <p class="poster-path">%(COURSE_PATH)s</p>
+      <p class="poster-go"><a href="https://sherryfu0315.github.io/cis4394-agentic-ai/index.html">%(COURSE_LINK)s</a></p>
+    </div>
+  </section>
 
   <div class="sec-head">
     <h2>%(SR_TITLE)s</h2>
@@ -408,11 +386,13 @@ HOME = '''<!DOCTYPE html>
        read as a stamp in the corner; at roughly the scale the map itself opens
        at, the constellation is legible and the labels can be read. On a wide
        card the text keeps the left, so the core is pushed right of centre. */
+    /* The words are along the foot of the panel now, so the constellation is
+       centred across it and lifted clear of them rather than pushed to one
+       side. */
     var b = MINI.b, pad = 78;
-    var narrow = r.width < 860;   // must match the scrim's breakpoint in site.css
-    var s = (narrow ? r.width*1.75 : r.width*0.78) / ((b[2]-b[0]) + pad*2);
-    var ox = (narrow ? r.width*0.72 : r.width*0.66) - (b[0]+b[2])/2 * s;
-    var oy = (narrow ? r.height*0.74 : r.height*0.50) - b[4] * s;
+    var s = r.width*0.74 / ((b[2]-b[0]) + pad*2);
+    var ox = r.width*0.50 - (b[0]+b[2])/2 * s;
+    var oy = r.height*0.32 - b[4] * s;
     function X(u){ return ox + u*s; }
     function Y(v){ return oy + v*s; }
 
@@ -428,10 +408,14 @@ HOME = '''<!DOCTYPE html>
       g.fillStyle = w[2];
       g.beginPath(); g.arc(X(w[0]), Y(w[1]), shared ? 2.1 : 1.2, 0, Math.PI*2); g.fill();
     });
+    /* The glyphs are drawn in screen pixels, so at a smaller frame they have to
+       come down with the scale or thirteen stars a hundred pixels apart are
+       drawn twenty pixels across and merge into one smear. */
+    var glyph = Math.max(0.55, Math.min(1.15, s / 1.6));
     MINI.s.forEach(function(st){
       var x=X(st[0]), y=Y(st[1]);
       if (x < -60 || x > r.width+60 || y < -60 || y > r.height+60) return;
-      var R = 8 + st[4]*3.2;
+      var R = (8 + st[4]*3.2) * glyph;
       var grd=g.createRadialGradient(x,y,0,x,y,R*2.6);
       grd.addColorStop(0,st[2]); grd.addColorStop(1,'rgba(0,0,0,0)');
       g.globalAlpha=0.4; g.fillStyle=grd;
@@ -454,7 +438,7 @@ HOME = '''<!DOCTYPE html>
     MINI.s.forEach(function(st){
       var x=X(st[0]), y=Y(st[1]);
       if (x < 8 || x > r.width-14) return;
-      var R = 8 + st[4]*3.2;
+      var R = (8 + st[4]*3.2) * glyph;
       var bw = g.measureText(st[3]).width + 14, bh = 20;
       var bx = Math.min(Math.max(x-bw/2, 8), r.width-bw-8), by = y + R + 7;
       if (by < 8 || by+bh > r.height-8) return;
@@ -490,7 +474,6 @@ HOME = '''<!DOCTYPE html>
     'LINK_SCHOLAR': T.HOME_LINK_SCHOLAR,
     'LINK_EMAIL': T.HOME_LINK_EMAIL,
     'THESIS': T.HOME_THESIS,
-    'TILES': '\n\n'.join(tiles),
     'MAP_EYEBROW': T.HOME_MAP_EYEBROW,
     'MAP_HEADLINE': T.HOME_MAP_HEADLINE,
     'MAP_BLURB': T.HOME_MAP_BLURB,
@@ -499,16 +482,21 @@ HOME = '''<!DOCTYPE html>
     'SR_COUNT': T.HOME_SELECTED_RESEARCH_COUNT,
     'ENTRIES': home_cards,
     'RECENT_TITLE': T.HOME_RECENT_TITLE,
-    'RECENT_JMIS': T.HOME_RECENT_JMIS,
-    'RECENT_CIST': T.HOME_RECENT_CIST,
+    'RECENT_HEADLINE': T.HOME_RECENT_HEADLINE,
+    'RECENT_VENUE': T.HOME_RECENT_VENUE,
+    'RECENT_NOTE': T.HOME_RECENT_NOTE,
     'RECENT_MORE': T.HOME_RECENT_MORE,
     'PRESS_TITLE': T.HOME_PRESS_TITLE,
-    'PRESS_PATH': T.HOME_PRESS_PATH,
-    'PRESS_EDUBOT': T.HOME_PRESS_EDUBOT,
-    'TEACH_TITLE': T.HOME_TEACHING_TITLE,
-    'TEACH_F26': T.HOME_TEACHING_F26,
-    'TEACH_S26': T.HOME_TEACHING_S26,
-    'TEACH_ALL': T.HOME_TEACHING_ALL_COURSES,
+    'PRESS_OUTLET': T.HOME_PRESS_OUTLET,
+    'PRESS_HEADLINE': T.HOME_PRESS_HEADLINE,
+    'PRESS_NOTE': T.HOME_PRESS_NOTE,
+    'PRESS_ALSO': T.HOME_PRESS_ALSO,
+    'COURSE_TITLE': T.HOME_COURSE_TITLE,
+    'COURSE_NAME': T.HOME_COURSE_NAME,
+    'COURSE_TERM': T.HOME_COURSE_TERM,
+    'COURSE_AIM': T.HOME_COURSE_AIM,
+    'COURSE_PATH': T.HOME_COURSE_PATH,
+    'COURSE_LINK': T.HOME_COURSE_LINK,
     'FOOT': FOOT,
 }
 _NUM = {1:'One',2:'Two',3:'Three',4:'Four',5:'Five',6:'Six',7:'Seven',8:'Eight',

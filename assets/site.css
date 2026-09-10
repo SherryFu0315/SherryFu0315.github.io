@@ -180,17 +180,10 @@ button:focus-visible{ outline:3px solid var(--blue); outline-offset:2px }
 }
 @media(min-width:900px){
   .hero{
-    /* The photographs take about 60% of the width, the words the other 40%.
-       The rail keeps a floor so it never collapses under its own type. */
-    grid-template-columns:minmax(340px,40%) 1fr 1fr;
-    /* Equal rows, so all four photographs come out the same size. */
-    grid-template-rows:1fr 1fr;
+    /* The words take 40%, the map the other 60%. The rail keeps a floor so it
+       never collapses under its own type. */
+    grid-template-columns:minmax(340px,40%) 1fr;
   }
-  .rail{ grid-area:1 / 1 / 3 / 2 }   /* one panel, both rows */
-}
-@media(min-width:561px) and (max-width:899px){
-  .hero{ grid-template-columns:1fr 1fr }
-  .rail{ grid-column:1 / -1 }
 }
 
 .rail{
@@ -282,6 +275,73 @@ button:focus-visible{ outline:3px solid var(--blue); outline-offset:2px }
   color:var(--muted-2); max-width:40ch;
 }
 
+/* ---------- the news band -------------------------------------------------
+   Three equal columns gave equal weight to three things that have nothing like
+   equal weight: one accepted paper, one press story, and a course. It is two
+   columns now — the two items stacked on the left, the course as a poster down
+   the right, in the deck's green so it reads as the one standing thing rather
+   than another piece of news. */
+
+.news{
+  display:grid; grid-template-columns:1fr;
+  gap:var(--rule-w); background:var(--rule);
+  border-bottom:var(--rule-w) solid var(--rule);
+}
+@media(min-width:900px){ .news{ grid-template-columns:1.3fr 1fr } }
+.news-main{ display:grid; gap:var(--rule-w); background:var(--rule) }
+.news-cell{ background:var(--paper); padding:clamp(22px,2.3vw,34px) var(--pad) }
+
+/* a news headline is a sentence someone wrote, not a section label, so it does
+   not take the uppercase every other h3 on the site gets */
+.news-h{
+  font-size:clamp(21px,1.9vw,27px); line-height:1.16;
+  text-transform:none; letter-spacing:-.012em;
+  font-variation-settings:"wdth" 96,"wght" 700;
+  margin:0 0 10px; max-width:34ch; text-wrap:balance;
+}
+.news-h a{ color:var(--ink); text-decoration:none; border-bottom:2px solid var(--faint) }
+.news-h a:hover{ border-bottom-color:var(--blue); color:var(--blue) }
+.news-venue{
+  font-family:"IBM Plex Mono",monospace; font-size:11.5px; letter-spacing:.09em;
+  text-transform:uppercase; color:var(--muted); margin:0 0 12px;
+}
+.news-outlet{
+  font-family:"IBM Plex Mono",monospace; font-size:11.5px; letter-spacing:.11em;
+  text-transform:uppercase; color:var(--ink); margin:0 0 8px;
+}
+.news-note{ font-size:16px; line-height:1.55; color:var(--muted-2); margin:0; max-width:52ch }
+.news-more, .news-also{ font-size:14px; margin:14px 0 0; color:var(--muted) }
+
+/* ---------- the course poster --------------------------------------------- */
+
+.poster{
+  background:var(--lime);
+  padding:clamp(26px,2.6vw,40px) var(--pad);
+  display:flex; flex-direction:column; justify-content:center;
+}
+.poster .eyebrow{ color:var(--ink); margin-bottom:10px }
+.poster-name{
+  font-family:"Archivo",Arial,sans-serif;
+  font-variation-settings:"wdth" 78,"wght" 850;
+  text-transform:uppercase; letter-spacing:-.022em; line-height:.9;
+  font-size:clamp(38px,4.4vw,62px); margin:0 0 12px; color:var(--ink);
+}
+.poster-term{
+  font-family:"IBM Plex Mono",monospace; font-size:12px; letter-spacing:.12em;
+  text-transform:uppercase; color:var(--ink); margin:0 0 16px;
+}
+.poster-aim{ font-size:16.5px; line-height:1.5; color:var(--ink); margin:0 0 12px; max-width:40ch }
+.poster-path{ font-size:14px; line-height:1.5; color:#4B3F2E; margin:0; max-width:40ch }
+.poster-go{ margin:20px 0 0 }
+.poster-go a{
+  display:inline-block; font-family:"IBM Plex Mono",monospace; font-size:12px;
+  letter-spacing:.1em; text-transform:uppercase; color:var(--ink);
+  text-decoration:none; border:var(--rule-w) solid var(--ink); padding:11px 18px;
+}
+.poster-go a:hover{ background:var(--ink); color:var(--lime) }
+/* the green ground is where the site's link blue stops being readable */
+.poster a{ color:var(--ink) }
+
 /* ---------- the research cards -------------------------------------------
    Six photographs in a 3x2 grid. What is always visible is the least a card
    needs to be chosen between: the picture, what the study is called, and how
@@ -360,12 +420,15 @@ button:focus-visible{ outline:3px solid var(--blue); outline-offset:2px }
 
 /* ---------- doorway into the research map -------------------------------- */
 
+/* The map sits beside her rather than in a band of its own further down. It was
+   doing the same job in both places — inviting you in — and one of them was
+   also repeating four photographs that the cards below already carry. */
 .skylink{
-  position:relative; display:block; overflow:hidden;
-  background:#120A1F;
-  border-bottom:var(--rule-w) solid var(--rule);
-  text-decoration:none; color:#fff;
-  padding:clamp(38px,6vw,74px) var(--pad);
+  position:relative; display:flex; flex-direction:column; justify-content:flex-end;
+  overflow:hidden; background:#120A1F;
+  text-decoration:none; color:#fff; border-bottom:0;
+  padding:clamp(22px,2.4vw,32px) clamp(20px,2.2vw,34px);
+  min-height:clamp(300px,34vw,460px);
 }
 .skylink-stars{
   position:absolute; inset:0; width:100%; height:100%;
@@ -382,31 +445,25 @@ button:focus-visible{ outline:3px solid var(--blue); outline-offset:2px }
 }
 /* The map runs the full width of the card and the words sit on top of it,
    so the side the words are on is dimmed and the other side is left clear. */
+/* The words sit along the foot of the panel, so the wash comes up from there
+   rather than in from the side. */
 .skylink-scrim{
   position:absolute; inset:0; pointer-events:none;
-  background:linear-gradient(178deg,#120A1F 0 10%,rgba(18,10,31,.93) 48%,
-                             rgba(18,10,31,.4) 76%,rgba(18,10,31,.05) 100%);
+  background:linear-gradient(0deg,#120A1F 0 6%,rgba(18,10,31,.92) 34%,
+                             rgba(18,10,31,.45) 62%,rgba(18,10,31,0) 100%);
 }
-/* 860 is also where the painter switches how it frames the map, so the
-   dimmed side and the empty side stay the same side. */
-@media(min-width:860px){
-  .skylink-scrim{
-    background:linear-gradient(90deg,#120A1F 0 18%,rgba(18,10,31,.88) 38%,
-                               rgba(18,10,31,.28) 60%,rgba(18,10,31,0) 76%);
-  }
-}
-.skylink-in{ position:relative; display:block; max-width:56ch }
+.skylink-in{ position:relative; display:block; max-width:46ch }
 .skylink-h{
   display:block;
   font-family:"Archivo",Arial,sans-serif;
   font-variation-settings:"wdth" 78,"wght" 800;
   text-transform:uppercase; letter-spacing:-.018em; line-height:.93;
-  font-size:clamp(27px,3.3vw,44px);
-  margin-bottom:14px; text-wrap:balance;
+  font-size:clamp(23px,2.1vw,31px);
+  margin-bottom:11px; text-wrap:balance;
 }
 .skylink-p{
-  display:block; color:#B6A9CE; font-size:16.5px; line-height:1.55;
-  max-width:48ch; margin-bottom:22px;
+  display:block; color:#B6A9CE; font-size:15px; line-height:1.5;
+  max-width:44ch; margin-bottom:18px;
 }
 .skylink-btn{
   display:inline-block;
@@ -615,118 +672,6 @@ a.btn:hover, .btn:hover{ background:var(--coral); color:var(--ink) }
   font-family:"IBM Plex Mono",monospace;
   font-size:9.5px; letter-spacing:.1em; text-transform:uppercase;
   color:var(--muted); display:block; line-height:1.35;
-}
-
-/* ---------- mosaic ------------------------------------------------------- */
-
-.tile{
-  position:relative; aspect-ratio:4/3; overflow:hidden; display:block;
-  text-decoration:none; background:var(--ink);
-}
-/* Landscape, and the same landscape at every width. Left to take their height
-   from the grid row alone they were as tall as whatever the words beside them
-   happened to measure, so a one-line change to the question turned all four
-   into squares. 3:2 is the floor; if the panel of words runs taller than two of
-   them the rows stretch and they get a little deeper, which is still landscape.
-   None of the four shows its whole frame — they are crops, deliberately. */
-@media(min-width:900px){
-  /* Not aspect-ratio. Given a definite height — which is what height:100% or a
-     stretched grid row hands it — aspect-ratio turns around and computes the
-     WIDTH from that height, and the photographs overflow their own columns.
-     A spacer whose padding is a percentage of the width sets a minimum height
-     and never touches the width, so the row can be taller and the tile simply
-     fills it. Everything drawn on the tile is absolutely positioned, so the
-     spacer pushes nothing. */
-  .tile{ aspect-ratio:auto }
-  .tile::before{ content:""; display:block; padding-top:66.67% }
-}
-.tile img{
-  position:absolute; inset:0; width:100%; height:100%; object-fit:cover;
-  /* Four photographs from four sources, two cold, one warm, one much brighter
-     than the rest. Each keeps its own colour — the point is that these are real
-     settings, not stock — but the saturation and contrast are pulled to one
-     range so the row reads as a set rather than as four separate pictures. */
-  filter:saturate(.88) contrast(1.04);
-}
-/* the launch photograph is shot into a window and comes back a stop brighter
-   than the other three, which also cost the white label its contrast */
-.tile[href$="#edubot"] img{ filter:saturate(.88) contrast(1.04) brightness(.88) }
-/* a dense row of seated students: any upright crop cuts somebody, so it is
-   placed to cut in the gap between two of them rather than through a face */
-.tile[href$="#edubot"] img{ object-position:47% 50% }
-.tile::after{
-  content:""; position:absolute; inset:0;
-  /* one wash for all four, deep enough at the foot that the white label holds
-     its contrast over the bright photograph as well as over the dark ones */
-  background:linear-gradient(180deg,
-    rgba(24,13,38,.06) 0%, rgba(24,13,38,.20) 40%,
-    rgba(24,13,38,.62) 78%, rgba(24,13,38,.86) 100%);
-}
-.tile-label{
-  position:absolute; left:0; bottom:0; right:0; z-index:2; padding:0 20px 18px;
-  color:var(--white); font-family:"Archivo",Arial,sans-serif;
-  font-variation-settings:"wdth" 76,"wght" 800;
-  text-transform:uppercase; line-height:.9; letter-spacing:-.01em;
-}
-/* The page has already said, four times over, that this is about AI. So AI+
-   steps back to a prefix and the setting — which is the thing that differs
-   between the four — is what carries. MANUFACTURING is the longest of them and
-   sets the size for all four, with room left at the right edge. */
-.tile-label .plus{
-  display:block; font-size:clamp(10px,1.1vw,14px);
-  font-family:"IBM Plex Mono",monospace; font-variation-settings:normal;
-  letter-spacing:.16em; opacity:.72; margin-bottom:5px;
-}
-.tile-label .dom{ display:block; font-size:clamp(18px,2.4vw,32px) }
-/* a card that leads somewhere should look like it does */
-.tile-arrow{
-  position:absolute; top:0; right:0; z-index:2; margin:16px 20px 0 0;
-  color:var(--white); font-size:15px; line-height:1; opacity:.62;
-}
-.tile:hover .tile-arrow, .tile:focus-visible .tile-arrow{ opacity:1 }
-/* the study the card actually opens, revealed on hover rather than shouted */
-.tile-more{
-  display:block; font-family:"Archivo",Arial,sans-serif;
-  font-variation-settings:"wdth" 100,"wght" 400;
-  text-transform:none; letter-spacing:0; line-height:1.3;
-  font-size:clamp(12.5px,1.05vw,14.5px); color:rgba(255,255,255,.9);
-  max-height:0; opacity:0; overflow:hidden;
-}
-@media (prefers-reduced-motion: no-preference){
-  .tile-more{ transition:max-height .28s ease, opacity .28s ease, margin-top .28s ease }
-}
-.tile:hover .tile-more, .tile:focus-visible .tile-more{
-  max-height:4.5em; opacity:1; margin-top:8px;
-}
-.tile-note{
-  position:absolute; top:0; left:0; z-index:2; margin:16px 0 0 20px;
-  font-family:"IBM Plex Mono",monospace; font-size:10px;
-  letter-spacing:.14em; text-transform:uppercase;
-  color:var(--white); background:var(--ink); padding:4px 8px;
-}
-.tile--duo .duo-wash{
-  position:absolute; inset:0; z-index:1;
-  background:var(--blue); mix-blend-mode:color; opacity:.7;
-}
-@media (prefers-reduced-motion: no-preference){
-  .tile-label{ transition:transform .22s ease }
-  .tile:hover .tile-label{ transform:translateY(-3px) }
-}
-
-/* ---------- hero without artwork ----------------------------------------- */
-
-.hero--plain{ grid-template-columns:1fr }
-@media(min-width:900px){ .hero--plain{ grid-template-columns:minmax(320px,36%) 1fr } }
-.statement{ padding:var(--pad); display:flex; flex-direction:column; justify-content:center }
-.statement-l{
-  font-family:"Archivo",Arial,sans-serif;
-  font-variation-settings:"wdth" 92,"wght" 500;
-  font-size:clamp(21px,2.5vw,31px); line-height:1.28; letter-spacing:-.012em;
-  margin:0; max-width:30ch; text-wrap:balance;
-}
-.statement-l b{
-  font-variation-settings:"wdth" 88,"wght" 800;
-  background:var(--lime); box-shadow:5px 0 0 var(--lime),-5px 0 0 var(--lime);
 }
 
 /* ---------- the matrix --------------------------------------------------- */
