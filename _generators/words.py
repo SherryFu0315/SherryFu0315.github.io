@@ -113,7 +113,7 @@ HOME_NEWS_TITLE = "Latest news"
 # Where it appears: the four items of that column, newest first. The short text
 # before each one is the year it happened.
 HOME_NEWS_1 = """<a href="https://arxiv.org/abs/2609.01976"><i>Knowing Is Not Enough</i></a> accepted at the Journal of Management Information Systems"""
-HOME_NEWS_2 = """<i>The Privacy Asymmetry of Service Robots</i> accepted at CIST, with doctoral candidate <a href="/join/#students">Anqi Zhang</a>"""
+HOME_NEWS_2 = """<i>The Privacy Asymmetry of Service Robots</i> accepted at CIST, with doctoral candidate <a href="/join/#advising">Anqi Zhang</a>"""
 HOME_NEWS_3 = """<i>Pathways to AI-Ready Entry-Level Talent</i> accepted at ICIS &mdash; the curriculum paper from <a href="https://path.mit.edu/">PATH</a>"""
 HOME_NEWS_4 = """<a href="https://onlinelibrary.wiley.com/doi/10.1002/9781394266401.ch14">AI in Human Resource Management</a> published in <i>Advances in Human&ndash;AI Collaboration</i> (Wiley)"""
 
@@ -170,7 +170,7 @@ RESEARCH_UNDER_REVIEW_NOTE = """Work under review is listed without a journal
     <a href="/publications/">publications page</a>."""
 
 # Where it appears: button at the bottom of the research page, linking to the contact page
-RESEARCH_JOIN_BUTTON = "Reach out to explore these questions together &rarr;"
+RESEARCH_JOIN_BUTTON = "How students get involved in these &rarr;"
 
 # Where it appears: stand-in shown for a project that has no one-line finding written yet
 # (used for the project cards on both the research page and the front page)
