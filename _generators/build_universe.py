@@ -708,6 +708,11 @@ PAGE = u'''<!DOCTYPE html>
 
   /* ---- camera ---- */
   var cam={x:W/2,y:H/2,s:1}, tgt={x:W/2,y:H/2,s:1}, raf=null, atFit=true;
+  /* The map opens a little inside the whole sky rather than exactly at it.
+     Fitted precisely, the frame is wider than the map's 1600x1024 and the
+     constellation sits in the middle of two empty margins. WHOLE SKY still
+     goes to the true fit, and once it has, a resize keeps it there. */
+  var OPEN=1.15, fitMul=OPEN;
   var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   function fitScale(){
     var r=sky.getBoundingClientRect();
@@ -743,7 +748,7 @@ PAGE = u'''<!DOCTYPE html>
   }
   function go(){ if (reduce||document.hidden){ snap(); return; } if(!raf) raf=requestAnimationFrame(tick); }
   function flyTo(x,y,s){ atFit=false; tgt=clampCam({x:x,y:y,s:s}); go(); }
-  function reset(){ tgt=clampCam({x:W/2,y:H/2,s:fitScale()}); go(); atFit=true; }
+  function reset(){ fitMul=1; tgt=clampCam({x:W/2,y:H/2,s:fitScale()}); go(); atFit=true; }
 
   document.getElementById('btn-reset').addEventListener('click', reset);
   document.getElementById('btn-out').addEventListener('click', function(){
@@ -783,7 +788,7 @@ PAGE = u'''<!DOCTYPE html>
   sky.addEventListener('pointercancel', function(){ drag=null; sky.classList.remove('is-drag'); });
 
   function refit(){
-    if (atFit) tgt=clampCam({x:W/2,y:H/2,s:fitScale()});
+    if (atFit) tgt=clampCam({x:W/2,y:H/2,s:fitScale()*fitMul});
     else tgt=clampCam({x:tgt.x,y:tgt.y,s:tgt.s});
     if (!(cam.s>0)) { snap(); return; }   // recover from a zero-size first layout
     go();
@@ -792,7 +797,7 @@ PAGE = u'''<!DOCTYPE html>
   if (window.ResizeObserver) new ResizeObserver(refit).observe(sky);
 
   position();
-  cam.s=tgt.s=fitScale(); apply();
+  cam.s=tgt.s=Math.min(4.2, fitScale()*OPEN); apply();
   measureLabels();
   requestAnimationFrame(function(){ requestAnimationFrame(function(){
     sky.classList.add('ready'); placeLabels();

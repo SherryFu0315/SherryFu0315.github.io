@@ -20,6 +20,7 @@
   /* neutrals biased toward the ink's hue, never a flat grey */
   --muted:    #6B5F7D;
   --faint:    #E4DFEC;
+  --wash:     #E9E4F2;   /* a second ground, for a block addressed to someone else */
   --rule:     #1E102F;
 
   --rule-w:   2px;
@@ -287,6 +288,19 @@ button:focus-visible{ outline:3px solid var(--blue); outline-offset:2px }
 }
 .skylink:hover .skylink-btn{ background:var(--lime); color:#120A1F; border-color:var(--lime) }
 .skylink:focus-visible{ outline:3px solid var(--lime); outline-offset:-6px }
+
+/* ---------- a block addressed to a different audience ---------------------
+   The contact page runs three audiences past each other: people who might
+   collaborate, students who want to volunteer, and doctoral advising. Set on one
+   ground they read as one continuous pitch, and a company or a colleague ends up
+   reading the student terms as if they were addressed to them. So the student
+   block gets its own field of colour and a tag that names its audience before
+   the heading does. */
+.band{ border-bottom:var(--rule-w) solid var(--rule) }
+.band > *:last-child{ border-bottom:0 }
+.band--students{ background:var(--wash) }
+/* the audience tag sits on its own line above the heading, not beside it */
+.sec-head .eyebrow{ width:100%; margin:0 0 10px }
 
 /* ---------- section scaffolding ------------------------------------------ */
 

@@ -21,6 +21,18 @@ API = 'https://api.openalex.org/works'
 SELECT = 'id,display_name,publication_year,authorships,referenced_works,cited_by_count,primary_location'
 UA = 'xinyufu-website-citation-map/1.0'
 
+# OpenAlex runs two pools. The anonymous one is throttled hard and unpredictably
+# — a fresh request can come back 429 with a 36-second Retry-After — so at its
+# pace this run takes hours. Identifying yourself with a contact address puts you
+# in the "polite pool", which is the documented way to ask for a real rate. It is
+# opt-in on purpose: set OA_MAILTO before running.
+#
+#     OA_MAILTO=you@example.edu python3 resolve_oa.py
+#
+MAILTO = os.environ.get('OA_MAILTO', '').strip()
+POLITE = ('&mailto=' + urllib.parse.quote(MAILTO)) if MAILTO else ''
+MIN_GAP = 0.12 if MAILTO else 4.0     # seconds between requests
+
 
 def strip(s):
     s = unicodedata.normalize('NFKD', s or '')
@@ -43,9 +55,8 @@ def sim(a, b):
     return len(ta & tb) / len(ta | tb)
 
 
-_throttle = threading.Semaphore(1)   # OpenAlex's anonymous pool is strict
+_throttle = threading.Semaphore(1)
 _last = [0.0]
-MIN_GAP = 0.9                        # seconds between requests
 
 
 def get(url, tries=6):
@@ -58,8 +69,9 @@ def get(url, tries=6):
                 time.sleep(wait)
             _last[0] = time.time()
         try:
-            req = urllib.request.Request(url, headers={'User-Agent': UA,
-                                                       'Accept': 'application/json'})
+            req = urllib.request.Request(url + POLITE,
+                                         headers={'User-Agent': UA,
+                                                  'Accept': 'application/json'})
             with urllib.request.urlopen(req, timeout=40) as r:
                 return json.loads(r.read().decode('utf8'))
         except urllib.error.HTTPError as e:
@@ -140,10 +152,15 @@ if __name__ == '__main__':
     works = json.load(open(os.path.join(HERE, 'works.json'), encoding='utf8'))
     print('resolving %d cited works against OpenAlex...' % len(works))
     done = []
-    with ThreadPoolExecutor(max_workers=3) as ex:
+    if MAILTO:
+        print('polite pool, identifying as %s' % MAILTO)
+    else:
+        print('anonymous pool — %.1fs between requests; set OA_MAILTO to go faster'
+              % MIN_GAP)
+    with ThreadPoolExecutor(max_workers=3 if MAILTO else 1) as ex:
         for i, r in enumerate(ex.map(resolve, works), 1):
             done.append(r)
-            if i % 50 == 0:
+            if i % 25 == 0:
                 m = sum(1 for x in done if x.get('matched'))
                 print('  %4d/%d  matched %d (%.0f%%)' % (i, len(works), m, 100.0 * m / i))
                 sys.stdout.flush()

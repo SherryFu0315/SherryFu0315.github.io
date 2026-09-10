@@ -116,7 +116,7 @@ HOME_SELECTED_RESEARCH_COUNT = """Six of thirteen &middot; <a href="/research/">
 HOME_JOIN_EYEBROW = "Student research assistants"
 
 # Where it appears: headline of the "come work with me" block on the front page
-HOME_JOIN_HEADLINE = "Interested in working with me?"
+HOME_JOIN_HEADLINE = "Come see how a study gets built"
 
 # Where it appears: opening paragraph of the "come work with me" block on the front page
 HOME_JOIN_LEDE = "I take on <b>student research assistant volunteers</b> year-round, undergraduate and graduate. You do not need research experience and you do not need to have taken my class. You need to be curious and to finish things."
@@ -182,7 +182,7 @@ RESEARCH_UNDER_REVIEW_NOTE = """Work under review is listed without a journal
     <a href="/publications/">publications page</a>."""
 
 # Where it appears: button at the bottom of the research page, linking to the contact page
-RESEARCH_JOIN_BUTTON = "Want to work on one of these? &rarr;"
+RESEARCH_JOIN_BUTTON = "Reach out to explore these questions together &rarr;"
 
 # Where it appears: stand-in shown for a project that has no one-line finding written yet
 # (used for the project cards on both the research page and the front page)
@@ -290,6 +290,10 @@ JOIN_CONTACT_ELSEWHERE_LABEL = "Elsewhere"
 # Where it appears: label on the email button in the green block at the top of the contact page
 JOIN_CONTACT_BUTTON = "Email xinyufu [at] gsu.edu"
 
+
+# Where it appears: small boxed tag above the "Student research assistants"
+# heading, saying who that whole block is addressed to
+JOIN_RA_WHO = "For students"
 
 # Where it appears: heading of the student research assistant section on the contact page
 JOIN_RA_TITLE = "Student research assistants"

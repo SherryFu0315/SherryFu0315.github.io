@@ -71,7 +71,9 @@ NAV
     </div>
   </section>
 
+  <section class="band band--students">
   <div class="sec-head" id="students">
+    <p class="eyebrow eyebrow--boxed">__JOIN_RA_WHO__</p>
     <h2>__JOIN_RA_TITLE__</h2>
     <span class="count">__JOIN_RA_SUBTITLE__</span>
   </div>
@@ -140,6 +142,7 @@ NAV
     __JOIN_FAQ_NO_REPLY_A__</p>
 
   </div>
+  </section>
 
   <div class="sec-head" id="advising">
     <h2>__JOIN_STUDENTS_TITLE__</h2>
@@ -174,6 +177,7 @@ JOIN = (JOIN.replace('FONTS', B.FONTS).replace('NAV', B.nav('/join/'))
             .replace('__JOIN_CONTACT_ELSEWHERE_LABEL__', T.JOIN_CONTACT_ELSEWHERE_LABEL)
             .replace('__SCHOLAR_LABEL__', T.HOME_FOOT_GOOGLE_SCHOLAR)
             .replace('__JOIN_CONTACT_BUTTON__', T.JOIN_CONTACT_BUTTON)
+            .replace('__JOIN_RA_WHO__', T.JOIN_RA_WHO)
             .replace('__JOIN_RA_TITLE__', T.JOIN_RA_TITLE)
             .replace('__JOIN_RA_SUBTITLE__', T.JOIN_RA_SUBTITLE)
             .replace('__JOIN_RA_LEDE__', T.JOIN_RA_LEDE)
