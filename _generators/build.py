@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-import io, os, sys, json
+import hashlib, io, os, sys, json
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import words as T
 from projects import PROJECTS, COLS, ROWS, LABEL, STAR_SIZE
@@ -57,12 +57,32 @@ MINI = {
 
 R = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))   # repo root
 
+
+def asset(path):
+    """A content hash on the stylesheet and script URLs.
+
+    Without one, a browser holding an older site.css renders the new HTML
+    against the old rules. That does not look like a caching problem — it looks
+    like the page is broken: every element whose class the old stylesheet has
+    never heard of falls back to unstyled. It happened once here, after a hero
+    was rebuilt and then reverted, and it cost an afternoon working out that the
+    files on disk were fine all along.
+
+    The query changes only when the file's bytes change, so a visitor keeps the
+    cached copy until there is genuinely something new to fetch.
+    """
+    h = hashlib.sha256(io.open(os.path.join(R, path), 'rb').read()).hexdigest()[:8]
+    return '/%s?v=%s' % (path, h)
+
+
+CSS_URL, JS_URL = asset('assets/site.css'), asset('assets/site.js')
+
 FONTS = ('<link rel="preconnect" href="https://fonts.googleapis.com">\n'
  '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n'
  '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=IBM+Plex+Mono:wght@400;500&display=swap">\n'
- '<link rel="stylesheet" href="/assets/site.css">\n'
- '<script src="/assets/site.js" defer></script>\n'
- '<link rel="icon" href="/profile.png">')
+ '<link rel="stylesheet" href="%s">\n'
+ '<script src="%s" defer></script>\n'
+ '<link rel="icon" href="/profile.png">') % (CSS_URL, JS_URL)
 
 def nav(cur):
     items=[('/research/',T.HOME_NAV_RESEARCH),('/universe/',T.HOME_NAV_UNIVERSE),
@@ -478,3 +498,16 @@ HOME = (HOME.replace('__N_CITED__', str(N_CITED)).replace('__N_STUDIES__', str(N
             .replace('__MINI__', json.dumps(MINI, separators=(',', ':'))))
 io.open(os.path.join(R, 'index.html'), 'w', encoding='utf-8').write(HOME)
 print('index.html', len(HOME), 'bytes,', len(featured), 'featured')
+
+# publications/ and credits/ are hand-written rather than generated, but their
+# stylesheet link has to carry the same hash as everyone else's or they are the
+# two pages that break after a CSS change. Only the query string is touched.
+import re as _re
+for _p in ('publications/index.html', 'credits/index.html'):
+    _f = os.path.join(R, _p)
+    _s = io.open(_f, encoding='utf-8').read()
+    _n = _re.sub(r'/assets/site\.css(\?v=[0-9a-f]+)?', CSS_URL, _s)
+    _n = _re.sub(r'/assets/site\.js(\?v=[0-9a-f]+)?', JS_URL, _n)
+    if _n != _s:
+        io.open(_f, 'w', encoding='utf-8').write(_n)
+        print('stamped', _p)

@@ -15,6 +15,7 @@ import io, os, sys, json
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import words as T
 from projects import PROJECTS, COLS, ROWS, LABEL, STAR_SIZE
+from build import CSS_URL, JS_URL   # the content-hashed asset URLs
 from constellations import CONSTELLATIONS, CELLBOX
 import citelayout as CL
 
@@ -129,8 +130,8 @@ PAGE = u'''<!DOCTYPE html>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=IBM+Plex+Mono:wght@400;500&display=swap">
-<link rel="stylesheet" href="/assets/site.css">
-<script src="/assets/site.js" defer></script>
+<link rel="stylesheet" href="__CSS_URL__">
+<script src="__JS_URL__" defer></script>
 <link rel="icon" href="/profile.png">
 <style>
 .sky-page{ --void:#120A1F; --dim:#9A8CB4; background:var(--void); color:#EFEAF6 }
@@ -831,6 +832,7 @@ PAGE = (PAGE.replace('__COLS__',   json.dumps(js_cols,   ensure_ascii=False))
             .replace('__MAP_PAGE_TITLE__', T.MAP_PAGE_TITLE)
             .replace('__MAP_NAV_HOME__', T.MAP_NAV_HOME)
             .replace('__MAP_NAV_RESEARCH__', T.MAP_NAV_RESEARCH)
+            .replace('__CSS_URL__', CSS_URL).replace('__JS_URL__', JS_URL)
             .replace('__MAP_NAV_UNIVERSE__', T.MAP_NAV_UNIVERSE)
             .replace('__MAP_NAV_PUBLICATIONS__', T.MAP_NAV_PUBLICATIONS)
             .replace('__MAP_NAV_TEACHING__', T.MAP_NAV_TEACHING)
