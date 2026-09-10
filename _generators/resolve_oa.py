@@ -58,11 +58,21 @@ def sim(a, b):
 _throttle = threading.Semaphore(1)
 _last = [0.0]
 
+# OpenAlex meters a fixed number of requests per day. When that runs out it still
+# answers 429, but with a Retry-After of most of a day rather than a few seconds.
+# The first version could not tell the two apart and simply slept on it — which
+# looked exactly like a hung process. A long Retry-After is not something to wait
+# out; it is the end of the run, and the only thing to do is say so and stop.
+BURST_MAX = 300.0                     # seconds; longer than this is the daily cap
+_exhausted = threading.Event()
+
 
 def get(url, tries=6):
     """Returns the decoded body, or {'_error': ...}. A 429 is a transient failure,
     never an answer — the caller must not cache it as 'no such work'."""
     for i in range(tries):
+        if _exhausted.is_set():
+            return {'_error': 'daily quota exhausted'}
         with _throttle:
             wait = MIN_GAP - (time.time() - _last[0])
             if wait > 0:
@@ -77,6 +87,10 @@ def get(url, tries=6):
         except urllib.error.HTTPError as e:
             if e.code in (429, 503):
                 back = float(e.headers.get('Retry-After') or 0) or min(60, 4 * (i + 1) ** 2)
+                if back > BURST_MAX:
+                    _exhausted.set()
+                    return {'_error': 'daily quota exhausted; resets in %d h %d min'
+                                      % (back // 3600, (back % 3600) // 60)}
                 time.sleep(back)
                 continue
             return {'_error': 'http %d' % e.code}
@@ -168,7 +182,10 @@ if __name__ == '__main__':
     json.dump(done, open(os.path.join(HERE, 'oa_level1.json'), 'w'), indent=1)
     err = [x for x in done if x.get('error')]
     if err:
-        print('%d lookups failed transiently (not cached) — re-run to finish them' % len(err))
+        print('%d lookups did not complete (not cached) — re-run to finish them' % len(err))
+        quota = [x for x in err if 'quota' in x['error']]
+        if quota:
+            print('   ' + sorted(quota, key=lambda x: x['error'])[-1]['error'])
     m = [x for x in done if x.get('matched')]
     nrefs = sum(len(x['refs']) for x in m)
     print()

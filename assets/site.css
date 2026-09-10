@@ -99,8 +99,7 @@ h1,h2,h3{
 .eyebrow,
 .chip,
 .metric-label,
-.navlinks a,
-.rail-links a{
+.navlinks a{
   font-family:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
 }
 
@@ -159,46 +158,74 @@ p:last-child{ margin-bottom:0 }
 a:focus-visible,
 button:focus-visible{ outline:3px solid var(--blue); outline-offset:2px }
 
-/* ---------- hero: info rail (left) + mosaic (right) ----------------------- */
+/* ---------- hero: masthead, then the question, then the settings ----------
+   It used to be a 37%-wide rail with six things stacked inside it — portrait,
+   name, rank, affiliation, question, answer — each separated by the same 22px.
+   Nothing had room, and the question, which is the most important sentence on
+   the site, had to compete with the name directly above it.
 
-.hero{
-  display:grid;
-  grid-template-columns:1fr;
+   Now the identity is one horizontal line of furniture and the question opens
+   the page underneath it with the whole width as its measure: at 1440 it sets
+   in three lines across 840px instead of seven lines down a 400px column. */
+
+.hero{ border-bottom:var(--rule-w) solid var(--rule) }
+
+/* ---- band 1: who ---- */
+.masthead{
+  display:grid; grid-template-columns:auto auto 1fr;
+  align-items:end; column-gap:clamp(16px,2.2vw,32px);
+  padding:var(--pad) var(--pad) clamp(15px,1.7vw,24px);
   border-bottom:var(--rule-w) solid var(--rule);
 }
-@media(min-width:900px){
-  .hero{ grid-template-columns:minmax(330px,37%) 1fr }
-  .rail{ border-right:var(--rule-w) solid var(--rule) }
+.mh-photo{
+  width:clamp(62px,7.4vw,110px); aspect-ratio:1; height:auto; flex:none;
+  border-radius:50%; object-fit:cover; align-self:end;
+}
+.mh-name{
+  margin:0; font-size:clamp(32px,6.4vw,78px);
+  font-variation-settings:"wdth" 78,"wght" 860;
+  line-height:.82; letter-spacing:-.022em;
+  white-space:nowrap; max-width:100%;
+}
+/* The affiliation is right-aligned in the open column, so the slack in the row
+   falls between the name and the institution as deliberate space. It stays in
+   Archivo at reading size rather than dropping to mono furniture: on a
+   pre-tenure faculty page the institution is the line people skim for. */
+.mh-role{
+  margin:0; align-self:end; text-align:right;
+  font-size:clamp(12.5px,1.05vw,15px); line-height:1.42; color:var(--muted);
+}
+.mh-role b{
+  display:block; color:var(--ink); font-weight:700;
+  font-variation-settings:"wdth" 92,"wght" 660;
+}
+@media(max-width:959px){
+  .masthead{ grid-template-columns:auto 1fr; row-gap:14px }
+  .mh-role{ grid-column:1 / -1; text-align:left }
+}
+@media(max-width:420px){
+  .mh-name{ white-space:normal; line-height:.88 }
 }
 
-.rail{ padding:var(--pad); display:flex; flex-direction:column; gap:22px }
-.rail-top{ display:flex; align-items:flex-start; gap:18px; flex-wrap:wrap }
-/* let the name column narrow instead of dropping below the portrait */
-.rail-top > div{ min-width:0; flex:1 1 200px }
-.rail-photo{
-  width:clamp(116px,12vw,168px); aspect-ratio:1; height:auto; flex:none;
-  border-radius:50%;
-  object-fit:cover;
+/* ---- band 2: the question ---- */
+.opening{
+  padding:clamp(30px,4vw,58px) var(--pad) clamp(34px,4.4vw,64px);
+  border-bottom:var(--rule-w) solid var(--rule);
 }
-.rail h1{
-  font-size:clamp(34px,5.4vw,66px);
-  font-variation-settings:"wdth" 74,"wght" 850;
-  line-height:.86; letter-spacing:-.022em;
-  margin:0 0 14px;
+/* Question and answer set as a broadsheet deck: the question takes the measure,
+   the answer stands in a narrower column beside it behind a rule, bottom-aligned
+   so the two share a last baseline. */
+.thesis{
+  /* it is a <p>, and the global 66ch cap on paragraphs was the whole reason the
+     question could not use the measure this band exists to give it */
+  margin:0; padding:0; border:0; max-width:none;
+  display:grid; grid-template-columns:minmax(0,1.85fr) minmax(0,1fr);
+  align-items:end; column-gap:clamp(24px,3.4vw,54px);
 }
-.rail .role{
-  font-size:14.5px; line-height:1.45; color:var(--muted); margin:0; max-width:34ch;
-}
-.rail .role b{ color:var(--ink); font-weight:600 }
-
-/* The opening statement is the most important sentence on the site, so it is
-   set as a statement: display face, tight, at size, with the elaboration
-   stepped down beneath it. The highlighter it used to wear made it look
-   annotated rather than said. */
-.thesis{ margin:0; padding:0; border:0 }
 .thesis::before{
-  content:""; display:block; width:46px; height:5px;
-  background:var(--lime); margin:0 0 22px;
+  content:""; grid-column:1 / -1; display:block;
+  width:46px; height:5px; background:var(--lime);
+  margin:0 0 clamp(18px,2.1vw,28px);
 }
 .thesis b{
   display:block; font-family:"Archivo",Arial,sans-serif;
@@ -206,29 +233,25 @@ button:focus-visible{ outline:3px solid var(--blue); outline-offset:2px }
      family, deliberately the opposite end of both axes, so the two read as two
      voices rather than one repeated. Caps get their tracking opened up. */
   font-variation-settings:"wdth" 104,"wght" 560;
-  font-size:clamp(25px,2.7vw,37px); line-height:1.13;
+  font-size:clamp(27px,3.6vw,50px); line-height:1.06;
   letter-spacing:.012em; text-transform:uppercase; color:var(--ink);
-  max-width:22ch; margin:0 0 20px; text-wrap:balance;
+  margin:0; text-wrap:balance;
+}
+.thesis > span{
+  display:block; font-size:clamp(16.5px,1.2vw,18px); line-height:1.62;
+  color:var(--muted);
+  border-left:var(--rule-w) solid var(--ink);
+  padding-left:clamp(16px,1.9vw,30px);
+}
+/* Below this the answer column is too narrow to sit beside the question — it
+   sets taller than the question does and the bottom alignment leaves a hole. */
+@media(max-width:1039px){
+  .thesis{ display:block }
+  .thesis b{ max-width:15em; margin-bottom:22px }
+  .thesis > span{ border-left:0; padding-left:0; max-width:34em }
 }
 /* a term that must not break across lines */
 .nb{ white-space:nowrap }
-
-.thesis > span{
-  display:block; font-size:17.5px; line-height:1.6;
-  color:var(--muted); max-width:38ch;
-}
-
-.rail-links{ display:flex; flex-direction:column; gap:0; margin:0; padding:0; list-style:none }
-.rail-links li{ border-top:1px solid var(--faint) }
-.rail-links li:last-child{ border-bottom:1px solid var(--faint) }
-.rail-links a{
-  display:flex; justify-content:space-between; gap:14px; align-items:baseline;
-  padding:10px 0; text-decoration:none; font-size:12px; letter-spacing:.06em;
-  text-transform:uppercase; color:var(--muted);
-}
-.rail-links a:hover{ color:var(--blue) }
-.mail{ white-space:nowrap }
-.rail-links a span{ color:var(--ink); text-transform:none; letter-spacing:0; font-size:14px }
 
 /* ---------- doorway into the research map -------------------------------- */
 
@@ -530,21 +553,25 @@ a.btn:hover, .btn:hover{ background:var(--coral); color:var(--ink) }
   .tile:hover .tile-label{ transform:translateY(-3px) }
 }
 
-/* ---------- hero without artwork ----------------------------------------- */
-
-.hero--plain{ grid-template-columns:1fr }
-@media(min-width:900px){ .hero--plain{ grid-template-columns:minmax(320px,36%) 1fr } }
-.statement{ padding:var(--pad); display:flex; flex-direction:column; justify-content:center }
-.statement-l{
-  font-family:"Archivo",Arial,sans-serif;
-  font-variation-settings:"wdth" 92,"wght" 500;
-  font-size:clamp(21px,2.5vw,31px); line-height:1.28; letter-spacing:-.012em;
-  margin:0; max-width:30ch; text-wrap:balance;
+/* The hero's mosaic runs full width under the question rather than boxed beside
+   it. The rules between tiles are drawn by the grid gap over an ink ground, so
+   the same three rules hold at four, two or one column and there is no
+   nth-child border to re-fight every time the column count changes. */
+.mosaic--strip{ gap:var(--rule-w); background:var(--rule) }
+.mosaic--strip .tile{ border:0 }
+@media(min-width:1080px){
+  .mosaic--strip{ grid-template-columns:repeat(4,1fr) }
+  .mosaic--strip .tile{ aspect-ratio:5/3 }
 }
-.statement-l b{
-  font-variation-settings:"wdth" 88,"wght" 800;
-  background:var(--lime); box-shadow:5px 0 0 var(--lime),-5px 0 0 var(--lime);
+/* The labels were sized for a half-page tile. At a quarter of the width
+   "MANUFACTURING" at 46px does not fit, and a label that overruns its picture
+   is what turns a row of photographs into a banner. */
+.mosaic--strip .tile-label{ padding:0 15px 13px }
+@media(min-width:1080px){
+  .mosaic--strip .tile-label .plus{ font-size:clamp(12px,1.35vw,19px) }
+  .mosaic--strip .tile-label .dom{ font-size:clamp(16px,1.95vw,27px) }
 }
+.mosaic--strip .tile-note{ margin:12px 0 0 15px }
 
 /* ---------- the matrix --------------------------------------------------- */
 

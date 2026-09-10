@@ -78,25 +78,38 @@ foundations. `resolve_oa.py` looks each cited work up on OpenAlex and pulls that
 work's own reference list; `secondorder.py` then finds the ancestors several
 studies share.
 
-From the 85 works resolved so far (14%), the difference is large:
+From the 155 works resolved so far (21%), the difference is large:
 
-| | first order | second order (14% sample) |
+| | first order | second order (21% sample) |
 |---|---|---|
-| distinct works | 608 | 4,504 |
-| shared by 2+ studies | 25 | 1,087 |
+| distinct works | 752 | 8,298 |
+| shared by 2+ studies | 32 | 1,351 |
+| shared by 3+ studies | — | 537 |
 | *Detecting AI Errors* ↔ the JMIS paper | 6 | 610 |
 
-**This run is incomplete.** OpenAlex's anonymous pool allows 1000 requests a day
-and the first attempt exhausted it. To finish:
+First-order coupling links 32 pairs of studies; second-order coupling links all
+10 of the studies resolved so far to each other.
+
+**This run is incomplete.** OpenAlex allows 1000 requests a day per address and
+the run has now exhausted two days of them, reaching 171 of the 752 works. The
+allowance resets at midnight UTC. To carry on:
 
 ```bash
 cd ~/Documents/website/_generators
-python3 resolve_oa.py     # resumable — oa_cache/ holds every completed lookup
-python3 secondorder.py    # -> secondorder.json
+OA_MAILTO=you@example.com python3 resolve_oa.py   # resumable
+OA_MAILTO=you@example.com python3 secondorder.py  # -> secondorder.json
 ```
 
 `oa_cache/` is gitignored (hundreds of tiny files) and is the resume point, so
-re-running only fetches what is still missing. Budget roughly 550 requests.
+re-running only fetches what is still missing. What remains is about 640 lookups
+for the works plus roughly 120 batched calls for ancestor metadata — one day's
+allowance, with room to spare.
+
+`OA_MAILTO` puts the request in OpenAlex's "polite pool", which is their
+documented way of identifying a caller. It buys a much better per-second rate;
+it does not raise the daily cap. Without it the anonymous pool throttles to
+roughly one request every four seconds, which the script falls back to on its
+own.
 
 Two things to keep in mind if this is ever rewritten:
 
@@ -106,3 +119,7 @@ Two things to keep in mind if this is ever rewritten:
   and `resolve()` refuses to cache those.
 - Semantic Scholar is not a substitute. Publishers elide the `references` field
   for exactly the closed-access IS journals this work cites.
+- A 429 whose `Retry-After` is most of a day is not a blip either. It is the
+  daily allowance running out, and the first version simply slept on it — which
+  from the outside is indistinguishable from a hung process. Anything over five
+  minutes now ends the run with a message saying when it resets.

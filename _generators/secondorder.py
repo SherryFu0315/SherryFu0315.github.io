@@ -12,7 +12,7 @@ ancestors recur. Those ancestors are the deep sky.
 
     python3 secondorder.py        # needs oa_level1.json from resolve_oa.py
 """
-import json, os, sys, time, urllib.request
+import json, os, sys, time, urllib.error, urllib.parse, urllib.request
 from collections import Counter, defaultdict
 from itertools import combinations
 
@@ -20,15 +20,34 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 API = 'https://api.openalex.org/works'
 UA = 'xinyufu-website-citation-map/1.0'
 META = os.path.join(HERE, 'oa_level2_meta.json')
+MAILTO = os.environ.get('OA_MAILTO', '').strip()
+POLITE = ('&mailto=' + urllib.parse.quote(MAILTO)) if MAILTO else ''
+
+# Same rule as resolve_oa.py: a 429 carrying most of a day in its Retry-After is
+# the daily allowance running out, not a blip. Retrying it 28 more times only
+# spends minutes to learn what the first answer already said.
+_exhausted = [False]
 
 
 def get(url, tries=4):
     for i in range(tries):
+        if _exhausted[0]:
+            return {}
         try:
-            req = urllib.request.Request(url, headers={'User-Agent': UA,
-                                                       'Accept': 'application/json'})
+            req = urllib.request.Request(url + POLITE,
+                                         headers={'User-Agent': UA,
+                                                  'Accept': 'application/json'})
             with urllib.request.urlopen(req, timeout=40) as r:
                 return json.loads(r.read().decode('utf8'))
+        except urllib.error.HTTPError as e:
+            if e.code in (429, 503) and float(e.headers.get('Retry-After') or 0) > 300:
+                _exhausted[0] = True
+                print('  OpenAlex daily quota exhausted — ancestors stay unnamed '
+                      'until the next run')
+                return {}
+            if i == tries - 1:
+                return {}
+            time.sleep(1.2 * (i + 1))
         except Exception:
             if i == tries - 1:
                 return {}
