@@ -243,11 +243,16 @@ MOSAIC = [
 TILE_TPL = (
   '      <a class="tile" href="/research/#%s">\n'
   '        <img src="/assets/img/%s" alt="%s">\n'
-
   '        <span class="tile-note">%s</span>\n'
-  '        <span class="tile-label"><span class="plus">AI+</span><span class="dom">%s</span></span>\n'
+  '        <span class="tile-arrow" aria-hidden="true">&#8599;</span>\n'
+  '        <span class="tile-label"><span class="plus">AI+</span><span class="dom">%s</span>'
+  '<span class="tile-more">%s</span></span>\n'
   '      </a>')
-tiles = [TILE_TPL % (pid, img, alt, note, label) for pid, label, img, note, alt in MOSAIC]
+# hovering a card names the study it opens, so the four settings are an index
+# rather than four photographs with a category on them
+_short = {p['id']: p['short'] for p in PROJECTS}
+tiles = [TILE_TPL % (pid, img, alt, note, label, _short.get(pid, ''))
+         for pid, label, img, note, alt in MOSAIC]
 
 featured = [x for x in sorted(PROJECTS, key=lambda y: y['order']) if x.get('photo') and x['finding']][:6]
 home_entries = '\n\n'.join(entry(x, i) for i, x in enumerate(featured))
@@ -270,15 +275,19 @@ HOME = '''<!DOCTYPE html>
 %s
 
   <header class="hero">
-    <div class="rail rail--id">
-      <img class="rail-photo" src="/profile.png" alt="Xinyu Fu">
-      <div>
-        <h1>Xinyu<br>Fu</h1>
-        <p class="role">%s</p>
+    <div class="rail">
+      <div class="rail-id">
+        <img class="rail-photo" src="/profile.png" alt="Xinyu Fu">
+        <div>
+          <h1>Xinyu Fu</h1>
+          <p class="role">%s</p>
+          <ul class="rail-meta">
+            <li><a href="https://scholar.google.com/citations?user=0OM4QfkAAAAJ&amp;hl=en">%s</a></li>
+            <li><a class="mail" data-u="xinyufu" data-d="gsu.edu" href="#">%s</a></li>
+          </ul>
+        </div>
       </div>
-    </div>
 
-    <div class="rail rail--ask">
       <p class="thesis">%s</p>
     </div>
 
@@ -459,6 +468,8 @@ HOME = '''<!DOCTYPE html>
        FONTS,
        nav('/'),
        T.HOME_ROLE,
+       T.HOME_LINK_SCHOLAR,
+       T.HOME_LINK_EMAIL,
        T.HOME_THESIS,
 
        '\n\n'.join(tiles),
