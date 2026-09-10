@@ -85,7 +85,7 @@ FONTS = ('<link rel="preconnect" href="https://fonts.googleapis.com">\n'
  '<link rel="icon" href="/profile.png">') % (CSS_URL, JS_URL)
 
 def nav(cur):
-    items=[('/research/',T.HOME_NAV_RESEARCH),('/universe/',T.HOME_NAV_UNIVERSE),
+    items=[('/research/',T.HOME_NAV_RESEARCH),('/universe/',T.HOME_NAV_MAP),
            ('/publications/',T.HOME_NAV_PUBLICATIONS),('/teaching/',T.HOME_NAV_TEACHING)]
     out=['  <nav class="nav">','    <a class="brand" href="/">%s</a>' % T.HOME_NAV_HOME,'    <div class="navlinks">']
     for href,label in items:

@@ -256,7 +256,7 @@ button:focus-visible{ outline:3px solid var(--blue); outline-offset:2px }
 .thesis b{
   display:block; font-family:"Archivo",Arial,sans-serif;
   font-variation-settings:"wdth" 100,"wght" 520;
-  font-size:clamp(23px,2.35vw,33px); line-height:1.22;
+  font-size:clamp(24px,2.47vw,35px); line-height:1.22;
   letter-spacing:-.005em; color:var(--ink);
   /* wide enough that "What makes human-AI collaboration" holds together on
      the first line; balance then splits the rest evenly rather than leaving

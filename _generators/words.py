@@ -40,10 +40,10 @@ live in projects.py, one block per study.
 HOME_NAV_HOME = "Home"
 
 # Where it appears: top navigation bar, link to the research page
-HOME_NAV_RESEARCH = "Research"
+HOME_NAV_RESEARCH = "Projects"
 
 # Where it appears: top navigation bar, link to the research map page
-HOME_NAV_UNIVERSE = "Research universe"
+HOME_NAV_MAP = "Research map"
 
 # Where it appears: top navigation bar, link to the publications page
 HOME_NAV_PUBLICATIONS = "Publications"
@@ -179,10 +179,10 @@ HOME_TEACHING_ALL_COURSES = "All courses &rarr;"
 # ---- The research page (/research/) ----
 
 # Where it appears: browser tab and search results title for the research page
-RESEARCH_PAGE_TITLE = "Research &mdash; Xinyu Fu"
+RESEARCH_PAGE_TITLE = "Projects &mdash; Xinyu Fu"
 
 # Where it appears: heading at the top of the research page
-RESEARCH_HEADING = "Research"
+RESEARCH_HEADING = "Projects"
 
 # Where it appears: small caption beside the "Research" heading
 RESEARCH_COUNT = """Fifteen projects, most settled first &middot; <a href="/universe/">see the map</a>"""
@@ -209,16 +209,16 @@ RESEARCH_MATRIX_CORNER = "Research&nbsp;/ AI"
 # ==========================================================================
 
 # Where it appears: browser tab / search-result title for the research map page
-MAP_PAGE_TITLE = "Research Universe &mdash; Xinyu Fu"
+MAP_PAGE_TITLE = "Research map &mdash; Xinyu Fu"
 
 # Where it appears: top navigation bar, first link (back to the front page)
 MAP_NAV_HOME = "Home"
 
 # Where it appears: top navigation bar, link to the research page
-MAP_NAV_RESEARCH = "Research"
+MAP_NAV_RESEARCH = "Projects"
 
 # Where it appears: top navigation bar, link to this map page
-MAP_NAV_UNIVERSE = "Research universe"
+MAP_NAV_MAP = "Research map"
 
 # Where it appears: top navigation bar, link to the publications page
 MAP_NAV_PUBLICATIONS = "Publications"

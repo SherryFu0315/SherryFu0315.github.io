@@ -311,7 +311,7 @@ PAGE = u'''<!DOCTYPE html>
     <a class="brand" href="/">__MAP_NAV_HOME__</a>
     <div class="navlinks">
       <a href="/research/">__MAP_NAV_RESEARCH__</a>
-      <a href="/universe/" aria-current="page">__MAP_NAV_UNIVERSE__</a>
+      <a href="/universe/" aria-current="page">__MAP_NAV_MAP__</a>
       <a href="/publications/">__MAP_NAV_PUBLICATIONS__</a>
       <a href="/teaching/">__MAP_NAV_TEACHING__</a>
       <a href="/join/" class="is-cta">__MAP_NAV_CONTACT__</a>
@@ -833,7 +833,7 @@ PAGE = (PAGE.replace('__COLS__',   json.dumps(js_cols,   ensure_ascii=False))
             .replace('__MAP_NAV_HOME__', T.MAP_NAV_HOME)
             .replace('__MAP_NAV_RESEARCH__', T.MAP_NAV_RESEARCH)
             .replace('__CSS_URL__', CSS_URL).replace('__JS_URL__', JS_URL)
-            .replace('__MAP_NAV_UNIVERSE__', T.MAP_NAV_UNIVERSE)
+            .replace('__MAP_NAV_MAP__', T.MAP_NAV_MAP)
             .replace('__MAP_NAV_PUBLICATIONS__', T.MAP_NAV_PUBLICATIONS)
             .replace('__MAP_NAV_TEACHING__', T.MAP_NAV_TEACHING)
             .replace('__MAP_NAV_CONTACT__', T.MAP_NAV_CONTACT)
