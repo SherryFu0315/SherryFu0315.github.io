@@ -159,13 +159,17 @@ NAV
 
   <div class="sec-head">
     <h2>__TEACHING_HEADING__</h2>
-    <div class="awards">
-      <span class="count is-award">__TEACHING_AWARD_NOTE__</span>
-      <span class="count is-award">__TEACHING_AWARD_NOTE_2021__</span>
-    </div>
   </div>
 
   <section class="mod mod--tint">
+    <h3><span class="hico" style="--ic:#C79A2E" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="9" r="5.2" stroke-width="1.5"/><path d="M8.4 13.4 6.6 21l5.4-2.7 5.4 2.7-1.8-7.6" stroke-width="1.5" stroke-linejoin="round"/></svg></span>__TEACHING_AWARDS_TITLE__</h3>
+    <ul class="awards">
+      <li>__TEACHING_AWARD_NOTE__</li>
+      <li>__TEACHING_AWARD_NOTE_2021__</li>
+    </ul>
+  </section>
+
+  <section class="mod">
     <h3>__TEACHING_GSU_HEADING__</h3>
 
     <div class="course">
@@ -216,7 +220,7 @@ NAV
     </div>
   </section>
 
-  <section class="mod">
+  <section class="mod mod--tint">
     <h3>__TEACHING_PITT_HEADING__</h3>
 
     <div class="course">
@@ -244,7 +248,7 @@ NAV
     </div>
   </section>
 
-  <section class="mod mod--tint">
+  <section class="mod">
     <h3>__TEACHING_ELSEWHERE_HEADING__</h3>
 
     <div class="course">
@@ -264,7 +268,7 @@ NAV
     </div>
   </section>
 
-  <section class="mod">
+  <section class="mod mod--tint">
     <h3>__TEACHING_COACHING_TITLE__</h3>
     <p>__TEACHING_COACHING_TEXT__</p>
   </section>
@@ -278,6 +282,7 @@ FOOT
 TEACH = (TEACH.replace('FONTS', B.FONTS).replace('NAV', B.nav('/teaching/')).replace('FOOT', B.FOOT)
               .replace('__TEACHING_PAGE_TITLE__', T.TEACHING_PAGE_TITLE)
               .replace('__TEACHING_HEADING__', T.TEACHING_HEADING)
+            .replace('__TEACHING_AWARDS_TITLE__', T.TEACHING_AWARDS_TITLE)
             .replace('__TEACHING_COACHING_TITLE__', T.TEACHING_COACHING_TITLE)
             .replace('__TEACHING_COACHING_TEXT__', T.TEACHING_COACHING_TEXT)
               .replace('__TEACHING_AWARD_NOTE__', T.TEACHING_AWARD_NOTE)

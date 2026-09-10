@@ -83,10 +83,10 @@ HOME_HELLO = "Hi, I&rsquo;m Xinyu Fu."
 
 # Where it appears: first paragraph of the front page introduction &mdash; who she
 # is, and the question the work is about
-HOME_INTRO_1 = """I&rsquo;m an Assistant Professor of Computer Information Systems at the J. Mack Robinson College of Business, Georgia State University. I am fascinated by what makes <span class="nb">human&ndash;AI</span> collaboration greater than the sum of its parts. Specifically, my research explores how different <span class="nb">human&ndash;AI</span> configurations shape human performance, the organization of work, and the consequences of AI use."""
+HOME_INTRO_1 = """I&rsquo;m an Assistant Professor of <a href="https://robinson.gsu.edu/academic-departments/computer-information-systems/">Computer Information Systems</a> at the J. Mack Robinson College of Business, <a href="https://www.gsu.edu/">Georgia State University</a>. I am fascinated by what makes <span class="nb">human&ndash;AI</span> collaboration greater than the sum of its parts. Specifically, my research explores how different <span class="nb">human&ndash;AI</span> configurations shape human performance, the organization of work, and the consequences of AI use."""
 
 # Where it appears: second and last paragraph of the front page introduction
-HOME_INTRO_2 = """My PhD is in Information Systems and Technology Management, from the Katz Graduate School of Business at the University of Pittsburgh, where I was advised by Dr. Dennis Galletta and Dr. Narayan Ramasubbu. I spent the summer of 2019 as a visiting scholar at Harvard University."""
+HOME_INTRO_2 = """My PhD is in <a href="https://business.pitt.edu/phd/phd-in-info-systems-and-tech-management/">Information Systems and Technology Management</a>, from the Katz Graduate School of Business at the <a href="https://www.pitt.edu/">University of Pittsburgh</a>, where I was advised by <a href="http://www.pitt.edu/~galletta/">Dr. Dennis Galletta</a> and <a href="https://sites.google.com/site/narayanramasubbu/">Dr. Narayan Ramasubbu</a>. I spent the summer of 2019 as a visiting scholar at <a href="https://www.harvard.edu/">Harvard University</a>."""
 
 # Where it appears: the three links under the portrait at the top of the front page
 HOME_EMAIL = "xinyufu [at] gsu.edu"
@@ -209,6 +209,10 @@ MAP_NAV_MENTORING = "Mentoring"
 # Where it appears: the big headline at the top of the map page
 MAP_H1 = "How the work<br>connects"
 
+# Where it appears: the paragraph beside the map's headline, in the two-axis
+# view. The literature view swaps in MAP_HEAD_COPY_CITE.
+MAP_HEAD_COPY_AXIS = """Two axes. Across: <b>what kind of AI</b> the study is about. Down: whether it <b>intervenes</b> &mdash; building something that makes people better at the work &mdash; or <b>observes</b> what AI set off once it arrived. Click an axis to fall into it; click a star to go to the study."""
+
 # Where it appears: paragraph beside the headline, shown while the map is in
 # the "The literature" arrangement (the study and paper counts fill themselves in)
 MAP_HEAD_COPY_CITE = "Each bright star is one of my studies. Each faint one is a paper that a study cites. Studies that cite the same papers get pulled together, so the clumps you see are the ones that really do share a literature. <b>Hover a star</b> to see what that study is about; click it for the full entry."
@@ -298,7 +302,8 @@ TEACHING_PAGE_TITLE = "Teaching &mdash; Xinyu Fu"
 TEACHING_HEADING = "Teaching"
 
 # Where it appears: small caption beside the "Teaching" heading
-TEACHING_AWARD_NOTE = "2025 Unforgettable Educator Award &middot; Robinson College of Business, Georgia State University"
+TEACHING_AWARDS_TITLE = "Teaching awards"
+TEACHING_AWARD_NOTE = "<b>2025 Unforgettable Educator Award</b> &mdash; Robinson College of Business, Georgia State University"
 
 # Where it appears: first institution heading on the teaching page
 TEACHING_GSU_HEADING = "Georgia State University"
@@ -357,23 +362,23 @@ TEACHING_COACHING_TEXT = """I coached the Georgia State team at <a href="https:/
 TEACHING_PITT_HEADING = "University of Pittsburgh"
 
 # Where it appears: course name of the Pittsburgh introductory course
-TEACHING_INTRO_IS_TITLE = "Introduction to Information Systems"
+TEACHING_INTRO_IS_TITLE = """<a href="https://catalog.upp.pitt.edu/preview_course_nopop.php?catoid=72&amp;coid=376733">Introduction to Information Systems</a>"""
 
 # Where it appears: description of the Pittsburgh introductory course
 TEACHING_INTRO_IS_DESC = "Undergraduate core. Instructor."
 
 
 # Where it appears: course name of the Pittsburgh Python elective
-TEACHING_DATA_PROGRAMMING_ESSENTIALS_TITLE = "Data Programming Essentials with Python"
+TEACHING_DATA_PROGRAMMING_ESSENTIALS_TITLE = """<a href="https://www.katz.business.pitt.edu/course/data-programming-python">Data Programming Essentials with Python</a>"""
 
 # Where it appears: description of the Pittsburgh Python elective
 TEACHING_DATA_PROGRAMMING_ESSENTIALS_DESC = "MBA and MS elective. Instructor; also teaching assistant for this course in Spring and Fall 2019."
 
 # Where it appears: second award badge beside the "Teaching" heading
-TEACHING_AWARD_NOTE_2021 = "2021 Doris &amp; Douglas Bernstein Doctoral Student Teaching Award, University of Pittsburgh"
+TEACHING_AWARD_NOTE_2021 = "<b>2021 <span class=\"nb\">Doris &amp; Douglas</span> Bernstein Doctoral Student Teaching Award</b> &mdash; University of Pittsburgh"
 
 # Where it appears: course name of the Pittsburgh R elective
-TEACHING_ADVANCED_R_TITLE = "Advanced Data Programming with R"
+TEACHING_ADVANCED_R_TITLE = """<a href="https://www.katz.business.pitt.edu/course/data-programming-r">Advanced Data Programming with R</a>"""
 
 # Where it appears: description of the Pittsburgh R elective
 TEACHING_ADVANCED_R_DESC = "MBA and MS elective. Teaching assistant."
@@ -382,13 +387,13 @@ TEACHING_ADVANCED_R_DESC = "MBA and MS elective. Teaching assistant."
 TEACHING_ELSEWHERE_HEADING = "Elsewhere"
 
 # Where it appears: course name of the Harvard course
-TEACHING_ECOMMERCE_TITLE = "E-Commerce"
+TEACHING_ECOMMERCE_TITLE = """<a href="https://www.summer.harvard.edu/course-catalog/courses/electronic-commerce-strategies/34433?subjects=Management">E-Commerce</a>"""
 
 # Where it appears: description of the Harvard course
 TEACHING_ECOMMERCE_DESC = "MBA. Teaching assistant, Harvard University."
 
 # Where it appears: role name of the Tsinghua entry at the bottom of the teaching page
-TEACHING_CAREER_CENTER_TITLE = "Career Center instructor and student mentor"
+TEACHING_CAREER_CENTER_TITLE = """<a href="https://career.tsinghua.edu.cn/careeren/Students.htm">Career Center instructor and student mentor</a>"""
 
 # Where it appears: description of the Tsinghua entry at the bottom of the teaching page
 TEACHING_CAREER_CENTER_DESC = "Tsinghua University."

@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=IBM+Plex+Mono:wght@400;500&display=swap">
-<link rel="stylesheet" href="/assets/site.css?v=8115c424">
+<link rel="stylesheet" href="/assets/site.css?v=15861a8a">
 <script src="/assets/site.js?v=5b8b6daa" defer></script>
 <link rel="icon" href="/assets/favicon.svg">
 <style>
@@ -254,11 +254,10 @@
   var W=1600, H=1024, DPR=1.5;
   var mode='cite';
 
+  /* The page opens on the literature, so that is what the template renders and
+     what this reads back; the other copy is passed in. */
   var COPY_CITE = document.getElementById('head-copy').innerHTML;
-  var COPY_AXIS = 'Two axes. Across: <b>what kind of AI</b> the study is about. Down: whether it '
-    + '<b>intervenes</b> &mdash; building something that makes people better at the work &mdash; or '
-    + '<b>observes</b> what AI set off once it arrived. Click an axis to fall into it; click a star '
-    + 'to go to the study.';
+  var COPY_AXIS = "Two axes. Across: <b>what kind of AI</b> the study is about. Down: whether it <b>intervenes</b> &mdash; building something that makes people better at the work &mdash; or <b>observes</b> what AI set off once it arrived. Click an axis to fall into it; click a star to go to the study.";
   var colById={}, rowById={};
   COLS.forEach(function(c){ colById[c.id]=c; });
   ROWS.forEach(function(r){ rowById[r.id]=r; });
@@ -426,6 +425,7 @@
     document.getElementById('head-copy').innerHTML = (m==='cite') ? COPY_CITE : COPY_AXIS;
     if (m!=='cite') STARS.forEach(function(st){ st.lbl.style.transform=''; st.lbl.className='star-name'; });
     hideTip();
+    if (atFit){ fitMul=openMul(); tgt=clampCam({x:W/2,y:H/2,s:fitScale()*fitMul}); go(); }
     position();
     measureLabels();
     // the arrangement moves for most of a second; keep the labels honest as it does
@@ -590,7 +590,13 @@
      Fitted precisely, the frame is wider than the map's 1600x1024 and the
      constellation sits in the middle of two empty margins. WHOLE SKY still
      goes to the true fit, and once it has, a resize keeps it there. */
-  var OPEN=1.15, fitMul=OPEN;
+  /* The literature view opens a little inside the whole sky: fitted exactly,
+     the frame is wider than the map and the constellation sits between two
+     empty margins. The two-axis view cannot afford that — its row labels live
+     at the very left edge of the world, and a 15% crop cuts them in half. */
+  var OPEN_CITE=1.15, OPEN_AXIS=1.0;
+  function openMul(){ return mode==='cite' ? OPEN_CITE : OPEN_AXIS; }
+  var fitMul=OPEN_CITE;
   var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   function fitScale(){
     var r=sky.getBoundingClientRect();
@@ -675,7 +681,7 @@
   if (window.ResizeObserver) new ResizeObserver(refit).observe(sky);
 
   position();
-  cam.s=tgt.s=Math.min(4.2, fitScale()*OPEN); apply();
+  cam.s=tgt.s=Math.min(4.2, fitScale()*openMul()); apply();
   measureLabels();
   requestAnimationFrame(function(){ requestAnimationFrame(function(){
     sky.classList.add('ready'); placeLabels();

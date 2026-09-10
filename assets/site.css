@@ -67,6 +67,13 @@ a{ color:inherit }
 .foot a,
 .credit a,
 .sec-head .count a,
+.newslist a,
+.news-more a,
+.news-also a,
+.intro a,
+.cols a,
+.faq a,
+.mod > p a,
 .cta a:not(.btn){
   color:var(--blue);
   text-decoration:none;
@@ -84,6 +91,13 @@ a{ color:inherit }
 .foot a:hover,
 .credit a:hover,
 .sec-head .count a:hover,
+.newslist a:hover,
+.news-more a:hover,
+.news-also a:hover,
+.intro a:hover,
+.cols a:hover,
+.faq a:hover,
+.mod > p a:hover,
 .cta a:not(.btn):hover{ border-bottom-color:var(--blue) }
 
 /* ---------- type roles ---------------------------------------------------- */
@@ -571,11 +585,16 @@ button:focus-visible{ outline:3px solid var(--blue); outline-offset:2px }
   margin-left:auto; min-width:0; text-align:right;
 }
 
-/* Awards sit under the heading, in the reading path, as plain sentences.
-   Set as chips in the corner they read as decoration and get skipped. */
-.sec-head .awards{
-  width:100%; margin:12px 0 0; display:flex; flex-direction:column; gap:4px;
+/* The awards are a module of their own at the top of the page now, in reading
+   type. Hung off the corner of the page heading they were neither a heading nor
+   a sentence, and sat in the one place nobody reads. */
+ul.awards{ margin:0; padding:0; list-style:none }
+ul.awards li{
+  font-size:16px; line-height:1.55; color:var(--muted-2);
+  padding:9px 0; border-top:1px solid var(--faint); max-width:80ch;
 }
+ul.awards li:first-child{ border-top:0; padding-top:0 }
+ul.awards b{ color:var(--ink); font-weight:600 }
 .sec-head .count.is-award{
   margin-left:0; background:none; padding:0;
   font-family:inherit; font-size:15.5px; letter-spacing:-.005em;

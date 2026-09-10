@@ -376,11 +376,10 @@ PAGE = u'''<!DOCTYPE html>
   var W=__W__, H=__H__, DPR=__DPR__;
   var mode='cite';
 
+  /* The page opens on the literature, so that is what the template renders and
+     what this reads back; the other copy is passed in. */
   var COPY_CITE = document.getElementById('head-copy').innerHTML;
-  var COPY_AXIS = 'Two axes. Across: <b>what kind of AI</b> the study is about. Down: whether it '
-    + '<b>intervenes</b> &mdash; building something that makes people better at the work &mdash; or '
-    + '<b>observes</b> what AI set off once it arrived. Click an axis to fall into it; click a star '
-    + 'to go to the study.';
+  var COPY_AXIS = __COPY_AXIS__;
   var colById={}, rowById={};
   COLS.forEach(function(c){ colById[c.id]=c; });
   ROWS.forEach(function(r){ rowById[r.id]=r; });
@@ -548,6 +547,7 @@ PAGE = u'''<!DOCTYPE html>
     document.getElementById('head-copy').innerHTML = (m==='cite') ? COPY_CITE : COPY_AXIS;
     if (m!=='cite') STARS.forEach(function(st){ st.lbl.style.transform=''; st.lbl.className='star-name'; });
     hideTip();
+    if (atFit){ fitMul=openMul(); tgt=clampCam({x:W/2,y:H/2,s:fitScale()*fitMul}); go(); }
     position();
     measureLabels();
     // the arrangement moves for most of a second; keep the labels honest as it does
@@ -712,7 +712,13 @@ PAGE = u'''<!DOCTYPE html>
      Fitted precisely, the frame is wider than the map's 1600x1024 and the
      constellation sits in the middle of two empty margins. WHOLE SKY still
      goes to the true fit, and once it has, a resize keeps it there. */
-  var OPEN=1.15, fitMul=OPEN;
+  /* The literature view opens a little inside the whole sky: fitted exactly,
+     the frame is wider than the map and the constellation sits between two
+     empty margins. The two-axis view cannot afford that — its row labels live
+     at the very left edge of the world, and a 15% crop cuts them in half. */
+  var OPEN_CITE=1.15, OPEN_AXIS=1.0;
+  function openMul(){ return mode==='cite' ? OPEN_CITE : OPEN_AXIS; }
+  var fitMul=OPEN_CITE;
   var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   function fitScale(){
     var r=sky.getBoundingClientRect();
@@ -797,7 +803,7 @@ PAGE = u'''<!DOCTYPE html>
   if (window.ResizeObserver) new ResizeObserver(refit).observe(sky);
 
   position();
-  cam.s=tgt.s=Math.min(4.2, fitScale()*OPEN); apply();
+  cam.s=tgt.s=Math.min(4.2, fitScale()*openMul()); apply();
   measureLabels();
   requestAnimationFrame(function(){ requestAnimationFrame(function(){
     sky.classList.add('ready'); placeLabels();
@@ -838,6 +844,7 @@ PAGE = (PAGE.replace('__COLS__',   json.dumps(js_cols,   ensure_ascii=False))
             .replace('__MAP_NAV_MENTORING__', T.MAP_NAV_MENTORING)
             .replace('__MAP_H1__', T.MAP_H1)
             .replace('__MAP_HEAD_COPY_CITE__', T.MAP_HEAD_COPY_CITE)
+            .replace('__COPY_AXIS__', json.dumps(T.MAP_HEAD_COPY_AXIS))
             .replace('__MAP_VIEW_TOGGLE_AXES__', T.MAP_VIEW_TOGGLE_AXES)
             .replace('__MAP_VIEW_TOGGLE_LITERATURE__', T.MAP_VIEW_TOGGLE_LITERATURE)
             .replace('__MAP_BTN_ZOOM_OUT__', T.MAP_BTN_ZOOM_OUT)
