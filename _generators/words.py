@@ -81,19 +81,16 @@ HOME_PAGE_TITLE = "Xinyu Fu &mdash; Human&ndash;AI Complementarity"
 # Where it appears: the greeting at the top of the front page, in the serif face
 HOME_HELLO = "Hi, I&rsquo;m Xinyu Fu."
 
-# Where it appears: first paragraph of the front page introduction
-HOME_INTRO_1 = "I&rsquo;m an Assistant Professor of Computer Information Systems at the J. Mack Robinson College of Business, Georgia State University."
+# Where it appears: first paragraph of the front page introduction &mdash; who she
+# is, and the question the work is about
+HOME_INTRO_1 = """I&rsquo;m an Assistant Professor of Computer Information Systems at the J. Mack Robinson College of Business, Georgia State University. I am fascinated by what makes <span class="nb">human&ndash;AI</span> collaboration greater than the sum of its parts. Specifically, my research explores how different <span class="nb">human&ndash;AI</span> configurations shape human performance, the organization of work, and the consequences of AI use."""
 
-# Where it appears: second paragraph of the front page introduction. The research
-# question is the last sentence of it rather than a headline of its own.
-HOME_INTRO_2 = """My research explores <span class="nb">human&ndash;AI</span> collaboration: how different ways of working with AI shape human performance, the organization of work, and the consequences of AI use. At the heart of this work is a question &mdash; what makes <span class="nb">human&ndash;AI</span> collaboration greater than the sum of its parts?"""
+# Where it appears: second paragraph &mdash; how the work gets done, and what it has
+# been recognized for
+HOME_INTRO_2 = """Much of it runs inside real organizations &mdash; an insurer&rsquo;s call floor, an <span class="nb">auto-glass</span> plant, a hotel corridor. Field experiments and lab experiments, computational studies, and econometrics on natural experiments and firm panels. Some of the work outside the journals has been picked up in the press, and the teaching has picked up two awards: the 2025 Unforgettable Educator Award at Robinson, and the 2021 <span class="nb">Doris &amp; Douglas</span> Bernstein Doctoral Student Teaching Award at Pittsburgh."""
 
-# Where it appears: third paragraph of the front page introduction &mdash; how the
-# work gets done, and what it has been recognized for
-HOME_INTRO_3 = """Much of it runs inside real organizations &mdash; an insurer&rsquo;s call floor, an <span class="nb">auto-glass</span> plant, a hotel corridor. Field experiments and lab experiments, computational studies, and econometrics on natural experiments and firm panels. Some of the work outside the journals has been picked up in the press, and the teaching has picked up two awards: the 2025 Unforgettable Educator Award at Robinson, and the 2021 <span class="nb">Doris &amp; Douglas</span> Bernstein Doctoral Student Teaching Award at Pittsburgh."""
-
-# Where it appears: fourth and last paragraph of the front page introduction
-HOME_INTRO_4 = """My PhD is in Information Systems and Technology Management, from the Katz Graduate School of Business at the University of Pittsburgh, where I was advised by Dr. Dennis Galletta and Dr. Narayan Ramasubbu. I spent 2019 as a visiting scholar at Harvard University."""
+# Where it appears: third and last paragraph of the front page introduction
+HOME_INTRO_3 = """My PhD is in Information Systems and Technology Management, from the Katz Graduate School of Business at the University of Pittsburgh, where I was advised by Dr. Dennis Galletta and Dr. Narayan Ramasubbu. I spent 2019 as a visiting scholar at Harvard University."""
 
 # Where it appears: under the portrait at the top of the front page
 HOME_EMAIL = "xinyufu [at] gsu.edu"
