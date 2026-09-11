@@ -336,7 +336,7 @@ TEACHING_AGENTIC_AI_SPRING_2026_TITLE = """<a href="https://catalogs.gsu.edu/pre
 TEACHING_AGENTIC_AI_SPRING_2026_DESC = "Undergraduate. The first run of the course, co-taught with Dr. Amrita George."
 
 # Where it appears: course name of the Georgia State data programming course
-TEACHING_DATA_PROGRAMMING_TITLE = "Data Programming"
+TEACHING_DATA_PROGRAMMING_TITLE = """<a href="https://catalogs.gsu.edu/preview_course_nopop.php?catoid=42&amp;coid=97496">Data Programming</a>"""
 
 # Where it appears: description of the Georgia State data programming course
 TEACHING_DATA_PROGRAMMING_DESC = "Undergraduate. Python and machine learning for people who came to solve business problems rather than to write software: wrangling the data, training a model, reading what it is actually telling you, and the point at which it earns the right to be believed."
