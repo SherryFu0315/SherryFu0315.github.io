@@ -330,7 +330,7 @@ TEACHING_AGENTIC_AI_LINK_ANNOUNCEMENT = "The announcement"
 TEACHING_AGENTIC_AI_LINK_TALKS = "Talks"
 
 # Where it appears: course name of the Spring 2026 Georgia State course
-TEACHING_AGENTIC_AI_SPRING_2026_TITLE = "Agentic AI"
+TEACHING_AGENTIC_AI_SPRING_2026_TITLE = """<a href="https://catalogs.gsu.edu/preview_course_nopop.php?catoid=46&amp;coid=110537">Agentic AI</a>"""
 
 # Where it appears: description of the Spring 2026 Agentic AI course
 TEACHING_AGENTIC_AI_SPRING_2026_DESC = "Undergraduate. The first run of the course, co-taught with Dr. Amrita George."
@@ -342,13 +342,13 @@ TEACHING_DATA_PROGRAMMING_TITLE = "Data Programming"
 TEACHING_DATA_PROGRAMMING_DESC = "Undergraduate. Python and machine learning for people who came to solve business problems rather than to write software: wrangling the data, training a model, reading what it is actually telling you, and the point at which it earns the right to be believed."
 
 # Where it appears: course name of the Georgia State graduate database course
-TEACHING_DB_FUNDAMENTALS_TITLE = "Fundamentals of Database Management Systems"
+TEACHING_DB_FUNDAMENTALS_TITLE = """<a href="https://catalogs.gsu.edu/preview_course_nopop.php?catoid=43&amp;coid=103745">Fundamentals of Database Management Systems</a>"""
 
 # Where it appears: description of the Georgia State graduate database course
 TEACHING_DB_FUNDAMENTALS_DESC = "Graduate core."
 
 # Where it appears: course name of the Georgia State undergraduate database course
-TEACHING_DBMS_TITLE = "Database Management Systems"
+TEACHING_DBMS_TITLE = """<a href="https://catalogs.gsu.edu/preview_course_nopop.php?catoid=42&amp;coid=97477">Database Management Systems</a>"""
 
 # Where it appears: description of the Georgia State undergraduate database course
 TEACHING_DBMS_DESC = "Undergraduate core."
@@ -369,7 +369,7 @@ TEACHING_INTRO_IS_DESC = "Undergraduate core. Instructor."
 
 
 # Where it appears: course name of the Pittsburgh Python elective
-TEACHING_DATA_PROGRAMMING_ESSENTIALS_TITLE = """<a href="https://www.katz.business.pitt.edu/course/data-programming-python">Data Programming Essentials with Python</a>"""
+TEACHING_DATA_PROGRAMMING_ESSENTIALS_TITLE = """<a href="https://catalog.upp.pitt.edu/preview_course_nopop.php?catoid=189&amp;coid=1009994">Data Programming Essentials with Python</a>"""
 
 # Where it appears: description of the Pittsburgh Python elective
 TEACHING_DATA_PROGRAMMING_ESSENTIALS_DESC = "MBA and MS elective. Instructor; also teaching assistant for this course in Spring and Fall 2019."
@@ -378,7 +378,7 @@ TEACHING_DATA_PROGRAMMING_ESSENTIALS_DESC = "MBA and MS elective. Instructor; al
 TEACHING_AWARD_NOTE_2021 = "<b>2021 <span class=\"nb\">Doris &amp; Douglas</span> Bernstein Doctoral Student Teaching Award</b>, University of Pittsburgh"
 
 # Where it appears: course name of the Pittsburgh R elective
-TEACHING_ADVANCED_R_TITLE = """<a href="https://www.katz.business.pitt.edu/course/data-programming-r">Advanced Data Programming with R</a>"""
+TEACHING_ADVANCED_R_TITLE = """<a href="https://catalog.upp.pitt.edu/preview_course_nopop.php?catoid=189&amp;coid=1010122">Advanced Data Programming with R</a>"""
 
 # Where it appears: description of the Pittsburgh R elective
 TEACHING_ADVANCED_R_DESC = "MBA and MS elective. Teaching assistant."
