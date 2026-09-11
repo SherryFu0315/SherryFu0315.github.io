@@ -18,6 +18,7 @@ from projects import PROJECTS, COLS, ROWS, LABEL, STAR_SIZE
 from build import CSS_URL, JS_URL   # the content-hashed asset URLs
 from constellations import CONSTELLATIONS, CELLBOX
 import citelayout as CL
+import deepsky as DS
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 R = os.path.dirname(HERE)                                          # repo root
@@ -126,6 +127,18 @@ for (a, b), n in sorted(cpairs.items(), key=lambda kv: kv[1]):
 N_CITED = len(js_works)
 N_SHARED = sum(1 for w in js_works if w['d'] > 1)
 N_CSTUDIES = len(cstudies)
+
+# ------------------------------------------------- one step back (deepsky.py)
+# None when there is nothing honest to draw; the page is then byte-identical to
+# the map without the layer.
+DK = DS.build(cworks, sxy, wxy, cpairs, [p['id'] for p in cstudies])
+if DK:
+    for i, v in DK['dk'].items():
+        js_works[i]['dk'] = v                  # js_works is in cworks order
+    for st in js_stars:
+        if st['id'] in DK['tr']:
+            st['tr'] = DK['tr'][st['id']]
+    print(DK['log'])
 
 PAGE = u'''<!DOCTYPE html>
 <html lang="en">
@@ -302,7 +315,7 @@ PAGE = u'''<!DOCTYPE html>
 .blurb a{ color:#DCFF96 }
 .blurb h2{ font-family:"Archivo",Arial,sans-serif; font-variation-settings:"wdth" 84,"wght" 800;
   text-transform:uppercase; font-size:14px; letter-spacing:.04em; color:#EFEAF6; margin:0 0 10px }
-.blurb.is-off{ display:none }
+.blurb.is-off{ display:none }__DEEP_CSS__
 
 
 @media (prefers-reduced-motion: reduce){ .star-name{ transition:none } }
@@ -360,7 +373,7 @@ PAGE = u'''<!DOCTYPE html>
   <div class="blurb" id="blurb-cite">
     <h2>__MAP_METHOD_HEADING__</h2>
     <p>__MAP_BLURB_CITE__</p>
-    <p>__MAP_BLURB_CITE_2__</p>
+    <p>__MAP_BLURB_CITE_2__</p>__DEEP_BLURB__
     <p>__MAP_BLURB_CITE_3__</p>
   </div>
 
@@ -651,7 +664,7 @@ PAGE = u'''<!DOCTYPE html>
     if (!w) return;
     tip.innerHTML='<div class="tt">'+esc(w.t)+'</div>'
       +'<div class="ta">'+w.a+(w.yr?' &middot; '+w.yr:'')+(w.v?' &middot; '+esc(w.v):'')+'</div>'
-      +'<div class="tb">Cited in '+w.by.map(esc).join(' &middot; ')+'</div>';
+      +'<div class="tb">Cited in '+w.by.map(esc).join(' &middot; ')+'</div>'__DEEP_TIPLINE__;
     tip.classList.add('on'); tipOn=true;
     var r=sky.getBoundingClientRect(), t=tip.getBoundingClientRect();
     var x=e.clientX-r.left+14, y=e.clientY-r.top+14;
@@ -659,7 +672,7 @@ PAGE = u'''<!DOCTYPE html>
     if (y+t.height > r.height-8) y=e.clientY-r.top -t.height-14;
     tip.style.left=Math.max(8,x)+'px'; tip.style.top=Math.max(8,y)+'px';
   });
-  sky.addEventListener('mouseleave', hideTip);
+  sky.addEventListener('mouseleave', hideTip);__DEEP_JS__
 
   /* ---- clicking one of my own stars opens a card about the study ---- */
   var card = document.getElementById('starcard');
@@ -675,7 +688,7 @@ PAGE = u'''<!DOCTYPE html>
       '<button type="button" class="sc-close" aria-label="Close">&times;</button>'
       + '<p class="sc-eyebrow" style="color:' + st.c + '">' + st.v + '</p>'   // already entity-encoded
       + '<h3>' + st.t + '</h3>'
-      + (authors ? '<p class="sc-auth">' + authors + '</p>' : '')
+      + (authors ? '<p class="sc-auth">' + authors + '</p>' : '')__DEEP_CARD__
       + '<p class="sc-find">' + st.f + '</p>'
       + '<a class="sc-go" href="' + st.href + '">Read the full entry &rarr;</a>';
     card.classList.add('on'); cardOpen = true;
@@ -755,7 +768,7 @@ PAGE = u'''<!DOCTYPE html>
     world.style.transform='translate('+(r.width/2-cam.x*cam.s)+'px,'+(r.height/2-cam.y*cam.s)+'px) scale('+cam.s+')';
     world.style.setProperty('--inv',(1/cam.s).toFixed(4));
     sky.classList.toggle('zoomed', cam.s > fitScale()*1.35);
-    placeLabels();
+    __DEEP_APPLY__placeLabels();
   }
   function snap(){ cam.x=tgt.x; cam.y=tgt.y; cam.s=tgt.s; apply(); }
   function tick(){
@@ -840,6 +853,106 @@ PAGE = u'''<!DOCTYPE html>
 # label to a working paper that happens to cite more.
 js_stars.sort(key=lambda s: (-(s.get('s') or 0), -(s.get('nref') or 0)))
 
+DEEP_CSS_SRC = u'''
+.w.via{ filter:brightness(1.9) }
+.tip .tb2{ color:#C9B6FF }
+.tip .tb + .tb2{ border-top:0; margin-top:3px; padding-top:0 }
+.starcard .sc-deep{ font-family:"IBM Plex Mono",monospace; font-size:10.5px; letter-spacing:.05em;
+  line-height:1.5; color:#A697C0; margin:-4px 0 12px }'''
+
+DEEP_JS_SRC = u'''
+  /* ---- one step back: works that several of my studies reach through the papers they cite.
+     Painted once. One path and one fill, so where points crowd they merge instead of
+     adding up: crowding here mostly means a list is better traced, not that anything
+     is closer. Every point is the same size for the same reason.                      */
+  var DEEP=__DEEP__, NAMED=__NAMED__, DW=__DEEP_WORDS__;
+  var deepCv=null, deepOp=-1, lit=null, workEls=citeLayer.getElementsByClassName('w');
+  // world px. The blur is what makes it read as further back: soft behind crisp.
+  var HAZE_R=2.0, HAZE_A=0.50, HAZE_BLUR=2.2;
+  (function paintDeep(){
+    var b=DEEP.b, p=DEEP.p, box=document.createElement('div'), ctx, i, r;
+    box.id='deep'; box.setAttribute('aria-hidden','true');
+    box.style.cssText='position:absolute;pointer-events:none;left:'+b[0]+'px;top:'+b[1]+'px;width:'+b[2]+'px;height:'+b[3]+'px';
+    function layer(blur){   // an inline box beats '.sky-world canvas', which would stretch it over the world
+      var cv=document.createElement('canvas');
+      cv.width=Math.ceil(b[2]*DPR); cv.height=Math.ceil(b[3]*DPR);
+      cv.style.cssText='left:0;top:0;width:100%;height:100%'+(blur ? ';filter:blur('+blur+'px)' : '');
+      box.appendChild(cv);
+      var c=cv.getContext('2d'); c.setTransform(DPR,0,0,DPR,0,0); c.fillStyle='#C9B6FF'; return c;
+    }
+    ctx=layer(HAZE_BLUR); r=HAZE_R; ctx.globalAlpha=HAZE_A; ctx.beginPath();
+    for (i=0;i<p.length;i+=2){ ctx.moveTo(p[i]+r,p[i+1]); ctx.arc(p[i],p[i+1],r,0,6.2832); }
+    ctx.fill();
+    ctx=layer(0); r=1.15; ctx.globalAlpha=0.75; ctx.beginPath();   // the ones you can hover stay sharp
+    NAMED.forEach(function(n){ var x=n.x-b[0], y=n.y-b[1]; ctx.moveTo(x+r,y); ctx.arc(x,y,r,0,6.2832); });
+    ctx.fill();
+    citeLayer.insertBefore(box, document.getElementById('clinks'));  // over the dust, under lines and works
+    deepCv=box;
+  })();
+  function deepFade(){      // fainter as its points grow on screen; stepped, so it rarely repaints
+    var o=Math.round(Math.max(0.45, Math.min(1, 1.9/cam.s))*20)/20;
+    if (o!==deepOp){ deepOp=o; deepCv.style.opacity=o; }
+  }
+  function deepLine(k){ return '<div class="tb tb2">'+DW.tip.replace('__K__', k)+'</div>'; }
+  function deepCard(st){
+    return (mode==='cite' && st.tr)
+      ? '<p class="sc-deep">'+DW.card.replace('__DONE__', st.tr[0]).replace('__ALL__', st.tr[1])+'</p>' : '';
+  }
+  function light(list){     // the papers of mine that lead to it, in the existing hover look
+    if (lit===list) return;
+    if (lit) lit.forEach(function(j){ workEls[j].classList.remove('via'); });
+    lit=list;
+    if (lit) lit.forEach(function(j){ workEls[j].classList.add('via'); });
+  }
+  function onLabel(e){
+    return STARS.some(function(st){
+      if (!st.lbl.classList.contains('on')) return false;
+      var b=st.lbl.getBoundingClientRect();
+      return e.clientX>=b.left && e.clientX<=b.right && e.clientY>=b.top && e.clientY<=b.bottom;
+    });
+  }
+  function namedAt(e){
+    var r=sky.getBoundingClientRect(), best=null, bd=7/cam.s;            // 7 screen px
+    var x=(e.clientX-r.left-r.width/2)/cam.s+cam.x, y=(e.clientY-r.top-r.height/2)/cam.s+cam.y;
+    NAMED.forEach(function(n){ var d=Math.hypot(n.x-x, n.y-y); if (d<bd){ bd=d; best=n; } });
+    return best;
+  }
+  sky.addEventListener('mousemove', function(e){
+    if (mode!=='cite' || drag || !e.target.closest){ light(null); return; }
+    var el=e.target.closest('.w');
+    if (el){ var w=WORKS[+el.dataset.i]; light(w && w.dk ? w.dk.w : null); return; }  // its tooltip is already up
+    if (e.target.closest('.star,.starcard,.sky-ctrl,.legend') || onLabel(e)){ light(null); return; }
+    var n=namedAt(e);
+    if (!n){ light(null); return; }                                     // the works handler already hid the tip
+    tip.innerHTML='<div class="tt">'+esc(n.t)+'</div>'
+      +'<div class="ta">'+n.a+' &middot; '+n.yr+(n.v?' &middot; '+esc(n.v):'')+'</div>'+deepLine(n.k);
+    tip.classList.add('on'); tipOn=true; light(n.w);
+    var r=sky.getBoundingClientRect(), t=tip.getBoundingClientRect();   // the existing placement rule
+    var x=e.clientX-r.left+14, y=e.clientY-r.top+14;
+    if (x+t.width  > r.width -8) x=e.clientX-r.left-t.width -14;
+    if (y+t.height > r.height-8) y=e.clientY-r.top -t.height-14;
+    tip.style.left=Math.max(8,x)+'px'; tip.style.top=Math.max(8,y)+'px';
+  });
+  sky.addEventListener('mouseleave', function(){ light(null); });
+  // switching view from the keyboard never moves the pointer, so clear the lit papers here too
+  ['v-axis','v-cite'].forEach(function(id){
+    document.getElementById(id).addEventListener('click', function(){ light(null); });
+  });'''
+
+DEEP_CSS = DEEP_BLURB = DEEP_TIPLINE = DEEP_CARD = DEEP_APPLY = DEEP_JS = ''
+if DK:
+    _named = T.MAP_BLURB_DEEP_NAMED_ONE if len(DK['note']) == 1 else T.MAP_BLURB_DEEP_NAMED
+    _p2 = ([_named] if DK['note'] else []) + ([T.MAP_BLURB_DEEP_HOVER] if DK['named'] else []) + \
+          [T.MAP_BLURB_DEEP_3 if DK['ongoing'] else T.MAP_BLURB_DEEP_3_DONE]
+    DEEP_BLURB = '\n    <p>%s</p>\n    <p>%s</p>' % (T.MAP_BLURB_DEEP, ' '.join(_p2))
+
+    def _js(o):     # '</' could close the script tag from inside a title
+        return json.dumps(o, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/')
+    DEEP_JS = (DEEP_JS_SRC.replace('__DEEP_WORDS__', _js({'tip': T.MAP_TIP_DEEP, 'card': T.MAP_CARD_TRACED}))
+                          .replace('__DEEP__', _js(DK['js'])).replace('__NAMED__', _js(DK['named'])))
+    DEEP_CSS, DEEP_TIPLINE, DEEP_CARD = DEEP_CSS_SRC, "+(w.dk?deepLine(w.dk.k):'')", '+ deepCard(st)'
+    DEEP_APPLY = 'if(deepCv)deepFade();'
+
 PAGE = (PAGE.replace('__COLS__',   json.dumps(js_cols,   ensure_ascii=False))
             .replace('__ROWS__',   json.dumps(js_rows,   ensure_ascii=False))
             .replace('__STARS__',  json.dumps(js_stars,  ensure_ascii=False))
@@ -873,9 +986,15 @@ PAGE = (PAGE.replace('__COLS__',   json.dumps(js_cols,   ensure_ascii=False))
             .replace('__MAP_BLURB_CITE_2__', T.MAP_BLURB_CITE_2)
             .replace('__MAP_BLURB_CITE_3__', T.MAP_BLURB_CITE_3)
             .replace('__MAP_BLURB_CITE__', T.MAP_BLURB_CITE)
+            .replace('__DEEP_CSS__', DEEP_CSS).replace('__DEEP_BLURB__', DEEP_BLURB)
+            .replace('__DEEP_TIPLINE__', DEEP_TIPLINE).replace('__DEEP_CARD__', DEEP_CARD)
+            .replace('__DEEP_APPLY__', DEEP_APPLY).replace('__DEEP_JS__', DEEP_JS)
             .replace('__N_CSTUDIES__', str(N_CSTUDIES))
             .replace('__N_CITED__',  str(N_CITED))
             .replace('__N_SHARED__', str(N_SHARED)))
+
+for _k, _v in sorted((DK['tok'] if DK else {}).items(), key=lambda kv: -len(kv[0])):
+    PAGE = PAGE.replace(_k, _v)
 
 io.open(os.path.join(R, 'universe/index.html'), 'w', encoding='utf-8').write(PAGE)
 print('universe/index.html %d bytes | %d stars (%d in the citation sky), %dx%d cells, '

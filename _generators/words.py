@@ -409,3 +409,36 @@ MAP_BLURB_CITE_3 = """The proportion is the part worth standing back for. A work
 MAP_METHOD_HEADING = "How this is drawn"
 
 
+
+# ---- one step back: the haze in the literature view (deepsky.py). These appear
+# only when the layer is built. Leave the __TOKENS__ alone: the build fills them
+# with counts from the OpenAlex data, so they rise as more is traced.
+
+# Where it appears: note under the map, literature view, the paragraph after MAP_BLURB_CITE_2
+MAP_BLURB_DEEP = """The paler haze behind the halos is one step further back. I looked up the papers I cite on <a href="https://openalex.org/">OpenAlex</a> and read their own reference lists, which so far has worked for __N_TRACED__ of the __N_CITED__. Each point in the haze is a work that at least __K_DRAW__ of my studies reach, each study through a different paper. At the first step, __N_PAIRS1__ of the __N_PAIRS__ pairs of my studies share a reference. One step back, at least __N_PAIRS2__ pairs share __T_PAIR__ or more works that they reach through different papers."""
+
+# Where it appears: start of the next paragraph. __DEEP_NAMED__ becomes a short list of works
+MAP_BLURB_DEEP_NAMED = """Among the works the most of my studies reach are __DEEP_NAMED__, each by at least __K_NAMED__ of the __N_CSTUDIES__."""
+
+# Where it appears: instead of MAP_BLURB_DEEP_NAMED, when only one work is named
+MAP_BLURB_DEEP_NAMED_ONE = """Among the works the most of my studies reach is __DEEP_NAMED__, by at least __K_NAMED__ of the __N_CSTUDIES__."""
+
+# Where it appears: right after MAP_BLURB_DEEP_NAMED, when some points in the haze can be hovered
+MAP_BLURB_DEEP_HOVER = "Hover the brighter points in the haze for a few more."
+
+# Where it appears: end of that same paragraph
+MAP_BLURB_DEEP_3 = """The tracing is still going, between __TRACED_MIN__% and __TRACED_MAX__% of each study&rsquo;s references so far. Only a traced reference can lead into the haze, so a study I have traced less shows up in it less. The haze moves no star and thickens no line, and every count one step back is a floor that should rise."""
+
+# Where it appears: instead of MAP_BLURB_DEEP_3, once every reference has been looked up
+MAP_BLURB_DEEP_3_DONE = """I could trace between __TRACED_MIN__% and __TRACED_MAX__% of each study&rsquo;s references; the rest could not be found on OpenAlex, or have no reference list there. Only a traced reference can lead into the haze, so a study I could trace less shows up in it less. The haze moves no star and thickens no line, and every count one step back is a floor."""
+
+# Where it appears: last line of the tooltip on a point in the haze, or on a paper I cite
+# that others of my studies also reach. Leave __K__ alone; the page fills it in.
+MAP_TIP_DEEP = "At least __K__ of my studies cite papers that cite it"
+
+# Where it appears: small line in a study's card, literature view only.
+# Leave __DONE__ and __ALL__ alone; the page fills them in.
+MAP_CARD_TRACED = "So far I have traced __DONE__ of the __ALL__ papers this study cites one step further back."
+
+# Where it appears: joins the last two works in the list in MAP_BLURB_DEEP_NAMED
+MAP_DEEP_LIST_AND = "and"
