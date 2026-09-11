@@ -5,9 +5,10 @@
 # so nothing is fetched twice — and stops on its own when the day's allowance
 # runs low, leaving a clean place to start again tomorrow.
 #
-# OpenAlex allows 1000 requests a day per address. Finishing needs about 640 of
-# them for the works plus roughly 120 for the ancestors' titles, so one full
-# day's allowance is enough with room to spare.
+# OpenAlex gives 1000 credits a day, and looking a work up by its title costs
+# 10 of them, so one run covers roughly ninety works. Run it once a day until it
+# says nothing is missing. Each run shares its credits out across all the
+# studies, so the map fills in evenly rather than one paper at a time.
 
 cd "$(dirname "$0")/_generators" || exit 1
 
@@ -23,16 +24,16 @@ else
 fi
 export OA_MAILTO
 
-printf '\n  Checking whether OpenAlex has budget today...\n'
-status=$(curl -s -o /dev/null -w '%{http_code}' \
-  "https://api.openalex.org/works?filter=title.search:test&per-page=1&select=id&mailto=$OA_MAILTO" 2>/dev/null)
+printf '\n  Checking whether OpenAlex has credits left today...\n'
+# One lookup by ID costs 1 credit. The title search this used to be cost 10.
+hdr=$(curl -s -D - -o /dev/null \
+  "https://api.openalex.org/works?filter=openalex_id:W2741809807&per-page=1&select=id&mailto=$OA_MAILTO" 2>/dev/null)
+status=$(printf '%s' "$hdr" | awk 'NR==1{gsub(/\r/,""); print $2}')
 
 if [ "$status" = "429" ]; then
-  wait_s=$(curl -s -D - -o /dev/null \
-    "https://api.openalex.org/works?filter=title.search:test&per-page=1&select=id&mailto=$OA_MAILTO" \
-    2>/dev/null | awk 'BEGIN{IGNORECASE=1} /^retry-after:/ {gsub(/\r/,"",$2); print $2}')
-  printf '\n  Today'"'"'s allowance is already spent.\n'
-  printf '  It resets at midnight UTC — about %s hours from now.\n' "$((${wait_s:-0} / 3600))"
+  wait_s=$(printf '%s' "$hdr" | awk 'tolower($1)=="retry-after:" {gsub(/\r/,"",$2); print $2}')
+  printf '\n  Today'"'"'s credits are already spent.\n'
+  printf '  OpenAlex refills them in about %s hours.\n' "$(( (${wait_s:-0} + 1800) / 3600 ))"
   printf '  Nothing was fetched. Run this again after that.\n\n'
   printf '  Press return to close.\n'
   read -r
@@ -45,7 +46,7 @@ printf '\n  Resolving cited works against OpenAlex...\n\n'
 printf '\n  Working out the second-order structure...\n\n'
 "$PY" -u secondorder.py || { printf '\n  secondorder.py stopped. Press return.\n'; read -r; exit 1; }
 
-printf '\n  Done. If it says lookups are still missing, the day'"'"'s allowance ran\n'
-printf '  out — run this again tomorrow and it will carry on from here.\n\n'
+printf '\n  Done. If it says lookups are still missing, that is the day'"'"'s credits\n'
+printf '  running out, not a fault. Run this again tomorrow and it carries on from here.\n\n'
 printf '  Press return to close.\n'
 read -r

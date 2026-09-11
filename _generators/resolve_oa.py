@@ -58,8 +58,11 @@ def sim(a, b):
 _throttle = threading.Semaphore(1)
 _last = [0.0]
 
-# OpenAlex meters a fixed number of requests per day. When that runs out it still
-# answers 429, but with a Retry-After of most of a day rather than a few seconds.
+# OpenAlex meters credits, not requests: 1000 a day free, and the price depends on
+# the kind of request. A title search costs 10; a lookup by ID costs 1 and takes
+# fifty IDs at a time. Every lookup here is a title search, so a day buys roughly
+# ninety works, not a thousand. When the credits run out it still answers 429,
+# but with a Retry-After of most of a day rather than a few seconds.
 # The first version could not tell the two apart and simply slept on it — which
 # looked exactly like a hung process. A long Retry-After is not something to wait
 # out; it is the end of the run, and the only thing to do is say so and stop.
@@ -67,6 +70,7 @@ BURST_MAX = 300.0                     # seconds; longer than this is the daily c
 STOP_AT   = 25                        # leave this much of the day's budget unspent
 _exhausted = threading.Event()
 _remaining = [None]                   # what OpenAlex last said was left for today
+_resets_in = [None]                   # ... and how many seconds until it refills
 
 
 def _note_budget(headers):
@@ -78,6 +82,10 @@ def _note_budget(headers):
     except (TypeError, ValueError):
         return
     _remaining[0] = n
+    try:
+        _resets_in[0] = int(headers.get('X-RateLimit-Reset'))
+    except (TypeError, ValueError):
+        pass
     if n <= STOP_AT:
         _exhausted.set()
 
@@ -120,6 +128,33 @@ def get(url, tries=6):
                 return {'_error': str(e)}
             time.sleep(2.0 * (i + 1))
     return {'_error': 'rate-limited'}
+
+
+BOOKISH = re.compile(r'\b(press|publish\w*|books?|wiley|springer|routledge)\b', re.I)
+
+
+def spread(works):
+    """The order to look works up in: anything already cached first (it costs
+    nothing), then the rest taken from each study in turn, journal articles ahead
+    of books within a study because articles are what expose a reference list.
+
+    works.json is grouped by study. Walked in file order, a day's credits went to
+    the first few studies and left the rest with nothing, so the map's second
+    hop described four papers and called it her work. Taken in turn, a run that
+    stops partway leaves every study a share."""
+    out, queues = [], {}
+    for w in works:
+        if os.path.exists(cache_path(w['key'])):
+            out.append(w)
+        else:
+            queues.setdefault(w['cited_by'][0], []).append(w)
+    for q in queues.values():
+        q.sort(key=lambda w: bool(BOOKISH.search(w.get('venue') or '')))
+    while any(queues.values()):
+        for sid in sorted(queues):
+            if queues[sid]:
+                out.append(queues[sid].pop(0))
+    return out
 
 
 def cache_path(key):
@@ -193,12 +228,12 @@ if __name__ == '__main__':
         print('anonymous pool — %.1fs between requests; set OA_MAILTO to go faster'
               % MIN_GAP)
     with ThreadPoolExecutor(max_workers=3 if MAILTO else 1) as ex:
-        for i, r in enumerate(ex.map(resolve, works), 1):
+        for i, r in enumerate(ex.map(resolve, spread(works)), 1):
             done.append(r)
             if i % 25 == 0:
                 m = sum(1 for x in done if x.get('matched'))
                 left = ('' if _remaining[0] is None
-                        else '   budget left today: %d' % _remaining[0])
+                        else '   credits left today: %d' % _remaining[0])
                 print('  %4d/%d  matched %d (%.0f%%)%s'
                       % (i, len(works), m, 100.0 * m / i, left))
                 sys.stdout.flush()
@@ -211,9 +246,11 @@ if __name__ == '__main__':
         if quota:
             print('   ' + sorted(quota, key=lambda x: x['error'])[-1]['error'])
         elif _remaining[0] is not None and _remaining[0] <= STOP_AT:
-            print('   stopped with %d requests left of today\'s allowance, on'
-                  ' purpose — run again after it resets at midnight UTC'
-                  % _remaining[0])
+            when = ('' if _resets_in[0] is None else
+                    ' in about %d h' % max(1, round(_resets_in[0] / 3600.0)))
+            print('   stopped on purpose with %d credits left; OpenAlex refills'
+                  ' them%s, and the next run carries on from here'
+                  % (_remaining[0], when))
     m = [x for x in done if x.get('matched')]
     nrefs = sum(len(x['refs']) for x in m)
     print()

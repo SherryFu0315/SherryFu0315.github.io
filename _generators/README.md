@@ -72,37 +72,55 @@ manuscript to read a reference list from.
 
 ### Unfinished: the second hop
 
-First-order coupling is thin — two of these studies rarely cite the *same* paper,
+First-order coupling is thin. Two of these studies rarely cite the *same* paper,
 because they sit in different literatures. But they do rest on the same
 foundations. `resolve_oa.py` looks each cited work up on OpenAlex and pulls that
 work's own reference list; `secondorder.py` then finds the ancestors several
 studies share.
 
-From the 155 works resolved so far (21%), the difference is large:
+From the 308 works resolved so far (41%), the difference is large:
 
-| | first order | second order (21% sample) |
+| | first order | second order (41% resolved) |
 |---|---|---|
-| distinct works | 752 | 8,298 |
-| shared by 2+ studies | 32 | 1,351 |
-| shared by 3+ studies | — | 537 |
-| *Detecting AI Errors* ↔ the JMIS paper | 6 | 610 |
+| distinct works | 752 | 17,448 |
+| shared by 2+ studies | 32 | 2,399 |
+| shared by 3+ studies | 9 | 889 |
+| study pairs linked | 32 of 78 | 78 of 78 |
+| *Detecting AI Errors* and the JMIS paper | 6 | 610 |
 
-First-order coupling links 32 pairs of studies; second-order coupling links all
-10 of the studies resolved so far to each other.
-
-**This run is incomplete** — 171 of 752 works. To carry on, double-click
-**Finish the citation map.command** in the main folder any time after the
-allowance resets. It checks first and says how long is left rather than
+**This run is incomplete**: 308 of 752 works. Every study now has part of its
+reference list resolved, from 10% to 95%, but none of the low ones is
+done. To carry on, double-click **Finish the citation map.command** in the main
+folder once a day. It checks first and says how long is left rather than
 half-running, picks up from the cache, and stops on its own before the day's
-budget is gone.
+credits are gone.
 
-The allowance is **1000 requests a day, per IP, resetting at midnight UTC**, and
-it is not raised by identifying yourself — `OA_MAILTO` buys a much better rate
-per second, nothing more. Finishing needs about 640 lookups plus roughly 120
-batched calls for the ancestors' titles, so one clean day is enough.
+OpenAlex meters **credits**, not requests: 1000 a day for free, refilled about
+once a day (the `X-RateLimit-Reset` header on any response says exactly when).
+What a request costs depends on its kind, measured September 2026 from
+`X-RateLimit-Credits-Used`:
+
+| request | credits |
+|---|---|
+| title search (`search=` or `filter=title.search:`) | 10 |
+| lookup by OpenAlex ID or DOI, up to 50 in one request | 1 |
+
+`works.json` holds only authors, year, title and venue, with no DOIs, so every
+lookup here is a title search: 10 credits, or 20 when the first query finds
+nothing and the fallback runs. The last full run averaged about eleven credits
+a work, so a day covers roughly ninety works, and the 409 still to do need
+about 5 more days. The ancestors' names are cheap by comparison, fifty
+to a credit.
+
+Because a day only covers part of the list, `resolve_oa.py` takes works from
+each study in turn rather than in file order. `works.json` is grouped by study,
+and walking it top to bottom spent the first days on four papers and left nine
+with nothing.
 
 `OA_MAILTO` is read from `_generators/.oa_mailto`, which git ignores: the
-address goes to OpenAlex, not into a public repository.
+address goes to OpenAlex, not into a public repository. It puts requests in
+OpenAlex's "polite pool", their documented way of identifying a caller, which
+buys a much better rate per second. It does not add credits.
 
 Or by hand:
 
@@ -113,15 +131,9 @@ OA_MAILTO=you@example.com python3 secondorder.py  # -> secondorder.json
 ```
 
 `oa_cache/` is gitignored (hundreds of tiny files) and is the resume point, so
-re-running only fetches what is still missing. What remains is about 640 lookups
-for the works plus roughly 120 batched calls for ancestor metadata — one day's
-allowance, with room to spare.
-
-`OA_MAILTO` puts the request in OpenAlex's "polite pool", which is their
-documented way of identifying a caller. It buys a much better per-second rate;
-it does not raise the daily cap. Without it the anonymous pool throttles to
-roughly one request every four seconds, which the script falls back to on its
-own.
+re-running only fetches what is still missing. Without `OA_MAILTO` the
+anonymous pool throttles to roughly one request every four seconds, which the
+script falls back to on its own.
 
 Two things to keep in mind if this is ever rewritten:
 
@@ -140,3 +152,9 @@ Two things to keep in mind if this is ever rewritten:
   learning the same thing six times over — 41 works resolved out of a thousand
   requests. It now watches `X-RateLimit-Remaining` on every answer and stops
   with 25 to spare, which is what makes tomorrow's run start from a clean point.
+- A search is not a lookup. OpenAlex prices by credit, and a title search costs
+  ten times a lookup by ID. The first run under that pricing spent a whole day
+  on about ninety works and then reported the day as done. Read
+  `X-RateLimit-Credits-Used` on a response before assuming what anything costs;
+  the double-click script's own "is there budget today?" check used to be a
+  title search, and spent 10 credits just to ask.

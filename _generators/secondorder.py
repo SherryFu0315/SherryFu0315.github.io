@@ -103,7 +103,13 @@ def main():
     linked = set()
     for a, b in pairs:
         linked.add(a); linked.add(b)
-    print('studies connected: %d of %d' % (len(linked), len(ids)))
+    every = sorted({s for w in works for s in w['cited_by']})
+    print('studies with at least one resolved reference: %d of %d'
+          % (len(ids), len(every)))
+    print('  of those, linked to another by a shared ancestor: %d' % len(linked))
+    missing = [s for s in every if s not in anc_by_study]
+    if missing:
+        print('  still dark: %s' % ', '.join(missing))
 
     # ---- fetch metadata for the ancestors worth naming
     hubs = [k for k, v in reach.items() if len(v) >= 2]
@@ -130,6 +136,8 @@ def main():
                          'c': r.get('cited_by_count') or 0,
                          'v': loc.get('display_name') or ''}
         json.dump(meta, open(META, 'w'))
+        if _exhausted[0]:
+            break
         print('  %d/%d' % (min(i + 50, len(todo)), len(todo)))
         sys.stdout.flush()
 
@@ -147,7 +155,8 @@ def main():
     }
     json.dump(out, open(os.path.join(HERE, 'secondorder.json'), 'w'), indent=1)
     print()
-    print('wrote secondorder.json — %d named ancestors' % len(hubs))
+    print('wrote secondorder.json: %d shared ancestors, %d of them named'
+          % (len(hubs), sum(1 for a in out['ancestors'] if 'm' in a)))
 
     named = [a for a in out['ancestors'] if 'm' in a]
     print()
