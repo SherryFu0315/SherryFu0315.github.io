@@ -93,7 +93,11 @@ reference list resolved, from 10% to 95%, but none of the low ones is
 done. To carry on, double-click **Finish the citation map.command** in the main
 folder once a day. It checks first and says how long is left rather than
 half-running, picks up from the cache, and stops on its own before the day's
-credits are gone.
+credits are gone. When it is done it rebuilds the
+research map, prints the works the map names so a wrong record can be caught,
+and asks before publishing: type y to put the update on the website, or press
+return to keep it on this computer. It only ever publishes the data files and
+the map page, and not at all while the site's own source files have edits.
 
 OpenAlex meters **credits**, not requests: 1000 a day for free, refilled about
 once a day (the `X-RateLimit-Reset` header on any response says exactly when).
@@ -158,3 +162,23 @@ Two things to keep in mind if this is ever rewritten:
   `X-RateLimit-Credits-Used` on a response before assuming what anything costs;
   the double-click script's own "is there budget today?" check used to be a
   title search, and spent 10 credits just to ask.
+
+## The haze: one step back
+
+`deepsky.py` turns `secondorder.json` into the pale haze behind the halos in
+the literature view. It draws a work only when at least three studies reach
+it, each through a different paper of their own. A work two studies reach only
+through one paper they both cite is left out, because the gold star already
+shows that link. It never moves a study and never reads the coupling weights.
+Every number in its copy is computed at build time, and without usable
+OpenAlex data the page is byte-identical to the one without the layer.
+
+```bash
+cd ~/Documents/website/_generators
+python3 -B deepsky.py     # what would be drawn and named, without building
+```
+
+Two lists near the top are for correcting OpenAlex by hand. `DEEP_DENY` keeps a
+record from ever being named. `DEEP_YEAR` fixes a year where OpenAlex dates a
+paper by when it first appeared online rather than by its volume, which is how
+the reference lists date it.

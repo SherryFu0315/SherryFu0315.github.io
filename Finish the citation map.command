@@ -1,9 +1,11 @@
 #!/bin/bash
-# Double-click this file in Finder, any time after OpenAlex resets.
+# Double-click this file in Finder once a day, any time after OpenAlex resets.
 #
-# It picks up where the last run left off — every lookup already done is cached,
-# so nothing is fetched twice — and stops on its own when the day's allowance
-# runs low, leaving a clean place to start again tomorrow.
+# It picks up where the last run left off (every lookup already done is cached,
+# so nothing is fetched twice) and stops on its own when the day's credits run
+# low, leaving a clean place to start again tomorrow. Then it rebuilds the
+# research map from the new data, shows which works the map names now, and asks
+# before putting the update on the website.
 #
 # OpenAlex gives 1000 credits a day, and looking a work up by its title costs
 # 10 of them, so one run covers roughly ninety works. Run it once a day until it
@@ -46,7 +48,47 @@ printf '\n  Resolving cited works against OpenAlex...\n\n'
 printf '\n  Working out the second-order structure...\n\n'
 "$PY" -u secondorder.py || { printf '\n  secondorder.py stopped. Press return.\n'; read -r; exit 1; }
 
-printf '\n  Done. If it says lookups are still missing, that is the day'"'"'s credits\n'
-printf '  running out, not a fault. Run this again tomorrow and it carries on from here.\n\n'
+# ---- rebuild the map, then ask before publishing -----------------------------
+cd .. || exit 1
+LOG=$(mktemp -t citation-map)
+printf '\n  Rebuilding the research map from the new data...\n\n'
+if ! ( cd _generators && "$PY" -B build_universe.py ) > "$LOG" 2>&1; then
+  cat "$LOG"; rm -f "$LOG"
+  printf '\n  The rebuild stopped, so the website was not touched.\n'
+  printf '  Send the message above to Claude. Press return to close.\n'
+  read -r; exit 1
+fi
+grep -E '^deep sky|^  (note|hover|held)' "$LOG" | sed 's/^/  /'
+printf '\n  Those are the works the map names today. If one looks wrong, tell\n'
+printf '  Claude and it will be kept off the map.\n'
+
+# Only the files a run can change are ever published from here.
+FILES="_generators/oa_level1.json _generators/secondorder.json _generators/oa_level2_meta.json universe/index.html"
+if git diff --quiet -- $FILES; then
+  printf '\n  Nothing on the map changed, so there is nothing to publish.\n'
+elif ! git diff --quiet -- _generators/*.py; then
+  printf '\n  The map is rebuilt, but some of the site'"'"'s own files have edits that\n'
+  printf '  are not published yet, so it will not publish from here. Ask Claude.\n'
+else
+  printf '\n  Put the updated map on the website now? Type y and press return,\n'
+  printf '  or just press return to keep it on this computer: '
+  read -r answer
+  if [ "$answer" = y ] || [ "$answer" = Y ]; then
+    traced=$(grep -o 'traced [0-9]*/[0-9]*' "$LOG" | head -1 | cut -d' ' -f2)
+    if git commit -q -m "Citation map: OpenAlex run of $(date +%Y-%m-%d), ${traced:-more} references traced" -- $FILES \
+       && git push -q origin HEAD; then
+      printf '\n  Published. The website shows it within a couple of minutes.\n'
+    else
+      printf '\n  Publishing did not go through. The map is saved on this computer;\n'
+      printf '  ask Claude to push it.\n'
+    fi
+  else
+    printf '\n  Kept on this computer. Ask Claude to publish it whenever you like.\n'
+  fi
+fi
+rm -f "$LOG"
+
+printf '\n  If it said lookups are still missing, that is the day'"'"'s credits running\n'
+printf '  out, not a fault. Run this again tomorrow and it carries on from here.\n\n'
 printf '  Press return to close.\n'
 read -r

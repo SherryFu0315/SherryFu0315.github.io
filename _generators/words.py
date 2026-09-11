@@ -234,7 +234,7 @@ MAP_BLURB_AXIS = "Where I file each study. The constellations are real ones (Urs
 
 # Where it appears: caption under the map while the "The literature" arrangement is
 # showing (the two counts fill themselves in)
-MAP_BLURB_CITE = """I took the reference list of every piece of work I have finished: __N_CSTUDIES__ of them, citing __N_CITED__ different papers between them. I matched the lists against each other, so a paper cited by two studies becomes one star rather than two. Then a physics simulation runs on it: every study pulls on the papers it cites, and every star pushes its neighbours away. Left to settle, studies that share references drift together and studies that share none drift apart."""
+MAP_BLURB_CITE = """I took the reference list of every piece of work I have finished: __N_CSTUDIES__ of them, citing __N_CITED__ different papers between them. I matched the lists against each other, so a paper cited by two studies becomes one star rather than two. Then a physics simulation places the studies. Studies that share references pull on each other and every study pushes the others away, so once it settles, the ones that share a literature end up close. Each paper then sits in a halo around the study that cites it, or between the studies if more than one does."""
 
 
 # Where it appears: stand-in shown for a study that has no one-line finding written yet
