@@ -23,7 +23,7 @@ PEOPLE = [
       role='Assistant Professor of Business Information Systems, University of Arkansas at Little Rock',
       note='Committee member'),
  dict(name='Kartikeya Negi', url='https://www.linkedin.com/in/kartik-negi/', now=False,
-      role='Assistant Professor, Texas State University',
+      role='Assistant Professor, Florida State University',
       note='Committee member'),
 ]
 
