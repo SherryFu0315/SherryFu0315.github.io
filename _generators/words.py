@@ -162,7 +162,7 @@ RESEARCH_PAGE_TITLE = "Projects &middot; Xinyu Fu"
 RESEARCH_HEADING = "Projects"
 
 # Where it appears: small caption beside the "Research" heading
-RESEARCH_COUNT = """Fifteen projects, most settled first &middot; <a href="/universe/">see the map</a>"""
+RESEARCH_COUNT = """<a href="/universe/">see the map</a>"""
 
 # Where it appears: note under the list of projects on the research page
 RESEARCH_UNDER_REVIEW_NOTE = """Work under review is listed without a journal
