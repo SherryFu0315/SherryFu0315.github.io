@@ -111,7 +111,7 @@ PROJECTS = [
    chip='Under review', venue='',
    title='Managerial Investment Expectations and Real Estate Investment',
    short='Managerial Investment Expectations',
-   authors='Bond, S., Devine, A., <b>Fu, X.</b>, &amp; Zheng, S.',
+   authors='Bond, S., Lin, Z., <b>Fu, X.</b>, &amp; Zheng, S.',
    method='Archival panel',
    finding=("What managers say they expect about the future, read out of what they tell analysts on earnings "
             "calls, and what their firms actually go on to spend."),
