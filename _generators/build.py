@@ -335,7 +335,7 @@ HOME = '''<!DOCTYPE html>
         <p class="eyebrow">%(COURSE_TITLE)s</p>
         <p class="course-name">%(COURSE_NAME)s<span class="course-term">%(COURSE_TERM)s</span></p>
         <p class="news-also">%(COURSE_PATH)s</p>
-        <p class="news-more"><a href="https://sherryfu0315.github.io/cis4394-agentic-ai/index.html">%(COURSE_LINK)s</a> &nbsp;<a href="/teaching/">%(COURSE_ALL)s</a></p>
+        <p class="news-more"><a href="https://xinyufu.org/cis4394-agentic-ai/index.html">%(COURSE_LINK)s</a> &nbsp;<a href="/teaching/">%(COURSE_ALL)s</a></p>
       </div>
     </div>
   </section>

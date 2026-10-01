@@ -175,11 +175,11 @@ NAV
     <div class="course">
       <div class="when"><span class="ico" style="--ic:#FF7874" aria-hidden="true"><svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor"><path d="M12 1.6c1 6.9 2.5 8.4 9.4 9.4-6.9 1-8.4 2.5-9.4 9.4-1-6.9-2.5-8.4-9.4-9.4 6.9-1 8.4-2.5 9.4-9.4Z"/></svg></span>Fall 2026</div>
       <div>
-        <h4><a href="https://sherryfu0315.github.io/cis4394-agentic-ai/index.html">__TEACHING_AGENTIC_AI_TITLE__</a></h4>
+        <h4><a href="https://xinyufu.org/cis4394-agentic-ai/index.html">__TEACHING_AGENTIC_AI_TITLE__</a></h4>
         <p>__TEACHING_AGENTIC_AI_DESC__</p>
         <p style="margin-top:10px">__TEACHING_AGENTIC_AI_PATH_NOTE__</p>
         <p class="proj-links" style="margin-top:12px">
-          <a href="https://sherryfu0315.github.io/cis4394-agentic-ai/index.html">__TEACHING_AGENTIC_AI_LINK_COURSE_SITE__</a>
+          <a href="https://xinyufu.org/cis4394-agentic-ai/index.html">__TEACHING_AGENTIC_AI_LINK_COURSE_SITE__</a>
           <a href="https://path.mit.edu/">__TEACHING_AGENTIC_AI_LINK_PATH__</a>
           <a href="https://news.gsu.edu/2026/04/03/mit-raise-and-georgia-state-university-announce-path">__TEACHING_AGENTIC_AI_LINK_ANNOUNCEMENT__</a>
           <a href="https://www.youtube.com/watch?v=LnyWCPhFzzA&amp;list=PL8lQ0qMEI-E8-64gGMvrHBSqbGQkAsXCD&amp;index=1">__TEACHING_AGENTIC_AI_LINK_TALKS__</a>
